@@ -1,0 +1,114 @@
+.section {
+  padding: 80px 60px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+  padding: 28px 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.quote {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 88px;
+  font-family: var(--font-poppins), sans-serif;
+  font-weight: 700;
+  color: #e8e8e8;
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+.stars {
+  display: flex;
+  gap: 3px;
+}
+
+.star {
+  font-size: 18px;
+  color: #e8e8e8;
+}
+
+.star.filled {
+  color: #ff5d02;
+}
+
+.text {
+  font-size: 14.5px;
+  color: #333;
+  line-height: 1.7;
+  margin: 0;
+  flex: 1;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+  letter-spacing: 0.03em;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.name {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.role {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .section {
+    padding: 60px 24px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 16px;
+  }
+}

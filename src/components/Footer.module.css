@@ -1,0 +1,155 @@
+.footer {
+  background: #f9f9f9;
+  border-top: 1px solid #ede9e2;
+  padding: 64px 60px 32px;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1.4fr;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto 48px;
+}
+
+/* ── Brand ── */
+.brand {
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+}
+
+.brandName {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.brandDesc {
+  font-size: 13.5px;
+  color: #888;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 260px;
+}
+
+/* ── Columns ── */
+.col {
+}
+
+.colHeading {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 16px;
+}
+
+.colList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.colLink {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13.5px;
+  color: #666;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.colLink:hover {
+  color: #1a1a1a;
+}
+
+/* ── Contact ── */
+.contactItem {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contactLabel {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.contactValue {
+  font-size: 13.5px;
+  color: #666;
+}
+
+/* ── Big brand text ── */
+.bigText {
+  text-align: center;
+  font-family: var(--font-poppins), sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -2px;
+  background: linear-gradient(180deg, #fff 0%, #ffd0b3 49%);
+  -webkit-text-fill-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin: 48px 0 0;
+  font-size: clamp(80px, 10vw, 180px);
+  font-weight: 400;
+  font-stretch: extra-condensed;
+  line-height: 1;
+}
+
+/* ── Bottom bar ── */
+.bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 24px;
+  border-top: 1px solid #ede9e2;
+  font-size: 12.5px;
+  color: #aaa;
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .brand {
+    grid-column: 1 / -1;
+  }
+
+  .brandDesc {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    padding: 48px 24px 24px;
+  }
+
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .brand {
+    grid-column: auto;
+  }
+}

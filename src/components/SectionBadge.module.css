@@ -1,0 +1,44 @@
+.badge {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 999px;
+  border: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .label {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+
+  .text {
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+}
+
+.label {
+  background: linear-gradient(90deg, #ff5d02 0%, #ff7a30 100%);
+  color: #fff;
+  border-radius: 999px;
+  padding: 5px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.text {
+  padding: 5px 16px;
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+  line-height: 1.4;
+}

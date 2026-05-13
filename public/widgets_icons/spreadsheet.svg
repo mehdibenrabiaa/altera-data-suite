@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <mask id="mask" x="11.54" y="6.84" width="24.94" height="34.29" maskUnits="userSpaceOnUse">
+      <g id="mask-2">
+        <path id="path-1" d="M27.12,6.84h-13.25c-1.29,0-2.34,1.05-2.34,2.34v29.62c0,1.29,1.05,2.34,2.34,2.34h20.26c1.29,0,2.34-1.05,2.34-2.34v-22.6l-9.35-9.35Z" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient" x1="13.89" y1="41.51" x2="32.21" y2="9.78" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#545454"/>
+      <stop offset=".63" stop-color="#030303"/>
+      <stop offset="1" stop-color="#000"/>
+    </linearGradient>
+    <mask id="mask-1" x="11.54" y="6.84" width="24.94" height="34.29" maskUnits="userSpaceOnUse">
+      <g id="mask-4">
+        <path id="path-3" d="M27.12,6.84h-13.25c-1.29,0-2.34,1.05-2.34,2.34v29.62c0,1.29,1.05,2.34,2.34,2.34h20.26c1.29,0,2.34-1.05,2.34-2.34v-22.6l-9.35-9.35Z" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </mask>
+    <mask id="mask-21" data-name="mask-2" x="11.54" y="6.84" width="24.94" height="34.29" maskUnits="userSpaceOnUse">
+      <g id="mask-6">
+        <path id="path-5" d="M27.12,6.84h-13.25c-1.29,0-2.34,1.05-2.34,2.34v29.62c0,1.29,1.05,2.34,2.34,2.34h20.26c1.29,0,2.34-1.05,2.34-2.34v-22.6l-9.35-9.35Z" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient1" x1="-878.14" y1="533.76" x2="-878.14" y2="533.28" gradientTransform="translate(14479.36 8795.72) scale(16.45 -16.45)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#263238" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#263238" stop-opacity=".02"/>
+    </linearGradient>
+    <mask id="mask-3" x="11.54" y="6.84" width="24.94" height="34.29" maskUnits="userSpaceOnUse">
+      <g id="mask-9">
+        <path id="path-8" d="M27.12,6.84h-13.25c-1.29,0-2.34,1.05-2.34,2.34v29.62c0,1.29,1.05,2.34,2.34,2.34h20.26c1.29,0,2.34-1.05,2.34-2.34v-22.6l-9.35-9.35Z" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </mask>
+    <mask id="mask-41" data-name="mask-4" x="11.54" y="6.84" width="24.94" height="34.29" maskUnits="userSpaceOnUse">
+      <g id="mask-11">
+        <path id="path-10" d="M27.12,6.84h-13.25c-1.29,0-2.34,1.05-2.34,2.34v29.62c0,1.29,1.05,2.34,2.34,2.34h20.26c1.29,0,2.34-1.05,2.34-2.34v-22.6l-9.35-9.35Z" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </mask>
+    <mask id="mask-5" x="11.54" y="6.84" width="24.94" height="34.29" maskUnits="userSpaceOnUse">
+      <g id="mask-13">
+        <path id="path-12" d="M27.12,6.84h-13.25c-1.29,0-2.34,1.05-2.34,2.34v29.62c0,1.29,1.05,2.34,2.34,2.34h20.26c1.29,0,2.34-1.05,2.34-2.34v-22.6l-9.35-9.35Z" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </mask>
+    <mask id="mask-61" data-name="mask-6" x="11.54" y="6.84" width="24.94" height="34.29" maskUnits="userSpaceOnUse">
+      <g id="mask-15">
+        <path id="path-14" d="M27.12,6.84h-13.25c-1.29,0-2.34,1.05-2.34,2.34v29.62c0,1.29,1.05,2.34,2.34,2.34h20.26c1.29,0,2.34-1.05,2.34-2.34v-22.6l-9.35-9.35Z" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </mask>
+    <radialGradient id="radial-gradient" cx="-915" cy="553.99" fx="-915" fy="553.99" r=".85" gradientTransform="translate(43322.5 26229.78) scale(47.33 -47.33)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <g id="Page-1">
+    <g id="Consumer-Apps-Sheets-Large-VD-R8-">
+      <g id="Hero">
+        <g id="Personal">
+          <g id="Sheets-icon">
+            <g id="Group">
+              <g id="Clipped">
+                <g mask="url(#mask)">
+                  <path id="Path" d="M27.12,6.84h-13.25c-1.29,0-2.34,1.05-2.34,2.34v29.62c0,1.29,1.05,2.34,2.34,2.34h20.26c1.29,0,2.34-1.05,2.34-2.34v-22.6l-5.46-3.9-3.9-5.46Z" fill="url(#linear-gradient)"/>
+                </g>
+              </g>
+              <g id="Clipped1" data-name="Clipped">
+                <g mask="url(#mask-1)">
+                  <path id="Shape" d="M17.77,23.6v11.3h12.47v-11.3h-12.47ZM23.23,33.34h-3.9v-1.95h3.9v1.95ZM23.23,30.23h-3.9v-1.95h3.9v1.95ZM23.23,27.11h-3.9v-1.95h3.9v1.95ZM28.68,33.34h-3.9v-1.95h3.9v1.95ZM28.68,30.23h-3.9v-1.95h3.9v1.95ZM28.68,27.11h-3.9v-1.95h3.9v1.95Z" fill="#f1f1f1"/>
+                </g>
+              </g>
+              <g id="Clipped2" data-name="Clipped">
+                <g mask="url(#mask-21)">
+                  <polygon id="Path1" data-name="Path" points="27.81 15.51 36.47 24.18 36.47 16.2 27.81 15.51" fill="url(#linear-gradient1)"/>
+                </g>
+              </g>
+              <g id="Clipped3" data-name="Clipped">
+                <g mask="url(#mask-3)">
+                  <g id="Group1" data-name="Group">
+                    <path id="Path2" data-name="Path" d="M27.12,6.84v7.01c0,1.29,1.05,2.34,2.34,2.34h7.01l-9.35-9.35Z" fill="#b5b5b5"/>
+                  </g>
+                </g>
+              </g>
+              <g id="Clipped4" data-name="Clipped">
+                <g mask="url(#mask-41)">
+                  <path id="Path3" data-name="Path" d="M13.87,6.84c-1.29,0-2.34,1.05-2.34,2.34v.19c0-1.29,1.05-2.34,2.34-2.34h13.25v-.19h-13.25Z" fill="#b3b3b3" fill-opacity=".2"/>
+                </g>
+              </g>
+              <g id="Clipped5" data-name="Clipped">
+                <g mask="url(#mask-5)">
+                  <path id="Path4" data-name="Path" d="M34.14,40.94H13.87c-1.29,0-2.34-1.05-2.34-2.34v.19c0,1.29,1.05,2.34,2.34,2.34h20.26c1.29,0,2.34-1.05,2.34-2.34v-.19c0,1.29-1.05,2.34-2.34,2.34Z" fill-opacity=".2"/>
+                </g>
+              </g>
+              <g id="Clipped6" data-name="Clipped">
+                <g mask="url(#mask-61)">
+                  <path id="Path5" data-name="Path" d="M29.46,16.2c-1.29,0-2.34-1.05-2.34-2.34v.19c0,1.29,1.05,2.34,2.34,2.34h7.01v-.19h-7.01Z" fill="#263238" fill-opacity=".1"/>
+                </g>
+              </g>
+            </g>
+            <path id="Path6" data-name="Path" d="M27.12,6.84h-13.25c-1.29,0-2.34,1.05-2.34,2.34v29.62c0,1.29,1.05,2.34,2.34,2.34h20.26c1.29,0,2.34-1.05,2.34-2.34v-22.6l-9.35-9.35Z" fill="url(#radial-gradient)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

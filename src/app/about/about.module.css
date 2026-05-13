@@ -1,0 +1,352 @@
+/* ── Hero section ── */
+.section {
+  padding: 80px 60px 100px;
+}
+
+.inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: 600;
+  color: #1a1a1a;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin: 0;
+  max-width: 700px;
+}
+
+.lead {
+  font-size: 17px;
+  color: #777;
+  line-height: 1.7;
+  max-width: 620px;
+  margin: 0;
+}
+
+/* ── Team card ── */
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 16px;
+  max-width: 900px;
+}
+
+.card {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 20px;
+  padding: 28px 28px;
+  text-align: left;
+  width: 100%;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.avatarPlaceholder {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #888;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0 0 4px;
+}
+
+.role {
+  font-size: 13px;
+  color: #ff5d02;
+  font-weight: 500;
+  margin: 0 0 12px;
+}
+
+.bio {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.7;
+  margin: 0 0 14px;
+}
+
+.linkedIn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.linkedIn:hover {
+  color: #ff5d02;
+}
+
+/* ── Values section ── */
+.valuesSection {
+  padding: 80px 60px 100px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+/* ── Value cards ── */
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.valueCard {
+  background: #f5f5f5;
+  border-radius: 30px;
+  border: 5px solid #ffffff;
+  box-shadow: 0px 3px 8px #00000029;
+  padding: 28px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #1a1a1a;
+}
+
+.valueCardOrange {
+  background: #ff5d02;
+  color: #fff;
+}
+
+.valueCardDesc {
+  font-size: 14px;
+  line-height: 1.65;
+  margin: 0;
+  flex: 1;
+}
+
+.valueCardLine {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  margin: 0;
+}
+
+.valueCardOrange .valueCardLine {
+  border-top-color: rgba(255, 255, 255, 0.3);
+}
+
+.valueCardTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ── Story section ── */
+.storySection {
+  padding: 80px 60px 100px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.storyInner {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.storyBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.storyTitleRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.storyNum {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff5d02;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.storyHeading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.storyText {
+  font-size: 14px;
+  color: #888;
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* ── CTA section ── */
+.ctaSection {
+  padding: 80px 60px 100px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.ctaInner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.ctaHeading {
+  font-size: 38px;
+  font-weight: 500;
+  color: #1a1a1a;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.ctaSubtitle {
+  font-size: 15px;
+  color: #888;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.ctaBtns {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  background: #ff5d02;
+  color: #fff;
+  font-size: 14.5px;
+  font-weight: 600;
+  padding: 13px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.ctaPrimary:hover { opacity: 0.88; }
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  color: #1a1a1a;
+  font-size: 14.5px;
+  font-weight: 500;
+  padding: 13px 32px;
+  border-radius: 10px;
+  border: 1.5px solid #e0e0e0;
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+
+.ctaSecondary:hover { border-color: #bbb; }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .section {
+    padding: 60px 24px 80px;
+  }
+  .storySection,
+  .ctaSection {
+    padding: 60px 24px 80px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+  .storyGrid {
+    grid-template-columns: 1fr;
+  }
+  .ctaHeading {
+    font-size: 28px;
+  }
+  .valuesSection {
+    padding: 60px 24px 80px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+  .heading {
+    font-size: 34px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 28px;
+  }
+  .valuesHeading {
+    font-size: 44px;
+  }
+  .valuesGrid {
+    grid-template-columns: 1fr;
+  }
+  .valueCardOrange {
+    grid-column: auto;
+  }
+}

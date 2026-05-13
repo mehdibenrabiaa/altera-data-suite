@@ -1,0 +1,47 @@
+.section {
+  padding: 80px 60px;
+}
+
+.list {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.list :global(.ant-collapse-item) {
+  background: #fff;
+  border: 1px solid #ebebeb !important;
+  border-radius: 16px !important;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.list :global(.ant-collapse-header) {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a1a1a !important;
+  padding: 20px 24px !important;
+}
+
+.list :global(.ant-collapse-content-box) {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.7;
+  padding: 0 24px 20px !important;
+}
+
+.list :global(.ant-collapse-content) {
+  border-top: none !important;
+  background: #fff !important;
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 60px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 48px 16px;
+  }
+}

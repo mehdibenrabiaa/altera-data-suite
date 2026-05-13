@@ -1,0 +1,148 @@
+.section {
+  position: relative;
+  padding: 80px 100px 100px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 48px;
+  align-items: start;
+  background: #595959 !important;
+}
+
+/* ── Logo ── */
+.logo {
+  width: 72px;
+  height: auto;
+}
+
+/* ── Content ── */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── Badge ── */
+.badgeLeft {
+  justify-content: flex-start;
+}
+
+/* ── Left-align SectionHeading ── */
+.headingLeft {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.headingLeft h2 {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  color: #fff;
+}
+
+.headingLeft p {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* ── Info table ── */
+.table {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  padding: 22px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.rowLabel {
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.rowValue {
+  font-size: 17px;
+  color: #fff;
+}
+
+.link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 40px 64px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    gap: 28px;
+  }
+
+  .logo {
+    width: 56px;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .badgeLeft {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .headingLeft {
+    text-align: left;
+  }
+
+  .headingLeft h2 {
+    text-align: left;
+  }
+
+  .headingLeft p {
+    text-align: justify;
+    text-align-last: left;
+  }
+
+  .rowLabel {
+    font-size: 14px;
+  }
+
+  .rowValue {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 48px 24px 56px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .rowLabel {
+    font-size: 12px;
+    opacity: 0.65;
+  }
+}

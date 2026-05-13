@@ -1,0 +1,232 @@
+/* ── Root — single fixed anchor, grows upward ─── */
+
+.root {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+/* ── Chat panel ───────────────────────────────── */
+
+.panelWrap {
+  width: 360px;
+  max-height: calc(100vh - 160px);
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.13) !important;
+  overflow: hidden;
+  height: 460px;
+  max-height: calc(100vh - 160px);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ── Messages ─────────────────────────────────── */
+
+.messages {
+  flex: 1;
+  padding: 18px 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: #fafafa;
+  scrollbar-width: thin;
+  scrollbar-color: #e0e0e0 transparent;
+}
+
+.messages::-webkit-scrollbar {
+  width: 4px;
+}
+
+.messages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background: #e0e0e0;
+  border-radius: 99px;
+}
+
+.messages::-webkit-scrollbar-thumb:hover {
+  background: #c8c8c8;
+}
+
+.botRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.bubble {
+  background: #fff;
+  border: 1px solid #efefef;
+  border-radius: 4px 14px 14px 14px;
+  padding: 10px 14px;
+  max-width: 82%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* ── User messages ───────────────────────────── */
+
+.userRow {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.userBubble {
+  background: #ff5d02;
+  border-radius: 14px 4px 14px 14px;
+  padding: 10px 14px;
+  max-width: 82%;
+}
+
+/* ── Typing indicator ─────────────────────────── */
+
+.typingDots {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 0;
+}
+
+@keyframes bounce {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30%           { transform: translateY(-5px); opacity: 1; }
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #bbb;
+  animation: bounce 1.2s ease-in-out infinite;
+}
+
+.dot:nth-child(2) { animation-delay: 0.18s; }
+.dot:nth-child(3) { animation-delay: 0.36s; }
+
+/* ── Quick reply chips ────────────────────────── */
+
+.chips {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding-left: 36px;
+}
+
+/* ── Input area ───────────────────────────────── */
+
+.inputArea {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  border-top: 1px solid #f0f0f0;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+/* ── Responsive ──────────────────────────────── */
+
+@media (max-width: 480px) {
+  .root {
+    bottom: 16px;
+    right: 16px;
+    left: 16px;
+    align-items: stretch;
+  }
+
+  .panelWrap {
+    width: 100%;
+    max-height: calc(100vh - 130px);
+  }
+
+  .panel {
+    height: 100%;
+    max-height: calc(100vh - 130px);
+    border-radius: 16px !important;
+  }
+
+  .trigger {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+/* ── Trigger ──────────────────────────────────── */
+
+.trigger {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  flex-shrink: 0;
+}
+
+.trigger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.13);
+}
+
+.triggerIconWrap {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff5d02;
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  0%   { transform: scale(1);   opacity: 0.5; }
+  60%  { transform: scale(2);   opacity: 0; }
+  100% { transform: scale(2);   opacity: 0; }
+}
+
+.triggerPulse {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #ff5d02;
+  animation: pulse 1.8s ease-out infinite;
+}
+
+.triggerIcon {
+  position: relative;
+  z-index: 1;
+  font-size: 22px !important;
+  color: #ff5d02 !important;
+}
+
+.triggerText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+}

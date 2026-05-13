@@ -1,0 +1,132 @@
+.section {
+  padding: 120px 100px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 64px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ── Left text ── */
+.badgeLeft {
+  justify-content: flex-start !important;
+}
+
+@media (max-width: 960px) {
+  .badgeLeft {
+    justify-content: center !important;
+  }
+}
+
+.heading {
+  font-size: 42px;
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.15;
+  letter-spacing: -1px;
+  margin: 0 0 20px;
+}
+
+.subtitle {
+  font-size: 15.5px;
+  color: #777;
+  line-height: 1.7;
+  margin: 0 0 32px;
+  max-width: 400px;
+}
+
+.ctas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ctaPrimary {
+  display: inline-flex;
+  align-items: center;
+  background: #ff5d02;
+  color: #fff;
+  font-size: 14.5px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.ctaPrimary:hover {
+  opacity: 0.88;
+}
+
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  background: #fff;
+  color: #1a1a1a;
+  font-size: 14.5px;
+  font-weight: 500;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 1.5px solid #e0e0e0;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.ctaSecondary:hover {
+  border-color: #bbb;
+  color: #000;
+}
+
+/* ── Right preview ── */
+.preview {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 960px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .heading {
+    font-size: 34px;
+  }
+
+  .subtitle {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 60px 24px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .ctas {
+    flex-direction: column;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary {
+    justify-content: center;
+  }
+}

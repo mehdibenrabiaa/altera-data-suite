@@ -1,0 +1,103 @@
+.section {
+  padding: 80px 60px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 18px;
+  padding: 28px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition:
+    box-shadow 0.2s,
+    border-color 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  border-color: #e0dbd8;
+}
+
+.iconWrap {
+  width: 62px;
+  height: 62px;
+  border-radius: 18px;
+  background: #eaecf1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconWrap img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.cardTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.cardDesc {
+  font-size: 13.5px;
+  color: #888;
+  line-height: 1.65;
+  margin: 0;
+  flex: 1;
+}
+
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.cardLink:hover {
+  color: #ff5d02;
+}
+
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+    padding: 60px 24px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 48px 16px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+  }
+}

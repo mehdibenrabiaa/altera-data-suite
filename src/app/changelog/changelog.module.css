@@ -1,0 +1,138 @@
+.page {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 80px 24px 120px;
+}
+
+/* ── Hero ── */
+.hero {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.heroHeading {
+  font-size: 48px;
+  font-weight: 600;
+  color: #1a1a1a;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+  margin: 0 0 16px;
+}
+
+.heroSubtitle {
+  font-size: 17px;
+  color: #888;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── Entry list ── */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 40px;
+  padding: 48px 0;
+  border-top: 1px solid #ebebeb;
+}
+
+.entry:last-child {
+  border-bottom: 1px solid #ebebeb;
+}
+
+/* ── Meta (left column) ── */
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 2px;
+}
+
+.versionRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.version {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+
+.latestBadge {
+  font-size: 11px;
+  font-weight: 600;
+  color: #ff5d02;
+  background: #fff4ef;
+  border: 1px solid #ffd4bc;
+  border-radius: 999px;
+  padding: 2px 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.date {
+  font-size: 13.5px;
+  color: #aaa;
+  font-weight: 500;
+}
+
+/* ── Changes (right column) ── */
+.changes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.change {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.tag {
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.changeText {
+  font-size: 15px;
+  color: #333;
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .heroHeading {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 56px 20px 80px;
+  }
+
+  .heroHeading {
+    font-size: 30px;
+  }
+}

@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import { useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
 import { Button, Card, Divider, Flex, Tag, Typography } from "antd";
 import {
   CheckCircleFilled,
@@ -19,6 +20,10 @@ interface PricingCardProps {
   btnLabel?: string;
   badge?: string;
   color?: string;
+  letsTalk?: string;
+  freeLabel?: string;
+  includesLabel?: string;
+  href?: string;
 }
 
 export default function PricingCard({
@@ -30,13 +35,18 @@ export default function PricingCard({
   btnLabel = "Subscribe Now",
   badge,
   color = "#ff5d02",
+  letsTalk = "Let's Talk",
+  freeLabel = "Free",
+  includesLabel = "Includes",
+  href,
 }: PricingCardProps) {
   const [hovered, setHovered] = useState(false);
 
   return (
-    <article style={{ width: 300 }}>
+    <article style={{ width: 300, display: "flex", flexDirection: "column" }}>
       <Card
         variant="borderless"
+        styles={{ body: { display: "flex", flexDirection: "column", height: "100%", boxSizing: "border-box" } }}
         style={{
           width: "100%",
           borderRadius: 25,
@@ -44,36 +54,84 @@ export default function PricingCard({
           position: "relative",
           zIndex: 2,
           marginBottom: -20,
+          flex: 1,
         }}
       >
-        <Flex align="center" justify="space-between">
-          <Title
-            level={5}
-            style={{ margin: 0, fontSize: 18, fontWeight: 600, color: "#000" }}
-          >
-            {title}
-          </Title>
-
-          {badge && (
-            <Tag
-              style={{
-                borderRadius: 9,
-                fontSize: 11,
-                background: "transparent",
-                color: color,
-                borderColor: "#d9d9d9",
-                boxShadow: "none",
-                padding: "2px 10px",
-              }}
+        {/* top section grows to push the divider to the same level across all cards */}
+        <div style={{ flex: 1 }}>
+          <Flex align="center" justify="space-between">
+            <Title
+              level={5}
+              style={{ margin: 0, fontSize: 18, fontWeight: 600, color: "#000" }}
             >
-              <StarFilled style={{ fontSize: 11, color }} /> {badge}
-            </Tag>
-          )}
-        </Flex>
+              {title}
+            </Title>
 
-        <Flex align="flex-end" style={{ padding: "15px 0", paddingBottom: 0 }}>
-          {price !== undefined ? (
-            <>
+            {badge && (
+              <Tag
+                style={{
+                  borderRadius: 9,
+                  fontSize: 11,
+                  background: "transparent",
+                  color: color,
+                  borderColor: "#d9d9d9",
+                  boxShadow: "none",
+                  padding: "2px 10px",
+                }}
+              >
+                <StarFilled style={{ fontSize: 11, color }} /> {badge}
+              </Tag>
+            )}
+          </Flex>
+
+          <Flex align="flex-end" style={{ padding: "15px 0", paddingBottom: 0, overflow: "hidden" }}>
+            {price !== undefined ? (
+              price === 0 ? (
+                <span
+                  style={{
+                    fontSize: 40,
+                    fontWeight: 600,
+                    lineHeight: 1,
+                    color: "#000",
+                  }}
+                >
+                  {freeLabel}
+                </span>
+              ) : (
+              <>
+                <AnimatePresence mode="popLayout" initial={false}>
+                  <motion.span
+                    key={price}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.25, ease: "easeOut" }}
+                    style={{
+                      fontSize: 40,
+                      fontWeight: 600,
+                      lineHeight: 1,
+                      color: "#000",
+                      display: "inline-block",
+                    }}
+                  >
+                    ${price}
+                  </motion.span>
+                </AnimatePresence>
+                <AnimatePresence mode="popLayout" initial={false}>
+                  <motion.span
+                    key={period}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -20 }}
+                    transition={{ duration: 0.25, ease: "easeOut" }}
+                    style={{ display: "inline-block" }}
+                  >
+                    <Text strong>{period}</Text>
+                  </motion.span>
+                </AnimatePresence>
+              </>
+              )
+            ) : (
               <span
                 style={{
                   fontSize: 40,
@@ -82,34 +140,22 @@ export default function PricingCard({
                   color: "#000",
                 }}
               >
-                ${price}
+                {letsTalk}
               </span>
-              <Text strong>{period}</Text>
-            </>
-          ) : (
-            <span
-              style={{
-                fontSize: 40,
-                fontWeight: 600,
-                lineHeight: 1,
-                color: "#000",
-              }}
-            >
-              Let's Talk
-            </span>
-          )}
-        </Flex>
+            )}
+          </Flex>
 
-        {subtitle && (
-          <Text type="secondary" style={{ fontSize: 12, fontWeight: 500 }}>
-            {subtitle}
-          </Text>
-        )}
+          {subtitle && (
+            <Text type="secondary" style={{ fontSize: 12, fontWeight: 500 }}>
+              {subtitle}
+            </Text>
+          )}
+        </div>
 
         <Divider style={{ margin: "20px 0" }} />
 
         <Text strong style={{ display: "block", marginBottom: 10 }}>
-          Includes
+          {includesLabel}
         </Text>
         <ul
           style={{
@@ -134,6 +180,7 @@ export default function PricingCard({
 
       <Button
         block
+        href={href}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         style={{

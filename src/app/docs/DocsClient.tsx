@@ -21,7 +21,75 @@ import { WIDGET_DOCS } from "@/data/widgetDocs";
 
 const { Title, Text, Paragraph } = Typography;
 
-export default function DocsClient() {
+interface DocsShortcuts {
+  toggleHand: string;
+  toggleSelection: string;
+  toggleGuide: string;
+  convert: string;
+  openPdf: string;
+  zoomIn: string;
+  zoomOut: string;
+  fitPage: string;
+  scrollZoomIn: string;
+  scrollZoomOut: string;
+}
+
+interface DocsT {
+  overview: string;
+  bestFor: string;
+  howToUse: string;
+  input: string;
+  output: string;
+  tipsNotes: string;
+  toolbarRef: string;
+  keyboardShortcuts: string;
+  watchTutorials: string;
+  viewPlaylist: string;
+  handTool: string;
+  handToolDesc: string;
+  selectionTool: string;
+  selectionToolDesc: string;
+  pageNav: string;
+  pageNavDesc: string;
+  shortcuts: DocsShortcuts;
+}
+
+interface Props {
+  t?: DocsT;
+}
+
+const DEFAULT_T: DocsT = {
+  overview: "Overview",
+  bestFor: "Best For",
+  howToUse: "How to Use",
+  input: "Input",
+  output: "Output",
+  tipsNotes: "Tips & Notes",
+  toolbarRef: "Toolbar Reference",
+  keyboardShortcuts: "Keyboard Shortcuts",
+  watchTutorials: "Watch Video Tutorials",
+  viewPlaylist: "View playlist on YouTube",
+  handTool: "Hand Tool",
+  handToolDesc: "When toggled — click and drag anywhere on the canvas to pan across the document.",
+  selectionTool: "Selection Tool",
+  selectionToolDesc: "Click an existing annotation to select, reposition, or resize it.",
+  pageNav: "Page Navigation",
+  pageNavDesc: "Step through pages. The input shows your current page out of the total — you can also type a page number directly.",
+  shortcuts: {
+    toggleHand: "Toggle Hand tool",
+    toggleSelection: "Toggle Selection tool",
+    toggleGuide: "Toggle Guide tool (column delimiter)",
+    convert: "Convert",
+    openPdf: "Open PDF",
+    zoomIn: "Zoom in",
+    zoomOut: "Zoom out",
+    fitPage: "Fit page to window",
+    scrollZoomIn: "Zoom in",
+    scrollZoomOut: "Zoom out",
+  },
+};
+
+export default function DocsClient({ t = DEFAULT_T }: Props) {
   const [activeId, setActiveId] = useState(WIDGET_DOCS[0].id);
   const active = WIDGET_DOCS.find((w) => w.id === activeId)!;
   const activeIndex = WIDGET_DOCS.findIndex((w) => w.id === activeId);
@@ -71,6 +139,19 @@ export default function DocsClient() {
       <Text style={{ fontSize: 13.5, color: "#666" }}>{step.detail}</Text>
     ),
   }));
+
+  const SHORTCUT_ROWS = [
+    { keys: ["H"],             desc: t.shortcuts.toggleHand },
+    { keys: ["V"],             desc: t.shortcuts.toggleSelection },
+    { keys: ["G"],             desc: t.shortcuts.toggleGuide },
+    { keys: ["Ctrl", "↵ Enter"], desc: t.shortcuts.convert },
+    { keys: ["Ctrl", "O"],    desc: t.shortcuts.openPdf },
+    { keys: ["Ctrl", "+"],    desc: t.shortcuts.zoomIn },
+    { keys: ["Ctrl", "−"],    desc: t.shortcuts.zoomOut },
+    { keys: ["Ctrl", "0"],    desc: t.shortcuts.fitPage },
+    { keys: ["Ctrl", "Scroll ↑"], desc: t.shortcuts.scrollZoomIn },
+    { keys: ["Ctrl", "Scroll ↓"], desc: t.shortcuts.scrollZoomOut },
+  ];
 
   return (
     <div className={styles.layout}>
@@ -126,11 +207,7 @@ export default function DocsClient() {
 
             <div className={styles.sections}>
               {/* Overview */}
-              <Card
-                title="Overview"
-                variant="borderless"
-                className={styles.card}
-              >
+              <Card title={t.overview} variant="borderless" className={styles.card}>
                 <Paragraph
                   style={{
                     fontSize: 14.5,
@@ -144,11 +221,7 @@ export default function DocsClient() {
               </Card>
 
               {/* Best For */}
-              <Card
-                title="Best For"
-                variant="borderless"
-                className={styles.card}
-              >
+              <Card title={t.bestFor} variant="borderless" className={styles.card}>
                 <Flex vertical gap={12}>
                   {active.useCases.map((uc) => (
                     <Text key={uc} style={{ fontSize: 14.5, color: "#444" }}>
@@ -159,11 +232,7 @@ export default function DocsClient() {
               </Card>
 
               {/* How to Use */}
-              <Card
-                title="How to Use"
-                variant="borderless"
-                className={styles.card}
-              >
+              <Card title={t.howToUse} variant="borderless" className={styles.card}>
                 <Steps orientation="vertical" current={-1} items={stepItems} />
               </Card>
 
@@ -171,7 +240,7 @@ export default function DocsClient() {
               <Card
                 title={
                   <Flex align="center" gap={8}>
-                    Input
+                    {t.input}
                     <Tag color="default">{active.inputType}</Tag>
                   </Flex>
                 }
@@ -191,7 +260,7 @@ export default function DocsClient() {
               <Card
                 title={
                   <Flex align="center" gap={8}>
-                    Output
+                    {t.output}
                     <Tag color="default">{active.outputType}</Tag>
                   </Flex>
                 }
@@ -210,11 +279,7 @@ export default function DocsClient() {
               {/* Toolbar Reference & Keyboard Shortcuts — PDF Converter only */}
               {active.id === "pdf_converter" && (
                 <>
-                  <Card
-                    title="Toolbar Reference"
-                    variant="borderless"
-                    className={styles.card}
-                  >
+                  <Card title={t.toolbarRef} variant="borderless" className={styles.card}>
                     <Flex vertical gap={0}>
                       {/* Hand Tool */}
                       <div className={styles.toolRow}>
@@ -228,11 +293,10 @@ export default function DocsClient() {
                         </div>
                         <Flex vertical gap={3}>
                           <Text strong style={{ fontSize: 14 }}>
-                            Hand Tool
+                            {t.handTool}
                           </Text>
                           <Text style={{ fontSize: 13.5, color: "#666" }}>
-                            When toggled — click and drag anywhere on the canvas
-                            to pan across the document.
+                            {t.handToolDesc}
                           </Text>
                         </Flex>
                       </div>
@@ -251,11 +315,10 @@ export default function DocsClient() {
                         </div>
                         <Flex vertical gap={3}>
                           <Text strong style={{ fontSize: 14 }}>
-                            Selection Tool
+                            {t.selectionTool}
                           </Text>
                           <Text style={{ fontSize: 13.5, color: "#666" }}>
-                            Click an existing annotation to select, reposition,
-                            or resize it.
+                            {t.selectionToolDesc}
                           </Text>
                         </Flex>
                       </div>
@@ -296,12 +359,10 @@ export default function DocsClient() {
                         </Flex>
                         <Flex vertical gap={3}>
                           <Text strong style={{ fontSize: 14 }}>
-                            Page Navigation
+                            {t.pageNav}
                           </Text>
                           <Text style={{ fontSize: 13.5, color: "#666" }}>
-                            Step through pages. The input shows your current
-                            page out of the total — you can also type a page
-                            number directly.
+                            {t.pageNavDesc}
                           </Text>
                         </Flex>
                       </div>
@@ -309,31 +370,13 @@ export default function DocsClient() {
                   </Card>
 
                   {/* Keyboard Shortcuts */}
-                  <Card
-                    title="Keyboard Shortcuts"
-                    variant="borderless"
-                    className={styles.card}
-                  >
+                  <Card title={t.keyboardShortcuts} variant="borderless" className={styles.card}>
                     <div className={styles.shortcutsGrid}>
-                      {[
-                        { keys: ["H"], desc: "Toggle Hand tool" },
-                        { keys: ["V"], desc: "Toggle Selection tool" },
-                        {
-                          keys: ["G"],
-                          desc: "Toggle Guide tool (column delimiter)",
-                        },
-                        { keys: ["Ctrl", "↵ Enter"], desc: "Convert" },
-                        { keys: ["Ctrl", "O"], desc: "Open PDF" },
-                        { keys: ["Ctrl", "+"], desc: "Zoom in" },
-                        { keys: ["Ctrl", "−"], desc: "Zoom out" },
-                        { keys: ["Ctrl", "0"], desc: "Fit page to window" },
-                        { keys: ["Ctrl", "Scroll ↑"], desc: "Zoom in" },
-                        { keys: ["Ctrl", "Scroll ↓"], desc: "Zoom out" },
-                      ].map(({ keys, desc }, i) => (
+                      {SHORTCUT_ROWS.map(({ keys, desc }, i) => (
                         <div key={i} className={styles.shortcutRow}>
                           <Flex align="center" gap={4}>
-                            {keys.map((k, i) => (
-                              <span key={i} className={styles.kbd}>
+                            {keys.map((k, j) => (
+                              <span key={j} className={styles.kbd}>
                                 {k}
                               </span>
                             ))}
@@ -349,11 +392,7 @@ export default function DocsClient() {
               )}
 
               {/* Tips */}
-              <Card
-                title="Tips &amp; Notes"
-                variant="borderless"
-                className={styles.card}
-              >
+              <Card title={t.tipsNotes} variant="borderless" className={styles.card}>
                 <Flex vertical gap={10}>
                   {active.tips.map((tip, i) => (
                     <Alert
@@ -440,10 +479,10 @@ export default function DocsClient() {
         </div>
         <Flex vertical gap={2}>
           <Text strong style={{ fontSize: 13, color: "#111", lineHeight: 1.4 }}>
-            Watch Video Tutorials
+            {t.watchTutorials}
           </Text>
           <Text style={{ fontSize: 11.5, color: "#999" }}>
-            View playlist on YouTube
+            {t.viewPlaylist}
           </Text>
         </Flex>
       </motion.a>

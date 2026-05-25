@@ -23,7 +23,10 @@ export default function AboutPage() {
             extracting structured data from PDFs shouldn&apos;t require hours of manual work
             or complex scripts. So we built a tool that does it in seconds.
           </p>
-          <TeamCards />
+          <TeamCards t={[
+            { role: "Co-Founder & Developer",       bio: "Mehdi built Altera to make data extraction effortless inside Orange Data Mining. Designed for speed, scale, and clarity — every widget and feature reflects real workflows and real pain points." },
+            { role: "Co-Founder & Product Designer", bio: "Rayan shapes the look, feel, and experience of Altera. From the first wireframe to the final pixel, he ensures every interaction is intuitive, clean, and purposeful." },
+          ]} />
         </div>
       </section>
 
@@ -96,7 +99,7 @@ export default function AboutPage() {
           <p className={styles.ctaSubtitle}>
             Watch the demo to see how Altera handles real PDFs, or explore the pricing to find the plan that fits.
           </p>
-          <AboutCTAButtons />
+          <AboutCTAButtons lang="en" watchDemo="Watch Demo" seePricing="View Pricing" />
         </div>
       </section>
 

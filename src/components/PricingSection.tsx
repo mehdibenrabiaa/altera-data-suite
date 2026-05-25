@@ -1,150 +1,120 @@
-﻿"use client";
+"use client";
 
-import { Flex } from "antd";
+import { useState } from "react";
+import { Segmented, Typography } from "antd";
 import styles from "./PricingSection.module.css";
 import PricingCard from "./PricingCard";
 import SectionBadge from "./SectionBadge";
 import SectionHeading from "./SectionHeading";
 
-const PLANS = [
-  {
-    name: "Free Trial",
-    price: 0,
-    subtitle: "All-In-One Solution for a short period",
-    accentColor: "#595959",
-    popular: false,
-    features: [
-      {
-        title: "Limited PDF Processing",
-        desc: "Extract up to 500 PDF pages per month with full accuracy.",
-      },
-      {
-        title: "AI Features Not Included",
-        desc: "Create and run up to 5 automated parsing workflows.",
-      },
-      {
-        title: "15 Days Trial Period",
-        desc: "Create and run up to 5 automated parsing workflows.",
-      },
-      {
-        title: "10+ Widgets",
-        desc: "Export your structured data to CSV and Excel formats.",
-      },
-      {
-        title: "Minimal Support",
-        desc: "Get assistance via email with a 48-hour response time.",
-      },
-      {
-        title: "Single Machine License",
-        desc: "Use on one device with full feature access.",
-      },
-      {
-        title: "Free Updates & Improvements",
-        desc: "Join our community forum for tips, templates, and peer support.",
-      },
-    ],
-  },
-  {
-    name: "Professional",
-    price: 99,
-    subtitle: "All-In-One Solution for PDF Parsing",
-    accentColor: "#FD4728",
-    popular: true,
-    features: [
-      {
-        title: "Unlimited PDF Processing",
-        desc: "Extract up to 500 PDF pages per month with full accuracy.",
-      },
-      {
-        title: "AI-Powered Smart Tools",
-        desc: "Create and run up to 5 automated parsing workflows.",
-      },
-      {
-        title: "1 year license subscription",
-        desc: "Create and run up to 5 automated parsing workflows.",
-      },
-      {
-        title: "10+ Widgets",
-        desc: "Export your structured data to CSV and Excel formats.",
-      },
-      {
-        title: "Email Support",
-        desc: "Get assistance via email with a 48-hour response time.",
-      },
-      {
-        title: "Single Machine License",
-        desc: "Use on one device with full feature access.",
-      },
-      {
-        title: "Free Updates & Improvements",
-        desc: "Join our community forum for tips, templates, and peer support.",
-      },
-    ],
-  },
-  {
-    name: "Enterprise",
-    subtitle: "All Features + Tailored Prices",
-    accentColor: "#fa541c",
-    popular: false,
-    features: [
-      {
-        title: "Unlimited PDF Processing",
-        desc: "No caps — process as many PDF pages as your business requires.",
-      },
-      {
-        title: "AI-Powered Smart Tools",
-        desc: "Advanced automation and intelligent parsing workflows built into your system.",
-      },
-      {
-        title: "Custom Pricing",
-        desc: "Pricing tailored to your license volume, usage, and contract duration.",
-      },
-      {
-        title: "10+ Widgets",
-        desc: "REST API for seamless integration with your internal tools and workflows.",
-      },
-      {
-        title: "Video Call Assistance",
-        desc: "Personal setup, training sessions, and guided implementation for your team.",
-      },
-      {
-        title: "Volume Licensing",
-        desc: "If built-in widgets are not enough, we design and deliver custom widgets tailored to your exact workflow needs.",
-      },
-      {
-        title: "Free Updates & Improvements",
-        desc: "Continuous access to new features, improvements, and platform updates.",
-      },
-    ],
-  },
+const { Text } = Typography;
+
+interface PricingPlan {
+  name: string;
+  subtitle: string;
+  features: string[];
+}
+
+interface PricingT {
+  badgeLabel: string;
+  badgeText: string;
+  heading: string;
+  subtitle: string;
+  popularBadge: string;
+  getBtn: string;
+  period: string;
+  billingMonthly: string;
+  billingYearly: string;
+  periodMonthly: string;
+  discountNote: string;
+  letsTalk: string;
+  includesLabel: string;
+  plans: PricingPlan[];
+}
+
+interface Props {
+  t?: PricingT;
+  lang?: string;
+}
+
+const DEFAULT_T: PricingT = {
+  badgeLabel:     "Pricing",
+  badgeText:      "Simple Plans, Powerful Features",
+  heading:        "Pick the plan that fits your workflow.",
+  subtitle:       "Start Free. Upgrade When It Delivers Value",
+  popularBadge:   "POPULAR",
+  getBtn:         "Get",
+  period:         "/year",
+  billingMonthly: "Monthly",
+  billingYearly:  "Yearly",
+  periodMonthly:  "/month",
+  discountNote:   "Annual billing saves you 10%",
+  letsTalk:       "Let's Talk",
+  includesLabel:  "Includes",
+  plans: [
+    { name: "Free Trial",   subtitle: "All-In-One Solution for a short period",  features: ["Limited PDF Processing","AI Features Not Included","15 Days Trial Period","10+ Widgets","Minimal Support","Single Machine License","Free Updates & Improvements"] },
+    { name: "Professional", subtitle: "All-In-One Solution for PDF Parsing",      features: ["Unlimited PDF Processing","AI-Powered Smart Tools","1 year license subscription","10+ Widgets","Email Support","Single Machine License","Free Updates & Improvements"] },
+    { name: "Enterprise",   subtitle: "All Features + Tailored Prices",           features: ["Unlimited PDF Processing","AI-Powered Smart Tools","Custom Pricing","10+ Widgets","Video Call Assistance","Volume Licensing","Free Updates & Improvements"] },
+  ],
+};
+
+const MONTHLY_PRICE = 99;
+const YEARLY_PRICE  = Math.round(MONTHLY_PRICE * 12 * 0.9); // 1069
+
+const PLAN_META = [
+  { priceMonthly: 0,             priceYearly: 0,           popular: false, color: "#595959", hrefSlug: "docs"  },
+  { priceMonthly: MONTHLY_PRICE, priceYearly: YEARLY_PRICE, popular: true,  color: "#FD4728", hrefSlug: undefined },
+  { priceMonthly: undefined,     priceYearly: undefined,   popular: false, color: "#fa541c", hrefSlug: "about" },
 ];
 
-export default function PricingSection() {
+export default function PricingSection({ t = DEFAULT_T, lang = "en" }: Props) {
+  const [billing, setBilling] = useState<"monthly" | "yearly">("monthly");
+  const isYearly = billing === "yearly";
+
   return (
     <section className={styles.section}>
-      <SectionBadge label="Pricing" text="Simple Plans, Powerful Features" />
-      <SectionHeading
-        heading="Pick the plan that fits your workflow."
-        subtitle="Start Free. Upgrade When It Delivers Value"
-        subtitleMaxWidth={420}
-      />
+      <SectionBadge label={t.badgeLabel} text={t.badgeText} />
+      <SectionHeading heading={t.heading} subtitle={t.subtitle} subtitleMaxWidth={420} />
 
-      <Flex justify="center" gap={24} wrap>
-        {PLANS.map((plan) => (
-          <PricingCard
-            key={plan.name}
-            title={plan.name}
-            price={
-              "price" in plan ? (plan as { price: number }).price : undefined
-            }
-            subtitle={plan.subtitle}
-            features={plan.features.map((f) => f.title)}
-            badge={plan.popular ? "POPULAR" : undefined}
-            color={plan.accentColor}
-            btnLabel={`Get ${plan.name}`}
-          />
-        ))}
-      </Flex>
+      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 12, marginBottom: 36 }}>
+        <Segmented
+          value={billing}
+          onChange={(v) => setBilling(v as "monthly" | "yearly")}
+          options={[
+            { label: t.billingMonthly, value: "monthly" },
+            { label: t.billingYearly,  value: "yearly"  },
+          ]}
+          style={{ fontSize: 14, padding: "3px 4px" }}
+        />
+        <Text style={{ fontSize: 13, color: "#ff5d02", fontWeight: 500 }}>
+          {t.discountNote}
+        </Text>
+      </div>
+
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "stretch", gap: 24, flexWrap: "wrap" }}>
+        {t.plans.map((plan, i) => {
+          const meta = PLAN_META[i];
+          const price  = isYearly ? meta.priceYearly  : meta.priceMonthly;
+          const period = isYearly ? t.period           : t.periodMonthly;
+          const href   = meta.hrefSlug ? `/${lang}/${meta.hrefSlug}` : undefined;
+          return (
+            <PricingCard
+              key={plan.name}
+              title={plan.name}
+              price={price}
+              period={period}
+              subtitle={plan.subtitle}
+              features={plan.features}
+              badge={meta.popular ? t.popularBadge : undefined}
+              color={meta.color}
+              btnLabel={price !== undefined ? `${t.getBtn} ${plan.name}` : t.letsTalk}
+              letsTalk={t.letsTalk}
+              includesLabel={t.includesLabel}
+              href={href}
+            />
+          );
+        })}
+      </div>
     </section>
   );
 }

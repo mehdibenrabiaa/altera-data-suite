@@ -2,8 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { CloseOutlined, SendOutlined } from "@ant-design/icons";
-import Image from "next/image";
+import { CloseOutlined, RobotOutlined, SendOutlined } from "@ant-design/icons";
 import { Avatar, Button, Card, Input, Typography } from "antd";
 import styles from "./ChatBot.module.css";
 
@@ -11,63 +10,97 @@ const { Text } = Typography;
 
 type Message = { role: "bot" | "user"; text: string };
 
-const WELCOME = "Hi! I'm Altera's assistant. Ask me anything about the app, its widgets, or how to get started.";
-const FOLLOW_UP = "Here are some things I can help with:";
+interface QuickReply {
+  question: string;
+  answer: string;
+}
 
-const QUICK_REPLIES = [
-  "How does PDF Converter work?",
-  "What widgets are available?",
-  "Is there a free trial?",
-];
+interface ChatBotT {
+  triggerTitle: string;
+  triggerSubtitle: string;
+  panelTitle: string;
+  panelSubtitle: string;
+  placeholder: string;
+  welcome: string;
+  followUp: string;
+  fallback: string;
+  quickReplies: QuickReply[];
+}
 
-const RESPONSES: Record<string, string> = {
-  "How does PDF Converter work?":
-    "Open your PDF, draw rectangles over the data you want to extract, optionally place column guides, then click Convert. You get a clean structured table ready for further processing.",
-  "What widgets are available?":
-    "Altera includes 9 widgets: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates, and Cleaner.",
-  "Is there a free trial?":
-    "Yes! You can get started for free. Head to the Pricing page to see what's included in each plan.",
+interface Props {
+  t?: ChatBotT;
+}
+
+const DEFAULT_T: ChatBotT = {
+  triggerTitle:    "Ask Altera",
+  triggerSubtitle: "AI-powered assistant",
+  panelTitle:      "Altera Assistant",
+  panelSubtitle:   "Ask me anything",
+  placeholder:     "Ask a question…",
+  welcome:         "Hi! I'm Altera's assistant. Ask me anything about the app, its widgets, or how to get started.",
+  followUp:        "Here are some things I can help with:",
+  fallback:        "Great question! For more details, check the Docs page or reach out to our team directly.",
+  quickReplies: [
+    { question: "How does PDF Converter work?",  answer: "Open your PDF, draw rectangles over the data you want to extract, optionally place column guides, then click Convert. You get a clean structured table ready for further processing." },
+    { question: "What widgets are available?",   answer: "Altera includes 9 widgets: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates, and Cleaner." },
+    { question: "Is there a free trial?",        answer: "Yes! You can get started for free. Head to the Pricing page to see what's included in each plan." },
+  ],
 };
 
-const FALLBACK = "Great question! For more details, check the Docs page or reach out to our team directly.";
-
-export default function ChatBot() {
+export default function ChatBot({ t = DEFAULT_T }: Props) {
   const [open, setOpen] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([{ role: "bot", text: WELCOME }]);
+  const [messages, setMessages] = useState<Message[]>([{ role: "bot", text: t.welcome }]);
   const [typing, setTyping] = useState(false);
   const [showQuickReplies, setShowQuickReplies] = useState(false);
   const [input, setInput] = useState("");
   const hasAutoPlayed = useRef(false);
   const bottomRef = useRef<HTMLDivElement>(null);
 
-  /* Auto-play once on first open */
   useEffect(() => {
     if (!open || hasAutoPlayed.current) return;
     hasAutoPlayed.current = true;
     const t1 = setTimeout(() => setTyping(true), 900);
     const t2 = setTimeout(() => {
       setTyping(false);
-      setMessages((prev) => [...prev, { role: "bot", text: FOLLOW_UP }]);
+      setMessages((prev) => [...prev, { role: "bot", text: t.followUp }]);
       setShowQuickReplies(true);
     }, 2400);
     return () => { clearTimeout(t1); clearTimeout(t2); };
-  }, [open]);
+  }, [open, t.followUp]);
 
-  /* Scroll to bottom on new messages */
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, typing]);
 
-  const send = (text: string) => {
-    if (!text.trim()) return;
+  const send = async (text: string) => {
+    if (!text.trim() || typing) return;
     setShowQuickReplies(false);
     setInput("");
+
+    // Capture history before updating state
+    const history = messages.map((m) => ({
+      role: m.role === "bot" ? "assistant" : "user",
+      content: m.text,
+    }));
+
     setMessages((prev) => [...prev, { role: "user", text }]);
     setTyping(true);
-    setTimeout(() => {
+
+    try {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
+      const res = await fetch(`${apiUrl}/chat`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: text, history }),
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      setMessages((prev) => [...prev, { role: "bot", text: data.reply }]);
+    } catch {
+      setMessages((prev) => [...prev, { role: "bot", text: t.fallback }]);
+    } finally {
       setTyping(false);
-      setMessages((prev) => [...prev, { role: "bot", text: RESPONSES[text] ?? FALLBACK }]);
-    }, 1400);
+    }
   };
 
   return (
@@ -88,15 +121,15 @@ export default function ChatBot() {
               title={
                 <div className={styles.cardHeader}>
                   <Avatar
-                    src="/SVG/digibot.svg"
+                    icon={<RobotOutlined />}
                     style={{ background: "rgba(255,255,255,0.22)", flexShrink: 0 }}
                   />
                   <div style={{ display: "flex", flexDirection: "column", gap: 1 }}>
                     <Text strong style={{ color: "#fff", fontSize: 14, lineHeight: 1.2 }}>
-                      Altera Assistant
+                      {t.panelTitle}
                     </Text>
                     <Text style={{ color: "rgba(255,255,255,0.72)", fontSize: 11.5, lineHeight: 1.2 }}>
-                      Ask me anything
+                      {t.panelSubtitle}
                     </Text>
                   </div>
                 </div>
@@ -130,7 +163,7 @@ export default function ChatBot() {
                       className={msg.role === "user" ? styles.userRow : styles.botRow}
                     >
                       {msg.role === "bot" && (
-                        <Avatar size={28} src="/SVG/digibot.svg" style={{ background: "#ff5d02", flexShrink: 0 }} />
+                        <Avatar size={28} icon={<RobotOutlined />} style={{ background: "#ff5d02", flexShrink: 0 }} />
                       )}
                       <div className={msg.role === "user" ? styles.userBubble : styles.bubble}>
                         <Text style={{ fontSize: 13.5, color: msg.role === "user" ? "#fff" : "#333" }}>
@@ -150,7 +183,7 @@ export default function ChatBot() {
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.18 }}
                     >
-                      <Avatar size={28} src="/SVG/digibot.svg" style={{ background: "#ff5d02", flexShrink: 0 }} />
+                      <Avatar size={28} icon={<RobotOutlined />} style={{ background: "#ff5d02", flexShrink: 0 }} />
                       <div className={styles.bubble}>
                         <div className={styles.typingDots}>
                           <span className={styles.dot} />
@@ -170,14 +203,14 @@ export default function ChatBot() {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.18 }}
                     >
-                      {QUICK_REPLIES.map((q) => (
+                      {t.quickReplies.map((qr) => (
                         <Button
-                          key={q}
+                          key={qr.question}
                           size="small"
-                          onClick={() => send(q)}
+                          onClick={() => send(qr.question)}
                           style={{ borderRadius: 999, fontSize: 12, height: "auto", padding: "5px 12px", whiteSpace: "normal", textAlign: "left" }}
                         >
-                          {q}
+                          {qr.question}
                         </Button>
                       ))}
                     </motion.div>
@@ -192,7 +225,7 @@ export default function ChatBot() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   onPressEnter={() => send(input)}
-                  placeholder="Ask a question…"
+                  placeholder={t.placeholder}
                   variant="borderless"
                   style={{ flex: 1, fontSize: 13.5 }}
                   suffix={
@@ -221,11 +254,11 @@ export default function ChatBot() {
       >
         <div className={styles.triggerIconWrap}>
           <div className={styles.triggerPulse} />
-          <Image src="/SVG/digibot.svg" alt="bot" width={28} height={28} className={styles.triggerIcon} />
+          <RobotOutlined className={styles.triggerIcon} style={{ fontSize: 26 }} />
         </div>
         <div className={styles.triggerText}>
-          <Text strong style={{ fontSize: 13, color: "#111", lineHeight: 1.2 }}>Ask Altera</Text>
-          <Text style={{ fontSize: 11.5, color: "#999", lineHeight: 1.2 }}>AI-powered assistant</Text>
+          <Text strong style={{ fontSize: 13, color: "#111", lineHeight: 1.2 }}>{t.triggerTitle}</Text>
+          <Text style={{ fontSize: 11.5, color: "#999", lineHeight: 1.2 }}>{t.triggerSubtitle}</Text>
         </div>
       </motion.button>
     </div>

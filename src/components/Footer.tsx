@@ -1,18 +1,31 @@
 import Link from "next/link";
 import Image from "next/image";
+import LanguageSwitcher from "./LanguageSwitcher";
 import styles from "./Footer.module.css";
 
-const PRODUCT_LINKS = [
-  { label: "Features", href: "/features" },
-  { label: "Changelog", href: "/changelog" },
-  { label: "Pricing Plan", href: "/pricing" },
-  { label: "Docs", href: "/docs" },
-];
-
-const COMPANY_LINKS = [
-  { label: "About Us",      href: "/about" },
-  { label: "Custom Widgets", href: "/custom" },
-];
+interface FooterDict {
+  tagline: string;
+  productHeading: string;
+  companyHeading: string;
+  connectHeading: string;
+  contactHeading: string;
+  emailLabel: string;
+  phoneLabel: string;
+  copyright: string;
+  langSwitcherLabel: string;
+  legalHeading: string;
+  links: {
+    features: string;
+    changelog: string;
+    pricingPlan: string;
+    docs: string;
+    aboutUs: string;
+    customWidgets: string;
+    terms: string;
+    privacy: string;
+    refund: string;
+  };
+}
 
 const SOCIAL_LINKS = [
   {
@@ -53,7 +66,28 @@ const SOCIAL_LINKS = [
   },
 ];
 
-export default function Footer() {
+interface Props {
+  t: FooterDict;
+  lang: string;
+  langNames: Record<string, string>;
+}
+
+export default function Footer({ t, lang, langNames }: Props) {
+  const productLinks = [
+    { label: t.links.features,      href: `/${lang}/features` },
+    { label: t.links.changelog,     href: `/${lang}/changelog` },
+    { label: t.links.pricingPlan,   href: `/${lang}/pricing` },
+    { label: t.links.docs,          href: `/${lang}/docs` },
+  ];
+
+  const companyLinks = [
+    { label: t.links.aboutUs,       href: `/${lang}/about` },
+    { label: t.links.customWidgets, href: `/${lang}/custom` },
+    { label: t.links.terms,         href: `/${lang}/terms` },
+    { label: t.links.privacy,       href: `/${lang}/privacy` },
+    { label: t.links.refund,        href: `/${lang}/refund` },
+  ];
+
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
@@ -68,20 +102,16 @@ export default function Footer() {
               className={styles.logo}
             />
           </div>
-          <p className={styles.brandDesc}>
-            You define the goal. Altera extracts the data.
-          </p>
+          <p className={styles.brandDesc}>{t.tagline}</p>
         </div>
 
         {/* Product */}
         <div className={styles.col}>
-          <p className={styles.colHeading}>Product</p>
+          <p className={styles.colHeading}>{t.productHeading}</p>
           <ul className={styles.colList}>
-            {PRODUCT_LINKS.map((l) => (
+            {productLinks.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className={styles.colLink}>
-                  {l.label}
-                </Link>
+                <Link href={l.href} className={styles.colLink}>{l.label}</Link>
               </li>
             ))}
           </ul>
@@ -89,13 +119,11 @@ export default function Footer() {
 
         {/* Company */}
         <div className={styles.col}>
-          <p className={styles.colHeading}>Company</p>
+          <p className={styles.colHeading}>{t.companyHeading}</p>
           <ul className={styles.colList}>
-            {COMPANY_LINKS.map((l) => (
+            {companyLinks.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className={styles.colLink}>
-                  {l.label}
-                </Link>
+                <Link href={l.href} className={styles.colLink}>{l.label}</Link>
               </li>
             ))}
           </ul>
@@ -103,7 +131,7 @@ export default function Footer() {
 
         {/* Connect */}
         <div className={styles.col}>
-          <p className={styles.colHeading}>Connect</p>
+          <p className={styles.colHeading}>{t.connectHeading}</p>
           <ul className={styles.colList}>
             {SOCIAL_LINKS.map((l) => (
               <li key={l.label}>
@@ -123,26 +151,30 @@ export default function Footer() {
 
         {/* Contact */}
         <div className={styles.col}>
-          <p className={styles.colHeading}>Contact Information</p>
+          <p className={styles.colHeading}>{t.contactHeading}</p>
           <ul className={styles.colList}>
             <li className={styles.contactItem}>
-              <span className={styles.contactLabel}>Email</span>
+              <span className={styles.contactLabel}>{t.emailLabel}</span>
               <a href="mailto:support@alteradatasuite.com" className={styles.colLink}>
                 support@alteradatasuite.com
               </a>
             </li>
             <li className={styles.contactItem}>
-              <span className={styles.contactLabel}>Phone</span>
+              <span className={styles.contactLabel}>{t.phoneLabel}</span>
               <span className={styles.contactValue}>+212 619 018 921</span>
             </li>
           </ul>
         </div>
       </div>
 
-<div className={styles.bottom}>
+      <div className={styles.bottom}>
         <span>
-          © {new Date().getFullYear()} Altera Data Suite. All rights reserved.
+          © {new Date().getFullYear()} Altera Data Suite. {t.copyright}
         </span>
+        <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+          <span style={{ fontSize: 13, color: "#888" }}>{t.langSwitcherLabel}:</span>
+          <LanguageSwitcher currentLang={lang} langNames={langNames} />
+        </div>
       </div>
     </footer>
   );

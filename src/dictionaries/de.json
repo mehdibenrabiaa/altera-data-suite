@@ -1,0 +1,433 @@
+{
+  "meta": {
+    "home":      { "title": "Altera Data Suite",       "description": "Wandeln Sie jedes PDF in Sekunden in strukturierte Daten um. Extrahieren Sie Rechnungen, Gehaltsabrechnungen und Berichte mit nahezu perfekter Genauigkeit." },
+    "about":     { "title": "Über uns",                "description": "Erfahren Sie mehr über Altera Data Suite — wer es entwickelt hat, warum und was dahintersteckt." },
+    "pricing":   { "title": "Preise",                  "description": "Einfache, transparente Preise für Altera Data Suite. Kostenlos starten, upgraden wenn es Mehrwert bringt." },
+    "faqs":      { "title": "Häufige Fragen",          "description": "Haben Sie Fragen zu Altera? Finden Sie Antworten zu Einrichtung, Genauigkeit, Preisen, Sicherheit und mehr." },
+    "docs":      { "title": "Dokumentation",           "description": "Erfahren Sie, wie Sie jeden Altera-Widget nutzen — Schritt-für-Schritt-Anleitungen, Konfigurationsreferenzen und Ausgabedetails für jede Funktion." },
+    "changelog": { "title": "Änderungsprotokoll",      "description": "Alle Updates, Verbesserungen und Korrekturen für Altera Data Suite — an einem Ort." },
+    "terms":     { "title": "Nutzungsbedingungen",               "description": "Nutzungsbedingungen von Altera Data Suite, Lizenzbeschränkungen und KI-Haftungsausschluss." },
+    "privacy":   { "title": "Datenschutzrichtlinie",             "description": "So erhebt, verwendet und schützt Altera Data Suite Ihre Daten. DSGVO- und CCPA-konform." },
+    "refund":    { "title": "Rückerstattungsrichtlinie",         "description": "30-Tage-Geld-zurück-Garantie, Rückerstattungsbedingungen und Stornierungskonditionen." }
+  },
+  "nav": {
+    "docs":      "Dokumentation",
+    "pricing":   "Preise",
+    "about":     "Über uns",
+    "faqs":      "FAQ",
+    "startFree": "Kostenlos starten"
+  },
+  "footer": {
+    "tagline":           "Sie definieren das Ziel. Altera extrahiert die Daten.",
+    "productHeading":    "Produkt",
+    "companyHeading":    "Unternehmen & Richtlinien",
+    "connectHeading":    "Netzwerke",
+    "contactHeading":    "Kontaktinformationen",
+    "emailLabel":        "E-Mail",
+    "phoneLabel":        "Telefon",
+    "copyright":         "Alle Rechte vorbehalten.",
+    "langSwitcherLabel": "Sprache",
+    "links": {
+      "features":      "Funktionen",
+      "changelog":     "Änderungsprotokoll",
+      "pricingPlan":   "Preisplan",
+      "docs":          "Dokumentation",
+      "aboutUs":       "Über uns",
+      "customWidgets": "Benutzerdefinierte Widgets",
+      "terms":         "Nutzungsbedingungen",
+      "privacy":       "Datenschutzrichtlinie",
+      "refund":        "Rückerstattungsrichtlinie"
+    },
+    "legalHeading": "Rechtliches"
+  },
+  "hero": {
+    "announcementBadge": "Neu ✦",
+    "announcementText":  "KI-gestützte Extraktion",
+    "headingPart1":      "Die App, die",
+    "headingPart2":      "Ihre PDFs in ",
+    "headingPart3":      "saubere Tabellen",
+    "subtitle":          "Laden Sie ein beliebiges PDF hoch — Alteras Widgets extrahieren, bereinigen und strukturieren jedes Feld in Sekunden.",
+    "startFree":         "Kostenlos starten",
+    "watchDemo":         "Demo ansehen",
+    "testimonialTitle":  "Einfache Einrichtung, sofortige Ergebnisse",
+    "testimonialQuote":  "\"Wir haben Altera entwickelt, um jedes PDF zu verarbeiten — Gehaltsabrechnungen, Rechnungen, Berichte. Von Anfang an auf Geschwindigkeit, Skalierbarkeit und Übersichtlichkeit ausgelegt.\"",
+    "testimonialAttrib": "— Mehdi, Entwickler von Altera Data Suite"
+  },
+  "resultShowcase": {
+    "badgeLabel": "Gehaltsabrechnung Extraktion",
+    "badgeText":  "Schnell & Präzise",
+    "heading":    "Vom statischen PDF zu sauberen, strukturierten Daten — in Sekunden.",
+    "subtitle":   "Laden Sie eine beliebige Gehaltsabrechnung, Rechnung oder einen Bericht hoch. Altera liest jedes Feld, ordnet es Spalten zu und liefert Ihnen eine strukturierte Tabelle zum Exportieren oder Analysieren.",
+    "tryFree":    "Kostenlos testen",
+    "seeHow":     "Wie es funktioniert"
+  },
+  "stats": {
+    "badgeLabel": "Zahlen & Fakten",
+    "badgeText":  "Echte Ergebnisse, echte Wirkung",
+    "heading":    "Gebaut für Geschwindigkeit. Designed für Genauigkeit.",
+    "subtitle":   "Altera Data Suite verwandelt Stunden manueller Dateneingabe in Sekunden automatisierter Extraktion — in jedem Maßstab.",
+    "items": [
+      { "value": "98%",  "label": "Extraktionsgenauigkeit",        "desc": "Analysieren Sie Gehaltsabrechnungen, Rechnungen und Berichte mit nahezu perfekter Feldgenauigkeit." },
+      { "value": "10×",  "label": "Schneller als manuelle Eingabe","desc": "Automatisieren Sie mühsame Copy-Paste-Workflows und gewinnen Sie jede Woche Stunden zurück." },
+      { "value": "500+", "label": "Seiten pro Batch",              "desc": "Laden Sie massive mehrseitige PDFs hoch und erhalten Sie in Sekunden strukturierte Ausgaben." },
+      { "value": "24/7", "label": "Immer verfügbar",              "desc": "Keine Server, keine Warteschlangen — läuft vollständig auf Ihrem Gerät, jederzeit." }
+    ]
+  },
+  "featureCards": [
+    { "label": "SCHNELLE KONVERTIERUNG",   "line1": "Laden Sie ein beliebiges PDF hoch.",       "line2": "Saubere Daten in Sekunden." },
+    { "label": "KONTROLLIERTE EINRICHTUNG","line1": "Definieren Sie Ihre Einrichtung.",          "line2": "Altera erledigt den Rest." },
+    { "label": "WIR GEBEN IHNEN TOOLS",    "line1": "Smarte Widgets, die extrahieren,",          "line2": "und Ihre Daten bereinigen." }
+  ],
+  "widgets": {
+    "badgeLabel": "Funktionen",
+    "badgeText":  "Zweckgerichtete Widgets",
+    "heading":    "Ihre Komplettlösung für schnelle, effiziente PDF-Verarbeitung.",
+    "subtitle":   "Zweckgerichtete Widgets, die Ihre PDFs von der Roheingabe zu strukturierten, analysierfertigen Daten bringen — kein Code, keine Reibung.",
+    "exploreNow": "Jetzt erkunden",
+    "items": [
+      { "name": "PDF Konverter",         "description": "Laden Sie ein beliebiges mehrseitiges PDF — Gehaltsabrechnungen, Rechnungen, Berichte — und extrahieren Sie sofort jedes Feld in eine saubere, zeilenweise Tabelle, die zur Analyse bereit ist." },
+      { "name": "Filter Builder",        "description": "Isolieren Sie genau die Zeilen, die Sie benötigen, mithilfe flexibler Bedingungen für jede Spalte. Kein Code, keine Formeln — einfaches Point-and-Click-Filtern." },
+      { "name": "Reguläre Ausdrücke",    "description": "Extrahieren Sie strukturierte Muster — Daten, IDs, Namen, Beträge — aus Rohtextfeldern mithilfe leistungsstarker Regex-Regeln, visuell konfiguriert." },
+      { "name": "Spaltenmanager",        "description": "Benennen Sie Spalten um, ordnen Sie sie neu oder löschen Sie sie in Sekunden. Passen Sie Ihr Ausgabeschema an, damit nachgelagerte Tools immer genau das erhalten, was sie erwarten." }
+    ]
+  },
+  "pricing": {
+    "badgeLabel":    "Preise",
+    "badgeText":     "Einfache Pläne, mächtige Funktionen",
+    "heading":       "Wählen Sie den Plan, der zu Ihrem Workflow passt.",
+    "subtitle":      "Kostenlos starten. Upgraden wenn es Mehrwert bringt",
+    "popularBadge":  "BELIEBT",
+    "getBtn":        "Holen",
+    "period":        "/Jahr",
+    "billingMonthly": "Monatlich",
+    "billingYearly":  "Jährlich",
+    "periodMonthly":  "/Monat",
+    "discountNote":   "Jährliche Abrechnung spart Ihnen 10 %",
+    "letsTalk":      "Kontakt aufnehmen",
+    "includesLabel": "Beinhaltet",
+    "plans": [
+      {
+        "name": "Kostenlose Testversion", "subtitle": "Komplettlösung für einen kurzen Zeitraum",
+        "features": ["Begrenzte PDF-Verarbeitung","KI-Funktionen nicht enthalten","15 Tage Testphase","10+ Widgets","Minimaler Support","Einzelplatz-Lizenz","Kostenlose Updates & Verbesserungen"]
+      },
+      {
+        "name": "Professional", "subtitle": "Komplettlösung für PDF-Verarbeitung",
+        "features": ["Unbegrenzte PDF-Verarbeitung","KI-gestützte Smart Tools","1-Jahres-Lizenzabonnement","10+ Widgets","E-Mail-Support","Einzelplatz-Lizenz","Kostenlose Updates & Verbesserungen"]
+      },
+      {
+        "name": "Enterprise", "subtitle": "Alle Funktionen + Individuelle Preise",
+        "features": ["Unbegrenzte PDF-Verarbeitung","KI-gestützte Smart Tools","Individuelle Preisgestaltung","10+ Widgets","Videoanruf-Unterstützung","Volumenlizenzierung","Kostenlose Updates & Verbesserungen"]
+      }
+    ],
+    "faqs": [
+      { "key": "p1", "label": "Kann ich später den Plan wechseln?",                   "text": "Ja. Sie können jederzeit vom Free Trial auf Professional upgraden. Ihre Daten und Workflows bleiben erhalten." },
+      { "key": "p2", "label": "Was passiert, wenn mein kostenloser Test endet?",      "text": "Nach 15 Tagen läuft Ihr Test ab. Sie können mit einem Professional- oder Enterprise-Plan fortfahren — nichts wird gelöscht." },
+      { "key": "p3", "label": "Ist die 99 $-Gebühr eine Einmalzahlung oder ein Abo?", "text": "Es ist eine Jahreslizenz. Sie erhalten vollen Zugang einschließlich Updates für 12 Monate. Verlängerung ist optional — Sie nutzen die aktuelle Version auch nach Ablauf weiter." },
+      { "key": "p4", "label": "Wie sehen die Enterprise-Preise aus?",                 "text": "Enterprise richtet sich nach Teamgröße, Volumen und Vertragslaufzeit. Kontaktieren Sie uns unter support@alteradatasuite.com und wir erstellen ein Angebot." },
+      { "key": "p5", "label": "Bieten Sie Rückerstattungen an?",                      "text": "Wir bieten einen kostenlosen Test, damit Sie das Tool vor dem Kauf validieren können. Falls nach dem Kauf etwas schiefläuft, melden Sie sich und wir finden eine Lösung." },
+      { "key": "p6", "label": "Kann ich Altera auf mehreren Geräten nutzen?",         "text": "Free Trial und Professional sind Einzelplatz-Lizenzen. Enterprise-Pläne umfassen Volumenlizenzen für Teams." }
+    ]
+  },
+  "testimonials": {
+    "badgeLabel": "Erfahrungsberichte",
+    "badgeText":  "Was unsere Nutzer sagen",
+    "heading":    "Vertraut von Teams, die schnell agieren.",
+    "subtitle":   "Sehen Sie, wie Altera Data Suite Fachleuten hilft, ihre Daten schneller als je zuvor zu extrahieren, zu strukturieren und zu nutzen.",
+    "cards": [
+      { "name": "Karim Raaji",           "role": "Finanzberater",                    "text": "Ich habe jahrelang auf Tools wie Power Query gesetzt, um Finanzdaten aus PDFs zu extrahieren und zu bereinigen. Sie funktionierten — aber nie sauber, und die Wartung war konstant. Altera zu finden war ein Wendepunkt. Die Extraktion ist präzise, die Einrichtung dauerte nur Minuten, und für den Preis ist es ein absoluter Gamechanger für jeden, der täglich mit Finanzdokumenten arbeitet." },
+      { "name": "Jonathan Ashton",        "role": "Finanz-Qualitätskontrolleur",      "text": "Ich fand mich dabei, mit mehreren Tools zu jonglieren, nur um Daten aus einem PDF zu bekommen — eine App für die Konvertierung, andere für die Bereinigung. Das größere Problem war jedoch die Privatsphäre. Bei der Arbeit mit Kundendaten unter NDA konnte ich es mir nicht leisten, Dateien auf einem Drittanbieter-Server verarbeiten zu lassen. Die meisten Tools, die ich ausprobiert habe, taten genau das. Altera war die erste Lösung, die das Kernproblem wirklich verstand und löste — alles läuft lokal, auf meinem Gerät, und die Ergebnisse sind von Anfang an sauber." },
+      { "name": "Mohammed Amine Bendidi", "role": "Finanzberater",                    "text": "Datenmengen zu erhalten — hauptsächlich PDFs — mit engen Fristen war ein ständiger Albtraum. Wir hatten erfahrene Entwickler in unserem Datenlabor, aber die Lücke zwischen dem, was sie bauten, und dem, was wir wirklich brauchten, schloss sich nie vollständig. Altera war anders. Es kam nicht von einem Team, das nur programmieren konnte — es kam von Menschen, die das Problem aus erster Hand erlebt hatten. Das zeigt sich in jedem Feature. Eine Lösung, gebaut von Analysten, für Analysten." },
+      { "name": "Thomas Reeves",          "role": "Business Intelligence Leiter",     "text": "Was Altera von allem im Microsoft-Ökosystem unterscheidet, ist, dass es tatsächlich auf sinnvolle Weise erweiterbar ist. Mit Excel oder Power BI sind Sie auf das beschränkt, was existiert — wenn eine Funktion nicht vorhanden ist, warten Sie, und die meiste Zeit kommt sie nie. Mit Altera, wenn ein Widget Ihren genauen Anwendungsfall nicht abdeckt, baut das Team es für Sie. Sie können bestehende Widgets erweitern oder völlig benutzerdefinierte von Grund auf erstellen. Diese Art von Reaktionsfähigkeit ist etwas, das Enterprise-Software schlicht nicht bietet." }
+    ]
+  },
+  "customWidget": {
+    "badgeLabel":         "Benutzerdefinierte Widgets",
+    "badgeText":          "Gebaut für Ihre genauen Bedürfnisse.",
+    "heading":            "Benötigen Sie einen benutzerdefinierten Widget, der zu Ihrem genauen Workflow passt? Wir bauen ihn für Sie.",
+    "subtitle":           "Jedes Team arbeitet mit anderen Dokumenten — unterschiedliche Strukturen, unterschiedliche Felder, unterschiedliche Ausgaben. Wenn keines unserer vorhandenen Widgets Ihren Anforderungen entspricht, entwerfen und bauen wir eines von Grund auf. Wir analysieren Ihr PDF-Layout, definieren die Extraktionslogik und liefern einen Widget, der direkt in Ihren Orange Data Mining-Arbeitsbereich integriert werden kann. Keine Umgehungslösungen, keine manuelle Bereinigung — nur saubere, strukturierte Daten genau so, wie Sie sie brauchen. Nehmen Sie Kontakt auf und wir besprechen gemeinsam den Umfang zu einem fairen Preis.",
+    "rowWhatLabel":       "Was Sie erhalten",
+    "rowWhatValue":       "Ein vollständig funktionsfähiger Widget für Ihr PDF",
+    "rowTurnaroundLabel": "Lieferzeit",
+    "rowTurnaroundValue": "Gemeinsam je nach Komplexität geplant",
+    "rowPricingLabel":    "Preisgestaltung",
+    "rowPricingValue":    "Fair und transparent — keine versteckten Gebühren",
+    "rowContactLabel":    "Kontakt"
+  },
+  "faqSection": {
+    "badgeLabel": "FAQ",
+    "badgeText":  "Fragen? Wir haben Antworten.",
+    "heading":    "Alles, was Sie wissen müssen",
+    "subtitle":   "Können Sie nicht finden, was Sie suchen? Melden Sie sich und wir antworten Ihnen."
+  },
+  "allFaqs": [
+    { "key": "1",  "label": "Welche PDF-Typen unterstützt Altera?",                            "text": "Altera funktioniert mit jedem PDF — Gehaltsabrechnungen, Rechnungen, Kontoauszüge, Berichte und mehr. Wenn es strukturierte Daten enthält, kann Altera es extrahieren." },
+    { "key": "2",  "label": "Wie genau ist die Extraktion?",                                    "text": "Altera extrahiert Daten mit hoher Genauigkeit. Sie können benutzerdefinierte Regeln definieren, um sicherzustellen, dass jedes Feld genau dorthin zugeordnet wird, wo Sie es benötigen." },
+    { "key": "3",  "label": "Muss ich etwas installieren?",                                     "text": "Altera ist für Orange Data Mining entwickelt. Die Installation innerhalb von Orange dauert Sekunden — fügen Sie einfach das Add-on hinzu und Sie können sofort mit der Extraktion beginnen." },
+    { "key": "4",  "label": "Kann ich mehrere PDFs gleichzeitig verarbeiten?",                  "text": "Ja. Altera unterstützt Batch-Verarbeitung, sodass Sie Hunderte von PDFs einladen und alle Daten auf einmal strukturiert erhalten können." },
+    { "key": "5",  "label": "Sind meine Daten sicher?",                                         "text": "Ihre Dateien werden sicher verarbeitet und niemals über die aktive Sitzung hinaus gespeichert. Wir teilen oder behalten Ihre Daten nicht." },
+    { "key": "6",  "label": "Kann ich es vor dem Bezahlen ausprobieren?",                       "text": "Absolut — Sie können kostenlos starten und die Kernfunktionen erkunden, bevor Sie sich für einen Plan entscheiden." },
+    { "key": "7",  "label": "Brauche ich Programmierkenntnisse, um Altera zu nutzen?",          "text": "Überhaupt nicht. Altera ist darauf ausgelegt, visuell in Orange Data Mining verwendet zu werden. Sie ziehen, legen ab und konfigurieren — kein Code erforderlich." },
+    { "key": "8",  "label": "Kann Altera gescannte oder bildbasierte PDFs verarbeiten?",        "text": "Altera funktioniert am besten mit digital generierten PDFs. Gescannte Dokumente mit OCR-lesbarem Text werden ebenfalls unterstützt, obwohl die Genauigkeit je nach Scanqualität variieren kann." },
+    { "key": "9",  "label": "In welchem Ausgabeformat liegen die extrahierten Daten vor?",      "text": "Altera gibt saubere, strukturierte Tabellen direkt in Orange Data Mining aus — bereit zur Analyse, zum Export oder zur Weiterverarbeitung." },
+    { "key": "10", "label": "Kann ich verschiedene Widgets für verschiedene Dokumenttypen verwenden?", "text": "Ja. Jeder Widget ist für eine bestimmte Extraktionsaufgabe ausgelegt. Sie können Widgets im selben Workflow kombinieren, um verschiedene Dokumenttypen in einem Durchlauf zu verarbeiten." },
+    { "key": "11", "label": "Was ist, wenn die Extraktion ein Feld übersieht oder falsch erfasst?", "text": "Sie können benutzerdefinierte Extraktionsregeln definieren, um Sonderfälle zu behandeln. Wenn eine spezifische Dokumentstruktur nicht standardmäßig unterstützt wird, bieten wir auch benutzerdefinierte Widget-Entwicklung an." },
+    { "key": "12", "label": "Gibt es eine Dateigrößenbeschränkung?",                            "text": "Altera verarbeitet standardmäßige Geschäftsdokumente problemlos. Sehr große Dateien oder ungewöhnlich komplexe Layouts können die Verarbeitungszeit beeinflussen, aber es gibt keine feste Obergrenze." },
+    { "key": "13", "label": "Welche Sprachen werden unterstützt?",                              "text": "Altera unterstützt in erster Linie englische und französische Dokumente. Die Unterstützung für weitere Sprachen wird hinzugefügt, während die Suite wächst." },
+    { "key": "14", "label": "Wie erhalte ich Support, wenn etwas schiefläuft?",                 "text": "Sie können uns direkt unter support@alteradatasuite.com erreichen. Wir sind ein kleines Team, daher erhalten Sie immer eine echte Antwort — keinen Bot." }
+  ],
+  "docs": {
+    "overview":          "Übersicht",
+    "bestFor":           "Am besten geeignet für",
+    "howToUse":          "Verwendung",
+    "input":             "Eingabe",
+    "output":            "Ausgabe",
+    "tipsNotes":         "Tipps & Hinweise",
+    "toolbarRef":        "Toolbar-Referenz",
+    "keyboardShortcuts": "Tastaturkürzel",
+    "watchTutorials":    "Video-Tutorials ansehen",
+    "viewPlaylist":      "Playlist auf YouTube ansehen",
+    "handTool":          "Hand-Tool",
+    "handToolDesc":      "Wenn aktiviert — klicken und ziehen Sie irgendwo auf der Arbeitsfläche, um durch das Dokument zu scrollen.",
+    "selectionTool":     "Auswahl-Tool",
+    "selectionToolDesc": "Klicken Sie auf eine vorhandene Anmerkung, um sie auszuwählen, neu zu positionieren oder in der Größe zu ändern.",
+    "pageNav":           "Seitennavigation",
+    "pageNavDesc":       "Durch Seiten blättern. Die Eingabe zeigt Ihre aktuelle Seite von der Gesamtzahl — Sie können auch direkt eine Seitenzahl eingeben.",
+    "shortcuts": {
+      "toggleHand":      "Hand-Tool umschalten",
+      "toggleSelection": "Auswahl-Tool umschalten",
+      "toggleGuide":     "Führungslinien-Tool umschalten (Spaltentrennlinie)",
+      "convert":         "Konvertieren",
+      "openPdf":         "PDF öffnen",
+      "zoomIn":          "Vergrößern",
+      "zoomOut":         "Verkleinern",
+      "fitPage":         "Seite an Fenster anpassen",
+      "scrollZoomIn":    "Vergrößern",
+      "scrollZoomOut":   "Verkleinern"
+    }
+  },
+  "about": {
+    "heroBadgeLabel":  "Über uns",
+    "heroBadgeText":   "Das Team hinter Altera",
+    "heroHeading":     "Entwickelt von einem kleinen Team mit einem klaren Ziel.",
+    "heroLead":        "Altera Data Suite wurde entwickelt, um ein wiederkehrendes Problem zu lösen — das Extrahieren strukturierter Daten aus PDFs sollte keine stundenlange manuelle Arbeit oder komplexe Skripte erfordern. Also haben wir ein Tool gebaut, das es in Sekunden erledigt.",
+    "storyBadgeLabel": "Unsere Geschichte",
+    "storyBadgeText":  "Warum wir das gebaut haben",
+    "story1Heading":   "Wo die Idee herkam",
+    "story1Text":      "Wir beide kamen aus Beratungsumgebungen — wir arbeiteten mit Unternehmen wie Deloitte und PwC. Eines wurde schnell klar: Selbst auf diesem Niveau hatte niemand eine ordentliche All-in-One-Lösung zur Extraktion von Daten aus PDFs entwickelt. Gehaltsabrechnungen, Rechnungen, Berichte — alles wurde manuell oder mit fragilen, einmalig erstellten Skripten erledigt. Diese Lücke war der Ausgangspunkt.",
+    "story2Heading":   "Der erste Widget",
+    "story2Text":      "Wir begannen mit einem einzigen PDF-Konverter-Widget. Es funktionierte — und wir sahen sofort, was als nächstes fehlte. Orange hatte starke analytische Fähigkeiten, ließ aber Datenbereinigung und -aufbereitung weitgehend unberücksichtigt. Also bauten wir weiter. Jeder Widget war eine direkte Antwort auf einen Reibungspunkt in echten Workflows.",
+    "story3Heading":   "Warum Orange Data Mining?",
+    "story3Text":      "Wir wollten nichts bauen, das isoliert existiert. Orange Data Mining hat bereits ein starkes, etabliertes Ökosystem — es zu wählen bedeutete, dass unsere Nutzer ihre Arbeitsweise nicht ändern müssen. Altera integriert sich direkt in das, was sie bereits kennen und nutzen.",
+    "story4Heading":   "Wohin wir uns entwickeln",
+    "story4Text":      "Die Suite wächst weiter. Mehr Widgets sind in Entwicklung, bestehende werden aktiv gewartet, und KI wird zu einem zentralen Bestandteil, wie Altera Daten extrahiert, interpretiert und strukturiert. Dies ist kein fertiges Produkt — es ist ein sich weiterentwickelndes Toolkit, das mit der realen Datenarbeit Schritt hält.",
+    "ctaHeading":      "Bereit, es in Aktion zu sehen?",
+    "ctaSubtitle":     "Sehen Sie sich die Demo an, um zu sehen, wie Altera echte PDFs verarbeitet, oder erkunden Sie die Preise, um den passenden Plan zu finden.",
+    "watchDemo":       "Demo ansehen",
+    "seePricing":      "Preise ansehen",
+    "team": [
+      { "role": "Mitgründer & Entwickler",        "bio": "Mehdi hat Altera entwickelt, um die Datenextraktion in Orange Data Mining mühelos zu machen. Auf Geschwindigkeit, Skalierbarkeit und Übersichtlichkeit ausgelegt — jeder Widget und jede Funktion spiegelt echte Workflows und echte Schmerzpunkte wider." },
+      { "role": "Mitgründer & Produktdesigner",   "bio": "Rayan gestaltet das Aussehen, das Gefühl und die Erfahrung von Altera. Vom ersten Wireframe bis zum letzten Pixel stellt er sicher, dass jede Interaktion intuitiv, sauber und zielgerichtet ist." }
+    ]
+  },
+  "faqs": {
+    "pageTitle": "Häufig gestellte Fragen — Altera Data Suite"
+  },
+  "changelog": {
+    "badgeLabel":   "Änderungsprotokoll",
+    "badgeText":    "Neuigkeiten in Altera",
+    "heroHeading":  "Jedes Update, an einem Ort.",
+    "heroSubtitle": "Neue Funktionen, Verbesserungen und Korrekturen — regelmäßig veröffentlicht und hier dokumentiert.",
+    "categories":   { "New": "Neu", "Improved": "Verbessert", "Fixed": "Behoben" },
+    "latestLabel":  "Neueste Version"
+  },
+  "chatbot": {
+    "triggerTitle":    "Altera fragen",
+    "triggerSubtitle": "KI-gestützter Assistent",
+    "panelTitle":      "Altera Assistent",
+    "panelSubtitle":   "Stellen Sie mir Fragen",
+    "placeholder":     "Eine Frage stellen…",
+    "welcome":         "Hallo! Ich bin Alteras Assistent. Stellen Sie mir beliebige Fragen zur App, den Widgets oder zum Einstieg.",
+    "followUp":        "Hier sind einige Dinge, bei denen ich helfen kann:",
+    "fallback":        "Gute Frage! Für weitere Details schauen Sie in die Dokumentation oder wenden Sie sich direkt an unser Team.",
+    "quickReplies": [
+      { "question": "Wie funktioniert der PDF Converter?",      "answer": "Öffnen Sie Ihr PDF, zeichnen Sie Rechtecke über die zu extrahierenden Daten, platzieren Sie bei Bedarf Spaltenführungen und klicken Sie auf Konvertieren. Sie erhalten eine saubere strukturierte Tabelle." },
+      { "question": "Welche Widgets sind verfügbar?",           "answer": "Altera umfasst 9 Widgets: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates und Cleaner." },
+      { "question": "Gibt es eine kostenlose Testversion?",     "answer": "Ja! Sie können kostenlos loslegen. Besuchen Sie die Preisseite, um zu sehen, was in jedem Plan enthalten ist." }
+    ]
+  },
+  "lang": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "nl": "Nederlands"
+  },
+  "legal": {
+    "badge":            "Rechtlich",
+    "lastUpdatedLabel": "Zuletzt aktualisiert",
+    "lastUpdated":      "Mai 2026"
+  },
+  "termsContent": {
+    "groups": [
+      {
+        "title": "Nutzungsbedingungen",
+        "sections": [
+          {
+            "heading": "1. Lizenzvergabe und Einschränkungen",
+            "body": "Mit dem Kauf von Altera Data Suite erhalten Sie eine nicht-exklusive, nicht übertragbare Lizenz zur Nutzung der Software. Diese Lizenz ist an Ihre Maschine gebunden und kann ohne separate Lizenz nicht auf mehrere Computer oder Benutzer übertragen werden.",
+            "items": [
+              "Die Lizenz ist maschinengebunden und verwendet eine eindeutige Geräteidentifikation",
+              "Die Lizenzvalidierung erfordert mindestens einmal alle 7 Tage eine Internetverbindung",
+              "Sie dürfen keine Crack-Tools, Keygen oder andere Versuche unternehmen, Lizenzvalidierungsmechanismen zu umgehen"
+            ]
+          },
+          {
+            "heading": "2. Verbotene Nutzungen",
+            "body": "Sie verpflichten sich, Folgendes zu unterlassen:",
+            "items": [
+              "Verwendung der Software für illegale Zwecke oder in Verletzung geltender Gesetze",
+              "Weitergabe, Verkauf oder Verteilung Ihres Lizenzschlüssels an Dritte",
+              "Versuche, die Software zu dekompilieren, zu disassemblieren oder proprietären Code zu extrahieren",
+              "Verwendung der Software für Massen-Scraping, Data-Mining oder Datenextraktion für Wettbewerbszwecke"
+            ]
+          },
+          {
+            "heading": "3. Haftungsausschluss für KI-Genauigkeit",
+            "body": "Der REGEX-KI-Generator und die Datenextraktionsfunktionen verwenden künstliche Intelligenz und sind nicht 100 % genau. Die Ergebnisse können je nach Eingabequalität, Dokumentkomplexität und Datenformatierung variieren. Benutzer sind dafür verantwortlich, extrahierte Daten zu validieren, bevor sie in Produktionsumgebungen eingesetzt werden."
+          },
+          {
+            "heading": "4. Testbedingungen",
+            "body": "Die 15-tägige kostenlose Testversion ist auf eine pro Maschine begrenzt. Nach Ablauf des Tests ist eine kostenpflichtige Lizenz erforderlich, um Altera weiter zu nutzen. Sie können den Test jederzeit ohne Strafe kündigen."
+          },
+          {
+            "heading": "5. Updates und Wartung",
+            "body": "Kleinere Updates und Fehlerbehebungen werden während Ihres Abonnements kostenlos bereitgestellt. Wir behalten uns das Recht vor, Funktionen oder Hauptversionen mit 30-tägiger Vorankündigung einzustellen. Die Kernfunktionalität bleibt während Ihrer aktiven Lizenzlaufzeit verfügbar."
+          },
+          {
+            "heading": "6. Daten und Datenschutz",
+            "body": "Alle Benutzerdaten werden lokal auf Ihrer Maschine verarbeitet. Extraktionsmuster und Regex-Ausgaben werden nur zur KI-Verarbeitung an unsere Server übertragen und nicht dauerhaft gespeichert. Weitere Details entnehmen Sie bitte der Datenschutzrichtlinie."
+          },
+          {
+            "heading": "7. Haftungsbeschränkung",
+            "body": "Altera Data Suite wird 'wie besehen' ohne jegliche Garantien bereitgestellt. Wir haften nicht für Datenverlust, Extraktionsfehler oder Schäden, die aus der Nutzung oder dem Missbrauch dieser Software resultieren. Benutzer übernehmen die volle Verantwortung für die Validierung der Ausgaben, bevor sie sich darauf verlassen."
+          }
+        ]
+      }
+    ]
+  },
+  "privacyContent": {
+    "groups": [
+      {
+        "title": "Datenschutzrichtlinie",
+        "sections": [
+          {
+            "heading": "1. Informationen, die wir erheben",
+            "body": "Wir erheben folgende Informationen:",
+            "items": [
+              "Kontodaten: Ihre E-Mail-Adresse und Ihren Namen (für die Lizenzregistrierung)",
+              "Maschinen-ID: Eine eindeutige Kennung zur Bindung Ihrer Lizenz an Ihren Computer",
+              "Nutzungsdaten: Informationen darüber, welche Funktionen Sie verwenden (zur Produktverbesserung)",
+              "KI-Verarbeitungsdaten: Regex-Muster und Dokumente, die zur Verarbeitung an unsere KI-Server gesendet werden (werden nicht dauerhaft gespeichert)"
+            ]
+          },
+          {
+            "heading": "2. Wie wir Ihre Informationen verwenden",
+            "body": "Ihre Informationen werden verwendet, um:",
+            "items": [
+              "Ihre Lizenz zu validieren und zu authentifizieren",
+              "Ihre KI-Anfragen zu verarbeiten (Regex-Generierung, Datenextraktion)",
+              "Unsere Dienste zu verbessern und zu optimieren",
+              "Wichtige Updates und Lizenzverlängerungserinnerungen zu senden"
+            ]
+          },
+          {
+            "heading": "3. Zahlungsabwicklung",
+            "body": "Die gesamte Zahlungsabwicklung erfolgt über Paddle (unseren Zahlungsdienstleister). Wir speichern keine Kreditkartendaten. Zahlungsdaten werden verschlüsselt und direkt von Paddle gemäß deren Datenschutzstandards und PCI-Compliance-Anforderungen verarbeitet."
+          },
+          {
+            "heading": "4. KI-Eingaben und Serververarbeitung",
+            "body": "Wenn Sie den REGEX-KI-Generator verwenden, werden Ihre Eingaben und Dokumente zur Verarbeitung an unsere KI-Server übertragen. Wir speichern diese Eingaben nicht dauerhaft. Wir empfehlen jedoch, keine sensiblen, vertraulichen oder privaten Informationen (wie persönliche Identifikatoren, Kontonummern oder vertrauliche Geschäftsinformationen) in Ihre Eingaben aufzunehmen. Bei Bedenken hinsichtlich der Datenübertragung empfehlen wir die Verwendung ausschließlich nicht sensibler Testdaten."
+          },
+          {
+            "heading": "5. Datenspeicherung",
+            "body": "Wir speichern Ihre Daten wie folgt:",
+            "items": [
+              "Kontodaten: Gespeichert, solange Ihre Lizenz aktiv ist; 30 Tage nach Kündigung gelöscht",
+              "Maschinen-ID: Für die Lizenzvalidierung gespeichert; auf Anfrage gelöscht",
+              "KI-Verarbeitungsdaten: Nach der Verarbeitung nicht dauerhaft gespeichert"
+            ]
+          },
+          {
+            "heading": "6. Drittanbieterdienste",
+            "body": "Wir nutzen folgende Drittanbieterdienste:",
+            "items": [
+              "Paddle: Zahlungsabwicklung und Händlerdienste",
+              "DeepSeek API: KI-Verarbeitung für die Regex-Generierung",
+              "E-Mail-Dienstanbieter: Zum Versenden von Lizenzschlüsseln und Benachrichtigungen"
+            ]
+          },
+          {
+            "heading": "7. DSGVO- und CCPA-Rechte",
+            "body": "Wenn Sie sich in der EU (DSGVO) oder Kalifornien (CCPA) befinden, haben Sie das Recht:",
+            "items": [
+              "Eine Kopie Ihrer personenbezogenen Daten anzufordern",
+              "Die Löschung Ihrer Daten zu beantragen",
+              "Sich von Marketing-Kommunikation abzumelden"
+            ],
+            "note": "Um diese Rechte auszuüben, schreiben Sie uns an: support@alteradatasuite.com"
+          },
+          {
+            "heading": "8. Sicherheit",
+            "body": "Wir verwenden branchenübliche Verschlüsselung und Sicherheitspraktiken, um Ihre Daten zu schützen. Kein System ist jedoch 100 % sicher. Wir haften nicht für unbefugten Zugriff aufgrund von Faktoren außerhalb unserer Kontrolle."
+          },
+          {
+            "heading": "9. Kontakt",
+            "body": "Bei Datenschutzfragen oder Datenanfragen: support@alteradatasuite.com"
+          }
+        ]
+      }
+    ]
+  },
+  "refundContent": {
+    "groups": [
+      {
+        "title": "Rückerstattungsrichtlinie",
+        "sections": [
+          {
+            "heading": "1. 30-Tage-Geld-zurück-Garantie",
+            "body": "Wenn Sie mit Altera Data Suite innerhalb der ersten 30 Tage nach dem Kauf nicht zufrieden sind, bieten wir eine vollständige Rückerstattung an. Ohne Fragen. Um eine Rückerstattung zu beantragen, senden Sie eine E-Mail an support@alteradatasuite.com mit Ihrem Lizenzschlüssel und dem Grund für die Rückerstattung."
+          },
+          {
+            "heading": "2. Erstattungsberechtigung",
+            "body": "Rückerstattungen sind verfügbar, wenn:",
+            "items": [
+              "Der Antrag innerhalb von 30 Tagen nach dem Kauf gestellt wird",
+              "Die Lizenz nicht an einen anderen Benutzer weitergegeben oder übertragen wurde",
+              "Kein Nachweis für Versuche, Lizenzbeschränkungen zu umgehen, vorliegt"
+            ]
+          },
+          {
+            "heading": "3. Rückerstattungsabwicklung",
+            "body": "Rückerstattungen werden von Paddle (unserem Zahlungsdienstleister) bearbeitet und erscheinen in der Regel innerhalb von 5–7 Werktagen auf Ihrem Bankkonto. Ihre Lizenz wird unmittelbar nach Genehmigung der Rückerstattung deaktiviert."
+          },
+          {
+            "heading": "4. Rückerstattungsrichtlinie bei Testversion",
+            "body": "Wenn Sie unmittelbar nach Ende Ihrer Testphase einen bezahlten Plan erworben haben und nicht zufrieden sind, haben Sie weiterhin Anspruch auf die 30-Tage-Geld-zurück-Garantie ab dem Datum Ihres bezahlten Kaufs."
+          },
+          {
+            "heading": "5. Abonnementkündigung",
+            "body": "Sie können Ihr Abonnement jederzeit kündigen. Ihr Zugang bleibt bis zum Ende Ihres Abrechnungszeitraums erhalten. Eine Rückerstattung für angefangene Monate wird nicht gewährt. Zur Kündigung melden Sie sich in Ihrem Konto an oder senden Sie eine E-Mail an support@alteradatasuite.com"
+          },
+          {
+            "heading": "6. Enterprise- und Individualpläne",
+            "body": "Für Enterprise- oder individuelle Lizenzverträge werden die Rückerstattungsbedingungen individuell verhandelt und in Ihrem Vertrag festgelegt."
+          },
+          {
+            "heading": "7. Kontakt für Rückerstattungen",
+            "body": "E-Mail: support@alteradatasuite.com"
+          }
+        ]
+      }
+    ]
+  }
+}

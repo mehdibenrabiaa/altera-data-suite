@@ -7,18 +7,31 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
 
-const navLinks = [
-  { label: "Docs",    href: "/docs" },
-  { label: "Pricing", href: "/pricing" },
-  { label: "About",   href: "/about" },
-  { label: "FAQs",    href: "/faqs" },
-];
+interface NavDict {
+  docs: string;
+  pricing: string;
+  about: string;
+  faqs: string;
+  startFree: string;
+}
 
-function Navbar() {
+interface Props {
+  t: NavDict;
+  lang: string;
+}
+
+function Navbar({ t, lang }: Props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [scrolled, setScrolled]     = useState(false);
   const [hidden, setHidden]         = useState(false);
   const lastY = useRef(0);
+
+  const navLinks = [
+    { label: t.docs,    href: `/${lang}/docs` },
+    { label: t.pricing, href: `/${lang}/pricing` },
+    { label: t.about,   href: `/${lang}/about` },
+    { label: t.faqs,    href: `/${lang}/faqs` },
+  ];
 
   useEffect(() => {
     const onScroll = () => {
@@ -46,7 +59,7 @@ function Navbar() {
         }}
       >
         {/* Logo */}
-        <Link href="/" className={styles.logo}>
+        <Link href={`/${lang}`} className={styles.logo}>
           <Image
             src="/Altera_logo_orange_no_title.svg"
             alt="Altera Data Suite"
@@ -56,7 +69,7 @@ function Navbar() {
           />
         </Link>
 
-        {/* Nav links — pill container */}
+        {/* Nav links */}
         <nav className={styles.desktopNav}>
           <ul className={styles.navList}>
             {navLinks.map(({ label, href }) => (
@@ -72,10 +85,10 @@ function Navbar() {
           <Button
             type="primary"
             size="large"
-            href="/trial"
+            href={`/${lang}/pricing`}
             style={{ fontWeight: 600 }}
           >
-            Start for free
+            {t.startFree}
           </Button>
         </div>
 
@@ -113,8 +126,8 @@ function Navbar() {
               {label}
             </Link>
           ))}
-          <Button type="primary" size="large" href="/trial" style={{ fontWeight: 600 }}>
-            Start for free
+          <Button type="primary" size="large" href={`/${lang}/pricing`} style={{ fontWeight: 600 }}>
+            {t.startFree}
           </Button>
         </Flex>
       </Drawer>

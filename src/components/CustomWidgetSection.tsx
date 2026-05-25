@@ -3,10 +3,27 @@ import SectionBadge from "./SectionBadge";
 import SectionHeading from "./SectionHeading";
 import styles from "./CustomWidgetSection.module.css";
 
-export default function CustomWidgetSection() {
+interface CustomWidgetT {
+  badgeLabel: string;
+  badgeText: string;
+  heading: string;
+  subtitle: string;
+  rowWhatLabel: string;
+  rowWhatValue: string;
+  rowTurnaroundLabel: string;
+  rowTurnaroundValue: string;
+  rowPricingLabel: string;
+  rowPricingValue: string;
+  rowContactLabel: string;
+}
+
+interface Props {
+  t: CustomWidgetT;
+}
+
+export default function CustomWidgetSection({ t }: Props) {
   return (
     <section className={styles.section}>
-      {/* Left — logo */}
       <div>
         <Image
           src="/SVG/altera_logo_white.svg"
@@ -17,41 +34,34 @@ export default function CustomWidgetSection() {
         />
       </div>
 
-      {/* Right — content */}
       <div className={styles.content}>
         <SectionBadge
-          label="Custom Widgets"
-          text="Built around your exact needs."
+          label={t.badgeLabel}
+          text={t.badgeText}
           className={styles.badgeLeft}
         />
 
         <SectionHeading
-          heading="Need a custom widget that fits your exact workflow? We build it for you."
-          subtitle="Every team works with different documents — different structures, different fields, different outputs. If none of our existing widgets match what you need, we'll design and build one from scratch. We map your PDF layout, define the extraction logic, and deliver a widget that drops straight into your Orange Data Mining workspace. No workarounds, no manual cleanup — just clean, structured data exactly the way you need it. Get in touch and we'll scope it together at a price that makes sense."
+          heading={t.heading}
+          subtitle={t.subtitle}
           className={styles.headingLeft}
         />
 
         <div className={styles.table}>
           <div className={styles.row}>
-            <span className={styles.rowLabel}>What you get</span>
-            <span className={styles.rowValue}>
-              A fully functional widget built for your PDF
-            </span>
+            <span className={styles.rowLabel}>{t.rowWhatLabel}</span>
+            <span className={styles.rowValue}>{t.rowWhatValue}</span>
           </div>
           <div className={styles.row}>
-            <span className={styles.rowLabel}>Turnaround</span>
-            <span className={styles.rowValue}>
-              Scoped together based on complexity
-            </span>
+            <span className={styles.rowLabel}>{t.rowTurnaroundLabel}</span>
+            <span className={styles.rowValue}>{t.rowTurnaroundValue}</span>
           </div>
           <div className={styles.row}>
-            <span className={styles.rowLabel}>Pricing</span>
-            <span className={styles.rowValue}>
-              Fair and transparent — no hidden fees
-            </span>
+            <span className={styles.rowLabel}>{t.rowPricingLabel}</span>
+            <span className={styles.rowValue}>{t.rowPricingValue}</span>
           </div>
           <div className={styles.row}>
-            <span className={styles.rowLabel}>Contact</span>
+            <span className={styles.rowLabel}>{t.rowContactLabel}</span>
             <span className={styles.rowValue}>
               <a
                 href="mailto:support@alteradatasuite.com"

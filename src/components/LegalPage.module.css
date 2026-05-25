@@ -1,0 +1,102 @@
+.hero {
+  background: linear-gradient(135deg, #ff5d02 0%, #ff7a30 100%);
+  padding: 110px 24px 72px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  padding: 4px 18px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.heroTitle {
+  color: #fff;
+  font-size: clamp(28px, 5vw, 46px);
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.15;
+}
+
+.heroDate {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 13.5px;
+  margin: 0;
+}
+
+.body {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 72px 24px 100px;
+}
+
+.groupDivider {
+  border: none;
+  border-top: 2px solid #fff4f0;
+  margin: 56px 0 40px;
+}
+
+.groupTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  margin: 0 0 32px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #fff4f0;
+}
+
+.section {
+  margin-bottom: 32px;
+}
+
+.sectionHeading {
+  font-size: 15.5px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0 0 8px;
+}
+
+.paragraph {
+  font-size: 14.5px;
+  color: #555;
+  line-height: 1.8;
+  margin: 0 0 8px;
+}
+
+.list {
+  margin: 8px 0 0;
+  padding-left: 22px;
+}
+
+.list li {
+  font-size: 14.5px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 4px;
+}
+
+.note {
+  font-size: 14.5px;
+  color: #555;
+  line-height: 1.8;
+  margin: 10px 0 0;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 13px;
+  color: #bbb;
+  padding-top: 32px;
+  margin-top: 56px;
+  border-top: 1px solid #f0f0f0;
+}

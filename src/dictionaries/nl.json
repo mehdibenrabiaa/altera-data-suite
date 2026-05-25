@@ -1,0 +1,433 @@
+{
+  "meta": {
+    "home":      { "title": "Altera Data Suite",       "description": "Zet elk PDF om in gestructureerde data in seconden. Extraheer facturen, loonstroken en rapporten met bijna perfecte nauwkeurigheid." },
+    "about":     { "title": "Over ons",                "description": "Leer meer over Altera Data Suite — wie het heeft gebouwd, waarom en wat het drijft." },
+    "pricing":   { "title": "Prijzen",                 "description": "Eenvoudige, transparante prijzen voor Altera Data Suite. Begin gratis, upgrade wanneer het waarde levert." },
+    "faqs":      { "title": "Veelgestelde vragen",     "description": "Vragen over Altera? Vind antwoorden over installatie, nauwkeurigheid, prijzen, beveiliging en meer." },
+    "docs":      { "title": "Documentatie",            "description": "Leer hoe u elke Altera-widget gebruikt — stapsgewijze handleidingen, configuratiereferenties en uitvoerdetails voor elke functie." },
+    "changelog": { "title": "Wijzigingslog",           "description": "Elke update, verbetering en correctie voor Altera Data Suite — op één plek." },
+    "terms":     { "title": "Gebruiksvoorwaarden",               "description": "Gebruiksvoorwaarden van Altera Data Suite, licentiebeperkingen en AI-disclaimer." },
+    "privacy":   { "title": "Privacybeleid",                     "description": "Hoe Altera Data Suite uw gegevens verzamelt, gebruikt en beschermt. AVG- en CCPA-conform." },
+    "refund":    { "title": "Terugbetalingsbeleid",              "description": "30 dagen geld-terug-garantie, terugbetalingsvoorwaarden en annuleringsbeleid." }
+  },
+  "nav": {
+    "docs":      "Documentatie",
+    "pricing":   "Prijzen",
+    "about":     "Over ons",
+    "faqs":      "FAQ",
+    "startFree": "Gratis beginnen"
+  },
+  "footer": {
+    "tagline":           "U bepaalt het doel. Altera extraheert de data.",
+    "productHeading":    "Product",
+    "companyHeading":    "Bedrijf & Beleid",
+    "connectHeading":    "Netwerken",
+    "contactHeading":    "Contactinformatie",
+    "emailLabel":        "E-mail",
+    "phoneLabel":        "Telefoon",
+    "copyright":         "Alle rechten voorbehouden.",
+    "langSwitcherLabel": "Taal",
+    "links": {
+      "features":      "Functies",
+      "changelog":     "Wijzigingslog",
+      "pricingPlan":   "Prijsplan",
+      "docs":          "Documentatie",
+      "aboutUs":       "Over ons",
+      "customWidgets": "Aangepaste widgets",
+      "terms":         "Gebruiksvoorwaarden",
+      "privacy":       "Privacybeleid",
+      "refund":        "Terugbetalingsbeleid"
+    },
+    "legalHeading": "Juridisch"
+  },
+  "hero": {
+    "announcementBadge": "Nieuw ✦",
+    "announcementText":  "AI-aangedreven extractie",
+    "headingPart1":      "De app die",
+    "headingPart2":      "uw PDF's omzet in ",
+    "headingPart3":      "nette tabellen",
+    "subtitle":          "Laad een PDF in — Altera's widgets extraheren, reinigen en structureren elk veld in seconden.",
+    "startFree":         "Gratis beginnen",
+    "watchDemo":         "Demo bekijken",
+    "testimonialTitle":  "Eenvoudige installatie, directe resultaten",
+    "testimonialQuote":  "\"We hebben Altera gebouwd voor elk type PDF — loonstroken, facturen, rapporten. Ontworpen voor snelheid, schaal en duidelijkheid vanaf dag één.\"",
+    "testimonialAttrib": "— Mehdi, Ontwikkelaar van Altera Data Suite"
+  },
+  "resultShowcase": {
+    "badgeLabel": "Loonstrook Extractie",
+    "badgeText":  "Snel & Nauwkeurig",
+    "heading":    "Van een statisch PDF naar schone, gestructureerde data — in seconden.",
+    "subtitle":   "Laad een loonstrook, factuur of rapport in. Altera leest elk veld, koppelt het aan kolommen en geeft u een gestructureerde tabel klaar om te exporteren of te analyseren.",
+    "tryFree":    "Gratis proberen",
+    "seeHow":     "Zie hoe het werkt"
+  },
+  "stats": {
+    "badgeLabel": "Cijfers & Feiten",
+    "badgeText":  "Echte resultaten, echte impact",
+    "heading":    "Gebouwd voor snelheid. Ontworpen voor nauwkeurigheid.",
+    "subtitle":   "Altera Data Suite verandert uren handmatige gegevensinvoer in seconden geautomatiseerde extractie — op elke schaal.",
+    "items": [
+      { "value": "98%",  "label": "Extractienauwkeurigheid",       "desc": "Verwerk loonstroken, facturen en rapporten met bijna perfecte veldnauwkeurigheid." },
+      { "value": "10×",  "label": "Sneller dan handmatige invoer", "desc": "Automatiseer vervelende kopieer-plak workflows en win elke week uren terug." },
+      { "value": "500+", "label": "Pagina's per batch",            "desc": "Laad grote meerdere-pagina PDF's in en ontvang gestructureerde uitvoer in seconden." },
+      { "value": "24/7", "label": "Altijd beschikbaar",            "desc": "Geen servers, geen wachtrijen — draait volledig op uw machine, op elk moment." }
+    ]
+  },
+  "featureCards": [
+    { "label": "SNELLE CONVERSIE",       "line1": "Laad een PDF in.",                    "line2": "Schone data in seconden." },
+    { "label": "BEHEERDE INSTELLING",    "line1": "Definieer uw instelling.",             "line2": "Altera doet de rest." },
+    { "label": "WIJ GEVEN U TOOLS",      "line1": "Slimme widgets die extraheren,",      "line2": "en uw data reinigen." }
+  ],
+  "widgets": {
+    "badgeLabel": "Functies",
+    "badgeText":  "Doelgerichte widgets",
+    "heading":    "Uw alles-in-één oplossing voor snelle, efficiënte PDF-verwerking.",
+    "subtitle":   "Doelgerichte widgets die uw PDF's van ruwe invoer naar gestructureerde, analyserijke data brengen — geen code, geen wrijving.",
+    "exploreNow": "Nu verkennen",
+    "items": [
+      { "name": "PDF Converter",         "description": "Laad een meerdere-pagina PDF — loonstroken, facturen, rapporten — en extraheer direct elk veld in een schone, rij-voor-rij tabel klaar voor analyse." },
+      { "name": "Filter Builder",        "description": "Isoleer precies de rijen die u nodig heeft met flexibele voorwaarden op elke kolom. Geen code, geen formules — eenvoudig klik-en-filter." },
+      { "name": "Reguliere Expressies",  "description": "Haal gestructureerde patronen — datums, ID's, namen, bedragen — uit ruwe tekstvelden met behulp van krachtige regex-regels, visueel geconfigureerd." },
+      { "name": "Kolombeheer",           "description": "Hernoem, herorden of verwijder kolommen in seconden. Pas uw uitvoerschema aan zodat downstream tools altijd precies ontvangen wat ze verwachten." }
+    ]
+  },
+  "pricing": {
+    "badgeLabel":    "Prijzen",
+    "badgeText":     "Eenvoudige plannen, krachtige functies",
+    "heading":       "Kies het plan dat bij uw workflow past.",
+    "subtitle":      "Gratis beginnen. Upgrade wanneer het waarde levert",
+    "popularBadge":  "POPULAIR",
+    "getBtn":        "Kies",
+    "period":        "/jaar",
+    "billingMonthly": "Maandelijks",
+    "billingYearly":  "Jaarlijks",
+    "periodMonthly":  "/maand",
+    "discountNote":   "Jaarlijkse facturering bespaart u 10 %",
+    "letsTalk":      "Neem contact op",
+    "includesLabel": "Inclusief",
+    "plans": [
+      {
+        "name": "Gratis proefperiode", "subtitle": "Alles-in-één oplossing voor een korte periode",
+        "features": ["Beperkte PDF-verwerking","AI-functies niet inbegrepen","15 dagen proefperiode","10+ widgets","Minimale ondersteuning","Licentie voor één machine","Gratis updates & verbeteringen"]
+      },
+      {
+        "name": "Professional", "subtitle": "Alles-in-één oplossing voor PDF-verwerking",
+        "features": ["Onbeperkte PDF-verwerking","AI-aangedreven slimme tools","1-jaar licentieabonnement","10+ widgets","E-mailondersteuning","Licentie voor één machine","Gratis updates & verbeteringen"]
+      },
+      {
+        "name": "Enterprise", "subtitle": "Alle functies + op maat gemaakte prijzen",
+        "features": ["Onbeperkte PDF-verwerking","AI-aangedreven slimme tools","Aangepaste prijsstelling","10+ widgets","Videogesprek assistentie","Volumelicenties","Gratis updates & verbeteringen"]
+      }
+    ],
+    "faqs": [
+      { "key": "p1", "label": "Kan ik later van plan wisselen?",                      "text": "Ja. U kunt op elk moment upgraden van Free Trial naar Professional. Uw gegevens en workflows blijven intact." },
+      { "key": "p2", "label": "Wat gebeurt er als mijn gratis proefperiode eindigt?",  "text": "Na 15 dagen verloopt uw proefperiode. U kunt doorgaan met een Professional- of Enterprise-plan — niets wordt verwijderd." },
+      { "key": "p3", "label": "Is de $ 99 een eenmalige betaling of een abonnement?", "text": "Het is een jaarlicentie. U krijgt volledige toegang inclusief updates voor 12 maanden. Verlenging is optioneel — u blijft de huidige versie gebruiken ook na afloop." },
+      { "key": "p4", "label": "Hoe ziet Enterprise-prijsstelling eruit?",             "text": "Enterprise wordt bepaald door teamgrootte, volume en contractduur. Neem contact op via support@alteradatasuite.com en we stellen een voorstel op." },
+      { "key": "p5", "label": "Biedt u terugbetalingen aan?",                         "text": "We bieden een gratis proefperiode zodat u de tool kunt valideren voordat u betaalt. Als er iets misgaat na aankoop, neem contact op en we lossen het op." },
+      { "key": "p6", "label": "Kan ik Altera op meerdere machines gebruiken?",        "text": "De Free Trial- en Professional-plannen zijn licenties voor één machine. Enterprise-plannen omvatten volumelicenties voor teams." }
+    ]
+  },
+  "testimonials": {
+    "badgeLabel": "Getuigenissen",
+    "badgeText":  "Wat onze gebruikers zeggen",
+    "heading":    "Vertrouwd door teams die snel bewegen.",
+    "subtitle":   "Bekijk hoe Altera Data Suite professionals helpt om hun data sneller dan ooit te extraheren, structureren en er actie op te ondernemen.",
+    "cards": [
+      { "name": "Karim Raaji",           "role": "Financieel Adviseur",              "text": "Ik heb jaren vertrouwd op tools zoals Power Query om financiële gegevens uit PDF's te extraheren en te reinigen. Ze werkten — maar nooit netjes, en het onderhoud was constant. Altera vinden was een keerpunt. De extractie is nauwkeurig, de installatie duurde slechts minuten, en voor de prijs is het een absolute game changer voor iedereen die dagelijks met financiële documenten werkt." },
+      { "name": "Jonathan Ashton",        "role": "Financieel Kwaliteitscontroleur", "text": "Ik vond mezelf jongleren met meerdere tools om data uit een PDF te krijgen — één app voor conversie, anderen voor het reinigen. Maar het grotere probleem was privacy. Werkend met klantgegevens onder NDA kon ik het me niet veroorloven dat bestanden op een server van derden werden verwerkt. De meeste tools die ik probeerde deden precies dat. Altera was de eerste oplossing die het kernprobleem daadwerkelijk begreep en oploste — alles draait lokaal, op mijn machine, en de resultaten zijn schoon vanaf het begin." },
+      { "name": "Mohammed Amine Bendidi", "role": "Financieel Adviseur",              "text": "Volumes data ontvangen — voornamelijk PDF's — met strakke deadlines was een constant nachtmerrie. We hadden bekwame ontwikkelaars in ons datalaboratorium, maar de kloof tussen wat ze bouwden en wat we werkelijk nodig hadden sloot zich nooit volledig. Altera was anders. Het kwam niet van een team dat alleen wist hoe te coderen — het kwam van mensen die het probleem uit eigen ervaring hadden meegemaakt. Dat is zichtbaar in elke functie. Een oplossing gebouwd door analisten, voor analisten." },
+      { "name": "Thomas Reeves",          "role": "Business Intelligence Leider",    "text": "Wat Altera onderscheidt van alles in het Microsoft-ecosysteem is dat het daadwerkelijk uitbreidbaar is op een betekenisvolle manier. Met Excel of Power BI ben je beperkt tot wat er bestaat — als een functie er niet is, wacht je, en de meeste keer komt het er nooit. Met Altera, als een widget uw exacte gebruiksgeval niet dekt, bouwt het team het voor u. Ze kunnen bestaande widgets uitbreiden of volledig aangepaste widgets van nul af bouwen. Dat soort responsiviteit is iets wat enterprise software simpelweg niet biedt." }
+    ]
+  },
+  "customWidget": {
+    "badgeLabel":         "Aangepaste widgets",
+    "badgeText":          "Gebouwd rond uw exacte behoeften.",
+    "heading":            "Heeft u een aangepaste widget nodig die past bij uw exacte workflow? Wij bouwen het voor u.",
+    "subtitle":           "Elk team werkt met andere documenten — verschillende structuren, verschillende velden, verschillende uitvoer. Als geen van onze bestaande widgets aansluit bij wat u nodig heeft, ontwerpen en bouwen we er één vanaf het begin. We brengen uw PDF-indeling in kaart, definiëren de extractielogica en leveren een widget die direct in uw Orange Data Mining-werkruimte past. Geen omwegen, geen handmatig opruimen — gewoon schone, gestructureerde data precies zoals u het nodig heeft. Neem contact op en we bespreken samen de scope voor een eerlijke prijs.",
+    "rowWhatLabel":       "Wat u krijgt",
+    "rowWhatValue":       "Een volledig functionele widget gebouwd voor uw PDF",
+    "rowTurnaroundLabel": "Doorlooptijd",
+    "rowTurnaroundValue": "Samen bepaald op basis van complexiteit",
+    "rowPricingLabel":    "Prijsstelling",
+    "rowPricingValue":    "Eerlijk en transparant — geen verborgen kosten",
+    "rowContactLabel":    "Contact"
+  },
+  "faqSection": {
+    "badgeLabel": "FAQ",
+    "badgeText":  "Vragen? Wij hebben antwoorden.",
+    "heading":    "Alles wat u moet weten",
+    "subtitle":   "Kunt u niet vinden wat u zoekt? Neem contact op en we reageren zo snel mogelijk."
+  },
+  "allFaqs": [
+    { "key": "1",  "label": "Welke soorten PDF's ondersteunt Altera?",                              "text": "Altera werkt met elk PDF — loonstroken, facturen, bankafschriften, rapporten en meer. Als het gestructureerde gegevens bevat, kan Altera het extraheren." },
+    { "key": "2",  "label": "Hoe nauwkeurig is de extractie?",                                      "text": "Altera extraheert gegevens met hoge nauwkeurigheid. U kunt aangepaste regels definiëren om ervoor te zorgen dat elk veld precies op de juiste plek terecht komt." },
+    { "key": "3",  "label": "Moet ik iets installeren?",                                             "text": "Altera is gebouwd voor Orange Data Mining. De installatie in Orange duurt slechts seconden — voeg gewoon de add-on toe en u kunt direct beginnen met extraheren." },
+    { "key": "4",  "label": "Kan ik meerdere PDF's tegelijk verwerken?",                            "text": "Ja. Altera ondersteunt batchverwerking zodat u honderden PDF's kunt inladen en alle gegevens in één keer gestructureerd kunt krijgen." },
+    { "key": "5",  "label": "Zijn mijn gegevens veilig?",                                           "text": "Uw bestanden worden veilig verwerkt en nooit opgeslagen na de actieve sessie. We delen of bewaren uw gegevens niet." },
+    { "key": "6",  "label": "Kan ik het proberen voordat ik betaal?",                               "text": "Absoluut — u kunt gratis beginnen en de kernfuncties verkennen voordat u zich verbindt aan een plan." },
+    { "key": "7",  "label": "Heb ik programmeerkennis nodig om Altera te gebruiken?",               "text": "Helemaal niet. Altera is ontworpen voor visueel gebruik in Orange Data Mining. U sleept, plaatst en configureert — geen code vereist." },
+    { "key": "8",  "label": "Kan Altera gescande of afbeeldingsgebaseerde PDF's verwerken?",        "text": "Altera werkt het beste met digitaal gegenereerde PDF's. Gescande documenten met OCR-leesbare tekst worden ook ondersteund, hoewel de nauwkeurigheid kan variëren afhankelijk van de scankwaliteit." },
+    { "key": "9",  "label": "In welk formaat komt de geëxtraheerde data?",                         "text": "Altera geeft schone, gestructureerde tabellen direct uit in Orange Data Mining — klaar om te analyseren, exporteren of te gebruiken in uw volgende workflowstap." },
+    { "key": "10", "label": "Kan ik verschillende widgets gebruiken voor verschillende documenttypen?", "text": "Ja. Elke widget is gebouwd voor een specifieke extractietaak. U kunt widgets combineren in dezelfde workflow om verschillende documenttypen in één keer te verwerken." },
+    { "key": "11", "label": "Wat als de extractie een veld mist of fout heeft?",                    "text": "U kunt aangepaste extractieregels definiëren om randgevallen te behandelen. Als een specifieke documentstructuur niet standaard wordt ondersteund, bieden we ook aangepaste widgetontwikkeling aan." },
+    { "key": "12", "label": "Is er een bestandsgroottelimiet?",                                     "text": "Altera verwerkt standaard zakelijke documenten zonder problemen. Zeer grote bestanden of ongewoon complexe indelingen kunnen de verwerkingstijd beïnvloeden, maar er is geen harde limiet." },
+    { "key": "13", "label": "Welke talen worden ondersteund?",                                      "text": "Altera ondersteunt voornamelijk Engelse en Franse documenten. Ondersteuning voor extra talen wordt toegevoegd naarmate de suite groeit." },
+    { "key": "14", "label": "Hoe krijg ik ondersteuning als er iets misgaat?",                     "text": "U kunt ons direct bereiken via support@alteradatasuite.com. We zijn een klein team, dus u krijgt altijd een echte reactie — geen bot." }
+  ],
+  "docs": {
+    "overview":          "Overzicht",
+    "bestFor":           "Best geschikt voor",
+    "howToUse":          "Hoe te gebruiken",
+    "input":             "Invoer",
+    "output":            "Uitvoer",
+    "tipsNotes":         "Tips & Opmerkingen",
+    "toolbarRef":        "WerkbalkrReference",
+    "keyboardShortcuts": "Sneltoetsen",
+    "watchTutorials":    "Video-tutorials bekijken",
+    "viewPlaylist":      "Afspeellijst op YouTube bekijken",
+    "handTool":          "Handgereedschap",
+    "handToolDesc":      "Wanneer ingeschakeld — klik en sleep ergens op het canvas om door het document te navigeren.",
+    "selectionTool":     "Selectiegereedschap",
+    "selectionToolDesc": "Klik op een bestaande annotatie om deze te selecteren, te verplaatsen of te vergroten/verkleinen.",
+    "pageNav":           "Paginanavigatie",
+    "pageNavDesc":       "Door pagina's bladeren. De invoer toont uw huidige pagina van het totaal — u kunt ook direct een paginanummer typen.",
+    "shortcuts": {
+      "toggleHand":      "Handgereedschap in-/uitschakelen",
+      "toggleSelection": "Selectiegereedschap in-/uitschakelen",
+      "toggleGuide":     "Hulplijngereedschap in-/uitschakelen (kolomscheidingslijn)",
+      "convert":         "Converteren",
+      "openPdf":         "PDF openen",
+      "zoomIn":          "Inzoomen",
+      "zoomOut":         "Uitzoomen",
+      "fitPage":         "Pagina aan venster aanpassen",
+      "scrollZoomIn":    "Inzoomen",
+      "scrollZoomOut":   "Uitzoomen"
+    }
+  },
+  "about": {
+    "heroBadgeLabel":  "Over ons",
+    "heroBadgeText":   "Het team achter Altera",
+    "heroHeading":     "Gebouwd door een klein team met een duidelijk doel.",
+    "heroLead":        "Altera Data Suite is gemaakt om een terugkerend probleem op te lossen — het extraheren van gestructureerde gegevens uit PDF's zou geen uren handmatig werk of complexe scripts mogen vereisen. Dus bouwden we een tool die het in seconden doet.",
+    "storyBadgeLabel": "Ons verhaal",
+    "storyBadgeText":  "Waarom we dit hebben gebouwd",
+    "story1Heading":   "Waar het idee vandaan komt",
+    "story1Text":      "We kwamen allebei uit consultingomgevingen — we werkten met bedrijven zoals Deloitte en PwC. Eén ding werd snel duidelijk: zelfs op dat niveau had niemand een behoorlijke alles-in-één oplossing gebouwd voor het extraheren van gegevens uit PDF's. Loonstroken, facturen, rapporten — alles werd handmatig of met fragiele, eenmalige scripts verwerkt. Die leemte was het startpunt.",
+    "story2Heading":   "De eerste widget",
+    "story2Text":      "We begonnen met één PDF-converter widget. Het werkte — en we zagen meteen wat er als volgende ontbrak. Orange had sterke analytische mogelijkheden maar liet data-cleaning en -verwerking grotendeels onbehandeld. Dus bleven we bouwen. Elke widget was een directe reactie op een knelpunt in echte werkprocessen.",
+    "story3Heading":   "Waarom Orange Data Mining?",
+    "story3Text":      "We wilden niet iets bouwen dat geïsoleerd bestaat. Orange Data Mining heeft al een sterk, gevestigd ecosysteem — het kiezen ervan betekende dat onze gebruikers hun manier van werken niet hoeven te veranderen. Altera sluit direct aan op wat ze al kennen en gebruiken.",
+    "story4Heading":   "Waar we naartoe gaan",
+    "story4Text":      "De suite groeit nog steeds. Meer widgets zijn in ontwikkeling, bestaande worden actief onderhouden en AI wordt een kernonderdeel van hoe Altera gegevens extraheert, interpreteert en structureert. Dit is geen afgerond product — het is een evoluerend toolkit gebouwd om bij te houden hoe data-werk in de praktijk plaatsvindt.",
+    "ctaHeading":      "Klaar om het in actie te zien?",
+    "ctaSubtitle":     "Bekijk de demo om te zien hoe Altera echte PDF's verwerkt, of verken de prijzen om het juiste plan te vinden.",
+    "watchDemo":       "Demo bekijken",
+    "seePricing":      "Prijzen bekijken",
+    "team": [
+      { "role": "Medeoprichter & Ontwikkelaar",      "bio": "Mehdi heeft Altera gebouwd om gegevensextractie moeiteloos te maken in Orange Data Mining. Ontworpen voor snelheid, schaalbaarheid en duidelijkheid — elke widget en functie weerspiegelt echte workflows en echte pijnpunten." },
+      { "role": "Medeoprichter & Productontwerper",  "bio": "Rayan vormt het uiterlijk, het gevoel en de ervaring van Altera. Van het eerste wireframe tot de laatste pixel zorgt hij ervoor dat elke interactie intuïtief, clean en doelgericht is." }
+    ]
+  },
+  "faqs": {
+    "pageTitle": "Veelgestelde vragen — Altera Data Suite"
+  },
+  "changelog": {
+    "badgeLabel":   "Wijzigingslog",
+    "badgeText":    "Nieuw in Altera",
+    "heroHeading":  "Elke update, op één plek.",
+    "heroSubtitle": "Nieuwe functies, verbeteringen en correcties — regelmatig uitgebracht en hier gedocumenteerd.",
+    "categories":   { "New": "Nieuw", "Improved": "Verbeterd", "Fixed": "Opgelost" },
+    "latestLabel":  "Nieuwste versie"
+  },
+  "chatbot": {
+    "triggerTitle":    "Vraag Altera",
+    "triggerSubtitle": "AI-aangedreven assistent",
+    "panelTitle":      "Altera Assistent",
+    "panelSubtitle":   "Stel mij vragen",
+    "placeholder":     "Stel een vraag…",
+    "welcome":         "Hallo! Ik ben Altera's assistent. Stel mij gerust vragen over de app, de widgets of hoe u kunt beginnen.",
+    "followUp":        "Hier zijn enkele dingen waarmee ik u kan helpen:",
+    "fallback":        "Goede vraag! Voor meer details bekijkt u de Documentatiepagina of neemt u rechtstreeks contact op met ons team.",
+    "quickReplies": [
+      { "question": "Hoe werkt de PDF Converter?",             "answer": "Open uw PDF, teken rechthoeken over de gegevens die u wilt extraheren, plaats optioneel kolomgidsen en klik op Converteren. U krijgt een overzichtelijke gestructureerde tabel." },
+      { "question": "Welke widgets zijn beschikbaar?",         "answer": "Altera bevat 9 widgets: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates en Cleaner." },
+      { "question": "Is er een gratis proefperiode?",          "answer": "Ja! U kunt gratis beginnen. Ga naar de Prijzenpagina om te zien wat er in elk plan is inbegrepen." }
+    ]
+  },
+  "lang": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "nl": "Nederlands"
+  },
+  "legal": {
+    "badge":            "Juridisch",
+    "lastUpdatedLabel": "Laatst bijgewerkt",
+    "lastUpdated":      "Mei 2026"
+  },
+  "termsContent": {
+    "groups": [
+      {
+        "title": "Gebruiksvoorwaarden",
+        "sections": [
+          {
+            "heading": "1. Licentieverlening en beperkingen",
+            "body": "Door Altera Data Suite aan te schaffen, ontvangt u een niet-exclusieve, niet-overdraagbare licentie om de software te gebruiken. Deze licentie is gebonden aan uw machine en kan niet worden gedeeld op meerdere computers of gebruikers zonder een aparte licentie.",
+            "items": [
+              "De licentie is machinegebonden via unieke machine-identificatie",
+              "Licentievalidatie vereist minimaal eenmaal per 7 dagen internetverbinding",
+              "U mag geen crack-tools, keygen of andere pogingen gebruiken om licentievalidatiemechanismen te omzeilen"
+            ]
+          },
+          {
+            "heading": "2. Verboden gebruik",
+            "body": "U gaat ermee akkoord het volgende niet te doen:",
+            "items": [
+              "De software gebruiken voor illegale doeleinden of in strijd met toepasselijke wetgeving",
+              "Uw licentiesleutel delen, verkopen of distribueren aan derden",
+              "Proberen de software te decompileren, te disassembleren of eigen code te extraheren",
+              "De software gebruiken voor grootschalig scrapen, datamining of extractie voor concurrerende doeleinden"
+            ]
+          },
+          {
+            "heading": "3. Disclaimer AI-nauwkeurigheid",
+            "body": "De REGEX AI Generator en data-extractiefuncties maken gebruik van kunstmatige intelligentie en zijn niet 100% nauwkeurig. Resultaten kunnen variëren op basis van invoerkwaliteit, documentcomplexiteit en gegevensopmaak. Gebruikers zijn verantwoordelijk voor het valideren van geëxtraheerde gegevens voordat ze worden gebruikt in productieomgevingen."
+          },
+          {
+            "heading": "4. Proefvoorwaarden",
+            "body": "De gratis proefperiode van 15 dagen is beperkt tot één per machine. Na het verstrijken van de proefperiode is een betaalde licentie vereist om Altera te blijven gebruiken. U kunt de proefperiode op elk moment annuleren zonder boete."
+          },
+          {
+            "heading": "5. Updates en onderhoud",
+            "body": "Kleine updates en bugfixes worden gratis verstrekt tijdens uw abonnement. We behouden ons het recht voor om functies of grote versies met 30 dagen vooraankondiging te beëindigen. De kernfunctionaliteit blijft beschikbaar tijdens uw actieve licentieperiode."
+          },
+          {
+            "heading": "6. Gegevens en privacy",
+            "body": "Alle gebruikersgegevens worden lokaal op uw machine verwerkt. Extractiepatronen en regex-uitvoer worden alleen voor AI-verwerking naar onze servers verzonden en worden niet permanent opgeslagen. Zie het Privacybeleid voor volledige details."
+          },
+          {
+            "heading": "7. Aansprakelijkheidsbeperking",
+            "body": "Altera Data Suite wordt 'zoals het is' geleverd zonder enige garantie. We zijn niet aansprakelijk voor gegevensverlies, extractiefouten of schade als gevolg van het gebruik of misbruik van deze software. Gebruikers nemen alle verantwoordelijkheid voor het valideren van uitvoer voordat ze erop vertrouwen."
+          }
+        ]
+      }
+    ]
+  },
+  "privacyContent": {
+    "groups": [
+      {
+        "title": "Privacybeleid",
+        "sections": [
+          {
+            "heading": "1. Informatie die we verzamelen",
+            "body": "We verzamelen de volgende informatie:",
+            "items": [
+              "Accountinformatie: Uw e-mailadres en naam (voor licentieregistratie)",
+              "Machine-ID: Een unieke identificator om uw licentie aan uw computer te koppelen",
+              "Gebruiksgegevens: Informatie over welke functies u gebruikt (voor productverbetering)",
+              "AI-verwerkingsgegevens: Regex-patronen en documenten die naar onze AI-servers worden gestuurd voor verwerking (niet permanent opgeslagen)"
+            ]
+          },
+          {
+            "heading": "2. Hoe we uw informatie gebruiken",
+            "body": "Uw informatie wordt gebruikt om:",
+            "items": [
+              "Uw licentie te valideren en te authenticeren",
+              "Uw AI-verzoeken te verwerken (regex-generatie, data-extractie)",
+              "Onze diensten te verbeteren en te optimaliseren",
+              "Belangrijke updates en herinneringen voor licentiehernieuwing te sturen"
+            ]
+          },
+          {
+            "heading": "3. Betalingsverwerking",
+            "body": "Alle betalingsverwerking wordt afgehandeld door Paddle (onze betalingsverwerker). We slaan uw creditcardgegevens niet op. Betalingsgegevens worden versleuteld en direct door Paddle verwerkt volgens hun privacynormen en PCI-nalevingsvereisten."
+          },
+          {
+            "heading": "4. AI-prompts en serververwerking",
+            "body": "Wanneer u de REGEX AI Generator gebruikt, worden uw prompts en documenten voor verwerking naar onze AI-servers verzonden. We slaan deze invoer niet permanent op. We raden echter aan geen gevoelige, vertrouwelijke of privé-informatie (zoals persoonlijke identificatoren, rekeningnummers of vertrouwelijke bedrijfsinformatie) in uw prompts op te nemen. Als u bezorgd bent over gegevensoverdracht, raden we u aan alleen niet-gevoelige testgegevens te gebruiken."
+          },
+          {
+            "heading": "5. Gegevensbewaring",
+            "body": "We bewaren uw gegevens als volgt:",
+            "items": [
+              "Accountinformatie: Opgeslagen zolang uw licentie actief is; 30 dagen na annulering verwijderd",
+              "Machine-ID: Bewaard voor licentievalidatie; op verzoek verwijderd",
+              "AI-verwerkingsgegevens: Na verwerking niet permanent opgeslagen"
+            ]
+          },
+          {
+            "heading": "6. Diensten van derden",
+            "body": "We maken gebruik van de volgende diensten van derden:",
+            "items": [
+              "Paddle: Betalingsverwerking en handelsdiensten",
+              "DeepSeek API: AI-verwerking voor regex-generatie",
+              "E-mailserviceprovider: Voor het verzenden van licentiesleutels en meldingen"
+            ]
+          },
+          {
+            "heading": "7. AVG- en CCPA-rechten",
+            "body": "Als u zich in de EU (AVG) of Californië (CCPA) bevindt, heeft u het recht om:",
+            "items": [
+              "Een kopie van uw persoonsgegevens op te vragen",
+              "Verwijdering van uw gegevens te verzoeken",
+              "U af te melden voor marketingcommunicatie"
+            ],
+            "note": "Om deze rechten uit te oefenen, stuurt u ons een e-mail op: support@alteradatasuite.com"
+          },
+          {
+            "heading": "8. Beveiliging",
+            "body": "We gebruiken codering en beveiligingspraktijken die voldoen aan industrienormen om uw gegevens te beschermen. Geen enkel systeem is echter 100% veilig. We zijn niet aansprakelijk voor ongeautoriseerde toegang als gevolg van factoren buiten onze controle."
+          },
+          {
+            "heading": "9. Contact",
+            "body": "Voor privacyvragen of gegevensverzoeken: support@alteradatasuite.com"
+          }
+        ]
+      }
+    ]
+  },
+  "refundContent": {
+    "groups": [
+      {
+        "title": "Terugbetalingsbeleid",
+        "sections": [
+          {
+            "heading": "1. 30 dagen geld-terug-garantie",
+            "body": "Als u niet tevreden bent met Altera Data Suite binnen de eerste 30 dagen na aankoop, bieden we een volledige terugbetaling. Geen vragen gesteld. Om een terugbetaling aan te vragen, stuurt u een e-mail naar support@alteradatasuite.com met uw licentiesleutel en de reden voor de terugbetaling."
+          },
+          {
+            "heading": "2. Terugbetalingsrecht",
+            "body": "Terugbetalingen zijn beschikbaar als:",
+            "items": [
+              "Het verzoek binnen 30 dagen na aankoop wordt ingediend",
+              "De licentie niet is gedeeld of overgedragen aan een andere gebruiker",
+              "Geen bewijs van pogingen om licentiebeperkingen te omzeilen"
+            ]
+          },
+          {
+            "heading": "3. Terugbetalingsverwerking",
+            "body": "Terugbetalingen worden verwerkt door Paddle (onze betalingsverwerker) en verschijnen doorgaans binnen 5 tot 7 werkdagen op uw bankrekening. Uw licentie wordt onmiddellijk gedeactiveerd na goedkeuring van de terugbetaling."
+          },
+          {
+            "heading": "4. Terugbetalingsbeleid proefperiode",
+            "body": "Als u direct na het einde van uw proefperiode een betaald abonnement heeft afgesloten en niet tevreden bent, heeft u nog steeds recht op de 30-dagen-geld-terug-garantie vanaf de datum van uw betaalde aankoop."
+          },
+          {
+            "heading": "5. Abonnementsopzegging",
+            "body": "U kunt uw abonnement op elk moment opzeggen. Uw toegang blijft beschikbaar tot het einde van uw factureringsperiode. Er wordt geen terugbetaling verleend voor gedeeltelijke maanden. Om op te zeggen, logt u in op uw account of stuurt u een e-mail naar support@alteradatasuite.com"
+          },
+          {
+            "heading": "6. Enterprise- en maatwerkaanpakken",
+            "body": "Voor enterprise- of maatwerklicentieovereenkomsten worden terugbetalingsvoorwaarden individueel onderhandeld en vastgelegd in uw contract."
+          },
+          {
+            "heading": "7. Contact voor terugbetalingen",
+            "body": "E-mail: support@alteradatasuite.com"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,17 +1,20 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { Button } from "antd";
+import WatchDemoButton from "@/components/WatchDemoButton";
 
-export default function AboutCTAButtons() {
-  const router = useRouter();
+interface Props {
+  lang: string;
+  watchDemo: string;
+  seePricing: string;
+}
+
+export default function AboutCTAButtons({ lang, watchDemo, seePricing }: Props) {
   return (
     <div style={{ display: "flex", gap: 12, flexWrap: "wrap", justifyContent: "center" }}>
-      <Button type="primary" size="large" onClick={() => router.push("/demo")} style={{ fontWeight: 600 }}>
-        Watch Demo
-      </Button>
-      <Button size="large" onClick={() => router.push("/pricing")}>
-        View Pricing
+      <WatchDemoButton label={watchDemo} btnType="primary" style={{ fontWeight: 600 }} />
+      <Button size="large" href={`/${lang}/pricing`}>
+        {seePricing}
       </Button>
     </div>
   );

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { headers } from "next/headers";
+import Script from "next/script";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -31,6 +32,13 @@ export default async function RootLayout({
   return (
     <html lang={lang} className={poppins.variable} suppressHydrationWarning>
       <body suppressHydrationWarning>{children}</body>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-DQFTBBH4P0" strategy="afterInteractive" />
+      <Script id="gtag-init" strategy="afterInteractive">{`
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-DQFTBBH4P0');
+      `}</Script>
     </html>
   );
 }

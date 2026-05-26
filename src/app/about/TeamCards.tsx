@@ -14,7 +14,7 @@ interface Props {
 }
 
 const MEMBER_META = [
-  { name: "Mehdi BENRABIAA", src: "/Profile Pic.png",  linkedin: "https://www.linkedin.com/in/mehdi-benrabiaa-7551a217b/?skipRedirect=true" },
+  { name: "Mehdi BENRABIAA", src: "/Profile Pic.webp",  linkedin: "https://www.linkedin.com/in/mehdi-benrabiaa-7551a217b/?skipRedirect=true" },
   { name: "Rayan CH",         src: null,                linkedin: null },
 ];
 

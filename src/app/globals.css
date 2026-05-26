@@ -70,3 +70,9 @@ main > section:nth-child(even) {
     color-scheme: dark;
   }
 }
+
+/* Prevent iOS Safari auto-zoom on focused inputs (requires font-size >= 16px) */
+input, select, textarea,
+.ant-select-selection-search-input {
+  font-size: 16px !important;
+}

@@ -96,7 +96,7 @@ function Navbar({ t, lang }: Props) {
         <Button
           className={styles.hamburger}
           type="text"
-          icon={<MenuOutlined />}
+          icon={<MenuOutlined style={{ fontSize: 22 }} />}
           onClick={() => setDrawerOpen(true)}
           size="large"
         />

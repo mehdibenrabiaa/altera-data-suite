@@ -228,7 +228,7 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
                   onPressEnter={() => send(input)}
                   placeholder={t.placeholder}
                   variant="borderless"
-                  style={{ flex: 1, fontSize: 13.5 }}
+                  style={{ flex: 1, fontSize: 16 }}
                   suffix={
                     <Button
                       type="primary"

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SectionHeading from "@/components/SectionHeading";
 import NotFoundButton from "./NotFoundButton";
+import { COLOR_PRIMARY } from "@/lib/theme";
 
 export const metadata: Metadata = {
   title: "Page Not Found",
@@ -19,7 +20,7 @@ export default function NotFound() {
         textAlign: "center",
       }}
     >
-      <p style={{ fontSize: 160, fontWeight: 700, color: "#ff5d02", lineHeight: 1, margin: "0 0 8px", letterSpacing: "-6px" }}>
+      <p style={{ fontSize: 160, fontWeight: 700, color: COLOR_PRIMARY, lineHeight: 1, margin: "0 0 8px", letterSpacing: "-6px" }}>
         404
       </p>
       <SectionHeading

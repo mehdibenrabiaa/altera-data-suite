@@ -1,7 +1,7 @@
 .footer {
   background: #f9f9f9;
   border-top: 1px solid #ede9e2;
-  padding: 64px 60px 32px;
+  padding: 64px 60px 104px;
 }
 
 .inner {
@@ -36,7 +36,7 @@
 
 .brandDesc {
   font-size: 13.5px;
-  color: #888;
+  color: var(--color-text-muted);
   line-height: 1.7;
   margin: 0;
   max-width: 260px;
@@ -144,7 +144,7 @@
 
 @media (max-width: 600px) {
   .footer {
-    padding: 48px 24px 24px;
+    padding: 48px 24px 100px;
   }
 
   .inner {

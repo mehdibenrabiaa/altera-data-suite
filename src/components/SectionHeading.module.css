@@ -16,7 +16,7 @@
 
 .subtitle {
   font-size: 16px;
-  color: #888;
+  color: var(--color-text-muted);
   max-width: 580px;
   margin: 0 auto;
   line-height: 1.65;

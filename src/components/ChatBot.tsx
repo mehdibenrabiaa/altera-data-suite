@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CloseOutlined, RobotOutlined, SendOutlined } from "@ant-design/icons";
 import { Avatar, Button, Card, Input, Typography } from "antd";
 import styles from "./ChatBot.module.css";
+import { COLOR_PRIMARY, COLOR_PRIMARY_LIGHT } from "@/lib/theme";
 
 const { Text } = Typography;
 
@@ -144,7 +145,7 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
               }
               styles={{
                 header: {
-                  background: "linear-gradient(135deg, #ff5d02 0%, #ff7a30 100%)",
+                  background: `linear-gradient(135deg, ${COLOR_PRIMARY} 0%, ${COLOR_PRIMARY_LIGHT} 100%)`,
                   borderBottom: "none",
                   padding: "14px 16px",
                 },
@@ -163,7 +164,7 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
                       className={msg.role === "user" ? styles.userRow : styles.botRow}
                     >
                       {msg.role === "bot" && (
-                        <Avatar size={28} icon={<RobotOutlined />} style={{ background: "#ff5d02", flexShrink: 0 }} />
+                        <Avatar size={28} icon={<RobotOutlined />} style={{ background: COLOR_PRIMARY, flexShrink: 0 }} />
                       )}
                       <div className={msg.role === "user" ? styles.userBubble : styles.bubble}>
                         <Text style={{ fontSize: 13.5, color: msg.role === "user" ? "#fff" : "#333" }}>
@@ -183,7 +184,7 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.18 }}
                     >
-                      <Avatar size={28} icon={<RobotOutlined />} style={{ background: "#ff5d02", flexShrink: 0 }} />
+                      <Avatar size={28} icon={<RobotOutlined />} style={{ background: COLOR_PRIMARY, flexShrink: 0 }} />
                       <div className={styles.bubble}>
                         <div className={styles.typingDots}>
                           <span className={styles.dot} />
@@ -234,7 +235,7 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
                       icon={<SendOutlined />}
                       size="small"
                       onClick={() => send(input)}
-                      style={{ background: "#ff5d02", border: "none", borderRadius: 6 }}
+                      style={{ background: COLOR_PRIMARY, border: "none", borderRadius: 6 }}
                     />
                   }
                 />

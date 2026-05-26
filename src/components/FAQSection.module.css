@@ -24,7 +24,7 @@
 
 .list :global(.ant-collapse-content-box) {
   font-size: 14px;
-  color: #777;
+  color: var(--color-text-muted);
   line-height: 1.7;
   padding: 0 24px 20px !important;
 }

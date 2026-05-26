@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import SectionBadge from "@/components/SectionBadge";
 import styles from "./changelog.module.css";
+import { COLOR_PRIMARY } from "@/lib/theme";
 
 export const metadata: Metadata = {
   title: "Changelog",
@@ -88,7 +89,7 @@ const CHANGELOG: ChangeEntry[] = [
 ];
 
 const CATEGORY_STYLES: Record<ChangeCategory, { bg: string; color: string }> = {
-  New:      { bg: "#fff4ef", color: "#ff5d02" },
+  New:      { bg: "#fff4ef", color: COLOR_PRIMARY },
   Improved: { bg: "#f0f5ff", color: "#2255cc" },
   Fixed:    { bg: "#f0faf4", color: "#1a7a45" },
 };
@@ -124,6 +125,7 @@ export default function ChangelogPage() {
                     style={{
                       background: CATEGORY_STYLES[c.category].bg,
                       color: CATEGORY_STYLES[c.category].color,
+                      fontWeight: 700,
                     }}
                   >
                     {c.category}

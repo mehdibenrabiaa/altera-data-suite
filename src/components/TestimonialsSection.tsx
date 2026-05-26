@@ -4,6 +4,7 @@ import { Rate } from "antd";
 import styles from "./TestimonialsSection.module.css";
 import SectionBadge from "./SectionBadge";
 import SectionHeading from "./SectionHeading";
+import { COLOR_PRIMARY } from "@/lib/theme";
 
 interface TestimonialCard {
   name: string;
@@ -46,7 +47,7 @@ export default function TestimonialsSection({ t }: Props) {
           return (
             <div key={card.name} className={styles.card}>
               <span className={styles.quote}>&ldquo;</span>
-              <Rate disabled defaultValue={5} style={{ fontSize: 16, color: "#ff5d02" }} />
+              <Rate disabled defaultValue={5} style={{ fontSize: 16, color: COLOR_PRIMARY }} />
               <p className={styles.text}>{card.text}</p>
               <div className={styles.author}>
                 <div className={styles.avatar} style={{ background: meta.color }}>

@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(135deg, #ff5d02 0%, #ff7a30 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
   padding: 110px 24px 72px;
   text-align: center;
   display: flex;

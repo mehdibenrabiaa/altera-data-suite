@@ -46,7 +46,7 @@
 }
 
 .star.filled {
-  color: #ff5d02;
+  color: var(--color-primary);
 }
 
 .text {
@@ -93,7 +93,7 @@
 
 .role {
   font-size: 12px;
-  color: #999;
+  color: var(--color-text-muted);
   margin: 0;
 }
 

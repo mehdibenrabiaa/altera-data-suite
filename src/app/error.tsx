@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { Button } from "antd";
+import { COLOR_PRIMARY } from "@/lib/theme";
 
 export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
   useEffect(() => {
@@ -20,7 +21,7 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
         textAlign: "center",
       }}
     >
-      <p style={{ fontSize: 15, fontWeight: 600, color: "#ff5d02", letterSpacing: "0.1em", textTransform: "uppercase", margin: "0 0 20px" }}>
+      <p style={{ fontSize: 15, fontWeight: 600, color: COLOR_PRIMARY, letterSpacing: "0.1em", textTransform: "uppercase", margin: "0 0 20px" }}>
         Error
       </p>
       <h1 style={{ fontSize: 72, fontWeight: 600, color: "#1a1a1a", margin: "0 0 20px", letterSpacing: "-2px", lineHeight: 1 }}>

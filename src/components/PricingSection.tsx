@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Segmented, Typography } from "antd";
 import styles from "./PricingSection.module.css";
+import { COLOR_PRIMARY } from "@/lib/theme";
 import PricingCard from "./PricingCard";
 import SectionBadge from "./SectionBadge";
 import SectionHeading from "./SectionHeading";
@@ -63,8 +64,8 @@ const YEARLY_PRICE  = Math.round(MONTHLY_PRICE * 12 * 0.9); // 1069
 
 const PLAN_META = [
   { priceMonthly: 0,             priceYearly: 0,           popular: false, color: "#595959", hrefSlug: "docs"  },
-  { priceMonthly: MONTHLY_PRICE, priceYearly: YEARLY_PRICE, popular: true,  color: "#FD4728", hrefSlug: undefined },
-  { priceMonthly: undefined,     priceYearly: undefined,   popular: false, color: "#fa541c", hrefSlug: "about" },
+  { priceMonthly: MONTHLY_PRICE, priceYearly: YEARLY_PRICE, popular: true,  color: COLOR_PRIMARY, hrefSlug: undefined },
+  { priceMonthly: undefined,     priceYearly: undefined,   popular: false, color: COLOR_PRIMARY, hrefSlug: "about" },
 ];
 
 export default function PricingSection({ t = DEFAULT_T, lang = "en" }: Props) {
@@ -86,7 +87,7 @@ export default function PricingSection({ t = DEFAULT_T, lang = "en" }: Props) {
           ]}
           style={{ fontSize: 14, padding: "3px 4px" }}
         />
-        <Text style={{ fontSize: 13, color: "#ff5d02", fontWeight: 500 }}>
+        <Text style={{ fontSize: 13, color: COLOR_PRIMARY, fontWeight: 700 }}>
           {t.discountNote}
         </Text>
       </div>

@@ -92,9 +92,9 @@
 }
 
 .widgetNavBtn:hover {
-  border-color: #ff5d02;
+  border-color: var(--color-primary);
   box-shadow: 0 2px 8px rgba(255, 93, 2, 0.08);
-  color: #ff5d02;
+  color: var(--color-primary);
 }
 
 .widgetNavArrow {

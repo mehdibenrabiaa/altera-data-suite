@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getDictionary, hasLocale, LOCALES } from "@/i18n/dictionaries";
 import SectionBadge from "@/components/SectionBadge";
 import styles from "@/app/changelog/changelog.module.css";
+import { COLOR_PRIMARY } from "@/lib/theme";
 
 const BASE_URL = "https://www.alteradatasuite.com";
 
@@ -87,7 +88,7 @@ const CHANGELOG: ChangeEntry[] = [
 ];
 
 const CATEGORY_STYLES: Record<ChangeCategory, { bg: string; color: string }> = {
-  New:      { bg: "#fff4ef", color: "#ff5d02" },
+  New:      { bg: "#fff4ef", color: COLOR_PRIMARY },
   Improved: { bg: "#f0f5ff", color: "#2255cc" },
   Fixed:    { bg: "#f0faf4", color: "#1a7a45" },
 };
@@ -159,6 +160,7 @@ export default async function ChangelogPage({
                     style={{
                       background: CATEGORY_STYLES[ch.category].bg,
                       color: CATEGORY_STYLES[ch.category].color,
+                      fontWeight: 700,
                     }}
                   >
                     {c.categories[ch.category]}

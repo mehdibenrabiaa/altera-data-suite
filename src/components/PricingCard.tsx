@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Button, Card, Divider, Flex, Tag, Typography } from "antd";
+import { COLOR_PRIMARY, COLOR_TEXT_MUTED } from "@/lib/theme";
 import {
   CheckCircleFilled,
   StarFilled,
@@ -34,7 +35,7 @@ export default function PricingCard({
   features,
   btnLabel = "Subscribe Now",
   badge,
-  color = "#ff5d02",
+  color = COLOR_PRIMARY,
   letsTalk = "Let's Talk",
   freeLabel = "Free",
   includesLabel = "Includes",
@@ -72,6 +73,7 @@ export default function PricingCard({
                 style={{
                   borderRadius: 9,
                   fontSize: 11,
+                  fontWeight: 700,
                   background: "transparent",
                   color: color,
                   borderColor: "#d9d9d9",
@@ -171,7 +173,7 @@ export default function PricingCard({
             <li key={item}>
               <Flex align="center" gap={8}>
                 <CheckCircleFilled style={{ fontSize: 13, color }} />
-                <Text style={{ fontSize: 14, color: "#8c8c8c" }}>{item}</Text>
+                <Text style={{ fontSize: 14, color: COLOR_TEXT_MUTED }}>{item}</Text>
               </Flex>
             </li>
           ))}

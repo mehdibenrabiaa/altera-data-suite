@@ -57,7 +57,7 @@
 
 .cardDesc {
   font-size: 13.5px;
-  color: #888;
+  color: var(--color-text-muted);
   line-height: 1.65;
   margin: 0;
   flex: 1;
@@ -75,7 +75,7 @@
 }
 
 .cardLink:hover {
-  color: #ff5d02;
+  color: var(--color-primary);
 }
 
 @media (max-width: 1100px) {

@@ -45,7 +45,7 @@
 
 .statDesc {
   font-size: 13.5px;
-  color: #888;
+  color: var(--color-text-muted);
   line-height: 1.6;
   margin: 0;
   max-width: 220px;

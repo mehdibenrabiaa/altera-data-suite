@@ -1,6 +1,7 @@
 "use client";
 
 import { ConfigProvider } from "antd";
+import { COLOR_PRIMARY } from "@/lib/theme";
 
 export default function AntdProvider({
   children,
@@ -11,7 +12,7 @@ export default function AntdProvider({
     <ConfigProvider
       theme={{
         token: {
-          colorPrimary: "#ff5d02",
+          colorPrimary: COLOR_PRIMARY,
         },
       }}
     >

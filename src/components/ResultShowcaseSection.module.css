@@ -35,7 +35,7 @@
 
 .subtitle {
   font-size: 15.5px;
-  color: #777;
+  color: var(--color-text-muted);
   line-height: 1.7;
   margin: 0 0 32px;
   max-width: 400px;
@@ -50,7 +50,7 @@
 .ctaPrimary {
   display: inline-flex;
   align-items: center;
-  background: #ff5d02;
+  background: var(--color-primary);
   color: #fff;
   font-size: 14.5px;
   font-weight: 600;
@@ -128,5 +128,9 @@
   .ctaPrimary,
   .ctaSecondary {
     justify-content: center;
+  }
+
+  .ctaBtn {
+    font-size: 18px !important;
   }
 }

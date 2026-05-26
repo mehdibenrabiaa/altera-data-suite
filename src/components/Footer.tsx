@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 import styles from "./Footer.module.css";
+import { COLOR_TEXT_MUTED } from "@/lib/theme";
 
 interface FooterDict {
   tagline: string;
@@ -172,7 +173,7 @@ export default function Footer({ t, lang, langNames }: Props) {
           © {new Date().getFullYear()} Altera Data Suite. {t.copyright}
         </span>
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          <span style={{ fontSize: 13, color: "#888" }}>{t.langSwitcherLabel}:</span>
+          <span style={{ fontSize: 13, color: COLOR_TEXT_MUTED }}>{t.langSwitcherLabel}:</span>
           <LanguageSwitcher currentLang={lang} langNames={langNames} />
         </div>
       </div>

@@ -75,7 +75,7 @@ export default function PricingCard({
                   fontSize: 11,
                   fontWeight: 700,
                   background: "transparent",
-                  color: color,
+                  color: "#c44400",
                   borderColor: "#d9d9d9",
                   boxShadow: "none",
                   padding: "2px 10px",
@@ -148,7 +148,7 @@ export default function PricingCard({
           </Flex>
 
           {subtitle && (
-            <Text type="secondary" style={{ fontSize: 12, fontWeight: 500 }}>
+            <Text style={{ fontSize: 12, fontWeight: 500, color: COLOR_TEXT_MUTED }}>
               {subtitle}
             </Text>
           )}
@@ -192,8 +192,8 @@ export default function PricingCard({
           paddingTop: 20,
           borderRadius: "0 0 25px 25px",
           border: "none",
-          fontSize: 14,
-          fontWeight: 600,
+          fontSize: 19,
+          fontWeight: 700,
           boxShadow: "none",
           position: "relative",
           zIndex: 1,

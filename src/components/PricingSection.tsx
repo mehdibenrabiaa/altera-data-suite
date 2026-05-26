@@ -87,7 +87,7 @@ export default function PricingSection({ t = DEFAULT_T, lang = "en" }: Props) {
           ]}
           style={{ fontSize: 14, padding: "3px 4px" }}
         />
-        <Text style={{ fontSize: 13, color: COLOR_PRIMARY, fontWeight: 700 }}>
+        <Text style={{ fontSize: 13, color: "#c44400", fontWeight: 700 }}>
           {t.discountNote}
         </Text>
       </div>

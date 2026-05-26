@@ -259,7 +259,7 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
         </div>
         <div className={styles.triggerText}>
           <Text strong style={{ fontSize: 13, color: "#111", lineHeight: 1.2 }}>{t.triggerTitle}</Text>
-          <Text style={{ fontSize: 11.5, color: "#999", lineHeight: 1.2 }}>{t.triggerSubtitle}</Text>
+          <Text style={{ fontSize: 11.5, color: COLOR_TEXT_MUTED, lineHeight: 1.2 }}>{t.triggerSubtitle}</Text>
         </div>
       </motion.button>
     </div>

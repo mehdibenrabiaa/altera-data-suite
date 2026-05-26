@@ -4,6 +4,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Button, Card, Divider, Flex, Tag, Typography } from "antd";
 import { COLOR_PRIMARY, COLOR_TEXT_MUTED } from "@/lib/theme";
+import styles from "./PricingCard.module.css";
 import {
   CheckCircleFilled,
   StarFilled,
@@ -183,6 +184,7 @@ export default function PricingCard({
       <Button
         block
         href={href}
+        className={styles.btn}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         style={{
@@ -192,8 +194,8 @@ export default function PricingCard({
           paddingTop: 20,
           borderRadius: "0 0 25px 25px",
           border: "none",
-          fontSize: 19,
-          fontWeight: 700,
+          fontSize: 14,
+          fontWeight: 600,
           boxShadow: "none",
           position: "relative",
           zIndex: 1,

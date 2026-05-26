@@ -1,0 +1,10 @@
+.btn {
+  /* desktop keeps default sizing */
+}
+
+@media (max-width: 600px) {
+  .btn {
+    font-size: 19px !important;
+    font-weight: 700 !important;
+  }
+}

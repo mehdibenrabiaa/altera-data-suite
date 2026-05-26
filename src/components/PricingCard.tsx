@@ -11,7 +11,7 @@ import {
   RightOutlined,
 } from "@ant-design/icons";
 
-const { Title, Text } = Typography;
+const { Text } = Typography;
 
 interface PricingCardProps {
   title: string;
@@ -62,12 +62,9 @@ export default function PricingCard({
         {/* top section grows to push the divider to the same level across all cards */}
         <div style={{ flex: 1 }}>
           <Flex align="center" justify="space-between">
-            <Title
-              level={5}
-              style={{ margin: 0, fontSize: 18, fontWeight: 600, color: "#000" }}
-            >
+            <span style={{ margin: 0, fontSize: 18, fontWeight: 600, color: "#000" }}>
               {title}
-            </Title>
+            </span>
 
             {badge && (
               <Tag

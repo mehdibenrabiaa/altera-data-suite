@@ -30,6 +30,9 @@ export default async function RootLayout({
 
   return (
     <html lang={lang} className={poppins.variable} suppressHydrationWarning>
+      <head>
+        <link rel="preload" href="/HERO BOXE1.webp" as="image" type="image/webp" fetchPriority="high" />
+      </head>
       <body suppressHydrationWarning>{children}</body>
     </html>
   );

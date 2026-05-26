@@ -3,7 +3,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Button, Drawer, Flex } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
-import Link from "next/link";
 import SamePageLink from "./SamePageLink";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
@@ -60,7 +59,7 @@ function Navbar({ t, lang }: Props) {
         }}
       >
         {/* Logo */}
-        <Link href={`/${lang}`} className={styles.logo}>
+        <SamePageLink href={`/${lang}`} className={styles.logo}>
           <Image
             src="/Altera_logo_orange_no_title.svg"
             alt="Altera Data Suite"
@@ -68,7 +67,7 @@ function Navbar({ t, lang }: Props) {
             height={32}
             style={{ height: 32, width: "auto" }}
           />
-        </Link>
+        </SamePageLink>
 
         {/* Nav links */}
         <nav className={styles.desktopNav}>

@@ -52,10 +52,14 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([{ role: "bot", text: t.welcome }]);
   const [typing, setTyping] = useState(false);
+  const [streamingText, setStreamingText] = useState<string | null>(null);
   const [showQuickReplies, setShowQuickReplies] = useState(false);
   const [input, setInput] = useState("");
   const hasAutoPlayed = useRef(false);
   const bottomRef = useRef<HTMLDivElement>(null);
+  const streamRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
+  useEffect(() => () => { if (streamRef.current) clearInterval(streamRef.current); }, []);
 
   useEffect(() => {
     if (!open || hasAutoPlayed.current) return;
@@ -73,8 +77,27 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, typing]);
 
+  useEffect(() => {
+    if (streamingText !== null) bottomRef.current?.scrollIntoView({ behavior: "instant" });
+  }, [streamingText]);
+
+  const animateResponse = (text: string, onDone: () => void) => {
+    if (streamRef.current) clearInterval(streamRef.current);
+    let i = 0;
+    setStreamingText("");
+    streamRef.current = setInterval(() => {
+      i++;
+      setStreamingText(text.slice(0, i));
+      if (i >= text.length) {
+        clearInterval(streamRef.current!);
+        streamRef.current = null;
+        onDone();
+      }
+    }, 14);
+  };
+
   const send = async (text: string) => {
-    if (!text.trim() || typing) return;
+    if (!text.trim() || typing || streamingText !== null) return;
     setShowQuickReplies(false);
     setInput("");
 
@@ -96,11 +119,17 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
-      setMessages((prev) => [...prev, { role: "bot", text: data.reply }]);
-    } catch {
-      setMessages((prev) => [...prev, { role: "bot", text: t.fallback }]);
-    } finally {
       setTyping(false);
+      animateResponse(data.reply, () => {
+        setStreamingText(null);
+        setMessages((prev) => [...prev, { role: "bot", text: data.reply }]);
+      });
+    } catch {
+      setTyping(false);
+      animateResponse(t.fallback, () => {
+        setStreamingText(null);
+        setMessages((prev) => [...prev, { role: "bot", text: t.fallback }]);
+      });
     }
   };
 
@@ -167,12 +196,31 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
                         <Avatar size={28} icon={<RobotOutlined />} style={{ background: COLOR_PRIMARY, flexShrink: 0 }} />
                       )}
                       <div className={msg.role === "user" ? styles.userBubble : styles.bubble}>
-                        <Text style={{ fontSize: 13.5, color: msg.role === "user" ? "#fff" : "#333" }}>
+                        <Text className={styles.msgText} style={{ color: msg.role === "user" ? "#fff" : "#333" }}>
                           {msg.text}
                         </Text>
                       </div>
                     </motion.div>
                   ))}
+
+                  {/* Streaming / typewriter response */}
+                  {streamingText !== null && (
+                    <motion.div
+                      key="streaming"
+                      className={styles.botRow}
+                      initial={{ opacity: 0, y: 8 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.18 }}
+                    >
+                      <Avatar size={28} icon={<RobotOutlined />} style={{ background: COLOR_PRIMARY, flexShrink: 0 }} />
+                      <div className={styles.bubble}>
+                        <Text className={styles.msgText} style={{ color: "#333" }}>
+                          {streamingText}
+                          <span className={styles.cursor} />
+                        </Text>
+                      </div>
+                    </motion.div>
+                  )}
 
                   {/* Typing indicator */}
                   {typing && (

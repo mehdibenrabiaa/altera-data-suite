@@ -97,6 +97,37 @@
   max-width: 82%;
 }
 
+/* ── Message text ─────────────────────────────── */
+
+.msgText {
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+@media (max-width: 480px) {
+  .msgText {
+    font-size: 15.5px;
+  }
+}
+
+/* ── Streaming cursor ─────────────────────────── */
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.9em;
+  background: var(--color-primary);
+  margin-left: 2px;
+  vertical-align: text-bottom;
+  border-radius: 1px;
+  animation: blink 0.7s step-end infinite;
+}
+
 /* ── Typing indicator ─────────────────────────── */
 
 .typingDots {

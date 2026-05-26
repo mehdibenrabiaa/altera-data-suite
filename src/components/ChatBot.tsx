@@ -58,8 +58,22 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
   const hasAutoPlayed = useRef(false);
   const bottomRef = useRef<HTMLDivElement>(null);
   const streamRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const sessionIdRef = useRef<string>("");
 
   useEffect(() => () => { if (streamRef.current) clearInterval(streamRef.current); }, []);
+
+  useEffect(() => {
+    if (!sessionIdRef.current) {
+      const stored = sessionStorage.getItem("altera_chat_sid");
+      if (stored) {
+        sessionIdRef.current = stored;
+      } else {
+        const id = `s_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`;
+        sessionStorage.setItem("altera_chat_sid", id);
+        sessionIdRef.current = id;
+      }
+    }
+  }, []);
 
   useEffect(() => {
     if (!open || hasAutoPlayed.current) return;
@@ -115,7 +129,7 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
       const res = await fetch(`${apiUrl}/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: text, history }),
+        body: JSON.stringify({ message: text, history, session_id: sessionIdRef.current, user_agent: navigator.userAgent }),
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();

@@ -27,7 +27,9 @@ export default function FeatureCardsSection({ t }: Props) {
               src={IMAGES[i]}
               alt={card.label}
               fill
-              priority={i === 0}
+              sizes="(max-width: 900px) calc(100vw - 48px), 280px"
+              loading={i === 0 ? "eager" : "lazy"}
+              fetchPriority={i === 0 ? "high" : "auto"}
               style={{ objectFit: "cover" }}
             />
             <div className={styles.cardBody}>

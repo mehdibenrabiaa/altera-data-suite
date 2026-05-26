@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import dynamic from "next/dynamic";
 import { getDictionary, hasLocale, LOCALES } from "@/i18n/dictionaries";
 import Hero from "@/components/Hero";
 import ResultShowcaseSection from "@/components/ResultShowcaseSection";
 import StatsSection from "@/components/StatsSection";
 import WidgetsSection from "@/components/WidgetsSection";
-import PricingSection from "@/components/PricingSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import CustomWidgetSection from "@/components/CustomWidgetSection";
-import FAQSection from "@/components/FAQSection";
-import ChatBot from "@/components/ChatBot";
+import LazyChatBot from "@/components/LazyChatBot";
+
+const PricingSection = dynamic(() => import("@/components/PricingSection"));
+const TestimonialsSection = dynamic(() => import("@/components/TestimonialsSection"));
+const CustomWidgetSection = dynamic(() => import("@/components/CustomWidgetSection"));
+const FAQSection = dynamic(() => import("@/components/FAQSection"));
 
 const BASE_URL = "https://www.alteradatasuite.com";
 
@@ -67,7 +69,7 @@ export default async function HomePage({
       <TestimonialsSection t={dict.testimonials} />
       <CustomWidgetSection t={dict.customWidget} />
       <FAQSection t={dict.faqSection} items={faqItems} />
-      <ChatBot t={dict.chatbot} />
+      <LazyChatBot t={dict.chatbot} />
     </main>
   );
 }

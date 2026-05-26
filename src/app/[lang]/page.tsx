@@ -58,6 +58,8 @@ export default async function HomePage({
   }));
 
   return (
+    <>
+      <link rel="preload" href="/HERO BOXE1.webp" as="image" type="image/webp" fetchPriority="high" />
     <main>
       <Hero t={dict.hero} lang={lang} featureCards={dict.featureCards} />
       <ResultShowcaseSection t={dict.resultShowcase} lang={lang} />
@@ -69,5 +71,6 @@ export default async function HomePage({
       <FAQSection t={dict.faqSection} items={faqItems} />
       <ChatBot t={dict.chatbot} />
     </main>
+    </>
   );
 }

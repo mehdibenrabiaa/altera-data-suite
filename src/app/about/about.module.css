@@ -230,8 +230,6 @@
 /* ── CTA section ── */
 .ctaSection {
   padding: 80px 60px 100px;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
 }
 
 .ctaInner {
@@ -303,11 +301,13 @@
   .section {
     padding: 60px 24px 80px;
   }
-  .storySection,
-  .ctaSection {
+  .storySection {
     padding: 60px 24px 80px;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
+  }
+  .ctaSection {
+    padding: 60px 24px 80px;
   }
   .storyGrid {
     grid-template-columns: 1fr;

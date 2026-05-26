@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { CloseOutlined, RobotOutlined, SendOutlined } from "@ant-design/icons";
 import { Avatar, Button, Card, Input, Typography } from "antd";
 import styles from "./ChatBot.module.css";
-import { COLOR_PRIMARY, COLOR_PRIMARY_LIGHT } from "@/lib/theme";
+import { COLOR_PRIMARY, COLOR_PRIMARY_LIGHT, COLOR_TEXT_MUTED } from "@/lib/theme";
 
 const { Text } = Typography;
 

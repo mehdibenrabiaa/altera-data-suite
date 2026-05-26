@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Button, Drawer, Flex } from "antd";
 import { MenuOutlined } from "@ant-design/icons";
 import Link from "next/link";
+import SamePageLink from "./SamePageLink";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
 
@@ -74,7 +75,7 @@ function Navbar({ t, lang }: Props) {
           <ul className={styles.navList}>
             {navLinks.map(({ label, href }) => (
               <li key={href}>
-                <Link href={href} className={styles.navLink}>{label}</Link>
+                <SamePageLink href={href} className={styles.navLink}>{label}</SamePageLink>
               </li>
             ))}
           </ul>
@@ -117,14 +118,14 @@ function Navbar({ t, lang }: Props) {
             style={{ alignSelf: "flex-end", color: "#444" }}
           />
           {navLinks.map(({ label, href }) => (
-            <Link
+            <SamePageLink
               key={href}
               href={href}
               onClick={() => setDrawerOpen(false)}
               style={{ color: "#444", fontSize: 16, fontWeight: 500, textDecoration: "none" }}
             >
               {label}
-            </Link>
+            </SamePageLink>
           ))}
           <Button type="primary" size="large" href={`/${lang}/pricing`} style={{ fontWeight: 600 }}>
             {t.startFree}

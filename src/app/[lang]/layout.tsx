@@ -4,7 +4,7 @@ import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AntdProvider from "@/components/AntdProvider";
-import PageTransition from "@/components/PageTransition";
+import PageTransition, { PageTransitionProvider } from "@/components/PageTransition";
 import { getDictionary, hasLocale, LOCALES } from "@/i18n/dictionaries";
 
 const BASE_URL = "https://www.alteradatasuite.com";
@@ -47,9 +47,11 @@ export default async function LocaleLayout({
   return (
     <AntdRegistry>
       <AntdProvider>
-        <Navbar t={dict.nav} lang={lang} />
-        <PageTransition>{children}</PageTransition>
-        <Footer t={dict.footer} lang={lang} langNames={dict.lang} />
+        <PageTransitionProvider>
+          <Navbar t={dict.nav} lang={lang} />
+          <PageTransition>{children}</PageTransition>
+          <Footer t={dict.footer} lang={lang} langNames={dict.lang} />
+        </PageTransitionProvider>
       </AntdProvider>
     </AntdRegistry>
   );

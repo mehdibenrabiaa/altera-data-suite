@@ -1,4 +1,4 @@
-import Link from "next/link";
+import SamePageLink from "./SamePageLink";
 import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 import styles from "./Footer.module.css";
@@ -112,7 +112,7 @@ export default function Footer({ t, lang, langNames }: Props) {
           <ul className={styles.colList}>
             {productLinks.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className={styles.colLink}>{l.label}</Link>
+                <SamePageLink href={l.href} className={styles.colLink}>{l.label}</SamePageLink>
               </li>
             ))}
           </ul>
@@ -124,7 +124,7 @@ export default function Footer({ t, lang, langNames }: Props) {
           <ul className={styles.colList}>
             {companyLinks.map((l) => (
               <li key={l.href}>
-                <Link href={l.href} className={styles.colLink}>{l.label}</Link>
+                <SamePageLink href={l.href} className={styles.colLink}>{l.label}</SamePageLink>
               </li>
             ))}
           </ul>

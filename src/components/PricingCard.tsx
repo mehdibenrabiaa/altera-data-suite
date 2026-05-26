@@ -73,7 +73,7 @@ export default function PricingCard({
                   fontSize: 11,
                   fontWeight: 700,
                   background: "transparent",
-                  color: "#c44400",
+                  color,
                   borderColor: "#d9d9d9",
                   boxShadow: "none",
                   padding: "2px 10px",

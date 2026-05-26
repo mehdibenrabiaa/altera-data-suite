@@ -27,6 +27,7 @@ export default function FeatureCardsSection({ t }: Props) {
               src={IMAGES[i]}
               alt={card.label}
               fill
+              priority={i === 0}
               style={{ objectFit: "cover" }}
             />
             <div className={styles.cardBody}>

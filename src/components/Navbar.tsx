@@ -25,7 +25,6 @@ function Navbar({ t, lang }: Props) {
   const [scrolled, setScrolled]     = useState(false);
   const [hidden, setHidden]         = useState(false);
   const lastY = useRef(0);
-
   const navLinks = [
     { label: t.docs,    href: `/${lang}/docs` },
     { label: t.pricing, href: `/${lang}/pricing` },
@@ -100,6 +99,7 @@ function Navbar({ t, lang }: Props) {
           onClick={() => setDrawerOpen(true)}
           size="large"
         />
+
       </header>
 
       <Drawer

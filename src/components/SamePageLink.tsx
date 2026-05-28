@@ -14,13 +14,15 @@ interface Props {
 
 export default function SamePageLink({ href, className, style, onClick, children }: Props) {
   const pathname = usePathname();
-  const { replay } = usePageTransition();
+  const { replay, startProgress } = usePageTransition();
 
   const handleClick = (e: React.MouseEvent) => {
     onClick?.();
     if (pathname === href) {
       e.preventDefault();
       replay();
+    } else {
+      startProgress();
     }
   };
 

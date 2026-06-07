@@ -75,18 +75,18 @@ interface Props {
 
 export default function Footer({ t, lang, langNames }: Props) {
   const productLinks = [
-    { label: t.links.features,      href: `/${lang}/features` },
-    { label: t.links.changelog,     href: `/${lang}/changelog` },
-    { label: t.links.pricingPlan,   href: `/${lang}/pricing` },
-    { label: t.links.docs,          href: `/${lang}/docs` },
+    { label: t.links.features, href: `/${lang}/features` },
+    { label: t.links.changelog, href: `/${lang}/changelog` },
+    { label: t.links.pricingPlan, href: `/${lang}/pricing` },
+    { label: t.links.docs, href: `/${lang}/docs` },
   ];
 
   const companyLinks = [
-    { label: t.links.aboutUs,       href: `/${lang}/about` },
+    { label: t.links.aboutUs, href: `/${lang}/about` },
     { label: t.links.customWidgets, href: `/${lang}/custom` },
-    { label: t.links.terms,         href: `/${lang}/terms` },
-    { label: t.links.privacy,       href: `/${lang}/privacy` },
-    { label: t.links.refund,        href: `/${lang}/refund` },
+    { label: t.links.terms, href: `/${lang}/terms` },
+    { label: t.links.privacy, href: `/${lang}/privacy` },
+    { label: t.links.refund, href: `/${lang}/refund` },
   ];
 
   return (
@@ -96,11 +96,12 @@ export default function Footer({ t, lang, langNames }: Props) {
         <div className={styles.brand}>
           <div className={styles.logoRow}>
             <Image
-              src="/Altera_logo_orange_no_title.svg"
+              src="/Altera_logo_orange.svg"
               alt="Altera Data Suite logo"
               width={32}
               height={32}
               className={styles.logo}
+              style={{ width: "auto" }}
             />
           </div>
           <p className={styles.brandDesc}>{t.tagline}</p>
@@ -112,7 +113,9 @@ export default function Footer({ t, lang, langNames }: Props) {
           <ul className={styles.colList}>
             {productLinks.map((l) => (
               <li key={l.href}>
-                <SamePageLink href={l.href} className={styles.colLink}>{l.label}</SamePageLink>
+                <SamePageLink href={l.href} className={styles.colLink}>
+                  {l.label}
+                </SamePageLink>
               </li>
             ))}
           </ul>
@@ -124,7 +127,9 @@ export default function Footer({ t, lang, langNames }: Props) {
           <ul className={styles.colList}>
             {companyLinks.map((l) => (
               <li key={l.href}>
-                <SamePageLink href={l.href} className={styles.colLink}>{l.label}</SamePageLink>
+                <SamePageLink href={l.href} className={styles.colLink}>
+                  {l.label}
+                </SamePageLink>
               </li>
             ))}
           </ul>
@@ -156,7 +161,10 @@ export default function Footer({ t, lang, langNames }: Props) {
           <ul className={styles.colList}>
             <li className={styles.contactItem}>
               <span className={styles.contactLabel}>{t.emailLabel}</span>
-              <a href="mailto:support@alteradatasuite.com" className={styles.colLink}>
+              <a
+                href="mailto:support@alteradatasuite.com"
+                className={styles.colLink}
+              >
                 support@alteradatasuite.com
               </a>
             </li>
@@ -173,7 +181,9 @@ export default function Footer({ t, lang, langNames }: Props) {
           © {new Date().getFullYear()} Altera Data Suite. {t.copyright}
         </span>
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          <span style={{ fontSize: 13, color: COLOR_TEXT_MUTED }}>{t.langSwitcherLabel}:</span>
+          <span style={{ fontSize: 13, color: COLOR_TEXT_MUTED }}>
+            {t.langSwitcherLabel}:
+          </span>
           <LanguageSwitcher currentLang={lang} langNames={langNames} />
         </div>
       </div>

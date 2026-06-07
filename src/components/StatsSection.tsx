@@ -46,11 +46,12 @@ export default function StatsSection({ t }: Props) {
         </div>
 
         <Image
-          src="/convertion_design.svg"
+          src="/convertion_design_color.svg"
           alt="Conversion design illustration"
           width={420}
           height={320}
           className={styles.chartImg}
+          style={{ height: "auto" }}
         />
 
         <div className={`${styles.statCol} ${styles.statColRight}`}>

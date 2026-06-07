@@ -22,14 +22,14 @@ interface Props {
 
 function Navbar({ t, lang }: Props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  const [scrolled, setScrolled]     = useState(false);
-  const [hidden, setHidden]         = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const lastY = useRef(0);
   const navLinks = [
-    { label: t.docs,    href: `/${lang}/docs` },
+    { label: t.docs, href: `/${lang}/docs` },
     { label: t.pricing, href: `/${lang}/pricing` },
-    { label: t.about,   href: `/${lang}/about` },
-    { label: t.faqs,    href: `/${lang}/faqs` },
+    { label: t.about, href: `/${lang}/about` },
+    { label: t.faqs, href: `/${lang}/faqs` },
   ];
 
   useEffect(() => {
@@ -53,14 +53,16 @@ function Navbar({ t, lang }: Props) {
         className={styles.header}
         style={{
           boxShadow: scrolled ? "0 2px 16px rgba(0,0,0,0.08)" : "none",
-          borderBottom: scrolled ? "1px solid transparent" : "1px solid rgba(0,0,0,0.07)",
+          borderBottom: scrolled
+            ? "1px solid transparent"
+            : "1px solid rgba(0,0,0,0.07)",
           transform: hidden ? "translateY(-100%)" : "translateY(0)",
         }}
       >
         {/* Logo */}
         <SamePageLink href={`/${lang}`} className={styles.logo}>
           <Image
-            src="/Altera_logo_orange_no_title.svg"
+            src="/Altera_logo_orange.svg"
             alt="Altera Data Suite"
             width={32}
             height={32}
@@ -73,7 +75,9 @@ function Navbar({ t, lang }: Props) {
           <ul className={styles.navList}>
             {navLinks.map(({ label, href }) => (
               <li key={href}>
-                <SamePageLink href={href} className={styles.navLink}>{label}</SamePageLink>
+                <SamePageLink href={href} className={styles.navLink}>
+                  {label}
+                </SamePageLink>
               </li>
             ))}
           </ul>
@@ -99,7 +103,6 @@ function Navbar({ t, lang }: Props) {
           onClick={() => setDrawerOpen(true)}
           size="large"
         />
-
       </header>
 
       <Drawer
@@ -121,12 +124,22 @@ function Navbar({ t, lang }: Props) {
               key={href}
               href={href}
               onClick={() => setDrawerOpen(false)}
-              style={{ color: "#444", fontSize: 16, fontWeight: 500, textDecoration: "none" }}
+              style={{
+                color: "#444",
+                fontSize: 16,
+                fontWeight: 500,
+                textDecoration: "none",
+              }}
             >
               {label}
             </SamePageLink>
           ))}
-          <Button type="primary" size="large" href={`/${lang}/pricing`} style={{ fontWeight: 600 }}>
+          <Button
+            type="primary"
+            size="large"
+            href={`/${lang}/pricing`}
+            style={{ fontWeight: 600 }}
+          >
             {t.startFree}
           </Button>
         </Flex>

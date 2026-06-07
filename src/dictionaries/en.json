@@ -75,7 +75,7 @@
   },
   "featureCards": [
     { "label": "FAST CONVERSION",   "line1": "Drop in any PDF.",            "line2": "Clean data in seconds." },
-    { "label": "CONTROLLED SETUP",  "line1": "Define your setup.",          "line2": "Altera handles the rest." },
+    { "label": "AI-POWERED",        "line1": "AI-Powered Tool.",            "line2": "Autonomous — handles everything on your behalf." },
     { "label": "WE GIVE YOU TOOLS", "line1": "Smart widgets that extract,", "line2": "and clean your data." }
   ],
   "widgets": {
@@ -225,8 +225,10 @@
     "watchDemo":       "Watch Demo",
     "seePricing":      "See Pricing",
     "team": [
-      { "role": "Co-Founder & Developer",       "bio": "Mehdi built Altera to make data extraction effortless inside Orange Data Mining. Designed for speed, scale, and clarity — every widget and feature reflects real workflows and real pain points." },
-      { "role": "Co-Founder & Product Designer", "bio": "Rayan shapes the look, feel, and experience of Altera. From the first wireframe to the final pixel, he ensures every interaction is intuitive, clean, and purposeful." }
+      { "role": "CEO & Co-Founder",       "bio": "Mehdi built Altera to remove the friction from data extraction inside Orange Data Mining. As CEO, he defines the product vision, steers the technical roadmap, and makes sure every feature is grounded in real workflows — delivering fast, scalable, and purposeful tools that meet the real needs of data professionals." },
+      { "role": "Co-Founder, Commercial & Marketing Director", "bio": "Salah leads the company's commercial and marketing strategy. He is responsible for brand development, customer acquisition, lead generation, and strategic partnerships. His goal is to accelerate the company's growth and promote innovative document automation solutions to professionals." },
+      { "role": "Software Engineer", "bio": "Saumya specializes in Rust, C, and TypeScript, with a sharp focus on software performance optimization. He architects the core engine behind Altera, ensuring every computation is fast, lean, and built to scale." },
+      { "role": "Frontend Engineer", "bio": "Raphaël crafts the interfaces users interact with every day. Specializing in frontend engineering, he transforms designs into fast, responsive, and accessible web experiences. From component architecture to pixel-perfect implementation, he ensures Altera's UI is smooth, reliable, and consistent — bridging the gap between design intent and real user interaction." }
     ]
   },
   "faqs": {

@@ -82,7 +82,7 @@
 
 .highlight {
   display: inline-block;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0) 1%, rgba(255, 94, 0, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(145deg, #fff0 1%, #fe4d4133 50%, #fff0 100%);
   color: var(--color-primary);
   border-radius: 16px;
   padding: 8px;

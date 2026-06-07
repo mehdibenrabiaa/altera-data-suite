@@ -86,8 +86,8 @@ export function PageTransitionProvider({ children }: { children: React.ReactNode
         <div style={{
           height: "100%",
           width: `${progressWidth}%`,
-          background: "linear-gradient(90deg, #f97316, #fb923c)",
-          boxShadow: "0 0 8px rgba(249, 115, 22, 0.55)",
+          background: "linear-gradient(90deg, #FE4D41, #FF6B61)",
+          boxShadow: "0 0 8px rgba(254, 77, 65, 0.55)",
           transition: progressWidth === 100
             ? "width 0.25s ease"
             : progressWidth === 72

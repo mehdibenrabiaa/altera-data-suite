@@ -75,7 +75,7 @@
   },
   "featureCards": [
     { "label": "CONVERSIÓN RÁPIDA",    "line1": "Sube cualquier PDF.",                "line2": "Datos limpios en segundos." },
-    { "label": "CONFIGURACIÓN PRECISA","line1": "Define tu configuración.",           "line2": "Altera se encarga del resto." },
+    { "label": "IA AUTÓNOMA",          "line1": "Herramienta impulsada por IA.", "line2": "Autónoma — gestiona todo en su nombre." },
     { "label": "HERRAMIENTAS POTENTES","line1": "Widgets inteligentes que extraen,",  "line2": "y limpian tus datos." }
   ],
   "widgets": {
@@ -225,8 +225,10 @@
     "watchDemo":       "Ver demostración",
     "seePricing":      "Ver precios",
     "team": [
-      { "role": "Co-Fundador & Desarrollador",        "bio": "Mehdi construyó Altera para que la extracción de datos sea sencilla dentro de Orange Data Mining. Diseñado para velocidad, escala y claridad — cada widget y funcionalidad refleja flujos de trabajo reales y problemas reales." },
-      { "role": "Co-Fundador & Diseñador de Producto","bio": "Rayan da forma al aspecto, la sensación y la experiencia de Altera. Desde el primer wireframe hasta el último píxel, garantiza que cada interacción sea intuitiva, limpia y con propósito." }
+      { "role": "CEO & Co-Fundador",        "bio": "Mehdi construyó Altera para eliminar la fricción de la extracción de datos en Orange Data Mining. Como CEO, define la visión del producto, dirige la hoja de ruta técnica y se asegura de que cada funcionalidad esté arraigada en flujos de trabajo reales — entregando herramientas rápidas, escalables y con propósito que responden a las necesidades reales de los profesionales de datos." },
+      { "role": "Co-Fundador, Director Comercial & Marketing", "bio": "Salah dirige la estrategia comercial y de marketing de la empresa. Es responsable del desarrollo de marca, la captación de clientes, la generación de leads y las alianzas estratégicas. Su objetivo es acelerar el crecimiento de la empresa y promover soluciones innovadoras de automatización documental entre los profesionales." },
+      { "role": "Ingeniero de Software", "bio": "Saumya se especializa en Rust, C y TypeScript, con un fuerte enfoque en la optimización del rendimiento del software. Diseña el motor central de Altera, garantizando que cada cómputo sea rápido, eficiente y preparado para escalar." },
+      { "role": "Ingeniero Frontend", "bio": "Raphaël diseña las interfaces con las que los usuarios interactúan cada día. Especializado en ingeniería frontend, transforma diseños en experiencias web rápidas, responsivas y accesibles. Desde la arquitectura de componentes hasta la implementación pixel-perfect, garantiza que la interfaz de Altera sea fluida, fiable y consistente." }
     ]
   },
   "faqs": { "pageTitle": "Preguntas frecuentes — Altera Data Suite" },

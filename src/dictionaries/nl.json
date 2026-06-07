@@ -75,7 +75,7 @@
   },
   "featureCards": [
     { "label": "SNELLE CONVERSIE",       "line1": "Laad een PDF in.",                    "line2": "Schone data in seconden." },
-    { "label": "BEHEERDE INSTELLING",    "line1": "Definieer uw instelling.",             "line2": "Altera doet de rest." },
+    { "label": "AI-AANGEDREVEN",       "line1": "AI-aangedreven tool.",        "line2": "Autonoom — regelt alles voor u." },
     { "label": "WIJ GEVEN U TOOLS",      "line1": "Slimme widgets die extraheren,",      "line2": "en uw data reinigen." }
   ],
   "widgets": {
@@ -225,8 +225,10 @@
     "watchDemo":       "Demo bekijken",
     "seePricing":      "Prijzen bekijken",
     "team": [
-      { "role": "Medeoprichter & Ontwikkelaar",      "bio": "Mehdi heeft Altera gebouwd om gegevensextractie moeiteloos te maken in Orange Data Mining. Ontworpen voor snelheid, schaalbaarheid en duidelijkheid — elke widget en functie weerspiegelt echte workflows en echte pijnpunten." },
-      { "role": "Medeoprichter & Productontwerper",  "bio": "Rayan vormt het uiterlijk, het gevoel en de ervaring van Altera. Van het eerste wireframe tot de laatste pixel zorgt hij ervoor dat elke interactie intuïtief, clean en doelgericht is." }
+      { "role": "CEO & Medeoprichter",      "bio": "Mehdi bouwde Altera om de wrijving bij gegevensextractie in Orange Data Mining weg te nemen. Als CEO bepaalt hij de productvisie, stuurt de technische roadmap en zorgt ervoor dat elke functie geworteld is in echte workflows — en levert snelle, schaalbare en doelgerichte tools die voldoen aan de echte behoeften van dataprofessionals." },
+      { "role": "Medeoprichter, Commercieel & Marketingdirecteur", "bio": "Salah leidt de commerciële en marketingstrategie van het bedrijf. Hij is verantwoordelijk voor merkontwikkeling, klantenwerving, leadgeneratie en strategische partnerschappen. Zijn doel is de groei van het bedrijf te versnellen en innovatieve oplossingen voor documentautomatisering te promoten bij professionals." },
+      { "role": "Software Engineer",  "bio": "Saumya is gespecialiseerd in Rust, C en TypeScript, met een sterke focus op softwareprestatie-optimalisatie. Hij ontwerpt de kernmotor van Altera en zorgt ervoor dat elke berekening snel, efficiënt en schaalbaar is." },
+      { "role": "Frontend Engineer",  "bio": "Raphaël ontwerpt de interfaces waarmee gebruikers dagelijks omgaan. Gespecialiseerd in frontend engineering, vertaalt hij ontwerpen naar snelle, responsieve en toegankelijke webervaringen. Van componentarchitectuur tot pixel-perfecte implementatie zorgt hij ervoor dat Altera's UI soepel, betrouwbaar en consistent is." }
     ]
   },
   "faqs": {

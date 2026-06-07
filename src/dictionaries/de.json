@@ -75,7 +75,7 @@
   },
   "featureCards": [
     { "label": "SCHNELLE KONVERTIERUNG",   "line1": "Laden Sie ein beliebiges PDF hoch.",       "line2": "Saubere Daten in Sekunden." },
-    { "label": "KONTROLLIERTE EINRICHTUNG","line1": "Definieren Sie Ihre Einrichtung.",          "line2": "Altera erledigt den Rest." },
+    { "label": "KI-GESTÜTZT",          "line1": "KI-gestütztes Werkzeug.",     "line2": "Autonom — übernimmt alles für Sie." },
     { "label": "WIR GEBEN IHNEN TOOLS",    "line1": "Smarte Widgets, die extrahieren,",          "line2": "und Ihre Daten bereinigen." }
   ],
   "widgets": {
@@ -225,8 +225,10 @@
     "watchDemo":       "Demo ansehen",
     "seePricing":      "Preise ansehen",
     "team": [
-      { "role": "Mitgründer & Entwickler",        "bio": "Mehdi hat Altera entwickelt, um die Datenextraktion in Orange Data Mining mühelos zu machen. Auf Geschwindigkeit, Skalierbarkeit und Übersichtlichkeit ausgelegt — jeder Widget und jede Funktion spiegelt echte Workflows und echte Schmerzpunkte wider." },
-      { "role": "Mitgründer & Produktdesigner",   "bio": "Rayan gestaltet das Aussehen, das Gefühl und die Erfahrung von Altera. Vom ersten Wireframe bis zum letzten Pixel stellt er sicher, dass jede Interaktion intuitiv, sauber und zielgerichtet ist." }
+      { "role": "CEO & Mitgründer",        "bio": "Mehdi hat Altera entwickelt, um die Reibung bei der Datenextraktion in Orange Data Mining zu beseitigen. Als CEO definiert er die Produktvision, lenkt die technische Roadmap und stellt sicher, dass jede Funktion in realen Workflows verankert ist — und liefert schnelle, skalierbare und zielgerichtete Tools, die den echten Bedürfnissen von Datenprofis gerecht werden." },
+      { "role": "Mitgründer, Vertriebs- & Marketingleiter", "bio": "Salah leitet die Vertriebs- und Marketingstrategie des Unternehmens. Er ist verantwortlich für den Markenaufbau, die Kundengewinnung, die Lead-Generierung und strategische Partnerschaften. Sein Ziel ist es, das Wachstum des Unternehmens zu beschleunigen und innovative Lösungen zur Dokumentenautomatisierung für Fachleute zu fördern." },
+      { "role": "Softwareingenieur",  "bio": "Saumya ist spezialisiert auf Rust, C und TypeScript, mit einem starken Fokus auf Software-Performance-Optimierung. Er entwirft den Kernmotor von Altera und sorgt dafür, dass jede Berechnung schnell, schlank und skalierbar ist." },
+      { "role": "Frontend-Ingenieur", "bio": "Raphaël gestaltet die Benutzeroberflächen, mit denen Nutzer täglich interagieren. Als Spezialist für Frontend-Entwicklung verwandelt er Designs in schnelle, responsive und barrierefreie Web-Erlebnisse. Von der Komponentenarchitektur bis zur pixelgenauen Umsetzung stellt er sicher, dass Alteras UI flüssig, zuverlässig und konsistent ist." }
     ]
   },
   "faqs": {

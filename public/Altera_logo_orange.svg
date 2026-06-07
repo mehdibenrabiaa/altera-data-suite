@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 313.4 313.2">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#linear-gradient2);
+      }
+
+      .st1 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st2 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="40.4" y1="250.8" x2="173" y2="45.7" gradientTransform="translate(168.3 -14.2) rotate(56.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fd4e30"/>
+      <stop offset=".6" stop-color="#fd684f"/>
+      <stop offset="1" stop-color="#fe7e68"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient1" x1="336.3" y1="336.6" x2="174.1" y2="101.9" gradientTransform="translate(0 14)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fd4728"/>
+      <stop offset="1" stop-color="#fd5f44"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient2" x1="133.2" y1="36.9" x2="294" y2="278.9" gradientTransform="translate(112.2 -74.1) rotate(33.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fd3b28" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#fd3d28" stop-opacity=".2"/>
+    </linearGradient>
+  </defs>
+  <rect id="Left_Stick" class="st2" x="-34" y="96.6" width="288.6" height="119.9" rx="59.9" ry="59.9" transform="translate(-81.1 162.1) rotate(-56.5)"/>
+  <path class="st1" d="M302.1,256.2l-2.5,3.7c-11.1,16.8-29.3,26.3-48,26.9h-3.9c-18.7-.6-36.9-10-48-26.9l-2.5-3.7c-10.6-19-10.5-43,2.3-62.4l50.1-75.8,50,75.8c12.8,19.4,12.9,43.4,2.3,62.4h.2Z"/>
+  <rect id="Right_Stick" class="st0" x="143.2" y="12.4" width="119.9" height="288.6" rx="59.9" ry="59.9" transform="translate(-52.8 138.2) rotate(-33.5)"/>
+</svg>

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "home":      { "title": "Altera Data Suite",      "description": "Convierte cualquier PDF en datos estructurados en segundos. Extrae facturas, nóminas e informes con una precisión casi perfecta." },
+    "home":      { "title": "Altera Data Suite — Extracción de PDF para Orange Data Mining", "description": "Convierte cualquier PDF en datos estructurados en segundos. Diseñado como complemento de Orange Data Mining — extrae facturas, nóminas e informes con una precisión casi perfecta." },
     "about":     { "title": "Acerca de",              "description": "Conoce Altera Data Suite — quién lo creó, por qué y qué lo impulsa." },
     "pricing":   { "title": "Precios",                "description": "Precios simples y transparentes para Altera Data Suite. Empieza gratis, mejora cuando aporte valor." },
     "faqs":      { "title": "Preguntas frecuentes",   "description": "¿Tienes preguntas sobre Altera? Encuentra respuestas sobre configuración, precisión, precios, seguridad y más." },
@@ -51,7 +51,7 @@
     "watchDemo":         "Ver demostración",
     "testimonialTitle":  "Configuración sencilla, resultados inmediatos",
     "testimonialQuote":  "\"Construimos Altera para manejar cualquier PDF — nóminas, facturas, informes. Diseñado para velocidad, escala y claridad desde el primer día.\"",
-    "testimonialAttrib": "— Mehdi, Desarrollador de Altera Data Suite"
+    "testimonialAttrib": "— Mehdi, Cofundador y Desarrollador de Altera Data Suite"
   },
   "resultShowcase": {
     "badgeLabel": "Extracción de nóminas",
@@ -225,7 +225,7 @@
     "watchDemo":       "Ver demostración",
     "seePricing":      "Ver precios",
     "team": [
-      { "role": "CEO & Co-Fundador",        "bio": "Mehdi construyó Altera para eliminar la fricción de la extracción de datos en Orange Data Mining. Como CEO, define la visión del producto, dirige la hoja de ruta técnica y se asegura de que cada funcionalidad esté arraigada en flujos de trabajo reales — entregando herramientas rápidas, escalables y con propósito que responden a las necesidades reales de los profesionales de datos." },
+      { "role": "CEO & Co-Fundador",        "bio": "Mehdi construyó Altera para eliminar la fricción de la extracción de datos en Orange Data Mining. Con amplia experiencia en Python, JavaScript y soluciones orientadas a datos, conecta el conocimiento técnico profundo con los flujos de trabajo reales. Como CEO, define la visión del producto, dirige la hoja de ruta técnica y garantiza que cada funcionalidad responda a las necesidades reales de los profesionales de datos." },
       { "role": "Co-Fundador, Director Comercial & Marketing", "bio": "Salah dirige la estrategia comercial y de marketing de la empresa. Es responsable del desarrollo de marca, la captación de clientes, la generación de leads y las alianzas estratégicas. Su objetivo es acelerar el crecimiento de la empresa y promover soluciones innovadoras de automatización documental entre los profesionales." },
       { "role": "Ingeniero de Software", "bio": "Saumya se especializa en Rust, C y TypeScript, con un fuerte enfoque en la optimización del rendimiento del software. Diseña el motor central de Altera, garantizando que cada cómputo sea rápido, eficiente y preparado para escalar." },
       { "role": "Ingeniero Frontend", "bio": "Raphaël diseña las interfaces con las que los usuarios interactúan cada día. Especializado en ingeniería frontend, transforma diseños en experiencias web rápidas, responsivas y accesibles. Desde la arquitectura de componentes hasta la implementación pixel-perfect, garantiza que la interfaz de Altera sea fluida, fiable y consistente." }

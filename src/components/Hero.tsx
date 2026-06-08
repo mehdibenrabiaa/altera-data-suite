@@ -73,8 +73,8 @@ export default function Hero({ t, lang, featureCards }: Props) {
       {/* Testimonial */}
       <div className={styles.testimonial}>
         <Image
-          src="/Profile Pic.webp"
-          alt="Mehdi, Developer of Altera Data Suite"
+          src="/profile-pic.webp"
+          alt="Mehdi, Co-Founder & Developer of Altera Data Suite"
           width={64}
           height={64}
           className={styles.testimonialAvatar}

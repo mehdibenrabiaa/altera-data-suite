@@ -1,6 +1,6 @@
 {
   "meta": {
-    "home":      { "title": "Altera Data Suite",       "description": "Wandeln Sie jedes PDF in Sekunden in strukturierte Daten um. Extrahieren Sie Rechnungen, Gehaltsabrechnungen und Berichte mit nahezu perfekter Genauigkeit." },
+    "home":      { "title": "Altera Data Suite — PDF-Datenextraktion für Orange Data Mining", "description": "Wandeln Sie jedes PDF in Sekunden in saubere, strukturierte Daten um. Als Orange Data Mining Add-on entwickelt — extrahieren Sie Rechnungen, Gehaltsabrechnungen und Berichte mit nahezu perfekter Genauigkeit." },
     "about":     { "title": "Über uns",                "description": "Erfahren Sie mehr über Altera Data Suite — wer es entwickelt hat, warum und was dahintersteckt." },
     "pricing":   { "title": "Preise",                  "description": "Einfache, transparente Preise für Altera Data Suite. Kostenlos starten, upgraden wenn es Mehrwert bringt." },
     "faqs":      { "title": "Häufige Fragen",          "description": "Haben Sie Fragen zu Altera? Finden Sie Antworten zu Einrichtung, Genauigkeit, Preisen, Sicherheit und mehr." },
@@ -51,7 +51,7 @@
     "watchDemo":         "Demo ansehen",
     "testimonialTitle":  "Einfache Einrichtung, sofortige Ergebnisse",
     "testimonialQuote":  "\"Wir haben Altera entwickelt, um jedes PDF zu verarbeiten — Gehaltsabrechnungen, Rechnungen, Berichte. Von Anfang an auf Geschwindigkeit, Skalierbarkeit und Übersichtlichkeit ausgelegt.\"",
-    "testimonialAttrib": "— Mehdi, Entwickler von Altera Data Suite"
+    "testimonialAttrib": "— Mehdi, Mitgründer & Entwickler von Altera Data Suite"
   },
   "resultShowcase": {
     "badgeLabel": "Gehaltsabrechnung Extraktion",
@@ -225,7 +225,7 @@
     "watchDemo":       "Demo ansehen",
     "seePricing":      "Preise ansehen",
     "team": [
-      { "role": "CEO & Mitgründer",        "bio": "Mehdi hat Altera entwickelt, um die Reibung bei der Datenextraktion in Orange Data Mining zu beseitigen. Als CEO definiert er die Produktvision, lenkt die technische Roadmap und stellt sicher, dass jede Funktion in realen Workflows verankert ist — und liefert schnelle, skalierbare und zielgerichtete Tools, die den echten Bedürfnissen von Datenprofis gerecht werden." },
+      { "role": "CEO & Mitgründer",        "bio": "Mehdi hat Altera entwickelt, um die Reibung bei der Datenextraktion in Orange Data Mining zu beseitigen. Mit umfangreicher Erfahrung in Python, JavaScript und datenorientierten Lösungen verbindet er tiefes technisches Wissen mit realen Daten-Workflows. Als CEO definiert er die Produktvision, lenkt die technische Roadmap und stellt sicher, dass jede Funktion den echten Bedürfnissen von Datenprofis gerecht wird." },
       { "role": "Mitgründer, Vertriebs- & Marketingleiter", "bio": "Salah leitet die Vertriebs- und Marketingstrategie des Unternehmens. Er ist verantwortlich für den Markenaufbau, die Kundengewinnung, die Lead-Generierung und strategische Partnerschaften. Sein Ziel ist es, das Wachstum des Unternehmens zu beschleunigen und innovative Lösungen zur Dokumentenautomatisierung für Fachleute zu fördern." },
       { "role": "Softwareingenieur",  "bio": "Saumya ist spezialisiert auf Rust, C und TypeScript, mit einem starken Fokus auf Software-Performance-Optimierung. Er entwirft den Kernmotor von Altera und sorgt dafür, dass jede Berechnung schnell, schlank und skalierbar ist." },
       { "role": "Frontend-Ingenieur", "bio": "Raphaël gestaltet die Benutzeroberflächen, mit denen Nutzer täglich interagieren. Als Spezialist für Frontend-Entwicklung verwandelt er Designs in schnelle, responsive und barrierefreie Web-Erlebnisse. Von der Komponentenarchitektur bis zur pixelgenauen Umsetzung stellt er sicher, dass Alteras UI flüssig, zuverlässig und konsistent ist." }

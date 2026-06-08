@@ -61,7 +61,7 @@ export default async function HomePage({
 
   return (
     <main>
-      <Hero t={dict.hero} lang={lang} featureCards={dict.featureCards} />
+<Hero t={dict.hero} lang={lang} featureCards={dict.featureCards} />
       <ResultShowcaseSection t={dict.resultShowcase} lang={lang} />
       <StatsSection t={dict.stats} />
       <WidgetsSection t={dict.widgets} />

@@ -11,7 +11,7 @@ interface Props {
   t: FeatureCardT[];
 }
 
-const IMAGES = ["/HERO BOXE1.webp", "/HERO BOXE3.svg", "/HERO BOXE2.svg"];
+const IMAGES = ["/hero-box-1.svg", "/hero-box-3.svg", "/hero-box-2.svg"];
 const STYLE_KEYS = ["cardLeft", "cardCenter", "cardRight"] as const;
 
 export default function FeatureCardsSection({ t }: Props) {

@@ -13,8 +13,8 @@ interface Props {
 }
 
 const MEMBER_META = [
-  { name: "Mehdi BEN RABIAA",          src: "/Profile Pic.webp"    },
-  { name: "Salah-Eddine EL MAGUERI",   src: "/Salah Magueri.webp"  },
+  { name: "Mehdi BEN RABIAA",          src: "/profile-pic.webp"    },
+  { name: "Salah-Eddine EL MAGUERI",   src: "/salah-magueri.webp"  },
   { name: "Saumya Shah",               src: ""                     },
   { name: "Raphaël Thomas",            src: ""                     },
 ];

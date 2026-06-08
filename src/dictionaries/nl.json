@@ -1,6 +1,6 @@
 {
   "meta": {
-    "home":      { "title": "Altera Data Suite",       "description": "Zet elk PDF om in gestructureerde data in seconden. Extraheer facturen, loonstroken en rapporten met bijna perfecte nauwkeurigheid." },
+    "home":      { "title": "Altera Data Suite — PDF-data-extractie voor Orange Data Mining", "description": "Zet elk PDF om in gestructureerde data in seconden. Gebouwd als Orange Data Mining add-on — extraheer facturen, loonstroken en rapporten met bijna perfecte nauwkeurigheid." },
     "about":     { "title": "Over ons",                "description": "Leer meer over Altera Data Suite — wie het heeft gebouwd, waarom en wat het drijft." },
     "pricing":   { "title": "Prijzen",                 "description": "Eenvoudige, transparante prijzen voor Altera Data Suite. Begin gratis, upgrade wanneer het waarde levert." },
     "faqs":      { "title": "Veelgestelde vragen",     "description": "Vragen over Altera? Vind antwoorden over installatie, nauwkeurigheid, prijzen, beveiliging en meer." },
@@ -51,7 +51,7 @@
     "watchDemo":         "Demo bekijken",
     "testimonialTitle":  "Eenvoudige installatie, directe resultaten",
     "testimonialQuote":  "\"We hebben Altera gebouwd voor elk type PDF — loonstroken, facturen, rapporten. Ontworpen voor snelheid, schaal en duidelijkheid vanaf dag één.\"",
-    "testimonialAttrib": "— Mehdi, Ontwikkelaar van Altera Data Suite"
+    "testimonialAttrib": "— Mehdi, Medeoprichter & Ontwikkelaar van Altera Data Suite"
   },
   "resultShowcase": {
     "badgeLabel": "Loonstrook Extractie",
@@ -225,7 +225,7 @@
     "watchDemo":       "Demo bekijken",
     "seePricing":      "Prijzen bekijken",
     "team": [
-      { "role": "CEO & Medeoprichter",      "bio": "Mehdi bouwde Altera om de wrijving bij gegevensextractie in Orange Data Mining weg te nemen. Als CEO bepaalt hij de productvisie, stuurt de technische roadmap en zorgt ervoor dat elke functie geworteld is in echte workflows — en levert snelle, schaalbare en doelgerichte tools die voldoen aan de echte behoeften van dataprofessionals." },
+      { "role": "CEO & Medeoprichter",      "bio": "Mehdi bouwde Altera om de wrijving bij gegevensextractie in Orange Data Mining weg te nemen. Met uitgebreide ervaring in Python, JavaScript en datagedreven oplossingen verbindt hij diepgaande technische kennis met echte dataworkflows. Als CEO bepaalt hij de productvisie, stuurt de technische roadmap en zorgt ervoor dat elke functie aansluit bij de echte behoeften van dataprofessionals." },
       { "role": "Medeoprichter, Commercieel & Marketingdirecteur", "bio": "Salah leidt de commerciële en marketingstrategie van het bedrijf. Hij is verantwoordelijk voor merkontwikkeling, klantenwerving, leadgeneratie en strategische partnerschappen. Zijn doel is de groei van het bedrijf te versnellen en innovatieve oplossingen voor documentautomatisering te promoten bij professionals." },
       { "role": "Software Engineer",  "bio": "Saumya is gespecialiseerd in Rust, C en TypeScript, met een sterke focus op softwareprestatie-optimalisatie. Hij ontwerpt de kernmotor van Altera en zorgt ervoor dat elke berekening snel, efficiënt en schaalbaar is." },
       { "role": "Frontend Engineer",  "bio": "Raphaël ontwerpt de interfaces waarmee gebruikers dagelijks omgaan. Gespecialiseerd in frontend engineering, vertaalt hij ontwerpen naar snelle, responsieve en toegankelijke webervaringen. Van componentarchitectuur tot pixel-perfecte implementatie zorgt hij ervoor dat Altera's UI soepel, betrouwbaar en consistent is." }

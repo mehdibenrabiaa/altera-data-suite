@@ -96,7 +96,7 @@ export default function Footer({ t, lang, langNames }: Props) {
         <div className={styles.brand}>
           <div className={styles.logoRow}>
             <Image
-              src="/Altera_logo_orange.svg"
+              src="/Altera_logo.svg"
               alt="Altera Data Suite logo"
               width={32}
               height={32}

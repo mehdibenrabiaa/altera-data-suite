@@ -1,6 +1,6 @@
 {
   "meta": {
-    "home":      { "title": "Altera Data Suite",  "description": "Turn any PDF into clean, structured data in seconds. Extract invoices, payslips, and reports with near-perfect accuracy." },
+    "home":      { "title": "Altera Data Suite — PDF Data Extraction for Orange Data Mining", "description": "Turn any PDF into clean, structured data in seconds. Built as an Orange Data Mining add-on — extract invoices, payslips, and reports with near-perfect accuracy." },
     "about":     { "title": "About",              "description": "Learn about Altera Data Suite — who built it, why, and what drives it." },
     "pricing":   { "title": "Pricing",            "description": "Simple, transparent pricing for Altera Data Suite. Start free, upgrade when it delivers value." },
     "faqs":      { "title": "FAQs",               "description": "Got questions about Altera? Find answers about setup, accuracy, pricing, security, and more." },
@@ -51,7 +51,7 @@
     "watchDemo":         "Watch Demo",
     "testimonialTitle":  "Simple Setup, Instant Results",
     "testimonialQuote":  "\"We built Altera to handle any PDF — payslips, invoices, reports. Designed for speed, scale, and clarity from day one.\"",
-    "testimonialAttrib": "— Mehdi, Developer of Altera Data Suite"
+    "testimonialAttrib": "— Mehdi, Co-Founder & Developer of Altera Data Suite"
   },
   "resultShowcase": {
     "badgeLabel": "Payslip Extraction",
@@ -225,7 +225,7 @@
     "watchDemo":       "Watch Demo",
     "seePricing":      "See Pricing",
     "team": [
-      { "role": "CEO & Co-Founder",       "bio": "Mehdi built Altera to remove the friction from data extraction inside Orange Data Mining. As CEO, he defines the product vision, steers the technical roadmap, and makes sure every feature is grounded in real workflows — delivering fast, scalable, and purposeful tools that meet the real needs of data professionals." },
+      { "role": "CEO & Co-Founder",       "bio": "Mehdi built Altera to remove the friction from data extraction inside Orange Data Mining. With extensive experience in Python, JavaScript, and data-oriented solutions, he bridges the gap between deep technical knowledge and real-world data workflows. As CEO, he defines the product vision, steers the technical roadmap, and makes sure every feature is grounded in actual data professional needs — delivering fast, scalable, and purposeful tools." },
       { "role": "Co-Founder, Commercial & Marketing Director", "bio": "Salah leads the company's commercial and marketing strategy. He is responsible for brand development, customer acquisition, lead generation, and strategic partnerships. His goal is to accelerate the company's growth and promote innovative document automation solutions to professionals." },
       { "role": "Software Engineer", "bio": "Saumya specializes in Rust, C, and TypeScript, with a sharp focus on software performance optimization. He architects the core engine behind Altera, ensuring every computation is fast, lean, and built to scale." },
       { "role": "Frontend Engineer", "bio": "Raphaël crafts the interfaces users interact with every day. Specializing in frontend engineering, he transforms designs into fast, responsive, and accessible web experiences. From component architecture to pixel-perfect implementation, he ensures Altera's UI is smooth, reliable, and consistent — bridging the gap between design intent and real user interaction." }

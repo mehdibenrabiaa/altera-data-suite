@@ -62,7 +62,7 @@ function Navbar({ t, lang }: Props) {
         {/* Logo */}
         <SamePageLink href={`/${lang}`} className={styles.logo}>
           <Image
-            src="/Altera_logo_orange.svg"
+            src="/Altera_logo.svg"
             alt="Altera Data Suite"
             width={32}
             height={32}

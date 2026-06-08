@@ -1,6 +1,6 @@
 {
   "meta": {
-    "home":      { "title": "Altera Data Suite",       "description": "Transformez n'importe quel PDF en données structurées en quelques secondes. Extrayez factures, bulletins de paie et rapports avec une précision quasi parfaite." },
+    "home":      { "title": "Altera Data Suite — Extraction PDF pour Orange Data Mining", "description": "Transformez n'importe quel PDF en données structurées en quelques secondes. Conçu comme add-on Orange Data Mining — extrayez factures, bulletins de paie et rapports avec une précision quasi parfaite." },
     "about":     { "title": "À propos",                "description": "Découvrez Altera Data Suite — qui l'a conçu, pourquoi, et ce qui le motive." },
     "pricing":   { "title": "Tarifs",                  "description": "Des tarifs simples et transparents pour Altera Data Suite. Commencez gratuitement, évoluez quand ça vous apporte de la valeur." },
     "faqs":      { "title": "FAQ",                     "description": "Des questions sur Altera ? Trouvez les réponses sur l'installation, la précision, les tarifs, la sécurité et bien plus." },
@@ -51,7 +51,7 @@
     "watchDemo":         "Voir la démo",
     "testimonialTitle":  "Configuration simple, résultats immédiats",
     "testimonialQuote":  "\"Nous avons conçu Altera pour traiter tous les PDFs — bulletins de paie, factures, rapports. Pensé pour la vitesse, l'échelle et la clarté dès le premier jour.\"",
-    "testimonialAttrib": "— Mehdi, Développeur d'Altera Data Suite"
+    "testimonialAttrib": "— Mehdi, Co-Fondateur & Développeur d'Altera Data Suite"
   },
   "resultShowcase": {
     "badgeLabel": "Extraction de bulletins de paie",
@@ -225,7 +225,7 @@
     "watchDemo":       "Voir la démo",
     "seePricing":      "Voir les tarifs",
     "team": [
-      { "role": "PDG & Co-Fondateur",       "bio": "Mehdi a construit Altera pour supprimer les frictions de l'extraction de données dans Orange Data Mining. En tant que PDG, il définit la vision produit, oriente la feuille de route technique et veille à ce que chaque fonctionnalité soit ancrée dans de vrais workflows — livrant des outils rapides, évolutifs et porteurs de sens qui répondent aux besoins réels des professionnels de la donnée." },
+      { "role": "PDG & Co-Fondateur",       "bio": "Mehdi a construit Altera pour supprimer les frictions de l'extraction de données dans Orange Data Mining. Fort d'une solide expérience en Python, JavaScript et solutions orientées données, il fait le lien entre expertise technique et workflows data du monde réel. En tant que PDG, il définit la vision produit, oriente la feuille de route technique et veille à ce que chaque fonctionnalité réponde aux besoins réels des professionnels de la donnée." },
       { "role": "Co-fondateur, Directeur Commercial & Marketing", "bio": "Salah dirige la stratégie commerciale et marketing de l'entreprise. Il est responsable du développement de la marque, de l'acquisition clients, de la génération de leads et des partenariats stratégiques. Son objectif est d'accélérer la croissance de l'entreprise et de promouvoir des solutions innovantes d'automatisation documentaire auprès des professionnels." },
       { "role": "Ingénieur Logiciel", "bio": "Saumya est spécialisé en Rust, C et TypeScript, avec un focus marqué sur l'optimisation des performances logicielles. Il conçoit le moteur central d'Altera, garantissant que chaque calcul est rapide, léger et prêt à passer à l'échelle." },
       { "role": "Ingénieur Frontend", "bio": "Raphaël conçoit les interfaces avec lesquelles les utilisateurs interagissent chaque jour. Spécialisé en ingénierie frontend, il transforme les maquettes en expériences web rapides, responsives et accessibles. De l'architecture des composants à l'implémentation pixel-perfect, il garantit que l'interface d'Altera est fluide, fiable et cohérente." }

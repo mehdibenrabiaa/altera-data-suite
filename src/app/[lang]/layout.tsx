@@ -7,7 +7,7 @@ import AntdProvider from "@/components/AntdProvider";
 import PageTransition, { PageTransitionProvider } from "@/components/PageTransition";
 import { getDictionary, hasLocale, LOCALES } from "@/i18n/dictionaries";
 
-const BASE_URL = "https://www.alteradatasuite.com";
+const BASE_URL = "https://alteradatasuite.com";
 
 export async function generateMetadata({
   params,

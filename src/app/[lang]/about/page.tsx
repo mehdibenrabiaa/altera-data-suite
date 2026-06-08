@@ -6,7 +6,7 @@ import SectionBadge from "@/components/SectionBadge";
 import TeamCards from "@/app/about/TeamCards";
 import AboutCTAButtons from "@/app/about/AboutCTAButtons";
 
-const BASE_URL = "https://www.alteradatasuite.com";
+const BASE_URL = "https://alteradatasuite.com";
 
 export async function generateMetadata({
   params,

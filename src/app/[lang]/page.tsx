@@ -13,7 +13,7 @@ const PricingSection = dynamic(() => import("@/components/PricingSection"));
 const TestimonialsSection = dynamic(() => import("@/components/TestimonialsSection"));
 const CustomWidgetSection = dynamic(() => import("@/components/CustomWidgetSection"));
 
-const BASE_URL = "https://www.alteradatasuite.com";
+const BASE_URL = "https://alteradatasuite.com";
 
 export async function generateMetadata({
   params,

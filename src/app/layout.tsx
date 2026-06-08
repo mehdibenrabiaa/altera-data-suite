@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.alteradatasuite.com"),
+  metadataBase: new URL("https://alteradatasuite.com"),
   robots: { index: true, follow: true },
   openGraph: {
     type: "website",

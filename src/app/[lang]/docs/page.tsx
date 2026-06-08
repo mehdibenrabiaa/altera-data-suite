@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getDictionary, hasLocale, LOCALES } from "@/i18n/dictionaries";
 import DocsClient from "@/app/docs/DocsClient";
 
-const BASE_URL = "https://www.alteradatasuite.com";
+const BASE_URL = "https://alteradatasuite.com";
 
 export async function generateMetadata({
   params,

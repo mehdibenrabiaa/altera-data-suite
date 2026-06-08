@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getDictionary, hasLocale, LOCALES } from "@/i18n/dictionaries";
 import LegalPage, { type LegalGroup } from "@/components/LegalPage";
 
-const BASE_URL = "https://www.alteradatasuite.com";
+const BASE_URL = "https://alteradatasuite.com";
 
 export async function generateMetadata({
   params,

@@ -4,7 +4,7 @@ import { getDictionary, hasLocale, LOCALES } from "@/i18n/dictionaries";
 import FAQSection from "@/components/FAQSection";
 import ChatBot from "@/components/ChatBot";
 
-const BASE_URL = "https://www.alteradatasuite.com";
+const BASE_URL = "https://alteradatasuite.com";
 
 export async function generateMetadata({
   params,

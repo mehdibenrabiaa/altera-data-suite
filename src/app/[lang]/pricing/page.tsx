@@ -4,7 +4,7 @@ import { getDictionary, hasLocale, LOCALES } from "@/i18n/dictionaries";
 import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
 
-const BASE_URL = "https://www.alteradatasuite.com";
+const BASE_URL = "https://alteradatasuite.com";
 
 export async function generateMetadata({
   params,

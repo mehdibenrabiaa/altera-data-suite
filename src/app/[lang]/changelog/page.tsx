@@ -5,7 +5,7 @@ import SectionBadge from "@/components/SectionBadge";
 import styles from "@/app/changelog/changelog.module.css";
 import { COLOR_PRIMARY } from "@/lib/theme";
 
-const BASE_URL = "https://www.alteradatasuite.com";
+const BASE_URL = "https://alteradatasuite.com";
 
 type ChangeCategory = "New" | "Improved" | "Fixed";
 

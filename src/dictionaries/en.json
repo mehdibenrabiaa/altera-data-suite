@@ -1,6 +1,6 @@
 {
   "meta": {
-    "home":      { "title": "Altera Data Suite — PDF Data Extraction for Orange Data Mining", "description": "Turn any PDF into clean, structured data in seconds. Built as an Orange Data Mining add-on — extract invoices, payslips, and reports with near-perfect accuracy." },
+    "home":      { "title": "PDF Data Extraction for Orange Data Mining | Altera Data Suite","description": "Extract invoices, payslips & reports from any PDF — no code needed. The no-code Orange Data Mining add-on for structured data extraction. Try it free." },
     "about":     { "title": "About",              "description": "Learn about Altera Data Suite — who built it, why, and what drives it." },
     "pricing":   { "title": "Pricing",            "description": "Simple, transparent pricing for Altera Data Suite. Start free, upgrade when it delivers value." },
     "faqs":      { "title": "FAQs",               "description": "Got questions about Altera? Find answers about setup, accuracy, pricing, security, and more." },

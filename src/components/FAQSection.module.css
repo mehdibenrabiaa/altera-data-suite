@@ -5,33 +5,55 @@
 .list {
   max-width: 720px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
-.list :global(.ant-collapse-item) {
+.item {
   background: #fff;
-  border: 1px solid #ebebeb !important;
-  border-radius: 16px !important;
-  margin-bottom: 5px;
+  border: 1px solid #ebebeb;
+  border-radius: 16px;
   overflow: hidden;
 }
 
-.list :global(.ant-collapse-header) {
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 15px;
   font-weight: 500;
-  color: #1a1a1a !important;
-  padding: 20px 24px !important;
+  color: #1a1a1a;
+  padding: 20px 24px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
 }
 
-.list :global(.ant-collapse-content-box) {
+.question::-webkit-details-marker {
+  display: none;
+}
+
+.question::after {
+  content: "+";
+  font-size: 20px;
+  font-weight: 300;
+  color: #aaa;
+  flex-shrink: 0;
+  margin-left: 12px;
+  transition: transform 0.2s ease;
+}
+
+.item[open] .question::after {
+  transform: rotate(45deg);
+}
+
+.answer {
   font-size: 14px;
   color: var(--color-text-muted);
   line-height: 1.7;
-  padding: 0 24px 20px !important;
-}
-
-.list :global(.ant-collapse-content) {
-  border-top: none !important;
-  background: #fff !important;
+  padding: 0 24px 20px;
+  margin: 0;
 }
 
 @media (max-width: 900px) {

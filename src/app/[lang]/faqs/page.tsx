@@ -26,7 +26,7 @@ export async function generateMetadata({
     title,
     description,
     openGraph: { title, description, url: `${BASE_URL}/${lang}/faqs` },
-    alternates: { languages: alternates },
+    alternates: { canonical: `${BASE_URL}/${lang}/faqs`, languages: alternates },
   };
 }
 
@@ -49,8 +49,19 @@ export default async function FAQsPage({
     children: f.text,
   }));
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": dict.allFaqs.map((f) => ({
+      "@type": "Question",
+      "name": f.label,
+      "acceptedAnswer": { "@type": "Answer", "text": f.text },
+    })),
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <h1
         style={{
           position: "absolute",

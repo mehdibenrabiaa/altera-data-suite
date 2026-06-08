@@ -7,6 +7,7 @@ import AboutCTAButtons from "./AboutCTAButtons";
 export const metadata: Metadata = {
   title: "About",
   description: "Learn about Altera Data Suite — who built it, why, and what drives it.",
+  alternates: { canonical: "https://www.alteradatasuite.com/en/about" },
 };
 
 export default function AboutPage() {

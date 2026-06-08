@@ -14,10 +14,15 @@ export async function generateMetadata({
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang);
   const { title, description } = dict.meta.refund;
+  const languages: Record<string, string> = {};
+  for (const locale of LOCALES) languages[locale] = `${BASE_URL}/${locale}/refund`;
+  languages["x-default"] = `${BASE_URL}/en/refund`;
+
   return {
     title,
     description,
     openGraph: { title, description, url: `${BASE_URL}/${lang}/refund` },
+    alternates: { canonical: `${BASE_URL}/${lang}/refund`, languages },
   };
 }
 

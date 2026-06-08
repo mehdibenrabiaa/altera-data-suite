@@ -28,6 +28,7 @@ export default function TransformSection() {
               width={956}
               height={1234}
               style={{ width: "100%", height: "auto", display: "block" }}
+              loading="lazy"
             />
           </div>
         </div>

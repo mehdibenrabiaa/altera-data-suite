@@ -46,6 +46,8 @@ export default function ResultShowcaseSection({ t, lang }: Props) {
             width={600}
             height={500}
             style={{ width: "100%", height: "auto" }}
+            loading="lazy"
+            unoptimized
           />
         </div>
 

@@ -67,6 +67,8 @@ function Navbar({ t, lang }: Props) {
             width={32}
             height={32}
             style={{ height: 32, width: "auto" }}
+            priority
+            unoptimized
           />
         </SamePageLink>
 

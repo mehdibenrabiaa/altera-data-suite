@@ -1,6 +1,3 @@
-"use client";
-
-import { Collapse } from "antd";
 import SectionBadge from "./SectionBadge";
 import SectionHeading from "./SectionHeading";
 import { essentialFaqItems } from "@/data/faqItems";
@@ -32,17 +29,14 @@ export default function FAQSection({
   return (
     <section className={styles.section}>
       <SectionBadge label={t.badgeLabel} text={t.badgeText} />
-      <SectionHeading
-        heading={t.heading}
-        subtitle={t.subtitle}
-      />
+      <SectionHeading heading={t.heading} subtitle={t.subtitle} />
       <div className={styles.list}>
-        <Collapse
-          accordion
-          items={items}
-          bordered={false}
-          style={{ background: "transparent" }}
-        />
+        {items.map((item) => (
+          <details key={item.key} className={styles.item}>
+            <summary className={styles.question}>{item.label}</summary>
+            <p className={styles.answer}>{item.children}</p>
+          </details>
+        ))}
       </div>
     </section>
   );

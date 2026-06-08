@@ -52,6 +52,8 @@ export default function StatsSection({ t }: Props) {
           height={320}
           className={styles.chartImg}
           style={{ height: "auto" }}
+          loading="lazy"
+          unoptimized
         />
 
         <div className={`${styles.statCol} ${styles.statColRight}`}>

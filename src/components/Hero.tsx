@@ -78,6 +78,7 @@ export default function Hero({ t, lang, featureCards }: Props) {
           width={64}
           height={64}
           className={styles.testimonialAvatar}
+          priority
         />
         <p className={styles.testimonialTitle}>{t.testimonialTitle}</p>
         <p className={styles.testimonialQuote}>{t.testimonialQuote}</p>

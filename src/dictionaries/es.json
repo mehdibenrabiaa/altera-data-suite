@@ -1,6 +1,6 @@
 {
   "meta": {
-    "home":      { "title": "Altera Data Suite — Extracción de PDF para Orange Data Mining", "description": "Convierte cualquier PDF en datos estructurados en segundos. Diseñado como complemento de Orange Data Mining — extrae facturas, nóminas e informes con una precisión casi perfecta." },
+    "home":      { "title": "Extracción de PDF para Orange Data Mining | Altera Data Suite","description": "Extrae facturas, nóminas e informes de cualquier PDF — sin código. El complemento sin código de Orange Data Mining para extracción de datos estructurados. Pruébalo gratis." },
     "about":     { "title": "Acerca de",              "description": "Conoce Altera Data Suite — quién lo creó, por qué y qué lo impulsa." },
     "pricing":   { "title": "Precios",                "description": "Precios simples y transparentes para Altera Data Suite. Empieza gratis, mejora cuando aporte valor." },
     "faqs":      { "title": "Preguntas frecuentes",   "description": "¿Tienes preguntas sobre Altera? Encuentra respuestas sobre configuración, precisión, precios, seguridad y más." },

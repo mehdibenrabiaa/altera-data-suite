@@ -102,6 +102,8 @@ export default function Footer({ t, lang, langNames }: Props) {
               height={32}
               className={styles.logo}
               style={{ width: "auto" }}
+              loading="lazy"
+              unoptimized
             />
           </div>
           <p className={styles.brandDesc}>{t.tagline}</p>

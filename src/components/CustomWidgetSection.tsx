@@ -26,11 +26,13 @@ export default function CustomWidgetSection({ t }: Props) {
     <section className={styles.section}>
       <div>
         <Image
-          src="/SVG/altera_logo_white.svg"
+          src="/Altera_logo_grey.svg"
           alt="Altera Data Suite"
-          width={72}
-          height={72}
+          width={120}
+          height={120}
           className={styles.logo}
+          loading="lazy"
+          unoptimized
         />
       </div>
 

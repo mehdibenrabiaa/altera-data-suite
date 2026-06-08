@@ -42,7 +42,7 @@ export default function WidgetsSection({ t }: Props) {
         {t.items.map((widget, i) => (
           <div key={widget.name} className={styles.card}>
             <div className={styles.iconWrap}>
-              <Image src={`/widgets_icons/${WIDGET_ICONS[i]}`} alt={widget.name} width={40} height={40} />
+              <Image src={`/widgets_icons/${WIDGET_ICONS[i]}`} alt={widget.name} width={40} height={40} loading="lazy" unoptimized />
             </div>
             <h3 className={styles.cardTitle}>{widget.name}</h3>
             <p className={styles.cardDesc}>{widget.description}</p>

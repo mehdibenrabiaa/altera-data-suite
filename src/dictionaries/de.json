@@ -108,7 +108,7 @@
     "plans": [
       {
         "name": "Kostenlose Testversion", "subtitle": "Komplettlösung für einen kurzen Zeitraum",
-        "features": ["Begrenzte PDF-Verarbeitung","KI-Funktionen nicht enthalten","15 Tage Testphase","10+ Widgets","Minimaler Support","Einzelplatz-Lizenz","Kostenlose Updates & Verbesserungen"]
+        "features": ["Begrenzte PDF-Verarbeitung","KI-Funktionen nicht enthalten","7 Tage Testphase","10+ Widgets","Minimaler Support","Einzelplatz-Lizenz","Kostenlose Updates & Verbesserungen"]
       },
       {
         "name": "Professional", "subtitle": "Komplettlösung für PDF-Verarbeitung",
@@ -121,7 +121,7 @@
     ],
     "faqs": [
       { "key": "p1", "label": "Kann ich später den Plan wechseln?",                   "text": "Ja. Sie können jederzeit vom Free Trial auf Professional upgraden. Ihre Daten und Workflows bleiben erhalten." },
-      { "key": "p2", "label": "Was passiert, wenn mein kostenloser Test endet?",      "text": "Nach 15 Tagen läuft Ihr Test ab. Sie können mit einem Professional- oder Enterprise-Plan fortfahren — nichts wird gelöscht." },
+      { "key": "p2", "label": "Was passiert, wenn mein kostenloser Test endet?",      "text": "Nach 7 Tagen läuft Ihr Test ab. Sie können mit einem Professional- oder Enterprise-Plan fortfahren — nichts wird gelöscht." },
       { "key": "p3", "label": "Ist die 99 $-Gebühr eine Einmalzahlung oder ein Abo?", "text": "Es ist eine Jahreslizenz. Sie erhalten vollen Zugang einschließlich Updates für 12 Monate. Verlängerung ist optional — Sie nutzen die aktuelle Version auch nach Ablauf weiter." },
       { "key": "p4", "label": "Wie sehen die Enterprise-Preise aus?",                 "text": "Enterprise richtet sich nach Teamgröße, Volumen und Vertragslaufzeit. Kontaktieren Sie uns unter support@alteradatasuite.com und wir erstellen ein Angebot." },
       { "key": "p5", "label": "Bieten Sie Rückerstattungen an?",                      "text": "Wir bieten einen kostenlosen Test, damit Sie das Tool vor dem Kauf validieren können. Falls nach dem Kauf etwas schiefläuft, melden Sie sich und wir finden eine Lösung." },

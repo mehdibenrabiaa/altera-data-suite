@@ -108,7 +108,7 @@
     "plans": [
       {
         "name": "Gratis proefperiode", "subtitle": "Alles-in-één oplossing voor een korte periode",
-        "features": ["Beperkte PDF-verwerking","AI-functies niet inbegrepen","15 dagen proefperiode","10+ widgets","Minimale ondersteuning","Licentie voor één machine","Gratis updates & verbeteringen"]
+        "features": ["Beperkte PDF-verwerking","AI-functies niet inbegrepen","7 dagen proefperiode","10+ widgets","Minimale ondersteuning","Licentie voor één machine","Gratis updates & verbeteringen"]
       },
       {
         "name": "Professional", "subtitle": "Alles-in-één oplossing voor PDF-verwerking",
@@ -121,7 +121,7 @@
     ],
     "faqs": [
       { "key": "p1", "label": "Kan ik later van plan wisselen?",                      "text": "Ja. U kunt op elk moment upgraden van Free Trial naar Professional. Uw gegevens en workflows blijven intact." },
-      { "key": "p2", "label": "Wat gebeurt er als mijn gratis proefperiode eindigt?",  "text": "Na 15 dagen verloopt uw proefperiode. U kunt doorgaan met een Professional- of Enterprise-plan — niets wordt verwijderd." },
+      { "key": "p2", "label": "Wat gebeurt er als mijn gratis proefperiode eindigt?",  "text": "Na 7 dagen verloopt uw proefperiode. U kunt doorgaan met een Professional- of Enterprise-plan — niets wordt verwijderd." },
       { "key": "p3", "label": "Is de $ 99 een eenmalige betaling of een abonnement?", "text": "Het is een jaarlicentie. U krijgt volledige toegang inclusief updates voor 12 maanden. Verlenging is optioneel — u blijft de huidige versie gebruiken ook na afloop." },
       { "key": "p4", "label": "Hoe ziet Enterprise-prijsstelling eruit?",             "text": "Enterprise wordt bepaald door teamgrootte, volume en contractduur. Neem contact op via support@alteradatasuite.com en we stellen een voorstel op." },
       { "key": "p5", "label": "Biedt u terugbetalingen aan?",                         "text": "We bieden een gratis proefperiode zodat u de tool kunt valideren voordat u betaalt. Als er iets misgaat na aankoop, neem contact op en we lossen het op." },
@@ -299,7 +299,7 @@
           },
           {
             "heading": "4. Proefvoorwaarden",
-            "body": "De gratis proefperiode van 15 dagen is beperkt tot één per machine. Na het verstrijken van de proefperiode is een betaalde licentie vereist om Altera te blijven gebruiken. U kunt de proefperiode op elk moment annuleren zonder boete."
+            "body": "De gratis proefperiode van 7 dagen is beperkt tot één per machine. Na het verstrijken van de proefperiode is een betaalde licentie vereist om Altera te blijven gebruiken. U kunt de proefperiode op elk moment annuleren zonder boete."
           },
           {
             "heading": "5. Updates en onderhoud",

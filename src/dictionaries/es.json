@@ -108,7 +108,7 @@
     "plans": [
       {
         "name": "Free Trial", "subtitle": "Solución todo en uno por un período corto",
-        "features": ["Procesamiento de PDF limitado","Funciones de IA no incluidas","15 días de prueba","10+ Widgets","Soporte mínimo","Licencia para una máquina","Actualizaciones gratuitas"]
+        "features": ["Procesamiento de PDF limitado","Funciones de IA no incluidas","7 días de prueba","10+ Widgets","Soporte mínimo","Licencia para una máquina","Actualizaciones gratuitas"]
       },
       {
         "name": "Professional", "subtitle": "Solución todo en uno para análisis de PDF",
@@ -121,7 +121,7 @@
     ],
     "faqs": [
       { "key": "p1", "label": "¿Puedo cambiar de plan más adelante?",                "text": "Sí. Puedes pasar del Free Trial al Professional en cualquier momento. Tus datos y flujos de trabajo permanecen intactos." },
-      { "key": "p2", "label": "¿Qué ocurre cuando termina mi prueba gratuita?",     "text": "Después de 15 días expira tu prueba. Puedes continuar con un plan Professional o Enterprise — nada se elimina." },
+      { "key": "p2", "label": "¿Qué ocurre cuando termina mi prueba gratuita?",     "text": "Después de 7 días expira tu prueba. Puedes continuar con un plan Professional o Enterprise — nada se elimina." },
       { "key": "p3", "label": "¿Los 99 $ son un pago único o una suscripción?",     "text": "Es una licencia anual. Obtienes acceso completo incluyendo actualizaciones durante 12 meses. La renovación es opcional." },
       { "key": "p4", "label": "¿Cómo son los precios Enterprise?",                   "text": "El Enterprise se adapta según el tamaño del equipo, volumen y duración del contrato. Contáctanos en support@alteradatasuite.com." },
       { "key": "p5", "label": "¿Ofrecéis reembolsos?",                               "text": "Ofrecemos una prueba gratuita para que puedas validar la herramienta antes de pagar. Si algo falla después de la compra, contáctanos." },
@@ -291,7 +291,7 @@
           },
           {
             "heading": "4. Condiciones de prueba",
-            "body": "La prueba gratuita de 15 días está limitada a una por máquina. Tras el vencimiento de la prueba, se requiere una licencia de pago para continuar usando Altera. Puede cancelar la prueba en cualquier momento sin penalización."
+            "body": "La prueba gratuita de 7 días está limitada a una por máquina. Tras el vencimiento de la prueba, se requiere una licencia de pago para continuar usando Altera. Puede cancelar la prueba en cualquier momento sin penalización."
           },
           {
             "heading": "5. Actualizaciones y mantenimiento",

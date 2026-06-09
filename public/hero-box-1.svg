@@ -67,10 +67,10 @@
       }
     </style>
     <linearGradient id="linear-gradient" x1="186.8" y1="1561.4" x2="592.1" y2="198.7" gradientTransform="translate(0 1300) scale(1 -1)" gradientUnits="userSpaceOnUse">
-      <stop offset=".2" stop-color="#828282"/>
+      <stop offset=".2" stop-color="#4a4a4a"/>
       <stop offset=".4" stop-color="#868686"/>
-      <stop offset=".8" stop-color="#e6e6e6"/>
-      <stop offset="1" stop-color="#fff"/>
+      <stop offset=".7" stop-color="#e6e6e6"/>
+      <stop offset=".9" stop-color="#fff"/>
     </linearGradient>
     <filter id="drop-shadow-1" x="55" y="189" width="718" height="362" filterUnits="userSpaceOnUse">
       <feOffset dx="-1" dy="4"/>

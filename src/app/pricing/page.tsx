@@ -16,7 +16,7 @@ const pricingFaqs = [
   {
     key: "p2",
     label: "What happens when my free trial ends?",
-    children: "After 15 days your trial expires. You can continue with a Professional or Enterprise plan — nothing is deleted.",
+    children: "After 7 days your trial expires. You can continue with a Professional or Enterprise plan — nothing is deleted.",
   },
   {
     key: "p3",

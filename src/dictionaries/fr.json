@@ -108,7 +108,7 @@
     "plans": [
       {
         "name": "Free Trial", "subtitle": "Solution tout-en-un pour une courte période",
-        "features": ["Traitement PDF limité","Fonctionnalités IA non incluses","15 jours d'essai","10+ Widgets","Support minimal","Licence mono-poste","Mises à jour gratuites"]
+        "features": ["Traitement PDF limité","Fonctionnalités IA non incluses","7 jours d'essai","10+ Widgets","Support minimal","Licence mono-poste","Mises à jour gratuites"]
       },
       {
         "name": "Professional", "subtitle": "Solution tout-en-un pour l'analyse PDF",
@@ -121,7 +121,7 @@
     ],
     "faqs": [
       { "key": "p1", "label": "Puis-je changer de plan plus tard ?",                 "text": "Oui. Vous pouvez passer du Free Trial au Professional à tout moment. Vos données et workflows restent intacts." },
-      { "key": "p2", "label": "Que se passe-t-il à la fin de mon essai gratuit ?",   "text": "Après 15 jours, votre essai expire. Vous pouvez continuer avec un plan Professional ou Enterprise — rien n'est supprimé." },
+      { "key": "p2", "label": "Que se passe-t-il à la fin de mon essai gratuit ?",   "text": "Après 7 jours, votre essai expire. Vous pouvez continuer avec un plan Professional ou Enterprise — rien n'est supprimé." },
       { "key": "p3", "label": "Le paiement de 99 $ est-il unique ou un abonnement ?","text": "C'est une licence annuelle. Vous bénéficiez d'un accès complet incluant les mises à jour pendant 12 mois. Le renouvellement est optionnel." },
       { "key": "p4", "label": "À quoi ressemble la tarification Enterprise ?",       "text": "L'Enterprise est adapté selon la taille de l'équipe, le volume et la durée du contrat. Contactez-nous à support@alteradatasuite.com." },
       { "key": "p5", "label": "Proposez-vous des remboursements ?",                   "text": "Nous offrons un essai gratuit pour valider l'outil avant de payer. En cas de problème après l'achat, contactez-nous et nous trouverons une solution." },
@@ -291,7 +291,7 @@
           },
           {
             "heading": "4. Conditions d'essai",
-            "body": "L'essai gratuit de 15 jours est limité à un par machine. Après l'expiration de l'essai, une licence payante est requise pour continuer à utiliser Altera. Vous pouvez annuler l'essai à tout moment sans pénalité."
+            "body": "L'essai gratuit de 7 jours est limité à un par machine. Après l'expiration de l'essai, une licence payante est requise pour continuer à utiliser Altera. Vous pouvez annuler l'essai à tout moment sans pénalité."
           },
           {
             "heading": "5. Mises à jour et maintenance",

@@ -95,37 +95,35 @@
     "badgeLabel":    "Prijzen",
     "badgeText":     "Eenvoudige plannen, krachtige functies",
     "heading":       "Kies het plan dat bij uw workflow past.",
-    "subtitle":      "Gratis beginnen. Upgrade wanneer het waarde levert",
+    "subtitle":      "Elk plan bevat AI-credits. Vul op wanneer u wilt.",
     "popularBadge":  "POPULAIR",
+    "bestValueBadge": "BESTE WAARDE",
     "getBtn":        "Kies",
     "period":        "/jaar",
-    "billingMonthly": "Maandelijks",
-    "billingYearly":  "Jaarlijks",
     "periodMonthly":  "/maand",
-    "discountNote":   "Jaarlijkse facturering bespaart u 10 %",
-    "letsTalk":      "Neem contact op",
+    "oneTime":        "eenmalig",
     "includesLabel": "Inclusief",
+    "topUpNote":      "AI-credits op? Vul op wanneer u wilt — extra creditpakketten vanaf $9.",
     "plans": [
       {
-        "name": "Gratis proefperiode", "subtitle": "Alles-in-één oplossing voor een korte periode",
-        "features": ["Beperkte PDF-verwerking","AI-functies niet inbegrepen","7 dagen proefperiode","10+ widgets","Minimale ondersteuning","Licentie voor één machine","Gratis updates & verbeteringen"]
+        "name": "Maandelijks", "subtitle": "Alles-in-één oplossing, maandelijks gefactureerd",
+        "features": ["Onbeperkte PDF-verwerking","1.000 AI-credits / maand","10+ widgets","E-mailondersteuning","Licentie voor één machine","Gratis updates & verbeteringen"]
       },
       {
-        "name": "Professional", "subtitle": "Alles-in-één oplossing voor PDF-verwerking",
-        "features": ["Onbeperkte PDF-verwerking","AI-aangedreven slimme tools","1-jaar licentieabonnement","10+ widgets","E-mailondersteuning","Licentie voor één machine","Gratis updates & verbeteringen"]
+        "name": "Jaarlijks", "subtitle": "Bespaar 20% t.o.v. maandelijkse facturering",
+        "features": ["Onbeperkte PDF-verwerking","15.000 AI-credits / jaar","10+ widgets","Prioritaire e-mailondersteuning","Licentie voor één machine","Gratis updates & verbeteringen"]
       },
       {
-        "name": "Enterprise", "subtitle": "Alle functies + op maat gemaakte prijzen",
-        "features": ["Onbeperkte PDF-verwerking","AI-aangedreven slimme tools","Aangepaste prijsstelling","10+ widgets","Videogesprek assistentie","Volumelicenties","Gratis updates & verbeteringen"]
+        "name": "Lifetime", "subtitle": "Eenmalig betalen, voor altijd bezitten",
+        "features": ["Onbeperkte PDF-verwerking","1.000 AI-credits per maand, levenslang","10+ widgets","Prioritaire ondersteuning","Licentie voor één machine","Gratis updates voor 1 jaar"]
       }
     ],
     "faqs": [
-      { "key": "p1", "label": "Kan ik later van plan wisselen?",                      "text": "Ja. U kunt op elk moment upgraden van Free Trial naar Professional. Uw gegevens en workflows blijven intact." },
-      { "key": "p2", "label": "Wat gebeurt er als mijn gratis proefperiode eindigt?",  "text": "Na 7 dagen verloopt uw proefperiode. U kunt doorgaan met een Professional- of Enterprise-plan — niets wordt verwijderd." },
-      { "key": "p3", "label": "Is de $ 99 een eenmalige betaling of een abonnement?", "text": "Het is een jaarlicentie. U krijgt volledige toegang inclusief updates voor 12 maanden. Verlenging is optioneel — u blijft de huidige versie gebruiken ook na afloop." },
-      { "key": "p4", "label": "Hoe ziet Enterprise-prijsstelling eruit?",             "text": "Enterprise wordt bepaald door teamgrootte, volume en contractduur. Neem contact op via support@alteradatasuite.com en we stellen een voorstel op." },
-      { "key": "p5", "label": "Biedt u terugbetalingen aan?",                         "text": "We bieden een gratis proefperiode zodat u de tool kunt valideren voordat u betaalt. Als er iets misgaat na aankoop, neem contact op en we lossen het op." },
-      { "key": "p6", "label": "Kan ik Altera op meerdere machines gebruiken?",        "text": "De Free Trial- en Professional-plannen zijn licenties voor één machine. Enterprise-plannen omvatten volumelicenties voor teams." }
+      { "key": "p1", "label": "Kan ik later van plan wisselen?",                      "text": "Ja. U kunt op elk moment wisselen tussen Maandelijks, Jaarlijks en Lifetime. Uw gegevens en workflows blijven intact." },
+      { "key": "p2", "label": "Wat gebeurt er als mijn AI-credits op zijn?",  "text": "AI-functies worden gepauzeerd totdat u opwaardeert — de rest van de app blijft normaal werken. Extra creditpakketten zijn op elk moment beschikbaar in de app." },
+      { "key": "p3", "label": "Wat is het verschil tussen de plannen?", "text": "Maandelijks en Jaarlijks zijn terugkerende abonnementen die volgens die cyclus worden gefactureerd. Lifetime is een eenmalige betaling voor permanente toegang, met een vaste maandelijkse AI-credit toewijzing zolang u de app gebruikt." },
+      { "key": "p5", "label": "Biedt u terugbetalingen aan?",                         "text": "Ja — zie onze 30-dagen-niet-goed-geld-terug-garantie. Als er iets misgaat na aankoop, neem contact op en we lossen het op." },
+      { "key": "p6", "label": "Kan ik Altera op meerdere machines gebruiken?",        "text": "Maandelijks, Jaarlijks en Lifetime zijn allemaal licenties voor één machine." }
     ]
   },
   "testimonials": {

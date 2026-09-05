@@ -95,37 +95,35 @@
     "badgeLabel":     "Pricing",
     "badgeText":      "Simple Plans, Powerful Features",
     "heading":        "Pick the plan that fits your workflow.",
-    "subtitle":       "Start Free. Upgrade When It Delivers Value",
+    "subtitle":       "Every plan includes AI credits. Top up anytime.",
     "popularBadge":   "POPULAR",
+    "bestValueBadge": "BEST VALUE",
     "getBtn":         "Get",
     "period":         "/year",
-    "billingMonthly": "Monthly",
-    "billingYearly":  "Yearly",
     "periodMonthly":  "/month",
-    "discountNote":   "Annual billing saves you 10%",
-    "letsTalk":       "Let's Talk",
+    "oneTime":        "one-time",
     "includesLabel":  "Includes",
+    "topUpNote":      "Run out of AI credits? Top up anytime — extra credit packs start at $9.",
     "plans": [
       {
-        "name": "Free Trial", "subtitle": "All-In-One Solution for a short period",
-        "features": ["Limited PDF Processing","AI Features Not Included","7 Days Trial Period","10+ Nodes","Minimal Support","Single Machine License","Free Updates & Improvements"]
+        "name": "Monthly", "subtitle": "All-In-One Solution, billed monthly",
+        "features": ["Unlimited PDF Processing","1,000 AI Credits / month","10+ Nodes","Email Support","Single Machine License","Free Updates & Improvements"]
       },
       {
-        "name": "Professional", "subtitle": "All-In-One Solution for PDF Parsing",
-        "features": ["Unlimited PDF Processing","AI-Powered Smart Tools","Monthly or Yearly Billing","10+ Nodes","Email Support","Single Machine License","Free Updates & Improvements"]
+        "name": "Yearly", "subtitle": "Save 20% vs monthly billing",
+        "features": ["Unlimited PDF Processing","15,000 AI Credits / year","10+ Nodes","Priority Email Support","Single Machine License","Free Updates & Improvements"]
       },
       {
-        "name": "Enterprise", "subtitle": "All Features + Tailored Prices",
-        "features": ["Unlimited PDF Processing","AI-Powered Smart Tools","Custom Pricing","10+ Nodes","Video Call Assistance","Volume Licensing","Free Updates & Improvements"]
+        "name": "Lifetime", "subtitle": "Pay once, own it forever",
+        "features": ["Unlimited PDF Processing","1,000 AI Credits every month, for life","10+ Nodes","Priority Support","Single Machine License","Free Updates for 1 Year"]
       }
     ],
     "faqs": [
-      { "key": "p1", "label": "Can I switch plans later?",                        "text": "Yes. You can upgrade from Free Trial to Professional at any time. Your data and workflows stay intact." },
-      { "key": "p2", "label": "What happens when my free trial ends?",            "text": "After 7 days your trial expires. You can continue with a Professional or Enterprise plan — nothing is deleted." },
-      { "key": "p3", "label": "Is the $99 a one-time payment or a subscription?", "text": "It's a subscription. You can pay $99/month or $1,069/year. When your subscription expires, access to the app stops — renew to continue." },
-      { "key": "p4", "label": "What does Enterprise pricing look like?",          "text": "Enterprise is scoped per team size, volume, and contract length. Get in touch at support@alteradatasuite.com and we'll put together a proposal." },
-      { "key": "p5", "label": "Do you offer refunds?",                            "text": "We offer a free trial so you can validate the tool before paying. If something goes wrong after purchase, reach out and we'll work it out." },
-      { "key": "p6", "label": "Can I use Altera on multiple machines?",           "text": "The Free Trial and Professional plans are single-machine licenses. Enterprise plans include volume licensing for teams." }
+      { "key": "p1", "label": "Can I switch plans later?",                          "text": "Yes. You can switch between Monthly, Yearly, and Lifetime at any time. Your data and workflows stay intact." },
+      { "key": "p2", "label": "What happens when I run out of AI credits?",         "text": "AI-powered features pause until you top up — everything else in the app keeps working normally. Extra credit packs are available anytime from the app." },
+      { "key": "p3", "label": "What's the difference between the plans?",           "text": "Monthly and Yearly are recurring subscriptions billed on that cadence. Lifetime is a single one-time payment for permanent access, with a fixed monthly AI credit allowance included for as long as you use it." },
+      { "key": "p5", "label": "Do you offer refunds?",                              "text": "Yes — see our 30-day money-back guarantee. If something goes wrong after purchase, reach out and we'll work it out." },
+      { "key": "p6", "label": "Can I use Altera on multiple machines?",             "text": "Monthly, Yearly, and Lifetime are all single-machine licenses." }
     ]
   },
   "testimonials": {
@@ -254,7 +252,7 @@
     "quickReplies": [
       { "question": "How does PDF Converter work?",   "answer": "Open your PDF, draw rectangles over the data you want to extract, optionally place column guides, then click Convert. You get a clean structured table ready for further processing." },
       { "question": "What nodes are available?",    "answer": "Altera includes 9 nodes: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates, and Cleaner." },
-      { "question": "Is there a free trial?",         "answer": "Yes! You can get started for free. Head to the Pricing page to see what's included in each plan." }
+      { "question": "How does pricing work?",          "answer": "Choose Monthly, Yearly, or Lifetime — every plan includes AI credits, and you can top up anytime if you run out. Head to the Pricing page for full details." }
     ]
   },
   "lang": {

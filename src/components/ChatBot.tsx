@@ -44,7 +44,7 @@ const DEFAULT_T: ChatBotT = {
   quickReplies: [
     { question: "How does PDF Converter work?",  answer: "Open your PDF, draw rectangles over the data you want to extract, optionally place column guides, then click Convert. You get a clean structured table ready for further processing." },
     { question: "What nodes are available?",   answer: "Altera includes 9 nodes: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates, and Cleaner." },
-    { question: "Is there a free trial?",        answer: "Yes! You can get started for free. Head to the Pricing page to see what's included in each plan." },
+    { question: "How does pricing work?",        answer: "Choose Monthly, Yearly, or Lifetime — every plan includes AI credits, and you can top up anytime if you run out. Head to the Pricing page for full details." },
   ],
 };
 

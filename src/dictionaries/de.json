@@ -95,37 +95,35 @@
     "badgeLabel":    "Preise",
     "badgeText":     "Einfache Pläne, mächtige Funktionen",
     "heading":       "Wählen Sie den Plan, der zu Ihrem Workflow passt.",
-    "subtitle":      "Kostenlos starten. Upgraden wenn es Mehrwert bringt",
+    "subtitle":      "Jeder Plan enthält KI-Credits. Jederzeit aufladbar.",
     "popularBadge":  "BELIEBT",
+    "bestValueBadge": "BESTER WERT",
     "getBtn":        "Holen",
     "period":        "/Jahr",
-    "billingMonthly": "Monatlich",
-    "billingYearly":  "Jährlich",
     "periodMonthly":  "/Monat",
-    "discountNote":   "Jährliche Abrechnung spart Ihnen 10 %",
-    "letsTalk":      "Kontakt aufnehmen",
+    "oneTime":        "einmalig",
     "includesLabel": "Beinhaltet",
+    "topUpNote":      "KI-Credits aufgebraucht? Jederzeit aufladen — zusätzliche Credit-Pakete ab 9 $.",
     "plans": [
       {
-        "name": "Kostenlose Testversion", "subtitle": "Komplettlösung für einen kurzen Zeitraum",
-        "features": ["Begrenzte PDF-Verarbeitung","KI-Funktionen nicht enthalten","7 Tage Testphase","10+ Widgets","Minimaler Support","Einzelplatz-Lizenz","Kostenlose Updates & Verbesserungen"]
+        "name": "Monatlich", "subtitle": "Komplettlösung, monatlich abgerechnet",
+        "features": ["Unbegrenzte PDF-Verarbeitung","1.000 KI-Credits / Monat","10+ Widgets","E-Mail-Support","Einzelplatz-Lizenz","Kostenlose Updates & Verbesserungen"]
       },
       {
-        "name": "Professional", "subtitle": "Komplettlösung für PDF-Verarbeitung",
-        "features": ["Unbegrenzte PDF-Verarbeitung","KI-gestützte Smart Tools","1-Jahres-Lizenzabonnement","10+ Widgets","E-Mail-Support","Einzelplatz-Lizenz","Kostenlose Updates & Verbesserungen"]
+        "name": "Jährlich", "subtitle": "20 % günstiger als monatliche Abrechnung",
+        "features": ["Unbegrenzte PDF-Verarbeitung","15.000 KI-Credits / Jahr","10+ Widgets","Priorisierter E-Mail-Support","Einzelplatz-Lizenz","Kostenlose Updates & Verbesserungen"]
       },
       {
-        "name": "Enterprise", "subtitle": "Alle Funktionen + Individuelle Preise",
-        "features": ["Unbegrenzte PDF-Verarbeitung","KI-gestützte Smart Tools","Individuelle Preisgestaltung","10+ Widgets","Videoanruf-Unterstützung","Volumenlizenzierung","Kostenlose Updates & Verbesserungen"]
+        "name": "Lifetime", "subtitle": "Einmal zahlen, für immer besitzen",
+        "features": ["Unbegrenzte PDF-Verarbeitung","1.000 KI-Credits pro Monat, lebenslang","10+ Widgets","Priorisierter Support","Einzelplatz-Lizenz","Kostenlose Updates für 1 Jahr"]
       }
     ],
     "faqs": [
-      { "key": "p1", "label": "Kann ich später den Plan wechseln?",                   "text": "Ja. Sie können jederzeit vom Free Trial auf Professional upgraden. Ihre Daten und Workflows bleiben erhalten." },
-      { "key": "p2", "label": "Was passiert, wenn mein kostenloser Test endet?",      "text": "Nach 7 Tagen läuft Ihr Test ab. Sie können mit einem Professional- oder Enterprise-Plan fortfahren — nichts wird gelöscht." },
-      { "key": "p3", "label": "Ist die 99 $-Gebühr eine Einmalzahlung oder ein Abo?", "text": "Es ist eine Jahreslizenz. Sie erhalten vollen Zugang einschließlich Updates für 12 Monate. Verlängerung ist optional — Sie nutzen die aktuelle Version auch nach Ablauf weiter." },
-      { "key": "p4", "label": "Wie sehen die Enterprise-Preise aus?",                 "text": "Enterprise richtet sich nach Teamgröße, Volumen und Vertragslaufzeit. Kontaktieren Sie uns unter support@alteradatasuite.com und wir erstellen ein Angebot." },
-      { "key": "p5", "label": "Bieten Sie Rückerstattungen an?",                      "text": "Wir bieten einen kostenlosen Test, damit Sie das Tool vor dem Kauf validieren können. Falls nach dem Kauf etwas schiefläuft, melden Sie sich und wir finden eine Lösung." },
-      { "key": "p6", "label": "Kann ich Altera auf mehreren Geräten nutzen?",         "text": "Free Trial und Professional sind Einzelplatz-Lizenzen. Enterprise-Pläne umfassen Volumenlizenzen für Teams." }
+      { "key": "p1", "label": "Kann ich später den Plan wechseln?",                   "text": "Ja. Sie können jederzeit zwischen Monatlich, Jährlich und Lifetime wechseln. Ihre Daten und Workflows bleiben erhalten." },
+      { "key": "p2", "label": "Was passiert, wenn meine KI-Credits aufgebraucht sind?",      "text": "KI-Funktionen pausieren, bis Sie aufladen — alles andere in der App funktioniert weiterhin normal. Zusätzliche Credit-Pakete sind jederzeit in der App verfügbar." },
+      { "key": "p3", "label": "Was ist der Unterschied zwischen den Plänen?", "text": "Monatlich und Jährlich sind wiederkehrende Abonnements mit entsprechender Abrechnung. Lifetime ist eine einmalige Zahlung für dauerhaften Zugang mit einem festen monatlichen KI-Credit-Kontingent, solange Sie die App nutzen." },
+      { "key": "p5", "label": "Bieten Sie Rückerstattungen an?",                      "text": "Ja — siehe unsere 30-tägige Geld-zurück-Garantie. Falls nach dem Kauf etwas schiefläuft, melden Sie sich und wir finden eine Lösung." },
+      { "key": "p6", "label": "Kann ich Altera auf mehreren Geräten nutzen?",         "text": "Monatlich, Jährlich und Lifetime sind Einzelplatz-Lizenzen." }
     ]
   },
   "testimonials": {

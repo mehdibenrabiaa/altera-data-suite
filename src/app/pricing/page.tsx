@@ -11,32 +11,27 @@ const pricingFaqs = [
   {
     key: "p1",
     label: "Can I switch plans later?",
-    children: "Yes. You can upgrade from Free Trial to Professional at any time. Your data and workflows stay intact.",
+    children: "Yes. You can switch between Monthly, Yearly, and Lifetime at any time. Your data and workflows stay intact.",
   },
   {
     key: "p2",
-    label: "What happens when my free trial ends?",
-    children: "After 7 days your trial expires. You can continue with a Professional or Enterprise plan — nothing is deleted.",
+    label: "What happens when I run out of AI credits?",
+    children: "AI-powered features pause until you top up — everything else in the app keeps working normally. Extra credit packs are available anytime from the app.",
   },
   {
     key: "p3",
-    label: "Is the $99 a one-time payment or a subscription?",
-    children: "It's a one-year license. You get full access including updates for 12 months. Renewal is optional — you keep using the version you have even after expiry.",
-  },
-  {
-    key: "p4",
-    label: "What does Enterprise pricing look like?",
-    children: "Enterprise is scoped per team size, volume, and contract length. Get in touch at support@alteradatasuite.com and we'll put together a proposal.",
+    label: "What's the difference between the plans?",
+    children: "Monthly and Yearly are recurring subscriptions billed on that cadence. Lifetime is a single one-time payment for permanent access, with a fixed monthly AI credit allowance included for as long as you use it.",
   },
   {
     key: "p5",
     label: "Do you offer refunds?",
-    children: "We offer a free trial so you can validate the tool before paying. If something goes wrong after purchase, reach out and we'll work it out.",
+    children: "Yes — see our 30-day money-back guarantee. If something goes wrong after purchase, reach out and we'll work it out.",
   },
   {
     key: "p6",
     label: "Can I use Altera on multiple machines?",
-    children: "The Free Trial and Professional plans are single-machine licenses. Enterprise plans include volume licensing for teams.",
+    children: "Monthly, Yearly, and Lifetime are all single-machine licenses.",
   },
 ];
 

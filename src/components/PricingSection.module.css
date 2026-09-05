@@ -167,6 +167,12 @@
   font-weight: 600;
 }
 
+@media (max-width: 1400px) {
+  .section {
+    padding: 80px 32px;
+  }
+}
+
 @media (max-width: 960px) {
   .grid {
     grid-template-columns: 1fr;

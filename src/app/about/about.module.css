@@ -21,6 +21,7 @@
   letter-spacing: -1.5px;
   margin: 0;
   max-width: 700px;
+  text-wrap: balance;
 }
 
 .lead {

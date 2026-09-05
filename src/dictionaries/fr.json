@@ -95,37 +95,35 @@
     "badgeLabel":    "Tarifs",
     "badgeText":     "Des plans simples, des fonctionnalités puissantes",
     "heading":       "Choisissez le plan qui correspond à votre flux de travail.",
-    "subtitle":      "Commencez gratuitement. Évoluez quand ça vous apporte de la valeur",
+    "subtitle":      "Chaque plan inclut des crédits IA. Rechargez à tout moment.",
     "popularBadge":  "POPULAIRE",
+    "bestValueBadge": "MEILLEURE OFFRE",
     "getBtn":        "Obtenir",
     "period":        "/an",
-    "billingMonthly": "Mensuel",
-    "billingYearly":  "Annuel",
     "periodMonthly":  "/mois",
-    "discountNote":   "La facturation annuelle vous fait économiser 10 %",
-    "letsTalk":      "Contactez-nous",
+    "oneTime":        "paiement unique",
     "includesLabel": "Comprend",
+    "topUpNote":      "Plus de crédits IA ? Rechargez à tout moment — les packs de crédits supplémentaires commencent à 9 $.",
     "plans": [
       {
-        "name": "Free Trial", "subtitle": "Solution tout-en-un pour une courte période",
-        "features": ["Traitement PDF limité","Fonctionnalités IA non incluses","7 jours d'essai","10+ Widgets","Support minimal","Licence mono-poste","Mises à jour gratuites"]
+        "name": "Mensuel", "subtitle": "Solution tout-en-un, facturée mensuellement",
+        "features": ["Traitement PDF illimité","1 000 crédits IA / mois","10+ Widgets","Support par e-mail","Licence mono-poste","Mises à jour gratuites"]
       },
       {
-        "name": "Professional", "subtitle": "Solution tout-en-un pour l'analyse PDF",
-        "features": ["Traitement PDF illimité","Outils intelligents alimentés par l'IA","Abonnement licence 1 an","10+ Widgets","Support par e-mail","Licence mono-poste","Mises à jour gratuites"]
+        "name": "Annuel", "subtitle": "Économisez 20 % par rapport à la facturation mensuelle",
+        "features": ["Traitement PDF illimité","15 000 crédits IA / an","10+ Widgets","Support par e-mail prioritaire","Licence mono-poste","Mises à jour gratuites"]
       },
       {
-        "name": "Enterprise", "subtitle": "Toutes les fonctionnalités + Tarifs adaptés",
-        "features": ["Traitement PDF illimité","Outils intelligents alimentés par l'IA","Tarification personnalisée","10+ Widgets","Assistance par appel vidéo","Licence en volume","Mises à jour gratuites"]
+        "name": "À vie", "subtitle": "Payez une fois, gardez-le pour toujours",
+        "features": ["Traitement PDF illimité","1 000 crédits IA chaque mois, à vie","10+ Widgets","Support prioritaire","Licence mono-poste","Mises à jour gratuites pendant 1 an"]
       }
     ],
     "faqs": [
-      { "key": "p1", "label": "Puis-je changer de plan plus tard ?",                 "text": "Oui. Vous pouvez passer du Free Trial au Professional à tout moment. Vos données et workflows restent intacts." },
-      { "key": "p2", "label": "Que se passe-t-il à la fin de mon essai gratuit ?",   "text": "Après 7 jours, votre essai expire. Vous pouvez continuer avec un plan Professional ou Enterprise — rien n'est supprimé." },
-      { "key": "p3", "label": "Le paiement de 99 $ est-il unique ou un abonnement ?","text": "C'est une licence annuelle. Vous bénéficiez d'un accès complet incluant les mises à jour pendant 12 mois. Le renouvellement est optionnel." },
-      { "key": "p4", "label": "À quoi ressemble la tarification Enterprise ?",       "text": "L'Enterprise est adapté selon la taille de l'équipe, le volume et la durée du contrat. Contactez-nous à support@alteradatasuite.com." },
-      { "key": "p5", "label": "Proposez-vous des remboursements ?",                   "text": "Nous offrons un essai gratuit pour valider l'outil avant de payer. En cas de problème après l'achat, contactez-nous et nous trouverons une solution." },
-      { "key": "p6", "label": "Puis-je utiliser Altera sur plusieurs machines ?",    "text": "Les plans Free Trial et Professional sont des licences mono-poste. Les plans Enterprise incluent des licences en volume pour les équipes." }
+      { "key": "p1", "label": "Puis-je changer de plan plus tard ?",                 "text": "Oui. Vous pouvez passer de Mensuel à Annuel ou à vie à tout moment. Vos données et workflows restent intacts." },
+      { "key": "p2", "label": "Que se passe-t-il quand mes crédits IA sont épuisés ?",   "text": "Les fonctionnalités IA se mettent en pause jusqu'à ce que vous rechargiez — le reste de l'application continue de fonctionner normalement. Des packs de crédits supplémentaires sont disponibles à tout moment depuis l'application." },
+      { "key": "p3", "label": "Quelle est la différence entre les plans ?","text": "Mensuel et Annuel sont des abonnements récurrents facturés selon leur périodicité. À vie est un paiement unique pour un accès permanent, avec une allocation mensuelle de crédits IA incluse tant que vous utilisez l'application." },
+      { "key": "p5", "label": "Proposez-vous des remboursements ?",                   "text": "Oui — voir notre garantie de remboursement de 30 jours. En cas de problème après l'achat, contactez-nous et nous trouverons une solution." },
+      { "key": "p6", "label": "Puis-je utiliser Altera sur plusieurs machines ?",    "text": "Mensuel, Annuel et À vie sont tous des licences mono-poste." }
     ]
   },
   "testimonials": {

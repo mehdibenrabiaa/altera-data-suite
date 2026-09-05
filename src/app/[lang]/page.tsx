@@ -70,17 +70,24 @@ export default async function HomePage({
     "offers": [
       {
         "@type": "Offer",
-        "name": "Free Trial",
-        "price": "0",
+        "name": "Monthly",
+        "price": "99",
         "priceCurrency": "USD",
-        "description": "7-day free trial with 10+ nodes"
+        "description": "Unlimited PDF processing, AI-powered tools with monthly AI credits, single machine license"
       },
       {
         "@type": "Offer",
-        "name": "Professional",
-        "price": "99",
+        "name": "Yearly",
+        "price": "950",
         "priceCurrency": "USD",
-        "description": "Unlimited PDF processing, AI-powered tools, single machine license"
+        "description": "Unlimited PDF processing, AI-powered tools with yearly AI credits, single machine license"
+      },
+      {
+        "@type": "Offer",
+        "name": "Lifetime",
+        "price": "2699",
+        "priceCurrency": "USD",
+        "description": "One-time payment for permanent access, with monthly AI credits included for life"
       }
     ],
     "aggregateRating": {

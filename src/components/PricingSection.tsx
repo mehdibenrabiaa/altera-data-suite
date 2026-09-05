@@ -1,7 +1,6 @@
 "use client";
 
-import { useState } from "react";
-import { Segmented, Typography } from "antd";
+import { Typography } from "antd";
 import styles from "./PricingSection.module.css";
 import { COLOR_PRIMARY } from "@/lib/theme";
 import PricingCard from "./PricingCard";
@@ -22,14 +21,13 @@ interface PricingT {
   heading: string;
   subtitle: string;
   popularBadge: string;
+  bestValueBadge: string;
   getBtn: string;
   period: string;
-  billingMonthly: string;
-  billingYearly: string;
   periodMonthly: string;
-  discountNote: string;
-  letsTalk: string;
+  oneTime: string;
   includesLabel: string;
+  topUpNote: string;
   plans: PricingPlan[];
 }
 
@@ -42,61 +40,43 @@ const DEFAULT_T: PricingT = {
   badgeLabel:     "Pricing",
   badgeText:      "Simple Plans, Powerful Features",
   heading:        "Pick the plan that fits your workflow.",
-  subtitle:       "Start Free. Upgrade When It Delivers Value",
+  subtitle:       "Every plan includes AI credits. Top up anytime.",
   popularBadge:   "POPULAR",
+  bestValueBadge: "BEST VALUE",
   getBtn:         "Get",
   period:         "/year",
-  billingMonthly: "Monthly",
-  billingYearly:  "Yearly",
   periodMonthly:  "/month",
-  discountNote:   "Annual billing saves you 10%",
-  letsTalk:       "Let's Talk",
+  oneTime:        "one-time",
   includesLabel:  "Includes",
+  topUpNote:      "Run out of AI credits? Top up anytime — extra credit packs start at $9.",
   plans: [
-    { name: "Free Trial",   subtitle: "All-In-One Solution for a short period",  features: ["Limited PDF Processing","AI Features Not Included","7 Days Trial Period","10+ Nodes","Minimal Support","Single Machine License","Free Updates & Improvements"] },
-    { name: "Professional", subtitle: "All-In-One Solution for PDF Parsing",      features: ["Unlimited PDF Processing","AI-Powered Smart Tools","1 year license subscription","10+ Nodes","Email Support","Single Machine License","Free Updates & Improvements"] },
-    { name: "Enterprise",   subtitle: "All Features + Tailored Prices",           features: ["Unlimited PDF Processing","AI-Powered Smart Tools","Custom Pricing","10+ Nodes","Video Call Assistance","Volume Licensing","Free Updates & Improvements"] },
+    { name: "Monthly",   subtitle: "All-In-One Solution, billed monthly",                    features: ["Unlimited PDF Processing","1,000 AI Credits / month","10+ Nodes","Email Support","Single Machine License","Free Updates & Improvements"] },
+    { name: "Yearly",    subtitle: "Save 20% vs monthly billing",                              features: ["Unlimited PDF Processing","15,000 AI Credits / year","10+ Nodes","Priority Email Support","Single Machine License","Free Updates & Improvements"] },
+    { name: "Lifetime",  subtitle: "Pay once, own it forever",                                features: ["Unlimited PDF Processing","1,000 AI Credits every month, for life","10+ Nodes","Priority Support","Single Machine License","Free Updates for 1 Year"] },
   ],
 };
 
-const MONTHLY_PRICE = 99;
-const YEARLY_PRICE  = Math.round(MONTHLY_PRICE * 12 * 0.9); // 1069
+const MONTHLY_PRICE  = 99;
+const YEARLY_PRICE   = Math.round(MONTHLY_PRICE * 12 * 0.8); // 950, ~20% off monthly
+const LIFETIME_PRICE = 2699;
 
 const PLAN_META = [
-  { priceMonthly: 0,             priceYearly: 0,           popular: false, color: "#595959", hrefSlug: "docs"  },
-  { priceMonthly: MONTHLY_PRICE, priceYearly: YEARLY_PRICE, popular: true,  color: COLOR_PRIMARY, hrefSlug: undefined },
-  { priceMonthly: undefined,     priceYearly: undefined,   popular: false, color: COLOR_PRIMARY, hrefSlug: "about" },
+  { price: MONTHLY_PRICE,  periodKey: "periodMonthly" as const, badgeKey: undefined,            color: "#595959", hrefSlug: undefined },
+  { price: YEARLY_PRICE,   periodKey: "period" as const,         badgeKey: "popularBadge" as const,   color: COLOR_PRIMARY, hrefSlug: undefined },
+  { price: LIFETIME_PRICE, periodKey: "oneTime" as const,        badgeKey: "bestValueBadge" as const, color: "#B8860B", hrefSlug: undefined },
 ];
 
 export default function PricingSection({ t = DEFAULT_T, lang = "en" }: Props) {
-  const [billing, setBilling] = useState<"monthly" | "yearly">("monthly");
-  const isYearly = billing === "yearly";
-
   return (
     <section className={styles.section}>
       <SectionBadge label={t.badgeLabel} text={t.badgeText} />
       <SectionHeading heading={t.heading} subtitle={t.subtitle} subtitleMaxWidth={420} />
 
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 12, marginBottom: 36 }}>
-        <Segmented
-          value={billing}
-          onChange={(v) => setBilling(v as "monthly" | "yearly")}
-          options={[
-            { label: t.billingMonthly, value: "monthly" },
-            { label: t.billingYearly,  value: "yearly"  },
-          ]}
-          style={{ fontSize: 14, padding: "3px 4px" }}
-        />
-        <Text style={{ fontSize: 13, color: "#c44400", fontWeight: 600 }}>
-          {t.discountNote}
-        </Text>
-      </div>
-
-      <div style={{ display: "flex", justifyContent: "center", alignItems: "stretch", gap: 24, flexWrap: "wrap" }}>
+      <div style={{ display: "flex", justifyContent: "center", alignItems: "stretch", gap: 24, flexWrap: "wrap", marginBottom: 28 }}>
         {t.plans.map((plan, i) => {
-          const meta = PLAN_META[i];
-          const price  = isYearly ? meta.priceYearly  : meta.priceMonthly;
-          const period = isYearly ? t.period           : t.periodMonthly;
+          const meta   = PLAN_META[i];
+          const price  = meta.price;
+          const period = meta.periodKey ? t[meta.periodKey] : undefined;
           const href   = meta.hrefSlug ? `/${lang}/${meta.hrefSlug}` : undefined;
           return (
             <PricingCard
@@ -106,16 +86,19 @@ export default function PricingSection({ t = DEFAULT_T, lang = "en" }: Props) {
               period={period}
               subtitle={plan.subtitle}
               features={plan.features}
-              badge={meta.popular ? t.popularBadge : undefined}
+              badge={meta.badgeKey ? t[meta.badgeKey] : undefined}
               color={meta.color}
-              btnLabel={price !== undefined ? `${t.getBtn} ${plan.name}` : t.letsTalk}
-              letsTalk={t.letsTalk}
+              btnLabel={`${t.getBtn} ${plan.name}`}
               includesLabel={t.includesLabel}
               href={href}
             />
           );
         })}
       </div>
+
+      <Text style={{ display: "block", textAlign: "center", fontSize: 13, color: "#c44400", fontWeight: 600 }}>
+        {t.topUpNote}
+      </Text>
     </section>
   );
 }

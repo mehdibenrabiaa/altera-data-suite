@@ -22,7 +22,6 @@ interface PricingCardProps {
   btnLabel?: string;
   badge?: string;
   color?: string;
-  letsTalk?: string;
   freeLabel?: string;
   includesLabel?: string;
   href?: string;
@@ -37,7 +36,6 @@ export default function PricingCard({
   btnLabel = "Subscribe Now",
   badge,
   color = COLOR_PRIMARY,
-  letsTalk = "Let's Talk",
   freeLabel = "Free",
   includesLabel = "Includes",
   href,
@@ -45,7 +43,7 @@ export default function PricingCard({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <article style={{ width: 300, display: "flex", flexDirection: "column" }}>
+    <article style={{ flex: "1 1 220px", maxWidth: 300, minWidth: 0, display: "flex", flexDirection: "column" }}>
       <Card
         variant="borderless"
         styles={{ body: { display: "flex", flexDirection: "column", height: "100%", boxSizing: "border-box" } }}
@@ -54,8 +52,12 @@ export default function PricingCard({
           // Matches the app's own flat button/card radius (App.css's
           // .filter-builder-btn-primary etc.) -- was 25px, wildly out of
           // step with the rest of the site's now-flattened chrome since
-          // this inline style bypasses AntdProvider's theme token.
-          borderRadius: 4,
+          // this inline style bypasses AntdProvider's theme token. Bottom
+          // corners flattened to 0 so the card sits flush against the
+          // Button below it (which has square top corners already) instead
+          // of showing a rounded nub poking out above the button's flat top.
+          borderRadius: "4px 4px 0 0",
+          border: "1px solid #d2d2d2",
           boxShadow: "rgba(0, 0, 0, 0.12) 0px 0px 8px",
           position: "relative",
           zIndex: 2,
@@ -135,22 +137,11 @@ export default function PricingCard({
                 </AnimatePresence>
               </>
               )
-            ) : (
-              <span
-                style={{
-                  fontSize: 40,
-                  fontWeight: 600,
-                  lineHeight: 1,
-                  color: "#000",
-                }}
-              >
-                {letsTalk}
-              </span>
-            )}
+            ) : null}
           </Flex>
 
           {subtitle && (
-            <Text style={{ fontSize: 12, fontWeight: 500, color: COLOR_TEXT_MUTED }}>
+            <Text style={{ display: "block", marginTop: 10, fontSize: 12, fontWeight: 500, color: COLOR_TEXT_MUTED }}>
               {subtitle}
             </Text>
           )}

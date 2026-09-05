@@ -91,7 +91,7 @@ function Navbar({ t, lang }: Props) {
             type="primary"
             size="large"
             href={`/${lang}/pricing`}
-            style={{ fontWeight: 600 }}
+            style={{ fontWeight: 600, borderRadius: 0 }}
           >
             {t.startFree}
           </Button>
@@ -140,7 +140,7 @@ function Navbar({ t, lang }: Props) {
             type="primary"
             size="large"
             href={`/${lang}/pricing`}
-            style={{ fontWeight: 600 }}
+            style={{ fontWeight: 600, borderRadius: 0 }}
           >
             {t.startFree}
           </Button>

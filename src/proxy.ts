@@ -40,6 +40,11 @@ export function proxy(request: NextRequest) {
 
 export const config = {
   matcher: [
-    "/((?!_next/static|_next/image|favicon\\.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp)$).*)",
+    // woff2 added alongside the existing image extensions -- the
+    // self-hosted Google Sans Flex files under /fonts/ were being caught
+    // by this matcher and redirected to a nonexistent /<locale>/fonts/...
+    // path (404), since fonts weren't a static-asset type this list knew
+    // about yet.
+    "/((?!_next/static|_next/image|favicon\\.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|woff2?)$).*)",
   ],
 };

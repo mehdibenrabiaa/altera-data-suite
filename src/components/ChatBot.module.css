@@ -24,7 +24,9 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  border-radius: 20px !important;
+  /* Site-wide card/panel radius (FAQSection's .item, WidgetsSection's
+     .card, etc.) -- was 20px, its own one-off value. */
+  border-radius: 10px !important;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.13) !important;
   overflow: hidden;
   height: 460px;
@@ -192,7 +194,7 @@
   .panel {
     height: 100%;
     max-height: calc(100vh - 130px);
-    border-radius: 16px !important;
+    border-radius: 10px !important;
   }
 }
 
@@ -205,16 +207,21 @@
   padding: 16px 20px;
   background: #fff;
   border: 1px solid #e8e8e8;
-  border-radius: 999px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  /* A light static shadow stays -- this is a floating action button, it
+     still needs to read as lifted above the page. What's dropped is the
+     app-inconsistent part: growing the shadow and translating up on
+     hover. The app's own buttons (App.css) never move or gain elevation
+     on hover, only recolor -- matched here with a border tint shift. */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: border-color 0.15s, background 0.15s;
   flex-shrink: 0;
 }
 
 .trigger:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.13);
+  border-color: #c8c8c8;
+  background: #fafafa;
 }
 
 .triggerIconWrap {

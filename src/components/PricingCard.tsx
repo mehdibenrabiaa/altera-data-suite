@@ -51,7 +51,11 @@ export default function PricingCard({
         styles={{ body: { display: "flex", flexDirection: "column", height: "100%", boxSizing: "border-box" } }}
         style={{
           width: "100%",
-          borderRadius: 25,
+          // Matches the app's own flat button/card radius (App.css's
+          // .filter-builder-btn-primary etc.) -- was 25px, wildly out of
+          // step with the rest of the site's now-flattened chrome since
+          // this inline style bypasses AntdProvider's theme token.
+          borderRadius: 4,
           boxShadow: "rgba(0, 0, 0, 0.12) 0px 0px 8px",
           position: "relative",
           zIndex: 2,
@@ -69,9 +73,9 @@ export default function PricingCard({
             {badge && (
               <Tag
                 style={{
-                  borderRadius: 9,
+                  borderRadius: 4,
                   fontSize: 11,
-                  fontWeight: 700,
+                  fontWeight: 600,
                   background: "transparent",
                   color,
                   borderColor: "#d9d9d9",
@@ -189,7 +193,9 @@ export default function PricingCard({
           color: "#fff",
           height: 68,
           paddingTop: 20,
-          borderRadius: "0 0 25px 25px",
+          // Flat top (flush against the card above), matching the card's
+          // own new radius on the bottom corners.
+          borderRadius: "0 0 4px 4px",
           border: "none",
           fontSize: 14,
           fontWeight: 600,

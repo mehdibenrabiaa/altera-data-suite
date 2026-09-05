@@ -53,9 +53,9 @@ const DEFAULT_T: PricingT = {
   letsTalk:       "Let's Talk",
   includesLabel:  "Includes",
   plans: [
-    { name: "Free Trial",   subtitle: "All-In-One Solution for a short period",  features: ["Limited PDF Processing","AI Features Not Included","7 Days Trial Period","10+ Widgets","Minimal Support","Single Machine License","Free Updates & Improvements"] },
-    { name: "Professional", subtitle: "All-In-One Solution for PDF Parsing",      features: ["Unlimited PDF Processing","AI-Powered Smart Tools","1 year license subscription","10+ Widgets","Email Support","Single Machine License","Free Updates & Improvements"] },
-    { name: "Enterprise",   subtitle: "All Features + Tailored Prices",           features: ["Unlimited PDF Processing","AI-Powered Smart Tools","Custom Pricing","10+ Widgets","Video Call Assistance","Volume Licensing","Free Updates & Improvements"] },
+    { name: "Free Trial",   subtitle: "All-In-One Solution for a short period",  features: ["Limited PDF Processing","AI Features Not Included","7 Days Trial Period","10+ Nodes","Minimal Support","Single Machine License","Free Updates & Improvements"] },
+    { name: "Professional", subtitle: "All-In-One Solution for PDF Parsing",      features: ["Unlimited PDF Processing","AI-Powered Smart Tools","1 year license subscription","10+ Nodes","Email Support","Single Machine License","Free Updates & Improvements"] },
+    { name: "Enterprise",   subtitle: "All Features + Tailored Prices",           features: ["Unlimited PDF Processing","AI-Powered Smart Tools","Custom Pricing","10+ Nodes","Video Call Assistance","Volume Licensing","Free Updates & Improvements"] },
   ],
 };
 
@@ -87,7 +87,7 @@ export default function PricingSection({ t = DEFAULT_T, lang = "en" }: Props) {
           ]}
           style={{ fontSize: 14, padding: "3px 4px" }}
         />
-        <Text style={{ fontSize: 13, color: "#c44400", fontWeight: 700 }}>
+        <Text style={{ fontSize: 13, color: "#c44400", fontWeight: 600 }}>
           {t.discountNote}
         </Text>
       </div>

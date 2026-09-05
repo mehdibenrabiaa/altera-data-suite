@@ -38,12 +38,12 @@ const DEFAULT_T: ChatBotT = {
   panelTitle:      "Altera Assistant",
   panelSubtitle:   "Ask me anything",
   placeholder:     "Ask a question…",
-  welcome:         "Hi! I'm Altera's assistant. Ask me anything about the app, its widgets, or how to get started.",
+  welcome:         "Hi! I'm Altera's assistant. Ask me anything about the app, its nodes, or how to get started.",
   followUp:        "Here are some things I can help with:",
   fallback:        "Great question! For more details, check the Docs page or reach out to our team directly.",
   quickReplies: [
     { question: "How does PDF Converter work?",  answer: "Open your PDF, draw rectangles over the data you want to extract, optionally place column guides, then click Convert. You get a clean structured table ready for further processing." },
-    { question: "What widgets are available?",   answer: "Altera includes 9 widgets: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates, and Cleaner." },
+    { question: "What nodes are available?",   answer: "Altera includes 9 nodes: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates, and Cleaner." },
     { question: "Is there a free trial?",        answer: "Yes! You can get started for free. Head to the Pricing page to see what's included in each plan." },
   ],
 };
@@ -271,7 +271,7 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
                           key={qr.question}
                           size="small"
                           onClick={() => send(qr.question)}
-                          style={{ borderRadius: 999, fontSize: 12, height: "auto", padding: "5px 12px", whiteSpace: "normal", textAlign: "left" }}
+                          style={{ borderRadius: 4, fontSize: 12, height: "auto", padding: "5px 12px", whiteSpace: "normal", textAlign: "left" }}
                         >
                           {qr.question}
                         </Button>
@@ -297,7 +297,7 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
                       icon={<SendOutlined />}
                       size="small"
                       onClick={() => send(input)}
-                      style={{ background: COLOR_PRIMARY, border: "none", borderRadius: 6 }}
+                      style={{ background: COLOR_PRIMARY, border: "none", borderRadius: 4 }}
                     />
                   }
                 />

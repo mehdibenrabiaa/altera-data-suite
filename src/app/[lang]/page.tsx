@@ -73,7 +73,7 @@ export default async function HomePage({
         "name": "Free Trial",
         "price": "0",
         "priceCurrency": "USD",
-        "description": "7-day free trial with 10+ widgets"
+        "description": "7-day free trial with 10+ nodes"
       },
       {
         "@type": "Offer",

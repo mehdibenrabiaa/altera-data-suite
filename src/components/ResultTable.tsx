@@ -284,7 +284,7 @@ export default function ResultTable() {
           <div className="rt-titlebar-icon" />
           <span className="rt-titlebar-title">Result</span>
           <span className="rt-titlebar-dot">–</span>
-          <span className="rt-titlebar-title">Orange</span>
+          <span className="rt-titlebar-title">Altera Data Suite</span>
         </div>
 
         <div className="rt-table-wrap">

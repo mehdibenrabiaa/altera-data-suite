@@ -30,7 +30,7 @@ export default function ResultShowcaseSection({ t, lang }: Props) {
           <p className={styles.subtitle}>{t.subtitle}</p>
 
           <div className={styles.ctas}>
-            <Button type="primary" size="large" href={`/${lang}/trial`} style={{ fontWeight: 700 }} className={styles.ctaBtn}>
+            <Button type="primary" size="large" href={`/${lang}/trial`} style={{ fontWeight: 600 }} className={styles.ctaBtn}>
               {t.tryFree}
             </Button>
             <Button size="large" href={`/${lang}/demo`} className={styles.ctaBtn}>

@@ -34,8 +34,8 @@ const CHANGELOG: ChangeEntry[] = [
     version: "0.6.0",
     date: "March 2025",
     changes: [
-      { category: "New",      text: "Available on PyPI — install Altera directly through Orange Data Mining's add-on manager in seconds." },
-      { category: "New",      text: "30-day free trial — full access to all widgets with no credit card required." },
+      { category: "New",      text: "Standalone installer for Windows and macOS — download and run Altera Data Suite directly, no other software required." },
+      { category: "New",      text: "30-day free trial — full access to all nodes with no credit card required." },
       { category: "New",      text: "Offline grace period — continue working for up to 48 hours without an internet connection." },
     ],
   },
@@ -43,9 +43,9 @@ const CHANGELOG: ChangeEntry[] = [
     version: "0.5.0",
     date: "January 2025",
     changes: [
-      { category: "Improved", text: "Significantly reduced memory usage — multiple widgets can now run simultaneously without slowing down your machine." },
-      { category: "Improved", text: "Faster startup when opening widgets inside Orange Data Mining." },
-      { category: "Fixed",    text: "Zoom controls inside widgets no longer accidentally trigger when using keyboard shortcuts or scrolling." },
+      { category: "Improved", text: "Significantly reduced memory usage — multiple nodes can now run simultaneously without slowing down your machine." },
+      { category: "Improved", text: "Faster app startup time." },
+      { category: "Fixed",    text: "Zoom controls inside nodes no longer accidentally trigger when using keyboard shortcuts or scrolling." },
     ],
   },
   {
@@ -56,7 +56,7 @@ const CHANGELOG: ChangeEntry[] = [
       { category: "New",      text: "Column Manager — rename, reorder, and remove columns with drag-and-drop. Tab through fields to rename quickly without leaving your keyboard." },
       { category: "New",      text: "Regex Extractor — pull structured patterns such as dates, IDs, and amounts out of raw text fields using visual rules." },
       { category: "New",      text: "Rows Slicer, Header Promoter, and Column Shifter — precision tools for cleaning and reshaping extracted data without writing a single formula." },
-      { category: "New",      text: "Remove Duplicates and Data Cleaner widgets." },
+      { category: "New",      text: "Remove Duplicates and Data Cleaner nodes." },
     ],
   },
   {
@@ -82,7 +82,7 @@ const CHANGELOG: ChangeEntry[] = [
     version: "0.1.0",
     date: "Early 2024",
     changes: [
-      { category: "New",      text: "PDF Converter widget — first release. Extract a single table from a PDF document and output it as a structured data table inside Orange Data Mining." },
+      { category: "New",      text: "PDF Converter — first release. Extract a single table from a PDF document and output it as a structured data table." },
       { category: "Fixed",    text: "Multiple stability and performance issues addressed in this early pre-alpha build." },
     ],
   },
@@ -125,7 +125,7 @@ export default function ChangelogPage() {
                     style={{
                       background: CATEGORY_STYLES[c.category].bg,
                       color: CATEGORY_STYLES[c.category].color,
-                      fontWeight: 700,
+                      fontWeight: 600,
                     }}
                   >
                     {c.category}

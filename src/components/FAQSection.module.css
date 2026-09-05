@@ -13,7 +13,9 @@
 .item {
   background: #fff;
   border: 1px solid #ebebeb;
-  border-radius: 16px;
+  /* Site-wide card radius (WidgetsSection's own card, TestimonialsSection,
+     FeatureCardsSection, etc.) -- was 16px, its own one-off value. */
+  border-radius: 10px;
   overflow: hidden;
 }
 

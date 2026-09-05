@@ -29,7 +29,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
     tagline:
       "Annotate any PDF on an interactive canvas and extract clean, structured data — without touching a line of code.",
     description:
-      "Extracts any data you need from PDF documents using a visual annotation workflow. You highlight the areas of interest directly on the document, optionally place column guides, and click Convert. The widget does the rest and sends a clean, structured table to your workflow.",
+      "Extracts any data you need from PDF documents using a visual annotation workflow. You highlight the areas of interest directly on the document, optionally place column guides, and click Convert. The node does the rest and sends a clean, structured table to your workflow.",
     useCases: [
       "PDFs exported from accounting software, ERP systems, or government portals",
       "Multi-page reports — extract any data you need from any page, whether it is a formal table or a structured layout with names, IDs, amounts, or any other fields",
@@ -47,19 +47,19 @@ export const WIDGET_DOCS: WidgetDoc[] = [
         title: "Highlight the data you want to extract",
         icon: "rectangle.svg",
         detail:
-          "Select the Rectangle tool in the toolbar. Click and drag over any area of the document that contains the data you are interested in — this tells the widget where to look. You can draw multiple areas and assign each a different color. Each color acts as a label you can use later to filter and work with specific sections independently in other widgets such as Filter Builder.",
+          "Select the Rectangle tool in the toolbar. Click and drag over any area of the document that contains the data you are interested in — this tells the node where to look. You can draw multiple areas and assign each a different color. Each color acts as a label you can use later to filter and work with specific sections independently in other nodes such as Filter Builder.",
       },
       {
         title: "Add column guides (optional)",
         icon: "ruler.svg",
         detail:
-          "Select the Guide tool and click to place vertical lines where you want column boundaries to be. This is optional — if you skip it, the widget estimates column positions automatically. It does this independently for each page, so it adapts even when column widths vary.",
+          "Select the Guide tool and click to place vertical lines where you want column boundaries to be. This is optional — if you skip it, the node estimates column positions automatically. It does this independently for each page, so it adapts even when column widths vary.",
       },
       {
         title: "Click Convert",
         icon: "convert.svg",
         detail:
-          "Click the Convert button. The widget processes your highlighted areas and sends a structured table to the output. Connect it to a Data Table to review your results, or pipe it directly to the next step in your workflow.",
+          "Click the Convert button. The node processes your highlighted areas and sends a structured table to the output. Connect it to a Data Table to review your results, or pipe it directly to the next step in your workflow.",
       },
     ],
     inputType: "PDF File",
@@ -72,7 +72,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
     outputNotes: [
       "Multiple highlighted areas on the same page are merged into one output table",
       "Your annotations and settings are saved with the workflow file — reopen and click Convert again without redrawing",
-      "The output is available immediately after Convert — connect it to any downstream widget",
+      "The output is available immediately after Convert — connect it to any downstream node",
     ],
     tips: [
       {
@@ -83,7 +83,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
       {
         type: "info",
         title: "Use colors to filter sections later",
-        body: "Each highlighted area gets a color. In downstream widgets like Filter Builder, you can use these colors to work with specific sections of the extracted data independently.",
+        body: "Each highlighted area gets a color. In downstream nodes like Filter Builder, you can use these colors to work with specific sections of the extracted data independently.",
       },
       {
         type: "info",
@@ -93,7 +93,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
       {
         type: "warning",
         title: "Image-only PDFs produce no output",
-        body: "If you open a scanned document and get empty results, the file has no text layer. Run it through OCR software first, then open it in this widget.",
+        body: "If you open a scanned document and get empty results, the file has no text layer. Run it through OCR software first, then open it in this node.",
       },
     ],
   },
@@ -118,7 +118,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
       {
         title: "Connect a data table",
         detail:
-          "Connect any upstream widget's output to the Filter Builder input. The column list populates automatically.",
+          "Connect any upstream node's output to the Filter Builder input. The column list populates automatically.",
       },
       {
         title: "Add your first group",
@@ -143,19 +143,19 @@ export const WIDGET_DOCS: WidgetDoc[] = [
       {
         title: "Check the live row count",
         detail:
-          "The footer shows how many rows pass your current filter in real time. Use this to verify your logic before connecting the output to downstream widgets.",
+          "The footer shows how many rows pass your current filter in real time. Use this to verify your logic before connecting the output to downstream nodes.",
       },
     ],
     inputType: "Data Table",
     inputNotes: [
       "Column list populates automatically from the connected table",
       "Categorical columns show a value dropdown instead of a free-text field",
-      "If no table is connected, the widget shows a placeholder and does not produce output",
+      "If no table is connected, the node shows a placeholder and does not produce output",
     ],
     outputType: "Data Table",
     outputNotes: [
       "Same columns as input — only the row set changes. Rows that do not match the filter are removed.",
-      "Live row count is shown in the widget footer as you build conditions",
+      "Live row count is shown in the node footer as you build conditions",
       "Your filter settings are saved with the workflow",
       "If no conditions are defined, all rows pass through unchanged",
     ],
@@ -178,7 +178,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
       {
         type: "warning",
         title: "Column changes upstream can break saved conditions",
-        body: "If an upstream widget changes column names or types, conditions targeting those columns may stop working. Re-open the widget and review your conditions after any upstream change.",
+        body: "If an upstream node changes column names or types, conditions targeting those columns may stop working. Re-open the node and review your conditions after any upstream change.",
       },
     ],
   },
@@ -221,7 +221,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
       {
         title: "Reset if needed",
         detail:
-          "Click Reset to restore all original column names and order exactly as they arrived from the upstream widget. Use this to start over without disconnecting the widget.",
+          "Click Reset to restore all original column names and order exactly as they arrived from the upstream node. Use this to start over without disconnecting the node.",
       },
     ],
     inputType: "Data Table",
@@ -234,7 +234,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
     outputNotes: [
       "Same data, but with columns reordered, renamed, and/or removed according to your settings",
       "Disabled columns are excluded from the output entirely",
-      "Column order in the output matches the order in the widget list",
+      "Column order in the output matches the order in the node list",
       "Original column names are always recoverable via Reset",
     ],
     tips: [
@@ -246,12 +246,12 @@ export const WIDGET_DOCS: WidgetDoc[] = [
       {
         type: "info",
         title: "Rename while seeing real values",
-        body: "Keep an eye on the right-side preview while renaming — it shows actual data values so you can make informed naming decisions without leaving the widget.",
+        body: "Keep an eye on the right-side preview while renaming — it shows actual data values so you can make informed naming decisions without leaving the node.",
       },
       {
         type: "warning",
         title: "Removed upstream columns disappear silently",
-        body: "If a column is removed by an upstream widget, its settings in Column Manager are dropped without warning. You will simply notice it is gone from the list.",
+        body: "If a column is removed by an upstream node, its settings in Column Manager are dropped without warning. You will simply notice it is gone from the list.",
       },
     ],
   },
@@ -275,7 +275,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
       {
         title: "Identify the header row",
         detail:
-          "Connect your raw table and review it in a Data Table widget. Find the row number that contains the real column labels. Usually this is row 1, but it may be row 2 if there is a title row above.",
+          "Connect your raw table and review it in a Data Table node. Find the row number that contains the real column labels. Usually this is row 1, but it may be row 2 if there is a title row above.",
       },
       {
         title: "Connect to Header Promoter",
@@ -290,12 +290,12 @@ export const WIDGET_DOCS: WidgetDoc[] = [
       {
         title: "Apply and verify",
         detail:
-          "Connect the output to a Data Table widget. Confirm the column names now match your expected headers and that the promoted row is no longer present in the data.",
+          "Connect the output to a Data Table node. Confirm the column names now match your expected headers and that the promoted row is no longer present in the data.",
       },
     ],
     inputType: "Data Table",
     inputNotes: [
-      "The widget uses the specified row to replace the existing column names",
+      "The node uses the specified row to replace the existing column names",
       "All column types are supported — values in the promoted row become the new column names",
       "Numeric values in the promoted row are converted to text for use as column names",
     ],
@@ -349,7 +349,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
       {
         title: "Connect your table",
         detail:
-          "Pass any data table into the widget's input. The column list populates automatically.",
+          "Pass any data table into the node's input. The column list populates automatically.",
       },
       {
         title: "Select a column to shift",
@@ -397,7 +397,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
       {
         type: "warning",
         title: "Large step counts produce many empty cells",
-        body: "Shifting by more steps than there are rows will result in the entire column being empty. Double-check your step count before connecting to downstream widgets.",
+        body: "Shifting by more steps than there are rows will result in the entire column being empty. Double-check your step count before connecting to downstream nodes.",
       },
     ],
   },
@@ -421,7 +421,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
       {
         title: "Connect a table with text data",
         detail:
-          "Pass any table with a text column into the widget.",
+          "Pass any table with a text column into the node.",
       },
       {
         title: "Select the source column",
@@ -527,7 +527,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
     inputNotes: [
       "All column types are supported as key columns",
       "Composite keys are supported — a row is only a duplicate if all selected key columns match",
-      "If no columns are selected, the widget compares entire rows for deduplication",
+      "If no columns are selected, the node compares entire rows for deduplication",
     ],
     outputType: "Data Table",
     outputNotes: [
@@ -555,7 +555,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
       {
         type: "warning",
         title: "Full-row comparison is strict",
-        body: "If no key columns are selected, every cell in a row must match exactly for it to count as a duplicate. A single extra space in any cell will prevent deduplication. Run the Cleaner widget first if your data has inconsistent formatting.",
+        body: "If no key columns are selected, every cell in a row must match exactly for it to count as a duplicate. A single extra space in any cell will prevent deduplication. Run the Cleaner node first if your data has inconsistent formatting.",
       },
     ],
   },

@@ -19,7 +19,7 @@ export default function TransformSection() {
           <h3 className={styles.cardTitle}>Your PDF Input</h3>
           <p className={styles.cardDesc}>
             Load any multi-page payslip, invoice, or report, and use Altera
-            Widgets to extract and organize your data effortlessly.
+            Nodes to extract and organize your data effortlessly.
           </p>
           <div className={styles.preview}>
             <Image
@@ -37,7 +37,7 @@ export default function TransformSection() {
           <h3 className={styles.cardTitle}>Your Structured Output</h3>
           <p className={styles.cardDesc}>
             Every row extracted, cleaned, and ready to query, export, or feed
-            directly into your next Orange workflow.
+            directly into your next step.
           </p>
           <div className={styles.preview}>
             <ResultTable />

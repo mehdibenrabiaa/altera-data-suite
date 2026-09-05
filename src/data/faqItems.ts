@@ -12,7 +12,7 @@ export const allFaqItems = [
   {
     key: "3",
     label: "Do I need to install anything?",
-    children: "Altera is built for Orange Data Mining. Installing it inside Orange takes seconds — just add the add-on and you're ready to start extracting.",
+    children: "Altera is a standalone desktop app. Download the installer for Windows or macOS and you're ready to start extracting in seconds — no other software required.",
   },
   {
     key: "4",
@@ -32,7 +32,7 @@ export const allFaqItems = [
   {
     key: "7",
     label: "Do I need programming knowledge to use Altera?",
-    children: "Not at all. Altera is designed to be used visually inside Orange Data Mining. You drag, drop, and configure — no code required.",
+    children: "Not at all. Altera is designed to be used entirely visually — you drag, drop, and configure — no code required.",
   },
   {
     key: "8",
@@ -42,17 +42,17 @@ export const allFaqItems = [
   {
     key: "9",
     label: "What output format does the extracted data come in?",
-    children: "Altera outputs clean, structured tables directly inside Orange Data Mining — ready to analyse, export, or feed into your next workflow step.",
+    children: "Altera outputs clean, structured tables directly in the app — ready to analyse, export, or feed into your next workflow step.",
   },
   {
     key: "10",
-    label: "Can I use different widgets for different document types?",
-    children: "Yes. Each widget is purpose-built for a specific extraction task. You can mix and match widgets in the same workflow to handle different document types in one pass.",
+    label: "Can I use different nodes for different document types?",
+    children: "Yes. Each node is purpose-built for a specific extraction task. You can mix and match nodes in the same workflow to handle different document types in one pass.",
   },
   {
     key: "11",
     label: "What if the extraction misses a field or gets it wrong?",
-    children: "You can define custom extraction rules to handle edge cases. If a specific document structure isn't covered out of the box, we also offer custom widget development.",
+    children: "You can define custom extraction rules to handle edge cases. If a specific document structure isn't covered out of the box, we also offer custom node development.",
   },
   {
     key: "12",

@@ -1,10 +1,10 @@
 {
   "meta": {
-    "home":      { "title": "PDF Data Extraction for Orange Data Mining | Altera Data Suite","description": "Extract invoices, payslips & reports from any PDF — no code needed. The no-code Orange Data Mining add-on for structured data extraction. Try it free." },
+    "home":      { "title": "PDF Data Extraction Software | Altera Data Suite","description": "Extract invoices, payslips & reports from any PDF — no code needed. The standalone, no-code desktop app for structured data extraction. Try it free." },
     "about":     { "title": "About",              "description": "Learn about Altera Data Suite — who built it, why, and what drives it." },
     "pricing":   { "title": "Pricing",            "description": "Simple, transparent pricing for Altera Data Suite. Start free, upgrade when it delivers value." },
     "faqs":      { "title": "FAQs",               "description": "Got questions about Altera? Find answers about setup, accuracy, pricing, security, and more." },
-    "docs":      { "title": "Docs",               "description": "Learn how to use every Altera widget — step-by-step guides, configuration references, and output details for every feature." },
+    "docs":      { "title": "Docs",               "description": "Learn how to use every Altera node — step-by-step guides, configuration references, and output details for every feature." },
     "changelog": { "title": "Changelog",          "description": "Every update, improvement, and fix to Altera Data Suite — in one place." },
     "terms":     { "title": "Terms of Service",   "description": "Altera Data Suite terms of use, license restrictions, AI disclaimer, and liability." },
     "privacy":   { "title": "Privacy Policy",     "description": "How Altera Data Suite collects, uses, and protects your data. GDPR & CCPA compliant." },
@@ -34,7 +34,7 @@
       "pricingPlan":   "Pricing Plan",
       "docs":          "Docs",
       "aboutUs":       "About Us",
-      "customWidgets": "Custom Widgets",
+      "customWidgets": "Custom Nodes",
       "terms":         "Terms of Service",
       "privacy":       "Privacy Policy",
       "refund":        "Refund Policy"
@@ -46,7 +46,7 @@
     "headingPart1":      "The App that turns",
     "headingPart2":      "your PDFs into ",
     "headingPart3":      "clean tables",
-    "subtitle":          "Drop in any PDF — Altera's widgets extract, clean, and structure every field in seconds.",
+    "subtitle":          "Drop in any PDF — Altera's nodes extract, clean, and structure every field in seconds.",
     "startFree":         "Start for free",
     "watchDemo":         "Watch Demo",
     "testimonialTitle":  "Simple Setup, Instant Results",
@@ -76,13 +76,13 @@
   "featureCards": [
     { "label": "FAST CONVERSION",   "line1": "Drop in any PDF.",            "line2": "Clean data in seconds." },
     { "label": "AI-POWERED",        "line1": "AI-Powered Tool.",            "line2": "Autonomous — handles everything on your behalf." },
-    { "label": "WE GIVE YOU TOOLS", "line1": "Smart widgets that extract,", "line2": "and clean your data." }
+    { "label": "WE GIVE YOU TOOLS", "line1": "Smart nodes that extract,", "line2": "and clean your data." }
   ],
   "widgets": {
     "badgeLabel":  "Features",
-    "badgeText":   "Purpose-Built Widgets",
+    "badgeText":   "Purpose-Built Nodes",
     "heading":     "Your all-in-one solution for fast, efficient PDF parsing.",
-    "subtitle":    "Purpose-built widgets that take your PDFs from raw input to structured, analysis-ready data — no code, no friction.",
+    "subtitle":    "Purpose-built nodes that take your PDFs from raw input to structured, analysis-ready data — no code, no friction.",
     "exploreNow":  "Explore Now",
     "items": [
       { "name": "PDF Converter",       "description": "Load any multi-page PDF — payslips, invoices, reports — and instantly extract every field into a clean, row-by-row table ready for analysis." },
@@ -108,15 +108,15 @@
     "plans": [
       {
         "name": "Free Trial", "subtitle": "All-In-One Solution for a short period",
-        "features": ["Limited PDF Processing","AI Features Not Included","7 Days Trial Period","10+ Widgets","Minimal Support","Single Machine License","Free Updates & Improvements"]
+        "features": ["Limited PDF Processing","AI Features Not Included","7 Days Trial Period","10+ Nodes","Minimal Support","Single Machine License","Free Updates & Improvements"]
       },
       {
         "name": "Professional", "subtitle": "All-In-One Solution for PDF Parsing",
-        "features": ["Unlimited PDF Processing","AI-Powered Smart Tools","Monthly or Yearly Billing","10+ Widgets","Email Support","Single Machine License","Free Updates & Improvements"]
+        "features": ["Unlimited PDF Processing","AI-Powered Smart Tools","Monthly or Yearly Billing","10+ Nodes","Email Support","Single Machine License","Free Updates & Improvements"]
       },
       {
         "name": "Enterprise", "subtitle": "All Features + Tailored Prices",
-        "features": ["Unlimited PDF Processing","AI-Powered Smart Tools","Custom Pricing","10+ Widgets","Video Call Assistance","Volume Licensing","Free Updates & Improvements"]
+        "features": ["Unlimited PDF Processing","AI-Powered Smart Tools","Custom Pricing","10+ Nodes","Video Call Assistance","Volume Licensing","Free Updates & Improvements"]
       }
     ],
     "faqs": [
@@ -137,16 +137,16 @@
       { "name": "Karim Raaji",           "role": "Financial Consultant",          "text": "I spent years relying on tools like Power Query to extract and clean financial data from PDFs. They worked — but never cleanly, and the maintenance was constant. Finding Altera was a turning point. The extraction is accurate, the setup took minutes, and for the price it's an absolute game changer for anyone who works with financial documents on a daily basis." },
       { "name": "Jonathan Ashton",        "role": "Financial Quality Controller",  "text": "I found myself juggling multiple tools just to get data out of a PDF — one app for conversion, others for cleaning. But the bigger issue was privacy. Working with client data under NDA, I couldn't afford to have files processed on a third-party server. Most tools I tried did exactly that. Altera was the first solution that actually understood the core problem and solved it — everything runs locally, on my machine, and the results are clean from the start." },
       { "name": "Mohammed Amine Bendidi", "role": "Financial Consultant",          "text": "Receiving volumes of data — mostly PDFs — with tight deadlines was a constant nightmare. We had skilled developers in our data lab, but the gap between what they built and what we actually needed never fully closed. Altera was different. It didn't come from a team that just knew how to code — it came from people who had lived the problem firsthand. That shows in every feature. A solution built by analysts, for analysts." },
-      { "name": "Thomas Reeves",          "role": "Business Intelligence Lead",    "text": "What sets Altera apart from anything in the Microsoft ecosystem is that it's actually extensible in a meaningful way. With Excel or Power BI, you're locked into what exists — if a feature isn't there, you wait, and most of the time it never comes. With Altera, if a widget doesn't cover your exact use case, the team will build it for you. They can extend existing widgets or create fully custom ones from scratch. That kind of responsiveness is something enterprise software simply doesn't offer." }
+      { "name": "Thomas Reeves",          "role": "Business Intelligence Lead",    "text": "What sets Altera apart from anything in the Microsoft ecosystem is that it's actually extensible in a meaningful way. With Excel or Power BI, you're locked into what exists — if a feature isn't there, you wait, and most of the time it never comes. With Altera, if a node doesn't cover your exact use case, the team will build it for you. They can extend existing nodes or create fully custom ones from scratch. That kind of responsiveness is something enterprise software simply doesn't offer." }
     ]
   },
   "customWidget": {
-    "badgeLabel":          "Custom Widgets",
+    "badgeLabel":          "Custom Nodes",
     "badgeText":           "Built around your exact needs.",
-    "heading":             "Need a custom widget that fits your exact workflow? We build it for you.",
-    "subtitle":            "Every team works with different documents — different structures, different fields, different outputs. If none of our existing widgets match what you need, we'll design and build one from scratch. We map your PDF layout, define the extraction logic, and deliver a widget that drops straight into your Orange Data Mining workspace. No workarounds, no manual cleanup — just clean, structured data exactly the way you need it. Get in touch and we'll scope it together at a price that makes sense.",
+    "heading":             "Need a custom node that fits your exact workflow? We build it for you.",
+    "subtitle":            "Every team works with different documents — different structures, different fields, different outputs. If none of our existing nodes match what you need, we'll design and build one from scratch. We map your PDF layout, define the extraction logic, and deliver a tool that drops straight into your workflow. No workarounds, no manual cleanup — just clean, structured data exactly the way you need it. Get in touch and we'll scope it together at a price that makes sense.",
     "rowWhatLabel":        "What you get",
-    "rowWhatValue":        "A fully functional widget built for your PDF",
+    "rowWhatValue":        "A fully functional node built for your PDF",
     "rowTurnaroundLabel":  "Turnaround",
     "rowTurnaroundValue":  "Scoped together based on complexity",
     "rowPricingLabel":     "Pricing",
@@ -162,15 +162,15 @@
   "allFaqs": [
     { "key": "1",  "label": "What types of PDFs does Altera support?",               "text": "Altera works with any PDF — payslips, invoices, bank statements, reports, and more. If it has structured data, Altera can extract it." },
     { "key": "2",  "label": "How accurate is the extraction?",                        "text": "Altera extracts data with high accuracy. You can define custom rules to ensure every field maps exactly where you need it." },
-    { "key": "3",  "label": "Do I need to install anything?",                         "text": "Altera is built for Orange Data Mining. Installing it inside Orange takes seconds — just add the add-on and you're ready to start extracting." },
+    { "key": "3",  "label": "Do I need to install anything?",                         "text": "Altera is a standalone desktop app. Download the installer for Windows or macOS and you're ready to start extracting in seconds — no other software required." },
     { "key": "4",  "label": "Can I process multiple PDFs at once?",                   "text": "Yes. Altera supports batch processing so you can drop in hundreds of PDFs and get all the data structured in one go." },
     { "key": "5",  "label": "Is my data secure?",                                     "text": "Your files are processed securely and never stored beyond the active session. We don't share or retain your data." },
     { "key": "6",  "label": "Can I try it before paying?",                            "text": "Absolutely — you can start for free and explore the core features before committing to a plan." },
-    { "key": "7",  "label": "Do I need programming knowledge to use Altera?",         "text": "Not at all. Altera is designed to be used visually inside Orange Data Mining. You drag, drop, and configure — no code required." },
+    { "key": "7",  "label": "Do I need programming knowledge to use Altera?",         "text": "Not at all. Altera is designed to be used entirely visually — you drag, drop, and configure — no code required." },
     { "key": "8",  "label": "Can Altera handle scanned or image-based PDFs?",        "text": "Altera works best with digitally generated PDFs. Scanned documents with OCR-readable text are also supported, though accuracy may vary depending on scan quality." },
-    { "key": "9",  "label": "What output format does the extracted data come in?",    "text": "Altera outputs clean, structured tables directly inside Orange Data Mining — ready to analyse, export, or feed into your next workflow step." },
-    { "key": "10", "label": "Can I use different widgets for different document types?","text": "Yes. Each widget is purpose-built for a specific extraction task. You can mix and match widgets in the same workflow to handle different document types in one pass." },
-    { "key": "11", "label": "What if the extraction misses a field or gets it wrong?", "text": "You can define custom extraction rules to handle edge cases. If a specific document structure isn't covered out of the box, we also offer custom widget development." },
+    { "key": "9",  "label": "What output format does the extracted data come in?",    "text": "Altera outputs clean, structured tables directly in the app — ready to analyse, export, or feed into your next workflow step." },
+    { "key": "10", "label": "Can I use different nodes for different document types?","text": "Yes. Each node is purpose-built for a specific extraction task. You can mix and match nodes in the same workflow to handle different document types in one pass." },
+    { "key": "11", "label": "What if the extraction misses a field or gets it wrong?", "text": "You can define custom extraction rules to handle edge cases. If a specific document structure isn't covered out of the box, we also offer custom node development." },
     { "key": "12", "label": "Is there a file size limit?",                            "text": "Altera handles standard business documents without issue. Very large files or unusually complex layouts may affect processing time, but there is no hard cap." },
     { "key": "13", "label": "What languages are supported?",                          "text": "Altera primarily supports English and French documents. Support for additional languages is being added as the suite grows." },
     { "key": "14", "label": "How do I get support if something goes wrong?",          "text": "You can reach us directly at support@alteradatasuite.com. We're a small team so you'll always get a real response — not a bot." }
@@ -214,18 +214,18 @@
     "storyBadgeText":  "Why we built this",
     "story1Heading":   "Where the idea came from",
     "story1Text":      "We both came from consulting backgrounds — working with firms including Deloitte and PwC. One thing became clear fast: even at that level, nobody had built a proper all-in-one solution for extracting data from PDFs. Payslips, invoices, reports — everything was handled manually or with fragile one-off scripts. That gap was the starting point.",
-    "story2Heading":   "The first widget",
-    "story2Text":      "We started with a single PDF converter widget. It worked — and immediately we saw what was missing next. Orange had strong analytical capabilities but left data cleaning and wrangling largely unaddressed. So we kept building. Each widget was a direct response to a friction point in real workflows.",
-    "story3Heading":   "Why Orange Data Mining?",
-    "story3Text":      "We didn't want to build something that lives in isolation. Orange Data Mining already has a strong, established ecosystem — choosing it meant our users wouldn't have to change how they work. Altera plugs straight into what they already know and use.",
+    "story2Heading":   "The first node",
+    "story2Text":      "We started with a single PDF converter node. It worked — and immediately we saw what was missing next. Getting a table out of a PDF was only step one; cleaning it, reshaping it, and getting it ready to actually use took just as long. So we kept building. Each new node was a direct response to a friction point in real workflows.",
+    "story3Heading":   "Going standalone",
+    "story3Text":      "The early versions were built to run inside another company's software. That got us moving fast, but it also meant living within someone else's constraints. So we rebuilt Altera as its own desktop app — full control over speed, design, and the experience end to end, with nothing else to install first.",
     "story4Heading":   "Where we're headed",
-    "story4Text":      "The suite is still growing. More widgets are in development, existing ones are actively maintained, and AI is becoming a core part of how Altera extracts, interprets, and structures data. This isn't a finished product — it's an evolving toolkit built to keep pace with how data work actually happens.",
+    "story4Text":      "The suite is still growing. More nodes are in development, existing ones are actively maintained, and AI is becoming a core part of how Altera extracts, interprets, and structures data. This isn't a finished product — it's an evolving toolkit built to keep pace with how data work actually happens.",
     "ctaHeading":      "Ready to see it in action?",
     "ctaSubtitle":     "Watch the demo to see how Altera handles real PDFs, or explore the pricing to find the plan that fits.",
     "watchDemo":       "Watch Demo",
     "seePricing":      "See Pricing",
     "team": [
-      { "role": "CEO & Co-Founder",       "bio": "Mehdi built Altera to remove the friction from data extraction inside Orange Data Mining. With extensive experience in Python, JavaScript, and data-oriented solutions, he bridges the gap between deep technical knowledge and real-world data workflows. As CEO, he defines the product vision, steers the technical roadmap, and makes sure every feature is grounded in actual data professional needs — delivering fast, scalable, and purposeful tools." },
+      { "role": "CEO & Co-Founder",       "bio": "Mehdi built Altera to remove the friction from data extraction. With extensive experience in Python, JavaScript, and data-oriented solutions, he bridges the gap between deep technical knowledge and real-world data workflows. As CEO, he defines the product vision, steers the technical roadmap, and makes sure every feature is grounded in actual data professional needs — delivering fast, scalable, and purposeful tools." },
       { "role": "Co-Founder, Commercial & Marketing Director", "bio": "Salah leads the company's commercial and marketing strategy. He is responsible for brand development, customer acquisition, lead generation, and strategic partnerships. His goal is to accelerate the company's growth and promote innovative document automation solutions to professionals." },
       { "role": "Software Engineer", "bio": "Saumya specializes in Rust, C, and TypeScript, with a sharp focus on software performance optimization. He architects the core engine behind Altera, ensuring every computation is fast, lean, and built to scale." },
       { "role": "Frontend Engineer", "bio": "Raphaël crafts the interfaces users interact with every day. Specializing in frontend engineering, he transforms designs into fast, responsive, and accessible web experiences. From component architecture to pixel-perfect implementation, he ensures Altera's UI is smooth, reliable, and consistent — bridging the gap between design intent and real user interaction." }
@@ -248,12 +248,12 @@
     "panelTitle":      "Altera Assistant",
     "panelSubtitle":   "Ask me anything",
     "placeholder":     "Ask a question…",
-    "welcome":         "Hi! I'm Altera's assistant. Ask me anything about the app, its widgets, or how to get started.",
+    "welcome":         "Hi! I'm Altera's assistant. Ask me anything about the app, its nodes, or how to get started.",
     "followUp":        "Here are some things I can help with:",
     "fallback":        "Great question! For more details, check the Docs page or reach out to our team directly.",
     "quickReplies": [
       { "question": "How does PDF Converter work?",   "answer": "Open your PDF, draw rectangles over the data you want to extract, optionally place column guides, then click Convert. You get a clean structured table ready for further processing." },
-      { "question": "What widgets are available?",    "answer": "Altera includes 9 widgets: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates, and Cleaner." },
+      { "question": "What nodes are available?",    "answer": "Altera includes 9 nodes: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates, and Cleaner." },
       { "question": "Is there a free trial?",         "answer": "Yes! You can get started for free. Head to the Pricing page to see what's included in each plan." }
     ]
   },

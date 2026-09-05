@@ -20,7 +20,7 @@ export default function NotFound() {
         textAlign: "center",
       }}
     >
-      <p style={{ fontSize: 160, fontWeight: 700, color: COLOR_PRIMARY, lineHeight: 1, margin: "0 0 8px", letterSpacing: "-6px" }}>
+      <p style={{ fontSize: 160, fontWeight: 600, color: COLOR_PRIMARY, lineHeight: 1, margin: "0 0 8px", letterSpacing: "-6px" }}>
         404
       </p>
       <SectionHeading

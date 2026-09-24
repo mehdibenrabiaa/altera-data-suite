@@ -34,16 +34,39 @@
   margin-bottom: 28px;
 }
 
+/* Same colored-tile look as the app's own .node-icon-tile (App.css) --
+   background is the node's category color (set inline per-instance,
+   see DocsClient.tsx), icon forced white on top via .nodeIconTile img
+   below, instead of a plain white/bordered box. */
 .widgetIconWrap {
   width: 88px;
   height: 88px;
-  background: #fff;
-  border: 1px solid #c6c6c6;
-  border-radius: 8px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+}
+
+.widgetIconWrap img {
+  filter: brightness(0) invert(1);
+}
+
+/* Smaller version of the same tile -- sidebar menu items and the
+   prev/next nav row. */
+.nodeIconTile {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  flex-shrink: 0;
+}
+
+.nodeIconTile img {
+  filter: brightness(0) invert(1);
 }
 
 .widgetMeta {

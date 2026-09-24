@@ -25,6 +25,8 @@ interface PricingCardProps {
   freeLabel?: string;
   includesLabel?: string;
   href?: string;
+  onClick?: () => void;
+  loading?: boolean;
 }
 
 export default function PricingCard({
@@ -39,6 +41,8 @@ export default function PricingCard({
   freeLabel = "Free",
   includesLabel = "Includes",
   href,
+  onClick,
+  loading = false,
 }: PricingCardProps) {
   const [hovered, setHovered] = useState(false);
 
@@ -176,6 +180,9 @@ export default function PricingCard({
       <Button
         block
         href={href}
+        onClick={onClick}
+        loading={loading}
+        disabled={loading}
         className={styles.btn}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
@@ -197,7 +204,7 @@ export default function PricingCard({
           transition: "opacity 0.2s",
         }}
       >
-        {btnLabel} <RightOutlined />
+        {loading ? "Opening checkout…" : <>{btnLabel} <RightOutlined /></>}
       </Button>
     </article>
   );

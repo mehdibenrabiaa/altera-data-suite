@@ -75,7 +75,7 @@
   },
   "featureCards": [
     { "label": "CONVERSION RAPIDE",    "line1": "Déposez n'importe quel PDF.",    "line2": "Données propres en quelques secondes." },
-    { "label": "IA AUTONOME",          "line1": "Outil piloté par l'IA.",      "line2": "Autonome — gère tout à votre place." },
+    { "label": "FLUX VISUELS",         "line1": "Enchaînez des nœuds",        "line2": "pour créer votre pipeline exact." },
     { "label": "DES OUTILS PUISSANTS", "line1": "Des widgets intelligents qui extraient,", "line2": "et nettoient vos données." }
   ],
   "widgets": {
@@ -104,18 +104,20 @@
     "oneTime":        "paiement unique",
     "includesLabel": "Comprend",
     "topUpNote":      "Plus de crédits IA ? Rechargez à tout moment — les packs de crédits supplémentaires commencent à 9 $.",
+    "checkoutSuccess": "Consultez votre e-mail pour récupérer votre clé de licence.",
+    "checkoutError":   "Le paiement n'est pas disponible pour le moment. Réessayez dans un instant ou contactez support@alteradatasuite.com.",
     "plans": [
       {
         "name": "Mensuel", "subtitle": "Solution tout-en-un, facturée mensuellement",
-        "features": ["Traitement PDF illimité","1 000 crédits IA / mois","10+ Widgets","Support par e-mail","Licence mono-poste","Mises à jour gratuites"]
+        "features": ["Traitement PDF illimité","1 000 crédits IA / mois","10+ Nœuds","Support par e-mail","Licence mono-poste","Mises à jour gratuites"]
       },
       {
         "name": "Annuel", "subtitle": "Économisez 20 % par rapport à la facturation mensuelle",
-        "features": ["Traitement PDF illimité","15 000 crédits IA / an","10+ Widgets","Support par e-mail prioritaire","Licence mono-poste","Mises à jour gratuites"]
+        "features": ["Traitement PDF illimité","15 000 crédits IA / an","10+ Nœuds","Support par e-mail prioritaire","Licence mono-poste","Mises à jour gratuites"]
       },
       {
         "name": "À vie", "subtitle": "Payez une fois, gardez-le pour toujours",
-        "features": ["Traitement PDF illimité","1 000 crédits IA chaque mois, à vie","10+ Widgets","Support prioritaire","Licence mono-poste","Mises à jour gratuites pendant 1 an"]
+        "features": ["Traitement PDF illimité","1 000 crédits IA chaque mois, à vie","10+ Nœuds","Support prioritaire","Licence mono-poste","Mises à jour gratuites pendant 1 an"]
       }
     ],
     "faqs": [

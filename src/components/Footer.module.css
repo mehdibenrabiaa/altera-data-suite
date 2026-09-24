@@ -1,6 +1,6 @@
 .footer {
-  background: #f9f9f9;
-  border-top: 1px solid #ede9e2;
+  background: var(--bg-panel);
+  border-top: 1px solid var(--border-color);
   padding: 64px 60px 104px;
 }
 
@@ -31,7 +31,7 @@
 .brandName {
   font-size: 15px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: var(--text-primary);
 }
 
 .brandDesc {
@@ -49,7 +49,7 @@
 .colHeading {
   font-size: 14px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: var(--text-primary);
   margin: 0 0 16px;
 }
 
@@ -67,13 +67,13 @@
   align-items: center;
   gap: 7px;
   font-size: 13.5px;
-  color: #666;
+  color: var(--text-secondary);
   text-decoration: none;
   transition: color 0.15s;
 }
 
 .colLink:hover {
-  color: #1a1a1a;
+  color: var(--text-primary);
 }
 
 /* ── Contact ── */
@@ -86,12 +86,12 @@
 .contactLabel {
   font-size: 13.5px;
   font-weight: 600;
-  color: #1a1a1a;
+  color: var(--text-primary);
 }
 
 .contactValue {
   font-size: 13.5px;
-  color: #666;
+  color: var(--text-secondary);
 }
 
 /* ── Big brand text ── */
@@ -118,7 +118,7 @@
   max-width: 1100px;
   margin: 0 auto;
   padding-top: 24px;
-  border-top: 1px solid #ede9e2;
+  border-top: 1px solid var(--border-color);
   font-size: 12.5px;
   color: var(--color-text-muted);
   display: flex;

@@ -75,7 +75,7 @@
   },
   "featureCards": [
     { "label": "CONVERSIÓN RÁPIDA",    "line1": "Sube cualquier PDF.",                "line2": "Datos limpios en segundos." },
-    { "label": "IA AUTÓNOMA",          "line1": "Herramienta impulsada por IA.", "line2": "Autónoma — gestiona todo en su nombre." },
+    { "label": "FLUJOS VISUALES",      "line1": "Encadena nodos",                "line2": "para crear tu pipeline exacto." },
     { "label": "HERRAMIENTAS POTENTES","line1": "Widgets inteligentes que extraen,",  "line2": "y limpian tus datos." }
   ],
   "widgets": {
@@ -104,18 +104,20 @@
     "oneTime":        "pago único",
     "includesLabel": "Incluye",
     "topUpNote":      "¿Se acabaron tus créditos de IA? Recarga cuando quieras — los paquetes adicionales empiezan en $9.",
+    "checkoutSuccess": "Revisa tu correo electrónico para obtener tu clave de licencia.",
+    "checkoutError":   "El pago no está disponible en este momento. Inténtalo de nuevo en un momento o contacta con support@alteradatasuite.com.",
     "plans": [
       {
         "name": "Mensual", "subtitle": "Solución todo en uno, facturada mensualmente",
-        "features": ["Procesamiento de PDF ilimitado","1.000 créditos de IA / mes","10+ Widgets","Soporte por correo electrónico","Licencia para una máquina","Actualizaciones gratuitas"]
+        "features": ["Procesamiento de PDF ilimitado","1.000 créditos de IA / mes","10+ Nodos","Soporte por correo electrónico","Licencia para una máquina","Actualizaciones gratuitas"]
       },
       {
         "name": "Anual", "subtitle": "Ahorra un 20 % frente a la facturación mensual",
-        "features": ["Procesamiento de PDF ilimitado","15.000 créditos de IA / año","10+ Widgets","Soporte prioritario por correo","Licencia para una máquina","Actualizaciones gratuitas"]
+        "features": ["Procesamiento de PDF ilimitado","15.000 créditos de IA / año","10+ Nodos","Soporte prioritario por correo","Licencia para una máquina","Actualizaciones gratuitas"]
       },
       {
         "name": "De por vida", "subtitle": "Paga una vez, consérvalo para siempre",
-        "features": ["Procesamiento de PDF ilimitado","1.000 créditos de IA cada mes, de por vida","10+ Widgets","Soporte prioritario","Licencia para una máquina","Actualizaciones gratuitas durante 1 año"]
+        "features": ["Procesamiento de PDF ilimitado","1.000 créditos de IA cada mes, de por vida","10+ Nodos","Soporte prioritario","Licencia para una máquina","Actualizaciones gratuitas durante 1 año"]
       }
     ],
     "faqs": [

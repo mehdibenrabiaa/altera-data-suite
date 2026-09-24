@@ -1,0 +1,83 @@
+.banner {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 1000;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px 20px;
+  background: var(--bg-panel);
+  border: 1px solid var(--border-color-strong);
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  font-family: "Google Sans Flex", Arial, sans-serif;
+}
+
+.message {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.link {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.decline,
+.accept {
+  height: 34px;
+  padding: 0 18px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: opacity 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.decline {
+  background: transparent;
+  border: 1px solid var(--border-color-strong);
+  color: var(--text-primary);
+}
+
+.decline:hover {
+  border-color: var(--text-secondary);
+}
+
+.accept {
+  border: none;
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.accept:hover {
+  opacity: 0.88;
+}
+
+@media (max-width: 480px) {
+  .banner {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    padding: 16px;
+  }
+  .actions {
+    justify-content: stretch;
+  }
+  .decline,
+  .accept {
+    flex: 1;
+  }
+}

@@ -75,7 +75,7 @@
   },
   "featureCards": [
     { "label": "SCHNELLE KONVERTIERUNG",   "line1": "Laden Sie ein beliebiges PDF hoch.",       "line2": "Saubere Daten in Sekunden." },
-    { "label": "KI-GESTÜTZT",          "line1": "KI-gestütztes Werkzeug.",     "line2": "Autonom — übernimmt alles für Sie." },
+    { "label": "VISUELLE WORKFLOWS",   "line1": "Verknüpfen Sie Nodes",        "line2": "zu Ihrer exakten Pipeline." },
     { "label": "WIR GEBEN IHNEN TOOLS",    "line1": "Smarte Widgets, die extrahieren,",          "line2": "und Ihre Daten bereinigen." }
   ],
   "widgets": {
@@ -104,18 +104,20 @@
     "oneTime":        "einmalig",
     "includesLabel": "Beinhaltet",
     "topUpNote":      "KI-Credits aufgebraucht? Jederzeit aufladen — zusätzliche Credit-Pakete ab 9 $.",
+    "checkoutSuccess": "Schau in dein E-Mail-Postfach nach deinem Lizenzschlüssel.",
+    "checkoutError":   "Checkout ist gerade nicht verfügbar. Bitte versuche es gleich noch einmal oder kontaktiere support@alteradatasuite.com.",
     "plans": [
       {
         "name": "Monatlich", "subtitle": "Komplettlösung, monatlich abgerechnet",
-        "features": ["Unbegrenzte PDF-Verarbeitung","1.000 KI-Credits / Monat","10+ Widgets","E-Mail-Support","Einzelplatz-Lizenz","Kostenlose Updates & Verbesserungen"]
+        "features": ["Unbegrenzte PDF-Verarbeitung","1.000 KI-Credits / Monat","10+ Nodes","E-Mail-Support","Einzelplatz-Lizenz","Kostenlose Updates & Verbesserungen"]
       },
       {
         "name": "Jährlich", "subtitle": "20 % günstiger als monatliche Abrechnung",
-        "features": ["Unbegrenzte PDF-Verarbeitung","15.000 KI-Credits / Jahr","10+ Widgets","Priorisierter E-Mail-Support","Einzelplatz-Lizenz","Kostenlose Updates & Verbesserungen"]
+        "features": ["Unbegrenzte PDF-Verarbeitung","15.000 KI-Credits / Jahr","10+ Nodes","Priorisierter E-Mail-Support","Einzelplatz-Lizenz","Kostenlose Updates & Verbesserungen"]
       },
       {
         "name": "Lifetime", "subtitle": "Einmal zahlen, für immer besitzen",
-        "features": ["Unbegrenzte PDF-Verarbeitung","1.000 KI-Credits pro Monat, lebenslang","10+ Widgets","Priorisierter Support","Einzelplatz-Lizenz","Kostenlose Updates für 1 Jahr"]
+        "features": ["Unbegrenzte PDF-Verarbeitung","1.000 KI-Credits pro Monat, lebenslang","10+ Nodes","Priorisierter Support","Einzelplatz-Lizenz","Kostenlose Updates für 1 Jahr"]
       }
     ],
     "faqs": [

@@ -75,7 +75,7 @@
   },
   "featureCards": [
     { "label": "FAST CONVERSION",   "line1": "Drop in any PDF.",            "line2": "Clean data in seconds." },
-    { "label": "AI-POWERED",        "line1": "AI-Powered Tool.",            "line2": "Autonomous — handles everything on your behalf." },
+    { "label": "VISUAL WORKFLOWS",  "line1": "Chain nodes together",       "line2": "to build your exact pipeline." },
     { "label": "WE GIVE YOU TOOLS", "line1": "Smart nodes that extract,", "line2": "and clean your data." }
   ],
   "widgets": {
@@ -104,6 +104,8 @@
     "oneTime":        "one-time",
     "includesLabel":  "Includes",
     "topUpNote":      "Run out of AI credits? Top up anytime — extra credit packs start at $9.",
+    "checkoutSuccess": "Check your email for your license key.",
+    "checkoutError":   "Checkout isn't available right now. Please try again in a moment or contact support@alteradatasuite.com.",
     "plans": [
       {
         "name": "Monthly", "subtitle": "All-In-One Solution, billed monthly",

@@ -105,13 +105,12 @@ export default function DocsClient({ t = DEFAULT_T }: Props) {
   const menuItems = WIDGET_DOCS.map((w) => ({
     key: w.id,
     icon: w.svgIcon ? (
-      <Image
-        src={`/widgets_icons/${w.svgIcon}`}
-        alt=""
-        width={18}
-        height={18}
-        style={{ display: "block" }}
-      />
+      <span
+        className={styles.nodeIconTile}
+        style={{ width: 22, height: 22, background: w.color }}
+      >
+        <Image src={`/widgets_icons/${w.svgIcon}`} alt="" width={13} height={13} />
+      </span>
     ) : (
       <span style={{ fontSize: 16 }}>{w.icon}</span>
     ),
@@ -178,13 +177,13 @@ export default function DocsClient({ t = DEFAULT_T }: Props) {
           >
             {/* Widget header */}
             <div className={styles.widgetHeader}>
-              <div className={styles.widgetIconWrap}>
+              <div className={styles.widgetIconWrap} style={{ background: active.color }}>
                 {active.svgIcon ? (
                   <Image
                     src={`/widgets_icons/${active.svgIcon}`}
                     alt={active.name}
-                    width={56}
-                    height={56}
+                    width={44}
+                    height={44}
                   />
                 ) : (
                   <span style={{ fontSize: 36 }}>{active.icon}</span>
@@ -429,7 +428,12 @@ export default function DocsClient({ t = DEFAULT_T }: Props) {
                       <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
                         <LeftOutlined />
                         {prevWidget.svgIcon ? (
-                          <Image src={`/widgets_icons/${prevWidget.svgIcon}`} alt="" width={26} height={26} style={{ display: "block", flexShrink: 0 }} />
+                          <span
+                            className={styles.nodeIconTile}
+                            style={{ width: 26, height: 26, background: prevWidget.color }}
+                          >
+                            <Image src={`/widgets_icons/${prevWidget.svgIcon}`} alt="" width={16} height={16} />
+                          </span>
                         ) : (
                           <span>{prevWidget.icon}</span>
                         )}
@@ -442,7 +446,12 @@ export default function DocsClient({ t = DEFAULT_T }: Props) {
                       <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
                         {nextWidget.name}
                         {nextWidget.svgIcon ? (
-                          <Image src={`/widgets_icons/${nextWidget.svgIcon}`} alt="" width={26} height={26} style={{ display: "block", flexShrink: 0 }} />
+                          <span
+                            className={styles.nodeIconTile}
+                            style={{ width: 26, height: 26, background: nextWidget.color }}
+                          >
+                            <Image src={`/widgets_icons/${nextWidget.svgIcon}`} alt="" width={16} height={16} />
+                          </span>
                         ) : (
                           <span>{nextWidget.icon}</span>
                         )}

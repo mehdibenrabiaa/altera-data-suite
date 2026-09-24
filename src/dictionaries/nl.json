@@ -75,7 +75,7 @@
   },
   "featureCards": [
     { "label": "SNELLE CONVERSIE",       "line1": "Laad een PDF in.",                    "line2": "Schone data in seconden." },
-    { "label": "AI-AANGEDREVEN",       "line1": "AI-aangedreven tool.",        "line2": "Autonoom — regelt alles voor u." },
+    { "label": "VISUELE WORKFLOWS",    "line1": "Koppel nodes aaneen",        "line2": "tot uw exacte pipeline." },
     { "label": "WIJ GEVEN U TOOLS",      "line1": "Slimme widgets die extraheren,",      "line2": "en uw data reinigen." }
   ],
   "widgets": {
@@ -104,18 +104,20 @@
     "oneTime":        "eenmalig",
     "includesLabel": "Inclusief",
     "topUpNote":      "AI-credits op? Vul op wanneer u wilt — extra creditpakketten vanaf $9.",
+    "checkoutSuccess": "Controleer uw e-mail voor uw licentiesleutel.",
+    "checkoutError":   "Afrekenen is nu niet beschikbaar. Probeer het straks opnieuw of neem contact op met support@alteradatasuite.com.",
     "plans": [
       {
         "name": "Maandelijks", "subtitle": "Alles-in-één oplossing, maandelijks gefactureerd",
-        "features": ["Onbeperkte PDF-verwerking","1.000 AI-credits / maand","10+ widgets","E-mailondersteuning","Licentie voor één machine","Gratis updates & verbeteringen"]
+        "features": ["Onbeperkte PDF-verwerking","1.000 AI-credits / maand","10+ Nodes","E-mailondersteuning","Licentie voor één machine","Gratis updates & verbeteringen"]
       },
       {
         "name": "Jaarlijks", "subtitle": "Bespaar 20% t.o.v. maandelijkse facturering",
-        "features": ["Onbeperkte PDF-verwerking","15.000 AI-credits / jaar","10+ widgets","Prioritaire e-mailondersteuning","Licentie voor één machine","Gratis updates & verbeteringen"]
+        "features": ["Onbeperkte PDF-verwerking","15.000 AI-credits / jaar","10+ Nodes","Prioritaire e-mailondersteuning","Licentie voor één machine","Gratis updates & verbeteringen"]
       },
       {
         "name": "Lifetime", "subtitle": "Eenmalig betalen, voor altijd bezitten",
-        "features": ["Onbeperkte PDF-verwerking","1.000 AI-credits per maand, levenslang","10+ widgets","Prioritaire ondersteuning","Licentie voor één machine","Gratis updates voor 1 jaar"]
+        "features": ["Onbeperkte PDF-verwerking","1.000 AI-credits per maand, levenslang","10+ Nodes","Prioritaire ondersteuning","Licentie voor één machine","Gratis updates voor 1 jaar"]
       }
     ],
     "faqs": [

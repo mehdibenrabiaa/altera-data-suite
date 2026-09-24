@@ -17,7 +17,11 @@
   position: relative;
   background: #fff;
   border: 1px solid #ebebeb;
-  border-radius: 10px;
+  /* Square corners -- the accent stripe (.card::before) is a plain
+     flat-edged rectangle, so a rounded top corner left it visibly
+     clipping past the card's own edge; squared off the bottom too to
+     match, rather than mixing rounded and sharp on the same card. */
+  border-radius: 0;
   padding: 28px 24px 24px;
   display: flex;
   flex-direction: column;

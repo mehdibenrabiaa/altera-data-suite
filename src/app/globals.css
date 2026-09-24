@@ -53,19 +53,28 @@
   unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
+/* Same neutral-palette tokens as the Altera Studio desktop app's own
+   LIGHT theme (devkit/altera-studio/src/App.css's "Theme tokens"
+   section) -- kept in sync with it by hand, since the two are separate
+   codebases. This site is light-only by design (no dark variant --
+   see the removed prefers-color-scheme block this replaced), so only
+   the app's light values are ported here. */
 :root {
-  --background: #efeff0;
-  --foreground: #ededed;
-  --color-primary: #FE4D41;
-  --color-primary-light: #FB766E;
-  --color-text-muted: #666;
-}
+  --bg-panel: #f6f7f9;
+  --bg-subtle: #e9ebef;
+  --bg-hover: #dadde3;
+  --border-color: #d2d6dd;
+  --border-color-strong: #a6acb8;
+  --text-primary: #1b1f27;
+  --text-secondary: #4b5563;
+  --text-muted: #8992a1;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #efeff0;
-    --foreground: #ededed;
-  }
+  --background: var(--bg-subtle);
+  --foreground: var(--text-primary);
+  --color-primary: #FE4D41;
+  --color-primary-hover: #FF6040;
+  --color-primary-light: #FF6040;
+  --color-text-muted: var(--text-secondary);
 }
 
 html {
@@ -95,6 +104,15 @@ body {
   margin: 0;
 }
 
+/* Same scrollbar as the Altera Studio desktop app (App.css's own
+   app-wide rule): flat, squared-off thumb, transparent track -- instead
+   of the OS/browser default rounded pill. */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-color-strong); border-radius: 0; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+::-webkit-scrollbar-corner { background: transparent; }
+
 a {
   color: inherit;
   text-decoration: none;
@@ -113,17 +131,11 @@ a {
 }
 
 main > section:nth-child(odd) {
-  background-color: #fff;
+  background-color: var(--bg-panel);
 }
 
 main > section:nth-child(even) {
-  background-color: #efeff0;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+  background-color: var(--bg-subtle);
 }
 
 /* Prevent iOS Safari auto-zoom on focused inputs (requires font-size >= 16px) */

@@ -109,7 +109,7 @@ export default function CheckoutClient({ lang, planKey }: Props) {
                     </Text>
                   </div>
                 ) : (
-                  <div id={FRAME_ID} className={styles.frame} />
+                  <div className={`${FRAME_ID} ${styles.frame}`} />
                 )}
               </div>
             </>

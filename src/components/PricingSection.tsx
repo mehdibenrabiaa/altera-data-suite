@@ -1,10 +1,8 @@
 "use client";
 
-import { useState } from "react";
 import { Typography } from "antd";
 import styles from "./PricingSection.module.css";
-import { COLOR_PRIMARY } from "@/lib/theme";
-import { openPaddleCheckout } from "@/lib/paddle";
+import { PLANS } from "@/lib/plans";
 import PricingCard from "./PricingCard";
 import SectionBadge from "./SectionBadge";
 import SectionHeading from "./SectionHeading";
@@ -62,43 +60,12 @@ const DEFAULT_T: PricingT = {
   ],
 };
 
-const MONTHLY_PRICE  = 99;
-const YEARLY_PRICE   = Math.round(MONTHLY_PRICE * 12 * 0.8); // 950, ~20% off monthly
-const LIFETIME_PRICE = 2699;
+// PLANS order (lib/plans.ts) is Monthly/Yearly/Lifetime, matching
+// t.plans -- zipped by index below for price/period/color/badge/priceId,
+// while name/subtitle/features stay translated via t.
+const PERIOD_KEYS = ["periodMonthly", "period", "oneTime"] as const;
 
-// Each plan's Paddle Price ID comes from a NEXT_PUBLIC_ env var (must be
-// referenced literally, not via a dynamic key, for Next.js to inline it at
-// build time) -- same convention as NEXT_PUBLIC_API_URL elsewhere in this
-// codebase. Real values are set later in the deploy platform; these are
-// undefined until then, which openPaddleCheckout() treats as "unconfigured".
-const PLAN_META = [
-  { price: MONTHLY_PRICE,  periodKey: "periodMonthly" as const, badgeKey: undefined,                  color: "#595959",     priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_MONTHLY },
-  { price: YEARLY_PRICE,   periodKey: "period" as const,        badgeKey: "popularBadge" as const,    color: COLOR_PRIMARY, priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_YEARLY },
-  { price: LIFETIME_PRICE, periodKey: "oneTime" as const,       badgeKey: "bestValueBadge" as const,  color: "#B8860B",     priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_LIFETIME },
-];
-
-type CheckoutStatus = "idle" | "opening" | "completed" | "error";
-
-export default function PricingSection({ t = DEFAULT_T }: Props) {
-  const [checkout, setCheckout] = useState<{ status: CheckoutStatus; plan?: string }>({
-    status: "idle",
-  });
-
-  const handleCheckout = async (priceId: string | undefined, planName: string) => {
-    setCheckout({ status: "opening", plan: planName });
-    const opened = await openPaddleCheckout(priceId, (event) => {
-      // The webhook (altera-license-server /webhooks/paddle) is what
-      // actually issues and emails the license key -- this is just a
-      // lightweight UI acknowledgment that the purchase went through.
-      if (event.name === "checkout.completed") {
-        setCheckout({ status: "completed", plan: planName });
-      }
-    });
-    if (!opened) {
-      setCheckout({ status: "error", plan: planName });
-    }
-  };
-
+export default function PricingSection({ t = DEFAULT_T, lang = "en" }: Props) {
   return (
     <section className={styles.section}>
       <SectionBadge label={t.badgeLabel} text={t.badgeText} />
@@ -106,41 +73,30 @@ export default function PricingSection({ t = DEFAULT_T }: Props) {
 
       <div style={{ display: "flex", justifyContent: "center", alignItems: "stretch", gap: 24, flexWrap: "wrap", marginBottom: 28 }}>
         {t.plans.map((plan, i) => {
-          const meta   = PLAN_META[i];
-          const price  = meta.price;
-          const period = meta.periodKey ? t[meta.periodKey] : undefined;
+          const meta   = PLANS[i];
+          const period = t[PERIOD_KEYS[i]];
+          const badge  = meta.badge === "popular" ? t.popularBadge : meta.badge === "bestValue" ? t.bestValueBadge : undefined;
           return (
             <PricingCard
               key={plan.name}
               title={plan.name}
-              price={price}
+              price={meta.price}
               period={period}
               subtitle={plan.subtitle}
               features={plan.features}
-              badge={meta.badgeKey ? t[meta.badgeKey] : undefined}
+              badge={badge}
               color={meta.color}
               btnLabel={`${t.getBtn} ${plan.name}`}
               includesLabel={t.includesLabel}
-              loading={checkout.status === "opening" && checkout.plan === plan.name}
-              onClick={() => handleCheckout(meta.priceId, plan.name)}
+              href={`/${lang}/checkout?plan=${meta.key}`}
             />
           );
         })}
       </div>
 
-      {checkout.status === "completed" ? (
-        <Text style={{ display: "block", textAlign: "center", fontSize: 13, color: COLOR_PRIMARY, fontWeight: 600 }}>
-          ✓ {t.checkoutSuccess}
-        </Text>
-      ) : checkout.status === "error" ? (
-        <Text style={{ display: "block", textAlign: "center", fontSize: 13, color: "#c44400", fontWeight: 600 }}>
-          {t.checkoutError}
-        </Text>
-      ) : (
-        <Text style={{ display: "block", textAlign: "center", fontSize: 13, color: "#c44400", fontWeight: 600 }}>
-          {t.topUpNote}
-        </Text>
-      )}
+      <Text style={{ display: "block", textAlign: "center", fontSize: 13, color: "#c44400", fontWeight: 600 }}>
+        {t.topUpNote}
+      </Text>
     </section>
   );
 }

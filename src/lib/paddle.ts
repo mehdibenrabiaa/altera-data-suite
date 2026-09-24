@@ -52,12 +52,16 @@ async function ensurePaddleInitialized(): Promise<Paddle | undefined> {
 }
 
 /**
- * Opens Paddle's overlay checkout for a single price. Returns false (and
- * logs why) if Paddle couldn't be initialized or no price id was given --
- * callers should show their own "checkout unavailable" state in that case.
+ * Mounts Paddle's checkout inline into the element with id `frameTarget`
+ * (our own dedicated /checkout page, not the default overlay popup) so the
+ * surrounding page chrome -- header, order summary, branding -- is all our
+ * own UI. Returns false (and logs why) if Paddle couldn't be initialized or
+ * no price id was given -- callers should show their own "checkout
+ * unavailable" state in that case.
  */
-export async function openPaddleCheckout(
+export async function openInlineCheckout(
   priceId: string | undefined,
+  frameTarget: string,
   onEvent?: (event: PaddleEventData) => void
 ): Promise<boolean> {
   if (!priceId) {
@@ -72,7 +76,13 @@ export async function openPaddleCheckout(
 
   paddle.Checkout.open({
     items: [{ priceId, quantity: 1 }],
-    settings: { displayMode: "overlay" },
+    settings: {
+      displayMode: "inline",
+      frameTarget,
+      frameInitialHeight: 450,
+      frameStyle: "width: 100%; min-width: 300px; background-color: transparent; border: none;",
+      theme: "light",
+    },
   });
 
   return true;

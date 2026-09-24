@@ -9,10 +9,11 @@ interface Props {
   className?: string;
   style?: React.CSSProperties;
   onClick?: () => void;
+  "aria-label"?: string;
   children: React.ReactNode;
 }
 
-export default function SamePageLink({ href, className, style, onClick, children }: Props) {
+export default function SamePageLink({ href, className, style, onClick, children, ...rest }: Props) {
   const pathname = usePathname();
   const { replay, startProgress } = usePageTransition();
 
@@ -27,7 +28,7 @@ export default function SamePageLink({ href, className, style, onClick, children
   };
 
   return (
-    <Link href={href} className={className} style={style} onClick={handleClick}>
+    <Link href={href} className={className} style={style} onClick={handleClick} {...rest}>
       {children}
     </Link>
   );

@@ -23,8 +23,18 @@ async function ensurePaddleInitialized(): Promise<Paddle | undefined> {
   }
 
   if (!initPromise) {
+    // Paddle.js defaults to "production" regardless of which kind of
+    // token you pass it -- a sandbox token against the production
+    // checkout-service gets rejected with a 403, not a clear "wrong
+    // environment" error. NEXT_PUBLIC_PADDLE_ENVIRONMENT makes this an
+    // env-var flip (unset/anything else falls back to "production") for
+    // when this moves from sandbox testing to a real launch, instead of
+    // a code change.
+    const environment =
+      process.env.NEXT_PUBLIC_PADDLE_ENVIRONMENT === "sandbox" ? "sandbox" : "production";
     initPromise = initializePaddle({
       token,
+      environment,
       // Single stable callback registered once with Paddle; individual
       // checkout calls swap out `currentEventHandler` so each CTA click
       // gets its own completion callback without re-initializing.

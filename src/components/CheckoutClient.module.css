@@ -15,7 +15,7 @@
   background: #fff;
   border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1), 0 2px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.12);
 }
 
 /* Left: plan switcher + Paddle's inline payment form (or the success

@@ -21,6 +21,15 @@
   border: 5px solid #ffffff;
   overflow: hidden;
   aspect-ratio: 4 / 4;
+  /* Grid items default to min-height: auto, which lets a card grow
+     taller than its aspect-ratio whenever its content needs more room
+     than the square allows -- invisible in English, but longer
+     translations (German, French, ...) wrap to more lines and silently
+     stretched the card, so cards came out different sizes per language.
+     min-height: 0 makes the aspect-ratio authoritative again; any
+     translation long enough to overflow is clipped by overflow:hidden
+     above instead of resizing the card. */
+  min-height: 0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

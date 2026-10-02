@@ -1,6 +1,4 @@
 import { notFound } from "next/navigation";
-import { AntdRegistry } from "@ant-design/nextjs-registry";
-import AntdProvider from "@/components/AntdProvider";
 import CheckoutHeader from "@/components/CheckoutHeader";
 import PageTransition, { PageTransitionProvider } from "@/components/PageTransition";
 import { hasLocale, LOCALES } from "@/i18n/dictionaries";
@@ -26,13 +24,9 @@ export default async function CheckoutLocaleLayout({
   if (!hasLocale(lang)) notFound();
 
   return (
-    <AntdRegistry>
-      <AntdProvider>
-        <PageTransitionProvider>
-          <CheckoutHeader lang={lang} />
-          <PageTransition>{children}</PageTransition>
-        </PageTransitionProvider>
-      </AntdProvider>
-    </AntdRegistry>
+    <PageTransitionProvider>
+      <CheckoutHeader lang={lang} />
+      <PageTransition>{children}</PageTransition>
+    </PageTransitionProvider>
   );
 }

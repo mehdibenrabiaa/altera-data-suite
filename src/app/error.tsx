@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { Button } from "antd";
+import Button from "@/components/ui/Button";
 import { COLOR_PRIMARY } from "@/lib/theme";
 
 export default function Error({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {

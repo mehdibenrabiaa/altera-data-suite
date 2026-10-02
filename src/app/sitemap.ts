@@ -6,9 +6,11 @@ const LOCALES = ["en", "fr", "es", "de", "nl"] as const;
 const STATIC_ROUTES = [
   { path: "",          changeFrequency: "weekly",  priority: 1.0  },
   { path: "/pricing",  changeFrequency: "monthly", priority: 0.9  },
+  { path: "/download", changeFrequency: "monthly", priority: 0.9  },
   { path: "/docs",     changeFrequency: "weekly",  priority: 0.85 },
   { path: "/faqs",     changeFrequency: "monthly", priority: 0.8  },
   { path: "/about",    changeFrequency: "monthly", priority: 0.7  },
+  { path: "/contact",  changeFrequency: "yearly",  priority: 0.5  },
   { path: "/changelog",changeFrequency: "weekly",  priority: 0.65 },
   { path: "/terms",    changeFrequency: "yearly",  priority: 0.3  },
   { path: "/privacy",  changeFrequency: "yearly",  priority: 0.3  },

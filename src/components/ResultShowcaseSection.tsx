@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Button } from "antd";
+import Button from "@/components/ui/Button";
 import SectionBadge from "./SectionBadge";
 import styles from "./ResultShowcaseSection.module.css";
 

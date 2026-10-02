@@ -1,13 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "antd";
-import { PlayCircleOutlined } from "@ant-design/icons";
+import Button from "@/components/ui/Button";
+import { PlayCircleIcon } from "@/components/icons";
 import DemoModal from "./DemoModal";
 
 interface Props {
   label: string;
-  btnType?: "default" | "primary" | "dashed" | "link" | "text";
+  btnType?: "default" | "primary" | "text";
   size?: "small" | "middle" | "large";
   style?: React.CSSProperties;
 }
@@ -25,7 +25,7 @@ export default function WatchDemoButton({
       <Button
         type={btnType}
         size={size}
-        icon={<PlayCircleOutlined />}
+        icon={<PlayCircleIcon />}
         onClick={() => setOpen(true)}
         style={style}
       >

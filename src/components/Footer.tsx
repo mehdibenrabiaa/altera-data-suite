@@ -11,7 +11,6 @@ interface FooterDict {
   connectHeading: string;
   contactHeading: string;
   emailLabel: string;
-  phoneLabel: string;
   copyright: string;
   langSwitcherLabel: string;
   legalHeading: string;
@@ -20,7 +19,10 @@ interface FooterDict {
     changelog: string;
     pricingPlan: string;
     docs: string;
+    download: string;
     aboutUs: string;
+    contact: string;
+    useCases: string;
     customWidgets: string;
     terms: string;
     privacy: string;
@@ -61,10 +63,13 @@ export default function Footer({ t, lang, langNames }: Props) {
     { label: t.links.changelog, href: `/${lang}/changelog` },
     { label: t.links.pricingPlan, href: `/${lang}/pricing` },
     { label: t.links.docs, href: `/${lang}/docs` },
+    { label: t.links.download, href: `/${lang}/download` },
+    { label: t.links.useCases, href: `/${lang}/use-cases` },
   ];
 
   const companyLinks = [
     { label: t.links.aboutUs, href: `/${lang}/about` },
+    { label: t.links.contact, href: `/${lang}/contact` },
     { label: t.links.customWidgets, href: `/${lang}/custom` },
     { label: t.links.terms, href: `/${lang}/terms` },
     { label: t.links.privacy, href: `/${lang}/privacy` },
@@ -151,10 +156,6 @@ export default function Footer({ t, lang, langNames }: Props) {
               >
                 support@alteradatasuite.com
               </a>
-            </li>
-            <li className={styles.contactItem}>
-              <span className={styles.contactLabel}>{t.phoneLabel}</span>
-              <span className={styles.contactValue}>+212 619 018 921</span>
             </li>
           </ul>
         </div>

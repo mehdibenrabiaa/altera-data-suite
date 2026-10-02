@@ -6,13 +6,17 @@
     "faqs":      { "title": "FAQs",               "description": "Got questions about Altera? Find answers about setup, accuracy, pricing, security, and more." },
     "docs":      { "title": "Docs",               "description": "Learn how to use every Altera node — step-by-step guides, configuration references, and output details for every feature." },
     "changelog": { "title": "Changelog",          "description": "Every update, improvement, and fix to Altera Data Suite — in one place." },
-    "terms":     { "title": "Terms of Service",   "description": "Altera Data Suite terms of use, license restrictions, AI disclaimer, and liability." },
+    "terms":     { "title": "Terms of Service",   "description": "Altera Data Suite terms of use, license restrictions, and liability." },
     "privacy":   { "title": "Privacy Policy",     "description": "How Altera Data Suite collects, uses, and protects your data. GDPR & CCPA compliant." },
-    "refund":    { "title": "Refund Policy",       "description": "30-day money-back guarantee, refund eligibility, and cancellation terms for Altera Data Suite." }
+    "refund":    { "title": "Refund Policy",       "description": "30-day money-back guarantee, refund eligibility, and cancellation terms for Altera Data Suite." },
+    "download":  { "title": "Download",            "description": "Download Altera Data Suite for Windows, macOS, or Linux and start extracting structured data from your PDFs in minutes." },
+    "contact":   { "title": "Contact & Support",   "description": "Get in touch with the Altera Data Suite team — questions, billing, or support, we respond directly, no bots." },
+    "useCases":  { "title": "Use Cases",           "description": "See how teams use Altera Data Suite to extract and structure data from PDFs." }
   },
   "nav": {
     "docs":      "Docs",
     "pricing":   "Pricing",
+    "download":  "Download",
     "about":     "About",
     "faqs":      "FAQs",
     "startFree": "Start for free"
@@ -24,7 +28,6 @@
     "connectHeading":     "Connect",
     "contactHeading":     "Contact Information",
     "emailLabel":         "Email",
-    "phoneLabel":         "Phone",
     "copyright":          "All rights reserved.",
     "langSwitcherLabel":  "Language",
     "legalHeading": "Legal",
@@ -33,7 +36,10 @@
       "changelog":     "Changelog",
       "pricingPlan":   "Pricing Plan",
       "docs":          "Docs",
+      "download":      "Download",
       "aboutUs":       "About Us",
+      "contact":       "Contact",
+      "useCases":      "Use Cases",
       "customWidgets": "Custom Nodes",
       "terms":         "Terms of Service",
       "privacy":       "Privacy Policy",
@@ -42,7 +48,7 @@
   },
   "hero": {
     "announcementBadge": "New ✦",
-    "announcementText":  "AI-powered extraction",
+    "announcementText":  "No-code PDF extraction",
     "headingPart1":      "The App that turns",
     "headingPart2":      "your PDFs into ",
     "headingPart3":      "clean tables",
@@ -81,8 +87,8 @@
   "widgets": {
     "badgeLabel":  "Features",
     "badgeText":   "Purpose-Built Nodes",
-    "heading":     "Your all-in-one solution for fast, efficient PDF parsing.",
-    "subtitle":    "Purpose-built nodes that take your PDFs from raw input to structured, analysis-ready data — no code, no friction.",
+    "heading":     "Your all-in-one solution for fast, efficient PDF and data processing.",
+    "subtitle":    "Purpose-built nodes that take your PDFs and spreadsheets from raw input to structured, analysis-ready data — no code, no friction.",
     "exploreNow":  "Explore Now",
     "items": [
       { "name": "PDF Converter",       "description": "Load any multi-page PDF — payslips, invoices, reports — and instantly extract every field into a clean, row-by-row table ready for analysis." },
@@ -95,7 +101,7 @@
     "badgeLabel":     "Pricing",
     "badgeText":      "Simple Plans, Powerful Features",
     "heading":        "Pick the plan that fits your workflow.",
-    "subtitle":       "Every plan includes AI credits. Top up anytime.",
+    "subtitle":       "Simple, transparent pricing. Upgrade anytime.",
     "popularBadge":   "POPULAR",
     "bestValueBadge": "BEST VALUE",
     "getBtn":         "Get",
@@ -103,27 +109,25 @@
     "periodMonthly":  "/month",
     "oneTime":        "one-time",
     "includesLabel":  "Includes",
-    "topUpNote":      "Run out of AI credits? Top up anytime — extra credit packs start at $9.",
     "checkoutSuccess": "Check your email for your license key.",
     "checkoutError":   "Checkout isn't available right now. Please try again in a moment or contact support@alteradatasuite.com.",
     "plans": [
       {
         "name": "Monthly", "subtitle": "All-In-One Solution, billed monthly",
-        "features": ["Unlimited PDF Processing","1,000 AI Credits / month","10+ Nodes","Email Support","Single Machine License","Free Updates & Improvements"]
+        "features": ["Unlimited PDF Processing","Batch PDF Processing","10+ Nodes","Email Support","Single Machine License","Free Updates & Improvements"]
       },
       {
         "name": "Yearly", "subtitle": "Save 20% vs monthly billing",
-        "features": ["Unlimited PDF Processing","15,000 AI Credits / year","10+ Nodes","Priority Email Support","Single Machine License","Free Updates & Improvements"]
+        "features": ["Unlimited PDF Processing","Batch PDF Processing","10+ Nodes","Priority Email Support","Single Machine License","Free Updates & Improvements"]
       },
       {
         "name": "Lifetime", "subtitle": "Pay once, own it forever",
-        "features": ["Unlimited PDF Processing","1,000 AI Credits every month, for life","10+ Nodes","Priority Support","Single Machine License","Free Updates for 1 Year"]
+        "features": ["Unlimited PDF Processing","Batch PDF Processing","10+ Nodes","Priority Support","Single Machine License","Free Updates for 1 Year"]
       }
     ],
     "faqs": [
       { "key": "p1", "label": "Can I switch plans later?",                          "text": "Yes. You can switch between Monthly, Yearly, and Lifetime at any time. Your data and workflows stay intact." },
-      { "key": "p2", "label": "What happens when I run out of AI credits?",         "text": "AI-powered features pause until you top up — everything else in the app keeps working normally. Extra credit packs are available anytime from the app." },
-      { "key": "p3", "label": "What's the difference between the plans?",           "text": "Monthly and Yearly are recurring subscriptions billed on that cadence. Lifetime is a single one-time payment for permanent access, with a fixed monthly AI credit allowance included for as long as you use it." },
+      { "key": "p3", "label": "What's the difference between the plans?",           "text": "Monthly and Yearly are recurring subscriptions billed on that cadence. Lifetime is a single one-time payment for permanent access." },
       { "key": "p5", "label": "Do you offer refunds?",                              "text": "Yes — see our 30-day money-back guarantee. If something goes wrong after purchase, reach out and we'll work it out." },
       { "key": "p6", "label": "Can I use Altera on multiple machines?",             "text": "Monthly, Yearly, and Lifetime are all single-machine licenses." }
     ]
@@ -205,6 +209,46 @@
       "scrollZoomOut":   "Zoom out"
     }
   },
+  "download": {
+    "heroBadgeLabel":  "Download",
+    "heroBadgeText":   "Get the app",
+    "heroHeading":     "Download Altera Data Suite",
+    "heroLead":        "Available for Windows, macOS, and Linux. Install in minutes and start extracting your first PDF right away.",
+    "trialNote":       "15-day free trial on every plan — no credit card required.",
+    "unavailableNotice": "The Windows build is temporarily unavailable. Please try again in a few minutes.",
+    "windowsName":     "Windows",
+    "windowsDetail":   "Windows 10 / 11 (64-bit)",
+    "windowsBtn":      "Download for Windows",
+    "macName":         "macOS",
+    "macDetail":       "macOS 12 Monterey or later",
+    "macBtn":          "Download for macOS",
+    "linuxName":       "Linux",
+    "linuxDetail":     "Most major distributions",
+    "linuxBtn":        "Download for Linux",
+    "comingSoon":      "Coming soon",
+    "comingSoonNote":  "In active development — stay tuned.",
+    "helpPre":         "Need help installing?",
+    "helpLink":        "See the Quickstart guide"
+  },
+  "contact": {
+    "badgeLabel": "Support",
+    "badgeText":  "We're here to help",
+    "heading":    "Contact & Support",
+    "lead":       "Questions about Altera, billing, or a specific PDF you're stuck on? Reach out — we're a small team, so you'll always get a real response, not a bot.",
+    "docsTitle":  "Documentation",
+    "docsDesc":   "Step-by-step guides and configuration references for every node.",
+    "docsLink":   "Browse the docs",
+    "faqsTitle":  "FAQs",
+    "faqsDesc":   "Answers to common questions about setup, accuracy, and pricing.",
+    "faqsLink":   "See the FAQs"
+  },
+  "useCases": {
+    "badgeLabel": "Use Cases",
+    "badgeText":  "Coming soon",
+    "heading":    "Real-world ways teams use Altera.",
+    "lead":       "We're putting together detailed use cases for finance, consulting, and operations teams. Check back soon — or get in touch and we'll point you in the right direction today.",
+    "ctaLabel":   "Contact us"
+  },
   "about": {
     "heroBadgeLabel":  "About Us",
     "heroBadgeText":   "The team behind Altera",
@@ -219,7 +263,7 @@
     "story3Heading":   "Going standalone",
     "story3Text":      "The early versions were built to run inside another company's software. That got us moving fast, but it also meant living within someone else's constraints. So we rebuilt Altera as its own desktop app — full control over speed, design, and the experience end to end, with nothing else to install first.",
     "story4Heading":   "Where we're headed",
-    "story4Text":      "The suite is still growing. More nodes are in development, existing ones are actively maintained, and AI is becoming a core part of how Altera extracts, interprets, and structures data. This isn't a finished product — it's an evolving toolkit built to keep pace with how data work actually happens.",
+    "story4Text":      "The suite is still growing. More nodes are in development, and existing ones are actively maintained. This isn't a finished product — it's an evolving toolkit built to keep pace with how data work actually happens.",
     "ctaHeading":      "Ready to see it in action?",
     "ctaSubtitle":     "Watch the demo to see how Altera handles real PDFs, or explore the pricing to find the plan that fits.",
     "watchDemo":       "Watch Demo",
@@ -244,7 +288,7 @@
   },
   "chatbot": {
     "triggerTitle":    "Ask Altera",
-    "triggerSubtitle": "AI-powered assistant",
+    "triggerSubtitle": "Here to help",
     "panelTitle":      "Altera Assistant",
     "panelSubtitle":   "Ask me anything",
     "placeholder":     "Ask a question…",
@@ -254,7 +298,7 @@
     "quickReplies": [
       { "question": "How does PDF Converter work?",   "answer": "Open your PDF, draw rectangles over the data you want to extract, optionally place column guides, then click Convert. You get a clean structured table ready for further processing." },
       { "question": "What nodes are available?",    "answer": "Altera includes 9 nodes: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates, and Cleaner." },
-      { "question": "How does pricing work?",          "answer": "Choose Monthly, Yearly, or Lifetime — every plan includes AI credits, and you can top up anytime if you run out. Head to the Pricing page for full details." }
+      { "question": "How does pricing work?",          "answer": "Choose Monthly, Yearly, or Lifetime. Head to the Pricing page for full details." }
     ]
   },
   "lang": {
@@ -294,23 +338,19 @@
             ]
           },
           {
-            "heading": "3. AI Accuracy Disclaimer",
-            "body": "The REGEX AI Generator and data extraction features use artificial intelligence and are not 100% accurate. Results may vary based on input quality, document complexity, and data formatting. Users are responsible for validating extracted data before using it in production environments."
+            "heading": "3. Trial Terms",
+            "body": "The 15-day free trial is limited to one per machine. After the trial expires, a paid license is required to continue using Altera. You may cancel the trial at any time without penalty."
           },
           {
-            "heading": "4. Trial Terms",
-            "body": "The 7-day free trial is limited to one per machine. After the trial expires, a paid license is required to continue using Altera. You may cancel the trial at any time without penalty."
-          },
-          {
-            "heading": "5. Updates & Maintenance",
+            "heading": "4. Updates & Maintenance",
             "body": "Minor updates and bug fixes are provided free during your subscription. We reserve the right to discontinue features or major versions with 30-day notice. Core functionality will remain available during your active license term."
           },
           {
-            "heading": "6. Data & Privacy",
-            "body": "All user data is processed locally on your machine. Extraction patterns and regex outputs are transmitted to our servers only for AI processing and are not permanently stored. See the Privacy Policy for complete details."
+            "heading": "5. Data & Privacy",
+            "body": "All user data is processed locally on your machine. See the Privacy Policy for complete details."
           },
           {
-            "heading": "7. Limitation of Liability",
+            "heading": "6. Limitation of Liability",
             "body": "Altera Data Suite is provided 'as-is' without warranties of any kind. We are not liable for data loss, extraction errors, or damages resulting from the use or misuse of this software. Users assume all responsibility for validating outputs before relying on them."
           }
         ]
@@ -328,8 +368,7 @@
             "items": [
               "Account Information: Your email address and name (for license registration)",
               "Machine ID: A unique identifier to bind your license to your computer",
-              "Usage Data: Information about which features you use (for product improvement)",
-              "AI Processing Data: Regex patterns and documents sent to our AI servers for processing (not permanently stored)"
+              "Usage Data: Information about which features you use (for product improvement)"
             ]
           },
           {
@@ -337,7 +376,6 @@
             "body": "Your information is used to:",
             "items": [
               "Validate and authenticate your license",
-              "Process your AI requests (regex generation, data extraction)",
               "Improve and optimize our services",
               "Send important updates and license renewal reminders"
             ]
@@ -347,29 +385,23 @@
             "body": "All payment processing is handled by Paddle (our payment processor). We do not store your credit card information. Credit card data is encrypted and processed directly by Paddle according to their privacy standards and PCI compliance requirements."
           },
           {
-            "heading": "4. AI Prompts & Server Processing",
-            "body": "When you use the REGEX AI Generator, your prompts and documents are transmitted to our AI servers for processing. We do not permanently store these inputs. However, we recommend not including sensitive, confidential, or private information (such as personal identifiers, account numbers, or confidential business information) in your prompts. If you have trust concerns about data transmission, we suggest using only non-sensitive test data."
-          },
-          {
-            "heading": "5. Data Retention",
+            "heading": "4. Data Retention",
             "body": "We retain your data as follows:",
             "items": [
               "Account Information: Stored while your license is active; deleted 30 days after cancellation",
-              "Machine ID: Retained for license validation; deleted upon request",
-              "AI Processing Data: Not permanently stored after processing"
+              "Machine ID: Retained for license validation; deleted upon request"
             ]
           },
           {
-            "heading": "6. Third-Party Services",
+            "heading": "5. Third-Party Services",
             "body": "We use the following third-party services:",
             "items": [
               "Paddle: Payment processing and merchant services",
-              "DeepSeek API: AI processing for regex generation",
               "Email Service Provider: For sending license keys and notifications"
             ]
           },
           {
-            "heading": "7. GDPR & CCPA Rights",
+            "heading": "6. GDPR & CCPA Rights",
             "body": "If you are located in the EU (GDPR) or California (CCPA), you have the right to:",
             "items": [
               "Request a copy of your personal data",
@@ -379,11 +411,11 @@
             "note": "To exercise these rights, email us at: support@alteradatasuite.com"
           },
           {
-            "heading": "8. Security",
+            "heading": "7. Security",
             "body": "We use industry-standard encryption and security practices to protect your data. However, no system is 100% secure. We are not liable for unauthorized access due to factors beyond our control."
           },
           {
-            "heading": "9. Contact Us",
+            "heading": "8. Contact Us",
             "body": "For privacy questions or data requests: support@alteradatasuite.com"
           }
         ]

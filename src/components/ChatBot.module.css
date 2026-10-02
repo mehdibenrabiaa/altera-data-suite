@@ -31,6 +31,23 @@
   overflow: hidden;
   height: 460px;
   max-height: calc(100vh - 160px);
+  background: #fff;
+}
+
+.panelHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 14px 16px;
+  flex-shrink: 0;
+}
+
+.panelBody {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
 }
 
 .cardHeader {
@@ -170,10 +187,24 @@
 .inputArea {
   display: flex;
   align-items: center;
+  gap: 8px;
   padding: 10px 14px;
   border-top: 1px solid #f0f0f0;
   background: #fff;
   flex-shrink: 0;
+}
+
+/* Replaces antd's <Input variant="borderless"> */
+.inputField {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  color: #333;
+  min-width: 0;
+}
+.inputField::placeholder {
+  color: #aaa;
 }
 
 /* ── Responsive ──────────────────────────────── */

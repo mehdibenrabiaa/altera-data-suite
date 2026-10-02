@@ -1,13 +1,10 @@
 "use client";
 
-import { Typography } from "antd";
 import styles from "./PricingSection.module.css";
 import { PLANS } from "@/lib/plans";
 import PricingCard from "./PricingCard";
 import SectionBadge from "./SectionBadge";
 import SectionHeading from "./SectionHeading";
-
-const { Text } = Typography;
 
 interface PricingPlan {
   name: string;
@@ -27,7 +24,6 @@ interface PricingT {
   periodMonthly: string;
   oneTime: string;
   includesLabel: string;
-  topUpNote: string;
   checkoutSuccess: string;
   checkoutError: string;
   plans: PricingPlan[];
@@ -42,7 +38,7 @@ const DEFAULT_T: PricingT = {
   badgeLabel:     "Pricing",
   badgeText:      "Simple Plans, Powerful Features",
   heading:        "Pick the plan that fits your workflow.",
-  subtitle:       "Every plan includes AI credits. Top up anytime.",
+  subtitle:       "Simple, transparent pricing. Upgrade anytime.",
   popularBadge:   "POPULAR",
   bestValueBadge: "BEST VALUE",
   getBtn:         "Get",
@@ -50,13 +46,12 @@ const DEFAULT_T: PricingT = {
   periodMonthly:  "/month",
   oneTime:        "one-time",
   includesLabel:  "Includes",
-  topUpNote:      "Run out of AI credits? Top up anytime — extra credit packs start at $9.",
   checkoutSuccess: "Check your email for your license key.",
   checkoutError:   "Checkout isn't available right now. Please try again in a moment or contact support@alteradatasuite.com.",
   plans: [
-    { name: "Monthly",   subtitle: "All-In-One Solution, billed monthly",                    features: ["Unlimited PDF Processing","1,000 AI Credits / month","10+ Nodes","Email Support","Single Machine License","Free Updates & Improvements"] },
-    { name: "Yearly",    subtitle: "Save 20% vs monthly billing",                              features: ["Unlimited PDF Processing","15,000 AI Credits / year","10+ Nodes","Priority Email Support","Single Machine License","Free Updates & Improvements"] },
-    { name: "Lifetime",  subtitle: "Pay once, own it forever",                                features: ["Unlimited PDF Processing","1,000 AI Credits every month, for life","10+ Nodes","Priority Support","Single Machine License","Free Updates for 1 Year"] },
+    { name: "Monthly",   subtitle: "All-In-One Solution, billed monthly",                    features: ["Unlimited PDF Processing","Batch PDF Processing","10+ Nodes","Email Support","Single Machine License","Free Updates & Improvements"] },
+    { name: "Yearly",    subtitle: "Save 20% vs monthly billing",                              features: ["Unlimited PDF Processing","Batch PDF Processing","10+ Nodes","Priority Email Support","Single Machine License","Free Updates & Improvements"] },
+    { name: "Lifetime",  subtitle: "Pay once, own it forever",                                features: ["Unlimited PDF Processing","Batch PDF Processing","10+ Nodes","Priority Support","Single Machine License","Free Updates for 1 Year"] },
   ],
 };
 
@@ -93,10 +88,6 @@ export default function PricingSection({ t = DEFAULT_T, lang = "en" }: Props) {
           );
         })}
       </div>
-
-      <Text style={{ display: "block", textAlign: "center", fontSize: 13, color: "#c44400", fontWeight: 600 }}>
-        {t.topUpNote}
-      </Text>
     </section>
   );
 }

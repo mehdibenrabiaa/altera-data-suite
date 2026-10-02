@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { AntdRegistry } from "@ant-design/nextjs-registry";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import AntdProvider from "@/components/AntdProvider";
 import PageTransition, { PageTransitionProvider } from "@/components/PageTransition";
 import { getDictionary, hasLocale, LOCALES } from "@/i18n/dictionaries";
 
@@ -45,14 +43,10 @@ export default async function LocaleLayout({
   const dict = await getDictionary(lang);
 
   return (
-    <AntdRegistry>
-      <AntdProvider>
-        <PageTransitionProvider>
-          <Navbar t={dict.nav} lang={lang} />
-          <PageTransition>{children}</PageTransition>
-          <Footer t={dict.footer} lang={lang} langNames={dict.lang} />
-        </PageTransitionProvider>
-      </AntdProvider>
-    </AntdRegistry>
+    <PageTransitionProvider>
+      <Navbar t={dict.nav} lang={lang} />
+      <PageTransition>{children}</PageTransition>
+      <Footer t={dict.footer} lang={lang} langNames={dict.lang} />
+    </PageTransitionProvider>
   );
 }

@@ -1,25 +1,25 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import Image from "next/image";
-import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+import { LeftIcon, RightIcon, InfoIcon, WarningIcon } from "@/components/icons";
 import { AnimatePresence, motion } from "framer-motion";
-import {
-  Alert,
-  Card,
-  Divider,
-  Flex,
-  Input,
-  Menu,
-  Radio,
-  Steps,
-  Tag,
-  Typography,
-} from "antd";
 import styles from "./docs.module.css";
 import { WIDGET_DOCS } from "@/data/widgetDocs";
 
-const { Title, Text, Paragraph } = Typography;
+// Lets cards elsewhere on the site (e.g. the homepage's node grid) deep-link
+// straight to a specific node's docs via ?node=<id> -- read the same way
+// DownloadCards reads the client-only OS: null on the server (matches the
+// default-tab first render, no hydration mismatch), the real id right after.
+function getNodeIdFromUrl(): string | null {
+  const id = new URLSearchParams(window.location.search).get("node");
+  return WIDGET_DOCS.some((w) => w.id === id) ? id : null;
+}
+const noopSubscribe = () => () => {};
+const serverSnapshot = () => null;
+function useUrlNodeId(): string | null {
+  return useSyncExternalStore(noopSubscribe, getNodeIdFromUrl, serverSnapshot);
+}
 
 interface DocsShortcuts {
   toggleHand: string;
@@ -90,7 +90,10 @@ const DEFAULT_T: DocsT = {
 };
 
 export default function DocsClient({ t = DEFAULT_T }: Props) {
-  const [activeId, setActiveId] = useState(WIDGET_DOCS[0].id);
+  const urlNodeId = useUrlNodeId();
+  const [manualId, setManualId] = useState<string | null>(null);
+  const activeId = manualId ?? urlNodeId ?? WIDGET_DOCS[0].id;
+  const setActiveId = setManualId;
   const active = WIDGET_DOCS.find((w) => w.id === activeId)!;
   const activeIndex = WIDGET_DOCS.findIndex((w) => w.id === activeId);
   const prevWidget = activeIndex > 0 ? WIDGET_DOCS[activeIndex - 1] : null;
@@ -101,43 +104,6 @@ export default function DocsClient({ t = DEFAULT_T }: Props) {
     setActiveId(id);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
-
-  const menuItems = WIDGET_DOCS.map((w) => ({
-    key: w.id,
-    icon: w.svgIcon ? (
-      <span
-        className={styles.nodeIconTile}
-        style={{ width: 22, height: 22, background: w.color }}
-      >
-        <Image src={`/widgets_icons/${w.svgIcon}`} alt="" width={13} height={13} />
-      </span>
-    ) : (
-      <span style={{ fontSize: 16 }}>{w.icon}</span>
-    ),
-    label: w.name,
-  }));
-
-  const stepItems = active.steps.map((step) => ({
-    title: (
-      <Flex align="center" gap={7}>
-        {step.icon && (
-          <Image
-            src={`/widgets_icons/${step.icon}`}
-            alt=""
-            width={18}
-            height={18}
-            style={{ display: "block", flexShrink: 0 }}
-          />
-        )}
-        <Text strong style={{ fontSize: 14.5 }}>
-          {step.title}
-        </Text>
-      </Flex>
-    ),
-    content: (
-      <Text style={{ fontSize: 13.5, color: "#666" }}>{step.detail}</Text>
-    ),
-  }));
 
   const SHORTCUT_ROWS = [
     { keys: ["H"],             desc: t.shortcuts.toggleHand },
@@ -156,13 +122,29 @@ export default function DocsClient({ t = DEFAULT_T }: Props) {
     <div className={styles.layout}>
       {/* Sidebar */}
       <aside className={styles.sidebar}>
-        <Menu
-          mode="inline"
-          selectedKeys={[activeId]}
-          items={menuItems}
-          onClick={({ key }) => setActiveId(key)}
-          style={{ background: "transparent", border: "none" }}
-        />
+        <ul className={styles.menuList}>
+          {WIDGET_DOCS.map((w) => (
+            <li key={w.id}>
+              <button
+                type="button"
+                className={`${styles.menuItem} ${activeId === w.id ? styles.menuItemActive : ""}`}
+                onClick={() => setActiveId(w.id)}
+              >
+                {w.svgIcon ? (
+                  <span
+                    className={styles.nodeIconTile}
+                    style={{ width: 22, height: 22, background: w.color }}
+                  >
+                    <Image src={`/widgets_icons/${w.svgIcon}`} alt="" width={13} height={13} />
+                  </span>
+                ) : (
+                  <span style={{ fontSize: 16 }}>{w.icon}</span>
+                )}
+                {w.name}
+              </button>
+            </li>
+          ))}
+        </ul>
       </aside>
 
       {/* Content */}
@@ -190,96 +172,99 @@ export default function DocsClient({ t = DEFAULT_T }: Props) {
                 )}
               </div>
               <div className={styles.widgetMeta}>
-                <Title
-                  level={2}
-                  style={{ margin: 0, fontSize: 28, lineHeight: 1.2 }}
-                >
+                <h2 style={{ margin: 0, fontSize: 28, fontWeight: 600, lineHeight: 1.2 }}>
                   {active.name}
-                </Title>
-                <Text style={{ fontSize: 15, color: "#666" }}>
+                </h2>
+                <span style={{ fontSize: 15, color: "#666" }}>
                   {active.tagline}
-                </Text>
+                </span>
               </div>
             </div>
 
-            <Divider />
+            <hr style={{ margin: "24px 0", border: "none", borderTop: "1px solid #f0f0f0" }} />
 
             <div className={styles.sections}>
               {/* Overview */}
-              <Card title={t.overview} variant="borderless" className={styles.card}>
-                <Paragraph
-                  style={{
-                    fontSize: 14.5,
-                    color: "#444",
-                    lineHeight: 1.78,
-                    margin: 0,
-                  }}
-                >
+              <div className={styles.card}>
+                <div className={styles.cardTitle}>{t.overview}</div>
+                <p style={{ fontSize: 14.5, color: "#444", lineHeight: 1.78, margin: 0 }}>
                   {active.description}
-                </Paragraph>
-              </Card>
+                </p>
+              </div>
 
               {/* Best For */}
-              <Card title={t.bestFor} variant="borderless" className={styles.card}>
-                <Flex vertical gap={12}>
+              <div className={styles.card}>
+                <div className={styles.cardTitle}>{t.bestFor}</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                   {active.useCases.map((uc) => (
-                    <Text key={uc} style={{ fontSize: 14.5, color: "#444" }}>
+                    <span key={uc} style={{ fontSize: 14.5, color: "#444" }}>
                       {uc}
-                    </Text>
+                    </span>
                   ))}
-                </Flex>
-              </Card>
+                </div>
+              </div>
 
               {/* How to Use */}
-              <Card title={t.howToUse} variant="borderless" className={styles.card}>
-                <Steps orientation="vertical" current={-1} items={stepItems} />
-              </Card>
+              <div className={styles.card}>
+                <div className={styles.cardTitle}>{t.howToUse}</div>
+                <div className={styles.stepsList}>
+                  {active.steps.map((step, i) => (
+                    <div key={i} className={styles.stepItem}>
+                      <span className={styles.stepDot}>{i + 1}</span>
+                      <div style={{ display: "flex", alignItems: "center", gap: 7, marginBottom: 4 }}>
+                        {step.icon && (
+                          <Image
+                            src={`/widgets_icons/${step.icon}`}
+                            alt=""
+                            width={18}
+                            height={18}
+                            style={{ display: "block", flexShrink: 0 }}
+                          />
+                        )}
+                        <span style={{ fontWeight: 600, fontSize: 14.5 }}>{step.title}</span>
+                      </div>
+                      <span style={{ fontSize: 13.5, color: "#666" }}>{step.detail}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
 
               {/* Input */}
-              <Card
-                title={
-                  <Flex align="center" gap={8}>
-                    {t.input}
-                    <Tag color="default">{active.inputType}</Tag>
-                  </Flex>
-                }
-                variant="borderless"
-                className={styles.card}
-              >
-                <Flex vertical gap={10}>
+              <div className={styles.card}>
+                <div className={styles.cardTitle} style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  {t.input}
+                  <span className={styles.tag}>{active.inputType}</span>
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   {active.inputNotes.map((note, i) => (
-                    <Text key={i} style={{ fontSize: 14, color: "#555" }}>
+                    <span key={i} style={{ fontSize: 14, color: "#555" }}>
                       {note}
-                    </Text>
+                    </span>
                   ))}
-                </Flex>
-              </Card>
+                </div>
+              </div>
 
               {/* Output */}
-              <Card
-                title={
-                  <Flex align="center" gap={8}>
-                    {t.output}
-                    <Tag color="default">{active.outputType}</Tag>
-                  </Flex>
-                }
-                variant="borderless"
-                className={styles.card}
-              >
-                <Flex vertical gap={10}>
+              <div className={styles.card}>
+                <div className={styles.cardTitle} style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  {t.output}
+                  <span className={styles.tag}>{active.outputType}</span>
+                </div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   {active.outputNotes.map((note, i) => (
-                    <Text key={i} style={{ fontSize: 14, color: "#555" }}>
+                    <span key={i} style={{ fontSize: 14, color: "#555" }}>
                       {note}
-                    </Text>
+                    </span>
                   ))}
-                </Flex>
-              </Card>
+                </div>
+              </div>
 
               {/* Toolbar Reference & Keyboard Shortcuts — PDF Converter only */}
               {active.id === "pdf_converter" && (
                 <>
-                  <Card title={t.toolbarRef} variant="borderless" className={styles.card}>
-                    <Flex vertical gap={0}>
+                  <div className={styles.card}>
+                    <div className={styles.cardTitle}>{t.toolbarRef}</div>
+                    <div style={{ display: "flex", flexDirection: "column" }}>
                       {/* Hand Tool */}
                       <div className={styles.toolRow}>
                         <div className={styles.toolIconWrap}>
@@ -290,17 +275,17 @@ export default function DocsClient({ t = DEFAULT_T }: Props) {
                             height={20}
                           />
                         </div>
-                        <Flex vertical gap={3}>
-                          <Text strong style={{ fontSize: 14 }}>
+                        <div style={{ display: "flex", flexDirection: "column", gap: 3 }}>
+                          <span style={{ fontWeight: 600, fontSize: 14 }}>
                             {t.handTool}
-                          </Text>
-                          <Text style={{ fontSize: 13.5, color: "#666" }}>
+                          </span>
+                          <span style={{ fontSize: 13.5, color: "#666" }}>
                             {t.handToolDesc}
-                          </Text>
-                        </Flex>
+                          </span>
+                        </div>
                       </div>
 
-                      <Divider style={{ margin: "12px 0" }} />
+                      <hr style={{ margin: "12px 0", border: "none", borderTop: "1px solid #f0f0f0" }} />
 
                       {/* Selection Tool */}
                       <div className={styles.toolRow}>
@@ -312,21 +297,21 @@ export default function DocsClient({ t = DEFAULT_T }: Props) {
                             height={20}
                           />
                         </div>
-                        <Flex vertical gap={3}>
-                          <Text strong style={{ fontSize: 14 }}>
+                        <div style={{ display: "flex", flexDirection: "column", gap: 3 }}>
+                          <span style={{ fontWeight: 600, fontSize: 14 }}>
                             {t.selectionTool}
-                          </Text>
-                          <Text style={{ fontSize: 13.5, color: "#666" }}>
+                          </span>
+                          <span style={{ fontSize: 13.5, color: "#666" }}>
                             {t.selectionToolDesc}
-                          </Text>
-                        </Flex>
+                          </span>
+                        </div>
                       </div>
 
-                      <Divider style={{ margin: "12px 0" }} />
+                      <hr style={{ margin: "12px 0", border: "none", borderTop: "1px solid #f0f0f0" }} />
 
                       {/* Page Navigation */}
                       <div className={styles.toolRow}>
-                        <Flex align="center" gap={6} style={{ flexShrink: 0 }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: 6, flexShrink: 0 }}>
                           <div className={styles.navBtn}>
                             <Image
                               src="/widgets_icons/previous-page.svg"
@@ -335,18 +320,7 @@ export default function DocsClient({ t = DEFAULT_T }: Props) {
                               height={18}
                             />
                           </div>
-                          <Input
-                            readOnly
-                            value="1 / 229"
-                            style={{
-                              width: 82,
-                              textAlign: "center",
-                              borderRadius: 8,
-                              fontVariantNumeric: "tabular-nums",
-                              cursor: "default",
-                              fontSize: 13,
-                            }}
-                          />
+                          <input readOnly value="1 / 229" className={styles.pageInput} />
                           <div className={styles.navBtn}>
                             <Image
                               src="/widgets_icons/next-page.svg"
@@ -355,78 +329,84 @@ export default function DocsClient({ t = DEFAULT_T }: Props) {
                               height={18}
                             />
                           </div>
-                        </Flex>
-                        <Flex vertical gap={3}>
-                          <Text strong style={{ fontSize: 14 }}>
+                        </div>
+                        <div style={{ display: "flex", flexDirection: "column", gap: 3 }}>
+                          <span style={{ fontWeight: 600, fontSize: 14 }}>
                             {t.pageNav}
-                          </Text>
-                          <Text style={{ fontSize: 13.5, color: "#666" }}>
+                          </span>
+                          <span style={{ fontSize: 13.5, color: "#666" }}>
                             {t.pageNavDesc}
-                          </Text>
-                        </Flex>
+                          </span>
+                        </div>
                       </div>
-                    </Flex>
-                  </Card>
+                    </div>
+                  </div>
 
                   {/* Keyboard Shortcuts */}
-                  <Card title={t.keyboardShortcuts} variant="borderless" className={styles.card}>
+                  <div className={styles.card}>
+                    <div className={styles.cardTitle}>{t.keyboardShortcuts}</div>
                     <div className={styles.shortcutsGrid}>
                       {SHORTCUT_ROWS.map(({ keys, desc }, i) => (
                         <div key={i} className={styles.shortcutRow}>
-                          <Flex align="center" gap={4}>
+                          <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
                             {keys.map((k, j) => (
                               <span key={j} className={styles.kbd}>
                                 {k}
                               </span>
                             ))}
-                          </Flex>
-                          <Text style={{ fontSize: 13.5, color: "#555" }}>
+                          </div>
+                          <span style={{ fontSize: 13.5, color: "#555" }}>
                             {desc}
-                          </Text>
+                          </span>
                         </div>
                       ))}
                     </div>
-                  </Card>
+                  </div>
                 </>
               )}
 
               {/* Tips */}
-              <Card title={t.tipsNotes} variant="borderless" className={styles.card}>
-                <Flex vertical gap={10}>
+              <div className={styles.card}>
+                <div className={styles.cardTitle}>{t.tipsNotes}</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
                   {active.tips.map((tip, i) => (
-                    <Alert
+                    <div
                       key={i}
-                      type={tip.type === "warning" ? "warning" : "info"}
-                      showIcon
-                      title={
-                        <Text strong style={{ fontSize: 13.5 }}>
-                          {tip.title}
-                        </Text>
-                      }
-                      description={
-                        <Text style={{ fontSize: 13.5 }}>{tip.body}</Text>
-                      }
-                    />
+                      className={`${styles.alertBox} ${tip.type === "warning" ? styles.alertWarning : styles.alertInfo}`}
+                    >
+                      <span className={styles.alertIcon}>
+                        {tip.type === "warning" ? <WarningIcon size={15} /> : <InfoIcon size={15} />}
+                      </span>
+                      <div>
+                        <div style={{ fontWeight: 600, fontSize: 13.5 }}>{tip.title}</div>
+                        <div style={{ fontSize: 13.5 }}>{tip.body}</div>
+                      </div>
+                    </div>
                   ))}
-                </Flex>
-              </Card>
+                </div>
+              </div>
             </div>
 
             {/* Prev / Next navigation */}
             {(prevWidget || nextWidget) && (
-              <Flex
-                justify="center"
+              <div
                 style={{
+                  display: "flex",
+                  justifyContent: "center",
                   marginTop: 40,
                   paddingTop: 24,
                   borderTop: "1px solid #f0f0f0",
                 }}
               >
-                <Radio.Group size="large" value="" onChange={(e) => navigateTo(e.target.value)} className={styles.widgetNav}>
+                <div style={{ display: "flex", gap: 12 }}>
                   {prevWidget && (
-                    <Radio.Button value={prevWidget.id}>
+                    <button
+                      type="button"
+                      className={styles.widgetNavBtn}
+                      onClick={() => navigateTo(prevWidget.id)}
+                    >
                       <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
-                        <LeftOutlined />
+                        <LeftIcon />
                         {prevWidget.svgIcon ? (
                           <span
                             className={styles.nodeIconTile}
@@ -439,10 +419,14 @@ export default function DocsClient({ t = DEFAULT_T }: Props) {
                         )}
                         {prevWidget.name}
                       </span>
-                    </Radio.Button>
+                    </button>
                   )}
                   {nextWidget && (
-                    <Radio.Button value={nextWidget.id}>
+                    <button
+                      type="button"
+                      className={styles.widgetNavBtn}
+                      onClick={() => navigateTo(nextWidget.id)}
+                    >
                       <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
                         {nextWidget.name}
                         {nextWidget.svgIcon ? (
@@ -455,12 +439,12 @@ export default function DocsClient({ t = DEFAULT_T }: Props) {
                         ) : (
                           <span>{nextWidget.icon}</span>
                         )}
-                        <RightOutlined />
+                        <RightIcon />
                       </span>
-                    </Radio.Button>
+                    </button>
                   )}
-                </Radio.Group>
-              </Flex>
+                </div>
+              </div>
             )}
           </motion.div>
         </AnimatePresence>
@@ -486,14 +470,14 @@ export default function DocsClient({ t = DEFAULT_T }: Props) {
             <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
           </svg>
         </div>
-        <Flex vertical gap={2}>
-          <Text strong style={{ fontSize: 13, color: "#111", lineHeight: 1.4 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+          <span style={{ fontWeight: 600, fontSize: 13, color: "#111", lineHeight: 1.4 }}>
             {t.watchTutorials}
-          </Text>
-          <Text style={{ fontSize: 11.5, color: "#999" }}>
+          </span>
+          <span style={{ fontSize: 11.5, color: "#999" }}>
             {t.viewPlaylist}
-          </Text>
-        </Flex>
+          </span>
+        </div>
       </motion.a>
     </div>
   );

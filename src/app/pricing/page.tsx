@@ -14,14 +14,9 @@ const pricingFaqs = [
     children: "Yes. You can switch between Monthly, Yearly, and Lifetime at any time. Your data and workflows stay intact.",
   },
   {
-    key: "p2",
-    label: "What happens when I run out of AI credits?",
-    children: "AI-powered features pause until you top up — everything else in the app keeps working normally. Extra credit packs are available anytime from the app.",
-  },
-  {
     key: "p3",
     label: "What's the difference between the plans?",
-    children: "Monthly and Yearly are recurring subscriptions billed on that cadence. Lifetime is a single one-time payment for permanent access, with a fixed monthly AI credit allowance included for as long as you use it.",
+    children: "Monthly and Yearly are recurring subscriptions billed on that cadence. Lifetime is a single one-time payment for permanent access.",
   },
   {
     key: "p5",

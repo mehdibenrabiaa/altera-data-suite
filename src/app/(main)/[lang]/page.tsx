@@ -73,21 +73,21 @@ export default async function HomePage({
         "name": "Monthly",
         "price": "99",
         "priceCurrency": "USD",
-        "description": "Unlimited PDF processing, AI-powered tools with monthly AI credits, single machine license"
+        "description": "Unlimited PDF processing, 10+ nodes, single machine license"
       },
       {
         "@type": "Offer",
         "name": "Yearly",
         "price": "950",
         "priceCurrency": "USD",
-        "description": "Unlimited PDF processing, AI-powered tools with yearly AI credits, single machine license"
+        "description": "Unlimited PDF processing, 10+ nodes, single machine license"
       },
       {
         "@type": "Offer",
         "name": "Lifetime",
         "price": "2699",
         "priceCurrency": "USD",
-        "description": "One-time payment for permanent access, with monthly AI credits included for life"
+        "description": "One-time payment for permanent access"
       }
     ],
     "aggregateRating": {
@@ -122,7 +122,7 @@ export default async function HomePage({
       <Hero t={dict.hero} lang={lang} featureCards={dict.featureCards} />
       <ResultShowcaseSection t={dict.resultShowcase} lang={lang} />
       <StatsSection t={dict.stats} />
-      <WidgetsSection t={dict.widgets} />
+      <WidgetsSection t={dict.widgets} lang={lang} />
       <PricingSection t={dict.pricing} lang={lang} />
       <TestimonialsSection t={dict.testimonials} />
       <CustomWidgetSection t={dict.customWidget} />

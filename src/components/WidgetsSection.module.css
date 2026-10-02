@@ -17,6 +17,8 @@
   position: relative;
   background: #fff;
   border: 1px solid #ebebeb;
+  text-decoration: none;
+  color: inherit;
   /* Square corners -- the accent stripe (.card::before) is a plain
      flat-edged rectangle, so a rounded top corner left it visibly
      clipping past the card's own edge; squared off the bottom too to

@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Flex } from "antd";
+import Button from "@/components/ui/Button";
 import Link from "next/link";
 import Image from "next/image";
 import FeatureCardsSection from "./FeatureCardsSection";
@@ -55,7 +55,7 @@ export default function Hero({ t, lang, featureCards }: Props) {
       <p className={styles.subtitle}>{t.subtitle}</p>
 
       {/* CTAs */}
-      <Flex gap={12} justify="center">
+      <div style={{ display: "flex", gap: 12, justifyContent: "center" }}>
         <Button
           type="primary"
           size="large"
@@ -65,7 +65,7 @@ export default function Hero({ t, lang, featureCards }: Props) {
           {t.startFree}
         </Button>
         <WatchDemoButton label={t.watchDemo} />
-      </Flex>
+      </div>
 
       {/* Feature Cards */}
       <FeatureCardsSection t={featureCards} />

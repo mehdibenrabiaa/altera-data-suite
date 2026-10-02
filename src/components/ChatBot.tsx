@@ -2,14 +2,34 @@
 
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { CloseOutlined, RobotOutlined, SendOutlined } from "@ant-design/icons";
-import { Avatar, Button, Card, Input, Typography } from "antd";
+import { CloseIcon, RobotIcon, SendIcon } from "@/components/icons";
+import Button from "@/components/ui/Button";
 import styles from "./ChatBot.module.css";
 import { COLOR_PRIMARY, COLOR_PRIMARY_LIGHT, COLOR_TEXT_MUTED } from "@/lib/theme";
 
-const { Text } = Typography;
-
 type Message = { role: "bot" | "user"; text: string };
+
+// Replaces antd's <Avatar icon={<RobotOutlined/>}> -- used at two sizes
+// (the panel header's default ~32px, and 28px on every message bubble).
+function BotAvatar({ size = 28, background }: { size?: number; background: string }) {
+  return (
+    <div
+      style={{
+        width: size,
+        height: size,
+        borderRadius: "50%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background,
+        color: "#fff",
+        flexShrink: 0,
+      }}
+    >
+      <RobotIcon size={Math.round(size * 0.6)} />
+    </div>
+  );
+}
 
 interface QuickReply {
   question: string;
@@ -34,7 +54,7 @@ interface Props {
 
 const DEFAULT_T: ChatBotT = {
   triggerTitle:    "Ask Altera",
-  triggerSubtitle: "AI-powered assistant",
+  triggerSubtitle: "Here to help",
   panelTitle:      "Altera Assistant",
   panelSubtitle:   "Ask me anything",
   placeholder:     "Ask a question…",
@@ -44,7 +64,7 @@ const DEFAULT_T: ChatBotT = {
   quickReplies: [
     { question: "How does PDF Converter work?",  answer: "Open your PDF, draw rectangles over the data you want to extract, optionally place column guides, then click Convert. You get a clean structured table ready for further processing." },
     { question: "What nodes are available?",   answer: "Altera includes 9 nodes: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates, and Cleaner." },
-    { question: "How does pricing work?",        answer: "Choose Monthly, Yearly, or Lifetime — every plan includes AI credits, and you can top up anytime if you run out. Head to the Pricing page for full details." },
+    { question: "How does pricing work?",        answer: "Choose Monthly, Yearly, or Lifetime. Head to the Pricing page for full details." },
   ],
 };
 
@@ -159,42 +179,44 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
             exit={{ opacity: 0, y: 16, scale: 0.96 }}
             transition={{ duration: 0.22, ease: "easeOut" }}
           >
-            <Card
-              variant="borderless"
-              className={styles.panel}
-              title={
+            <div className={styles.panel}>
+              <div
+                className={styles.panelHeader}
+                style={{ background: `linear-gradient(135deg, ${COLOR_PRIMARY} 0%, ${COLOR_PRIMARY_LIGHT} 100%)` }}
+              >
                 <div className={styles.cardHeader}>
-                  <Avatar
-                    icon={<RobotOutlined />}
-                    style={{ background: "rgba(255,255,255,0.22)", flexShrink: 0 }}
-                  />
+                  <BotAvatar background="rgba(255,255,255,0.22)" size={32} />
                   <div style={{ display: "flex", flexDirection: "column", gap: 1 }}>
-                    <Text strong style={{ color: "#fff", fontSize: 14, lineHeight: 1.2 }}>
+                    <span style={{ fontWeight: 600, color: "#fff", fontSize: 14, lineHeight: 1.2 }}>
                       {t.panelTitle}
-                    </Text>
-                    <Text style={{ color: "rgba(255,255,255,0.72)", fontSize: 11.5, lineHeight: 1.2 }}>
+                    </span>
+                    <span style={{ color: "rgba(255,255,255,0.72)", fontSize: 11.5, lineHeight: 1.2 }}>
                       {t.panelSubtitle}
-                    </Text>
+                    </span>
                   </div>
                 </div>
-              }
-              extra={
-                <Button
-                  type="text"
-                  icon={<CloseOutlined />}
+                <button
+                  type="button"
                   onClick={() => setOpen(false)}
-                  style={{ color: "rgba(255,255,255,0.85)" }}
-                />
-              }
-              styles={{
-                header: {
-                  background: `linear-gradient(135deg, ${COLOR_PRIMARY} 0%, ${COLOR_PRIMARY_LIGHT} 100%)`,
-                  borderBottom: "none",
-                  padding: "14px 16px",
-                },
-                body: { padding: 0, display: "flex", flexDirection: "column", flex: 1, overflow: "hidden" },
-              }}
-            >
+                  aria-label="Close chat"
+                  style={{
+                    background: "transparent",
+                    border: "none",
+                    color: "rgba(255,255,255,0.85)",
+                    cursor: "pointer",
+                    width: 28,
+                    height: 28,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    borderRadius: 4,
+                  }}
+                >
+                  <CloseIcon size={14} />
+                </button>
+              </div>
+
+              <div className={styles.panelBody}>
               {/* Messages */}
               <div className={styles.messages}>
                 <AnimatePresence initial={false}>
@@ -206,13 +228,11 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
                       transition={{ duration: 0.18 }}
                       className={msg.role === "user" ? styles.userRow : styles.botRow}
                     >
-                      {msg.role === "bot" && (
-                        <Avatar size={28} icon={<RobotOutlined />} style={{ background: COLOR_PRIMARY, flexShrink: 0 }} />
-                      )}
+                      {msg.role === "bot" && <BotAvatar background={COLOR_PRIMARY} />}
                       <div className={msg.role === "user" ? styles.userBubble : styles.bubble}>
-                        <Text className={styles.msgText} style={{ color: msg.role === "user" ? "#fff" : "#333" }}>
+                        <span className={styles.msgText} style={{ color: msg.role === "user" ? "#fff" : "#333" }}>
                           {msg.text}
-                        </Text>
+                        </span>
                       </div>
                     </motion.div>
                   ))}
@@ -226,12 +246,12 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.18 }}
                     >
-                      <Avatar size={28} icon={<RobotOutlined />} style={{ background: COLOR_PRIMARY, flexShrink: 0 }} />
+                      <BotAvatar background={COLOR_PRIMARY} />
                       <div className={styles.bubble}>
-                        <Text className={styles.msgText} style={{ color: "#333" }}>
+                        <span className={styles.msgText} style={{ color: "#333" }}>
                           {streamingText}
                           <span className={styles.cursor} />
-                        </Text>
+                        </span>
                       </div>
                     </motion.div>
                   )}
@@ -246,7 +266,7 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.18 }}
                     >
-                      <Avatar size={28} icon={<RobotOutlined />} style={{ background: COLOR_PRIMARY, flexShrink: 0 }} />
+                      <BotAvatar background={COLOR_PRIMARY} />
                       <div className={styles.bubble}>
                         <div className={styles.typingDots}>
                           <span className={styles.dot} />
@@ -284,25 +304,26 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
 
               {/* Input */}
               <div className={styles.inputArea}>
-                <Input
+                <input
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
-                  onPressEnter={() => send(input)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") send(input);
+                  }}
                   placeholder={t.placeholder}
-                  variant="borderless"
+                  className={styles.inputField}
                   style={{ flex: 1, fontSize: 16 }}
-                  suffix={
-                    <Button
-                      type="primary"
-                      icon={<SendOutlined />}
-                      size="small"
-                      onClick={() => send(input)}
-                      style={{ background: COLOR_PRIMARY, border: "none", borderRadius: 4 }}
-                    />
-                  }
+                />
+                <Button
+                  type="primary"
+                  icon={<SendIcon size={14} />}
+                  size="small"
+                  onClick={() => send(input)}
+                  style={{ background: COLOR_PRIMARY, border: "none", borderRadius: 4, padding: "0 10px" }}
                 />
               </div>
-            </Card>
+              </div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -317,11 +338,11 @@ export default function ChatBot({ t = DEFAULT_T }: Props) {
       >
         <div className={styles.triggerIconWrap}>
           <div className={styles.triggerPulse} />
-          <RobotOutlined className={styles.triggerIcon} style={{ fontSize: 26 }} />
+          <RobotIcon className={styles.triggerIcon} size={26} />
         </div>
         <div className={styles.triggerText}>
-          <Text strong style={{ fontSize: 13, color: "#111", lineHeight: 1.2 }}>{t.triggerTitle}</Text>
-          <Text style={{ fontSize: 11.5, color: COLOR_TEXT_MUTED, lineHeight: 1.2 }}>{t.triggerSubtitle}</Text>
+          <span style={{ fontWeight: 600, fontSize: 13, color: "#111", lineHeight: 1.2 }}>{t.triggerTitle}</span>
+          <span style={{ fontSize: 11.5, color: COLOR_TEXT_MUTED, lineHeight: 1.2 }}>{t.triggerSubtitle}</span>
         </div>
       </motion.button>
     </div>

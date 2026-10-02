@@ -24,7 +24,6 @@ function WorkflowEdge({ id, sourceX, sourceY, targetX, targetY, sourcePosition, 
 }
 
 const edgeTypes: EdgeTypes = { workflowEdge: WorkflowEdge };
-import { Typography } from "antd";
 
 // Each node's real Altera Studio catalog equivalent -- both the icon file
 // (copied verbatim from devkit/altera-studio/public/node-icons/) and its
@@ -170,12 +169,12 @@ export default function WorkflowDemo() {
   return (
     <section style={{ padding: isMobile ? "48px 16px" : "80px 60px" }}>
       <div style={{ textAlign: "center", marginBottom: 48 }}>
-        <Typography.Title level={2} style={{ fontWeight: 600, color: "#333", margin: 0 }}>
+        <h2 style={{ fontSize: 30, fontWeight: 600, color: "#333", margin: 0, lineHeight: 1.23 }}>
           See it in action
-        </Typography.Title>
-        <Typography.Paragraph style={{ fontSize: 16, color: "#888", marginTop: 8, marginBottom: 0 }}>
+        </h2>
+        <p style={{ fontSize: 16, color: "#888", marginTop: 8, marginBottom: 0 }}>
           A real payroll parsing workflow built with Altera Data Suite
-        </Typography.Paragraph>
+        </p>
       </div>
 
       <div

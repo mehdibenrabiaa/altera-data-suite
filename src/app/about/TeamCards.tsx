@@ -1,6 +1,5 @@
 "use client";
 
-import { Avatar } from "antd";
 import styles from "./about.module.css";
 
 interface TeamMemberT {
@@ -28,17 +27,24 @@ export default function TeamCards({ t }: Props) {
         return (
           <div key={meta.name} className={styles.card}>
             {meta.src ? (
-              <Avatar
-                size={80}
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
                 src={meta.src}
                 alt={meta.name}
-                style={{ flexShrink: 0 }}
+                width={80}
+                height={80}
+                style={{ flexShrink: 0, width: 80, height: 80, borderRadius: "50%", objectFit: "cover" }}
               />
             ) : (
-              <Avatar
-                size={80}
+              <div
                 style={{
                   flexShrink: 0,
+                  width: 80,
+                  height: 80,
+                  borderRadius: "50%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                   background: "#f0f0f0",
                   color: "#888",
                   fontSize: 18,
@@ -50,7 +56,7 @@ export default function TeamCards({ t }: Props) {
                   .map((n) => n[0])
                   .join("")
                   .slice(0, 2)}
-              </Avatar>
+              </div>
             )}
             <div>
               <p className={styles.name}>{meta.name}</p>

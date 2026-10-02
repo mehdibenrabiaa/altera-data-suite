@@ -1,15 +1,12 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Skeleton, Typography } from "antd";
-import { CheckCircleFilled, LockOutlined } from "@ant-design/icons";
+import { CheckCircleFilledIcon, LockIcon } from "@/components/icons";
 import SamePageLink from "./SamePageLink";
 import { openInlineCheckout } from "@/lib/paddle";
 import { PLANS, getPlan } from "@/lib/plans";
 import { COLOR_TEXT_MUTED } from "@/lib/theme";
 import styles from "./CheckoutClient.module.css";
-
-const { Text, Title } = Typography;
 
 const FRAME_ID = "paddle-checkout-frame";
 
@@ -56,15 +53,15 @@ export default function CheckoutClient({ lang, planKey }: Props) {
           {status === "completed" ? (
             <div className={styles.successState}>
               <div className={styles.successIcon} style={{ background: `${plan.color}1f`, color: plan.color }}>
-                <CheckCircleFilled />
+                <CheckCircleFilledIcon size={20} />
               </div>
-              <Title level={3} style={{ margin: "20px 0 6px" }}>
+              <h3 style={{ fontSize: 20, fontWeight: 600, margin: "20px 0 6px" }}>
                 Your license is on its way!
-              </Title>
-              <Text style={{ color: COLOR_TEXT_MUTED, maxWidth: 300, display: "block" }}>
+              </h3>
+              <span style={{ color: COLOR_TEXT_MUTED, maxWidth: 300, display: "block" }}>
                 We&apos;ve emailed your license key — check your inbox (and spam folder) over the next
                 few minutes.
-              </Text>
+              </span>
               <SamePageLink href={`/${lang}`} className={styles.primaryBtn} style={{ background: plan.color }}>
                 Got It
               </SamePageLink>
@@ -96,17 +93,19 @@ export default function CheckoutClient({ lang, planKey }: Props) {
               <div className={styles.frameWrap}>
                 {status === "loading" && (
                   <div className={styles.loadingOverlay}>
-                    <Skeleton active paragraph={{ rows: 6 }} />
+                    {Array.from({ length: 6 }).map((_, i) => (
+                      <div key={i} className={styles.skeletonRow} />
+                    ))}
                   </div>
                 )}
                 {status === "unavailable" ? (
                   <div className={styles.stateBox}>
-                    <Title level={4} style={{ margin: "0 0 4px" }}>
+                    <h4 style={{ fontSize: 16, fontWeight: 600, margin: "0 0 4px" }}>
                       Checkout isn&apos;t available right now
-                    </Title>
-                    <Text style={{ color: COLOR_TEXT_MUTED }}>
+                    </h4>
+                    <span style={{ color: COLOR_TEXT_MUTED }}>
                       Please try again in a moment or contact support@alteradatasuite.com.
-                    </Text>
+                    </span>
                   </div>
                 ) : (
                   <div className={`${FRAME_ID} ${styles.frame}`} />
@@ -117,19 +116,19 @@ export default function CheckoutClient({ lang, planKey }: Props) {
         </div>
 
         <div className={styles.summaryPanel}>
-          <Text strong style={{ fontSize: 15, display: "block", marginBottom: 22 }}>
+          <span style={{ fontSize: 15, fontWeight: 600, display: "block", marginBottom: 22 }}>
             Order Summary
-          </Text>
+          </span>
 
           <div className={styles.summaryRow}>
-            <Text style={{ color: COLOR_TEXT_MUTED, fontSize: 13 }}>Plan</Text>
-            <Text style={{ fontSize: 13, fontWeight: 600 }}>{plan.name}</Text>
+            <span style={{ color: COLOR_TEXT_MUTED, fontSize: 13 }}>Plan</span>
+            <span style={{ fontSize: 13, fontWeight: 600 }}>{plan.name}</span>
           </div>
           <div className={styles.summaryRow}>
-            <Text style={{ color: COLOR_TEXT_MUTED, fontSize: 13 }}>Billing</Text>
-            <Text style={{ fontSize: 13, fontWeight: 600, textAlign: "right", maxWidth: 180 }}>
+            <span style={{ color: COLOR_TEXT_MUTED, fontSize: 13 }}>Billing</span>
+            <span style={{ fontSize: 13, fontWeight: 600, textAlign: "right", maxWidth: 180 }}>
               {plan.subtitle}
-            </Text>
+            </span>
           </div>
 
           <div className={styles.divider} />
@@ -137,7 +136,7 @@ export default function CheckoutClient({ lang, planKey }: Props) {
           <ul className={styles.featureList}>
             {plan.features.map((f) => (
               <li key={f}>
-                <CheckCircleFilled style={{ color: plan.color, fontSize: 12 }} />
+                <CheckCircleFilledIcon size={12} style={{ color: plan.color }} />
                 <span>{f}</span>
               </li>
             ))}
@@ -146,19 +145,19 @@ export default function CheckoutClient({ lang, planKey }: Props) {
           <div className={styles.divider} />
 
           <div className={styles.totalRow}>
-            <Text style={{ fontSize: 13, color: COLOR_TEXT_MUTED }}>
+            <span style={{ fontSize: 13, color: COLOR_TEXT_MUTED }}>
               {plan.period === "one-time" ? "Total due" : "Total due today"}
-            </Text>
-            <Title level={3} style={{ margin: "2px 0 0", color: plan.color }}>
+            </span>
+            <h3 style={{ fontSize: 20, fontWeight: 600, margin: "2px 0 0", color: plan.color }}>
               ${plan.price}
               <span style={{ fontSize: 14, fontWeight: 500, color: COLOR_TEXT_MUTED }}> {plan.period}</span>
-            </Title>
+            </h3>
           </div>
 
-          <Text style={{ display: "block", marginTop: 20, fontSize: 11.5, color: COLOR_TEXT_MUTED }}>
-            <LockOutlined style={{ marginRight: 4 }} />
+          <span style={{ display: "block", marginTop: 20, fontSize: 11.5, color: COLOR_TEXT_MUTED }}>
+            <LockIcon size={11} style={{ marginRight: 4 }} />
             Secured by Paddle. Your license key is emailed automatically once payment completes.
-          </Text>
+          </span>
         </div>
       </div>
     </section>

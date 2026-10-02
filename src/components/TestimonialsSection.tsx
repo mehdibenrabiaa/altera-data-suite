@@ -1,6 +1,6 @@
 "use client";
 
-import { Rate } from "antd";
+import { StarFilledIcon } from "@/components/icons";
 import styles from "./TestimonialsSection.module.css";
 import SectionBadge from "./SectionBadge";
 import SectionHeading from "./SectionHeading";
@@ -47,7 +47,11 @@ export default function TestimonialsSection({ t }: Props) {
           return (
             <div key={card.name} className={styles.card}>
               <span className={styles.quote}>&ldquo;</span>
-              <Rate disabled defaultValue={5} style={{ fontSize: 16, color: COLOR_PRIMARY }} />
+              <div style={{ display: "flex", gap: 2, color: COLOR_PRIMARY }}>
+                {Array.from({ length: 5 }).map((_, star) => (
+                  <StarFilledIcon key={star} size={16} />
+                ))}
+              </div>
               <p className={styles.text}>{card.text}</p>
               <div className={styles.author}>
                 <div className={styles.avatar} style={{ background: meta.color }}>

@@ -45,6 +45,9 @@ export const config = {
     // by this matcher and redirected to a nonexistent /<locale>/fonts/...
     // path (404), since fonts weren't a static-asset type this list knew
     // about yet.
-    "/((?!_next/static|_next/image|favicon\\.ico|.*\\.(?:svg|png|jpg|jpeg|gif|webp|woff2?)$).*)",
+    // api/ excluded too -- route handlers (e.g. /api/download/windows)
+    // aren't locale pages and have no /<locale>/api/... counterpart, so
+    // prefixing them here just breaks them with a redirect to a 404.
+    "/((?!_next/static|_next/image|favicon\\.ico|api/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|woff2?)$).*)",
   ],
 };

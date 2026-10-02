@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Button, Drawer, Flex } from "antd";
-import { MenuOutlined } from "@ant-design/icons";
+import Button from "@/components/ui/Button";
+import { MenuIcon, CloseIcon } from "@/components/icons";
 import SamePageLink from "./SamePageLink";
 import Image from "next/image";
 import styles from "./Navbar.module.css";
@@ -10,6 +10,7 @@ import styles from "./Navbar.module.css";
 interface NavDict {
   docs: string;
   pricing: string;
+  download: string;
   about: string;
   faqs: string;
   startFree: string;
@@ -28,6 +29,7 @@ function Navbar({ t, lang }: Props) {
   const navLinks = [
     { label: t.docs, href: `/${lang}/docs` },
     { label: t.pricing, href: `/${lang}/pricing` },
+    { label: t.download, href: `/${lang}/download` },
     { label: t.about, href: `/${lang}/about` },
     { label: t.faqs, href: `/${lang}/faqs` },
   ];
@@ -44,6 +46,22 @@ function Navbar({ t, lang }: Props) {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  // Replaces antd Drawer's own keyboard(ESC-to-close)/body-scroll-lock
+  // defaults -- only wired up while the drawer is actually open.
+  useEffect(() => {
+    if (!drawerOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setDrawerOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [drawerOpen]);
 
   return (
     <>
@@ -98,54 +116,62 @@ function Navbar({ t, lang }: Props) {
         </div>
 
         {/* Hamburger */}
-        <Button
+        <button
+          type="button"
           className={styles.hamburger}
-          type="text"
-          icon={<MenuOutlined style={{ fontSize: 22 }} />}
           onClick={() => setDrawerOpen(true)}
-          size="large"
-        />
+          aria-label="Open menu"
+        >
+          <MenuIcon size={22} />
+        </button>
       </header>
 
-      <Drawer
-        open={drawerOpen}
-        onClose={() => setDrawerOpen(false)}
-        placement="right"
-        size="default"
-        styles={{ header: { display: "none" }, body: { padding: "32px 24px" } }}
+      {/* Mobile drawer -- replaces antd's Drawer. ESC-to-close and the
+          body-scroll-lock are wired up in the effect above; this handles
+          backdrop-click-to-close and the slide transition. */}
+      <div
+        className={`${styles.drawerBackdrop} ${drawerOpen ? styles.drawerBackdropOpen : ""}`}
+        onClick={() => setDrawerOpen(false)}
+        aria-hidden={!drawerOpen}
+      />
+      <div
+        className={`${styles.drawerPanel} ${drawerOpen ? styles.drawerPanelOpen : ""}`}
+        role="dialog"
+        aria-modal="true"
+        aria-hidden={!drawerOpen}
       >
-        <Flex vertical gap={24}>
-          <Button
-            type="text"
-            icon={<span style={{ fontSize: 20, lineHeight: 1 }}>✕</span>}
+        <button
+          type="button"
+          className={styles.drawerClose}
+          onClick={() => setDrawerOpen(false)}
+          aria-label="Close menu"
+        >
+          <CloseIcon size={18} />
+        </button>
+        {navLinks.map(({ label, href }) => (
+          <SamePageLink
+            key={href}
+            href={href}
             onClick={() => setDrawerOpen(false)}
-            style={{ alignSelf: "flex-end", color: "#444" }}
-          />
-          {navLinks.map(({ label, href }) => (
-            <SamePageLink
-              key={href}
-              href={href}
-              onClick={() => setDrawerOpen(false)}
-              style={{
-                color: "#444",
-                fontSize: 16,
-                fontWeight: 500,
-                textDecoration: "none",
-              }}
-            >
-              {label}
-            </SamePageLink>
-          ))}
-          <Button
-            type="primary"
-            size="large"
-            href={`/${lang}/pricing`}
-            style={{ fontWeight: 600, borderRadius: 0 }}
+            style={{
+              color: "#444",
+              fontSize: 16,
+              fontWeight: 500,
+              textDecoration: "none",
+            }}
           >
-            {t.startFree}
-          </Button>
-        </Flex>
-      </Drawer>
+            {label}
+          </SamePageLink>
+        ))}
+        <Button
+          type="primary"
+          size="large"
+          href={`/${lang}/pricing`}
+          style={{ fontWeight: 600, borderRadius: 0 }}
+        >
+          {t.startFree}
+        </Button>
+      </div>
     </>
   );
 }

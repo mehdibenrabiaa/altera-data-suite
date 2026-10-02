@@ -23,7 +23,6 @@ const CHANGELOG: ChangeEntry[] = [
     date: "May 2025",
     label: "Latest",
     changes: [
-      { category: "New",      text: "AI-powered regex generation — describe what you want to extract in plain language and Altera generates the pattern for you automatically." },
       { category: "New",      text: "Text location tool — search for any word or phrase inside a PDF and extract data relative to where it appears on the page." },
       { category: "Improved", text: "Regex Extractor now supports three extraction modes: first match, capture groups, and collect all occurrences — giving you full control over how patterns are applied." },
       { category: "Improved", text: "PDF Converter accuracy improved for documents with complex multi-column layouts." },

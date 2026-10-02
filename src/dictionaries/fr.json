@@ -4,15 +4,19 @@
     "about":     { "title": "À propos",                "description": "Découvrez Altera Data Suite — qui l'a conçu, pourquoi, et ce qui le motive." },
     "pricing":   { "title": "Tarifs",                  "description": "Des tarifs simples et transparents pour Altera Data Suite. Commencez gratuitement, évoluez quand ça vous apporte de la valeur." },
     "faqs":      { "title": "FAQ",                     "description": "Des questions sur Altera ? Trouvez les réponses sur l'installation, la précision, les tarifs, la sécurité et bien plus." },
-    "docs":      { "title": "Documentation",           "description": "Apprenez à utiliser chaque widget Altera — guides pas à pas, références de configuration et détails des sorties pour chaque fonctionnalité." },
+    "docs":      { "title": "Documentation",           "description": "Apprenez à utiliser chaque nœud Altera — guides pas à pas, références de configuration et détails des sorties pour chaque fonctionnalité." },
     "changelog": { "title": "Journal des mises à jour","description": "Toutes les mises à jour, améliorations et corrections d'Altera Data Suite — en un seul endroit." },
-    "terms":     { "title": "Conditions d'utilisation",          "description": "Conditions d'utilisation d'Altera Data Suite, restrictions de licence et avertissements sur l'IA." },
+    "terms":     { "title": "Conditions d'utilisation",          "description": "Conditions d'utilisation d'Altera Data Suite, restrictions de licence et responsabilité." },
     "privacy":   { "title": "Politique de confidentialité",      "description": "Comment Altera Data Suite collecte, utilise et protège vos données. Conforme RGPD et CCPA." },
-    "refund":    { "title": "Politique de remboursement",        "description": "Garantie de remboursement de 30 jours, conditions d'éligibilité et d'annulation." }
+    "refund":    { "title": "Politique de remboursement",        "description": "Garantie de remboursement de 30 jours, conditions d'éligibilité et d'annulation." },
+    "download":  { "title": "Télécharger",              "description": "Téléchargez Altera Data Suite pour Windows, macOS ou Linux et commencez à extraire des données structurées de vos PDF en quelques minutes." },
+    "contact":   { "title": "Contact et assistance",    "description": "Contactez l'équipe Altera Data Suite — questions, facturation ou assistance, nous répondons directement, sans bot." },
+    "useCases":  { "title": "Cas d'usage",               "description": "Découvrez comment les équipes utilisent Altera Data Suite pour extraire et structurer les données de leurs PDF." }
   },
   "nav": {
     "docs":      "Documentation",
     "pricing":   "Tarifs",
+    "download":  "Télécharger",
     "about":     "À propos",
     "faqs":      "FAQ",
     "startFree": "Commencer gratuitement"
@@ -24,7 +28,6 @@
     "connectHeading":    "Réseaux",
     "contactHeading":    "Contact",
     "emailLabel":        "E-mail",
-    "phoneLabel":        "Téléphone",
     "copyright":         "Tous droits réservés.",
     "langSwitcherLabel": "Langue",
     "links": {
@@ -32,8 +35,11 @@
       "changelog":     "Mises à jour",
       "pricingPlan":   "Tarifs",
       "docs":          "Documentation",
+      "download":      "Télécharger",
       "aboutUs":       "À propos",
-      "customWidgets": "Widgets personnalisés",
+      "contact":       "Contact",
+      "useCases":      "Cas d'usage",
+      "customWidgets": "Nœuds personnalisés",
       "terms":         "Conditions d'utilisation",
       "privacy":       "Politique de confidentialité",
       "refund":        "Politique de remboursement"
@@ -42,11 +48,11 @@
   },
   "hero": {
     "announcementBadge": "Nouveau ✦",
-    "announcementText":  "Extraction alimentée par l'IA",
+    "announcementText":  "Extraction PDF sans code",
     "headingPart1":      "L'app qui transforme",
     "headingPart2":      "vos PDFs en ",
     "headingPart3":      "tableaux propres",
-    "subtitle":          "Déposez n'importe quel PDF — les widgets d'Altera extraient, nettoient et structurent chaque champ en quelques secondes.",
+    "subtitle":          "Déposez n'importe quel PDF — les nœuds d'Altera extraient, nettoient et structurent chaque champ en quelques secondes.",
     "startFree":         "Commencer gratuitement",
     "watchDemo":         "Voir la démo",
     "testimonialTitle":  "Configuration simple, résultats immédiats",
@@ -76,13 +82,13 @@
   "featureCards": [
     { "label": "CONVERSION RAPIDE",    "line1": "Déposez n'importe quel PDF.",    "line2": "Données propres en quelques secondes." },
     { "label": "FLUX VISUELS",         "line1": "Enchaînez des nœuds",        "line2": "pour créer votre pipeline exact." },
-    { "label": "DES OUTILS PUISSANTS", "line1": "Des widgets intelligents qui extraient,", "line2": "et nettoient vos données." }
+    { "label": "DES OUTILS PUISSANTS", "line1": "Des nœuds intelligents qui extraient,", "line2": "et nettoient vos données." }
   ],
   "widgets": {
     "badgeLabel": "Fonctionnalités",
-    "badgeText":  "Widgets conçus sur mesure",
-    "heading":    "Votre solution tout-en-un pour l'analyse PDF rapide et efficace.",
-    "subtitle":   "Des widgets conçus sur mesure qui transforment vos PDFs de données brutes en données structurées, prêtes à analyser — sans code, sans friction.",
+    "badgeText":  "Nœuds conçus sur mesure",
+    "heading":    "Votre solution tout-en-un pour un traitement rapide et efficace de vos PDF et de vos données.",
+    "subtitle":   "Des nœuds conçus sur mesure qui transforment vos PDFs et feuilles de calcul de données brutes en données structurées, prêtes à analyser — sans code, sans friction.",
     "exploreNow": "Explorer maintenant",
     "items": [
       { "name": "PDF Converter",       "description": "Chargez n'importe quel PDF multi-pages — bulletins de paie, factures, rapports — et extrayez instantanément chaque champ dans un tableau propre, ligne par ligne, prêt à analyser." },
@@ -95,7 +101,7 @@
     "badgeLabel":    "Tarifs",
     "badgeText":     "Des plans simples, des fonctionnalités puissantes",
     "heading":       "Choisissez le plan qui correspond à votre flux de travail.",
-    "subtitle":      "Chaque plan inclut des crédits IA. Rechargez à tout moment.",
+    "subtitle":      "Des tarifs simples et transparents. Changez de formule à tout moment.",
     "popularBadge":  "POPULAIRE",
     "bestValueBadge": "MEILLEURE OFFRE",
     "getBtn":        "Obtenir",
@@ -103,27 +109,25 @@
     "periodMonthly":  "/mois",
     "oneTime":        "paiement unique",
     "includesLabel": "Comprend",
-    "topUpNote":      "Plus de crédits IA ? Rechargez à tout moment — les packs de crédits supplémentaires commencent à 9 $.",
     "checkoutSuccess": "Consultez votre e-mail pour récupérer votre clé de licence.",
     "checkoutError":   "Le paiement n'est pas disponible pour le moment. Réessayez dans un instant ou contactez support@alteradatasuite.com.",
     "plans": [
       {
         "name": "Mensuel", "subtitle": "Solution tout-en-un, facturée mensuellement",
-        "features": ["Traitement PDF illimité","1 000 crédits IA / mois","10+ Nœuds","Support par e-mail","Licence mono-poste","Mises à jour gratuites"]
+        "features": ["Traitement PDF illimité","Traitement PDF par lot","10+ Nœuds","Support par e-mail","Licence mono-poste","Mises à jour gratuites"]
       },
       {
         "name": "Annuel", "subtitle": "Économisez 20 % par rapport à la facturation mensuelle",
-        "features": ["Traitement PDF illimité","15 000 crédits IA / an","10+ Nœuds","Support par e-mail prioritaire","Licence mono-poste","Mises à jour gratuites"]
+        "features": ["Traitement PDF illimité","Traitement PDF par lot","10+ Nœuds","Support par e-mail prioritaire","Licence mono-poste","Mises à jour gratuites"]
       },
       {
         "name": "À vie", "subtitle": "Payez une fois, gardez-le pour toujours",
-        "features": ["Traitement PDF illimité","1 000 crédits IA chaque mois, à vie","10+ Nœuds","Support prioritaire","Licence mono-poste","Mises à jour gratuites pendant 1 an"]
+        "features": ["Traitement PDF illimité","Traitement PDF par lot","10+ Nœuds","Support prioritaire","Licence mono-poste","Mises à jour gratuites pendant 1 an"]
       }
     ],
     "faqs": [
       { "key": "p1", "label": "Puis-je changer de plan plus tard ?",                 "text": "Oui. Vous pouvez passer de Mensuel à Annuel ou à vie à tout moment. Vos données et workflows restent intacts." },
-      { "key": "p2", "label": "Que se passe-t-il quand mes crédits IA sont épuisés ?",   "text": "Les fonctionnalités IA se mettent en pause jusqu'à ce que vous rechargiez — le reste de l'application continue de fonctionner normalement. Des packs de crédits supplémentaires sont disponibles à tout moment depuis l'application." },
-      { "key": "p3", "label": "Quelle est la différence entre les plans ?","text": "Mensuel et Annuel sont des abonnements récurrents facturés selon leur périodicité. À vie est un paiement unique pour un accès permanent, avec une allocation mensuelle de crédits IA incluse tant que vous utilisez l'application." },
+      { "key": "p3", "label": "Quelle est la différence entre les plans ?","text": "Mensuel et Annuel sont des abonnements récurrents facturés selon leur périodicité. À vie est un paiement unique pour un accès permanent." },
       { "key": "p5", "label": "Proposez-vous des remboursements ?",                   "text": "Oui — voir notre garantie de remboursement de 30 jours. En cas de problème après l'achat, contactez-nous et nous trouverons une solution." },
       { "key": "p6", "label": "Puis-je utiliser Altera sur plusieurs machines ?",    "text": "Mensuel, Annuel et À vie sont tous des licences mono-poste." }
     ]
@@ -137,16 +141,16 @@
       { "name": "Karim Raaji",           "role": "Consultant Financier",               "text": "J'ai passé des années à me fier à des outils comme Power Query pour extraire et nettoyer des données financières à partir de PDF. Cela fonctionnait — mais jamais proprement, et la maintenance était constante. Trouver Altera a été un tournant. L'extraction est précise, la configuration a pris quelques minutes, et pour le prix, c'est un vrai changement de jeu pour quiconque travaille quotidiennement avec des documents financiers." },
       { "name": "Jonathan Ashton",        "role": "Contrôleur Qualité Financière",      "text": "Je me retrouvais à jongler avec plusieurs outils juste pour extraire des données d'un PDF — une application pour la conversion, d'autres pour le nettoyage. Mais le problème principal était la confidentialité. En travaillant avec des données clients sous NDA, je ne pouvais pas me permettre que des fichiers soient traités sur un serveur tiers. La plupart des outils que j'ai essayés faisaient exactement cela. Altera a été la première solution qui a réellement compris le problème central et l'a résolu — tout fonctionne localement, sur ma machine, et les résultats sont propres dès le départ." },
       { "name": "Mohammed Amine Bendidi", "role": "Consultant Financier",               "text": "Recevoir des volumes de données — principalement des PDF — avec des délais serrés était un cauchemar constant. Nous avions des développeurs compétents dans notre laboratoire de données, mais l'écart entre ce qu'ils construisaient et ce dont nous avions réellement besoin ne se fermait jamais vraiment. Altera était différent. Ce n'est pas venu d'une équipe qui savait juste coder — c'est venu de personnes qui avaient vécu le problème de première main. Cela se voit dans chaque fonctionnalité. Une solution construite par des analystes, pour des analystes." },
-      { "name": "Thomas Reeves",          "role": "Responsable Business Intelligence", "text": "Ce qui distingue Altera de tout ce qui existe dans l'écosystème Microsoft, c'est qu'il est réellement extensible de manière significative. Avec Excel ou Power BI, vous êtes limité à ce qui existe — si une fonctionnalité n'est pas là, vous attendez, et la plupart du temps elle n'arrive jamais. Avec Altera, si un widget ne couvre pas votre cas d'utilisation exact, l'équipe le construira pour vous. Ils peuvent étendre des widgets existants ou en créer des entièrement personnalisés de zéro. Ce type de réactivité est quelque chose que les logiciels d'entreprise n'offrent tout simplement pas." }
+      { "name": "Thomas Reeves",          "role": "Responsable Business Intelligence", "text": "Ce qui distingue Altera de tout ce qui existe dans l'écosystème Microsoft, c'est qu'il est réellement extensible de manière significative. Avec Excel ou Power BI, vous êtes limité à ce qui existe — si une fonctionnalité n'est pas là, vous attendez, et la plupart du temps elle n'arrive jamais. Avec Altera, si un nœud ne couvre pas votre cas d'utilisation exact, l'équipe le construira pour vous. Ils peuvent étendre des nœuds existants ou en créer des entièrement personnalisés de zéro. Ce type de réactivité est quelque chose que les logiciels d'entreprise n'offrent tout simplement pas." }
     ]
   },
   "customWidget": {
-    "badgeLabel":         "Widgets personnalisés",
+    "badgeLabel":         "Nœuds personnalisés",
     "badgeText":          "Construits autour de vos besoins précis.",
-    "heading":            "Besoin d'un widget personnalisé adapté à votre workflow ? Nous le construisons pour vous.",
-    "subtitle":           "Chaque équipe travaille avec des documents différents — structures différentes, champs différents, sorties différentes. Si aucun de nos widgets existants ne correspond à vos besoins, nous en concevrons et construirons un de zéro. Nous cartographions votre mise en page PDF, définissons la logique d'extraction et livrons un widget qui s'intègre directement dans votre espace de travail Orange Data Mining. Pas de solutions de contournement, pas de nettoyage manuel — juste des données propres et structurées exactement comme vous en avez besoin.",
+    "heading":            "Besoin d'un nœud personnalisé adapté à votre workflow ? Nous le construisons pour vous.",
+    "subtitle":           "Chaque équipe travaille avec des documents différents — structures différentes, champs différents, sorties différentes. Si aucun de nos nœuds existants ne correspond à vos besoins, nous en concevrons et construirons un de zéro. Nous cartographions votre mise en page PDF, définissons la logique d'extraction et livrons un outil qui s'intègre directement dans votre workflow. Pas de solutions de contournement, pas de nettoyage manuel — juste des données propres et structurées exactement comme vous en avez besoin.",
     "rowWhatLabel":       "Ce que vous obtenez",
-    "rowWhatValue":       "Un widget entièrement fonctionnel conçu pour votre PDF",
+    "rowWhatValue":       "Un nœud entièrement fonctionnel conçu pour votre PDF",
     "rowTurnaroundLabel": "Délai de livraison",
     "rowTurnaroundValue": "Défini ensemble selon la complexité",
     "rowPricingLabel":    "Tarification",
@@ -169,8 +173,8 @@
     { "key": "7",  "label": "Ai-je besoin de connaissances en programmation ?",           "text": "Pas du tout. Altera est conçu pour être utilisé visuellement dans Orange Data Mining. Vous glissez, déposez et configurez — aucun code requis." },
     { "key": "8",  "label": "Altera peut-il traiter des PDFs numérisés ?",               "text": "Altera fonctionne mieux avec les PDFs générés numériquement. Les documents numérisés avec du texte lisible par OCR sont également pris en charge, bien que la précision puisse varier selon la qualité de numérisation." },
     { "key": "9",  "label": "Dans quel format de sortie les données sont-elles fournies ?","text": "Altera produit des tableaux propres et structurés directement dans Orange Data Mining — prêts à analyser, exporter ou alimenter la prochaine étape de votre workflow." },
-    { "key": "10", "label": "Puis-je utiliser différents widgets pour différents types de documents ?","text": "Oui. Chaque widget est conçu pour une tâche d'extraction spécifique. Vous pouvez combiner des widgets dans le même workflow pour traiter différents types de documents en une seule passe." },
-    { "key": "11", "label": "Que se passe-t-il si l'extraction rate un champ ?",         "text": "Vous pouvez définir des règles d'extraction personnalisées pour gérer les cas particuliers. Si une structure de document spécifique n'est pas couverte nativement, nous proposons également le développement de widgets personnalisés." },
+    { "key": "10", "label": "Puis-je utiliser différents nœuds pour différents types de documents ?","text": "Oui. Chaque nœud est conçu pour une tâche d'extraction spécifique. Vous pouvez combiner des nœuds dans le même workflow pour traiter différents types de documents en une seule passe." },
+    { "key": "11", "label": "Que se passe-t-il si l'extraction rate un champ ?",         "text": "Vous pouvez définir des règles d'extraction personnalisées pour gérer les cas particuliers. Si une structure de document spécifique n'est pas couverte nativement, nous proposons également le développement de nœuds personnalisés." },
     { "key": "12", "label": "Y a-t-il une limite de taille de fichier ?",                 "text": "Altera gère les documents commerciaux standard sans problème. Les fichiers très volumineux peuvent affecter le temps de traitement, mais il n'y a pas de limite stricte." },
     { "key": "13", "label": "Quelles langues sont prises en charge ?",                    "text": "Altera prend principalement en charge les documents en anglais et en français. La prise en charge de langues supplémentaires est en cours d'ajout." },
     { "key": "14", "label": "Comment obtenir de l'aide en cas de problème ?",             "text": "Vous pouvez nous contacter directement à support@alteradatasuite.com. Nous sommes une petite équipe, vous obtiendrez donc toujours une vraie réponse — pas un bot." }
@@ -205,6 +209,46 @@
       "scrollZoomOut":   "Zoom arrière"
     }
   },
+  "download": {
+    "heroBadgeLabel":  "Télécharger",
+    "heroBadgeText":   "Obtenir l'application",
+    "heroHeading":     "Télécharger Altera Data Suite",
+    "heroLead":        "Disponible pour Windows, macOS et Linux. Installez-le en quelques minutes et commencez à extraire votre premier PDF tout de suite.",
+    "trialNote":       "Essai gratuit de 15 jours sur chaque plan — aucune carte bancaire requise.",
+    "unavailableNotice": "La version Windows est temporairement indisponible. Merci de réessayer dans quelques minutes.",
+    "windowsName":     "Windows",
+    "windowsDetail":   "Windows 10 / 11 (64 bits)",
+    "windowsBtn":      "Télécharger pour Windows",
+    "macName":         "macOS",
+    "macDetail":       "macOS 12 Monterey ou version ultérieure",
+    "macBtn":          "Télécharger pour macOS",
+    "linuxName":       "Linux",
+    "linuxDetail":     "La plupart des distributions majeures",
+    "linuxBtn":        "Télécharger pour Linux",
+    "comingSoon":      "Bientôt disponible",
+    "comingSoonNote":  "En développement actif — restez à l'écoute.",
+    "helpPre":         "Besoin d'aide pour l'installation ?",
+    "helpLink":        "Consultez le guide de démarrage rapide"
+  },
+  "contact": {
+    "badgeLabel": "Assistance",
+    "badgeText":  "Nous sommes là pour vous aider",
+    "heading":    "Contact et assistance",
+    "lead":       "Des questions sur Altera, la facturation, ou un PDF précis qui vous pose problème ? Contactez-nous — nous sommes une petite équipe, vous aurez donc toujours une vraie réponse, pas un bot.",
+    "docsTitle":  "Documentation",
+    "docsDesc":   "Guides pas à pas et références de configuration pour chaque nœud.",
+    "docsLink":   "Consulter la documentation",
+    "faqsTitle":  "FAQ",
+    "faqsDesc":   "Réponses aux questions courantes sur l'installation, la précision et les tarifs.",
+    "faqsLink":   "Voir la FAQ"
+  },
+  "useCases": {
+    "badgeLabel": "Cas d'usage",
+    "badgeText":  "Bientôt disponible",
+    "heading":    "Comment les équipes utilisent Altera, concrètement.",
+    "lead":       "Nous préparons des cas d'usage détaillés pour les équipes finance, conseil et opérations. Revenez bientôt — ou contactez-nous dès aujourd'hui pour qu'on vous oriente.",
+    "ctaLabel":   "Nous contacter"
+  },
   "about": {
     "heroBadgeLabel":  "À propos",
     "heroBadgeText":   "L'équipe derrière Altera",
@@ -214,12 +258,12 @@
     "storyBadgeText":  "Pourquoi nous avons construit ceci",
     "story1Heading":   "L'origine de l'idée",
     "story1Text":      "Nous venions tous les deux de milieux de conseil — ayant travaillé avec des cabinets dont Deloitte et PwC. Une chose est devenue évidente rapidement : même à ce niveau, personne n'avait construit une solution tout-en-un pour extraire des données de PDFs. Bulletins de paie, factures, rapports — tout était traité manuellement ou avec des scripts fragiles. Ce manque a été le point de départ.",
-    "story2Heading":   "Le premier widget",
-    "story2Text":      "Nous avons commencé avec un seul widget de conversion PDF. Ça fonctionnait — et nous avons immédiatement vu ce qui manquait ensuite. Orange avait de solides capacités analytiques mais laissait le nettoyage des données largement non traité. Nous avons donc continué à construire. Chaque widget était une réponse directe à un point de friction dans des workflows réels.",
+    "story2Heading":   "Le premier nœud",
+    "story2Text":      "Nous avons commencé avec un seul nœud de conversion PDF. Ça fonctionnait — et nous avons immédiatement vu ce qui manquait ensuite. Orange avait de solides capacités analytiques mais laissait le nettoyage des données largement non traité. Nous avons donc continué à construire. Chaque nœud était une réponse directe à un point de friction dans des workflows réels.",
     "story3Heading":   "Pourquoi Orange Data Mining ?",
     "story3Text":      "Nous ne voulions pas construire quelque chose qui vivrait en isolation. Orange Data Mining dispose déjà d'un écosystème solide et établi — le choisir signifiait que nos utilisateurs n'auraient pas à changer leur façon de travailler. Altera s'intègre directement dans ce qu'ils connaissent et utilisent déjà.",
     "story4Heading":   "Notre cap",
-    "story4Text":      "La suite est encore en croissance. Plus de widgets sont en développement, les existants sont activement maintenus, et l'IA devient un élément central de la façon dont Altera extrait, interprète et structure les données. Ce n'est pas un produit fini — c'est une boîte à outils évolutive conçue pour suivre le rythme du travail réel sur les données.",
+    "story4Text":      "La suite est encore en croissance. Plus de nœuds sont en développement, et les existants sont activement maintenus. Ce n'est pas un produit fini — c'est une boîte à outils évolutive conçue pour suivre le rythme du travail réel sur les données.",
     "ctaHeading":      "Prêt à le voir en action ?",
     "ctaSubtitle":     "Regardez la démo pour voir comment Altera traite de vrais PDFs, ou explorez les tarifs pour trouver le plan qui vous convient.",
     "watchDemo":       "Voir la démo",
@@ -242,16 +286,16 @@
   },
   "chatbot": {
     "triggerTitle":    "Demandez à Altera",
-    "triggerSubtitle": "Assistant propulsé par l'IA",
+    "triggerSubtitle": "Là pour vous aider",
     "panelTitle":      "Assistant Altera",
     "panelSubtitle":   "Posez-moi vos questions",
     "placeholder":     "Posez une question…",
-    "welcome":         "Bonjour ! Je suis l'assistant d'Altera. Posez-moi vos questions sur l'application, ses widgets ou comment démarrer.",
+    "welcome":         "Bonjour ! Je suis l'assistant d'Altera. Posez-moi vos questions sur l'application, ses nœuds ou comment démarrer.",
     "followUp":        "Voici quelques sujets sur lesquels je peux vous aider :",
     "fallback":        "Bonne question ! Pour plus de détails, consultez la page Documentation ou contactez notre équipe directement.",
     "quickReplies": [
       { "question": "Comment fonctionne le PDF Converter ?", "answer": "Ouvrez votre PDF, dessinez des rectangles sur les données à extraire, placez éventuellement des guides de colonnes, puis cliquez sur Convertir. Vous obtenez un tableau structuré et propre prêt à l'emploi." },
-      { "question": "Quels widgets sont disponibles ?",       "answer": "Altera propose 9 widgets : PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates et Cleaner." },
+      { "question": "Quels nœuds sont disponibles ?",       "answer": "Altera propose 9 nœuds : PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates et Cleaner." },
       { "question": "Y a-t-il un essai gratuit ?",           "answer": "Oui ! Vous pouvez commencer gratuitement. Rendez-vous sur la page Tarifs pour voir ce qui est inclus dans chaque plan." }
     ]
   },
@@ -286,23 +330,19 @@
             ]
           },
           {
-            "heading": "3. Avertissement sur la précision de l'IA",
-            "body": "Le générateur REGEX IA et les fonctionnalités d'extraction de données utilisent l'intelligence artificielle et ne sont pas précis à 100 %. Les résultats peuvent varier selon la qualité des données d'entrée, la complexité du document et le formatage des données. Les utilisateurs sont responsables de la validation des données extraites avant de les utiliser en environnements de production."
+            "heading": "3. Conditions d'essai",
+            "body": "L'essai gratuit de 15 jours est limité à un par machine. Après l'expiration de l'essai, une licence payante est requise pour continuer à utiliser Altera. Vous pouvez annuler l'essai à tout moment sans pénalité."
           },
           {
-            "heading": "4. Conditions d'essai",
-            "body": "L'essai gratuit de 7 jours est limité à un par machine. Après l'expiration de l'essai, une licence payante est requise pour continuer à utiliser Altera. Vous pouvez annuler l'essai à tout moment sans pénalité."
-          },
-          {
-            "heading": "5. Mises à jour et maintenance",
+            "heading": "4. Mises à jour et maintenance",
             "body": "Les mises à jour mineures et les corrections de bugs sont fournies gratuitement pendant votre abonnement. Nous nous réservons le droit d'arrêter des fonctionnalités ou des versions majeures avec un préavis de 30 jours. Les fonctionnalités principales resteront disponibles pendant la durée de votre licence active."
           },
           {
-            "heading": "6. Données et confidentialité",
-            "body": "Toutes les données utilisateur sont traitées localement sur votre machine. Les modèles d'extraction et les sorties regex sont transmis à nos serveurs uniquement pour le traitement par IA et ne sont pas stockés de manière permanente. Consultez la Politique de confidentialité pour plus de détails."
+            "heading": "5. Données et confidentialité",
+            "body": "Toutes les données utilisateur sont traitées localement sur votre machine. Consultez la Politique de confidentialité pour plus de détails."
           },
           {
-            "heading": "7. Limitation de responsabilité",
+            "heading": "6. Limitation de responsabilité",
             "body": "Altera Data Suite est fourni « tel quel » sans garantie d'aucune sorte. Nous ne sommes pas responsables des pertes de données, des erreurs d'extraction ou des dommages résultant de l'utilisation ou de l'abus de ce logiciel. Les utilisateurs assument l'entière responsabilité de la validation des résultats avant de s'y fier."
           }
         ]
@@ -320,8 +360,7 @@
             "items": [
               "Informations de compte : Votre adresse e-mail et votre nom (pour l'enregistrement de la licence)",
               "ID machine : Un identifiant unique pour lier votre licence à votre ordinateur",
-              "Données d'utilisation : Informations sur les fonctionnalités que vous utilisez (pour l'amélioration du produit)",
-              "Données de traitement IA : Les modèles regex et les documents envoyés à nos serveurs IA pour traitement (non stockés de manière permanente)"
+              "Données d'utilisation : Informations sur les fonctionnalités que vous utilisez (pour l'amélioration du produit)"
             ]
           },
           {
@@ -329,7 +368,6 @@
             "body": "Vos informations sont utilisées pour :",
             "items": [
               "Valider et authentifier votre licence",
-              "Traiter vos requêtes IA (génération de regex, extraction de données)",
               "Améliorer et optimiser nos services",
               "Envoyer des mises à jour importantes et des rappels de renouvellement de licence"
             ]
@@ -339,29 +377,23 @@
             "body": "Tout le traitement des paiements est géré par Paddle (notre processeur de paiement). Nous ne stockons pas vos informations de carte bancaire. Les données de paiement sont chiffrées et traitées directement par Paddle conformément à leurs normes de confidentialité et aux exigences de conformité PCI."
           },
           {
-            "heading": "4. Prompts IA et traitement serveur",
-            "body": "Lorsque vous utilisez le générateur REGEX IA, vos prompts et documents sont transmis à nos serveurs IA pour traitement. Nous ne stockons pas ces données de manière permanente. Nous recommandons de ne pas inclure d'informations sensibles, confidentielles ou privées (telles que des identifiants personnels, des numéros de compte ou des informations commerciales confidentielles) dans vos prompts. Si vous avez des préoccupations concernant la transmission de données, nous vous suggérons d'utiliser uniquement des données de test non sensibles."
-          },
-          {
-            "heading": "5. Conservation des données",
+            "heading": "4. Conservation des données",
             "body": "Nous conservons vos données comme suit :",
             "items": [
               "Informations de compte : Stockées tant que votre licence est active ; supprimées 30 jours après l'annulation",
-              "ID machine : Conservé pour la validation de la licence ; supprimé sur demande",
-              "Données de traitement IA : Non stockées de manière permanente après traitement"
+              "ID machine : Conservé pour la validation de la licence ; supprimé sur demande"
             ]
           },
           {
-            "heading": "6. Services tiers",
+            "heading": "5. Services tiers",
             "body": "Nous utilisons les services tiers suivants :",
             "items": [
               "Paddle : Traitement des paiements et services marchands",
-              "API DeepSeek : Traitement IA pour la génération de regex",
               "Fournisseur de services e-mail : Pour l'envoi des clés de licence et des notifications"
             ]
           },
           {
-            "heading": "7. Droits RGPD et CCPA",
+            "heading": "6. Droits RGPD et CCPA",
             "body": "Si vous êtes situé dans l'UE (RGPD) ou en Californie (CCPA), vous avez le droit de :",
             "items": [
               "Demander une copie de vos données personnelles",
@@ -371,11 +403,11 @@
             "note": "Pour exercer ces droits, écrivez-nous à : support@alteradatasuite.com"
           },
           {
-            "heading": "8. Sécurité",
+            "heading": "7. Sécurité",
             "body": "Nous utilisons un chiffrement et des pratiques de sécurité conformes aux normes industrielles pour protéger vos données. Cependant, aucun système n'est sécurisé à 100 %. Nous ne sommes pas responsables d'un accès non autorisé dû à des facteurs hors de notre contrôle."
           },
           {
-            "heading": "9. Nous contacter",
+            "heading": "8. Nous contacter",
             "body": "Pour toute question relative à la confidentialité ou toute demande de données : support@alteradatasuite.com"
           }
         ]

@@ -33,7 +33,7 @@ export const PLANS: PlanMeta[] = [
     priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_MONTHLY,
     features: [
       "Unlimited PDF Processing",
-      "1,000 AI Credits / month",
+      "Batch PDF Processing",
       "10+ Nodes",
       "Email Support",
       "Single Machine License",
@@ -51,7 +51,7 @@ export const PLANS: PlanMeta[] = [
     priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_YEARLY,
     features: [
       "Unlimited PDF Processing",
-      "15,000 AI Credits / year",
+      "Batch PDF Processing",
       "10+ Nodes",
       "Priority Email Support",
       "Single Machine License",
@@ -69,7 +69,7 @@ export const PLANS: PlanMeta[] = [
     priceId: process.env.NEXT_PUBLIC_PADDLE_PRICE_LIFETIME,
     features: [
       "Unlimited PDF Processing",
-      "1,000 AI Credits every month, for life",
+      "Batch PDF Processing",
       "10+ Nodes",
       "Priority Support",
       "Single Machine License",

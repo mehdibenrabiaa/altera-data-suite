@@ -83,9 +83,8 @@ export default function AboutPage() {
                 <h2 className={styles.storyHeading}>Where we&apos;re headed</h2>
               </div>
               <p className={styles.storyText}>
-                The suite is still growing. More nodes are in development, existing ones
-                are actively maintained, and AI is becoming a core part of how Altera extracts,
-                interprets, and structures data. This isn&apos;t a finished product — it&apos;s
+                The suite is still growing. More nodes are in development, and existing
+                ones are actively maintained. This isn&apos;t a finished product — it&apos;s
                 an evolving toolkit built to keep pace with how data work actually happens.
               </p>
             </div>

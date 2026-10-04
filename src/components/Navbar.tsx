@@ -13,7 +13,6 @@ interface NavDict {
   download: string;
   about: string;
   faqs: string;
-  startFree: string;
 }
 
 interface Props {
@@ -29,7 +28,6 @@ function Navbar({ t, lang }: Props) {
   const navLinks = [
     { label: t.docs, href: `/${lang}/docs` },
     { label: t.pricing, href: `/${lang}/pricing` },
-    { label: t.download, href: `/${lang}/download` },
     { label: t.about, href: `/${lang}/about` },
     { label: t.faqs, href: `/${lang}/faqs` },
   ];
@@ -108,10 +106,10 @@ function Navbar({ t, lang }: Props) {
           <Button
             type="primary"
             size="large"
-            href={`/${lang}/pricing`}
+            href={`/${lang}/download`}
             style={{ fontWeight: 600, borderRadius: 0 }}
           >
-            {t.startFree}
+            {t.download}
           </Button>
         </div>
 
@@ -166,10 +164,10 @@ function Navbar({ t, lang }: Props) {
         <Button
           type="primary"
           size="large"
-          href={`/${lang}/pricing`}
+          href={`/${lang}/download`}
           style={{ fontWeight: 600, borderRadius: 0 }}
         >
-          {t.startFree}
+          {t.download}
         </Button>
       </div>
     </>

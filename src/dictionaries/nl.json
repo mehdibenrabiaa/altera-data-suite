@@ -1,304 +1,993 @@
 {
   "meta": {
-    "home":      { "title": "PDF-data-extractie voor Orange Data Mining | Altera Data Suite","description": "Extraheer facturen, loonstroken & rapporten uit elk PDF — zonder code. De no-code Orange Data Mining add-on voor gestructureerde data-extractie. Probeer het gratis." },
-    "about":     { "title": "Over ons",                "description": "Leer meer over Altera Data Suite — wie het heeft gebouwd, waarom en wat het drijft." },
-    "pricing":   { "title": "Prijzen",                 "description": "Eenvoudige, transparante prijzen voor Altera Data Suite. Begin gratis, upgrade wanneer het waarde levert." },
-    "faqs":      { "title": "Veelgestelde vragen",     "description": "Vragen over Altera? Vind antwoorden over installatie, nauwkeurigheid, prijzen, beveiliging en meer." },
-    "docs":      { "title": "Documentatie",            "description": "Leer hoe u elke Altera-node gebruikt — stapsgewijze handleidingen, configuratiereferenties en uitvoerdetails voor elke functie." },
-    "changelog": { "title": "Wijzigingslog",           "description": "Elke update, verbetering en correctie voor Altera Data Suite — op één plek." },
-    "terms":     { "title": "Gebruiksvoorwaarden",               "description": "Gebruiksvoorwaarden van Altera Data Suite, licentiebeperkingen en aansprakelijkheid." },
-    "privacy":   { "title": "Privacybeleid",                     "description": "Hoe Altera Data Suite uw gegevens verzamelt, gebruikt en beschermt. AVG- en CCPA-conform." },
-    "refund":    { "title": "Terugbetalingsbeleid",              "description": "30 dagen geld-terug-garantie, terugbetalingsvoorwaarden en annuleringsbeleid." },
-    "download":  { "title": "Downloaden",          "description": "Download Altera Data Suite voor Windows, macOS of Linux en begin binnen enkele minuten met het extraheren van gestructureerde gegevens uit uw PDF's." },
-    "contact":   { "title": "Contact & ondersteuning", "description": "Neem contact op met het Altera Data Suite-team — vragen, facturering of ondersteuning, wij reageren rechtstreeks, geen bot." },
-    "useCases":  { "title": "Toepassingen",        "description": "Bekijk hoe teams Altera Data Suite gebruiken om gegevens uit PDF's te extraheren en te structureren." }
+    "home": {
+      "title": "PDF-data-extractie voor Orange Data Mining | Altera Data Suite",
+      "description": "Extraheer facturen, loonstroken & rapporten uit elk PDF — zonder code. De no-code Orange Data Mining add-on voor gestructureerde data-extractie. Probeer het gratis."
+    },
+    "about": {
+      "title": "Over ons",
+      "description": "Leer meer over Altera Data Suite — wie het heeft gebouwd, waarom en wat het drijft."
+    },
+    "pricing": {
+      "title": "Prijzen",
+      "description": "Eenvoudige, transparante prijzen voor Altera Data Suite. Begin gratis, upgrade wanneer het waarde levert."
+    },
+    "faqs": {
+      "title": "Veelgestelde vragen",
+      "description": "Vragen over Altera? Vind antwoorden over installatie, nauwkeurigheid, prijzen, beveiliging en meer."
+    },
+    "docs": {
+      "title": "Documentatie",
+      "description": "Leer hoe u elke Altera-node gebruikt — stapsgewijze handleidingen, configuratiereferenties en uitvoerdetails voor elke functie."
+    },
+    "changelog": {
+      "title": "Wijzigingslog",
+      "description": "Elke update, verbetering en correctie voor Altera Data Suite — op één plek."
+    },
+    "terms": {
+      "title": "Gebruiksvoorwaarden",
+      "description": "Gebruiksvoorwaarden van Altera Data Suite, licentiebeperkingen en aansprakelijkheid."
+    },
+    "privacy": {
+      "title": "Privacybeleid",
+      "description": "Hoe Altera Data Suite uw gegevens verzamelt, gebruikt en beschermt. AVG- en CCPA-conform."
+    },
+    "refund": {
+      "title": "Terugbetalingsbeleid",
+      "description": "30 dagen geld-terug-garantie, terugbetalingsvoorwaarden en annuleringsbeleid."
+    },
+    "download": {
+      "title": "Downloaden",
+      "description": "Download Altera Data Suite voor Windows, macOS of Linux en begin binnen enkele minuten met het extraheren van gestructureerde gegevens uit uw PDF's."
+    },
+    "contact": {
+      "title": "Contact & ondersteuning",
+      "description": "Neem contact op met het Altera Data Suite-team — vragen, facturering of ondersteuning, wij reageren rechtstreeks, geen bot."
+    },
+    "useCases": {
+      "title": "Toepassingen",
+      "description": "Echte Altera-workflows voor finance, salarisadministratie, inkoop, logistiek en audit: van pdf-documenten naar schone, analyseklare data."
+    },
+    "whyWorkflows": {
+      "title": "Waarom visuele workflows",
+      "description": "Waarom Altera Data Suite draait om visuele, op nodes gebaseerde workflows: zie uw data bij elke stap, deel processen die iedereen kan lezen en laat de code achterwege."
+    }
   },
   "nav": {
-    "docs":      "Documentatie",
-    "pricing":   "Prijzen",
-    "download":  "Downloaden",
-    "about":     "Over ons",
-    "faqs":      "FAQ",
-    "startFree": "Gratis beginnen"
+    "docs": "Documentatie",
+    "pricing": "Prijzen",
+    "download": "Downloaden",
+    "about": "Over ons",
+    "faqs": "FAQ"
   },
   "footer": {
-    "tagline":           "U bepaalt het doel. Altera extraheert de data.",
-    "productHeading":    "Product",
-    "companyHeading":    "Bedrijf & Beleid",
-    "connectHeading":    "Netwerken",
-    "contactHeading":    "Contactinformatie",
-    "emailLabel":        "E-mail",
-    "copyright":         "Alle rechten voorbehouden.",
+    "tagline": "U bepaalt het doel. Altera extraheert de data.",
+    "productHeading": "Product",
+    "companyHeading": "Bedrijf & Beleid",
+    "connectHeading": "Netwerken",
+    "contactHeading": "Contactinformatie",
+    "emailLabel": "E-mail",
+    "copyright": "Alle rechten voorbehouden.",
     "langSwitcherLabel": "Taal",
     "links": {
-      "features":      "Functies",
-      "changelog":     "Wijzigingslog",
-      "pricingPlan":   "Prijsplan",
-      "docs":          "Documentatie",
-      "download":      "Downloaden",
-      "aboutUs":       "Over ons",
-      "contact":       "Contact",
-      "useCases":      "Toepassingen",
+      "features": "Functies",
+      "changelog": "Wijzigingslog",
+      "pricingPlan": "Prijsplan",
+      "docs": "Documentatie",
+      "download": "Downloaden",
+      "aboutUs": "Over ons",
+      "contact": "Contact",
+      "useCases": "Toepassingen",
       "customWidgets": "Aangepaste nodes",
-      "terms":         "Gebruiksvoorwaarden",
-      "privacy":       "Privacybeleid",
-      "refund":        "Terugbetalingsbeleid"
+      "terms": "Gebruiksvoorwaarden",
+      "privacy": "Privacybeleid",
+      "refund": "Terugbetalingsbeleid",
+      "whyWorkflows": "Waarom visuele workflows"
     },
     "legalHeading": "Juridisch"
   },
   "hero": {
-    "announcementBadge": "Nieuw ✦",
-    "announcementText":  "Code-vrije PDF-extractie",
-    "headingPart1":      "De app die",
-    "headingPart2":      "uw PDF's omzet in ",
-    "headingPart3":      "nette tabellen",
-    "subtitle":          "Laad een PDF in — Altera's nodes extraheren, reinigen en structureren elk veld in seconden.",
-    "startFree":         "Gratis beginnen",
-    "watchDemo":         "Demo bekijken",
-    "testimonialTitle":  "Eenvoudige installatie, directe resultaten",
-    "testimonialQuote":  "\"We hebben Altera gebouwd voor elk type PDF — loonstroken, facturen, rapporten. Ontworpen voor snelheid, schaal en duidelijkheid vanaf dag één.\"",
+    "announcementBadge": "Gratis proefversie ✦",
+    "announcementText": "Code-vrije PDF-extractie",
+    "headingPart1": "De app die",
+    "headingPart2": "uw PDF's omzet in ",
+    "headingPart3": "nette tabellen",
+    "subtitle": "Laad een PDF in — Altera's nodes extraheren, reinigen en structureren elk veld in seconden.",
+    "startFree": "Gratis beginnen",
+    "watchDemo": "Demo bekijken",
+    "testimonialTitle": "Eenvoudige installatie, directe resultaten",
+    "testimonialQuote": "\"We hebben Altera gebouwd voor elk type PDF — loonstroken, facturen, rapporten. Ontworpen voor snelheid, schaal en duidelijkheid vanaf dag één.\"",
     "testimonialAttrib": "— Mehdi, Medeoprichter & Ontwikkelaar van Altera Data Suite"
+  },
+  "howItWorks": {
+    "badgeLabel": "Hoe het werkt",
+    "badgeText": "Altera in 10 stappen",
+    "heading": "Zo werkt Altera",
+    "back": "Vorige",
+    "next": "Volgende",
+    "restart": "Opnieuw beginnen",
+    "stepOf": "Stap {n} van {total}",
+    "steps": [
+      {
+        "title": "Open uw pdf en markeer de data.",
+        "body": "Open een afschrift, factuur of rapport in de PDF Converter en trek met het rechthoekgereedschap over de data die u nodig hebt. Elke markering krijgt een eigen kleur, handig om onderdelen later uit elkaar te houden."
+      },
+      {
+        "title": "Plaats kolomhulplijnen als dat nodig is.",
+        "body": "Zet hulplijnen waar kolommen gesplitst moeten worden. Zonder hulplijnen bepaalt Altera de kolommen zelf, pagina per pagina."
+      },
+      {
+        "title": "Klik op Convert.",
+        "body": "Uw gemarkeerde gebieden worden een schone tabel, klaar om in een workflow te gaan."
+      },
+      {
+        "title": "Dit is een node.",
+        "body": "Elke node doet één taak met uw data: rijen filteren, tekst opschonen, tabellen samenvoegen, een kolom optellen en meer."
+      },
+      {
+        "title": "Verbind nodes tot een workflow.",
+        "body": "Data stroomt van links naar rechts. De tabel uit uw pdf gaat erin, en elke node geeft zijn resultaat door aan de volgende."
+      },
+      {
+        "title": "U bepaalt wanneer hij draait.",
+        "body": "Start de workflow en zie elke node groen worden zodra hij klaar is. Pas een instelling aan en draai hem opnieuw wanneer u wilt."
+      },
+      {
+        "title": "Schoon uw data op en filter die…",
+        "body": "Bijvoorbeeld alleen de transacties van vorige maand uit een bankafschrift houden."
+      },
+      {
+        "title": "…tel op per groep…",
+        "body": "Bijvoorbeeld de uitgaven per leverancier optellen over een stapel facturen."
+      },
+      {
+        "title": "…of combineer twee bronnen.",
+        "body": "Bijvoorbeeld een bankafschrift vergelijken met uw boekhoudexport om te vinden wat niet klopt."
+      },
+      {
+        "title": "En het is intuïtief.",
+        "body": "Geen formules en geen scripts: kies een node, stel de opties in en zie het resultaat. De meeste mensen bouwen hun eerste workflow in één middag."
+      }
+    ],
+    "canvas": {
+      "statement": {
+        "name": "Bankafschrift (geëxtraheerd)",
+        "rowsLabel": "312 rijen (voorbeeld)",
+        "columns": [
+          "Datum",
+          "Omschrijving",
+          "Bedrag"
+        ]
+      },
+      "invoices": {
+        "name": "Facturen (geëxtraheerd)",
+        "rowsLabel": "860 rijen (voorbeeld)",
+        "columns": [
+          "Leverancier",
+          "Omschrijving",
+          "Bedrag"
+        ]
+      },
+      "descriptions": {
+        "single": "Alleen nodige rijen",
+        "clean": "Tekst opschonen",
+        "filter": "Alleen vorige maand",
+        "export": "Resultaat.xlsx",
+        "type": "Bedrag naar getal",
+        "group": "Totaal per leverancier",
+        "sort": "Hoogste eerst",
+        "ledger": "Boekhoudexport.xlsx",
+        "merge": "Koppelen op referentie",
+        "unmatched": "Zonder match"
+      }
+    }
   },
   "resultShowcase": {
     "badgeLabel": "Loonstrook Extractie",
-    "badgeText":  "Snel & Nauwkeurig",
-    "heading":    "Van een statisch PDF naar schone, gestructureerde data — in seconden.",
-    "subtitle":   "Laad een loonstrook, factuur of rapport in. Altera leest elk veld, koppelt het aan kolommen en geeft u een gestructureerde tabel klaar om te exporteren of te analyseren.",
-    "tryFree":    "Gratis proberen",
-    "seeHow":     "Zie hoe het werkt"
+    "badgeText": "Snel & Nauwkeurig",
+    "heading": "Van een statisch PDF naar schone, gestructureerde data — in seconden.",
+    "subtitle": "Laad een loonstrook, factuur of rapport in. Altera leest elk veld, koppelt het aan kolommen en geeft u een gestructureerde tabel klaar om te exporteren of te analyseren.",
+    "tryFree": "Gratis proberen",
+    "seeHow": "Zie hoe het werkt"
   },
   "stats": {
     "badgeLabel": "Cijfers & Feiten",
-    "badgeText":  "Echte resultaten, echte impact",
-    "heading":    "Gebouwd voor snelheid. Ontworpen voor nauwkeurigheid.",
-    "subtitle":   "Altera Data Suite verandert uren handmatige gegevensinvoer in seconden geautomatiseerde extractie — op elke schaal.",
+    "badgeText": "Echte resultaten, echte impact",
+    "heading": "Gebouwd voor snelheid. Ontworpen voor nauwkeurigheid.",
+    "subtitle": "Altera Data Suite verandert uren handmatige gegevensinvoer in seconden geautomatiseerde extractie — op elke schaal.",
     "items": [
-      { "value": "98%",  "label": "Extractienauwkeurigheid",       "desc": "Verwerk loonstroken, facturen en rapporten met bijna perfecte veldnauwkeurigheid." },
-      { "value": "10×",  "label": "Sneller dan handmatige invoer", "desc": "Automatiseer vervelende kopieer-plak workflows en win elke week uren terug." },
-      { "value": "500+", "label": "Pagina's per batch",            "desc": "Laad grote meerdere-pagina PDF's in en ontvang gestructureerde uitvoer in seconden." },
-      { "value": "24/7", "label": "Altijd beschikbaar",            "desc": "Geen servers, geen wachtrijen — draait volledig op uw machine, op elk moment." }
+      {
+        "value": "98%",
+        "label": "Extractienauwkeurigheid",
+        "desc": "Verwerk loonstroken, facturen en rapporten met bijna perfecte veldnauwkeurigheid."
+      },
+      {
+        "value": "10×",
+        "label": "Sneller dan handmatige invoer",
+        "desc": "Automatiseer vervelende kopieer-plak workflows en win elke week uren terug."
+      },
+      {
+        "value": "500+",
+        "label": "Pagina's per batch",
+        "desc": "Laad grote meerdere-pagina PDF's in en ontvang gestructureerde uitvoer in seconden."
+      },
+      {
+        "value": "24/7",
+        "label": "Altijd beschikbaar",
+        "desc": "Geen servers, geen wachtrijen — draait volledig op uw machine, op elk moment."
+      }
     ]
   },
   "featureCards": [
-    { "label": "SNELLE CONVERSIE",       "line1": "Laad een PDF in.",                    "line2": "Schone data in seconden." },
-    { "label": "VISUELE WORKFLOWS",    "line1": "Koppel nodes aaneen",        "line2": "tot uw exacte pipeline." },
-    { "label": "WIJ GEVEN U TOOLS",      "line1": "Slimme nodes die extraheren,",      "line2": "en uw data reinigen." }
+    {
+      "label": "SNELLE CONVERSIE",
+      "line1": "Laad een PDF in.",
+      "line2": "Schone data in seconden."
+    },
+    {
+      "label": "KANT-EN-KLARE NODES",
+      "line1": "Schoon, sorteer en herstructureer uw data.",
+      "line2": "Koppel nodes tot één workflow."
+    },
+    {
+      "label": "WIJ GEVEN U TOOLS",
+      "line1": "Slimme nodes die extraheren,",
+      "line2": "en uw data reinigen."
+    }
   ],
-  "widgets": {
+  "nodeShowcase": {
     "badgeLabel": "Functies",
-    "badgeText":  "Doelgerichte nodes",
-    "heading":    "Uw alles-in-één oplossing voor snelle, efficiënte PDF- en gegevensverwerking.",
-    "subtitle":   "Doelgerichte nodes die uw PDF's en spreadsheets van ruwe invoer naar gestructureerde, analyserijke data brengen — geen code, geen wrijving.",
-    "exploreNow": "Nu verkennen",
+    "badgeText": "Doelgerichte nodes",
+    "heading": "Een node voor elke stap van uw data",
+    "learnMore": "Meer informatie",
     "items": [
-      { "name": "PDF Converter",         "description": "Laad een meerdere-pagina PDF — loonstroken, facturen, rapporten — en extraheer direct elk veld in een schone, rij-voor-rij tabel klaar voor analyse." },
-      { "name": "Filter Builder",        "description": "Isoleer precies de rijen die u nodig heeft met flexibele voorwaarden op elke kolom. Geen code, geen formules — eenvoudig klik-en-filter." },
-      { "name": "Reguliere Expressies",  "description": "Haal gestructureerde patronen — datums, ID's, namen, bedragen — uit ruwe tekstvelden met behulp van krachtige regex-regels, visueel geconfigureerd." },
-      { "name": "Kolombeheer",           "description": "Hernoem, herorden of verwijder kolommen in seconden. Pas uw uitvoerschema aan zodat downstream tools altijd precies ontvangen wat ze verwachten." }
-    ]
+      {
+        "title": "Extraheren met PDF Converter",
+        "bullets": [
+          "Markeer de gebieden die u nodig hebt direct op de pagina, zonder sjablonen of code",
+          "Werkt met facturen, loonstroken, afschriften en rapporten van meerdere pagina's",
+          "Sla uw annotaties één keer op en hergebruik ze voor het bestand van volgende maand"
+        ]
+      },
+      {
+        "title": "Opschonen met Cleaner",
+        "bullets": [
+          "Verwijder spaties, corrigeer hoofdletters en haal losse tekens weg in één stap",
+          "Koppel meerdere bewerkingen die op volgorde draaien op de kolommen die u kiest",
+          "Herstel rommelige geëxtraheerde tekst voordat die een filter of join verstoort"
+        ]
+      },
+      {
+        "title": "Combineren met Merge",
+        "bullets": [
+          "Zoek extra kolommen op uit een referentietabel via een gedeelde ID",
+          "Behoud alle rijen, alleen de overeenkomsten of alles uit beide tabellen",
+          "Koppel rijen op een of meer kolomparen, of gewoon op positie"
+        ]
+      },
+      {
+        "title": "Samenvatten met Group By",
+        "bullets": [
+          "Tel bedragen op per klant, categorie of regio",
+          "Tel rijen of vind het minimum, maximum en gemiddelde per groep",
+          "Krijg één nette samenvattingsrij per groep, klaar om te exporteren"
+        ]
+      }
+    ],
+    "whyLink": "Waarom we Altera rond visuele workflows hebben gebouwd"
+  },
+  "industries": {
+    "badgeLabel": "Toepassingen",
+    "badgeText": "Voor elk team",
+    "heading": "Gemaakt voor teams die verdrinken in pdf's",
+    "subtitle": "Van maandafsluiting tot salariscontrole: elk team heeft documenten die data moeten worden.",
+    "documentsLabel": "Typische documenten",
+    "learnMore": "Bekijk de hele workflow",
+    "allUseCases": "Alle toepassingen"
   },
   "pricing": {
-    "badgeLabel":    "Prijzen",
-    "badgeText":     "Eenvoudige plannen, krachtige functies",
-    "heading":       "Kies het plan dat bij uw workflow past.",
-    "subtitle":      "Eenvoudige, transparante prijzen. Upgrade wanneer u wilt.",
-    "popularBadge":  "POPULAIR",
+    "badgeLabel": "Prijzen",
+    "badgeText": "Eenvoudige plannen, krachtige functies",
+    "heading": "Kies het plan dat bij uw workflow past.",
+    "subtitle": "Eenvoudige, transparante prijzen. Upgrade wanneer u wilt.",
+    "popularBadge": "POPULAIR",
     "bestValueBadge": "BESTE WAARDE",
-    "getBtn":        "Kies",
-    "period":        "/jaar",
-    "periodMonthly":  "/maand",
-    "oneTime":        "eenmalig",
+    "getBtn": "Kies",
+    "period": "/jaar",
+    "periodMonthly": "/maand",
+    "oneTime": "eenmalig",
     "includesLabel": "Inclusief",
     "checkoutSuccess": "Controleer uw e-mail voor uw licentiesleutel.",
-    "checkoutError":   "Afrekenen is nu niet beschikbaar. Probeer het straks opnieuw of neem contact op met support@alteradatasuite.com.",
+    "checkoutError": "Afrekenen is nu niet beschikbaar. Probeer het straks opnieuw of neem contact op met support@alteradatasuite.com.",
     "plans": [
       {
-        "name": "Maandelijks", "subtitle": "Alles-in-één oplossing, maandelijks gefactureerd",
-        "features": ["Onbeperkte PDF-verwerking","PDF-batchverwerking","10+ Nodes","E-mailondersteuning","Licentie voor één machine","Gratis updates & verbeteringen"]
+        "name": "Maandelijks",
+        "subtitle": "Alles-in-één oplossing, maandelijks gefactureerd",
+        "features": [
+          "Onbeperkte PDF-verwerking",
+          "PDF-batchverwerking",
+          "10+ Nodes",
+          "E-mailondersteuning",
+          "Licentie voor één machine",
+          "Gratis updates & verbeteringen"
+        ]
       },
       {
-        "name": "Jaarlijks", "subtitle": "Bespaar 20% t.o.v. maandelijkse facturering",
-        "features": ["Onbeperkte PDF-verwerking","PDF-batchverwerking","10+ Nodes","Prioritaire e-mailondersteuning","Licentie voor één machine","Gratis updates & verbeteringen"]
+        "name": "Jaarlijks",
+        "subtitle": "Bespaar 20% t.o.v. maandelijkse facturering",
+        "features": [
+          "Onbeperkte PDF-verwerking",
+          "PDF-batchverwerking",
+          "10+ Nodes",
+          "Prioritaire e-mailondersteuning",
+          "Licentie voor één machine",
+          "Gratis updates & verbeteringen"
+        ]
       },
       {
-        "name": "Lifetime", "subtitle": "Eenmalig betalen, voor altijd bezitten",
-        "features": ["Onbeperkte PDF-verwerking","PDF-batchverwerking","10+ Nodes","Prioritaire ondersteuning","Licentie voor één machine","Gratis updates voor 1 jaar"]
+        "name": "Lifetime",
+        "subtitle": "Eenmalig betalen, voor altijd bezitten",
+        "features": [
+          "Onbeperkte PDF-verwerking",
+          "PDF-batchverwerking",
+          "10+ Nodes",
+          "Prioritaire ondersteuning",
+          "Licentie voor één machine",
+          "Gratis updates voor 1 jaar"
+        ]
       }
     ],
     "faqs": [
-      { "key": "p1", "label": "Kan ik later van plan wisselen?",                      "text": "Ja. U kunt op elk moment wisselen tussen Maandelijks, Jaarlijks en Lifetime. Uw gegevens en workflows blijven intact." },
-      { "key": "p3", "label": "Wat is het verschil tussen de plannen?", "text": "Maandelijks en Jaarlijks zijn terugkerende abonnementen die volgens die cyclus worden gefactureerd. Lifetime is een eenmalige betaling voor permanente toegang." },
-      { "key": "p5", "label": "Biedt u terugbetalingen aan?",                         "text": "Ja — zie onze 30-dagen-niet-goed-geld-terug-garantie. Als er iets misgaat na aankoop, neem contact op en we lossen het op." },
-      { "key": "p6", "label": "Kan ik Altera op meerdere machines gebruiken?",        "text": "Maandelijks, Jaarlijks en Lifetime zijn allemaal licenties voor één machine." }
+      {
+        "key": "p1",
+        "label": "Kan ik later van plan wisselen?",
+        "text": "Ja. U kunt op elk moment wisselen tussen Maandelijks, Jaarlijks en Lifetime. Uw gegevens en workflows blijven intact."
+      },
+      {
+        "key": "p3",
+        "label": "Wat is het verschil tussen de plannen?",
+        "text": "Maandelijks en Jaarlijks zijn terugkerende abonnementen die volgens die cyclus worden gefactureerd. Lifetime is een eenmalige betaling voor permanente toegang."
+      },
+      {
+        "key": "p5",
+        "label": "Biedt u terugbetalingen aan?",
+        "text": "Ja — zie onze 30-dagen-niet-goed-geld-terug-garantie. Als er iets misgaat na aankoop, neem contact op en we lossen het op."
+      },
+      {
+        "key": "p6",
+        "label": "Kan ik Altera op meerdere machines gebruiken?",
+        "text": "Maandelijks, Jaarlijks en Lifetime zijn allemaal licenties voor één machine."
+      }
     ]
   },
   "testimonials": {
     "badgeLabel": "Getuigenissen",
-    "badgeText":  "Wat onze gebruikers zeggen",
-    "heading":    "Vertrouwd door teams die snel bewegen.",
-    "subtitle":   "Bekijk hoe Altera Data Suite professionals helpt om hun data sneller dan ooit te extraheren, structureren en er actie op te ondernemen.",
+    "badgeText": "Wat onze gebruikers zeggen",
+    "heading": "Vertrouwd door teams die snel bewegen.",
+    "subtitle": "Bekijk hoe Altera Data Suite professionals helpt om hun data sneller dan ooit te extraheren, structureren en er actie op te ondernemen.",
     "cards": [
-      { "name": "Karim Raaji",           "role": "Financieel Adviseur",              "text": "Ik heb jaren vertrouwd op tools zoals Power Query om financiële gegevens uit PDF's te extraheren en te reinigen. Ze werkten — maar nooit netjes, en het onderhoud was constant. Altera vinden was een keerpunt. De extractie is nauwkeurig, de installatie duurde slechts minuten, en voor de prijs is het een absolute game changer voor iedereen die dagelijks met financiële documenten werkt." },
-      { "name": "Jonathan Ashton",        "role": "Financieel Kwaliteitscontroleur", "text": "Ik vond mezelf jongleren met meerdere tools om data uit een PDF te krijgen — één app voor conversie, anderen voor het reinigen. Maar het grotere probleem was privacy. Werkend met klantgegevens onder NDA kon ik het me niet veroorloven dat bestanden op een server van derden werden verwerkt. De meeste tools die ik probeerde deden precies dat. Altera was de eerste oplossing die het kernprobleem daadwerkelijk begreep en oploste — alles draait lokaal, op mijn machine, en de resultaten zijn schoon vanaf het begin." },
-      { "name": "Mohammed Amine Bendidi", "role": "Financieel Adviseur",              "text": "Volumes data ontvangen — voornamelijk PDF's — met strakke deadlines was een constant nachtmerrie. We hadden bekwame ontwikkelaars in ons datalaboratorium, maar de kloof tussen wat ze bouwden en wat we werkelijk nodig hadden sloot zich nooit volledig. Altera was anders. Het kwam niet van een team dat alleen wist hoe te coderen — het kwam van mensen die het probleem uit eigen ervaring hadden meegemaakt. Dat is zichtbaar in elke functie. Een oplossing gebouwd door analisten, voor analisten." },
-      { "name": "Thomas Reeves",          "role": "Business Intelligence Leider",    "text": "Wat Altera onderscheidt van alles in het Microsoft-ecosysteem is dat het daadwerkelijk uitbreidbaar is op een betekenisvolle manier. Met Excel of Power BI ben je beperkt tot wat er bestaat — als een functie er niet is, wacht je, en de meeste keer komt het er nooit. Met Altera, als een node uw exacte gebruiksgeval niet dekt, bouwt het team het voor u. Ze kunnen bestaande nodes uitbreiden of volledig aangepaste nodes van nul af bouwen. Dat soort responsiviteit is iets wat enterprise software simpelweg niet biedt." }
+      {
+        "name": "Karim Raaji",
+        "role": "Financieel Adviseur",
+        "text": "Ik heb jaren vertrouwd op tools zoals Power Query om financiële gegevens uit PDF's te extraheren en te reinigen. Ze werkten — maar nooit netjes, en het onderhoud was constant. Altera vinden was een keerpunt. De extractie is nauwkeurig, de installatie duurde slechts minuten, en voor de prijs is het een absolute game changer voor iedereen die dagelijks met financiële documenten werkt."
+      },
+      {
+        "name": "Jonathan Ashton",
+        "role": "Financieel Kwaliteitscontroleur",
+        "text": "Ik vond mezelf jongleren met meerdere tools om data uit een PDF te krijgen — één app voor conversie, anderen voor het reinigen. Maar het grotere probleem was privacy. Werkend met klantgegevens onder NDA kon ik het me niet veroorloven dat bestanden op een server van derden werden verwerkt. De meeste tools die ik probeerde deden precies dat. Altera was de eerste oplossing die het kernprobleem daadwerkelijk begreep en oploste — alles draait lokaal, op mijn machine, en de resultaten zijn schoon vanaf het begin."
+      },
+      {
+        "name": "Mohammed Amine Bendidi",
+        "role": "Financieel Adviseur",
+        "text": "Volumes data ontvangen — voornamelijk PDF's — met strakke deadlines was een constant nachtmerrie. We hadden bekwame ontwikkelaars in ons datalaboratorium, maar de kloof tussen wat ze bouwden en wat we werkelijk nodig hadden sloot zich nooit volledig. Altera was anders. Het kwam niet van een team dat alleen wist hoe te coderen — het kwam van mensen die het probleem uit eigen ervaring hadden meegemaakt. Dat is zichtbaar in elke functie. Een oplossing gebouwd door analisten, voor analisten."
+      },
+      {
+        "name": "Thomas Reeves",
+        "role": "Business Intelligence Leider",
+        "text": "Wat Altera onderscheidt van alles in het Microsoft-ecosysteem is dat het daadwerkelijk uitbreidbaar is op een betekenisvolle manier. Met Excel of Power BI ben je beperkt tot wat er bestaat — als een functie er niet is, wacht je, en de meeste keer komt het er nooit. Met Altera, als een node uw exacte gebruiksgeval niet dekt, bouwt het team het voor u. Ze kunnen bestaande nodes uitbreiden of volledig aangepaste nodes van nul af bouwen. Dat soort responsiviteit is iets wat enterprise software simpelweg niet biedt."
+      }
     ]
   },
   "customWidget": {
-    "badgeLabel":         "Aangepaste nodes",
-    "badgeText":          "Gebouwd rond uw exacte behoeften.",
-    "heading":            "Heeft u een aangepaste node nodig die past bij uw exacte workflow? Wij bouwen het voor u.",
-    "subtitle":           "Elk team werkt met andere documenten — verschillende structuren, verschillende velden, verschillende uitvoer. Als geen van onze bestaande nodes aansluit bij wat u nodig heeft, ontwerpen en bouwen we er één vanaf het begin. We brengen uw PDF-indeling in kaart, definiëren de extractielogica en leveren een tool die direct in uw workflow past. Geen omwegen, geen handmatig opruimen — gewoon schone, gestructureerde data precies zoals u het nodig heeft.",
-    "rowWhatLabel":       "Wat u krijgt",
-    "rowWhatValue":       "Een volledig functionele node gebouwd voor uw PDF",
+    "badgeLabel": "Aangepaste nodes",
+    "badgeText": "Gebouwd rond uw exacte behoeften.",
+    "heading": "Heeft u een aangepaste node nodig die past bij uw exacte workflow? Wij bouwen het voor u.",
+    "subtitle": "Elk team werkt met andere documenten — verschillende structuren, verschillende velden, verschillende uitvoer. Als geen van onze bestaande nodes aansluit bij wat u nodig heeft, ontwerpen en bouwen we er één vanaf het begin. We brengen uw PDF-indeling in kaart, definiëren de extractielogica en leveren een tool die direct in uw workflow past. Geen omwegen, geen handmatig opruimen — gewoon schone, gestructureerde data precies zoals u het nodig heeft.",
+    "rowWhatLabel": "Wat u krijgt",
+    "rowWhatValue": "Een volledig functionele node gebouwd voor uw PDF",
     "rowTurnaroundLabel": "Doorlooptijd",
     "rowTurnaroundValue": "Samen bepaald op basis van complexiteit",
-    "rowPricingLabel":    "Prijsstelling",
-    "rowPricingValue":    "Eerlijk en transparant — geen verborgen kosten",
-    "rowContactLabel":    "Contact"
+    "rowPricingLabel": "Prijsstelling",
+    "rowPricingValue": "Eerlijk en transparant — geen verborgen kosten",
+    "rowContactLabel": "Contact"
   },
   "faqSection": {
     "badgeLabel": "FAQ",
-    "badgeText":  "Vragen? Wij hebben antwoorden.",
-    "heading":    "Alles wat u moet weten",
-    "subtitle":   "Kunt u niet vinden wat u zoekt? Neem contact op en we reageren zo snel mogelijk."
+    "badgeText": "Vragen? Wij hebben antwoorden.",
+    "heading": "Alles wat u moet weten",
+    "subtitle": "Kunt u niet vinden wat u zoekt? Neem contact op en we reageren zo snel mogelijk."
+  },
+  "getStarted": {
+    "heading": "Klaar om uw pdf's om te zetten in data?",
+    "text": "Download Altera, open een pdf en bouw uw eerste workflow in een paar minuten.",
+    "download": "Downloaden",
+    "docs": "Lees de documentatie"
   },
   "allFaqs": [
-    { "key": "1",  "label": "Welke soorten PDF's ondersteunt Altera?",                              "text": "Altera werkt met elk PDF — loonstroken, facturen, bankafschriften, rapporten en meer. Als het gestructureerde gegevens bevat, kan Altera het extraheren." },
-    { "key": "2",  "label": "Hoe nauwkeurig is de extractie?",                                      "text": "Altera extraheert gegevens met hoge nauwkeurigheid. U kunt aangepaste regels definiëren om ervoor te zorgen dat elk veld precies op de juiste plek terecht komt." },
-    { "key": "3",  "label": "Moet ik iets installeren?",                                             "text": "Altera is gebouwd voor Orange Data Mining. De installatie in Orange duurt slechts seconden — voeg gewoon de add-on toe en u kunt direct beginnen met extraheren." },
-    { "key": "4",  "label": "Kan ik meerdere PDF's tegelijk verwerken?",                            "text": "Ja. Altera ondersteunt batchverwerking zodat u honderden PDF's kunt inladen en alle gegevens in één keer gestructureerd kunt krijgen." },
-    { "key": "5",  "label": "Zijn mijn gegevens veilig?",                                           "text": "Uw bestanden worden veilig verwerkt en nooit opgeslagen na de actieve sessie. We delen of bewaren uw gegevens niet." },
-    { "key": "6",  "label": "Kan ik het proberen voordat ik betaal?",                               "text": "Absoluut — u kunt gratis beginnen en de kernfuncties verkennen voordat u zich verbindt aan een plan." },
-    { "key": "7",  "label": "Heb ik programmeerkennis nodig om Altera te gebruiken?",               "text": "Helemaal niet. Altera is ontworpen voor visueel gebruik in Orange Data Mining. U sleept, plaatst en configureert — geen code vereist." },
-    { "key": "8",  "label": "Kan Altera gescande of afbeeldingsgebaseerde PDF's verwerken?",        "text": "Altera werkt het beste met digitaal gegenereerde PDF's. Gescande documenten met OCR-leesbare tekst worden ook ondersteund, hoewel de nauwkeurigheid kan variëren afhankelijk van de scankwaliteit." },
-    { "key": "9",  "label": "In welk formaat komt de geëxtraheerde data?",                         "text": "Altera geeft schone, gestructureerde tabellen direct uit in Orange Data Mining — klaar om te analyseren, exporteren of te gebruiken in uw volgende workflowstap." },
-    { "key": "10", "label": "Kan ik verschillende nodes gebruiken voor verschillende documenttypen?", "text": "Ja. Elke node is gebouwd voor een specifieke extractietaak. U kunt nodes combineren in dezelfde workflow om verschillende documenttypen in één keer te verwerken." },
-    { "key": "11", "label": "Wat als de extractie een veld mist of fout heeft?",                    "text": "U kunt aangepaste extractieregels definiëren om randgevallen te behandelen. Als een specifieke documentstructuur niet standaard wordt ondersteund, bieden we ook aangepaste node-ontwikkeling aan." },
-    { "key": "12", "label": "Is er een bestandsgroottelimiet?",                                     "text": "Altera verwerkt standaard zakelijke documenten zonder problemen. Zeer grote bestanden of ongewoon complexe indelingen kunnen de verwerkingstijd beïnvloeden, maar er is geen harde limiet." },
-    { "key": "13", "label": "Welke talen worden ondersteund?",                                      "text": "Altera ondersteunt voornamelijk Engelse en Franse documenten. Ondersteuning voor extra talen wordt toegevoegd naarmate de suite groeit." },
-    { "key": "14", "label": "Hoe krijg ik ondersteuning als er iets misgaat?",                     "text": "U kunt ons direct bereiken via support@alteradatasuite.com. We zijn een klein team, dus u krijgt altijd een echte reactie — geen bot." }
+    {
+      "key": "1",
+      "label": "Welke soorten PDF's ondersteunt Altera?",
+      "text": "Altera werkt met elk PDF — loonstroken, facturen, bankafschriften, rapporten en meer. Als het gestructureerde gegevens bevat, kan Altera het extraheren."
+    },
+    {
+      "key": "2",
+      "label": "Hoe nauwkeurig is de extractie?",
+      "text": "Altera extraheert gegevens met hoge nauwkeurigheid. U kunt aangepaste regels definiëren om ervoor te zorgen dat elk veld precies op de juiste plek terecht komt."
+    },
+    {
+      "key": "3",
+      "label": "Moet ik iets installeren?",
+      "text": "Altera is gebouwd voor Orange Data Mining. De installatie in Orange duurt slechts seconden — voeg gewoon de add-on toe en u kunt direct beginnen met extraheren."
+    },
+    {
+      "key": "4",
+      "label": "Kan ik meerdere PDF's tegelijk verwerken?",
+      "text": "Ja. Altera ondersteunt batchverwerking zodat u honderden PDF's kunt inladen en alle gegevens in één keer gestructureerd kunt krijgen."
+    },
+    {
+      "key": "5",
+      "label": "Zijn mijn gegevens veilig?",
+      "text": "Uw bestanden worden veilig verwerkt en nooit opgeslagen na de actieve sessie. We delen of bewaren uw gegevens niet."
+    },
+    {
+      "key": "6",
+      "label": "Kan ik het proberen voordat ik betaal?",
+      "text": "Absoluut — u kunt gratis beginnen en de kernfuncties verkennen voordat u zich verbindt aan een plan."
+    },
+    {
+      "key": "7",
+      "label": "Heb ik programmeerkennis nodig om Altera te gebruiken?",
+      "text": "Helemaal niet. Altera is ontworpen voor visueel gebruik in Orange Data Mining. U sleept, plaatst en configureert — geen code vereist."
+    },
+    {
+      "key": "8",
+      "label": "Kan Altera gescande of afbeeldingsgebaseerde PDF's verwerken?",
+      "text": "Altera werkt het beste met digitaal gegenereerde PDF's. Gescande documenten met OCR-leesbare tekst worden ook ondersteund, hoewel de nauwkeurigheid kan variëren afhankelijk van de scankwaliteit."
+    },
+    {
+      "key": "9",
+      "label": "In welk formaat komt de geëxtraheerde data?",
+      "text": "Altera geeft schone, gestructureerde tabellen direct uit in Orange Data Mining — klaar om te analyseren, exporteren of te gebruiken in uw volgende workflowstap."
+    },
+    {
+      "key": "10",
+      "label": "Kan ik verschillende nodes gebruiken voor verschillende documenttypen?",
+      "text": "Ja. Elke node is gebouwd voor een specifieke extractietaak. U kunt nodes combineren in dezelfde workflow om verschillende documenttypen in één keer te verwerken."
+    },
+    {
+      "key": "11",
+      "label": "Wat als de extractie een veld mist of fout heeft?",
+      "text": "U kunt aangepaste extractieregels definiëren om randgevallen te behandelen. Als een specifieke documentstructuur niet standaard wordt ondersteund, bieden we ook aangepaste node-ontwikkeling aan."
+    },
+    {
+      "key": "12",
+      "label": "Is er een bestandsgroottelimiet?",
+      "text": "Altera verwerkt standaard zakelijke documenten zonder problemen. Zeer grote bestanden of ongewoon complexe indelingen kunnen de verwerkingstijd beïnvloeden, maar er is geen harde limiet."
+    },
+    {
+      "key": "13",
+      "label": "Welke talen worden ondersteund?",
+      "text": "Altera ondersteunt voornamelijk Engelse en Franse documenten. Ondersteuning voor extra talen wordt toegevoegd naarmate de suite groeit."
+    },
+    {
+      "key": "14",
+      "label": "Hoe krijg ik ondersteuning als er iets misgaat?",
+      "text": "U kunt ons direct bereiken via support@alteradatasuite.com. We zijn een klein team, dus u krijgt altijd een echte reactie — geen bot."
+    }
   ],
   "docs": {
-    "overview":          "Overzicht",
-    "bestFor":           "Best geschikt voor",
-    "howToUse":          "Hoe te gebruiken",
-    "input":             "Invoer",
-    "output":            "Uitvoer",
-    "tipsNotes":         "Tips & Opmerkingen",
-    "toolbarRef":        "WerkbalkrReference",
+    "overview": "Overzicht",
+    "bestFor": "Best geschikt voor",
+    "howToUse": "Hoe te gebruiken",
+    "input": "Invoer",
+    "output": "Uitvoer",
+    "tipsNotes": "Tips & Opmerkingen",
+    "toolbarRef": "WerkbalkrReference",
     "keyboardShortcuts": "Sneltoetsen",
-    "watchTutorials":    "Video-tutorials bekijken",
-    "viewPlaylist":      "Afspeellijst op YouTube bekijken",
-    "handTool":          "Handgereedschap",
-    "handToolDesc":      "Wanneer ingeschakeld — klik en sleep ergens op het canvas om door het document te navigeren.",
-    "selectionTool":     "Selectiegereedschap",
+    "watchTutorials": "Video-tutorials bekijken",
+    "viewPlaylist": "Afspeellijst op YouTube bekijken",
+    "handTool": "Handgereedschap",
+    "handToolDesc": "Wanneer ingeschakeld — klik en sleep ergens op het canvas om door het document te navigeren.",
+    "selectionTool": "Selectiegereedschap",
     "selectionToolDesc": "Klik op een bestaande annotatie om deze te selecteren, te verplaatsen of te vergroten/verkleinen.",
-    "pageNav":           "Paginanavigatie",
-    "pageNavDesc":       "Door pagina's bladeren. De invoer toont uw huidige pagina van het totaal — u kunt ook direct een paginanummer typen.",
+    "pageNav": "Paginanavigatie",
+    "pageNavDesc": "Door pagina's bladeren. De invoer toont uw huidige pagina van het totaal — u kunt ook direct een paginanummer typen.",
+    "docsHome": "Docs",
+    "catalogTitle": "Node-documentatie",
+    "catalogIntro": "Elke Altera-node heeft een eigen referentiepagina: wat hij doet, hoe je hem configureert en wat erin gaat en eruit komt.",
+    "searchPlaceholder": "Nodes zoeken…",
+    "noResults": "Geen nodes gevonden voor je zoekopdracht.",
+    "nodeLabel": "Node",
+    "description": "Beschrijving",
+    "inputPorts": "Invoerpoorten",
+    "outputPorts": "Uitvoerpoorten",
+    "portType": "Type",
+    "noPorts": "Geen",
+    "moreInCategory": "Meer {category}-nodes",
+    "nodesCount": "{count} nodes",
     "shortcuts": {
-      "toggleHand":      "Handgereedschap in-/uitschakelen",
+      "toggleHand": "Handgereedschap in-/uitschakelen",
       "toggleSelection": "Selectiegereedschap in-/uitschakelen",
-      "toggleGuide":     "Hulplijngereedschap in-/uitschakelen (kolomscheidingslijn)",
-      "convert":         "Converteren",
-      "openPdf":         "PDF openen",
-      "zoomIn":          "Inzoomen",
-      "zoomOut":         "Uitzoomen",
-      "fitPage":         "Pagina aan venster aanpassen",
-      "scrollZoomIn":    "Inzoomen",
-      "scrollZoomOut":   "Uitzoomen"
+      "toggleGuide": "Hulplijngereedschap in-/uitschakelen (kolomscheidingslijn)",
+      "convert": "Converteren",
+      "openPdf": "PDF openen",
+      "zoomIn": "Inzoomen",
+      "zoomOut": "Uitzoomen",
+      "fitPage": "Pagina aan venster aanpassen",
+      "scrollZoomIn": "Inzoomen",
+      "scrollZoomOut": "Uitzoomen"
     }
   },
   "download": {
-    "heroBadgeLabel":  "Downloaden",
-    "heroBadgeText":   "Download de app",
-    "heroHeading":     "Altera Data Suite downloaden",
-    "heroLead":        "Beschikbaar voor Windows, macOS en Linux. In enkele minuten geïnstalleerd — begin meteen met uw eerste PDF.",
-    "trialNote":       "15 dagen gratis proefperiode op elk plan — geen creditcard vereist.",
+    "heroBadgeLabel": "Downloaden",
+    "heroBadgeText": "Download de app",
+    "heroHeading": "Altera Data Suite downloaden",
+    "heroLead": "Beschikbaar voor Windows, macOS en Linux. In enkele minuten geïnstalleerd — begin meteen met uw eerste PDF.",
+    "trialNote": "15 dagen gratis proefperiode op elk plan — geen creditcard vereist.",
     "unavailableNotice": "De Windows-versie is tijdelijk niet beschikbaar. Probeer het over een paar minuten opnieuw.",
-    "windowsName":     "Windows",
-    "windowsDetail":   "Windows 10 / 11 (64-bit)",
-    "windowsBtn":      "Downloaden voor Windows",
-    "macName":         "macOS",
-    "macDetail":       "macOS 12 Monterey of nieuwer",
-    "macBtn":          "Downloaden voor macOS",
-    "linuxName":       "Linux",
-    "linuxDetail":     "De meeste gangbare distributies",
-    "linuxBtn":        "Downloaden voor Linux",
-    "comingSoon":      "Binnenkort beschikbaar",
-    "comingSoonNote":  "In actieve ontwikkeling — blijf op de hoogte.",
-    "helpPre":         "Hulp nodig bij de installatie?",
-    "helpLink":        "Bekijk de snelstartgids"
+    "windowsName": "Windows",
+    "windowsDetail": "Windows 10 / 11 (64-bit)",
+    "windowsBtn": "Downloaden voor Windows",
+    "macName": "macOS",
+    "macDetail": "macOS 12 Monterey of nieuwer",
+    "macBtn": "Downloaden voor macOS",
+    "linuxName": "Linux",
+    "linuxDetail": "De meeste gangbare distributies",
+    "linuxBtn": "Downloaden voor Linux",
+    "comingSoon": "Binnenkort beschikbaar",
+    "comingSoonNote": "In actieve ontwikkeling — blijf op de hoogte.",
+    "helpPre": "Hulp nodig bij de installatie?",
+    "helpLink": "Bekijk de snelstartgids"
   },
   "contact": {
     "badgeLabel": "Ondersteuning",
-    "badgeText":  "We helpen u graag",
-    "heading":    "Contact & ondersteuning",
-    "lead":       "Vragen over Altera, facturering of een specifiek PDF waar u niet uitkomt? Neem contact op — we zijn een klein team, dus u krijgt altijd een echt antwoord, geen bot.",
-    "docsTitle":  "Documentatie",
-    "docsDesc":   "Stapsgewijze handleidingen en configuratiereferenties voor elke node.",
-    "docsLink":   "Bekijk de documentatie",
-    "faqsTitle":  "Veelgestelde vragen",
-    "faqsDesc":   "Antwoorden op veelgestelde vragen over installatie, nauwkeurigheid en prijzen.",
-    "faqsLink":   "Bekijk de veelgestelde vragen"
+    "badgeText": "We helpen u graag",
+    "heading": "Contact & ondersteuning",
+    "lead": "Vragen over Altera, facturering of een specifiek PDF waar u niet uitkomt? Neem contact op — we zijn een klein team, dus u krijgt altijd een echt antwoord, geen bot.",
+    "docsTitle": "Documentatie",
+    "docsDesc": "Stapsgewijze handleidingen en configuratiereferenties voor elke node.",
+    "docsLink": "Bekijk de documentatie",
+    "faqsTitle": "Veelgestelde vragen",
+    "faqsDesc": "Antwoorden op veelgestelde vragen over installatie, nauwkeurigheid en prijzen.",
+    "faqsLink": "Bekijk de veelgestelde vragen"
   },
   "useCases": {
     "badgeLabel": "Toepassingen",
-    "badgeText":  "Binnenkort beschikbaar",
-    "heading":    "Hoe teams Altera in de praktijk gebruiken.",
-    "lead":       "We stellen momenteel uitgebreide toepassingen samen voor finance-, consultancy- en operationele teams. Kom snel terug — of neem vandaag nog contact op en we wijzen u de weg.",
-    "ctaLabel":   "Neem contact op"
+    "badgeText": "Altera in de praktijk",
+    "heading": "Wat teams bouwen met Altera",
+    "lead": "Echte workflows voor de pdf's die uw team elke maand verwerkt. Kies een team om de documenten, de workflow en het resultaat te zien.",
+    "learnMore": "Bekijk de workflow",
+    "labels": {
+      "documents": "Documenten die het verwerkt",
+      "challenge": "De uitdaging",
+      "workflow": "De workflow",
+      "workflowHint": "Dit canvas is live: sleep de nodes of zoom met de knoppen.",
+      "steps": "Stap voor stap",
+      "outcomes": "Wat u krijgt",
+      "otherUseCases": "Meer toepassingen",
+      "allUseCases": "Alle toepassingen"
+    },
+    "items": {
+      "finance": {
+        "tab": "Finance en boekhouding",
+        "title": "Stem bankafschriften af op uw boekhouding",
+        "summary": "Zet pdf-bankafschriften om in schone tabellen en vergelijk ze met uw boekhoudexport, zodat alleen de posten overblijven die aandacht nodig hebben.",
+        "metaTitle": "Bankafstemming vanuit pdf-afschriften",
+        "metaDescription": "Haal transacties uit pdf-bankafschriften en stem ze af op uw boekhoudexport met een Altera-workflow zonder code.",
+        "lead": "Afstemmen aan het eind van de maand betekent vaak transacties met de hand overnemen uit pdf-afschriften. Met Altera haalt u ze eruit, vergelijkt u ze met uw boekhouding en houdt u alleen over wat niet klopt.",
+        "documents": [
+          "Bank- en creditcardafschriften",
+          "Rapporten van betaalproviders",
+          "Boekhoudexports (Excel of CSV)",
+          "Leveranciersafschriften"
+        ],
+        "challenge": "Afschriften komen als pdf, bij elke bank in een andere opmaak. Ze overtypen in een spreadsheet kost uren, en één verkeerd getypt bedrag is genoeg om de hele afstemming te verstoren.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Haal de transacties eruit",
+            "body": "Markeer de transactietabel in de PDF Converter, en Altera maakt er rijen van met datum, omschrijving, referentie en bedrag."
+          },
+          {
+            "node": "Cleaner",
+            "title": "Schoon de tekst op",
+            "body": "Verwijder spaties en valutatekens, zodat bedragen en referenties precies overeenkomen."
+          },
+          {
+            "node": "Change Type",
+            "title": "Maak bedragen numeriek",
+            "body": "Zet de bedragkolom om naar getallen, zodat die vergeleken en opgeteld kan worden."
+          },
+          {
+            "node": "Merge",
+            "title": "Vergelijk met de boekhouding",
+            "body": "Laad uw boekhoudexport met Input Data en verbind die met de Extra Data-poort van Merge. Rijen worden gekoppeld op referentie en bedrag."
+          },
+          {
+            "node": "Filter · Export",
+            "title": "Houd over wat aandacht nodig heeft",
+            "body": "Filter op de posten zonder match en exporteer ze naar Excel om na te kijken."
+          }
+        ],
+        "outcomes": [
+          "Stem een maand transacties af in minuten in plaats van uren",
+          "Geen overtypen, dus geen typefouten in bedragen",
+          "Hergebruik dezelfde workflow volgende maand: wissel de pdf en draai opnieuw"
+        ],
+        "canvas": {
+          "tables": {
+            "statement": {
+              "name": "Bankafschrift (geëxtraheerd)",
+              "rowsLabel": "312 rijen (voorbeeld)",
+              "columns": [
+                "Datum",
+                "Omschrijving",
+                "Referentie",
+                "Bedrag"
+              ]
+            }
+          },
+          "descriptions": {
+            "clean": "Opschonen, € weg",
+            "type": "Bedrag naar getal",
+            "ledger": "Boekhoudexport.xlsx",
+            "merge": "Koppelen op referentie",
+            "filter": "Zonder match",
+            "export": "Na te kijken.xlsx"
+          }
+        }
+      },
+      "payroll": {
+        "tab": "HR en salarissen",
+        "title": "Maak van loonstroken een salarisoverzicht",
+        "summary": "Haal elke regel uit een stapel pdf-loonstroken en tel verdiensten en inhoudingen per medewerker op, klaar voor uw salariscontrole.",
+        "metaTitle": "Loonstroken in pdf naar een salarisoverzicht in Excel",
+        "metaDescription": "Haal verdiensten en inhoudingen uit pdf-loonstroken en maak een salarisoverzicht per medewerker in Excel, zonder code.",
+        "lead": "Loonstroken zijn gemaakt om te lezen, niet voor spreadsheets. Altera haalt de regels uit uw pdf-loonstroken en bundelt ze tot één overzichtsrij per medewerker.",
+        "documents": [
+          "Maandelijkse loonstroken (één of meer per pdf)",
+          "Loonjournaals en loonstaten",
+          "Onkosten- en vergoedingsrapporten",
+          "Jaaropgaven"
+        ],
+        "challenge": "Elke loonstrook toont de naam van de medewerker maar één keer, bovenaan, met daaronder verdiensten en inhoudingen. Na extractie zeggen de meeste rijen niet bij wie ze horen, en ze met de hand optellen is traag en foutgevoelig.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Haal de regels eruit",
+            "body": "Markeer het blok met verdiensten en inhoudingen in de PDF Converter om er een tabel van te maken."
+          },
+          {
+            "node": "Cascade Fill",
+            "title": "Zet de naam op elke rij",
+            "body": "Vul de naam van de medewerker naar beneden aan, zodat elke regel weet bij welke loonstrook hij hoort."
+          },
+          {
+            "node": "Filter",
+            "title": "Houd de nodige regels",
+            "body": "Houd verdiensten en inhoudingen, en verwijder kopteksten, lege regels en opmerkingen."
+          },
+          {
+            "node": "Group By",
+            "title": "Tel op per medewerker",
+            "body": "Tel de verdiensten en inhoudingen van elke medewerker op in één rij."
+          },
+          {
+            "node": "Sort · Export",
+            "title": "Sorteer en exporteer",
+            "body": "Sorteer op medewerker en exporteer het overzicht naar Excel."
+          }
+        ],
+        "outcomes": [
+          "Eén nette overzichtsrij per medewerker",
+          "Zie ongebruikelijke betalingen vóór de salarisafsluiting",
+          "Dezelfde workflow verwerkt de stapel van volgende maand"
+        ],
+        "canvas": {
+          "tables": {
+            "payslips": {
+              "name": "Loonstroken (geëxtraheerd)",
+              "rowsLabel": "1.480 rijen (voorbeeld)",
+              "columns": [
+                "Medewerker",
+                "Looncomponent",
+                "Bedrag"
+              ]
+            }
+          },
+          "descriptions": {
+            "fill": "Naam op elke rij",
+            "filter": "Verdiensten en inhoudingen",
+            "group": "Totalen per medewerker",
+            "sort": "Op medewerker",
+            "export": "Salarisoverzicht.xlsx"
+          }
+        }
+      },
+      "procurement": {
+        "tab": "Inkoop",
+        "title": "Analyseer uitgaven op basis van leveranciersfacturen",
+        "summary": "Haal factuurregels uit pdf-facturen, bereken regeltotalen en zie de uitgaven per leverancier zonder één getal over te typen.",
+        "metaTitle": "Factuurregels uit pdf naar Excel",
+        "metaDescription": "Haal regels uit pdf-leveranciersfacturen, bereken totalen en analyseer uitgaven per leverancier met een Altera-workflow zonder code.",
+        "lead": "Uw echte uitgavendata zit opgesloten in pdf-facturen. Altera haalt de factuurregels eruit, berekent de totalen en vat de uitgaven per leverancier samen.",
+        "documents": [
+          "Leveranciersfacturen",
+          "Inkooporders",
+          "Creditnota's",
+          "Offertes en prijslijsten"
+        ],
+        "challenge": "Elke leverancier maakt facturen anders op, en regels lopen vaak over meerdere pagina's. Ze in één tabel krijgen betekent meestal handmatig kopiëren en plakken.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Haal de factuurregels eruit",
+            "body": "Markeer de regeltabel en plaats kolomhulplijnen waar kolommen dicht op elkaar staan."
+          },
+          {
+            "node": "Cleaner",
+            "title": "Ruim de tekst op",
+            "body": "Verwijder spaties en losse tekens uit omschrijvingen en prijzen."
+          },
+          {
+            "node": "Change Type",
+            "title": "Maak aantallen en prijzen numeriek",
+            "body": "Zet aantal en stukprijs om naar getallen."
+          },
+          {
+            "node": "Formula",
+            "title": "Bereken regeltotalen",
+            "body": "Voeg een kolom Regeltotaal toe: aantal × stukprijs."
+          },
+          {
+            "node": "Group By · Export",
+            "title": "Uitgaven per leverancier",
+            "body": "Tel de regeltotalen op per leverancier en exporteer het resultaat."
+          }
+        ],
+        "outcomes": [
+          "Zie uitgaven per leverancier in minuten",
+          "Vind prijsverschillen tussen facturen",
+          "Voed uw uitgavenrapporten met schone factuurregels"
+        ],
+        "canvas": {
+          "tables": {
+            "invoices": {
+              "name": "Facturen (geëxtraheerd)",
+              "rowsLabel": "860 rijen (voorbeeld)",
+              "columns": [
+                "Leverancier",
+                "Omschrijving",
+                "Aantal",
+                "Stukprijs"
+              ]
+            }
+          },
+          "descriptions": {
+            "clean": "Omschrijvingen opruimen",
+            "type": "Aantal en prijs naar getal",
+            "formula": "Totaal = Aantal × Stukprijs",
+            "group": "Uitgaven per leverancier",
+            "export": "Uitgaven.xlsx"
+          }
+        }
+      },
+      "logistics": {
+        "tab": "Logistiek",
+        "title": "Bouw een leveringslog uit pakbonnen",
+        "summary": "Haal referenties, klanten en datums uit pdf-pakbonnen en manifesten in één schone, gesorteerde leveringslog.",
+        "metaTitle": "Pakbonnen en manifesten uit pdf naar Excel",
+        "metaDescription": "Haal orderreferenties, klanten en datums uit pdf-pakbonnen en verzendmanifesten in één schone leveringslog.",
+        "lead": "Pakbonnen en manifesten stapelen zich op als pdf's van vervoerders en magazijnen. Altera maakt er één leveringslog van die u kunt sorteren, controleren en delen.",
+        "documents": [
+          "Pakbonnen",
+          "Verzendmanifesten",
+          "Paklijsten",
+          "Vervoerdersrapporten"
+        ],
+        "challenge": "Referenties combineren vaak meerdere codes in één veld, en dezelfde levering kan op meer dan één document staan. Dat met de hand opschonen schaalt niet.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Haal de leveringen eruit",
+            "body": "Markeer de leveringstabel in de PDF Converter om er rijen van te maken."
+          },
+          {
+            "node": "Text Parser",
+            "title": "Splits gecombineerde referenties",
+            "body": "Splits een referentie als ORD-4821/DEP-07 in aparte kolommen voor order en depot."
+          },
+          {
+            "node": "Unique",
+            "title": "Verwijder dubbele rijen",
+            "body": "Houd één rij per levering, ook als die op meerdere documenten staat."
+          },
+          {
+            "node": "Sort · Export",
+            "title": "Sorteer en exporteer",
+            "body": "Sorteer op leverdatum en exporteer de log naar Excel of CSV."
+          }
+        ],
+        "outcomes": [
+          "Eén leveringslog in plaats van een map vol pdf's",
+          "Geen dubbele leveringen in uw rapporten",
+          "Ververs de log zodra er nieuwe documenten binnenkomen"
+        ],
+        "canvas": {
+          "tables": {
+            "deliveries": {
+              "name": "Pakbonnen (geëxtraheerd)",
+              "rowsLabel": "540 rijen (voorbeeld)",
+              "columns": [
+                "Referentie",
+                "Klant",
+                "Artikelen",
+                "Datum"
+              ]
+            }
+          },
+          "descriptions": {
+            "parse": "Order / depot splitsen",
+            "unique": "Eén rij per levering",
+            "sort": "Op leverdatum",
+            "export": "Leveringslog.xlsx"
+          }
+        }
+      },
+      "audit": {
+        "tab": "Audit en compliance",
+        "title": "Controleer afschriften en rapporten vóór goedkeuring",
+        "summary": "Haal saldi uit pdf-afschriften en rapporten, tel ze op en spoor ontbrekende waarden en gaten automatisch op.",
+        "metaTitle": "Auditcontroles op pdf-afschriften en rapporten",
+        "metaDescription": "Haal saldi uit pdf-afschriften, tel ze op en spoor ontbrekende waarden en gaten op met een herhaalbare Altera-workflow zonder code.",
+        "lead": "Auditwerk betekent cijfers controleren in stapels pdf-afschriften en rapporten. Altera zet ze om in tabellen, telt ze op en laat zien waar data ontbreekt.",
+        "documents": [
+          "Rekening- en saldoafschriften",
+          "Financiële en managementrapporten",
+          "Bevestigingen van derden",
+          "Toezichtrapportages"
+        ],
+        "challenge": "Controles moeten grondig en herhaalbaar zijn, maar de brondocumenten zijn pdf's. Handmatige steekproeven kosten tijd en laten gaten.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Haal de cijfers eruit",
+            "body": "Markeer de saldotabel in de PDF Converter om er een tabel van te maken."
+          },
+          {
+            "node": "Regular Expressions",
+            "title": "Haal rekeningnummers eruit",
+            "body": "Gebruik een patroon om schone rekeningnummers uit langere tekst te halen."
+          },
+          {
+            "node": "Change Type",
+            "title": "Maak saldi numeriek",
+            "body": "Zet saldi om naar getallen zodat ze opgeteld kunnen worden."
+          },
+          {
+            "node": "Aggregate · Export",
+            "title": "Tel de saldi op",
+            "body": "Bereken totalen, aantallen, minima en maxima en exporteer ze voor uw werkpapieren."
+          },
+          {
+            "node": "Summary",
+            "title": "Spoor ontbrekende waarden en gaten op",
+            "body": "Controleer elke kolom op lege cellen en gaten voordat u op de cijfers vertrouwt."
+          }
+        ],
+        "outcomes": [
+          "Controleer elke regel, niet alleen een steekproef",
+          "Een duidelijk, zichtbaar overzicht van elke uitgevoerde controle",
+          "Draai dezelfde controles opnieuw op de documenten van de volgende periode"
+        ],
+        "canvas": {
+          "tables": {
+            "statements": {
+              "name": "Afschriften (geëxtraheerd)",
+              "rowsLabel": "2.050 rijen (voorbeeld)",
+              "columns": [
+                "Rekening",
+                "Periode",
+                "Saldo"
+              ]
+            }
+          },
+          "descriptions": {
+            "regex": "Rekeningnummers",
+            "type": "Saldo naar getal",
+            "aggregate": "Totalen en aantallen",
+            "summary": "Ontbrekende waarden en gaten",
+            "export": "Werkpapieren.xlsx"
+          }
+        }
+      }
+    }
   },
   "about": {
-    "heroBadgeLabel":  "Over ons",
-    "heroBadgeText":   "Het team achter Altera",
-    "heroHeading":     "Gebouwd door een klein team met een duidelijk doel.",
-    "heroLead":        "Altera Data Suite is gemaakt om een terugkerend probleem op te lossen — het extraheren van gestructureerde gegevens uit PDF's zou geen uren handmatig werk of complexe scripts mogen vereisen. Dus bouwden we een tool die het in seconden doet.",
+    "heroBadgeLabel": "Over ons",
+    "heroBadgeText": "Het team achter Altera",
+    "heroHeading": "Gebouwd door een klein team met een duidelijk doel.",
+    "heroLead": "Altera Data Suite is gemaakt om een terugkerend probleem op te lossen — het extraheren van gestructureerde gegevens uit PDF's zou geen uren handmatig werk of complexe scripts mogen vereisen. Dus bouwden we een tool die het in seconden doet.",
     "storyBadgeLabel": "Ons verhaal",
-    "storyBadgeText":  "Waarom we dit hebben gebouwd",
-    "story1Heading":   "Waar het idee vandaan komt",
-    "story1Text":      "We kwamen allebei uit consultingomgevingen — we werkten met bedrijven zoals Deloitte en PwC. Eén ding werd snel duidelijk: zelfs op dat niveau had niemand een behoorlijke alles-in-één oplossing gebouwd voor het extraheren van gegevens uit PDF's. Loonstroken, facturen, rapporten — alles werd handmatig of met fragiele, eenmalige scripts verwerkt. Die leemte was het startpunt.",
-    "story2Heading":   "De eerste node",
-    "story2Text":      "We begonnen met één PDF-converter node. Het werkte — en we zagen meteen wat er als volgende ontbrak. Orange had sterke analytische mogelijkheden maar liet data-cleaning en -verwerking grotendeels onbehandeld. Dus bleven we bouwen. Elke node was een directe reactie op een knelpunt in echte werkprocessen.",
-    "story3Heading":   "Waarom Orange Data Mining?",
-    "story3Text":      "We wilden niet iets bouwen dat geïsoleerd bestaat. Orange Data Mining heeft al een sterk, gevestigd ecosysteem — het kiezen ervan betekende dat onze gebruikers hun manier van werken niet hoeven te veranderen. Altera sluit direct aan op wat ze al kennen en gebruiken.",
-    "story4Heading":   "Waar we naartoe gaan",
-    "story4Text":      "De suite groeit nog steeds. Meer nodes zijn in ontwikkeling, en bestaande worden actief onderhouden. Dit is geen afgerond product — het is een evoluerend toolkit gebouwd om bij te houden hoe data-werk in de praktijk plaatsvindt.",
-    "ctaHeading":      "Klaar om het in actie te zien?",
-    "ctaSubtitle":     "Bekijk de demo om te zien hoe Altera echte PDF's verwerkt, of verken de prijzen om het juiste plan te vinden.",
-    "watchDemo":       "Demo bekijken",
-    "seePricing":      "Prijzen bekijken",
+    "storyBadgeText": "Waarom we dit hebben gebouwd",
+    "story1Heading": "Waar het idee vandaan komt",
+    "story1Text": "We kwamen allebei uit consultingomgevingen — we werkten met bedrijven zoals Deloitte en PwC. Eén ding werd snel duidelijk: zelfs op dat niveau had niemand een behoorlijke alles-in-één oplossing gebouwd voor het extraheren van gegevens uit PDF's. Loonstroken, facturen, rapporten — alles werd handmatig of met fragiele, eenmalige scripts verwerkt. Die leemte was het startpunt.",
+    "story2Heading": "De eerste node",
+    "story2Text": "We begonnen met één PDF-converter node. Het werkte — en we zagen meteen wat er als volgende ontbrak. Orange had sterke analytische mogelijkheden maar liet data-cleaning en -verwerking grotendeels onbehandeld. Dus bleven we bouwen. Elke node was een directe reactie op een knelpunt in echte werkprocessen.",
+    "story3Heading": "Waarom Orange Data Mining?",
+    "story3Text": "We wilden niet iets bouwen dat geïsoleerd bestaat. Orange Data Mining heeft al een sterk, gevestigd ecosysteem — het kiezen ervan betekende dat onze gebruikers hun manier van werken niet hoeven te veranderen. Altera sluit direct aan op wat ze al kennen en gebruiken.",
+    "story4Heading": "Waar we naartoe gaan",
+    "story4Text": "De suite groeit nog steeds. Meer nodes zijn in ontwikkeling, en bestaande worden actief onderhouden. Dit is geen afgerond product — het is een evoluerend toolkit gebouwd om bij te houden hoe data-werk in de praktijk plaatsvindt.",
+    "ctaHeading": "Klaar om het in actie te zien?",
+    "ctaSubtitle": "Bekijk de demo om te zien hoe Altera echte PDF's verwerkt, of verken de prijzen om het juiste plan te vinden.",
+    "watchDemo": "Demo bekijken",
+    "seePricing": "Prijzen bekijken",
     "team": [
-      { "role": "CEO & Medeoprichter",      "bio": "Mehdi bouwde Altera om de wrijving bij gegevensextractie in Orange Data Mining weg te nemen. Met uitgebreide ervaring in Python, JavaScript en datagedreven oplossingen verbindt hij diepgaande technische kennis met echte dataworkflows. Als CEO bepaalt hij de productvisie, stuurt de technische roadmap en zorgt ervoor dat elke functie aansluit bij de echte behoeften van dataprofessionals." },
-      { "role": "Medeoprichter, Commercieel & Marketingdirecteur", "bio": "Salah leidt de commerciële en marketingstrategie van het bedrijf. Hij is verantwoordelijk voor merkontwikkeling, klantenwerving, leadgeneratie en strategische partnerschappen. Zijn doel is de groei van het bedrijf te versnellen en innovatieve oplossingen voor documentautomatisering te promoten bij professionals." },
-      { "role": "Software Engineer",  "bio": "Saumya is gespecialiseerd in Rust, C en TypeScript, met een sterke focus op softwareprestatie-optimalisatie. Hij ontwerpt de kernmotor van Altera en zorgt ervoor dat elke berekening snel, efficiënt en schaalbaar is." },
-      { "role": "Frontend Engineer",  "bio": "Raphaël ontwerpt de interfaces waarmee gebruikers dagelijks omgaan. Gespecialiseerd in frontend engineering, vertaalt hij ontwerpen naar snelle, responsieve en toegankelijke webervaringen. Van componentarchitectuur tot pixel-perfecte implementatie zorgt hij ervoor dat Altera's UI soepel, betrouwbaar en consistent is." }
+      {
+        "role": "CEO & Medeoprichter",
+        "bio": "Mehdi bouwde Altera om de wrijving bij gegevensextractie in Orange Data Mining weg te nemen. Met uitgebreide ervaring in Python, JavaScript en datagedreven oplossingen verbindt hij diepgaande technische kennis met echte dataworkflows. Als CEO bepaalt hij de productvisie, stuurt de technische roadmap en zorgt ervoor dat elke functie aansluit bij de echte behoeften van dataprofessionals."
+      },
+      {
+        "role": "Medeoprichter, Commercieel & Marketingdirecteur",
+        "bio": "Salah leidt de commerciële en marketingstrategie van het bedrijf. Hij is verantwoordelijk voor merkontwikkeling, klantenwerving, leadgeneratie en strategische partnerschappen. Zijn doel is de groei van het bedrijf te versnellen en innovatieve oplossingen voor documentautomatisering te promoten bij professionals."
+      },
+      {
+        "role": "Software Engineer",
+        "bio": "Saumya is gespecialiseerd in Rust, C en TypeScript, met een sterke focus op softwareprestatie-optimalisatie. Hij ontwerpt de kernmotor van Altera en zorgt ervoor dat elke berekening snel, efficiënt en schaalbaar is."
+      },
+      {
+        "role": "Frontend Engineer",
+        "bio": "Raphaël ontwerpt de interfaces waarmee gebruikers dagelijks omgaan. Gespecialiseerd in frontend engineering, vertaalt hij ontwerpen naar snelle, responsieve en toegankelijke webervaringen. Van componentarchitectuur tot pixel-perfecte implementatie zorgt hij ervoor dat Altera's UI soepel, betrouwbaar en consistent is."
+      }
     ]
   },
   "faqs": {
     "pageTitle": "Veelgestelde vragen — Altera Data Suite"
   },
   "changelog": {
-    "badgeLabel":   "Wijzigingslog",
-    "badgeText":    "Nieuw in Altera",
-    "heroHeading":  "Elke update, op één plek.",
+    "badgeLabel": "Wijzigingslog",
+    "badgeText": "Nieuw in Altera",
+    "heroHeading": "Elke update, op één plek.",
     "heroSubtitle": "Nieuwe functies, verbeteringen en correcties — regelmatig uitgebracht en hier gedocumenteerd.",
-    "categories":   { "New": "Nieuw", "Improved": "Verbeterd", "Fixed": "Opgelost" },
-    "latestLabel":  "Nieuwste versie"
+    "categories": {
+      "New": "Nieuw",
+      "Improved": "Verbeterd",
+      "Fixed": "Opgelost"
+    },
+    "latestLabel": "Nieuwste versie"
   },
   "chatbot": {
-    "triggerTitle":    "Vraag Altera",
+    "triggerTitle": "Vraag Altera",
     "triggerSubtitle": "Hier om te helpen",
-    "panelTitle":      "Altera Assistent",
-    "panelSubtitle":   "Stel mij vragen",
-    "placeholder":     "Stel een vraag…",
-    "welcome":         "Hallo! Ik ben Altera's assistent. Stel mij gerust vragen over de app, de nodes of hoe u kunt beginnen.",
-    "followUp":        "Hier zijn enkele dingen waarmee ik u kan helpen:",
-    "fallback":        "Goede vraag! Voor meer details bekijkt u de Documentatiepagina of neemt u rechtstreeks contact op met ons team.",
+    "panelTitle": "Altera Assistent",
+    "panelSubtitle": "Stel mij vragen",
+    "placeholder": "Stel een vraag…",
+    "welcome": "Hallo! Ik ben Altera's assistent. Stel mij gerust vragen over de app, de nodes of hoe u kunt beginnen.",
+    "followUp": "Hier zijn enkele dingen waarmee ik u kan helpen:",
+    "fallback": "Goede vraag! Voor meer details bekijkt u de Documentatiepagina of neemt u rechtstreeks contact op met ons team.",
     "quickReplies": [
-      { "question": "Hoe werkt de PDF Converter?",             "answer": "Open uw PDF, teken rechthoeken over de gegevens die u wilt extraheren, plaats optioneel kolomgidsen en klik op Converteren. U krijgt een overzichtelijke gestructureerde tabel." },
-      { "question": "Welke nodes zijn beschikbaar?",         "answer": "Altera bevat 9 nodes: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates en Cleaner." },
-      { "question": "Is er een gratis proefperiode?",          "answer": "Ja! U kunt gratis beginnen. Ga naar de Prijzenpagina om te zien wat er in elk plan is inbegrepen." }
+      {
+        "question": "Hoe werkt de PDF Converter?",
+        "answer": "Open uw PDF, teken rechthoeken over de gegevens die u wilt extraheren, plaats optioneel kolomgidsen en klik op Converteren. U krijgt een overzichtelijke gestructureerde tabel."
+      },
+      {
+        "question": "Welke nodes zijn beschikbaar?",
+        "answer": "Altera bevat 9 nodes: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates en Cleaner."
+      },
+      {
+        "question": "Is er een gratis proefperiode?",
+        "answer": "Ja! U kunt gratis beginnen. Ga naar de Prijzenpagina om te zien wat er in elk plan is inbegrepen."
+      }
     ]
   },
   "lang": {
@@ -309,9 +998,9 @@
     "nl": "Nederlands"
   },
   "legal": {
-    "badge":            "Juridisch",
+    "badge": "Juridisch",
     "lastUpdatedLabel": "Laatst bijgewerkt",
-    "lastUpdated":      "Mei 2026"
+    "lastUpdated": "Mei 2026"
   },
   "termsContent": {
     "groups": [
@@ -463,5 +1152,80 @@
         ]
       }
     ]
+  },
+  "whyWorkflows": {
+    "badgeLabel": "Onze aanpak",
+    "badgeText": "Waarom visuele workflows",
+    "heading": "Waarom visuele workflows?",
+    "lead": "Altera maakt van elke stap in uw datawerk een node die u kunt zien, controleren en hergebruiken. Dit is waarom we het zo hebben gebouwd.",
+    "intro": [
+      "Het meeste datawerk gebeurt nog altijd in spreadsheets vol formules, of in scripts van die ene collega die kan programmeren. Beide werken — totdat u een getal moet controleren, een stap moet aanpassen of het werk aan iemand anders moet overdragen.",
+      "Het probleem is dat beide het proces verbergen. Een script is een lijst instructies; een spreadsheet toont alleen het eindresultaat. Maar als u een stapel pdf's omzet in een rapport, gaat het eigenlijk om de data zelf: hoe die eruitziet na elke stap, en of die klopt.",
+      "Daarom is Altera opgebouwd rond een datastroom. Elke node doet één taak — extraheren, opschonen, filteren, combineren, samenvatten — en u kunt elke node openen om het resultaat te zien. De workflow is het proces, zichtbaar voor iedereen."
+    ],
+    "diagramCaption": "Een echte salarisworkflow: de uit de pdf geëxtraheerde tabel wordt gesplitst in medewerkerrijen en betaaldatums, beide kanten worden opgeschoond, weer samengevoegd en naar Excel geëxporteerd.",
+    "reasonsIntro": "Drie redenen waarom wij geloven dat visuele workflows de beste manier zijn om met data te werken:",
+    "reasons": [
+      {
+        "title": "Het gaat om het resultaat, niet om de code",
+        "body": [
+          "Als u facturen per leverancier samenvat, draait het om welke rijen u houdt, hoe u ze groepeert en wat u optelt. Hoe dat in code staat, helpt u bij geen van die vragen.",
+          "In Altera kiest u een node, stelt u de opties in en ziet u meteen het resultaat. Elke instelling is een zichtbare keuze, geen regel syntaxis die u moet debuggen."
+        ]
+      },
+      {
+        "title": "Een workflow die iedereen kan lezen",
+        "body": [
+          "Een workflow is een gedeelde taal. Een financieel manager, een analist en een auditor kunnen naar hetzelfde canvas kijken en stap voor stap volgen wat er met de data gebeurt, zonder een script te lezen.",
+          "Zo kunt u eenvoudig andermans werk nakijken, een proces overdragen als een collega afwezig is en precies laten zien hoe een getal in een rapport tot stand kwam."
+        ]
+      },
+      {
+        "title": "Geen programmeerdiploma nodig",
+        "body": [
+          "Uw eerste bruikbare workflow bouwt u in één middag: een tabel uit een pdf halen, opschonen en naar Excel exporteren.",
+          "Daarna leert u node voor node. Hetzelfde canvas dat een eenvoudige opschoning doet, kan ook samenvoegingen, draaitabellen, reguliere expressies en rapporten in meerdere stappen aan, dus u groeit er nooit uit."
+        ]
+      }
+    ],
+    "differentHeading": "Wat Altera anders maakt",
+    "different": [
+      {
+        "title": "Pdf-extractie is onderdeel van de workflow",
+        "body": "De meeste tools beginnen pas als uw data al in een tabel staat. In Altera is data uit pdf's halen een node zoals alle andere, dus data ophalen en opschonen gebeurt op één plek."
+      },
+      {
+        "title": "Eén keer bouwen, elke maand opnieuw draaien",
+        "body": "Sla een workflow op en alle instellingen blijven bewaard, inclusief de gebieden die u in de pdf hebt gemarkeerd. Komt het bestand van volgende maand binnen, wissel het dan om en voer dezelfde stappen opnieuw uit."
+      },
+      {
+        "title": "Uw bestanden blijven op uw computer",
+        "body": "Altera is een desktop-app. Uw documenten worden lokaal op uw eigen computer verwerkt en niet naar de server van een ander geüpload."
+      }
+    ],
+    "ctaHeading": "Zie het zelf",
+    "ctaText": "Download Altera en bouw uw eerste workflow in een paar minuten.",
+    "ctaDownload": "Downloaden",
+    "ctaDocs": "Bekijk de node-documentatie",
+    "canvas": {
+      "tableName": "Salaris (geëxtraheerd)",
+      "rowsLabel": "240 rijen (voorbeeld)",
+      "columns": [
+        "Medewerker",
+        "Betaaldatum",
+        "Verdiensten",
+        "Netto"
+      ],
+      "descriptions": {
+        "employees": "Medewerkerrijen",
+        "first": "Eerste rij per medewerker",
+        "regex": "Betaaldatum extraheren",
+        "dates": "Alleen datums houden",
+        "stack": "Beide tabellen koppelen",
+        "columns": "Hernoemen en ordenen",
+        "export": "Salaris.xlsx"
+      },
+      "hint": "Dit canvas is live, net als in de app: sleep de nodes of zoom met de knoppen."
+    }
   }
 }

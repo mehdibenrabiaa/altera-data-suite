@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import DocsClient from "./DocsClient";
+import DocsIndex from "./DocsIndex";
+import { DEFAULT_T } from "./docsText";
 
 export const metadata: Metadata = {
   title: "Docs — Altera Data Suite",
@@ -8,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function DocsPage() {
-  return <DocsClient />;
+  return <DocsIndex lang="en" t={DEFAULT_T} />;
 }

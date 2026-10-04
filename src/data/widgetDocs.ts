@@ -854,7 +854,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
     name: "Add Column",
     color: "#155F98",
     icon: "🧩",
-    svgIcon: "conditional_column.svg",
+    svgIcon: "add_column.svg",
     tagline:
       "Add a new column based on an ordered list of conditions — like Power Query's Add Conditional Column.",
     description:
@@ -999,7 +999,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
     name: "Unpivot Columns",
     color: "#FFD800",
     icon: "🔀",
-    svgIcon: "unpivot.svg",
+    svgIcon: "unpivot_tables.svg",
     tagline:
       "Turn selected columns into Attribute/Value row pairs — like Power Query's Unpivot Columns.",
     description:
@@ -1042,7 +1042,7 @@ export const WIDGET_DOCS: WidgetDoc[] = [
     name: "Pivot Columns",
     color: "#FFD800",
     icon: "🔃",
-    svgIcon: "pivot.svg",
+    svgIcon: "pivot_tables.svg",
     tagline:
       "Turn a labels column into new column headers and a values column into their contents — like Power Query's Pivot Column.",
     description:
@@ -1471,3 +1471,94 @@ export const WIDGET_DOCS: WidgetDoc[] = [
     ],
   },
 ];
+
+// ── Categories ──────────────────────────────────────────────────────────
+// Same keys, labels, colors, and order as the app's own node catalog
+// (devkit/altera-studio/src/nodeCatalog.ts's CATEGORY_META/CATEGORY_ORDER),
+// so the docs group nodes exactly the way the app's Nodes panel does.
+
+export type CategoryKey =
+  | "io"
+  | "conversion"
+  | "preparation"
+  | "transform"
+  | "join"
+  | "parse"
+  | "analysis";
+
+export const CATEGORY_META: Record<CategoryKey, { label: string; color: string }> = {
+  io: { label: "In/Out", color: "#019B8A" },
+  conversion: { label: "Conversion", color: "#FE4D41" },
+  preparation: { label: "Preparation", color: "#155F98" },
+  transform: { label: "Transform", color: "#FFD800" },
+  join: { label: "Join", color: "#7753A0" },
+  parse: { label: "Parse", color: "#E86F53" },
+  analysis: { label: "Analysis", color: "#9BB058" },
+};
+
+export const CATEGORY_ORDER: CategoryKey[] = [
+  "io",
+  "conversion",
+  "preparation",
+  "transform",
+  "join",
+  "parse",
+  "analysis",
+];
+
+const NODE_CATEGORY: Record<string, CategoryKey> = {
+  pdf_converter: "conversion",
+  input_data: "io",
+  export: "io",
+  browse: "io",
+  page_filter: "conversion",
+  column_manager: "preparation",
+  change_type: "preparation",
+  shift_columns: "preparation",
+  header_promoter: "preparation",
+  index_column: "preparation",
+  filter: "preparation",
+  unique: "preparation",
+  cascade_fill: "preparation",
+  cleaner: "preparation",
+  formula: "preparation",
+  add_column: "preparation",
+  bridge: "preparation",
+  sort: "preparation",
+  unpivot_columns: "transform",
+  pivot_columns: "transform",
+  group_by: "transform",
+  horizontal_stack: "join",
+  merge: "join",
+  concatenate: "join",
+  regular_expressions: "parse",
+  text_parser: "parse",
+  summary: "analysis",
+  aggregate: "analysis",
+};
+
+// Same rule as the app (nodeCatalog.ts's isLightColor): light tile colors
+// like the Transform yellow get a black icon instead of the default white,
+// which would disappear on them.
+export function isLightColor(hex: string): boolean {
+  const n = parseInt(hex.replace("#", ""), 16);
+  const r = ((n >> 16) & 255) / 255, g = ((n >> 8) & 255) / 255, b = (n & 255) / 255;
+  return 0.2126 * r + 0.7152 * g + 0.0722 * b > 0.6;
+}
+
+export function getNodeCategory(id: string): CategoryKey {
+  return NODE_CATEGORY[id] ?? "preparation";
+}
+
+export function getWidgetDoc(id: string): WidgetDoc | undefined {
+  return WIDGET_DOCS.find((w) => w.id === id);
+}
+
+/** Nodes grouped by category, in the app's own category order. */
+export function getNodesByCategory(): { key: CategoryKey; label: string; nodes: WidgetDoc[] }[] {
+  return CATEGORY_ORDER.map((key) => ({
+    key,
+    label: CATEGORY_META[key].label,
+    nodes: WIDGET_DOCS.filter((w) => getNodeCategory(w.id) === key),
+  })).filter((g) => g.nodes.length > 0);
+}

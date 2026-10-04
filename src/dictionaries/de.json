@@ -1,304 +1,993 @@
 {
   "meta": {
-    "home":      { "title": "PDF-Datenextraktion für Orange Data Mining | Altera Data Suite","description": "Rechnungen, Gehaltsabrechnungen & Berichte aus PDFs extrahieren — ohne Code. Das No-Code Orange Data Mining Add-on für strukturierte Datenextraktion. Jetzt kostenlos testen." },
-    "about":     { "title": "Über uns",                "description": "Erfahren Sie mehr über Altera Data Suite — wer es entwickelt hat, warum und was dahintersteckt." },
-    "pricing":   { "title": "Preise",                  "description": "Einfache, transparente Preise für Altera Data Suite. Kostenlos starten, upgraden wenn es Mehrwert bringt." },
-    "faqs":      { "title": "Häufige Fragen",          "description": "Haben Sie Fragen zu Altera? Finden Sie Antworten zu Einrichtung, Genauigkeit, Preisen, Sicherheit und mehr." },
-    "docs":      { "title": "Dokumentation",           "description": "Erfahren Sie, wie Sie jeden Altera-Knoten nutzen — Schritt-für-Schritt-Anleitungen, Konfigurationsreferenzen und Ausgabedetails für jede Funktion." },
-    "changelog": { "title": "Änderungsprotokoll",      "description": "Alle Updates, Verbesserungen und Korrekturen für Altera Data Suite — an einem Ort." },
-    "terms":     { "title": "Nutzungsbedingungen",               "description": "Nutzungsbedingungen von Altera Data Suite, Lizenzbeschränkungen und Haftung." },
-    "privacy":   { "title": "Datenschutzrichtlinie",             "description": "So erhebt, verwendet und schützt Altera Data Suite Ihre Daten. DSGVO- und CCPA-konform." },
-    "refund":    { "title": "Rückerstattungsrichtlinie",         "description": "30-Tage-Geld-zurück-Garantie, Rückerstattungsbedingungen und Stornierungskonditionen." },
-    "download":  { "title": "Download",            "description": "Laden Sie Altera Data Suite für Windows, macOS oder Linux herunter und extrahieren Sie in wenigen Minuten strukturierte Daten aus Ihren PDFs." },
-    "contact":   { "title": "Kontakt & Support",   "description": "Kontaktieren Sie das Altera Data Suite Team — Fragen, Abrechnung oder Support, wir antworten direkt, kein Bot." },
-    "useCases":  { "title": "Anwendungsfälle",     "description": "Erfahren Sie, wie Teams Altera Data Suite nutzen, um Daten aus PDFs zu extrahieren und zu strukturieren." }
+    "home": {
+      "title": "PDF-Datenextraktion für Orange Data Mining | Altera Data Suite",
+      "description": "Rechnungen, Gehaltsabrechnungen & Berichte aus PDFs extrahieren — ohne Code. Das No-Code Orange Data Mining Add-on für strukturierte Datenextraktion. Jetzt kostenlos testen."
+    },
+    "about": {
+      "title": "Über uns",
+      "description": "Erfahren Sie mehr über Altera Data Suite — wer es entwickelt hat, warum und was dahintersteckt."
+    },
+    "pricing": {
+      "title": "Preise",
+      "description": "Einfache, transparente Preise für Altera Data Suite. Kostenlos starten, upgraden wenn es Mehrwert bringt."
+    },
+    "faqs": {
+      "title": "Häufige Fragen",
+      "description": "Haben Sie Fragen zu Altera? Finden Sie Antworten zu Einrichtung, Genauigkeit, Preisen, Sicherheit und mehr."
+    },
+    "docs": {
+      "title": "Dokumentation",
+      "description": "Erfahren Sie, wie Sie jeden Altera-Knoten nutzen — Schritt-für-Schritt-Anleitungen, Konfigurationsreferenzen und Ausgabedetails für jede Funktion."
+    },
+    "changelog": {
+      "title": "Änderungsprotokoll",
+      "description": "Alle Updates, Verbesserungen und Korrekturen für Altera Data Suite — an einem Ort."
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "description": "Nutzungsbedingungen von Altera Data Suite, Lizenzbeschränkungen und Haftung."
+    },
+    "privacy": {
+      "title": "Datenschutzrichtlinie",
+      "description": "So erhebt, verwendet und schützt Altera Data Suite Ihre Daten. DSGVO- und CCPA-konform."
+    },
+    "refund": {
+      "title": "Rückerstattungsrichtlinie",
+      "description": "30-Tage-Geld-zurück-Garantie, Rückerstattungsbedingungen und Stornierungskonditionen."
+    },
+    "download": {
+      "title": "Download",
+      "description": "Laden Sie Altera Data Suite für Windows, macOS oder Linux herunter und extrahieren Sie in wenigen Minuten strukturierte Daten aus Ihren PDFs."
+    },
+    "contact": {
+      "title": "Kontakt & Support",
+      "description": "Kontaktieren Sie das Altera Data Suite Team — Fragen, Abrechnung oder Support, wir antworten direkt, kein Bot."
+    },
+    "useCases": {
+      "title": "Anwendungsfälle",
+      "description": "Echte Altera-Workflows für Finanzen, Lohnabrechnung, Einkauf, Logistik und Prüfung – von PDF-Dokumenten zu sauberen, auswertbaren Daten."
+    },
+    "whyWorkflows": {
+      "title": "Warum visuelle Workflows",
+      "description": "Warum Altera Data Suite auf visuelle, Node-basierte Workflows setzt: Daten in jedem Schritt sehen, Abläufe teilen, die jeder lesen kann, und ohne Code arbeiten."
+    }
   },
   "nav": {
-    "docs":      "Dokumentation",
-    "pricing":   "Preise",
-    "download":  "Download",
-    "about":     "Über uns",
-    "faqs":      "FAQ",
-    "startFree": "Kostenlos starten"
+    "docs": "Dokumentation",
+    "pricing": "Preise",
+    "download": "Download",
+    "about": "Über uns",
+    "faqs": "FAQ"
   },
   "footer": {
-    "tagline":           "Sie definieren das Ziel. Altera extrahiert die Daten.",
-    "productHeading":    "Produkt",
-    "companyHeading":    "Unternehmen & Richtlinien",
-    "connectHeading":    "Netzwerke",
-    "contactHeading":    "Kontaktinformationen",
-    "emailLabel":        "E-Mail",
-    "copyright":         "Alle Rechte vorbehalten.",
+    "tagline": "Sie definieren das Ziel. Altera extrahiert die Daten.",
+    "productHeading": "Produkt",
+    "companyHeading": "Unternehmen & Richtlinien",
+    "connectHeading": "Netzwerke",
+    "contactHeading": "Kontaktinformationen",
+    "emailLabel": "E-Mail",
+    "copyright": "Alle Rechte vorbehalten.",
     "langSwitcherLabel": "Sprache",
     "links": {
-      "features":      "Funktionen",
-      "changelog":     "Änderungsprotokoll",
-      "pricingPlan":   "Preisplan",
-      "docs":          "Dokumentation",
-      "download":      "Download",
-      "aboutUs":       "Über uns",
-      "contact":       "Kontakt",
-      "useCases":      "Anwendungsfälle",
+      "features": "Funktionen",
+      "changelog": "Änderungsprotokoll",
+      "pricingPlan": "Preisplan",
+      "docs": "Dokumentation",
+      "download": "Download",
+      "aboutUs": "Über uns",
+      "contact": "Kontakt",
+      "useCases": "Anwendungsfälle",
       "customWidgets": "Benutzerdefinierte Knoten",
-      "terms":         "Nutzungsbedingungen",
-      "privacy":       "Datenschutzrichtlinie",
-      "refund":        "Rückerstattungsrichtlinie"
+      "terms": "Nutzungsbedingungen",
+      "privacy": "Datenschutzrichtlinie",
+      "refund": "Rückerstattungsrichtlinie",
+      "whyWorkflows": "Warum visuelle Workflows"
     },
     "legalHeading": "Rechtliches"
   },
   "hero": {
-    "announcementBadge": "Neu ✦",
-    "announcementText":  "Code-freie PDF-Extraktion",
-    "headingPart1":      "Die App, die",
-    "headingPart2":      "Ihre PDFs in ",
-    "headingPart3":      "saubere Tabellen",
-    "subtitle":          "Laden Sie ein beliebiges PDF hoch — Alteras Knoten extrahieren, bereinigen und strukturieren jedes Feld in Sekunden.",
-    "startFree":         "Kostenlos starten",
-    "watchDemo":         "Demo ansehen",
-    "testimonialTitle":  "Einfache Einrichtung, sofortige Ergebnisse",
-    "testimonialQuote":  "\"Wir haben Altera entwickelt, um jedes PDF zu verarbeiten — Gehaltsabrechnungen, Rechnungen, Berichte. Von Anfang an auf Geschwindigkeit, Skalierbarkeit und Übersichtlichkeit ausgelegt.\"",
+    "announcementBadge": "Kostenlos testen ✦",
+    "announcementText": "Code-freie PDF-Extraktion",
+    "headingPart1": "Die App, die",
+    "headingPart2": "Ihre PDFs in ",
+    "headingPart3": "saubere Tabellen",
+    "subtitle": "Laden Sie ein beliebiges PDF hoch — Alteras Knoten extrahieren, bereinigen und strukturieren jedes Feld in Sekunden.",
+    "startFree": "Kostenlos starten",
+    "watchDemo": "Demo ansehen",
+    "testimonialTitle": "Einfache Einrichtung, sofortige Ergebnisse",
+    "testimonialQuote": "\"Wir haben Altera entwickelt, um jedes PDF zu verarbeiten — Gehaltsabrechnungen, Rechnungen, Berichte. Von Anfang an auf Geschwindigkeit, Skalierbarkeit und Übersichtlichkeit ausgelegt.\"",
     "testimonialAttrib": "— Mehdi, Mitgründer & Entwickler von Altera Data Suite"
+  },
+  "howItWorks": {
+    "badgeLabel": "So funktioniert's",
+    "badgeText": "Altera in 10 Schritten",
+    "heading": "So funktioniert Altera",
+    "back": "Zurück",
+    "next": "Weiter",
+    "restart": "Von vorn",
+    "stepOf": "Schritt {n} von {total}",
+    "steps": [
+      {
+        "title": "PDF öffnen und Daten markieren.",
+        "body": "Öffnen Sie einen Auszug, eine Rechnung oder einen Bericht im PDF Converter und ziehen Sie mit dem Rechteck-Werkzeug über die benötigten Daten. Jede Markierung bekommt eine eigene Farbe, mit der Sie Abschnitte später unterscheiden können."
+      },
+      {
+        "title": "Bei Bedarf Spaltenhilfslinien setzen.",
+        "body": "Setzen Sie Hilfslinien dort, wo Spalten getrennt werden sollen. Ohne Hilfslinien ermittelt Altera die Spalten selbst, Seite für Seite."
+      },
+      {
+        "title": "Auf Convert klicken.",
+        "body": "Ihre markierten Bereiche werden zu einer sauberen Tabelle, bereit für einen Workflow."
+      },
+      {
+        "title": "Das ist ein Node.",
+        "body": "Jeder Node erledigt genau eine Aufgabe mit Ihren Daten: Zeilen filtern, Text bereinigen, Tabellen zusammenführen, eine Spalte summieren und mehr."
+      },
+      {
+        "title": "Verbinden Sie Nodes zu einem Workflow.",
+        "body": "Die Daten fließen von links nach rechts. Die aus Ihrem PDF extrahierte Tabelle geht hinein, und jeder Node gibt sein Ergebnis an den nächsten weiter."
+      },
+      {
+        "title": "Sie entscheiden, wann er läuft.",
+        "body": "Starten Sie den Workflow und sehen Sie zu, wie jeder Node grün wird, sobald er fertig ist. Ändern Sie eine Einstellung und führen Sie ihn jederzeit erneut aus."
+      },
+      {
+        "title": "Daten bereinigen und filtern …",
+        "body": "Zum Beispiel nur die Buchungen des letzten Monats aus einem Kontoauszug behalten."
+      },
+      {
+        "title": "… pro Gruppe summieren …",
+        "body": "Zum Beispiel die Ausgaben pro Lieferant über einen Stapel Rechnungen addieren."
+      },
+      {
+        "title": "… oder zwei Quellen kombinieren.",
+        "body": "Zum Beispiel einen Kontoauszug mit Ihrem Buchhaltungsexport abgleichen, um Abweichungen zu finden."
+      },
+      {
+        "title": "Und es ist intuitiv.",
+        "body": "Keine Formeln, keine Skripte: Node wählen, Optionen einstellen, Ergebnis sehen. Die meisten bauen ihren ersten Workflow an einem Nachmittag."
+      }
+    ],
+    "canvas": {
+      "statement": {
+        "name": "Kontoauszug (extrahiert)",
+        "rowsLabel": "312 Zeilen (Auszug)",
+        "columns": [
+          "Datum",
+          "Verwendungszweck",
+          "Betrag"
+        ]
+      },
+      "invoices": {
+        "name": "Rechnungen (extrahiert)",
+        "rowsLabel": "860 Zeilen (Auszug)",
+        "columns": [
+          "Lieferant",
+          "Beschreibung",
+          "Betrag"
+        ]
+      },
+      "descriptions": {
+        "single": "Nur benötigte Zeilen",
+        "clean": "Text bereinigen",
+        "filter": "Nur letzter Monat",
+        "export": "Ergebnis.xlsx",
+        "type": "Betrag als Zahl",
+        "group": "Summe je Lieferant",
+        "sort": "Höchste zuerst",
+        "ledger": "Buchhaltungsexport.xlsx",
+        "merge": "Abgleich per Referenz",
+        "unmatched": "Ohne Treffer"
+      }
+    }
   },
   "resultShowcase": {
     "badgeLabel": "Gehaltsabrechnung Extraktion",
-    "badgeText":  "Schnell & Präzise",
-    "heading":    "Vom statischen PDF zu sauberen, strukturierten Daten — in Sekunden.",
-    "subtitle":   "Laden Sie eine beliebige Gehaltsabrechnung, Rechnung oder einen Bericht hoch. Altera liest jedes Feld, ordnet es Spalten zu und liefert Ihnen eine strukturierte Tabelle zum Exportieren oder Analysieren.",
-    "tryFree":    "Kostenlos testen",
-    "seeHow":     "Wie es funktioniert"
+    "badgeText": "Schnell & Präzise",
+    "heading": "Vom statischen PDF zu sauberen, strukturierten Daten — in Sekunden.",
+    "subtitle": "Laden Sie eine beliebige Gehaltsabrechnung, Rechnung oder einen Bericht hoch. Altera liest jedes Feld, ordnet es Spalten zu und liefert Ihnen eine strukturierte Tabelle zum Exportieren oder Analysieren.",
+    "tryFree": "Kostenlos testen",
+    "seeHow": "Wie es funktioniert"
   },
   "stats": {
     "badgeLabel": "Zahlen & Fakten",
-    "badgeText":  "Echte Ergebnisse, echte Wirkung",
-    "heading":    "Gebaut für Geschwindigkeit. Designed für Genauigkeit.",
-    "subtitle":   "Altera Data Suite verwandelt Stunden manueller Dateneingabe in Sekunden automatisierter Extraktion — in jedem Maßstab.",
+    "badgeText": "Echte Ergebnisse, echte Wirkung",
+    "heading": "Gebaut für Geschwindigkeit. Designed für Genauigkeit.",
+    "subtitle": "Altera Data Suite verwandelt Stunden manueller Dateneingabe in Sekunden automatisierter Extraktion — in jedem Maßstab.",
     "items": [
-      { "value": "98%",  "label": "Extraktionsgenauigkeit",        "desc": "Analysieren Sie Gehaltsabrechnungen, Rechnungen und Berichte mit nahezu perfekter Feldgenauigkeit." },
-      { "value": "10×",  "label": "Schneller als manuelle Eingabe","desc": "Automatisieren Sie mühsame Copy-Paste-Workflows und gewinnen Sie jede Woche Stunden zurück." },
-      { "value": "500+", "label": "Seiten pro Batch",              "desc": "Laden Sie massive mehrseitige PDFs hoch und erhalten Sie in Sekunden strukturierte Ausgaben." },
-      { "value": "24/7", "label": "Immer verfügbar",              "desc": "Keine Server, keine Warteschlangen — läuft vollständig auf Ihrem Gerät, jederzeit." }
+      {
+        "value": "98%",
+        "label": "Extraktionsgenauigkeit",
+        "desc": "Analysieren Sie Gehaltsabrechnungen, Rechnungen und Berichte mit nahezu perfekter Feldgenauigkeit."
+      },
+      {
+        "value": "10×",
+        "label": "Schneller als manuelle Eingabe",
+        "desc": "Automatisieren Sie mühsame Copy-Paste-Workflows und gewinnen Sie jede Woche Stunden zurück."
+      },
+      {
+        "value": "500+",
+        "label": "Seiten pro Batch",
+        "desc": "Laden Sie massive mehrseitige PDFs hoch und erhalten Sie in Sekunden strukturierte Ausgaben."
+      },
+      {
+        "value": "24/7",
+        "label": "Immer verfügbar",
+        "desc": "Keine Server, keine Warteschlangen — läuft vollständig auf Ihrem Gerät, jederzeit."
+      }
     ]
   },
   "featureCards": [
-    { "label": "SCHNELLE KONVERTIERUNG",   "line1": "Laden Sie ein beliebiges PDF hoch.",       "line2": "Saubere Daten in Sekunden." },
-    { "label": "VISUELLE WORKFLOWS",   "line1": "Verknüpfen Sie Nodes",        "line2": "zu Ihrer exakten Pipeline." },
-    { "label": "WIR GEBEN IHNEN TOOLS",    "line1": "Smarte Knoten, die extrahieren,",          "line2": "und Ihre Daten bereinigen." }
+    {
+      "label": "SCHNELLE KONVERTIERUNG",
+      "line1": "Laden Sie ein beliebiges PDF hoch.",
+      "line2": "Saubere Daten in Sekunden."
+    },
+    {
+      "label": "FERTIGE NODES",
+      "line1": "Daten bereinigen, sortieren und umformen.",
+      "line2": "Nodes zu einem Workflow verbinden."
+    },
+    {
+      "label": "WIR GEBEN IHNEN TOOLS",
+      "line1": "Smarte Knoten, die extrahieren,",
+      "line2": "und Ihre Daten bereinigen."
+    }
   ],
-  "widgets": {
+  "nodeShowcase": {
     "badgeLabel": "Funktionen",
-    "badgeText":  "Zweckgerichtete Knoten",
-    "heading":    "Ihre Komplettlösung für schnelle, effiziente PDF- und Datenverarbeitung.",
-    "subtitle":   "Zweckgerichtete Knoten, die Ihre PDFs und Tabellen von der Roheingabe zu strukturierten, analysierfertigen Daten bringen — kein Code, keine Reibung.",
-    "exploreNow": "Jetzt erkunden",
+    "badgeText": "Zweckgerichtete Knoten",
+    "heading": "Ein Node für jeden Schritt Ihrer Daten",
+    "learnMore": "Mehr erfahren",
     "items": [
-      { "name": "PDF Konverter",         "description": "Laden Sie ein beliebiges mehrseitiges PDF — Gehaltsabrechnungen, Rechnungen, Berichte — und extrahieren Sie sofort jedes Feld in eine saubere, zeilenweise Tabelle, die zur Analyse bereit ist." },
-      { "name": "Filter Builder",        "description": "Isolieren Sie genau die Zeilen, die Sie benötigen, mithilfe flexibler Bedingungen für jede Spalte. Kein Code, keine Formeln — einfaches Point-and-Click-Filtern." },
-      { "name": "Reguläre Ausdrücke",    "description": "Extrahieren Sie strukturierte Muster — Daten, IDs, Namen, Beträge — aus Rohtextfeldern mithilfe leistungsstarker Regex-Regeln, visuell konfiguriert." },
-      { "name": "Spaltenmanager",        "description": "Benennen Sie Spalten um, ordnen Sie sie neu oder löschen Sie sie in Sekunden. Passen Sie Ihr Ausgabeschema an, damit nachgelagerte Tools immer genau das erhalten, was sie erwarten." }
-    ]
+      {
+        "title": "Extrahieren mit PDF Converter",
+        "bullets": [
+          "Markieren Sie die benötigten Bereiche direkt auf der Seite – ohne Vorlagen oder Code",
+          "Verarbeitet mehrseitige Rechnungen, Gehaltsabrechnungen, Auszüge und Berichte",
+          "Speichern Sie Ihre Markierungen einmal und nutzen Sie sie für die Datei des nächsten Monats"
+        ]
+      },
+      {
+        "title": "Bereinigen mit Cleaner",
+        "bullets": [
+          "Leerzeichen entfernen, Schreibweise korrigieren und störende Zeichen löschen – in einem Schritt",
+          "Mehrere Operationen verketten, die der Reihe nach auf die gewählten Spalten wirken",
+          "Unsauberen extrahierten Text korrigieren, bevor er einen Filter oder Join stört"
+        ]
+      },
+      {
+        "title": "Kombinieren mit Merge",
+        "bullets": [
+          "Zusätzliche Spalten aus einer Referenztabelle über eine gemeinsame ID nachschlagen",
+          "Alle Zeilen, nur Treffer oder alles aus beiden Tabellen behalten",
+          "Zeilen über ein oder mehrere Spaltenpaare oder einfach nach Position zuordnen"
+        ]
+      },
+      {
+        "title": "Zusammenfassen mit Group By",
+        "bullets": [
+          "Beträge pro Kunde, Kategorie oder Region summieren",
+          "Zeilen zählen oder Minimum, Maximum und Durchschnitt je Gruppe ermitteln",
+          "Eine saubere Zusammenfassungszeile pro Gruppe erhalten, bereit zum Export"
+        ]
+      }
+    ],
+    "whyLink": "Warum wir Altera um visuelle Workflows herum gebaut haben"
+  },
+  "industries": {
+    "badgeLabel": "Anwendungsfälle",
+    "badgeText": "Für jedes Team",
+    "heading": "Für Teams, die in PDFs versinken",
+    "subtitle": "Vom Monatsabschluss bis zur Gehaltsprüfung: Jedes Team hat Dokumente, die zu Daten werden müssen.",
+    "documentsLabel": "Typische Dokumente",
+    "learnMore": "Den ganzen Workflow ansehen",
+    "allUseCases": "Alle Anwendungsfälle"
   },
   "pricing": {
-    "badgeLabel":    "Preise",
-    "badgeText":     "Einfache Pläne, mächtige Funktionen",
-    "heading":       "Wählen Sie den Plan, der zu Ihrem Workflow passt.",
-    "subtitle":      "Einfache, transparente Preise. Jederzeit upgradebar.",
-    "popularBadge":  "BELIEBT",
+    "badgeLabel": "Preise",
+    "badgeText": "Einfache Pläne, mächtige Funktionen",
+    "heading": "Wählen Sie den Plan, der zu Ihrem Workflow passt.",
+    "subtitle": "Einfache, transparente Preise. Jederzeit upgradebar.",
+    "popularBadge": "BELIEBT",
     "bestValueBadge": "BESTER WERT",
-    "getBtn":        "Holen",
-    "period":        "/Jahr",
-    "periodMonthly":  "/Monat",
-    "oneTime":        "einmalig",
+    "getBtn": "Holen",
+    "period": "/Jahr",
+    "periodMonthly": "/Monat",
+    "oneTime": "einmalig",
     "includesLabel": "Beinhaltet",
     "checkoutSuccess": "Schau in dein E-Mail-Postfach nach deinem Lizenzschlüssel.",
-    "checkoutError":   "Checkout ist gerade nicht verfügbar. Bitte versuche es gleich noch einmal oder kontaktiere support@alteradatasuite.com.",
+    "checkoutError": "Checkout ist gerade nicht verfügbar. Bitte versuche es gleich noch einmal oder kontaktiere support@alteradatasuite.com.",
     "plans": [
       {
-        "name": "Monatlich", "subtitle": "Komplettlösung, monatlich abgerechnet",
-        "features": ["Unbegrenzte PDF-Verarbeitung","PDF-Stapelverarbeitung","10+ Nodes","E-Mail-Support","Einzelplatz-Lizenz","Kostenlose Updates & Verbesserungen"]
+        "name": "Monatlich",
+        "subtitle": "Komplettlösung, monatlich abgerechnet",
+        "features": [
+          "Unbegrenzte PDF-Verarbeitung",
+          "PDF-Stapelverarbeitung",
+          "10+ Nodes",
+          "E-Mail-Support",
+          "Einzelplatz-Lizenz",
+          "Kostenlose Updates & Verbesserungen"
+        ]
       },
       {
-        "name": "Jährlich", "subtitle": "20 % günstiger als monatliche Abrechnung",
-        "features": ["Unbegrenzte PDF-Verarbeitung","PDF-Stapelverarbeitung","10+ Nodes","Priorisierter E-Mail-Support","Einzelplatz-Lizenz","Kostenlose Updates & Verbesserungen"]
+        "name": "Jährlich",
+        "subtitle": "20 % günstiger als monatliche Abrechnung",
+        "features": [
+          "Unbegrenzte PDF-Verarbeitung",
+          "PDF-Stapelverarbeitung",
+          "10+ Nodes",
+          "Priorisierter E-Mail-Support",
+          "Einzelplatz-Lizenz",
+          "Kostenlose Updates & Verbesserungen"
+        ]
       },
       {
-        "name": "Lifetime", "subtitle": "Einmal zahlen, für immer besitzen",
-        "features": ["Unbegrenzte PDF-Verarbeitung","PDF-Stapelverarbeitung","10+ Nodes","Priorisierter Support","Einzelplatz-Lizenz","Kostenlose Updates für 1 Jahr"]
+        "name": "Lifetime",
+        "subtitle": "Einmal zahlen, für immer besitzen",
+        "features": [
+          "Unbegrenzte PDF-Verarbeitung",
+          "PDF-Stapelverarbeitung",
+          "10+ Nodes",
+          "Priorisierter Support",
+          "Einzelplatz-Lizenz",
+          "Kostenlose Updates für 1 Jahr"
+        ]
       }
     ],
     "faqs": [
-      { "key": "p1", "label": "Kann ich später den Plan wechseln?",                   "text": "Ja. Sie können jederzeit zwischen Monatlich, Jährlich und Lifetime wechseln. Ihre Daten und Workflows bleiben erhalten." },
-      { "key": "p3", "label": "Was ist der Unterschied zwischen den Plänen?", "text": "Monatlich und Jährlich sind wiederkehrende Abonnements mit entsprechender Abrechnung. Lifetime ist eine einmalige Zahlung für dauerhaften Zugang." },
-      { "key": "p5", "label": "Bieten Sie Rückerstattungen an?",                      "text": "Ja — siehe unsere 30-tägige Geld-zurück-Garantie. Falls nach dem Kauf etwas schiefläuft, melden Sie sich und wir finden eine Lösung." },
-      { "key": "p6", "label": "Kann ich Altera auf mehreren Geräten nutzen?",         "text": "Monatlich, Jährlich und Lifetime sind Einzelplatz-Lizenzen." }
+      {
+        "key": "p1",
+        "label": "Kann ich später den Plan wechseln?",
+        "text": "Ja. Sie können jederzeit zwischen Monatlich, Jährlich und Lifetime wechseln. Ihre Daten und Workflows bleiben erhalten."
+      },
+      {
+        "key": "p3",
+        "label": "Was ist der Unterschied zwischen den Plänen?",
+        "text": "Monatlich und Jährlich sind wiederkehrende Abonnements mit entsprechender Abrechnung. Lifetime ist eine einmalige Zahlung für dauerhaften Zugang."
+      },
+      {
+        "key": "p5",
+        "label": "Bieten Sie Rückerstattungen an?",
+        "text": "Ja — siehe unsere 30-tägige Geld-zurück-Garantie. Falls nach dem Kauf etwas schiefläuft, melden Sie sich und wir finden eine Lösung."
+      },
+      {
+        "key": "p6",
+        "label": "Kann ich Altera auf mehreren Geräten nutzen?",
+        "text": "Monatlich, Jährlich und Lifetime sind Einzelplatz-Lizenzen."
+      }
     ]
   },
   "testimonials": {
     "badgeLabel": "Erfahrungsberichte",
-    "badgeText":  "Was unsere Nutzer sagen",
-    "heading":    "Vertraut von Teams, die schnell agieren.",
-    "subtitle":   "Sehen Sie, wie Altera Data Suite Fachleuten hilft, ihre Daten schneller als je zuvor zu extrahieren, zu strukturieren und zu nutzen.",
+    "badgeText": "Was unsere Nutzer sagen",
+    "heading": "Vertraut von Teams, die schnell agieren.",
+    "subtitle": "Sehen Sie, wie Altera Data Suite Fachleuten hilft, ihre Daten schneller als je zuvor zu extrahieren, zu strukturieren und zu nutzen.",
     "cards": [
-      { "name": "Karim Raaji",           "role": "Finanzberater",                    "text": "Ich habe jahrelang auf Tools wie Power Query gesetzt, um Finanzdaten aus PDFs zu extrahieren und zu bereinigen. Sie funktionierten — aber nie sauber, und die Wartung war konstant. Altera zu finden war ein Wendepunkt. Die Extraktion ist präzise, die Einrichtung dauerte nur Minuten, und für den Preis ist es ein absoluter Gamechanger für jeden, der täglich mit Finanzdokumenten arbeitet." },
-      { "name": "Jonathan Ashton",        "role": "Finanz-Qualitätskontrolleur",      "text": "Ich fand mich dabei, mit mehreren Tools zu jonglieren, nur um Daten aus einem PDF zu bekommen — eine App für die Konvertierung, andere für die Bereinigung. Das größere Problem war jedoch die Privatsphäre. Bei der Arbeit mit Kundendaten unter NDA konnte ich es mir nicht leisten, Dateien auf einem Drittanbieter-Server verarbeiten zu lassen. Die meisten Tools, die ich ausprobiert habe, taten genau das. Altera war die erste Lösung, die das Kernproblem wirklich verstand und löste — alles läuft lokal, auf meinem Gerät, und die Ergebnisse sind von Anfang an sauber." },
-      { "name": "Mohammed Amine Bendidi", "role": "Finanzberater",                    "text": "Datenmengen zu erhalten — hauptsächlich PDFs — mit engen Fristen war ein ständiger Albtraum. Wir hatten erfahrene Entwickler in unserem Datenlabor, aber die Lücke zwischen dem, was sie bauten, und dem, was wir wirklich brauchten, schloss sich nie vollständig. Altera war anders. Es kam nicht von einem Team, das nur programmieren konnte — es kam von Menschen, die das Problem aus erster Hand erlebt hatten. Das zeigt sich in jedem Feature. Eine Lösung, gebaut von Analysten, für Analysten." },
-      { "name": "Thomas Reeves",          "role": "Business Intelligence Leiter",     "text": "Was Altera von allem im Microsoft-Ökosystem unterscheidet, ist, dass es tatsächlich auf sinnvolle Weise erweiterbar ist. Mit Excel oder Power BI sind Sie auf das beschränkt, was existiert — wenn eine Funktion nicht vorhanden ist, warten Sie, und die meiste Zeit kommt sie nie. Mit Altera, wenn ein Knoten Ihren genauen Anwendungsfall nicht abdeckt, baut das Team es für Sie. Sie können bestehende Knoten erweitern oder völlig benutzerdefinierte von Grund auf erstellen. Diese Art von Reaktionsfähigkeit ist etwas, das Enterprise-Software schlicht nicht bietet." }
+      {
+        "name": "Karim Raaji",
+        "role": "Finanzberater",
+        "text": "Ich habe jahrelang auf Tools wie Power Query gesetzt, um Finanzdaten aus PDFs zu extrahieren und zu bereinigen. Sie funktionierten — aber nie sauber, und die Wartung war konstant. Altera zu finden war ein Wendepunkt. Die Extraktion ist präzise, die Einrichtung dauerte nur Minuten, und für den Preis ist es ein absoluter Gamechanger für jeden, der täglich mit Finanzdokumenten arbeitet."
+      },
+      {
+        "name": "Jonathan Ashton",
+        "role": "Finanz-Qualitätskontrolleur",
+        "text": "Ich fand mich dabei, mit mehreren Tools zu jonglieren, nur um Daten aus einem PDF zu bekommen — eine App für die Konvertierung, andere für die Bereinigung. Das größere Problem war jedoch die Privatsphäre. Bei der Arbeit mit Kundendaten unter NDA konnte ich es mir nicht leisten, Dateien auf einem Drittanbieter-Server verarbeiten zu lassen. Die meisten Tools, die ich ausprobiert habe, taten genau das. Altera war die erste Lösung, die das Kernproblem wirklich verstand und löste — alles läuft lokal, auf meinem Gerät, und die Ergebnisse sind von Anfang an sauber."
+      },
+      {
+        "name": "Mohammed Amine Bendidi",
+        "role": "Finanzberater",
+        "text": "Datenmengen zu erhalten — hauptsächlich PDFs — mit engen Fristen war ein ständiger Albtraum. Wir hatten erfahrene Entwickler in unserem Datenlabor, aber die Lücke zwischen dem, was sie bauten, und dem, was wir wirklich brauchten, schloss sich nie vollständig. Altera war anders. Es kam nicht von einem Team, das nur programmieren konnte — es kam von Menschen, die das Problem aus erster Hand erlebt hatten. Das zeigt sich in jedem Feature. Eine Lösung, gebaut von Analysten, für Analysten."
+      },
+      {
+        "name": "Thomas Reeves",
+        "role": "Business Intelligence Leiter",
+        "text": "Was Altera von allem im Microsoft-Ökosystem unterscheidet, ist, dass es tatsächlich auf sinnvolle Weise erweiterbar ist. Mit Excel oder Power BI sind Sie auf das beschränkt, was existiert — wenn eine Funktion nicht vorhanden ist, warten Sie, und die meiste Zeit kommt sie nie. Mit Altera, wenn ein Knoten Ihren genauen Anwendungsfall nicht abdeckt, baut das Team es für Sie. Sie können bestehende Knoten erweitern oder völlig benutzerdefinierte von Grund auf erstellen. Diese Art von Reaktionsfähigkeit ist etwas, das Enterprise-Software schlicht nicht bietet."
+      }
     ]
   },
   "customWidget": {
-    "badgeLabel":         "Benutzerdefinierte Knoten",
-    "badgeText":          "Gebaut für Ihre genauen Bedürfnisse.",
-    "heading":            "Benötigen Sie einen benutzerdefinierten Knoten, der zu Ihrem genauen Workflow passt? Wir bauen ihn für Sie.",
-    "subtitle":           "Jedes Team arbeitet mit anderen Dokumenten — unterschiedliche Strukturen, unterschiedliche Felder, unterschiedliche Ausgaben. Wenn keiner unserer vorhandenen Knoten Ihren Anforderungen entspricht, entwerfen und bauen wir einen von Grund auf. Wir analysieren Ihr PDF-Layout, definieren die Extraktionslogik und liefern ein Tool, das sich direkt in Ihren Workflow integriert. Keine Umgehungslösungen, keine manuelle Bereinigung — nur saubere, strukturierte Daten genau so, wie Sie sie brauchen.",
-    "rowWhatLabel":       "Was Sie erhalten",
-    "rowWhatValue":       "Ein vollständig funktionsfähiger Knoten für Ihr PDF",
+    "badgeLabel": "Benutzerdefinierte Knoten",
+    "badgeText": "Gebaut für Ihre genauen Bedürfnisse.",
+    "heading": "Benötigen Sie einen benutzerdefinierten Knoten, der zu Ihrem genauen Workflow passt? Wir bauen ihn für Sie.",
+    "subtitle": "Jedes Team arbeitet mit anderen Dokumenten — unterschiedliche Strukturen, unterschiedliche Felder, unterschiedliche Ausgaben. Wenn keiner unserer vorhandenen Knoten Ihren Anforderungen entspricht, entwerfen und bauen wir einen von Grund auf. Wir analysieren Ihr PDF-Layout, definieren die Extraktionslogik und liefern ein Tool, das sich direkt in Ihren Workflow integriert. Keine Umgehungslösungen, keine manuelle Bereinigung — nur saubere, strukturierte Daten genau so, wie Sie sie brauchen.",
+    "rowWhatLabel": "Was Sie erhalten",
+    "rowWhatValue": "Ein vollständig funktionsfähiger Knoten für Ihr PDF",
     "rowTurnaroundLabel": "Lieferzeit",
     "rowTurnaroundValue": "Gemeinsam je nach Komplexität geplant",
-    "rowPricingLabel":    "Preisgestaltung",
-    "rowPricingValue":    "Fair und transparent — keine versteckten Gebühren",
-    "rowContactLabel":    "Kontakt"
+    "rowPricingLabel": "Preisgestaltung",
+    "rowPricingValue": "Fair und transparent — keine versteckten Gebühren",
+    "rowContactLabel": "Kontakt"
   },
   "faqSection": {
     "badgeLabel": "FAQ",
-    "badgeText":  "Fragen? Wir haben Antworten.",
-    "heading":    "Alles, was Sie wissen müssen",
-    "subtitle":   "Können Sie nicht finden, was Sie suchen? Melden Sie sich und wir antworten Ihnen."
+    "badgeText": "Fragen? Wir haben Antworten.",
+    "heading": "Alles, was Sie wissen müssen",
+    "subtitle": "Können Sie nicht finden, was Sie suchen? Melden Sie sich und wir antworten Ihnen."
+  },
+  "getStarted": {
+    "heading": "Bereit, Ihre PDFs in Daten zu verwandeln?",
+    "text": "Laden Sie Altera herunter, öffnen Sie ein PDF und bauen Sie Ihren ersten Workflow in wenigen Minuten.",
+    "download": "Download",
+    "docs": "Dokumentation lesen"
   },
   "allFaqs": [
-    { "key": "1",  "label": "Welche PDF-Typen unterstützt Altera?",                            "text": "Altera funktioniert mit jedem PDF — Gehaltsabrechnungen, Rechnungen, Kontoauszüge, Berichte und mehr. Wenn es strukturierte Daten enthält, kann Altera es extrahieren." },
-    { "key": "2",  "label": "Wie genau ist die Extraktion?",                                    "text": "Altera extrahiert Daten mit hoher Genauigkeit. Sie können benutzerdefinierte Regeln definieren, um sicherzustellen, dass jedes Feld genau dorthin zugeordnet wird, wo Sie es benötigen." },
-    { "key": "3",  "label": "Muss ich etwas installieren?",                                     "text": "Altera ist für Orange Data Mining entwickelt. Die Installation innerhalb von Orange dauert Sekunden — fügen Sie einfach das Add-on hinzu und Sie können sofort mit der Extraktion beginnen." },
-    { "key": "4",  "label": "Kann ich mehrere PDFs gleichzeitig verarbeiten?",                  "text": "Ja. Altera unterstützt Batch-Verarbeitung, sodass Sie Hunderte von PDFs einladen und alle Daten auf einmal strukturiert erhalten können." },
-    { "key": "5",  "label": "Sind meine Daten sicher?",                                         "text": "Ihre Dateien werden sicher verarbeitet und niemals über die aktive Sitzung hinaus gespeichert. Wir teilen oder behalten Ihre Daten nicht." },
-    { "key": "6",  "label": "Kann ich es vor dem Bezahlen ausprobieren?",                       "text": "Absolut — Sie können kostenlos starten und die Kernfunktionen erkunden, bevor Sie sich für einen Plan entscheiden." },
-    { "key": "7",  "label": "Brauche ich Programmierkenntnisse, um Altera zu nutzen?",          "text": "Überhaupt nicht. Altera ist darauf ausgelegt, visuell in Orange Data Mining verwendet zu werden. Sie ziehen, legen ab und konfigurieren — kein Code erforderlich." },
-    { "key": "8",  "label": "Kann Altera gescannte oder bildbasierte PDFs verarbeiten?",        "text": "Altera funktioniert am besten mit digital generierten PDFs. Gescannte Dokumente mit OCR-lesbarem Text werden ebenfalls unterstützt, obwohl die Genauigkeit je nach Scanqualität variieren kann." },
-    { "key": "9",  "label": "In welchem Ausgabeformat liegen die extrahierten Daten vor?",      "text": "Altera gibt saubere, strukturierte Tabellen direkt in Orange Data Mining aus — bereit zur Analyse, zum Export oder zur Weiterverarbeitung." },
-    { "key": "10", "label": "Kann ich verschiedene Knoten für verschiedene Dokumenttypen verwenden?", "text": "Ja. Jeder Knoten ist für eine bestimmte Extraktionsaufgabe ausgelegt. Sie können Knoten im selben Workflow kombinieren, um verschiedene Dokumenttypen in einem Durchlauf zu verarbeiten." },
-    { "key": "11", "label": "Was ist, wenn die Extraktion ein Feld übersieht oder falsch erfasst?", "text": "Sie können benutzerdefinierte Extraktionsregeln definieren, um Sonderfälle zu behandeln. Wenn eine spezifische Dokumentstruktur nicht standardmäßig unterstützt wird, bieten wir auch benutzerdefinierte Knotenentwicklung an." },
-    { "key": "12", "label": "Gibt es eine Dateigrößenbeschränkung?",                            "text": "Altera verarbeitet standardmäßige Geschäftsdokumente problemlos. Sehr große Dateien oder ungewöhnlich komplexe Layouts können die Verarbeitungszeit beeinflussen, aber es gibt keine feste Obergrenze." },
-    { "key": "13", "label": "Welche Sprachen werden unterstützt?",                              "text": "Altera unterstützt in erster Linie englische und französische Dokumente. Die Unterstützung für weitere Sprachen wird hinzugefügt, während die Suite wächst." },
-    { "key": "14", "label": "Wie erhalte ich Support, wenn etwas schiefläuft?",                 "text": "Sie können uns direkt unter support@alteradatasuite.com erreichen. Wir sind ein kleines Team, daher erhalten Sie immer eine echte Antwort — keinen Bot." }
+    {
+      "key": "1",
+      "label": "Welche PDF-Typen unterstützt Altera?",
+      "text": "Altera funktioniert mit jedem PDF — Gehaltsabrechnungen, Rechnungen, Kontoauszüge, Berichte und mehr. Wenn es strukturierte Daten enthält, kann Altera es extrahieren."
+    },
+    {
+      "key": "2",
+      "label": "Wie genau ist die Extraktion?",
+      "text": "Altera extrahiert Daten mit hoher Genauigkeit. Sie können benutzerdefinierte Regeln definieren, um sicherzustellen, dass jedes Feld genau dorthin zugeordnet wird, wo Sie es benötigen."
+    },
+    {
+      "key": "3",
+      "label": "Muss ich etwas installieren?",
+      "text": "Altera ist für Orange Data Mining entwickelt. Die Installation innerhalb von Orange dauert Sekunden — fügen Sie einfach das Add-on hinzu und Sie können sofort mit der Extraktion beginnen."
+    },
+    {
+      "key": "4",
+      "label": "Kann ich mehrere PDFs gleichzeitig verarbeiten?",
+      "text": "Ja. Altera unterstützt Batch-Verarbeitung, sodass Sie Hunderte von PDFs einladen und alle Daten auf einmal strukturiert erhalten können."
+    },
+    {
+      "key": "5",
+      "label": "Sind meine Daten sicher?",
+      "text": "Ihre Dateien werden sicher verarbeitet und niemals über die aktive Sitzung hinaus gespeichert. Wir teilen oder behalten Ihre Daten nicht."
+    },
+    {
+      "key": "6",
+      "label": "Kann ich es vor dem Bezahlen ausprobieren?",
+      "text": "Absolut — Sie können kostenlos starten und die Kernfunktionen erkunden, bevor Sie sich für einen Plan entscheiden."
+    },
+    {
+      "key": "7",
+      "label": "Brauche ich Programmierkenntnisse, um Altera zu nutzen?",
+      "text": "Überhaupt nicht. Altera ist darauf ausgelegt, visuell in Orange Data Mining verwendet zu werden. Sie ziehen, legen ab und konfigurieren — kein Code erforderlich."
+    },
+    {
+      "key": "8",
+      "label": "Kann Altera gescannte oder bildbasierte PDFs verarbeiten?",
+      "text": "Altera funktioniert am besten mit digital generierten PDFs. Gescannte Dokumente mit OCR-lesbarem Text werden ebenfalls unterstützt, obwohl die Genauigkeit je nach Scanqualität variieren kann."
+    },
+    {
+      "key": "9",
+      "label": "In welchem Ausgabeformat liegen die extrahierten Daten vor?",
+      "text": "Altera gibt saubere, strukturierte Tabellen direkt in Orange Data Mining aus — bereit zur Analyse, zum Export oder zur Weiterverarbeitung."
+    },
+    {
+      "key": "10",
+      "label": "Kann ich verschiedene Knoten für verschiedene Dokumenttypen verwenden?",
+      "text": "Ja. Jeder Knoten ist für eine bestimmte Extraktionsaufgabe ausgelegt. Sie können Knoten im selben Workflow kombinieren, um verschiedene Dokumenttypen in einem Durchlauf zu verarbeiten."
+    },
+    {
+      "key": "11",
+      "label": "Was ist, wenn die Extraktion ein Feld übersieht oder falsch erfasst?",
+      "text": "Sie können benutzerdefinierte Extraktionsregeln definieren, um Sonderfälle zu behandeln. Wenn eine spezifische Dokumentstruktur nicht standardmäßig unterstützt wird, bieten wir auch benutzerdefinierte Knotenentwicklung an."
+    },
+    {
+      "key": "12",
+      "label": "Gibt es eine Dateigrößenbeschränkung?",
+      "text": "Altera verarbeitet standardmäßige Geschäftsdokumente problemlos. Sehr große Dateien oder ungewöhnlich komplexe Layouts können die Verarbeitungszeit beeinflussen, aber es gibt keine feste Obergrenze."
+    },
+    {
+      "key": "13",
+      "label": "Welche Sprachen werden unterstützt?",
+      "text": "Altera unterstützt in erster Linie englische und französische Dokumente. Die Unterstützung für weitere Sprachen wird hinzugefügt, während die Suite wächst."
+    },
+    {
+      "key": "14",
+      "label": "Wie erhalte ich Support, wenn etwas schiefläuft?",
+      "text": "Sie können uns direkt unter support@alteradatasuite.com erreichen. Wir sind ein kleines Team, daher erhalten Sie immer eine echte Antwort — keinen Bot."
+    }
   ],
   "docs": {
-    "overview":          "Übersicht",
-    "bestFor":           "Am besten geeignet für",
-    "howToUse":          "Verwendung",
-    "input":             "Eingabe",
-    "output":            "Ausgabe",
-    "tipsNotes":         "Tipps & Hinweise",
-    "toolbarRef":        "Toolbar-Referenz",
+    "overview": "Übersicht",
+    "bestFor": "Am besten geeignet für",
+    "howToUse": "Verwendung",
+    "input": "Eingabe",
+    "output": "Ausgabe",
+    "tipsNotes": "Tipps & Hinweise",
+    "toolbarRef": "Toolbar-Referenz",
     "keyboardShortcuts": "Tastaturkürzel",
-    "watchTutorials":    "Video-Tutorials ansehen",
-    "viewPlaylist":      "Playlist auf YouTube ansehen",
-    "handTool":          "Hand-Tool",
-    "handToolDesc":      "Wenn aktiviert — klicken und ziehen Sie irgendwo auf der Arbeitsfläche, um durch das Dokument zu scrollen.",
-    "selectionTool":     "Auswahl-Tool",
+    "watchTutorials": "Video-Tutorials ansehen",
+    "viewPlaylist": "Playlist auf YouTube ansehen",
+    "handTool": "Hand-Tool",
+    "handToolDesc": "Wenn aktiviert — klicken und ziehen Sie irgendwo auf der Arbeitsfläche, um durch das Dokument zu scrollen.",
+    "selectionTool": "Auswahl-Tool",
     "selectionToolDesc": "Klicken Sie auf eine vorhandene Anmerkung, um sie auszuwählen, neu zu positionieren oder in der Größe zu ändern.",
-    "pageNav":           "Seitennavigation",
-    "pageNavDesc":       "Durch Seiten blättern. Die Eingabe zeigt Ihre aktuelle Seite von der Gesamtzahl — Sie können auch direkt eine Seitenzahl eingeben.",
+    "pageNav": "Seitennavigation",
+    "pageNavDesc": "Durch Seiten blättern. Die Eingabe zeigt Ihre aktuelle Seite von der Gesamtzahl — Sie können auch direkt eine Seitenzahl eingeben.",
+    "docsHome": "Docs",
+    "catalogTitle": "Node-Dokumentation",
+    "catalogIntro": "Jeder Altera-Node hat eine eigene Referenzseite – was er macht, wie man ihn konfiguriert und was hinein- und herauskommt.",
+    "searchPlaceholder": "Nodes durchsuchen…",
+    "noResults": "Keine Nodes entsprechen deiner Suche.",
+    "nodeLabel": "Node",
+    "description": "Beschreibung",
+    "inputPorts": "Eingangsports",
+    "outputPorts": "Ausgangsports",
+    "portType": "Typ",
+    "noPorts": "Keine",
+    "moreInCategory": "Weitere {category}-Nodes",
+    "nodesCount": "{count} Nodes",
     "shortcuts": {
-      "toggleHand":      "Hand-Tool umschalten",
+      "toggleHand": "Hand-Tool umschalten",
       "toggleSelection": "Auswahl-Tool umschalten",
-      "toggleGuide":     "Führungslinien-Tool umschalten (Spaltentrennlinie)",
-      "convert":         "Konvertieren",
-      "openPdf":         "PDF öffnen",
-      "zoomIn":          "Vergrößern",
-      "zoomOut":         "Verkleinern",
-      "fitPage":         "Seite an Fenster anpassen",
-      "scrollZoomIn":    "Vergrößern",
-      "scrollZoomOut":   "Verkleinern"
+      "toggleGuide": "Führungslinien-Tool umschalten (Spaltentrennlinie)",
+      "convert": "Konvertieren",
+      "openPdf": "PDF öffnen",
+      "zoomIn": "Vergrößern",
+      "zoomOut": "Verkleinern",
+      "fitPage": "Seite an Fenster anpassen",
+      "scrollZoomIn": "Vergrößern",
+      "scrollZoomOut": "Verkleinern"
     }
   },
   "download": {
-    "heroBadgeLabel":  "Download",
-    "heroBadgeText":   "App herunterladen",
-    "heroHeading":     "Altera Data Suite herunterladen",
-    "heroLead":        "Verfügbar für Windows, macOS und Linux. In wenigen Minuten installiert — starten Sie sofort mit Ihrem ersten PDF.",
-    "trialNote":       "15 Tage kostenlos testen bei jedem Plan — keine Kreditkarte erforderlich.",
+    "heroBadgeLabel": "Download",
+    "heroBadgeText": "App herunterladen",
+    "heroHeading": "Altera Data Suite herunterladen",
+    "heroLead": "Verfügbar für Windows, macOS und Linux. In wenigen Minuten installiert — starten Sie sofort mit Ihrem ersten PDF.",
+    "trialNote": "15 Tage kostenlos testen bei jedem Plan — keine Kreditkarte erforderlich.",
     "unavailableNotice": "Der Windows-Build ist vorübergehend nicht verfügbar. Bitte versuchen Sie es in ein paar Minuten erneut.",
-    "windowsName":     "Windows",
-    "windowsDetail":   "Windows 10 / 11 (64-Bit)",
-    "windowsBtn":      "Für Windows herunterladen",
-    "macName":         "macOS",
-    "macDetail":       "macOS 12 Monterey oder neuer",
-    "macBtn":          "Für macOS herunterladen",
-    "linuxName":       "Linux",
-    "linuxDetail":     "Die meisten gängigen Distributionen",
-    "linuxBtn":        "Für Linux herunterladen",
-    "comingSoon":      "Demnächst verfügbar",
-    "comingSoonNote":  "In aktiver Entwicklung — bleiben Sie dran.",
-    "helpPre":         "Brauchen Sie Hilfe bei der Installation?",
-    "helpLink":        "Zur Schnellstart-Anleitung"
+    "windowsName": "Windows",
+    "windowsDetail": "Windows 10 / 11 (64-Bit)",
+    "windowsBtn": "Für Windows herunterladen",
+    "macName": "macOS",
+    "macDetail": "macOS 12 Monterey oder neuer",
+    "macBtn": "Für macOS herunterladen",
+    "linuxName": "Linux",
+    "linuxDetail": "Die meisten gängigen Distributionen",
+    "linuxBtn": "Für Linux herunterladen",
+    "comingSoon": "Demnächst verfügbar",
+    "comingSoonNote": "In aktiver Entwicklung — bleiben Sie dran.",
+    "helpPre": "Brauchen Sie Hilfe bei der Installation?",
+    "helpLink": "Zur Schnellstart-Anleitung"
   },
   "contact": {
     "badgeLabel": "Support",
-    "badgeText":  "Wir helfen Ihnen gerne",
-    "heading":    "Kontakt & Support",
-    "lead":       "Fragen zu Altera, zur Abrechnung oder zu einem bestimmten PDF, bei dem Sie nicht weiterkommen? Melden Sie sich — wir sind ein kleines Team, Sie erhalten also immer eine echte Antwort, keinen Bot.",
-    "docsTitle":  "Dokumentation",
-    "docsDesc":   "Schritt-für-Schritt-Anleitungen und Konfigurationsreferenzen für jeden Knoten.",
-    "docsLink":   "Zur Dokumentation",
-    "faqsTitle":  "Häufige Fragen",
-    "faqsDesc":   "Antworten auf häufige Fragen zu Einrichtung, Genauigkeit und Preisen.",
-    "faqsLink":   "Zu den häufigen Fragen"
+    "badgeText": "Wir helfen Ihnen gerne",
+    "heading": "Kontakt & Support",
+    "lead": "Fragen zu Altera, zur Abrechnung oder zu einem bestimmten PDF, bei dem Sie nicht weiterkommen? Melden Sie sich — wir sind ein kleines Team, Sie erhalten also immer eine echte Antwort, keinen Bot.",
+    "docsTitle": "Dokumentation",
+    "docsDesc": "Schritt-für-Schritt-Anleitungen und Konfigurationsreferenzen für jeden Knoten.",
+    "docsLink": "Zur Dokumentation",
+    "faqsTitle": "Häufige Fragen",
+    "faqsDesc": "Antworten auf häufige Fragen zu Einrichtung, Genauigkeit und Preisen.",
+    "faqsLink": "Zu den häufigen Fragen"
   },
   "useCases": {
     "badgeLabel": "Anwendungsfälle",
-    "badgeText":  "Demnächst verfügbar",
-    "heading":    "Wie Teams Altera in der Praxis nutzen.",
-    "lead":       "Wir erstellen gerade ausführliche Anwendungsfälle für Finanz-, Beratungs- und Betriebsteams. Schauen Sie bald wieder vorbei — oder kontaktieren Sie uns noch heute, und wir weisen Ihnen den richtigen Weg.",
-    "ctaLabel":   "Kontakt aufnehmen"
+    "badgeText": "Altera im Einsatz",
+    "heading": "Was Teams mit Altera bauen",
+    "lead": "Echte Workflows für die PDFs, die Ihr Team jeden Monat bearbeitet. Wählen Sie ein Team, um Dokumente, Workflow und Ergebnis zu sehen.",
+    "learnMore": "Workflow ansehen",
+    "labels": {
+      "documents": "Verarbeitete Dokumente",
+      "challenge": "Die Herausforderung",
+      "workflow": "Der Workflow",
+      "workflowHint": "Diese Arbeitsfläche ist live: Ziehen Sie die Nodes oder zoomen Sie mit den Steuerelementen.",
+      "steps": "Schritt für Schritt",
+      "outcomes": "Was Sie erhalten",
+      "otherUseCases": "Weitere Anwendungsfälle",
+      "allUseCases": "Alle Anwendungsfälle"
+    },
+    "items": {
+      "finance": {
+        "tab": "Finanzen und Buchhaltung",
+        "title": "Kontoauszüge mit der Buchhaltung abgleichen",
+        "summary": "Verwandeln Sie PDF-Kontoauszüge in saubere Tabellen und gleichen Sie sie mit Ihrem Buchhaltungsexport ab – übrig bleiben nur die Posten, die Aufmerksamkeit brauchen.",
+        "metaTitle": "Kontoabstimmung aus PDF-Kontoauszügen",
+        "metaDescription": "Buchungen aus PDF-Kontoauszügen extrahieren und mit Ihrem Buchhaltungsexport abgleichen – mit einem Altera-Workflow ohne Code.",
+        "lead": "Die Abstimmung zum Monatsende heißt oft, Buchungen von Hand aus PDF-Auszügen abzutippen. Mit Altera extrahieren Sie sie, gleichen sie mit der Buchhaltung ab und behalten nur, was nicht passt.",
+        "documents": [
+          "Konto- und Kreditkartenauszüge",
+          "Berichte von Zahlungsdienstleistern",
+          "Buchhaltungsexporte (Excel oder CSV)",
+          "Lieferantenkontoauszüge"
+        ],
+        "challenge": "Auszüge kommen als PDF, bei jeder Bank in einem anderen Layout. Das Abtippen in eine Tabelle dauert Stunden, und ein einziger Tippfehler im Betrag bringt die ganze Abstimmung durcheinander.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Buchungen extrahieren",
+            "body": "Markieren Sie die Buchungstabelle im PDF Converter, und Altera macht daraus Zeilen mit Datum, Verwendungszweck, Referenz und Betrag."
+          },
+          {
+            "node": "Cleaner",
+            "title": "Text bereinigen",
+            "body": "Leerzeichen und Währungssymbole entfernen, damit Beträge und Referenzen exakt übereinstimmen."
+          },
+          {
+            "node": "Change Type",
+            "title": "Beträge in Zahlen umwandeln",
+            "body": "Die Betragsspalte in Zahlen umwandeln, damit sie verglichen und summiert werden kann."
+          },
+          {
+            "node": "Merge",
+            "title": "Mit der Buchhaltung abgleichen",
+            "body": "Laden Sie Ihren Buchhaltungsexport mit Input Data und verbinden Sie ihn mit dem Extra-Data-Port von Merge. Zeilen werden über Referenz und Betrag zugeordnet."
+          },
+          {
+            "node": "Filter · Export",
+            "title": "Behalten, was geprüft werden muss",
+            "body": "Auf die Posten ohne Treffer filtern und zur Prüfung nach Excel exportieren."
+          }
+        ],
+        "outcomes": [
+          "Einen Monat Buchungen in Minuten statt Stunden abstimmen",
+          "Kein Abtippen, also keine Tippfehler in Beträgen",
+          "Denselben Workflow nächsten Monat wiederverwenden: PDF tauschen und erneut ausführen"
+        ],
+        "canvas": {
+          "tables": {
+            "statement": {
+              "name": "Kontoauszug (extrahiert)",
+              "rowsLabel": "312 Zeilen (Auszug)",
+              "columns": [
+                "Datum",
+                "Verwendungszweck",
+                "Referenz",
+                "Betrag"
+              ]
+            }
+          },
+          "descriptions": {
+            "clean": "Text bereinigen, € entfernen",
+            "type": "Betrag als Zahl",
+            "ledger": "Buchhaltungsexport.xlsx",
+            "merge": "Abgleich per Referenz",
+            "filter": "Ohne Treffer",
+            "export": "Zu prüfen.xlsx"
+          }
+        }
+      },
+      "payroll": {
+        "tab": "Personal und Lohn",
+        "title": "Aus Gehaltsabrechnungen eine Lohnübersicht machen",
+        "summary": "Jede Zeile aus einem Stapel PDF-Gehaltsabrechnungen extrahieren und Bezüge und Abzüge je Mitarbeiter summieren – bereit für Ihre Lohnprüfung.",
+        "metaTitle": "Gehaltsabrechnungen als PDF zur Excel-Lohnübersicht",
+        "metaDescription": "Bezüge und Abzüge aus PDF-Gehaltsabrechnungen extrahieren und eine Lohnübersicht je Mitarbeiter in Excel erstellen – ohne Code.",
+        "lead": "Gehaltsabrechnungen sind zum Lesen gemacht, nicht für Tabellen. Altera holt die Zeilen aus Ihren PDF-Abrechnungen und fasst sie zu einer Übersichtszeile je Mitarbeiter zusammen.",
+        "documents": [
+          "Monatliche Gehaltsabrechnungen (eine oder viele pro PDF)",
+          "Lohnjournale und Lohnkonten",
+          "Spesen- und Zulagenberichte",
+          "Jahresentgeltbescheinigungen"
+        ],
+        "challenge": "Jede Abrechnung nennt den Namen nur einmal oben, darunter Bezüge und Abzüge. Nach dem Extrahieren sagen die meisten Zeilen nicht, zu wem sie gehören – und sie von Hand zu summieren ist langsam und fehleranfällig.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Abrechnungszeilen extrahieren",
+            "body": "Markieren Sie den Block mit Bezügen und Abzügen im PDF Converter, um ihn in eine Tabelle zu verwandeln."
+          },
+          {
+            "node": "Cascade Fill",
+            "title": "Namen in jede Zeile setzen",
+            "body": "Den Mitarbeiternamen nach unten auffüllen, damit jede Zeile weiß, zu welcher Abrechnung sie gehört."
+          },
+          {
+            "node": "Filter",
+            "title": "Benötigte Zeilen behalten",
+            "body": "Bezüge und Abzüge behalten, Überschriften, Leerzeilen und Hinweise entfernen."
+          },
+          {
+            "node": "Group By",
+            "title": "Je Mitarbeiter summieren",
+            "body": "Bezüge und Abzüge jedes Mitarbeiters in einer Zeile zusammenfassen."
+          },
+          {
+            "node": "Sort · Export",
+            "title": "Sortieren und exportieren",
+            "body": "Nach Mitarbeiter sortieren und die Übersicht nach Excel exportieren."
+          }
+        ],
+        "outcomes": [
+          "Eine saubere Übersichtszeile je Mitarbeiter",
+          "Ungewöhnliche Zahlungen vor dem Lohnabschluss erkennen",
+          "Derselbe Workflow verarbeitet den Stapel des nächsten Monats"
+        ],
+        "canvas": {
+          "tables": {
+            "payslips": {
+              "name": "Gehaltsabrechnungen (extrahiert)",
+              "rowsLabel": "1.480 Zeilen (Auszug)",
+              "columns": [
+                "Mitarbeiter",
+                "Lohnart",
+                "Betrag"
+              ]
+            }
+          },
+          "descriptions": {
+            "fill": "Name in jeder Zeile",
+            "filter": "Bezüge und Abzüge",
+            "group": "Summen je Mitarbeiter",
+            "sort": "Nach Mitarbeiter",
+            "export": "Lohnübersicht.xlsx"
+          }
+        }
+      },
+      "procurement": {
+        "tab": "Einkauf",
+        "title": "Ausgaben aus Lieferantenrechnungen analysieren",
+        "summary": "Rechnungspositionen aus PDF-Rechnungen holen, Positionssummen berechnen und Ausgaben je Lieferant sehen – ohne eine einzige Zahl abzutippen.",
+        "metaTitle": "Rechnungspositionen aus PDF nach Excel",
+        "metaDescription": "Positionen aus PDF-Lieferantenrechnungen extrahieren, Summen berechnen und Ausgaben je Lieferant analysieren – mit einem Altera-Workflow ohne Code.",
+        "lead": "Ihre echten Ausgabendaten stecken in PDF-Rechnungen. Altera extrahiert die Positionen, berechnet die Summen und fasst die Ausgaben je Lieferant zusammen.",
+        "documents": [
+          "Lieferantenrechnungen",
+          "Bestellungen",
+          "Gutschriften",
+          "Angebote und Preislisten"
+        ],
+        "challenge": "Jeder Lieferant gestaltet Rechnungen anders, und Positionen erstrecken sich oft über mehrere Seiten. Sie in eine Tabelle zu bekommen, heißt meist manuelles Kopieren und Einfügen.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Positionen extrahieren",
+            "body": "Markieren Sie die Positionstabelle und setzen Sie Spaltenhilfslinien, wo Spalten eng beieinander liegen."
+          },
+          {
+            "node": "Cleaner",
+            "title": "Text aufräumen",
+            "body": "Leerzeichen und störende Zeichen aus Beschreibungen und Preisen entfernen."
+          },
+          {
+            "node": "Change Type",
+            "title": "Mengen und Preise umwandeln",
+            "body": "Menge und Einzelpreis in Zahlen umwandeln."
+          },
+          {
+            "node": "Formula",
+            "title": "Positionssummen berechnen",
+            "body": "Eine Spalte Positionssumme hinzufügen: Menge × Einzelpreis."
+          },
+          {
+            "node": "Group By · Export",
+            "title": "Ausgaben je Lieferant",
+            "body": "Positionssummen je Lieferant addieren und das Ergebnis exportieren."
+          }
+        ],
+        "outcomes": [
+          "Ausgaben je Lieferant in Minuten sehen",
+          "Preisunterschiede zwischen Rechnungen erkennen",
+          "Saubere Positionen für Ihre Ausgabenberichte"
+        ],
+        "canvas": {
+          "tables": {
+            "invoices": {
+              "name": "Rechnungen (extrahiert)",
+              "rowsLabel": "860 Zeilen (Auszug)",
+              "columns": [
+                "Lieferant",
+                "Beschreibung",
+                "Menge",
+                "Einzelpreis"
+              ]
+            }
+          },
+          "descriptions": {
+            "clean": "Beschreibungen aufräumen",
+            "type": "Menge und Preis als Zahl",
+            "formula": "Summe = Menge × Einzelpreis",
+            "group": "Ausgaben je Lieferant",
+            "export": "Ausgaben.xlsx"
+          }
+        }
+      },
+      "logistics": {
+        "tab": "Logistik",
+        "title": "Aus Lieferscheinen ein Lieferprotokoll erstellen",
+        "summary": "Referenzen, Kunden und Daten aus PDF-Lieferscheinen und Manifesten in ein sauberes, sortiertes Lieferprotokoll übernehmen.",
+        "metaTitle": "Lieferscheine und Manifeste aus PDF nach Excel",
+        "metaDescription": "Auftragsreferenzen, Kunden und Daten aus PDF-Lieferscheinen und Versandmanifesten in ein sauberes Lieferprotokoll extrahieren.",
+        "lead": "Lieferscheine und Manifeste stapeln sich als PDFs von Spediteuren und Lagern. Altera macht daraus ein Lieferprotokoll, das Sie sortieren, prüfen und teilen können.",
+        "documents": [
+          "Lieferscheine",
+          "Versandmanifeste",
+          "Packlisten",
+          "Spediteursberichte"
+        ],
+        "challenge": "Referenzen kombinieren oft mehrere Codes in einem Feld, und dieselbe Lieferung kann auf mehreren Dokumenten stehen. Das von Hand zu bereinigen, skaliert nicht.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Lieferungen extrahieren",
+            "body": "Markieren Sie die Liefertabelle im PDF Converter, um sie in Zeilen zu verwandeln."
+          },
+          {
+            "node": "Text Parser",
+            "title": "Kombinierte Referenzen trennen",
+            "body": "Eine Referenz wie ORD-4821/DEP-07 in getrennte Spalten für Auftrag und Lager aufteilen."
+          },
+          {
+            "node": "Unique",
+            "title": "Duplikate entfernen",
+            "body": "Eine Zeile pro Lieferung behalten, auch wenn sie auf mehreren Dokumenten steht."
+          },
+          {
+            "node": "Sort · Export",
+            "title": "Sortieren und exportieren",
+            "body": "Nach Lieferdatum sortieren und das Protokoll nach Excel oder CSV exportieren."
+          }
+        ],
+        "outcomes": [
+          "Ein Lieferprotokoll statt eines Ordners voller PDFs",
+          "Keine doppelten Lieferungen in Ihren Berichten",
+          "Das Protokoll aktualisieren, sobald neue Dokumente kommen"
+        ],
+        "canvas": {
+          "tables": {
+            "deliveries": {
+              "name": "Lieferscheine (extrahiert)",
+              "rowsLabel": "540 Zeilen (Auszug)",
+              "columns": [
+                "Referenz",
+                "Kunde",
+                "Artikel",
+                "Datum"
+              ]
+            }
+          },
+          "descriptions": {
+            "parse": "Auftrag / Lager trennen",
+            "unique": "Eine Zeile je Lieferung",
+            "sort": "Nach Lieferdatum",
+            "export": "Lieferprotokoll.xlsx"
+          }
+        }
+      },
+      "audit": {
+        "tab": "Prüfung und Compliance",
+        "title": "Auszüge und Berichte vor der Freigabe prüfen",
+        "summary": "Salden aus PDF-Auszügen und Berichten extrahieren, summieren und fehlende Werte und Lücken automatisch erkennen.",
+        "metaTitle": "Prüfungshandlungen an PDF-Auszügen und Berichten",
+        "metaDescription": "Salden aus PDF-Auszügen extrahieren, summieren und fehlende Werte und Lücken erkennen – mit einem wiederholbaren Altera-Workflow ohne Code.",
+        "lead": "Prüfungsarbeit heißt, Zahlen über Stapel von PDF-Auszügen und Berichten zu kontrollieren. Altera extrahiert sie in Tabellen, summiert sie und zeigt, wo Daten fehlen.",
+        "documents": [
+          "Konto- und Saldenauszüge",
+          "Finanz- und Managementberichte",
+          "Bestätigungen Dritter",
+          "Aufsichtsrechtliche Meldungen"
+        ],
+        "challenge": "Prüfungen müssen gründlich und wiederholbar sein, doch die Quelldokumente sind PDFs. Stichproben von Hand kosten Zeit und lassen Lücken.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Zahlen extrahieren",
+            "body": "Markieren Sie die Saldentabelle im PDF Converter, um sie in eine Tabelle zu verwandeln."
+          },
+          {
+            "node": "Regular Expressions",
+            "title": "Kontonummern herausziehen",
+            "body": "Mit einem Muster saubere Kontonummern aus längerem Text holen."
+          },
+          {
+            "node": "Change Type",
+            "title": "Salden in Zahlen umwandeln",
+            "body": "Salden in Zahlen umwandeln, damit sie summiert werden können."
+          },
+          {
+            "node": "Aggregate · Export",
+            "title": "Salden summieren",
+            "body": "Summen, Anzahlen, Minima und Maxima berechnen und für Ihre Arbeitspapiere exportieren."
+          },
+          {
+            "node": "Summary",
+            "title": "Fehlende Werte und Lücken erkennen",
+            "body": "Jede Spalte auf leere Zellen und Lücken prüfen, bevor Sie sich auf die Zahlen verlassen."
+          }
+        ],
+        "outcomes": [
+          "Jede Zeile prüfen, nicht nur eine Stichprobe",
+          "Ein klarer, sichtbarer Nachweis jeder durchgeführten Prüfung",
+          "Dieselben Prüfungen auf die Dokumente der nächsten Periode anwenden"
+        ],
+        "canvas": {
+          "tables": {
+            "statements": {
+              "name": "Auszüge (extrahiert)",
+              "rowsLabel": "2.050 Zeilen (Auszug)",
+              "columns": [
+                "Konto",
+                "Periode",
+                "Saldo"
+              ]
+            }
+          },
+          "descriptions": {
+            "regex": "Kontonummern",
+            "type": "Saldo als Zahl",
+            "aggregate": "Summen und Anzahlen",
+            "summary": "Fehlende Werte und Lücken",
+            "export": "Arbeitspapiere.xlsx"
+          }
+        }
+      }
+    }
   },
   "about": {
-    "heroBadgeLabel":  "Über uns",
-    "heroBadgeText":   "Das Team hinter Altera",
-    "heroHeading":     "Entwickelt von einem kleinen Team mit einem klaren Ziel.",
-    "heroLead":        "Altera Data Suite wurde entwickelt, um ein wiederkehrendes Problem zu lösen — das Extrahieren strukturierter Daten aus PDFs sollte keine stundenlange manuelle Arbeit oder komplexe Skripte erfordern. Also haben wir ein Tool gebaut, das es in Sekunden erledigt.",
+    "heroBadgeLabel": "Über uns",
+    "heroBadgeText": "Das Team hinter Altera",
+    "heroHeading": "Entwickelt von einem kleinen Team mit einem klaren Ziel.",
+    "heroLead": "Altera Data Suite wurde entwickelt, um ein wiederkehrendes Problem zu lösen — das Extrahieren strukturierter Daten aus PDFs sollte keine stundenlange manuelle Arbeit oder komplexe Skripte erfordern. Also haben wir ein Tool gebaut, das es in Sekunden erledigt.",
     "storyBadgeLabel": "Unsere Geschichte",
-    "storyBadgeText":  "Warum wir das gebaut haben",
-    "story1Heading":   "Wo die Idee herkam",
-    "story1Text":      "Wir beide kamen aus Beratungsumgebungen — wir arbeiteten mit Unternehmen wie Deloitte und PwC. Eines wurde schnell klar: Selbst auf diesem Niveau hatte niemand eine ordentliche All-in-One-Lösung zur Extraktion von Daten aus PDFs entwickelt. Gehaltsabrechnungen, Rechnungen, Berichte — alles wurde manuell oder mit fragilen, einmalig erstellten Skripten erledigt. Diese Lücke war der Ausgangspunkt.",
-    "story2Heading":   "Der erste Knoten",
-    "story2Text":      "Wir begannen mit einem einzigen PDF-Konverter-Knoten. Es funktionierte — und wir sahen sofort, was als nächstes fehlte. Orange hatte starke analytische Fähigkeiten, ließ aber Datenbereinigung und -aufbereitung weitgehend unberücksichtigt. Also bauten wir weiter. Jeder Knoten war eine direkte Antwort auf einen Reibungspunkt in echten Workflows.",
-    "story3Heading":   "Warum Orange Data Mining?",
-    "story3Text":      "Wir wollten nichts bauen, das isoliert existiert. Orange Data Mining hat bereits ein starkes, etabliertes Ökosystem — es zu wählen bedeutete, dass unsere Nutzer ihre Arbeitsweise nicht ändern müssen. Altera integriert sich direkt in das, was sie bereits kennen und nutzen.",
-    "story4Heading":   "Wohin wir uns entwickeln",
-    "story4Text":      "Die Suite wächst weiter. Mehr Knoten sind in Entwicklung, und bestehende werden aktiv gewartet. Dies ist kein fertiges Produkt — es ist ein sich weiterentwickelndes Toolkit, das mit der realen Datenarbeit Schritt hält.",
-    "ctaHeading":      "Bereit, es in Aktion zu sehen?",
-    "ctaSubtitle":     "Sehen Sie sich die Demo an, um zu sehen, wie Altera echte PDFs verarbeitet, oder erkunden Sie die Preise, um den passenden Plan zu finden.",
-    "watchDemo":       "Demo ansehen",
-    "seePricing":      "Preise ansehen",
+    "storyBadgeText": "Warum wir das gebaut haben",
+    "story1Heading": "Wo die Idee herkam",
+    "story1Text": "Wir beide kamen aus Beratungsumgebungen — wir arbeiteten mit Unternehmen wie Deloitte und PwC. Eines wurde schnell klar: Selbst auf diesem Niveau hatte niemand eine ordentliche All-in-One-Lösung zur Extraktion von Daten aus PDFs entwickelt. Gehaltsabrechnungen, Rechnungen, Berichte — alles wurde manuell oder mit fragilen, einmalig erstellten Skripten erledigt. Diese Lücke war der Ausgangspunkt.",
+    "story2Heading": "Der erste Knoten",
+    "story2Text": "Wir begannen mit einem einzigen PDF-Konverter-Knoten. Es funktionierte — und wir sahen sofort, was als nächstes fehlte. Orange hatte starke analytische Fähigkeiten, ließ aber Datenbereinigung und -aufbereitung weitgehend unberücksichtigt. Also bauten wir weiter. Jeder Knoten war eine direkte Antwort auf einen Reibungspunkt in echten Workflows.",
+    "story3Heading": "Warum Orange Data Mining?",
+    "story3Text": "Wir wollten nichts bauen, das isoliert existiert. Orange Data Mining hat bereits ein starkes, etabliertes Ökosystem — es zu wählen bedeutete, dass unsere Nutzer ihre Arbeitsweise nicht ändern müssen. Altera integriert sich direkt in das, was sie bereits kennen und nutzen.",
+    "story4Heading": "Wohin wir uns entwickeln",
+    "story4Text": "Die Suite wächst weiter. Mehr Knoten sind in Entwicklung, und bestehende werden aktiv gewartet. Dies ist kein fertiges Produkt — es ist ein sich weiterentwickelndes Toolkit, das mit der realen Datenarbeit Schritt hält.",
+    "ctaHeading": "Bereit, es in Aktion zu sehen?",
+    "ctaSubtitle": "Sehen Sie sich die Demo an, um zu sehen, wie Altera echte PDFs verarbeitet, oder erkunden Sie die Preise, um den passenden Plan zu finden.",
+    "watchDemo": "Demo ansehen",
+    "seePricing": "Preise ansehen",
     "team": [
-      { "role": "CEO & Mitgründer",        "bio": "Mehdi hat Altera entwickelt, um die Reibung bei der Datenextraktion in Orange Data Mining zu beseitigen. Mit umfangreicher Erfahrung in Python, JavaScript und datenorientierten Lösungen verbindet er tiefes technisches Wissen mit realen Daten-Workflows. Als CEO definiert er die Produktvision, lenkt die technische Roadmap und stellt sicher, dass jede Funktion den echten Bedürfnissen von Datenprofis gerecht wird." },
-      { "role": "Mitgründer, Vertriebs- & Marketingleiter", "bio": "Salah leitet die Vertriebs- und Marketingstrategie des Unternehmens. Er ist verantwortlich für den Markenaufbau, die Kundengewinnung, die Lead-Generierung und strategische Partnerschaften. Sein Ziel ist es, das Wachstum des Unternehmens zu beschleunigen und innovative Lösungen zur Dokumentenautomatisierung für Fachleute zu fördern." },
-      { "role": "Softwareingenieur",  "bio": "Saumya ist spezialisiert auf Rust, C und TypeScript, mit einem starken Fokus auf Software-Performance-Optimierung. Er entwirft den Kernmotor von Altera und sorgt dafür, dass jede Berechnung schnell, schlank und skalierbar ist." },
-      { "role": "Frontend-Ingenieur", "bio": "Raphaël gestaltet die Benutzeroberflächen, mit denen Nutzer täglich interagieren. Als Spezialist für Frontend-Entwicklung verwandelt er Designs in schnelle, responsive und barrierefreie Web-Erlebnisse. Von der Komponentenarchitektur bis zur pixelgenauen Umsetzung stellt er sicher, dass Alteras UI flüssig, zuverlässig und konsistent ist." }
+      {
+        "role": "CEO & Mitgründer",
+        "bio": "Mehdi hat Altera entwickelt, um die Reibung bei der Datenextraktion in Orange Data Mining zu beseitigen. Mit umfangreicher Erfahrung in Python, JavaScript und datenorientierten Lösungen verbindet er tiefes technisches Wissen mit realen Daten-Workflows. Als CEO definiert er die Produktvision, lenkt die technische Roadmap und stellt sicher, dass jede Funktion den echten Bedürfnissen von Datenprofis gerecht wird."
+      },
+      {
+        "role": "Mitgründer, Vertriebs- & Marketingleiter",
+        "bio": "Salah leitet die Vertriebs- und Marketingstrategie des Unternehmens. Er ist verantwortlich für den Markenaufbau, die Kundengewinnung, die Lead-Generierung und strategische Partnerschaften. Sein Ziel ist es, das Wachstum des Unternehmens zu beschleunigen und innovative Lösungen zur Dokumentenautomatisierung für Fachleute zu fördern."
+      },
+      {
+        "role": "Softwareingenieur",
+        "bio": "Saumya ist spezialisiert auf Rust, C und TypeScript, mit einem starken Fokus auf Software-Performance-Optimierung. Er entwirft den Kernmotor von Altera und sorgt dafür, dass jede Berechnung schnell, schlank und skalierbar ist."
+      },
+      {
+        "role": "Frontend-Ingenieur",
+        "bio": "Raphaël gestaltet die Benutzeroberflächen, mit denen Nutzer täglich interagieren. Als Spezialist für Frontend-Entwicklung verwandelt er Designs in schnelle, responsive und barrierefreie Web-Erlebnisse. Von der Komponentenarchitektur bis zur pixelgenauen Umsetzung stellt er sicher, dass Alteras UI flüssig, zuverlässig und konsistent ist."
+      }
     ]
   },
   "faqs": {
     "pageTitle": "Häufig gestellte Fragen — Altera Data Suite"
   },
   "changelog": {
-    "badgeLabel":   "Änderungsprotokoll",
-    "badgeText":    "Neuigkeiten in Altera",
-    "heroHeading":  "Jedes Update, an einem Ort.",
+    "badgeLabel": "Änderungsprotokoll",
+    "badgeText": "Neuigkeiten in Altera",
+    "heroHeading": "Jedes Update, an einem Ort.",
     "heroSubtitle": "Neue Funktionen, Verbesserungen und Korrekturen — regelmäßig veröffentlicht und hier dokumentiert.",
-    "categories":   { "New": "Neu", "Improved": "Verbessert", "Fixed": "Behoben" },
-    "latestLabel":  "Neueste Version"
+    "categories": {
+      "New": "Neu",
+      "Improved": "Verbessert",
+      "Fixed": "Behoben"
+    },
+    "latestLabel": "Neueste Version"
   },
   "chatbot": {
-    "triggerTitle":    "Altera fragen",
+    "triggerTitle": "Altera fragen",
     "triggerSubtitle": "Hier, um zu helfen",
-    "panelTitle":      "Altera Assistent",
-    "panelSubtitle":   "Stellen Sie mir Fragen",
-    "placeholder":     "Eine Frage stellen…",
-    "welcome":         "Hallo! Ich bin Alteras Assistent. Stellen Sie mir beliebige Fragen zur App, den Knoten oder zum Einstieg.",
-    "followUp":        "Hier sind einige Dinge, bei denen ich helfen kann:",
-    "fallback":        "Gute Frage! Für weitere Details schauen Sie in die Dokumentation oder wenden Sie sich direkt an unser Team.",
+    "panelTitle": "Altera Assistent",
+    "panelSubtitle": "Stellen Sie mir Fragen",
+    "placeholder": "Eine Frage stellen…",
+    "welcome": "Hallo! Ich bin Alteras Assistent. Stellen Sie mir beliebige Fragen zur App, den Knoten oder zum Einstieg.",
+    "followUp": "Hier sind einige Dinge, bei denen ich helfen kann:",
+    "fallback": "Gute Frage! Für weitere Details schauen Sie in die Dokumentation oder wenden Sie sich direkt an unser Team.",
     "quickReplies": [
-      { "question": "Wie funktioniert der PDF Converter?",      "answer": "Öffnen Sie Ihr PDF, zeichnen Sie Rechtecke über die zu extrahierenden Daten, platzieren Sie bei Bedarf Spaltenführungen und klicken Sie auf Konvertieren. Sie erhalten eine saubere strukturierte Tabelle." },
-      { "question": "Welche Knoten sind verfügbar?",           "answer": "Altera umfasst 9 Knoten: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates und Cleaner." },
-      { "question": "Gibt es eine kostenlose Testversion?",     "answer": "Ja! Sie können kostenlos loslegen. Besuchen Sie die Preisseite, um zu sehen, was in jedem Plan enthalten ist." }
+      {
+        "question": "Wie funktioniert der PDF Converter?",
+        "answer": "Öffnen Sie Ihr PDF, zeichnen Sie Rechtecke über die zu extrahierenden Daten, platzieren Sie bei Bedarf Spaltenführungen und klicken Sie auf Konvertieren. Sie erhalten eine saubere strukturierte Tabelle."
+      },
+      {
+        "question": "Welche Knoten sind verfügbar?",
+        "answer": "Altera umfasst 9 Knoten: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates und Cleaner."
+      },
+      {
+        "question": "Gibt es eine kostenlose Testversion?",
+        "answer": "Ja! Sie können kostenlos loslegen. Besuchen Sie die Preisseite, um zu sehen, was in jedem Plan enthalten ist."
+      }
     ]
   },
   "lang": {
@@ -309,9 +998,9 @@
     "nl": "Nederlands"
   },
   "legal": {
-    "badge":            "Rechtlich",
+    "badge": "Rechtlich",
     "lastUpdatedLabel": "Zuletzt aktualisiert",
-    "lastUpdated":      "Mai 2026"
+    "lastUpdated": "Mai 2026"
   },
   "termsContent": {
     "groups": [
@@ -463,5 +1152,80 @@
         ]
       }
     ]
+  },
+  "whyWorkflows": {
+    "badgeLabel": "Unser Ansatz",
+    "badgeText": "Warum visuelle Workflows",
+    "heading": "Warum visuelle Workflows?",
+    "lead": "Altera macht aus jedem Schritt Ihrer Datenarbeit einen Node, den Sie sehen, prüfen und wiederverwenden können. Hier erfahren Sie, warum wir es so gebaut haben.",
+    "intro": [
+      "Die meiste Datenarbeit passiert noch immer in Tabellen voller Formeln oder in Skripten, die die eine Person im Team geschrieben hat, die programmieren kann. Beides funktioniert – bis Sie eine Zahl prüfen, einen Schritt ändern oder die Arbeit an jemand anderen übergeben müssen.",
+      "Das Problem: Beides verbirgt den Ablauf. Ein Skript ist eine Liste von Anweisungen; eine Tabelle zeigt nur das Endergebnis. Wenn Sie aber einen Stapel PDFs in einen Bericht verwandeln, zählen vor allem die Daten selbst – wie sie nach jedem Schritt aussehen und ob sie stimmen.",
+      "Deshalb ist Altera um einen Datenfluss herum aufgebaut. Jeder Node erledigt genau eine Aufgabe – extrahieren, bereinigen, filtern, kombinieren, zusammenfassen – und Sie können jeden Node öffnen, um sein Ergebnis zu sehen. Der Workflow ist der Ablauf, für alle sichtbar."
+    ],
+    "diagramCaption": "Ein echter Gehalts-Workflow: Die aus dem PDF extrahierte Tabelle wird in Mitarbeiterzeilen und Zahltage aufgeteilt, beide Seiten werden bereinigt, wieder verbunden und nach Excel exportiert.",
+    "reasonsIntro": "Drei Gründe, warum visuelle Workflows unserer Meinung nach der beste Weg sind, mit Daten zu arbeiten:",
+    "reasons": [
+      {
+        "title": "Es zählt das Ergebnis, nicht der Code",
+        "body": [
+          "Wenn Sie Rechnungen nach Lieferant zusammenfassen, sind die entscheidenden Fragen: Welche Zeilen bleiben, wie werden sie gruppiert, was wird summiert? Wie das im Code aussieht, beantwortet keine davon.",
+          "In Altera wählen Sie einen Node, stellen seine Optionen ein und sehen sofort das Ergebnis. Jede Einstellung ist eine sichtbare Entscheidung, keine Codezeile, die Sie debuggen müssen."
+        ]
+      },
+      {
+        "title": "Ein Workflow, den jeder lesen kann",
+        "body": [
+          "Ein Workflow ist eine gemeinsame Sprache. Finanzleitung, Analyst und Prüfer können auf dieselbe Arbeitsfläche schauen und Schritt für Schritt nachvollziehen, was mit den Daten passiert – ohne ein Skript zu lesen.",
+          "So lässt sich die Arbeit anderer leicht prüfen, ein Ablauf bei Abwesenheit übergeben und genau zeigen, wie eine Zahl im Bericht entstanden ist."
+        ]
+      },
+      {
+        "title": "Kein Informatikstudium nötig",
+        "body": [
+          "Ihren ersten nützlichen Workflow bauen Sie an einem Nachmittag: eine Tabelle aus einem PDF extrahieren, bereinigen und nach Excel exportieren.",
+          "Danach lernen Sie einen Node nach dem anderen. Dieselbe Arbeitsfläche, die eine einfache Bereinigung erledigt, kann auch Zusammenführungen, Pivots, reguläre Ausdrücke und mehrstufige Berichte – Sie wachsen nie aus ihr heraus."
+        ]
+      }
+    ],
+    "differentHeading": "Was Altera anders macht",
+    "different": [
+      {
+        "title": "PDF-Extraktion ist Teil des Workflows",
+        "body": "Die meisten Tools setzen erst ein, wenn Ihre Daten schon in einer Tabelle stehen. In Altera ist die Extraktion aus PDFs ein Node wie jeder andere – Daten herausholen und bereinigen passiert an einem Ort."
+      },
+      {
+        "title": "Einmal bauen, jeden Monat erneut ausführen",
+        "body": "Speichern Sie einen Workflow, und alle Einstellungen bleiben erhalten, auch die im PDF markierten Bereiche. Kommt die Datei des nächsten Monats, tauschen Sie sie aus und führen dieselben Schritte erneut aus."
+      },
+      {
+        "title": "Ihre Dateien bleiben auf Ihrem Computer",
+        "body": "Altera ist eine Desktop-App. Ihre Dokumente werden lokal auf Ihrem eigenen Rechner verarbeitet und nicht auf fremde Server hochgeladen."
+      }
+    ],
+    "ctaHeading": "Überzeugen Sie sich selbst",
+    "ctaText": "Laden Sie Altera herunter und bauen Sie Ihren ersten Workflow in wenigen Minuten.",
+    "ctaDownload": "Download",
+    "ctaDocs": "Node-Dokumentation ansehen",
+    "canvas": {
+      "tableName": "Gehaltsabrechnung (extrahiert)",
+      "rowsLabel": "240 Zeilen (Auszug)",
+      "columns": [
+        "Mitarbeiter",
+        "Zahltag",
+        "Bezüge",
+        "Netto"
+      ],
+      "descriptions": {
+        "employees": "Mitarbeiterzeilen",
+        "first": "Erste Zeile je Mitarbeiter",
+        "regex": "Zahltag extrahieren",
+        "dates": "Nur Datumswerte",
+        "stack": "Beide Tabellen verbinden",
+        "columns": "Umbenennen und sortieren",
+        "export": "Gehalt.xlsx"
+      },
+      "hint": "Diese Arbeitsfläche ist live, genau wie in der App: Ziehen Sie die Nodes oder zoomen Sie mit den Steuerelementen."
+    }
   }
 }

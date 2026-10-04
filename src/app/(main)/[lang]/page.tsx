@@ -5,7 +5,10 @@ import { getDictionary, hasLocale, LOCALES } from "@/i18n/dictionaries";
 import Hero from "@/components/Hero";
 import ResultShowcaseSection from "@/components/ResultShowcaseSection";
 import StatsSection from "@/components/StatsSection";
-import WidgetsSection from "@/components/WidgetsSection";
+import NodeShowcaseSection from "@/components/NodeShowcaseSection";
+import HowItWorksSection from "@/components/HowItWorksSection";
+import IndustriesSection from "@/components/IndustriesSection";
+import GetStartedSection from "@/components/GetStartedSection";
 import FAQSection from "@/components/FAQSection";
 import LazyChatBot from "@/components/LazyChatBot";
 
@@ -122,11 +125,14 @@ export default async function HomePage({
       <Hero t={dict.hero} lang={lang} featureCards={dict.featureCards} />
       <ResultShowcaseSection t={dict.resultShowcase} lang={lang} />
       <StatsSection t={dict.stats} />
-      <WidgetsSection t={dict.widgets} lang={lang} />
+      <HowItWorksSection t={dict.howItWorks} />
+      <NodeShowcaseSection t={dict.nodeShowcase} lang={lang} />
+      <IndustriesSection t={dict.industries} items={dict.useCases.items} lang={lang} />
       <PricingSection t={dict.pricing} lang={lang} />
       <TestimonialsSection t={dict.testimonials} />
       <CustomWidgetSection t={dict.customWidget} />
       <FAQSection t={dict.faqSection} items={faqItems} />
+      <GetStartedSection t={dict.getStarted} lang={lang} />
       <LazyChatBot t={dict.chatbot} />
     </main>
   );

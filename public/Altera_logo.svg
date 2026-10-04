@@ -1,34 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 313.4 313.2">
-  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
-  <defs>
-    <style>
-      .st0 {
-        fill: url(#linear-gradient2);
-      }
-
-      .st1 {
-        fill: url(#linear-gradient1);
-      }
-
-      .st2 {
-        fill: url(#linear-gradient);
-      }
-    </style>
-    <linearGradient id="linear-gradient" x1="40.4" y1="77.2" x2="173" y2="282.3" gradientTransform="translate(-105.1 166.8) rotate(56.5) scale(1 -1)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fe4d41"/>
-      <stop offset="1" stop-color="#fe8c41"/>
-    </linearGradient>
-    <linearGradient id="linear-gradient1" x1="336.3" y1="-8.6" x2="174.1" y2="226.1" gradientTransform="translate(0 342) scale(1 -1)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fe4d41"/>
-      <stop offset="1" stop-color="#fe6b41"/>
-    </linearGradient>
-    <linearGradient id="linear-gradient2" x1="133.3" y1="291.1" x2="294.1" y2="49.1" gradientTransform="translate(-69 199.4) rotate(33.5) scale(1 -1)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fe4d41" stop-opacity=".4"/>
-      <stop offset="1" stop-color="#fe7341" stop-opacity=".2"/>
-    </linearGradient>
-  </defs>
-  <rect id="Left_Stick" class="st2" x="-34" y="96.6" width="288.6" height="119.9" rx="59.9" ry="59.9" transform="translate(-81.1 162.1) rotate(-56.5)"/>
-  <path class="st1" d="M302.1,256.2l-2.5,3.7c-11.1,16.8-29.3,26.3-48,26.9h-3.9c-18.7-.6-36.9-10-48-26.9l-2.5-3.7c-10.6-19-10.5-43,2.3-62.4l50.1-75.8,50,75.8c12.8,19.4,12.9,43.4,2.3,62.4h.2Z"/>
-  <rect id="Right_Stick" class="st0" x="143.1" y="12.4" width="119.9" height="288.6" rx="59.9" ry="59.9" transform="translate(-52.8 138.1) rotate(-33.5)"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2_00000012435232001500569430000014505165189563697825_"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 313.4 313.2"
+	 style="enable-background:new 0 0 313.4 313.2;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#Left_Stick_00000048498359225480624710000017265927466313760129_);}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill:url(#Right_Stick_00000136405392162214979320000011924192413798593982_);}
+</style>
+<linearGradient id="Left_Stick_00000101822791716109221840000003130201250942375574_" gradientUnits="userSpaceOnUse" x1="40.4473" y1="522.8306" x2="173.0473" y2="317.7306" gradientTransform="matrix(1 0 0 1 -1.641258e-02 -258.1955)">
+	<stop  offset="0" style="stop-color:#FE4D41"/>
+	<stop  offset="1" style="stop-color:#FE9189"/>
+</linearGradient>
+<path id="Left_Stick" style="fill:url(#Left_Stick_00000101822791716109221840000003130201250942375574_);" d="M13.7,193.8
+	l93.2-140.8c18.3-27.6,55.4-35.1,83-16.9l0.1,0.1c27.6,18.3,35.1,55.4,16.9,83L113.7,260c-18.3,27.6-55.4,35.1-83,16.9l-0.1-0.1
+	C3.1,258.6-4.5,221.4,13.7,193.8z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="336.3374" y1="608.5742" x2="174.1374" y2="373.8742" gradientTransform="matrix(1 0 0 1 0 -258)">
+	<stop  offset="1.065558e-08" style="stop-color:#FE4D41"/>
+	<stop  offset="1" style="stop-color:#FE4D41"/>
+</linearGradient>
+<path class="st1" d="M302.1,256.2l-2.5,3.7c-11.1,16.8-29.3,26.3-48,26.9h-3.9c-18.7-0.6-36.9-10-48-26.9l-2.5-3.7
+	c-10.6-19-10.5-43,2.3-62.4l50.1-75.8l50,75.8c12.8,19.4,12.9,43.4,2.3,62.4H302.1z"/>
+<linearGradient id="Right_Stick_00000045595809301824334620000007976274428143282858_" gradientUnits="userSpaceOnUse" x1="133.2982" y1="308.9012" x2="294.0982" y2="550.9012" gradientTransform="matrix(1 0 0 1 -0.2819 -257.5395)">
+	<stop  offset="0" style="stop-color:#FE4D41;stop-opacity:0.4"/>
+	<stop  offset="1" style="stop-color:#FE7341;stop-opacity:0.2"/>
+</linearGradient>
+<path id="Right_Stick" style="fill:url(#Right_Stick_00000045595809301824334620000007976274428143282858_);" d="M123.3,36.4
+	L123.3,36.4c27.7-18.3,64.8-10.8,83.1,16.8L299.6,194c18.3,27.6,10.7,64.8-16.9,83l-0.1,0.1c-27.6,18.3-64.8,10.7-83-16.9
+	l-93.2-140.8C88.2,91.8,95.7,54.7,123.3,36.4z"/>
 </svg>

@@ -1,304 +1,993 @@
 {
   "meta": {
-    "home":      { "title": "PDF Data Extraction Software | Altera Data Suite","description": "Extract invoices, payslips & reports from any PDF — no code needed. The standalone, no-code desktop app for structured data extraction. Try it free." },
-    "about":     { "title": "About",              "description": "Learn about Altera Data Suite — who built it, why, and what drives it." },
-    "pricing":   { "title": "Pricing",            "description": "Simple, transparent pricing for Altera Data Suite. Start free, upgrade when it delivers value." },
-    "faqs":      { "title": "FAQs",               "description": "Got questions about Altera? Find answers about setup, accuracy, pricing, security, and more." },
-    "docs":      { "title": "Docs",               "description": "Learn how to use every Altera node — step-by-step guides, configuration references, and output details for every feature." },
-    "changelog": { "title": "Changelog",          "description": "Every update, improvement, and fix to Altera Data Suite — in one place." },
-    "terms":     { "title": "Terms of Service",   "description": "Altera Data Suite terms of use, license restrictions, and liability." },
-    "privacy":   { "title": "Privacy Policy",     "description": "How Altera Data Suite collects, uses, and protects your data. GDPR & CCPA compliant." },
-    "refund":    { "title": "Refund Policy",       "description": "30-day money-back guarantee, refund eligibility, and cancellation terms for Altera Data Suite." },
-    "download":  { "title": "Download",            "description": "Download Altera Data Suite for Windows, macOS, or Linux and start extracting structured data from your PDFs in minutes." },
-    "contact":   { "title": "Contact & Support",   "description": "Get in touch with the Altera Data Suite team — questions, billing, or support, we respond directly, no bots." },
-    "useCases":  { "title": "Use Cases",           "description": "See how teams use Altera Data Suite to extract and structure data from PDFs." }
+    "home": {
+      "title": "PDF Data Extraction Software | Altera Data Suite",
+      "description": "Extract invoices, payslips & reports from any PDF — no code needed. The standalone, no-code desktop app for structured data extraction. Try it free."
+    },
+    "about": {
+      "title": "About",
+      "description": "Learn about Altera Data Suite — who built it, why, and what drives it."
+    },
+    "pricing": {
+      "title": "Pricing",
+      "description": "Simple, transparent pricing for Altera Data Suite. Start free, upgrade when it delivers value."
+    },
+    "faqs": {
+      "title": "FAQs",
+      "description": "Got questions about Altera? Find answers about setup, accuracy, pricing, security, and more."
+    },
+    "docs": {
+      "title": "Docs",
+      "description": "Learn how to use every Altera node — step-by-step guides, configuration references, and output details for every feature."
+    },
+    "changelog": {
+      "title": "Changelog",
+      "description": "Every update, improvement, and fix to Altera Data Suite — in one place."
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "Altera Data Suite terms of use, license restrictions, and liability."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "How Altera Data Suite collects, uses, and protects your data. GDPR & CCPA compliant."
+    },
+    "refund": {
+      "title": "Refund Policy",
+      "description": "30-day money-back guarantee, refund eligibility, and cancellation terms for Altera Data Suite."
+    },
+    "download": {
+      "title": "Download",
+      "description": "Download Altera Data Suite for Windows, macOS, or Linux and start extracting structured data from your PDFs in minutes."
+    },
+    "contact": {
+      "title": "Contact & Support",
+      "description": "Get in touch with the Altera Data Suite team — questions, billing, or support, we respond directly, no bots."
+    },
+    "useCases": {
+      "title": "Use Cases",
+      "description": "Real Altera workflows for finance, payroll, procurement, logistics, and audit teams — from PDF documents to clean, analysis-ready data."
+    },
+    "whyWorkflows": {
+      "title": "Why Visual Workflows",
+      "description": "Why Altera Data Suite is built around visual, node-based workflows — see your data at every step, share processes anyone can read, and skip the code."
+    }
   },
   "nav": {
-    "docs":      "Docs",
-    "pricing":   "Pricing",
-    "download":  "Download",
-    "about":     "About",
-    "faqs":      "FAQs",
-    "startFree": "Start for free"
+    "docs": "Docs",
+    "pricing": "Pricing",
+    "download": "Download",
+    "about": "About",
+    "faqs": "FAQs"
   },
   "footer": {
-    "tagline":            "You define the goal. Altera extracts the data.",
-    "productHeading":     "Product",
-    "companyHeading":     "Company & Policies",
-    "connectHeading":     "Connect",
-    "contactHeading":     "Contact Information",
-    "emailLabel":         "Email",
-    "copyright":          "All rights reserved.",
-    "langSwitcherLabel":  "Language",
+    "tagline": "You define the goal. Altera extracts the data.",
+    "productHeading": "Product",
+    "companyHeading": "Company & Policies",
+    "connectHeading": "Connect",
+    "contactHeading": "Contact Information",
+    "emailLabel": "Email",
+    "copyright": "All rights reserved.",
+    "langSwitcherLabel": "Language",
     "legalHeading": "Legal",
     "links": {
-      "features":      "Features",
-      "changelog":     "Changelog",
-      "pricingPlan":   "Pricing Plan",
-      "docs":          "Docs",
-      "download":      "Download",
-      "aboutUs":       "About Us",
-      "contact":       "Contact",
-      "useCases":      "Use Cases",
+      "features": "Features",
+      "changelog": "Changelog",
+      "pricingPlan": "Pricing Plan",
+      "docs": "Docs",
+      "download": "Download",
+      "aboutUs": "About Us",
+      "contact": "Contact",
+      "useCases": "Use Cases",
       "customWidgets": "Custom Nodes",
-      "terms":         "Terms of Service",
-      "privacy":       "Privacy Policy",
-      "refund":        "Refund Policy"
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "refund": "Refund Policy",
+      "whyWorkflows": "Why Visual Workflows"
     }
   },
   "hero": {
-    "announcementBadge": "New ✦",
-    "announcementText":  "No-code PDF extraction",
-    "headingPart1":      "The App that turns",
-    "headingPart2":      "your PDFs into ",
-    "headingPart3":      "clean tables",
-    "subtitle":          "Drop in any PDF — Altera's nodes extract, clean, and structure every field in seconds.",
-    "startFree":         "Start for free",
-    "watchDemo":         "Watch Demo",
-    "testimonialTitle":  "Simple Setup, Instant Results",
-    "testimonialQuote":  "\"We built Altera to handle any PDF — payslips, invoices, reports. Designed for speed, scale, and clarity from day one.\"",
+    "announcementBadge": "Free trial ✦",
+    "announcementText": "No-code PDF extraction",
+    "headingPart1": "The App that turns",
+    "headingPart2": "your PDFs into ",
+    "headingPart3": "clean tables",
+    "subtitle": "Drop in any PDF — Altera's nodes extract, clean, and structure every field in seconds.",
+    "startFree": "Start for free",
+    "watchDemo": "Watch Demo",
+    "testimonialTitle": "Simple Setup, Instant Results",
+    "testimonialQuote": "\"We built Altera to handle any PDF — payslips, invoices, reports. Designed for speed, scale, and clarity from day one.\"",
     "testimonialAttrib": "— Mehdi, Co-Founder & Developer of Altera Data Suite"
+  },
+  "howItWorks": {
+    "badgeLabel": "How it works",
+    "badgeText": "Altera in 10 steps",
+    "heading": "See how Altera works",
+    "back": "Back",
+    "next": "Next",
+    "restart": "Start over",
+    "stepOf": "Step {n} of {total}",
+    "steps": [
+      {
+        "title": "Open your PDF and highlight the data.",
+        "body": "Open a statement, invoice, or report in the PDF Converter and draw over the data you need with the Rectangle tool. Each highlight gets its own color, which you can use to tell sections apart later."
+      },
+      {
+        "title": "Add column guides, if you need them.",
+        "body": "Place guides where columns should split. Skip them and Altera works out the columns itself, page by page."
+      },
+      {
+        "title": "Click Convert.",
+        "body": "Your highlighted areas become a clean table, ready to send into a workflow."
+      },
+      {
+        "title": "This is a node.",
+        "body": "Nodes do one job on your data: filter rows, clean text, merge tables, total a column, and more."
+      },
+      {
+        "title": "Connect nodes into a workflow.",
+        "body": "Data flows from left to right. The table extracted from your PDF goes in, and each node passes its result to the next."
+      },
+      {
+        "title": "You decide when to run it.",
+        "body": "Run the workflow and watch each node turn green as it finishes. Change a setting and re-run it any time."
+      },
+      {
+        "title": "Clean and filter your data…",
+        "body": "For example, keeping only last month's transactions from a bank statement."
+      },
+      {
+        "title": "…total it by group…",
+        "body": "For example, adding up spend per supplier across a stack of invoices."
+      },
+      {
+        "title": "…or combine two sources.",
+        "body": "For example, matching a bank statement against your ledger export to find what doesn't line up."
+      },
+      {
+        "title": "And it's intuitive.",
+        "body": "No formulas and no scripts: pick a node, set its options, and see the result. Most people build their first workflow in an afternoon."
+      }
+    ],
+    "canvas": {
+      "statement": {
+        "name": "Bank statement (extracted)",
+        "rowsLabel": "312 rows (sample)",
+        "columns": [
+          "Date",
+          "Description",
+          "Amount"
+        ]
+      },
+      "invoices": {
+        "name": "Invoices (extracted)",
+        "rowsLabel": "860 rows (sample)",
+        "columns": [
+          "Supplier",
+          "Description",
+          "Amount"
+        ]
+      },
+      "descriptions": {
+        "single": "Keep the rows you need",
+        "clean": "Trim text",
+        "filter": "Last month only",
+        "export": "Result.xlsx",
+        "type": "Amount to number",
+        "group": "Total per supplier",
+        "sort": "Highest first",
+        "ledger": "Ledger export.xlsx",
+        "merge": "Match on reference",
+        "unmatched": "Unmatched only"
+      }
+    }
   },
   "resultShowcase": {
     "badgeLabel": "Payslip Extraction",
-    "badgeText":  "Fast & Accurate",
-    "heading":    "From a static PDF to clean, structured data — in seconds.",
-    "subtitle":   "Drop in any payslip, invoice, or report. Altera reads every field, maps it to columns, and hands you a structured table ready to export or analyse.",
-    "tryFree":    "Try It Free",
-    "seeHow":     "See How It Works"
+    "badgeText": "Fast & Accurate",
+    "heading": "From a static PDF to clean, structured data — in seconds.",
+    "subtitle": "Drop in any payslip, invoice, or report. Altera reads every field, maps it to columns, and hands you a structured table ready to export or analyse.",
+    "tryFree": "Try It Free",
+    "seeHow": "See How It Works"
   },
   "stats": {
     "badgeLabel": "By the Numbers",
-    "badgeText":  "Real Results, Real Impact",
-    "heading":    "Built for speed. Designed for accuracy.",
-    "subtitle":   "Altera Data Suite turns hours of manual data entry into seconds of automated extraction — at any scale.",
+    "badgeText": "Real Results, Real Impact",
+    "heading": "Built for speed. Designed for accuracy.",
+    "subtitle": "Altera Data Suite turns hours of manual data entry into seconds of automated extraction — at any scale.",
     "items": [
-      { "value": "98%",  "label": "Extraction Accuracy",      "desc": "Parse payslips, invoices, and reports with near-perfect field accuracy." },
-      { "value": "10×",  "label": "Faster Than Manual Entry", "desc": "Automate tedious copy-paste workflows and reclaim hours every week." },
-      { "value": "500+", "label": "Pages Per Batch",          "desc": "Drop in massive multi-page PDFs and get structured output in seconds." },
-      { "value": "24/7", "label": "Always Available",         "desc": "No servers, no queues — runs entirely on your machine, anytime." }
+      {
+        "value": "98%",
+        "label": "Extraction Accuracy",
+        "desc": "Parse payslips, invoices, and reports with near-perfect field accuracy."
+      },
+      {
+        "value": "10×",
+        "label": "Faster Than Manual Entry",
+        "desc": "Automate tedious copy-paste workflows and reclaim hours every week."
+      },
+      {
+        "value": "500+",
+        "label": "Pages Per Batch",
+        "desc": "Drop in massive multi-page PDFs and get structured output in seconds."
+      },
+      {
+        "value": "24/7",
+        "label": "Always Available",
+        "desc": "No servers, no queues — runs entirely on your machine, anytime."
+      }
     ]
   },
   "featureCards": [
-    { "label": "FAST CONVERSION",   "line1": "Drop in any PDF.",            "line2": "Clean data in seconds." },
-    { "label": "VISUAL WORKFLOWS",  "line1": "Chain nodes together",       "line2": "to build your exact pipeline." },
-    { "label": "WE GIVE YOU TOOLS", "line1": "Smart nodes that extract,", "line2": "and clean your data." }
+    {
+      "label": "FAST CONVERSION",
+      "line1": "Drop in any PDF.",
+      "line2": "Clean data in seconds."
+    },
+    {
+      "label": "READY-MADE NODES",
+      "line1": "Clean, sort, and reshape your extracted data.",
+      "line2": "Link nodes into one workflow."
+    },
+    {
+      "label": "WE GIVE YOU TOOLS",
+      "line1": "Smart nodes that extract,",
+      "line2": "and clean your data."
+    }
   ],
-  "widgets": {
-    "badgeLabel":  "Features",
-    "badgeText":   "Purpose-Built Nodes",
-    "heading":     "Your all-in-one solution for fast, efficient PDF and data processing.",
-    "subtitle":    "Purpose-built nodes that take your PDFs and spreadsheets from raw input to structured, analysis-ready data — no code, no friction.",
-    "exploreNow":  "Explore Now",
+  "nodeShowcase": {
+    "badgeLabel": "Features",
+    "badgeText": "Purpose-Built Nodes",
+    "heading": "A node for every step of your data",
+    "learnMore": "Learn more",
     "items": [
-      { "name": "PDF Converter",       "description": "Load any multi-page PDF — payslips, invoices, reports — and instantly extract every field into a clean, row-by-row table ready for analysis." },
-      { "name": "Filter Builder",      "description": "Isolate exactly the rows you need using flexible conditions on any column. No code, no formulas — just point-and-click filtering." },
-      { "name": "Regular Expressions", "description": "Pull structured patterns — dates, IDs, names, amounts — out of raw text fields using powerful regex rules, visually configured." },
-      { "name": "Column Manager",      "description": "Rename, reorder, or drop columns in seconds. Tailor your output schema so downstream tools always receive exactly what they expect." }
-    ]
+      {
+        "title": "Extract with PDF Converter",
+        "bullets": [
+          "Highlight the areas you need right on the page, with no templates or code",
+          "Handles multi-page invoices, payslips, statements, and reports",
+          "Save your annotations once and reuse them on next month's file"
+        ]
+      },
+      {
+        "title": "Clean with Cleaner",
+        "bullets": [
+          "Trim spaces, fix capitalization, and strip stray symbols in one step",
+          "Chain several operations that run in order, on the columns you choose",
+          "Fix messy extracted text before it breaks a filter or a join"
+        ]
+      },
+      {
+        "title": "Combine with Merge",
+        "bullets": [
+          "Look up extra columns from a reference table by a shared ID",
+          "Keep every row, only the matches, or everything from both tables",
+          "Match rows on one or more column pairs, or simply by position"
+        ]
+      },
+      {
+        "title": "Summarize with Group By",
+        "bullets": [
+          "Total amounts per customer, category, or region",
+          "Count rows, or find the min, max, and average in each group",
+          "Get one clean summary row per group, ready to export"
+        ]
+      }
+    ],
+    "whyLink": "Why we built Altera around visual workflows"
+  },
+  "industries": {
+    "badgeLabel": "Use cases",
+    "badgeText": "For every team",
+    "heading": "Built for teams buried in PDFs",
+    "subtitle": "From month-end close to payroll checks, every team has documents to turn into data.",
+    "documentsLabel": "Typical documents",
+    "learnMore": "See the full workflow",
+    "allUseCases": "All use cases"
   },
   "pricing": {
-    "badgeLabel":     "Pricing",
-    "badgeText":      "Simple Plans, Powerful Features",
-    "heading":        "Pick the plan that fits your workflow.",
-    "subtitle":       "Simple, transparent pricing. Upgrade anytime.",
-    "popularBadge":   "POPULAR",
+    "badgeLabel": "Pricing",
+    "badgeText": "Simple Plans, Powerful Features",
+    "heading": "Pick the plan that fits your workflow.",
+    "subtitle": "Simple, transparent pricing. Upgrade anytime.",
+    "popularBadge": "POPULAR",
     "bestValueBadge": "BEST VALUE",
-    "getBtn":         "Get",
-    "period":         "/year",
-    "periodMonthly":  "/month",
-    "oneTime":        "one-time",
-    "includesLabel":  "Includes",
+    "getBtn": "Get",
+    "period": "/year",
+    "periodMonthly": "/month",
+    "oneTime": "one-time",
+    "includesLabel": "Includes",
     "checkoutSuccess": "Check your email for your license key.",
-    "checkoutError":   "Checkout isn't available right now. Please try again in a moment or contact support@alteradatasuite.com.",
+    "checkoutError": "Checkout isn't available right now. Please try again in a moment or contact support@alteradatasuite.com.",
     "plans": [
       {
-        "name": "Monthly", "subtitle": "All-In-One Solution, billed monthly",
-        "features": ["Unlimited PDF Processing","Batch PDF Processing","10+ Nodes","Email Support","Single Machine License","Free Updates & Improvements"]
+        "name": "Monthly",
+        "subtitle": "All-In-One Solution, billed monthly",
+        "features": [
+          "Unlimited PDF Processing",
+          "Batch PDF Processing",
+          "10+ Nodes",
+          "Email Support",
+          "Single Machine License",
+          "Free Updates & Improvements"
+        ]
       },
       {
-        "name": "Yearly", "subtitle": "Save 20% vs monthly billing",
-        "features": ["Unlimited PDF Processing","Batch PDF Processing","10+ Nodes","Priority Email Support","Single Machine License","Free Updates & Improvements"]
+        "name": "Yearly",
+        "subtitle": "Save 20% vs monthly billing",
+        "features": [
+          "Unlimited PDF Processing",
+          "Batch PDF Processing",
+          "10+ Nodes",
+          "Priority Email Support",
+          "Single Machine License",
+          "Free Updates & Improvements"
+        ]
       },
       {
-        "name": "Lifetime", "subtitle": "Pay once, own it forever",
-        "features": ["Unlimited PDF Processing","Batch PDF Processing","10+ Nodes","Priority Support","Single Machine License","Free Updates for 1 Year"]
+        "name": "Lifetime",
+        "subtitle": "Pay once, own it forever",
+        "features": [
+          "Unlimited PDF Processing",
+          "Batch PDF Processing",
+          "10+ Nodes",
+          "Priority Support",
+          "Single Machine License",
+          "Free Updates for 1 Year"
+        ]
       }
     ],
     "faqs": [
-      { "key": "p1", "label": "Can I switch plans later?",                          "text": "Yes. You can switch between Monthly, Yearly, and Lifetime at any time. Your data and workflows stay intact." },
-      { "key": "p3", "label": "What's the difference between the plans?",           "text": "Monthly and Yearly are recurring subscriptions billed on that cadence. Lifetime is a single one-time payment for permanent access." },
-      { "key": "p5", "label": "Do you offer refunds?",                              "text": "Yes — see our 30-day money-back guarantee. If something goes wrong after purchase, reach out and we'll work it out." },
-      { "key": "p6", "label": "Can I use Altera on multiple machines?",             "text": "Monthly, Yearly, and Lifetime are all single-machine licenses." }
+      {
+        "key": "p1",
+        "label": "Can I switch plans later?",
+        "text": "Yes. You can switch between Monthly, Yearly, and Lifetime at any time. Your data and workflows stay intact."
+      },
+      {
+        "key": "p3",
+        "label": "What's the difference between the plans?",
+        "text": "Monthly and Yearly are recurring subscriptions billed on that cadence. Lifetime is a single one-time payment for permanent access."
+      },
+      {
+        "key": "p5",
+        "label": "Do you offer refunds?",
+        "text": "Yes — see our 30-day money-back guarantee. If something goes wrong after purchase, reach out and we'll work it out."
+      },
+      {
+        "key": "p6",
+        "label": "Can I use Altera on multiple machines?",
+        "text": "Monthly, Yearly, and Lifetime are all single-machine licenses."
+      }
     ]
   },
   "testimonials": {
     "badgeLabel": "Testimonials",
-    "badgeText":  "What Our Users Say",
-    "heading":    "Trusted by teams that move fast.",
-    "subtitle":   "See how Altera Data Suite helps professionals extract, structure, and act on their data — faster than ever before.",
+    "badgeText": "What Our Users Say",
+    "heading": "Trusted by teams that move fast.",
+    "subtitle": "See how Altera Data Suite helps professionals extract, structure, and act on their data — faster than ever before.",
     "cards": [
-      { "name": "Karim Raaji",           "role": "Financial Consultant",          "text": "I spent years relying on tools like Power Query to extract and clean financial data from PDFs. They worked — but never cleanly, and the maintenance was constant. Finding Altera was a turning point. The extraction is accurate, the setup took minutes, and for the price it's an absolute game changer for anyone who works with financial documents on a daily basis." },
-      { "name": "Jonathan Ashton",        "role": "Financial Quality Controller",  "text": "I found myself juggling multiple tools just to get data out of a PDF — one app for conversion, others for cleaning. But the bigger issue was privacy. Working with client data under NDA, I couldn't afford to have files processed on a third-party server. Most tools I tried did exactly that. Altera was the first solution that actually understood the core problem and solved it — everything runs locally, on my machine, and the results are clean from the start." },
-      { "name": "Mohammed Amine Bendidi", "role": "Financial Consultant",          "text": "Receiving volumes of data — mostly PDFs — with tight deadlines was a constant nightmare. We had skilled developers in our data lab, but the gap between what they built and what we actually needed never fully closed. Altera was different. It didn't come from a team that just knew how to code — it came from people who had lived the problem firsthand. That shows in every feature. A solution built by analysts, for analysts." },
-      { "name": "Thomas Reeves",          "role": "Business Intelligence Lead",    "text": "What sets Altera apart from anything in the Microsoft ecosystem is that it's actually extensible in a meaningful way. With Excel or Power BI, you're locked into what exists — if a feature isn't there, you wait, and most of the time it never comes. With Altera, if a node doesn't cover your exact use case, the team will build it for you. They can extend existing nodes or create fully custom ones from scratch. That kind of responsiveness is something enterprise software simply doesn't offer." }
+      {
+        "name": "Karim Raaji",
+        "role": "Financial Consultant",
+        "text": "I spent years relying on tools like Power Query to extract and clean financial data from PDFs. They worked — but never cleanly, and the maintenance was constant. Finding Altera was a turning point. The extraction is accurate, the setup took minutes, and for the price it's an absolute game changer for anyone who works with financial documents on a daily basis."
+      },
+      {
+        "name": "Jonathan Ashton",
+        "role": "Financial Quality Controller",
+        "text": "I found myself juggling multiple tools just to get data out of a PDF — one app for conversion, others for cleaning. But the bigger issue was privacy. Working with client data under NDA, I couldn't afford to have files processed on a third-party server. Most tools I tried did exactly that. Altera was the first solution that actually understood the core problem and solved it — everything runs locally, on my machine, and the results are clean from the start."
+      },
+      {
+        "name": "Mohammed Amine Bendidi",
+        "role": "Financial Consultant",
+        "text": "Receiving volumes of data — mostly PDFs — with tight deadlines was a constant nightmare. We had skilled developers in our data lab, but the gap between what they built and what we actually needed never fully closed. Altera was different. It didn't come from a team that just knew how to code — it came from people who had lived the problem firsthand. That shows in every feature. A solution built by analysts, for analysts."
+      },
+      {
+        "name": "Thomas Reeves",
+        "role": "Business Intelligence Lead",
+        "text": "What sets Altera apart from anything in the Microsoft ecosystem is that it's actually extensible in a meaningful way. With Excel or Power BI, you're locked into what exists — if a feature isn't there, you wait, and most of the time it never comes. With Altera, if a node doesn't cover your exact use case, the team will build it for you. They can extend existing nodes or create fully custom ones from scratch. That kind of responsiveness is something enterprise software simply doesn't offer."
+      }
     ]
   },
   "customWidget": {
-    "badgeLabel":          "Custom Nodes",
-    "badgeText":           "Built around your exact needs.",
-    "heading":             "Need a custom node that fits your exact workflow? We build it for you.",
-    "subtitle":            "Every team works with different documents — different structures, different fields, different outputs. If none of our existing nodes match what you need, we'll design and build one from scratch. We map your PDF layout, define the extraction logic, and deliver a tool that drops straight into your workflow. No workarounds, no manual cleanup — just clean, structured data exactly the way you need it. Get in touch and we'll scope it together at a price that makes sense.",
-    "rowWhatLabel":        "What you get",
-    "rowWhatValue":        "A fully functional node built for your PDF",
-    "rowTurnaroundLabel":  "Turnaround",
-    "rowTurnaroundValue":  "Scoped together based on complexity",
-    "rowPricingLabel":     "Pricing",
-    "rowPricingValue":     "Fair and transparent — no hidden fees",
-    "rowContactLabel":     "Contact"
+    "badgeLabel": "Custom Nodes",
+    "badgeText": "Built around your exact needs.",
+    "heading": "Need a custom node that fits your exact workflow? We build it for you.",
+    "subtitle": "Every team works with different documents — different structures, different fields, different outputs. If none of our existing nodes match what you need, we'll design and build one from scratch. We map your PDF layout, define the extraction logic, and deliver a tool that drops straight into your workflow. No workarounds, no manual cleanup — just clean, structured data exactly the way you need it. Get in touch and we'll scope it together at a price that makes sense.",
+    "rowWhatLabel": "What you get",
+    "rowWhatValue": "A fully functional node built for your PDF",
+    "rowTurnaroundLabel": "Turnaround",
+    "rowTurnaroundValue": "Scoped together based on complexity",
+    "rowPricingLabel": "Pricing",
+    "rowPricingValue": "Fair and transparent — no hidden fees",
+    "rowContactLabel": "Contact"
   },
   "faqSection": {
     "badgeLabel": "FAQ",
-    "badgeText":  "Got questions? We've got answers.",
-    "heading":    "Everything you need to know",
-    "subtitle":   "Can't find what you're looking for? Reach out and we'll get back to you."
+    "badgeText": "Got questions? We've got answers.",
+    "heading": "Everything you need to know",
+    "subtitle": "Can't find what you're looking for? Reach out and we'll get back to you."
+  },
+  "getStarted": {
+    "heading": "Ready to turn your PDFs into data?",
+    "text": "Download Altera, open a PDF, and build your first workflow in minutes.",
+    "download": "Download",
+    "docs": "Read the docs"
   },
   "allFaqs": [
-    { "key": "1",  "label": "What types of PDFs does Altera support?",               "text": "Altera works with any PDF — payslips, invoices, bank statements, reports, and more. If it has structured data, Altera can extract it." },
-    { "key": "2",  "label": "How accurate is the extraction?",                        "text": "Altera extracts data with high accuracy. You can define custom rules to ensure every field maps exactly where you need it." },
-    { "key": "3",  "label": "Do I need to install anything?",                         "text": "Altera is a standalone desktop app. Download the installer for Windows or macOS and you're ready to start extracting in seconds — no other software required." },
-    { "key": "4",  "label": "Can I process multiple PDFs at once?",                   "text": "Yes. Altera supports batch processing so you can drop in hundreds of PDFs and get all the data structured in one go." },
-    { "key": "5",  "label": "Is my data secure?",                                     "text": "Your files are processed securely and never stored beyond the active session. We don't share or retain your data." },
-    { "key": "6",  "label": "Can I try it before paying?",                            "text": "Absolutely — you can start for free and explore the core features before committing to a plan." },
-    { "key": "7",  "label": "Do I need programming knowledge to use Altera?",         "text": "Not at all. Altera is designed to be used entirely visually — you drag, drop, and configure — no code required." },
-    { "key": "8",  "label": "Can Altera handle scanned or image-based PDFs?",        "text": "Altera works best with digitally generated PDFs. Scanned documents with OCR-readable text are also supported, though accuracy may vary depending on scan quality." },
-    { "key": "9",  "label": "What output format does the extracted data come in?",    "text": "Altera outputs clean, structured tables directly in the app — ready to analyse, export, or feed into your next workflow step." },
-    { "key": "10", "label": "Can I use different nodes for different document types?","text": "Yes. Each node is purpose-built for a specific extraction task. You can mix and match nodes in the same workflow to handle different document types in one pass." },
-    { "key": "11", "label": "What if the extraction misses a field or gets it wrong?", "text": "You can define custom extraction rules to handle edge cases. If a specific document structure isn't covered out of the box, we also offer custom node development." },
-    { "key": "12", "label": "Is there a file size limit?",                            "text": "Altera handles standard business documents without issue. Very large files or unusually complex layouts may affect processing time, but there is no hard cap." },
-    { "key": "13", "label": "What languages are supported?",                          "text": "Altera primarily supports English and French documents. Support for additional languages is being added as the suite grows." },
-    { "key": "14", "label": "How do I get support if something goes wrong?",          "text": "You can reach us directly at support@alteradatasuite.com. We're a small team so you'll always get a real response — not a bot." }
+    {
+      "key": "1",
+      "label": "What types of PDFs does Altera support?",
+      "text": "Altera works with any PDF — payslips, invoices, bank statements, reports, and more. If it has structured data, Altera can extract it."
+    },
+    {
+      "key": "2",
+      "label": "How accurate is the extraction?",
+      "text": "Altera extracts data with high accuracy. You can define custom rules to ensure every field maps exactly where you need it."
+    },
+    {
+      "key": "3",
+      "label": "Do I need to install anything?",
+      "text": "Altera is a standalone desktop app. Download the installer for Windows or macOS and you're ready to start extracting in seconds — no other software required."
+    },
+    {
+      "key": "4",
+      "label": "Can I process multiple PDFs at once?",
+      "text": "Yes. Altera supports batch processing so you can drop in hundreds of PDFs and get all the data structured in one go."
+    },
+    {
+      "key": "5",
+      "label": "Is my data secure?",
+      "text": "Your files are processed securely and never stored beyond the active session. We don't share or retain your data."
+    },
+    {
+      "key": "6",
+      "label": "Can I try it before paying?",
+      "text": "Absolutely — you can start for free and explore the core features before committing to a plan."
+    },
+    {
+      "key": "7",
+      "label": "Do I need programming knowledge to use Altera?",
+      "text": "Not at all. Altera is designed to be used entirely visually — you drag, drop, and configure — no code required."
+    },
+    {
+      "key": "8",
+      "label": "Can Altera handle scanned or image-based PDFs?",
+      "text": "Altera works best with digitally generated PDFs. Scanned documents with OCR-readable text are also supported, though accuracy may vary depending on scan quality."
+    },
+    {
+      "key": "9",
+      "label": "What output format does the extracted data come in?",
+      "text": "Altera outputs clean, structured tables directly in the app — ready to analyse, export, or feed into your next workflow step."
+    },
+    {
+      "key": "10",
+      "label": "Can I use different nodes for different document types?",
+      "text": "Yes. Each node is purpose-built for a specific extraction task. You can mix and match nodes in the same workflow to handle different document types in one pass."
+    },
+    {
+      "key": "11",
+      "label": "What if the extraction misses a field or gets it wrong?",
+      "text": "You can define custom extraction rules to handle edge cases. If a specific document structure isn't covered out of the box, we also offer custom node development."
+    },
+    {
+      "key": "12",
+      "label": "Is there a file size limit?",
+      "text": "Altera handles standard business documents without issue. Very large files or unusually complex layouts may affect processing time, but there is no hard cap."
+    },
+    {
+      "key": "13",
+      "label": "What languages are supported?",
+      "text": "Altera primarily supports English and French documents. Support for additional languages is being added as the suite grows."
+    },
+    {
+      "key": "14",
+      "label": "How do I get support if something goes wrong?",
+      "text": "You can reach us directly at support@alteradatasuite.com. We're a small team so you'll always get a real response — not a bot."
+    }
   ],
   "docs": {
-    "overview":           "Overview",
-    "bestFor":            "Best For",
-    "howToUse":           "How to Use",
-    "input":              "Input",
-    "output":             "Output",
-    "tipsNotes":          "Tips & Notes",
-    "toolbarRef":         "Toolbar Reference",
-    "keyboardShortcuts":  "Keyboard Shortcuts",
-    "watchTutorials":     "Watch Video Tutorials",
-    "viewPlaylist":       "View playlist on YouTube",
-    "handTool":           "Hand Tool",
-    "handToolDesc":       "When toggled — click and drag anywhere on the canvas to pan across the document.",
-    "selectionTool":      "Selection Tool",
-    "selectionToolDesc":  "Click an existing annotation to select, reposition, or resize it.",
-    "pageNav":            "Page Navigation",
-    "pageNavDesc":        "Step through pages. The input shows your current page out of the total — you can also type a page number directly.",
+    "overview": "Overview",
+    "bestFor": "Best For",
+    "howToUse": "How to Use",
+    "input": "Input",
+    "output": "Output",
+    "tipsNotes": "Tips & Notes",
+    "toolbarRef": "Toolbar Reference",
+    "keyboardShortcuts": "Keyboard Shortcuts",
+    "watchTutorials": "Watch Video Tutorials",
+    "viewPlaylist": "View playlist on YouTube",
+    "handTool": "Hand Tool",
+    "handToolDesc": "When toggled — click and drag anywhere on the canvas to pan across the document.",
+    "selectionTool": "Selection Tool",
+    "selectionToolDesc": "Click an existing annotation to select, reposition, or resize it.",
+    "pageNav": "Page Navigation",
+    "pageNavDesc": "Step through pages. The input shows your current page out of the total — you can also type a page number directly.",
+    "docsHome": "Docs",
+    "catalogTitle": "Node Documentation",
+    "catalogIntro": "Every Altera node has its own reference page — what it does, how to configure it, and what goes in and comes out.",
+    "searchPlaceholder": "Search nodes…",
+    "noResults": "No nodes match your search.",
+    "nodeLabel": "Node",
+    "description": "Description",
+    "inputPorts": "Input Ports",
+    "outputPorts": "Output Ports",
+    "portType": "Type",
+    "noPorts": "None",
+    "moreInCategory": "More {category} nodes",
+    "nodesCount": "{count} nodes",
     "shortcuts": {
-      "toggleHand":      "Toggle Hand tool",
+      "toggleHand": "Toggle Hand tool",
       "toggleSelection": "Toggle Selection tool",
-      "toggleGuide":     "Toggle Guide tool (column delimiter)",
-      "convert":         "Convert",
-      "openPdf":         "Open PDF",
-      "zoomIn":          "Zoom in",
-      "zoomOut":         "Zoom out",
-      "fitPage":         "Fit page to window",
-      "scrollZoomIn":    "Zoom in",
-      "scrollZoomOut":   "Zoom out"
+      "toggleGuide": "Toggle Guide tool (column delimiter)",
+      "convert": "Convert",
+      "openPdf": "Open PDF",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "fitPage": "Fit page to window",
+      "scrollZoomIn": "Zoom in",
+      "scrollZoomOut": "Zoom out"
     }
   },
   "download": {
-    "heroBadgeLabel":  "Download",
-    "heroBadgeText":   "Get the app",
-    "heroHeading":     "Download Altera Data Suite",
-    "heroLead":        "Available for Windows, macOS, and Linux. Install in minutes and start extracting your first PDF right away.",
-    "trialNote":       "15-day free trial on every plan — no credit card required.",
+    "heroBadgeLabel": "Download",
+    "heroBadgeText": "Get the app",
+    "heroHeading": "Download Altera Data Suite",
+    "heroLead": "Available for Windows, macOS, and Linux. Install in minutes and start extracting your first PDF right away.",
+    "trialNote": "15-day free trial on every plan — no credit card required.",
     "unavailableNotice": "The Windows build is temporarily unavailable. Please try again in a few minutes.",
-    "windowsName":     "Windows",
-    "windowsDetail":   "Windows 10 / 11 (64-bit)",
-    "windowsBtn":      "Download for Windows",
-    "macName":         "macOS",
-    "macDetail":       "macOS 12 Monterey or later",
-    "macBtn":          "Download for macOS",
-    "linuxName":       "Linux",
-    "linuxDetail":     "Most major distributions",
-    "linuxBtn":        "Download for Linux",
-    "comingSoon":      "Coming soon",
-    "comingSoonNote":  "In active development — stay tuned.",
-    "helpPre":         "Need help installing?",
-    "helpLink":        "See the Quickstart guide"
+    "windowsName": "Windows",
+    "windowsDetail": "Windows 10 / 11 (64-bit)",
+    "windowsBtn": "Download for Windows",
+    "macName": "macOS",
+    "macDetail": "macOS 12 Monterey or later",
+    "macBtn": "Download for macOS",
+    "linuxName": "Linux",
+    "linuxDetail": "Most major distributions",
+    "linuxBtn": "Download for Linux",
+    "comingSoon": "Coming soon",
+    "comingSoonNote": "In active development — stay tuned.",
+    "helpPre": "Need help installing?",
+    "helpLink": "See the Quickstart guide"
   },
   "contact": {
     "badgeLabel": "Support",
-    "badgeText":  "We're here to help",
-    "heading":    "Contact & Support",
-    "lead":       "Questions about Altera, billing, or a specific PDF you're stuck on? Reach out — we're a small team, so you'll always get a real response, not a bot.",
-    "docsTitle":  "Documentation",
-    "docsDesc":   "Step-by-step guides and configuration references for every node.",
-    "docsLink":   "Browse the docs",
-    "faqsTitle":  "FAQs",
-    "faqsDesc":   "Answers to common questions about setup, accuracy, and pricing.",
-    "faqsLink":   "See the FAQs"
+    "badgeText": "We're here to help",
+    "heading": "Contact & Support",
+    "lead": "Questions about Altera, billing, or a specific PDF you're stuck on? Reach out — we're a small team, so you'll always get a real response, not a bot.",
+    "docsTitle": "Documentation",
+    "docsDesc": "Step-by-step guides and configuration references for every node.",
+    "docsLink": "Browse the docs",
+    "faqsTitle": "FAQs",
+    "faqsDesc": "Answers to common questions about setup, accuracy, and pricing.",
+    "faqsLink": "See the FAQs"
   },
   "useCases": {
-    "badgeLabel": "Use Cases",
-    "badgeText":  "Coming soon",
-    "heading":    "Real-world ways teams use Altera.",
-    "lead":       "We're putting together detailed use cases for finance, consulting, and operations teams. Check back soon — or get in touch and we'll point you in the right direction today.",
-    "ctaLabel":   "Contact us"
+    "badgeLabel": "Use cases",
+    "badgeText": "Altera at work",
+    "heading": "What teams build with Altera",
+    "lead": "Real workflows for the PDFs your team handles every month. Pick a team to see the documents, the workflow, and what you get.",
+    "learnMore": "See the workflow",
+    "labels": {
+      "documents": "Documents it handles",
+      "challenge": "The challenge",
+      "workflow": "The workflow",
+      "workflowHint": "This is a live canvas: drag the nodes around, or zoom with the controls.",
+      "steps": "Step by step",
+      "outcomes": "What you get",
+      "otherUseCases": "More use cases",
+      "allUseCases": "All use cases"
+    },
+    "items": {
+      "finance": {
+        "tab": "Finance & Accounting",
+        "title": "Reconcile bank statements against your ledger",
+        "summary": "Turn PDF bank statements into clean tables and match them against your ledger export, so only the entries that need attention are left.",
+        "metaTitle": "Bank Statement Reconciliation from PDF",
+        "metaDescription": "Extract transactions from PDF bank statements and reconcile them against your ledger export with a no-code Altera workflow.",
+        "lead": "Month-end reconciliation usually means copying transactions out of PDF statements by hand. With Altera, you extract them, match them against your ledger, and keep only what doesn't line up.",
+        "documents": [
+          "Bank and credit card statements",
+          "Payment provider reports",
+          "Ledger or accounting exports (Excel or CSV)",
+          "Supplier statements"
+        ],
+        "challenge": "Statements arrive as PDFs, in a different layout for every bank. Copying them into a spreadsheet takes hours, and one mistyped amount is enough to throw off the whole reconciliation.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Extract the transactions",
+            "body": "Highlight the transaction table in the PDF Converter, and Altera turns it into rows of date, description, reference, and amount."
+          },
+          {
+            "node": "Cleaner",
+            "title": "Clean the text",
+            "body": "Trim spaces and strip currency symbols, so amounts and references match exactly."
+          },
+          {
+            "node": "Change Type",
+            "title": "Make amounts numeric",
+            "body": "Convert the amount column to numbers, so it can be compared and totalled."
+          },
+          {
+            "node": "Merge",
+            "title": "Match against the ledger",
+            "body": "Load your ledger export with Input Data and connect it to Merge's Extra Data port. Rows are matched on reference and amount."
+          },
+          {
+            "node": "Filter · Export",
+            "title": "Keep what needs attention",
+            "body": "Filter down to the entries with no match, and export them to Excel for review."
+          }
+        ],
+        "outcomes": [
+          "Reconcile a month of transactions in minutes instead of hours",
+          "No retyping, so no typos in amounts",
+          "Reuse the same workflow next month: swap the PDF and run it again"
+        ],
+        "canvas": {
+          "tables": {
+            "statement": {
+              "name": "Bank statement (extracted)",
+              "rowsLabel": "312 rows (sample)",
+              "columns": [
+                "Date",
+                "Description",
+                "Reference",
+                "Amount"
+              ]
+            }
+          },
+          "descriptions": {
+            "clean": "Trim text, strip €",
+            "type": "Amount to number",
+            "ledger": "Ledger export.xlsx",
+            "merge": "Match on reference",
+            "filter": "Unmatched only",
+            "export": "To review.xlsx"
+          }
+        }
+      },
+      "payroll": {
+        "tab": "HR & Payroll",
+        "title": "Turn payslips into a payroll summary",
+        "summary": "Extract every line from a batch of PDF payslips and total earnings and deductions per employee, ready for your payroll check.",
+        "metaTitle": "Payslip PDF to Excel Payroll Summary",
+        "metaDescription": "Extract earnings and deductions from PDF payslips and build a per-employee payroll summary in Excel, without code.",
+        "lead": "Payslips are made for people to read, not for spreadsheets. Altera pulls the lines out of your PDF payslips and rolls them up into one summary row per employee.",
+        "documents": [
+          "Monthly payslips (one or many per PDF)",
+          "Payroll journals and registers",
+          "Expense and allowance reports",
+          "Year-end earnings statements"
+        ],
+        "challenge": "Each payslip shows the employee's name once at the top, with earnings and deductions listed below. Once extracted, most rows don't say who they belong to, and totalling them by hand is slow and error-prone.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Extract the payslip lines",
+            "body": "Highlight the earnings and deductions block in the PDF Converter to turn it into a table."
+          },
+          {
+            "node": "Cascade Fill",
+            "title": "Put the name on every row",
+            "body": "Fill the employee name down, so every line knows which payslip it came from."
+          },
+          {
+            "node": "Filter",
+            "title": "Keep the lines you need",
+            "body": "Keep earnings and deductions, and drop headers, blank lines, and notes."
+          },
+          {
+            "node": "Group By",
+            "title": "Total per employee",
+            "body": "Add up each employee's earnings and deductions into one row."
+          },
+          {
+            "node": "Sort · Export",
+            "title": "Sort and export",
+            "body": "Sort by employee and export the summary to Excel."
+          }
+        ],
+        "outcomes": [
+          "One clean summary row per employee",
+          "Spot unusual payments before payroll closes",
+          "The same workflow handles next month's batch"
+        ],
+        "canvas": {
+          "tables": {
+            "payslips": {
+              "name": "Payslips (extracted)",
+              "rowsLabel": "1,480 rows (sample)",
+              "columns": [
+                "Employee",
+                "Item",
+                "Amount"
+              ]
+            }
+          },
+          "descriptions": {
+            "fill": "Name on every row",
+            "filter": "Earnings and deductions",
+            "group": "Totals per employee",
+            "sort": "By employee",
+            "export": "Payroll summary.xlsx"
+          }
+        }
+      },
+      "procurement": {
+        "tab": "Procurement",
+        "title": "Analyze spend from supplier invoices",
+        "summary": "Pull line items out of PDF invoices, calculate line totals, and see spend per supplier without retyping a single number.",
+        "metaTitle": "Invoice Line Items from PDF to Excel",
+        "metaDescription": "Extract line items from PDF supplier invoices, calculate totals, and analyze spend per supplier with a no-code Altera workflow.",
+        "lead": "Your real spend data is locked inside PDF invoices. Altera extracts the line items, works out the totals, and summarizes spend by supplier.",
+        "documents": [
+          "Supplier invoices",
+          "Purchase orders",
+          "Credit notes",
+          "Quotes and price lists"
+        ],
+        "challenge": "Every supplier formats invoices differently, and line items often run over several pages. Getting them into one table usually means manual copy-and-paste.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Extract the line items",
+            "body": "Highlight the line-item table, and add column guides where columns sit close together."
+          },
+          {
+            "node": "Cleaner",
+            "title": "Tidy the text",
+            "body": "Trim spaces and remove stray characters from descriptions and prices."
+          },
+          {
+            "node": "Change Type",
+            "title": "Make quantities and prices numeric",
+            "body": "Convert quantity and unit price to numbers."
+          },
+          {
+            "node": "Formula",
+            "title": "Calculate line totals",
+            "body": "Add a Line total column: quantity × unit price."
+          },
+          {
+            "node": "Group By · Export",
+            "title": "Spend per supplier",
+            "body": "Total the line totals per supplier and export the result."
+          }
+        ],
+        "outcomes": [
+          "See spend per supplier in minutes",
+          "Catch price differences between invoices",
+          "Feed clean line items into your spend reports"
+        ],
+        "canvas": {
+          "tables": {
+            "invoices": {
+              "name": "Invoices (extracted)",
+              "rowsLabel": "860 rows (sample)",
+              "columns": [
+                "Supplier",
+                "Description",
+                "Qty",
+                "Unit price"
+              ]
+            }
+          },
+          "descriptions": {
+            "clean": "Tidy descriptions",
+            "type": "Qty and price to numbers",
+            "formula": "Line total = Qty × Unit price",
+            "group": "Spend per supplier",
+            "export": "Spend.xlsx"
+          }
+        }
+      },
+      "logistics": {
+        "tab": "Logistics",
+        "title": "Build a delivery log from delivery notes",
+        "summary": "Extract references, customers, and dates from PDF delivery notes and manifests into one clean, sorted delivery log.",
+        "metaTitle": "Delivery Notes and Manifests from PDF to Excel",
+        "metaDescription": "Extract order references, customers, and dates from PDF delivery notes and shipping manifests into one clean delivery log.",
+        "lead": "Delivery notes and manifests pile up as PDFs from carriers and warehouses. Altera turns them into one delivery log you can sort, check, and share.",
+        "documents": [
+          "Delivery notes",
+          "Shipping manifests",
+          "Packing lists",
+          "Carrier reports"
+        ],
+        "challenge": "References often combine several codes in one field, and the same delivery can show up on more than one document. Cleaning that up by hand doesn't scale.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Extract the deliveries",
+            "body": "Highlight the delivery table in the PDF Converter to turn it into rows."
+          },
+          {
+            "node": "Text Parser",
+            "title": "Split combined references",
+            "body": "Split a reference like ORD-4821/DEP-07 into separate order and depot columns."
+          },
+          {
+            "node": "Unique",
+            "title": "Remove duplicates",
+            "body": "Keep one row per delivery, even when it appears on several documents."
+          },
+          {
+            "node": "Sort · Export",
+            "title": "Sort and export",
+            "body": "Sort by delivery date and export the log to Excel or CSV."
+          }
+        ],
+        "outcomes": [
+          "One delivery log instead of a folder of PDFs",
+          "No duplicate deliveries in your reports",
+          "Refresh the log whenever new documents arrive"
+        ],
+        "canvas": {
+          "tables": {
+            "deliveries": {
+              "name": "Delivery notes (extracted)",
+              "rowsLabel": "540 rows (sample)",
+              "columns": [
+                "Reference",
+                "Customer",
+                "Items",
+                "Date"
+              ]
+            }
+          },
+          "descriptions": {
+            "parse": "Split order / depot",
+            "unique": "One row per delivery",
+            "sort": "By delivery date",
+            "export": "Delivery log.xlsx"
+          }
+        }
+      },
+      "audit": {
+        "tab": "Audit & Compliance",
+        "title": "Check statements and reports before you sign off",
+        "summary": "Extract balances from PDF statements and reports, total them, and flag missing values and gaps automatically.",
+        "metaTitle": "Audit Checks on PDF Statements and Reports",
+        "metaDescription": "Extract balances from PDF statements, total them, and spot missing values and gaps with a repeatable, no-code Altera workflow.",
+        "lead": "Audit work means checking figures across stacks of PDF statements and reports. Altera extracts them into tables, totals them, and shows you where data is missing.",
+        "documents": [
+          "Account and balance statements",
+          "Financial and management reports",
+          "Third-party confirmations",
+          "Regulatory filings"
+        ],
+        "challenge": "Checks have to be thorough and repeatable, but the source documents are PDFs. Sampling by hand takes time and leaves gaps.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Extract the figures",
+            "body": "Highlight the balance table in the PDF Converter to turn it into a table."
+          },
+          {
+            "node": "Regular Expressions",
+            "title": "Pick out account numbers",
+            "body": "Use a pattern to pull clean account numbers out of longer text."
+          },
+          {
+            "node": "Change Type",
+            "title": "Make balances numeric",
+            "body": "Convert balances to numbers so they can be totalled."
+          },
+          {
+            "node": "Aggregate · Export",
+            "title": "Total the balances",
+            "body": "Calculate totals, counts, minimums, and maximums, and export them for your working papers."
+          },
+          {
+            "node": "Summary",
+            "title": "Spot missing values and gaps",
+            "body": "Check every column for blanks and gaps before you rely on the numbers."
+          }
+        ],
+        "outcomes": [
+          "Check every line, not just a sample",
+          "A clear, visible record of every check you ran",
+          "Re-run the same checks on next period's documents"
+        ],
+        "canvas": {
+          "tables": {
+            "statements": {
+              "name": "Statements (extracted)",
+              "rowsLabel": "2,050 rows (sample)",
+              "columns": [
+                "Account",
+                "Period",
+                "Balance"
+              ]
+            }
+          },
+          "descriptions": {
+            "regex": "Account numbers",
+            "type": "Balance to number",
+            "aggregate": "Totals and counts",
+            "summary": "Missing values and gaps",
+            "export": "Working papers.xlsx"
+          }
+        }
+      }
+    }
   },
   "about": {
-    "heroBadgeLabel":  "About Us",
-    "heroBadgeText":   "The team behind Altera",
-    "heroHeading":     "Built by a small team with a clear goal.",
-    "heroLead":        "Altera Data Suite was created to solve a problem we kept running into — extracting structured data from PDFs shouldn't require hours of manual work or complex scripts. So we built a tool that does it in seconds.",
+    "heroBadgeLabel": "About Us",
+    "heroBadgeText": "The team behind Altera",
+    "heroHeading": "Built by a small team with a clear goal.",
+    "heroLead": "Altera Data Suite was created to solve a problem we kept running into — extracting structured data from PDFs shouldn't require hours of manual work or complex scripts. So we built a tool that does it in seconds.",
     "storyBadgeLabel": "Our Story",
-    "storyBadgeText":  "Why we built this",
-    "story1Heading":   "Where the idea came from",
-    "story1Text":      "We both came from consulting backgrounds — working with firms including Deloitte and PwC. One thing became clear fast: even at that level, nobody had built a proper all-in-one solution for extracting data from PDFs. Payslips, invoices, reports — everything was handled manually or with fragile one-off scripts. That gap was the starting point.",
-    "story2Heading":   "The first node",
-    "story2Text":      "We started with a single PDF converter node. It worked — and immediately we saw what was missing next. Getting a table out of a PDF was only step one; cleaning it, reshaping it, and getting it ready to actually use took just as long. So we kept building. Each new node was a direct response to a friction point in real workflows.",
-    "story3Heading":   "Going standalone",
-    "story3Text":      "The early versions were built to run inside another company's software. That got us moving fast, but it also meant living within someone else's constraints. So we rebuilt Altera as its own desktop app — full control over speed, design, and the experience end to end, with nothing else to install first.",
-    "story4Heading":   "Where we're headed",
-    "story4Text":      "The suite is still growing. More nodes are in development, and existing ones are actively maintained. This isn't a finished product — it's an evolving toolkit built to keep pace with how data work actually happens.",
-    "ctaHeading":      "Ready to see it in action?",
-    "ctaSubtitle":     "Watch the demo to see how Altera handles real PDFs, or explore the pricing to find the plan that fits.",
-    "watchDemo":       "Watch Demo",
-    "seePricing":      "See Pricing",
+    "storyBadgeText": "Why we built this",
+    "story1Heading": "Where the idea came from",
+    "story1Text": "We both came from consulting backgrounds — working with firms including Deloitte and PwC. One thing became clear fast: even at that level, nobody had built a proper all-in-one solution for extracting data from PDFs. Payslips, invoices, reports — everything was handled manually or with fragile one-off scripts. That gap was the starting point.",
+    "story2Heading": "The first node",
+    "story2Text": "We started with a single PDF converter node. It worked — and immediately we saw what was missing next. Getting a table out of a PDF was only step one; cleaning it, reshaping it, and getting it ready to actually use took just as long. So we kept building. Each new node was a direct response to a friction point in real workflows.",
+    "story3Heading": "Going standalone",
+    "story3Text": "The early versions were built to run inside another company's software. That got us moving fast, but it also meant living within someone else's constraints. So we rebuilt Altera as its own desktop app — full control over speed, design, and the experience end to end, with nothing else to install first.",
+    "story4Heading": "Where we're headed",
+    "story4Text": "The suite is still growing. More nodes are in development, and existing ones are actively maintained. This isn't a finished product — it's an evolving toolkit built to keep pace with how data work actually happens.",
+    "ctaHeading": "Ready to see it in action?",
+    "ctaSubtitle": "Watch the demo to see how Altera handles real PDFs, or explore the pricing to find the plan that fits.",
+    "watchDemo": "Watch Demo",
+    "seePricing": "See Pricing",
     "team": [
-      { "role": "CEO & Co-Founder",       "bio": "Mehdi built Altera to remove the friction from data extraction. With extensive experience in Python, JavaScript, and data-oriented solutions, he bridges the gap between deep technical knowledge and real-world data workflows. As CEO, he defines the product vision, steers the technical roadmap, and makes sure every feature is grounded in actual data professional needs — delivering fast, scalable, and purposeful tools." },
-      { "role": "Co-Founder, Commercial & Marketing Director", "bio": "Salah leads the company's commercial and marketing strategy. He is responsible for brand development, customer acquisition, lead generation, and strategic partnerships. His goal is to accelerate the company's growth and promote innovative document automation solutions to professionals." },
-      { "role": "Software Engineer", "bio": "Saumya specializes in Rust, C, and TypeScript, with a sharp focus on software performance optimization. He architects the core engine behind Altera, ensuring every computation is fast, lean, and built to scale." },
-      { "role": "Frontend Engineer", "bio": "Raphaël crafts the interfaces users interact with every day. Specializing in frontend engineering, he transforms designs into fast, responsive, and accessible web experiences. From component architecture to pixel-perfect implementation, he ensures Altera's UI is smooth, reliable, and consistent — bridging the gap between design intent and real user interaction." }
+      {
+        "role": "CEO & Co-Founder",
+        "bio": "Mehdi built Altera to remove the friction from data extraction. With extensive experience in Python, JavaScript, and data-oriented solutions, he bridges the gap between deep technical knowledge and real-world data workflows. As CEO, he defines the product vision, steers the technical roadmap, and makes sure every feature is grounded in actual data professional needs — delivering fast, scalable, and purposeful tools."
+      },
+      {
+        "role": "Co-Founder, Commercial & Marketing Director",
+        "bio": "Salah leads the company's commercial and marketing strategy. He is responsible for brand development, customer acquisition, lead generation, and strategic partnerships. His goal is to accelerate the company's growth and promote innovative document automation solutions to professionals."
+      },
+      {
+        "role": "Software Engineer",
+        "bio": "Saumya specializes in Rust, C, and TypeScript, with a sharp focus on software performance optimization. He architects the core engine behind Altera, ensuring every computation is fast, lean, and built to scale."
+      },
+      {
+        "role": "Frontend Engineer",
+        "bio": "Raphaël crafts the interfaces users interact with every day. Specializing in frontend engineering, he transforms designs into fast, responsive, and accessible web experiences. From component architecture to pixel-perfect implementation, he ensures Altera's UI is smooth, reliable, and consistent — bridging the gap between design intent and real user interaction."
+      }
     ]
   },
   "faqs": {
     "pageTitle": "Frequently Asked Questions — Altera Data Suite"
   },
   "changelog": {
-    "badgeLabel":   "Changelog",
-    "badgeText":    "What's new in Altera",
-    "heroHeading":  "Every update, in one place.",
+    "badgeLabel": "Changelog",
+    "badgeText": "What's new in Altera",
+    "heroHeading": "Every update, in one place.",
     "heroSubtitle": "New features, improvements, and fixes — shipped regularly and documented here.",
-    "categories":   { "New": "New", "Improved": "Improved", "Fixed": "Fixed" },
-    "latestLabel":  "Latest"
+    "categories": {
+      "New": "New",
+      "Improved": "Improved",
+      "Fixed": "Fixed"
+    },
+    "latestLabel": "Latest"
   },
   "chatbot": {
-    "triggerTitle":    "Ask Altera",
+    "triggerTitle": "Ask Altera",
     "triggerSubtitle": "Here to help",
-    "panelTitle":      "Altera Assistant",
-    "panelSubtitle":   "Ask me anything",
-    "placeholder":     "Ask a question…",
-    "welcome":         "Hi! I'm Altera's assistant. Ask me anything about the app, its nodes, or how to get started.",
-    "followUp":        "Here are some things I can help with:",
-    "fallback":        "Great question! For more details, check the Docs page or reach out to our team directly.",
+    "panelTitle": "Altera Assistant",
+    "panelSubtitle": "Ask me anything",
+    "placeholder": "Ask a question…",
+    "welcome": "Hi! I'm Altera's assistant. Ask me anything about the app, its nodes, or how to get started.",
+    "followUp": "Here are some things I can help with:",
+    "fallback": "Great question! For more details, check the Docs page or reach out to our team directly.",
     "quickReplies": [
-      { "question": "How does PDF Converter work?",   "answer": "Open your PDF, draw rectangles over the data you want to extract, optionally place column guides, then click Convert. You get a clean structured table ready for further processing." },
-      { "question": "What nodes are available?",    "answer": "Altera includes 9 nodes: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates, and Cleaner." },
-      { "question": "How does pricing work?",          "answer": "Choose Monthly, Yearly, or Lifetime. Head to the Pricing page for full details." }
+      {
+        "question": "How does PDF Converter work?",
+        "answer": "Open your PDF, draw rectangles over the data you want to extract, optionally place column guides, then click Convert. You get a clean structured table ready for further processing."
+      },
+      {
+        "question": "What nodes are available?",
+        "answer": "Altera includes 9 nodes: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates, and Cleaner."
+      },
+      {
+        "question": "How does pricing work?",
+        "answer": "Choose Monthly, Yearly, or Lifetime. Head to the Pricing page for full details."
+      }
     ]
   },
   "lang": {
@@ -309,9 +998,9 @@
     "nl": "Nederlands"
   },
   "legal": {
-    "badge":            "Legal",
+    "badge": "Legal",
     "lastUpdatedLabel": "Last Updated",
-    "lastUpdated":      "May 2026"
+    "lastUpdated": "May 2026"
   },
   "termsContent": {
     "groups": [
@@ -463,5 +1152,80 @@
         ]
       }
     ]
+  },
+  "whyWorkflows": {
+    "badgeLabel": "Our approach",
+    "badgeText": "Why visual workflows",
+    "heading": "Why visual workflows?",
+    "lead": "Altera turns every step of your data work into a node you can see, check, and reuse. Here's why we built it that way.",
+    "intro": [
+      "Most data work still happens in spreadsheets full of formulas, or in scripts written by the one person on the team who codes. Both work — until you need to check a number, change a step, or hand the job to someone else.",
+      "The problem is that both hide the process. A script is a list of instructions; a spreadsheet only shows the final result. But when you're turning a stack of PDFs into a report, what you really care about is the data itself — what it looks like after each step, and whether it's right.",
+      "That's why Altera is built around a data flow. Each node does one job — extract, clean, filter, combine, summarize — and you can open any node to see its output. The workflow is the process, laid out where everyone can see it."
+    ],
+    "diagramCaption": "A real payroll workflow: the table extracted from the PDF is split into employee rows and pay dates, each side is cleaned, then they're joined back together and exported to Excel.",
+    "reasonsIntro": "Three reasons we believe visual workflows are the best way to work with data:",
+    "reasons": [
+      {
+        "title": "You care about the result, not the code",
+        "body": [
+          "When you summarize invoices by supplier, the questions that matter are which rows to keep, how to group them, and what to total. How that's written in code doesn't help you answer any of them.",
+          "In Altera you pick a node, set its options, and see the result right away. Every setting is a visible choice, not a line of syntax you have to debug."
+        ]
+      },
+      {
+        "title": "A workflow everyone can read",
+        "body": [
+          "A workflow is a shared language. A finance lead, an analyst, and an auditor can all look at the same canvas and follow what happens to the data, step by step, without reading a script.",
+          "That makes it easy to review someone's work, hand a process over when a colleague is away, and show exactly how a figure in a report was produced."
+        ]
+      },
+      {
+        "title": "No coding degree required",
+        "body": [
+          "You can build your first useful workflow in an afternoon: extract a table from a PDF, clean it up, and export it to Excel.",
+          "From there you learn one node at a time. The same canvas that handles a simple cleanup also handles merges, pivots, regular expressions, and multi-step reports, so you never outgrow it."
+        ]
+      }
+    ],
+    "differentHeading": "What makes Altera different",
+    "different": [
+      {
+        "title": "PDF extraction is part of the workflow",
+        "body": "Most tools start once your data is already in a table. In Altera, extracting data from PDFs is a node like any other, so getting the data out and cleaning it up happen in one place."
+      },
+      {
+        "title": "Build once, run it again every month",
+        "body": "Save a workflow and every setting is kept, including the areas you highlighted on the PDF. When next month's file arrives, swap it in and run the same steps again."
+      },
+      {
+        "title": "Your files stay on your computer",
+        "body": "Altera is a desktop app. Your documents are processed locally on your own machine, not uploaded to someone else's server."
+      }
+    ],
+    "ctaHeading": "See it for yourself",
+    "ctaText": "Download Altera and build your first workflow in minutes.",
+    "ctaDownload": "Download",
+    "ctaDocs": "Browse the node docs",
+    "canvas": {
+      "tableName": "Payroll (extracted)",
+      "rowsLabel": "240 rows (sample)",
+      "columns": [
+        "Employee",
+        "Pay date",
+        "Earnings",
+        "Net pay"
+      ],
+      "descriptions": {
+        "employees": "Employee rows",
+        "first": "First row per employee",
+        "regex": "Extract pay date",
+        "dates": "Keep dates only",
+        "stack": "Join both tables",
+        "columns": "Rename and reorder",
+        "export": "Payroll.xlsx"
+      },
+      "hint": "This is a live canvas, just like in the app: drag the nodes around, or zoom with the controls."
+    }
   }
 }

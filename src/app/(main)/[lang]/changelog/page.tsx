@@ -9,79 +9,110 @@ const BASE_URL = "https://alteradatasuite.com";
 
 type ChangeCategory = "New" | "Improved" | "Fixed";
 
+// One entry per update to the desktop app, taken from its real commit
+// history (altera-data-suite-standalone). No version numbers -- the app
+// hasn't tagged releases yet -- so each entry is identified by its date.
 interface ChangeEntry {
-  version: string;
-  date: string;
-  label?: string;
+  date: string; // ISO yyyy-mm-dd, formatted per locale at render time
   changes: { category: ChangeCategory; text: string }[];
 }
 
 const CHANGELOG: ChangeEntry[] = [
   {
-    version: "0.7.0",
-    date: "May 2025",
-    label: "Latest",
+    date: "2026-10-04",
     changes: [
-      { category: "New",      text: "Text location tool — search for any word or phrase inside a PDF and extract data relative to where it appears on the page." },
-      { category: "Improved", text: "Regex Extractor now supports three extraction modes: first match, capture groups, and collect all occurrences — giving you full control over how patterns are applied." },
-      { category: "Improved", text: "PDF Converter accuracy improved for documents with complex multi-column layouts." },
-      { category: "Fixed",    text: "Date format inconsistencies between French and English formatted documents." },
+      { category: "New",      text: "Dim theme — a softer middle ground between Light and Dark, applied across every window and data grid." },
+      { category: "Improved", text: "Your license now renews automatically in the background, so you stay activated without doing anything." },
+      { category: "Fixed",    text: "The installed app no longer flashes a console window on launch, and shows the correct version number." },
     ],
   },
   {
-    version: "0.6.0",
-    date: "March 2025",
+    date: "2026-09-26",
     changes: [
-      { category: "New",      text: "Standalone installer for Windows and macOS — download and run Altera Data Suite directly, no other software required." },
-      { category: "New",      text: "30-day free trial — full access to all nodes with no credit card required." },
-      { category: "New",      text: "Offline grace period — continue working for up to 48 hours without an internet connection." },
+      { category: "New",      text: "Automatic updates — use File › Check for Updates to download and install the latest version from inside the app." },
+      { category: "New",      text: "Recent Projects in the File menu (your last 10 projects), plus the Windows jump list and macOS Open Recent." },
+      { category: "New",      text: "Concatenate aggregation in Group By and Aggregate — join every non-blank value in a group with a delimiter of your choice." },
+      { category: "Improved", text: "Security hardening — the app's local processing engine now only accepts requests from the app itself." },
     ],
   },
   {
-    version: "0.5.0",
-    date: "January 2025",
+    date: "2026-09-24",
     changes: [
-      { category: "Improved", text: "Significantly reduced memory usage — multiple nodes can now run simultaneously without slowing down your machine." },
-      { category: "Improved", text: "Faster app startup time." },
-      { category: "Fixed",    text: "Zoom controls inside nodes no longer accidentally trigger when using keyboard shortcuts or scrolling." },
+      { category: "New",      text: "Node plugins — install new nodes from Settings › Plugins without reinstalling the app." },
     ],
   },
   {
-    version: "0.4.0",
-    date: "November 2024",
+    date: "2026-09-22",
     changes: [
-      { category: "New",      text: "Filter Builder — isolate exactly the rows you need using point-and-click conditions. Supports compound AND / OR logic across multiple groups." },
-      { category: "New",      text: "Column Manager — rename, reorder, and remove columns with drag-and-drop. Tab through fields to rename quickly without leaving your keyboard." },
-      { category: "New",      text: "Regex Extractor — pull structured patterns such as dates, IDs, and amounts out of raw text fields using visual rules." },
-      { category: "New",      text: "Rows Slicer, Header Promoter, and Column Shifter — precision tools for cleaning and reshaping extracted data without writing a single formula." },
-      { category: "New",      text: "Remove Duplicates and Data Cleaner nodes." },
+      { category: "New",      text: "Workspace layouts — switch between Standard, Workflow, and Canvas Focus presets." },
+      { category: "New",      text: "Splash screen on launch and a native menu bar on macOS." },
+      { category: "Improved", text: "The app now warns you before closing with unsaved changes, remembers its window size and position, and shows conversion progress in the taskbar." },
+      { category: "Improved", text: "Refreshed Light and Dark theme colors." },
+      { category: "Improved", text: "Widget Zoom (90%, 100%, 110%) now scales node windows." },
+      { category: "Fixed",    text: "A crash when opening the Appearance tab in Settings." },
     ],
   },
   {
-    version: "0.3.0",
-    date: "September 2024",
+    date: "2026-09-12",
     changes: [
-      { category: "Improved", text: "Smooth zoom in and out across all page sizes with consistent behavior — no more jumping or resizing glitches." },
-      { category: "Improved", text: "Redesigned page navigation — browse pages from the sidebar and jump to any page instantly." },
-      { category: "New",      text: "Extraction quality settings — choose between standard and high-resolution mode depending on your document's complexity." },
+      { category: "New",      text: "Group By node — group rows by a column and calculate sums, averages, counts, and more for every group." },
+      { category: "New",      text: "Page Filter node — use a column of page numbers to choose which PDF pages get converted." },
     ],
   },
   {
-    version: "0.2.0",
-    date: "July 2024",
+    date: "2026-09-07",
     changes: [
-      { category: "New",      text: "Multi-table extraction — extract up to 5 tables from a single PDF in one run, each mapped to its own output column." },
-      { category: "New",      text: "Interactive annotation canvas — draw extraction zones directly on top of the PDF rather than entering coordinates manually." },
-      { category: "New",      text: "Color-coded zones — mark different regions with different colors to stay organized when working with complex documents." },
-      { category: "New",      text: "Thumbnail sidebar — see all pages of your PDF at a glance and navigate by clicking." },
+      { category: "Improved", text: "Dark mode now covers every node's Configure window, including grids, checklists, and the formula editor." },
+      { category: "Improved", text: "Simpler Settings — the Theme switch now lives under Appearance." },
+      { category: "Fixed",    text: "External links now open in your web browser instead of inside the app." },
     ],
   },
   {
-    version: "0.1.0",
-    date: "Early 2024",
+    date: "2026-09-05",
     changes: [
-      { category: "New",      text: "PDF Converter — first release. Extract a single table from a PDF document and output it as a structured data table." },
-      { category: "Fixed",    text: "Multiple stability and performance issues addressed in this early pre-alpha build." },
+      { category: "New",      text: "Sort, Aggregate, Input Data, Text Parser, and Bridge nodes, plus a reworked Summary node." },
+      { category: "New",      text: "Dark mode, available in Settings." },
+      { category: "New",      text: "Analysis node category, home to Summary and Aggregate." },
+      { category: "New",      text: "Help › Documentation now opens the online docs." },
+      { category: "Fixed",    text: "PDF extraction no longer merges a section's total row into the row above it." },
+      { category: "Fixed",    text: "The right-click menu now works when several nodes are selected." },
+    ],
+  },
+  {
+    date: "2026-09-03",
+    changes: [
+      { category: "New",      text: "Add Column node — build conditional columns with IF / ELSE IF rules, no formulas needed." },
+      { category: "New",      text: "Formula functions IF, AND, OR, NOT, and CONTAINS, plus comparison operators." },
+      { category: "New",      text: "Excel-style click-and-drag cell selection with copy, in Browse and data previews." },
+      { category: "Improved", text: "Filter Builder is now simply called Filter." },
+    ],
+  },
+  {
+    date: "2026-09-02",
+    changes: [
+      { category: "New",      text: "Export node — save your results to Excel (.xlsx) or CSV." },
+      { category: "New",      text: "Unpivot Columns and Pivot Columns nodes for reshaping tables between long and wide formats." },
+      { category: "New",      text: "Concatenate node — stack the rows of several tables into one." },
+      { category: "New",      text: "Formula editor with syntax highlighting, autocomplete, and argument hints." },
+      { category: "Fixed",    text: "Text that wraps onto several lines inside a PDF cell now stays in one row instead of creating a blank row." },
+      { category: "Fixed",    text: "Column guides can now split values inside a single word, such as date ranges." },
+    ],
+  },
+  {
+    date: "2026-08-31",
+    changes: [
+      { category: "New",      text: "Cascade Fill node — fill empty cells up or down from the nearest value." },
+      { category: "New",      text: "Copy cells from any table preview with Ctrl+C or right-click › Copy." },
+      { category: "New",      text: "Float is now available as a Change Type target." },
+      { category: "Improved", text: "Hold Ctrl while drag-selecting to add to your current selection." },
+      { category: "Fixed",    text: "Tables now reopen in the positions you left them." },
+      { category: "Fixed",    text: "Column type icons in previews now show each column's real type." },
+    ],
+  },
+  {
+    date: "2026-08-30",
+    changes: [
+      { category: "New",      text: "First version of Altera Data Suite — PDF Converter plus a node-based workflow canvas for cleaning and transforming your extracted data." },
     ],
   },
 ];
@@ -91,6 +122,12 @@ const CATEGORY_STYLES: Record<ChangeCategory, { bg: string; color: string }> = {
   Improved: { bg: "#f0f5ff", color: "#2255cc" },
   Fixed:    { bg: "#f0faf4", color: "#1a7a45" },
 };
+
+function formatDate(iso: string, lang: string): string {
+  return new Intl.DateTimeFormat(lang, { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" }).format(
+    new Date(`${iso}T00:00:00Z`),
+  );
+}
 
 export async function generateMetadata({
   params,
@@ -139,16 +176,15 @@ export default async function ChangelogPage({
       </div>
 
       <div className={styles.list}>
-        {CHANGELOG.map((entry) => (
-          <div key={entry.version} className={styles.entry}>
+        {CHANGELOG.map((entry, i) => (
+          <div key={entry.date} className={styles.entry}>
             <div className={styles.meta}>
               <div className={styles.versionRow}>
-                <span className={styles.version}>v{entry.version}</span>
-                {entry.label && (
+                <span className={styles.version}>{formatDate(entry.date, lang)}</span>
+                {i === 0 && (
                   <span className={styles.latestBadge}>{c.latestLabel}</span>
                 )}
               </div>
-              <span className={styles.date}>{entry.date}</span>
             </div>
 
             <div className={styles.changes}>

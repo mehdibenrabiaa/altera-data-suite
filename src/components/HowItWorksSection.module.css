@@ -1,0 +1,159 @@
+.section {
+  padding: 96px 24px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.inner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #111;
+  text-align: center;
+  margin: 0 0 48px;
+}
+
+.stage {
+  display: grid;
+  grid-template-columns: 340px minmax(0, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.counter {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #111;
+  margin: 0 0 14px;
+}
+
+.body {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #555;
+  margin: 0;
+  /* Keeps the buttons from jumping as step text changes length */
+  min-height: 5em;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.btnPrimary,
+.btnSecondary {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 11px 22px;
+  cursor: pointer;
+  border: 1px solid;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.btnPrimary {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #fff;
+}
+
+.btnPrimary:hover {
+  filter: brightness(0.95);
+}
+
+.btnSecondary {
+  background: #fff;
+  border-color: #d0d4da;
+  color: #222;
+}
+
+.btnSecondary:hover:not(:disabled) {
+  border-color: #999;
+}
+
+.btnSecondary:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: #c8ccd2;
+  cursor: pointer;
+  transition: width 0.2s, background 0.2s;
+}
+
+.dotActive {
+  width: 22px;
+  border-radius: 4px;
+  background: var(--color-primary);
+}
+
+.canvasWrap {
+  min-width: 0;
+}
+
+@media (max-width: 960px) {
+  .stage {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+
+  .body {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 64px 16px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+  }
+
+  .heading {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .title {
+    font-size: 23px;
+  }
+
+  /* Small scenes don't need the desktop canvas height on a phone */
+  .canvasWrap > div {
+    height: 280px !important;
+  }
+}

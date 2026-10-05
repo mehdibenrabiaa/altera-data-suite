@@ -59,7 +59,7 @@ export default function Hero({ t, lang, featureCards }: Props) {
         <Button
           type="primary"
           size="large"
-          href={`/${lang}/pricing`}
+          href={`/${lang}/download`}
           style={{ fontWeight: 600 }}
         >
           {t.startFree}

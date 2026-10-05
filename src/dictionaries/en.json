@@ -20,10 +20,6 @@
       "title": "Docs",
       "description": "Learn how to use every Altera node — step-by-step guides, configuration references, and output details for every feature."
     },
-    "changelog": {
-      "title": "Changelog",
-      "description": "Every update, improvement, and fix to Altera Data Suite — in one place."
-    },
     "terms": {
       "title": "Terms of Service",
       "description": "Altera Data Suite terms of use, license restrictions, and liability."
@@ -71,7 +67,6 @@
     "langSwitcherLabel": "Language",
     "legalHeading": "Legal",
     "links": {
-      "changelog": "Changelog",
       "pricingPlan": "Pricing Plan",
       "docs": "Docs",
       "download": "Download",
@@ -953,18 +948,6 @@
   },
   "faqs": {
     "pageTitle": "Frequently Asked Questions — Altera Data Suite"
-  },
-  "changelog": {
-    "badgeLabel": "Changelog",
-    "badgeText": "What's new in Altera",
-    "heroHeading": "Every update, in one place.",
-    "heroSubtitle": "New features, improvements, and fixes — shipped regularly and documented here.",
-    "categories": {
-      "New": "New",
-      "Improved": "Improved",
-      "Fixed": "Fixed"
-    },
-    "latestLabel": "Latest"
   },
   "chatbot": {
     "triggerTitle": "Ask Altera",

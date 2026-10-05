@@ -20,10 +20,6 @@
       "title": "Documentation",
       "description": "Apprenez à utiliser chaque nœud Altera — guides pas à pas, références de configuration et détails des sorties pour chaque fonctionnalité."
     },
-    "changelog": {
-      "title": "Journal des mises à jour",
-      "description": "Toutes les mises à jour, améliorations et corrections d'Altera Data Suite — en un seul endroit."
-    },
     "terms": {
       "title": "Conditions d'utilisation",
       "description": "Conditions d'utilisation d'Altera Data Suite, restrictions de licence et responsabilité."
@@ -70,7 +66,6 @@
     "copyright": "Tous droits réservés.",
     "langSwitcherLabel": "Langue",
     "links": {
-      "changelog": "Mises à jour",
       "pricingPlan": "Tarifs",
       "docs": "Documentation",
       "download": "Télécharger",
@@ -953,18 +948,6 @@
   },
   "faqs": {
     "pageTitle": "Foire aux questions — Altera Data Suite"
-  },
-  "changelog": {
-    "badgeLabel": "Mises à jour",
-    "badgeText": "Les nouveautés d'Altera",
-    "heroHeading": "Toutes les mises à jour, au même endroit.",
-    "heroSubtitle": "Nouvelles fonctionnalités, améliorations et corrections — livrées régulièrement et documentées ici.",
-    "categories": {
-      "New": "Nouveau",
-      "Improved": "Amélioré",
-      "Fixed": "Corrigé"
-    },
-    "latestLabel": "Dernière version"
   },
   "chatbot": {
     "triggerTitle": "Demandez à Altera",

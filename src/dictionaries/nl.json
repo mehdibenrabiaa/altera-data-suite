@@ -20,10 +20,6 @@
       "title": "Documentatie",
       "description": "Leer hoe u elke Altera-node gebruikt — stapsgewijze handleidingen, configuratiereferenties en uitvoerdetails voor elke functie."
     },
-    "changelog": {
-      "title": "Wijzigingslog",
-      "description": "Elke update, verbetering en correctie voor Altera Data Suite — op één plek."
-    },
     "terms": {
       "title": "Gebruiksvoorwaarden",
       "description": "Gebruiksvoorwaarden van Altera Data Suite, licentiebeperkingen en aansprakelijkheid."
@@ -70,7 +66,6 @@
     "copyright": "Alle rechten voorbehouden.",
     "langSwitcherLabel": "Taal",
     "links": {
-      "changelog": "Wijzigingslog",
       "pricingPlan": "Prijsplan",
       "docs": "Documentatie",
       "download": "Downloaden",
@@ -953,18 +948,6 @@
   },
   "faqs": {
     "pageTitle": "Veelgestelde vragen — Altera Data Suite"
-  },
-  "changelog": {
-    "badgeLabel": "Wijzigingslog",
-    "badgeText": "Nieuw in Altera",
-    "heroHeading": "Elke update, op één plek.",
-    "heroSubtitle": "Nieuwe functies, verbeteringen en correcties — regelmatig uitgebracht en hier gedocumenteerd.",
-    "categories": {
-      "New": "Nieuw",
-      "Improved": "Verbeterd",
-      "Fixed": "Opgelost"
-    },
-    "latestLabel": "Nieuwste versie"
   },
   "chatbot": {
     "triggerTitle": "Vraag Altera",

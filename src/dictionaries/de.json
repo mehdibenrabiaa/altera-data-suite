@@ -20,10 +20,6 @@
       "title": "Dokumentation",
       "description": "Erfahren Sie, wie Sie jeden Altera-Knoten nutzen — Schritt-für-Schritt-Anleitungen, Konfigurationsreferenzen und Ausgabedetails für jede Funktion."
     },
-    "changelog": {
-      "title": "Änderungsprotokoll",
-      "description": "Alle Updates, Verbesserungen und Korrekturen für Altera Data Suite — an einem Ort."
-    },
     "terms": {
       "title": "Nutzungsbedingungen",
       "description": "Nutzungsbedingungen von Altera Data Suite, Lizenzbeschränkungen und Haftung."
@@ -70,7 +66,6 @@
     "copyright": "Alle Rechte vorbehalten.",
     "langSwitcherLabel": "Sprache",
     "links": {
-      "changelog": "Änderungsprotokoll",
       "pricingPlan": "Preisplan",
       "docs": "Dokumentation",
       "download": "Download",
@@ -953,18 +948,6 @@
   },
   "faqs": {
     "pageTitle": "Häufig gestellte Fragen — Altera Data Suite"
-  },
-  "changelog": {
-    "badgeLabel": "Änderungsprotokoll",
-    "badgeText": "Neuigkeiten in Altera",
-    "heroHeading": "Jedes Update, an einem Ort.",
-    "heroSubtitle": "Neue Funktionen, Verbesserungen und Korrekturen — regelmäßig veröffentlicht und hier dokumentiert.",
-    "categories": {
-      "New": "Neu",
-      "Improved": "Verbessert",
-      "Fixed": "Behoben"
-    },
-    "latestLabel": "Neueste Version"
   },
   "chatbot": {
     "triggerTitle": "Altera fragen",

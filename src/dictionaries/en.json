@@ -10,7 +10,7 @@
     },
     "pricing": {
       "title": "Pricing",
-      "description": "Simple, transparent pricing for Altera Data Suite. Start free, upgrade when it delivers value."
+      "description": "Simple, transparent pricing for Altera Data Suite. Try it free for 7 days, then pick a monthly, yearly, or lifetime plan."
     },
     "faqs": {
       "title": "FAQs",
@@ -71,7 +71,6 @@
     "langSwitcherLabel": "Language",
     "legalHeading": "Legal",
     "links": {
-      "features": "Features",
       "changelog": "Changelog",
       "pricingPlan": "Pricing Plan",
       "docs": "Docs",
@@ -358,7 +357,8 @@
         "label": "Can I use Altera on multiple machines?",
         "text": "Monthly, Yearly, and Lifetime are all single-machine licenses."
       }
-    ]
+    ],
+    "trialNote": "Try any plan free for 7 days — no credit card required. After you buy, you're covered by our 30-day money-back guarantee."
   },
   "testimonials": {
     "badgeLabel": "Testimonials",
@@ -533,7 +533,7 @@
     "heroBadgeText": "Get the app",
     "heroHeading": "Download Altera Data Suite",
     "heroLead": "Available for Windows, macOS, and Linux. Install in minutes and start extracting your first PDF right away.",
-    "trialNote": "15-day free trial on every plan — no credit card required.",
+    "trialNote": "7-day free trial on every plan — no credit card required.",
     "unavailableNotice": "The Windows build is temporarily unavailable. Please try again in a few minutes.",
     "windowsName": "Windows",
     "windowsDetail": "Windows 10 / 11 (64-bit)",
@@ -1028,7 +1028,7 @@
           },
           {
             "heading": "3. Trial Terms",
-            "body": "The 15-day free trial is limited to one per machine. After the trial expires, a paid license is required to continue using Altera. You may cancel the trial at any time without penalty."
+            "body": "The 7-day free trial is limited to one per machine. After the trial expires, a paid license is required to continue using Altera. You may cancel the trial at any time without penalty."
           },
           {
             "heading": "4. Updates & Maintenance",

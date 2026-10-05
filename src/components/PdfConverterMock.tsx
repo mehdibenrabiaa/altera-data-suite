@@ -1,4 +1,13 @@
-/* eslint-disable @next/next/no-img-element -- small decorative toolbar SVGs */
+import {
+  ConvertGlyph,
+  HandGlyph,
+  OpenFileGlyph,
+  OverlayGlyph,
+  RectangleGlyph,
+  RegionGlyph,
+  RulerGlyph,
+  SelectGlyph,
+} from "./PdfToolbarGlyphs";
 import styles from "./PdfConverterMock.module.css";
 
 // A drawn (not screenshotted) PDF Converter, styled after the app's own:
@@ -25,13 +34,19 @@ const ROWS = [
   ["19/09", "Card 4821", "-54.90"],
 ];
 
-const TOOLS = [
-  { icon: "open-file.svg", key: "open" },
-  { icon: "convert.svg", key: "convert" },
-  { icon: "selection-tool.svg", key: "select" },
-  { icon: "hand.svg", key: "hand" },
-  { icon: "rectangle.svg", key: "rect" },
-  { icon: "ruler.svg", key: "guide" },
+// Same buttons, order, and grouping as the app's ToolbarPanel.tsx --
+// "gap" is its .toolbar-group-gap, "disabled" its coming-soon buttons.
+const TOOLS: ({ key: string; glyph: () => React.ReactNode; disabled?: boolean } | "gap")[] = [
+  { key: "open", glyph: OpenFileGlyph },
+  { key: "convert", glyph: ConvertGlyph },
+  { key: "overlay", glyph: OverlayGlyph, disabled: true },
+  "gap",
+  { key: "select", glyph: SelectGlyph },
+  { key: "hand", glyph: HandGlyph },
+  "gap",
+  { key: "rect", glyph: RectangleGlyph },
+  { key: "region", glyph: RegionGlyph, disabled: true },
+  { key: "guide", glyph: RulerGlyph },
 ];
 
 export default function PdfConverterMock({ phase, columns, tableName, height }: Props) {
@@ -41,11 +56,18 @@ export default function PdfConverterMock({ phase, columns, tableName, height }: 
   return (
     <div className={styles.window} style={{ height }} aria-hidden>
       <div className={styles.toolbar}>
-        {TOOLS.map((t) => (
-          <span key={t.key} className={`${styles.tool} ${t.key === activeTool ? styles.toolActive : ""}`}>
-            <img src={`/widgets_icons/${t.icon}`} alt="" />
-          </span>
-        ))}
+        {TOOLS.map((t, i) =>
+          t === "gap" ? (
+            <span key={`gap-${i}`} className={styles.toolGap} />
+          ) : (
+            <span
+              key={t.key}
+              className={`${styles.tool} ${t.key === activeTool ? styles.toolActive : ""} ${t.disabled ? styles.toolDisabled : ""}`}
+            >
+              <t.glyph />
+            </span>
+          ),
+        )}
       </div>
 
       <div className={styles.viewport}>

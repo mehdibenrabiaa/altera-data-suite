@@ -10,7 +10,7 @@
     },
     "pricing": {
       "title": "Tarifs",
-      "description": "Des tarifs simples et transparents pour Altera Data Suite. Commencez gratuitement, évoluez quand ça vous apporte de la valeur."
+      "description": "Des tarifs simples et transparents pour Altera Data Suite. Essayez-le gratuitement pendant 7 jours, puis choisissez un plan mensuel, annuel ou à vie."
     },
     "faqs": {
       "title": "FAQ",
@@ -70,7 +70,6 @@
     "copyright": "Tous droits réservés.",
     "langSwitcherLabel": "Langue",
     "links": {
-      "features": "Fonctionnalités",
       "changelog": "Mises à jour",
       "pricingPlan": "Tarifs",
       "docs": "Documentation",
@@ -358,7 +357,8 @@
         "label": "Puis-je utiliser Altera sur plusieurs machines ?",
         "text": "Mensuel, Annuel et À vie sont tous des licences mono-poste."
       }
-    ]
+    ],
+    "trialNote": "Essayez n'importe quel plan gratuitement pendant 7 jours — sans carte bancaire. Après l'achat, vous bénéficiez de notre garantie de remboursement de 30 jours."
   },
   "testimonials": {
     "badgeLabel": "Témoignages",
@@ -533,7 +533,7 @@
     "heroBadgeText": "Obtenir l'application",
     "heroHeading": "Télécharger Altera Data Suite",
     "heroLead": "Disponible pour Windows, macOS et Linux. Installez-le en quelques minutes et commencez à extraire votre premier PDF tout de suite.",
-    "trialNote": "Essai gratuit de 15 jours sur chaque plan — aucune carte bancaire requise.",
+    "trialNote": "Essai gratuit de 7 jours sur chaque plan — aucune carte bancaire requise.",
     "unavailableNotice": "La version Windows est temporairement indisponible. Merci de réessayer dans quelques minutes.",
     "windowsName": "Windows",
     "windowsDetail": "Windows 10 / 11 (64 bits)",
@@ -1028,7 +1028,7 @@
           },
           {
             "heading": "3. Conditions d'essai",
-            "body": "L'essai gratuit de 15 jours est limité à un par machine. Après l'expiration de l'essai, une licence payante est requise pour continuer à utiliser Altera. Vous pouvez annuler l'essai à tout moment sans pénalité."
+            "body": "L'essai gratuit de 7 jours est limité à un par machine. Après l'expiration de l'essai, une licence payante est requise pour continuer à utiliser Altera. Vous pouvez annuler l'essai à tout moment sans pénalité."
           },
           {
             "heading": "4. Mises à jour et maintenance",

@@ -10,7 +10,7 @@
     },
     "pricing": {
       "title": "Precios",
-      "description": "Precios simples y transparentes para Altera Data Suite. Empieza gratis, mejora cuando aporte valor."
+      "description": "Precios simples y transparentes para Altera Data Suite. Pruébalo gratis durante 7 días y luego elige un plan mensual, anual o de por vida."
     },
     "faqs": {
       "title": "Preguntas frecuentes",
@@ -70,7 +70,6 @@
     "copyright": "Todos los derechos reservados.",
     "langSwitcherLabel": "Idioma",
     "links": {
-      "features": "Características",
       "changelog": "Cambios",
       "pricingPlan": "Plan de precios",
       "docs": "Documentación",
@@ -358,7 +357,8 @@
         "label": "¿Puedo usar Altera en varias máquinas?",
         "text": "Mensual, Anual y De por vida son licencias para una sola máquina."
       }
-    ]
+    ],
+    "trialNote": "Prueba cualquier plan gratis durante 7 días, sin tarjeta de crédito. Después de comprar, te cubre nuestra garantía de devolución de 30 días."
   },
   "testimonials": {
     "badgeLabel": "Testimonios",
@@ -533,7 +533,7 @@
     "heroBadgeText": "Obtén la aplicación",
     "heroHeading": "Descargar Altera Data Suite",
     "heroLead": "Disponible para Windows, macOS y Linux. Instálalo en minutos y empieza a extraer tu primer PDF enseguida.",
-    "trialNote": "Prueba gratuita de 15 días en todos los planes — no se requiere tarjeta de crédito.",
+    "trialNote": "Prueba gratuita de 7 días en todos los planes — no se requiere tarjeta de crédito.",
     "unavailableNotice": "La versión para Windows no está disponible temporalmente. Inténtalo de nuevo en unos minutos.",
     "windowsName": "Windows",
     "windowsDetail": "Windows 10 / 11 (64 bits)",
@@ -1028,7 +1028,7 @@
           },
           {
             "heading": "3. Condiciones de prueba",
-            "body": "La prueba gratuita de 15 días está limitada a una por máquina. Tras el vencimiento de la prueba, se requiere una licencia de pago para continuar usando Altera. Puede cancelar la prueba en cualquier momento sin penalización."
+            "body": "La prueba gratuita de 7 días está limitada a una por máquina. Tras el vencimiento de la prueba, se requiere una licencia de pago para continuar usando Altera. Puede cancelar la prueba en cualquier momento sin penalización."
           },
           {
             "heading": "4. Actualizaciones y mantenimiento",

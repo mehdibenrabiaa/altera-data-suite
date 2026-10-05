@@ -15,34 +15,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
-  padding: 12px 0;
+  gap: 2px;
+  padding: 10px 0;
   background: #f6f7f9;
   border-right: 1px solid #dadde3;
 }
 
+/* .toolbar-btn.ps-tool-btn: 36px, icon in the app's text color,
+   active tool filled with the app's orange-red */
 .tool {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
   border: 1px solid transparent;
   border-radius: 2px;
-}
-
-.tool img {
-  width: 18px;
-  height: 18px;
+  color: #1b1f27;
 }
 
 .toolActive {
   background: #fe4d41;
   border-color: #fe4d41;
+  color: #fff;
 }
 
-.toolActive img {
-  filter: brightness(0) invert(1);
+.toolDisabled {
+  opacity: 0.35;
+}
+
+.toolGap {
+  height: 8px;
+  flex-shrink: 0;
 }
 
 /* ── Page ── */
@@ -295,13 +300,17 @@
   }
 
   .tool {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
   }
 
-  .tool img {
+  .tool svg {
     width: 15px;
     height: 15px;
+  }
+
+  .toolGap {
+    height: 4px;
   }
 
   .viewport {

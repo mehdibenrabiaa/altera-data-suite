@@ -10,7 +10,7 @@
     },
     "pricing": {
       "title": "Prijzen",
-      "description": "Eenvoudige, transparante prijzen voor Altera Data Suite. Begin gratis, upgrade wanneer het waarde levert."
+      "description": "Eenvoudige, transparante prijzen voor Altera Data Suite. Probeer het 7 dagen gratis en kies daarna een maand-, jaar- of lifetime-plan."
     },
     "faqs": {
       "title": "Veelgestelde vragen",
@@ -70,7 +70,6 @@
     "copyright": "Alle rechten voorbehouden.",
     "langSwitcherLabel": "Taal",
     "links": {
-      "features": "Functies",
       "changelog": "Wijzigingslog",
       "pricingPlan": "Prijsplan",
       "docs": "Documentatie",
@@ -358,7 +357,8 @@
         "label": "Kan ik Altera op meerdere machines gebruiken?",
         "text": "Maandelijks, Jaarlijks en Lifetime zijn allemaal licenties voor één machine."
       }
-    ]
+    ],
+    "trialNote": "Probeer elk plan 7 dagen gratis — geen creditcard nodig. Na aankoop geldt onze 30-dagen-geld-terug-garantie."
   },
   "testimonials": {
     "badgeLabel": "Getuigenissen",
@@ -533,7 +533,7 @@
     "heroBadgeText": "Download de app",
     "heroHeading": "Altera Data Suite downloaden",
     "heroLead": "Beschikbaar voor Windows, macOS en Linux. In enkele minuten geïnstalleerd — begin meteen met uw eerste PDF.",
-    "trialNote": "15 dagen gratis proefperiode op elk plan — geen creditcard vereist.",
+    "trialNote": "7 dagen gratis proefperiode op elk plan — geen creditcard vereist.",
     "unavailableNotice": "De Windows-versie is tijdelijk niet beschikbaar. Probeer het over een paar minuten opnieuw.",
     "windowsName": "Windows",
     "windowsDetail": "Windows 10 / 11 (64-bit)",
@@ -1028,7 +1028,7 @@
           },
           {
             "heading": "3. Proefvoorwaarden",
-            "body": "De gratis proefperiode van 15 dagen is beperkt tot één per machine. Na het verstrijken van de proefperiode is een betaalde licentie vereist om Altera te blijven gebruiken. U kunt de proefperiode op elk moment annuleren zonder boete."
+            "body": "De gratis proefperiode van 7 dagen is beperkt tot één per machine. Na het verstrijken van de proefperiode is een betaalde licentie vereist om Altera te blijven gebruiken. U kunt de proefperiode op elk moment annuleren zonder boete."
           },
           {
             "heading": "4. Updates en onderhoud",

@@ -10,7 +10,7 @@
     },
     "pricing": {
       "title": "Preise",
-      "description": "Einfache, transparente Preise für Altera Data Suite. Kostenlos starten, upgraden wenn es Mehrwert bringt."
+      "description": "Einfache, transparente Preise für Altera Data Suite. 7 Tage kostenlos testen, dann einen Monats-, Jahres- oder Lifetime-Plan wählen."
     },
     "faqs": {
       "title": "Häufige Fragen",
@@ -70,7 +70,6 @@
     "copyright": "Alle Rechte vorbehalten.",
     "langSwitcherLabel": "Sprache",
     "links": {
-      "features": "Funktionen",
       "changelog": "Änderungsprotokoll",
       "pricingPlan": "Preisplan",
       "docs": "Dokumentation",
@@ -358,7 +357,8 @@
         "label": "Kann ich Altera auf mehreren Geräten nutzen?",
         "text": "Monatlich, Jährlich und Lifetime sind Einzelplatz-Lizenzen."
       }
-    ]
+    ],
+    "trialNote": "Testen Sie jeden Plan 7 Tage kostenlos – ohne Kreditkarte. Nach dem Kauf gilt unsere 30-Tage-Geld-zurück-Garantie."
   },
   "testimonials": {
     "badgeLabel": "Erfahrungsberichte",
@@ -533,7 +533,7 @@
     "heroBadgeText": "App herunterladen",
     "heroHeading": "Altera Data Suite herunterladen",
     "heroLead": "Verfügbar für Windows, macOS und Linux. In wenigen Minuten installiert — starten Sie sofort mit Ihrem ersten PDF.",
-    "trialNote": "15 Tage kostenlos testen bei jedem Plan — keine Kreditkarte erforderlich.",
+    "trialNote": "7 Tage kostenlos testen bei jedem Plan — keine Kreditkarte erforderlich.",
     "unavailableNotice": "Der Windows-Build ist vorübergehend nicht verfügbar. Bitte versuchen Sie es in ein paar Minuten erneut.",
     "windowsName": "Windows",
     "windowsDetail": "Windows 10 / 11 (64-Bit)",
@@ -1028,7 +1028,7 @@
           },
           {
             "heading": "3. Testbedingungen",
-            "body": "Die 15-tägige kostenlose Testversion ist auf eine pro Maschine begrenzt. Nach Ablauf des Tests ist eine kostenpflichtige Lizenz erforderlich, um Altera weiter zu nutzen. Sie können den Test jederzeit ohne Strafe kündigen."
+            "body": "Die 7-tägige kostenlose Testversion ist auf eine pro Maschine begrenzt. Nach Ablauf des Tests ist eine kostenpflichtige Lizenz erforderlich, um Altera weiter zu nutzen. Sie können den Test jederzeit ohne Strafe kündigen."
           },
           {
             "heading": "4. Updates und Wartung",

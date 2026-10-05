@@ -13,7 +13,8 @@ interface GetStartedT {
 
 export default function GetStartedSection({ t, lang }: { t: GetStartedT; lang: string }) {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} data-cta-band>
+      <div className={styles.band}>
       <div className={styles.inner}>
         <h2 className={styles.heading}>{t.heading}</h2>
         <p className={styles.text}>{t.text}</p>
@@ -25,6 +26,7 @@ export default function GetStartedSection({ t, lang }: { t: GetStartedT; lang: s
             {t.docs}
           </Button>
         </div>
+      </div>
       </div>
     </section>
   );

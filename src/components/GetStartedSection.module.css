@@ -1,7 +1,21 @@
+/* This band is always the last section before the footer, so the area
+   behind its rounded corners takes the footer's color (not the page
+   background the alternating sections rely on) -- otherwise the corners
+   show a darker strip that doesn't merge with the footer.
+   !important: outranks globals.css's alternating main > section shades. */
 .section {
+  background-color: var(--bg-panel) !important;
+}
+
+/* ...and the footer's own top border would draw a line under the band,
+   so drop it whenever this band is on the page. */
+:global(body:has([data-cta-band]) footer) {
+  border-top-color: transparent;
+}
+
+.band {
   padding: 96px 24px 104px;
-  /* !important: outranks globals.css's alternating main > section shades */
-  background-color: var(--color-primary) !important;
+  background-color: var(--color-primary);
   background-image: radial-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px);
   background-size: 16px 16px;
   border-bottom-left-radius: 40px;
@@ -61,7 +75,7 @@
 }
 
 @media (max-width: 600px) {
-  .section {
+  .band {
     padding: 64px 16px 72px;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;

@@ -15,7 +15,6 @@ interface FooterDict {
   langSwitcherLabel: string;
   legalHeading: string;
   links: {
-    features: string;
     changelog: string;
     pricingPlan: string;
     docs: string;
@@ -60,7 +59,6 @@ interface Props {
 
 export default function Footer({ t, lang, langNames }: Props) {
   const productLinks = [
-    { label: t.links.features, href: `/${lang}/features` },
     { label: t.links.whyWorkflows, href: `/${lang}/why-visual-workflows` },
     { label: t.links.changelog, href: `/${lang}/changelog` },
     { label: t.links.pricingPlan, href: `/${lang}/pricing` },

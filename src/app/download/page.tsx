@@ -24,7 +24,7 @@ export default function DownloadPage() {
           </p>
           <p className={styles.trialNote}>
             <CheckCircleFilledIcon size={15} />
-            15-day free trial on every plan — no credit card required.
+            7-day free trial on every plan — no credit card required.
           </p>
         </div>
       </section>

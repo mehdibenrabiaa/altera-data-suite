@@ -26,6 +26,7 @@ interface PricingT {
   includesLabel: string;
   checkoutSuccess: string;
   checkoutError: string;
+  trialNote?: string;
   plans: PricingPlan[];
 }
 
@@ -88,6 +89,8 @@ export default function PricingSection({ t = DEFAULT_T, lang = "en" }: Props) {
           );
         })}
       </div>
+
+      {t.trialNote && <p className={styles.trialNote}>{t.trialNote}</p>}
     </section>
   );
 }

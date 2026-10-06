@@ -299,7 +299,7 @@
         "subtitle": "Komplettlösung, monatlich abgerechnet",
         "features": [
           "Unbegrenzte PDF-Verarbeitung",
-          "PDF-Stapelverarbeitung",
+          "Unterstützung mehrseitiger PDFs",
           "10+ Nodes",
           "E-Mail-Support",
           "Einzelplatz-Lizenz",
@@ -311,7 +311,7 @@
         "subtitle": "20 % günstiger als monatliche Abrechnung",
         "features": [
           "Unbegrenzte PDF-Verarbeitung",
-          "PDF-Stapelverarbeitung",
+          "Unterstützung mehrseitiger PDFs",
           "10+ Nodes",
           "Priorisierter E-Mail-Support",
           "Einzelplatz-Lizenz",
@@ -323,7 +323,7 @@
         "subtitle": "Einmal zahlen, für immer besitzen",
         "features": [
           "Unbegrenzte PDF-Verarbeitung",
-          "PDF-Stapelverarbeitung",
+          "Unterstützung mehrseitiger PDFs",
           "10+ Nodes",
           "Priorisierter Support",
           "Einzelplatz-Lizenz",
@@ -412,72 +412,87 @@
     {
       "key": "1",
       "label": "Welche PDF-Typen unterstützt Altera?",
-      "text": "Altera funktioniert mit jedem PDF — Gehaltsabrechnungen, Rechnungen, Kontoauszüge, Berichte und mehr. Wenn es strukturierte Daten enthält, kann Altera es extrahieren."
+      "text": "Jedes PDF mit markierbarem Text – Gehaltsabrechnungen, Rechnungen, Kontoauszüge, Berichte und mehr. Wenn Sie den Text in Ihrem PDF-Viewer markieren können, kann Altera ihn extrahieren. Gescannte PDFs, die nur aus Bildern bestehen, brauchen zuerst eine Texterkennung (siehe unten)."
     },
     {
       "key": "2",
       "label": "Wie genau ist die Extraktion?",
-      "text": "Altera extrahiert Daten mit hoher Genauigkeit. Sie können benutzerdefinierte Regeln definieren, um sicherzustellen, dass jedes Feld genau dorthin zugeordnet wird, wo Sie es benötigen."
+      "text": "Altera liest den Text, der bereits im PDF steckt – die Werte kommen also genau so heraus, wie sie dort stehen, ohne Raten oder Abtippen. Was extrahiert wird, bestimmen Sie, indem Sie die benötigten Bereiche markieren; wo Spalten eng beieinander liegen, können Sie Spaltenhilfslinien setzen."
     },
     {
       "key": "3",
       "label": "Muss ich etwas installieren?",
-      "text": "Altera ist für Orange Data Mining entwickelt. Die Installation innerhalb von Orange dauert Sekunden — fügen Sie einfach das Add-on hinzu und Sie können sofort mit der Extraktion beginnen."
+      "text": "Ja, Altera ist eine Desktop-App. Laden Sie das Installationsprogramm für Windows herunter und legen Sie los – keine weitere Software nötig. Versionen für macOS und Linux folgen in Kürze."
     },
     {
       "key": "4",
       "label": "Kann ich mehrere PDFs gleichzeitig verarbeiten?",
-      "text": "Ja. Altera unterstützt Batch-Verarbeitung, sodass Sie Hunderte von PDFs einladen und alle Daten auf einmal strukturiert erhalten können."
+      "text": "Altera bearbeitet jeweils ein PDF – und dieses PDF kann Hunderte Seiten haben. Speichern Sie Ihren Workflow einmal, öffnen Sie dann die nächste Datei und führen Sie dieselben Schritte erneut aus – Ihre Markierungen und Einstellungen bleiben erhalten."
     },
     {
       "key": "5",
       "label": "Sind meine Daten sicher?",
-      "text": "Ihre Dateien werden sicher verarbeitet und niemals über die aktive Sitzung hinaus gespeichert. Wir teilen oder behalten Ihre Daten nicht."
+      "text": "Ja. Altera läuft auf Ihrem eigenen Computer: Ihre PDFs werden lokal verarbeitet und nie auf unsere oder fremde Server hochgeladen. Die App geht nur online, um Ihre Lizenz zu prüfen."
     },
     {
       "key": "6",
-      "label": "Kann ich es vor dem Bezahlen ausprobieren?",
-      "text": "Absolut — Sie können kostenlos starten und die Kernfunktionen erkunden, bevor Sie sich für einen Plan entscheiden."
+      "label": "Kann ich es vor dem Kauf testen?",
+      "text": "Ja – jeder Plan beinhaltet eine 7-tägige kostenlose Testversion mit allen Funktionen, ohne Kreditkarte."
     },
     {
       "key": "7",
-      "label": "Brauche ich Programmierkenntnisse, um Altera zu nutzen?",
-      "text": "Überhaupt nicht. Altera ist darauf ausgelegt, visuell in Orange Data Mining verwendet zu werden. Sie ziehen, legen ab und konfigurieren — kein Code erforderlich."
+      "label": "Brauche ich Programmierkenntnisse?",
+      "text": "Überhaupt nicht. Sie markieren die Daten im PDF und bauen Ihren Workflow, indem Sie Nodes verbinden und ihre Optionen einstellen – ohne Code und ohne Formeln."
     },
     {
       "key": "8",
       "label": "Kann Altera gescannte oder bildbasierte PDFs verarbeiten?",
-      "text": "Altera funktioniert am besten mit digital generierten PDFs. Gescannte Dokumente mit OCR-lesbarem Text werden ebenfalls unterstützt, obwohl die Genauigkeit je nach Scanqualität variieren kann."
+      "text": "Altera liest die Textebene eines PDFs und führt selbst keine Texterkennung (OCR) durch. Ein Scan, der nur ein Bild ist, hat keine Textebene – lassen Sie ihn zuerst durch eine OCR-Software laufen, dann kann Altera ihn wie jedes andere PDF extrahieren."
     },
     {
       "key": "9",
-      "label": "In welchem Ausgabeformat liegen die extrahierten Daten vor?",
-      "text": "Altera gibt saubere, strukturierte Tabellen direkt in Orange Data Mining aus — bereit zur Analyse, zum Export oder zur Weiterverarbeitung."
+      "label": "In welchem Format kommen die extrahierten Daten?",
+      "text": "Ihre Daten erscheinen als saubere Tabelle in der App. Von dort können Sie sie mit Nodes weiterverarbeiten oder mit dem Export-Node als Excel (.xlsx) oder CSV speichern."
     },
     {
       "key": "10",
-      "label": "Kann ich verschiedene Knoten für verschiedene Dokumenttypen verwenden?",
-      "text": "Ja. Jeder Knoten ist für eine bestimmte Extraktionsaufgabe ausgelegt. Sie können Knoten im selben Workflow kombinieren, um verschiedene Dokumenttypen in einem Durchlauf zu verarbeiten."
+      "label": "Was sind Nodes und wie arbeiten sie zusammen?",
+      "text": "Nodes sind die Bausteine eines Workflows. Jeder erledigt genau eine Aufgabe mit Ihren Daten – Text bereinigen, Zeilen filtern, Tabellen zusammenführen, eine Spalte summieren und mehr. Verbinden Sie sie von links nach rechts, um die aus Ihrem PDF extrahierte Tabelle in genau das Ergebnis zu verwandeln, das Sie brauchen."
     },
     {
       "key": "11",
-      "label": "Was ist, wenn die Extraktion ein Feld übersieht oder falsch erfasst?",
-      "text": "Sie können benutzerdefinierte Extraktionsregeln definieren, um Sonderfälle zu behandeln. Wenn eine spezifische Dokumentstruktur nicht standardmäßig unterstützt wird, bieten wir auch benutzerdefinierte Knotenentwicklung an."
+      "label": "Was, wenn die Extraktion ein Feld auslässt oder falsch erfasst?",
+      "text": "Passen Sie Ihre Markierung an oder setzen Sie eine Spaltenhilfslinie und konvertieren Sie erneut. Um die Daten selbst zu korrigieren, nutzen Sie Nodes wie Cleaner, Text Parser oder Regular Expressions. Brauchen Ihre Dokumente etwas, das kein Node abdeckt, entwickeln wir auch individuelle Nodes."
     },
     {
       "key": "12",
       "label": "Gibt es eine Dateigrößenbeschränkung?",
-      "text": "Altera verarbeitet standardmäßige Geschäftsdokumente problemlos. Sehr große Dateien oder ungewöhnlich komplexe Layouts können die Verarbeitungszeit beeinflussen, aber es gibt keine feste Obergrenze."
+      "text": "Es gibt keine feste Grenze. Große oder sehr lange Dokumente brauchen einfach etwas länger zum Öffnen und Konvertieren – der PDF Converter lädt jeweils eine Seite."
     },
     {
       "key": "13",
       "label": "Welche Sprachen werden unterstützt?",
-      "text": "Altera unterstützt in erster Linie englische und französische Dokumente. Die Unterstützung für weitere Sprachen wird hinzugefügt, während die Suite wächst."
+      "text": "Altera liest den im PDF eingebetteten Text, statt Zeichen zu erkennen – es ist also nicht an eine bestimmte Dokumentsprache gebunden. Die Oberfläche der App ist derzeit auf Englisch."
     },
     {
       "key": "14",
-      "label": "Wie erhalte ich Support, wenn etwas schiefläuft?",
-      "text": "Sie können uns direkt unter support@alteradatasuite.com erreichen. Wir sind ein kleines Team, daher erhalten Sie immer eine echte Antwort — keinen Bot."
+      "label": "Wie bekomme ich Hilfe, wenn etwas nicht funktioniert?",
+      "text": "Schreiben Sie uns direkt an support@alteradatasuite.com. Wir sind ein kleines Team – Sie bekommen immer eine echte Antwort, keinen Bot."
+    },
+    {
+      "key": "15",
+      "label": "In welche Formate kann ich exportieren?",
+      "text": "Excel (.xlsx) und CSV, mit dem Export-Node. Mit dem Input-Data-Node können Sie außerdem Excel- und CSV-Dateien in einen Workflow holen – etwa um einen Auszug mit Ihrer Buchhaltung abzugleichen."
+    },
+    {
+      "key": "16",
+      "label": "Funktioniert Altera offline?",
+      "text": "Ja. Alles läuft auf Ihrem Computer, Sie können also ohne Internetverbindung arbeiten. Die App muss nur mindestens einmal alle 7 Tage online gehen, um Ihre Lizenz zu erneuern."
+    },
+    {
+      "key": "17",
+      "label": "Kann ich einen Workflow jeden Monat wiederverwenden?",
+      "text": "Ja. Speichern Sie Ihren Workflow, und alles bleibt erhalten – auch die im PDF markierten Bereiche. Kommt die Datei des nächsten Monats, tauschen Sie sie aus und führen dieselben Schritte erneut aus."
     }
   ],
   "docs": {
@@ -645,7 +660,7 @@
       "payroll": {
         "tab": "Personal und Lohn",
         "title": "Aus Gehaltsabrechnungen eine Lohnübersicht machen",
-        "summary": "Jede Zeile aus einem Stapel PDF-Gehaltsabrechnungen extrahieren und Bezüge und Abzüge je Mitarbeiter summieren – bereit für Ihre Lohnprüfung.",
+        "summary": "Jede Zeile aus Ihren PDF-Gehaltsabrechnungen extrahieren und Bezüge und Abzüge je Mitarbeiter summieren – bereit für Ihre Lohnprüfung.",
         "metaTitle": "Gehaltsabrechnungen als PDF zur Excel-Lohnübersicht",
         "metaDescription": "Bezüge und Abzüge aus PDF-Gehaltsabrechnungen extrahieren und eine Lohnübersicht je Mitarbeiter in Excel erstellen – ohne Code.",
         "lead": "Gehaltsabrechnungen sind zum Lesen gemacht, nicht für Tabellen. Altera holt die Zeilen aus Ihren PDF-Abrechnungen und fasst sie zu einer Übersichtszeile je Mitarbeiter zusammen.",
@@ -686,7 +701,7 @@
         "outcomes": [
           "Eine saubere Übersichtszeile je Mitarbeiter",
           "Ungewöhnliche Zahlungen vor dem Lohnabschluss erkennen",
-          "Derselbe Workflow verarbeitet den Stapel des nächsten Monats"
+          "Derselbe Workflow verarbeitet die Abrechnungen des nächsten Monats"
         ],
         "canvas": {
           "tables": {

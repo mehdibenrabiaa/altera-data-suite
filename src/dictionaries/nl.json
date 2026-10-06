@@ -299,7 +299,7 @@
         "subtitle": "Alles-in-één oplossing, maandelijks gefactureerd",
         "features": [
           "Onbeperkte PDF-verwerking",
-          "PDF-batchverwerking",
+          "Ondersteuning voor pdf's met meerdere pagina's",
           "10+ Nodes",
           "E-mailondersteuning",
           "Licentie voor één machine",
@@ -311,7 +311,7 @@
         "subtitle": "Bespaar 20% t.o.v. maandelijkse facturering",
         "features": [
           "Onbeperkte PDF-verwerking",
-          "PDF-batchverwerking",
+          "Ondersteuning voor pdf's met meerdere pagina's",
           "10+ Nodes",
           "Prioritaire e-mailondersteuning",
           "Licentie voor één machine",
@@ -323,7 +323,7 @@
         "subtitle": "Eenmalig betalen, voor altijd bezitten",
         "features": [
           "Onbeperkte PDF-verwerking",
-          "PDF-batchverwerking",
+          "Ondersteuning voor pdf's met meerdere pagina's",
           "10+ Nodes",
           "Prioritaire ondersteuning",
           "Licentie voor één machine",
@@ -411,73 +411,88 @@
   "allFaqs": [
     {
       "key": "1",
-      "label": "Welke soorten PDF's ondersteunt Altera?",
-      "text": "Altera werkt met elk PDF — loonstroken, facturen, bankafschriften, rapporten en meer. Als het gestructureerde gegevens bevat, kan Altera het extraheren."
+      "label": "Welke soorten pdf's ondersteunt Altera?",
+      "text": "Elke pdf met selecteerbare tekst — loonstroken, facturen, bankafschriften, rapporten en meer. Kunt u de tekst in uw pdf-viewer selecteren, dan kan Altera die extraheren. Gescande pdf's die alleen uit afbeeldingen bestaan, hebben eerst OCR nodig (zie hieronder)."
     },
     {
       "key": "2",
       "label": "Hoe nauwkeurig is de extractie?",
-      "text": "Altera extraheert gegevens met hoge nauwkeurigheid. U kunt aangepaste regels definiëren om ervoor te zorgen dat elk veld precies op de juiste plek terecht komt."
+      "text": "Altera leest de tekst die al in de pdf staat, dus waarden komen er precies zo uit als ze erin staan — er wordt niets geraden of overgetypt. U bepaalt wat er wordt geëxtraheerd door de gebieden te markeren die u nodig hebt, en waar kolommen dicht op elkaar staan kunt u kolomhulplijnen plaatsen."
     },
     {
       "key": "3",
       "label": "Moet ik iets installeren?",
-      "text": "Altera is gebouwd voor Orange Data Mining. De installatie in Orange duurt slechts seconden — voeg gewoon de add-on toe en u kunt direct beginnen met extraheren."
+      "text": "Ja, Altera is een desktop-app. Download het installatieprogramma voor Windows en u kunt beginnen — geen andere software nodig. Versies voor macOS en Linux komen binnenkort."
     },
     {
       "key": "4",
-      "label": "Kan ik meerdere PDF's tegelijk verwerken?",
-      "text": "Ja. Altera ondersteunt batchverwerking zodat u honderden PDF's kunt inladen en alle gegevens in één keer gestructureerd kunt krijgen."
+      "label": "Kan ik meerdere pdf's tegelijk verwerken?",
+      "text": "Altera werkt met één pdf tegelijk, en die pdf kan honderden pagina's hebben. Sla uw workflow één keer op, open dan het volgende bestand en voer dezelfde stappen opnieuw uit — uw markeringen en instellingen blijven bewaard."
     },
     {
       "key": "5",
       "label": "Zijn mijn gegevens veilig?",
-      "text": "Uw bestanden worden veilig verwerkt en nooit opgeslagen na de actieve sessie. We delen of bewaren uw gegevens niet."
+      "text": "Ja. Altera draait op uw eigen computer: uw pdf's worden lokaal verwerkt en nooit geüpload naar onze servers of die van een ander. De app gaat alleen online om uw licentie te controleren."
     },
     {
       "key": "6",
-      "label": "Kan ik het proberen voordat ik betaal?",
-      "text": "Absoluut — u kunt gratis beginnen en de kernfuncties verkennen voordat u zich verbindt aan een plan."
+      "label": "Kan ik het uitproberen voordat ik betaal?",
+      "text": "Ja — elk plan heeft een gratis proefperiode van 7 dagen met alle functies, zonder creditcard."
     },
     {
       "key": "7",
-      "label": "Heb ik programmeerkennis nodig om Altera te gebruiken?",
-      "text": "Helemaal niet. Altera is ontworpen voor visueel gebruik in Orange Data Mining. U sleept, plaatst en configureert — geen code vereist."
+      "label": "Heb ik programmeerkennis nodig?",
+      "text": "Helemaal niet. U markeert de data in de pdf en bouwt uw workflow door nodes te verbinden en hun opties in te stellen — zonder code of formules."
     },
     {
       "key": "8",
-      "label": "Kan Altera gescande of afbeeldingsgebaseerde PDF's verwerken?",
-      "text": "Altera werkt het beste met digitaal gegenereerde PDF's. Gescande documenten met OCR-leesbare tekst worden ook ondersteund, hoewel de nauwkeurigheid kan variëren afhankelijk van de scankwaliteit."
+      "label": "Kan Altera gescande of op afbeeldingen gebaseerde pdf's verwerken?",
+      "text": "Altera leest de tekstlaag van een pdf en doet zelf geen OCR. Een scan die alleen een afbeelding is, heeft geen tekstlaag — haal hem eerst door OCR-software, daarna kan Altera hem extraheren zoals elke andere pdf."
     },
     {
       "key": "9",
-      "label": "In welk formaat komt de geëxtraheerde data?",
-      "text": "Altera geeft schone, gestructureerde tabellen direct uit in Orange Data Mining — klaar om te analyseren, exporteren of te gebruiken in uw volgende workflowstap."
+      "label": "In welk formaat komen de geëxtraheerde gegevens?",
+      "text": "Uw data komt eruit als een schone tabel in de app. Van daaruit kunt u die verder bewerken met nodes, of opslaan als Excel (.xlsx) of CSV met de Export-node."
     },
     {
       "key": "10",
-      "label": "Kan ik verschillende nodes gebruiken voor verschillende documenttypen?",
-      "text": "Ja. Elke node is gebouwd voor een specifieke extractietaak. U kunt nodes combineren in dezelfde workflow om verschillende documenttypen in één keer te verwerken."
+      "label": "Wat zijn nodes en hoe werken ze samen?",
+      "text": "Nodes zijn de bouwstenen van een workflow. Elke node doet één taak met uw data — tekst opschonen, rijen filteren, tabellen samenvoegen, een kolom optellen en meer. Verbind ze van links naar rechts om de tabel uit uw pdf om te zetten in precies het resultaat dat u nodig hebt."
     },
     {
       "key": "11",
-      "label": "Wat als de extractie een veld mist of fout heeft?",
-      "text": "U kunt aangepaste extractieregels definiëren om randgevallen te behandelen. Als een specifieke documentstructuur niet standaard wordt ondersteund, bieden we ook aangepaste node-ontwikkeling aan."
+      "label": "Wat als de extractie een veld mist of fout leest?",
+      "text": "Pas uw markering aan of plaats een kolomhulplijn en converteer opnieuw. Om de data zelf te corrigeren, gebruikt u nodes zoals Cleaner, Text Parser of Regular Expressions. Hebben uw documenten iets nodig dat geen enkele node dekt, dan bouwen we ook nodes op maat."
     },
     {
       "key": "12",
-      "label": "Is er een bestandsgroottelimiet?",
-      "text": "Altera verwerkt standaard zakelijke documenten zonder problemen. Zeer grote bestanden of ongewoon complexe indelingen kunnen de verwerkingstijd beïnvloeden, maar er is geen harde limiet."
+      "label": "Is er een maximale bestandsgrootte?",
+      "text": "Er is geen vaste limiet. Grote of heel lange documenten hebben gewoon iets meer tijd nodig om te openen en te converteren — de PDF Converter laadt één pagina tegelijk."
     },
     {
       "key": "13",
       "label": "Welke talen worden ondersteund?",
-      "text": "Altera ondersteunt voornamelijk Engelse en Franse documenten. Ondersteuning voor extra talen wordt toegevoegd naarmate de suite groeit."
+      "text": "Altera leest de tekst die in uw pdf zit in plaats van tekens te herkennen, dus het is niet gebonden aan een bepaalde documenttaal. De interface van de app is momenteel in het Engels."
     },
     {
       "key": "14",
-      "label": "Hoe krijg ik ondersteuning als er iets misgaat?",
-      "text": "U kunt ons direct bereiken via support@alteradatasuite.com. We zijn een klein team, dus u krijgt altijd een echte reactie — geen bot."
+      "label": "Hoe krijg ik hulp als er iets misgaat?",
+      "text": "Neem direct contact met ons op via support@alteradatasuite.com. We zijn een klein team, dus u krijgt altijd een echt antwoord — geen bot."
+    },
+    {
+      "key": "15",
+      "label": "Naar welke bestandsformaten kan ik exporteren?",
+      "text": "Excel (.xlsx) en CSV, met de Export-node. Met de Input Data-node kunt u ook Excel- en CSV-bestanden in een workflow halen — bijvoorbeeld om een afschrift te vergelijken met uw boekhouding."
+    },
+    {
+      "key": "16",
+      "label": "Werkt Altera offline?",
+      "text": "Ja. Alles draait op uw computer, dus u kunt werken zonder internetverbinding. De app hoeft alleen minstens één keer per 7 dagen online te gaan om uw licentie te verlengen."
+    },
+    {
+      "key": "17",
+      "label": "Kan ik een workflow elke maand hergebruiken?",
+      "text": "Ja. Sla uw workflow op en alles blijft bewaard — ook de gebieden die u in de pdf hebt gemarkeerd. Komt het bestand van volgende maand binnen, wissel het dan om en voer dezelfde stappen opnieuw uit."
     }
   ],
   "docs": {
@@ -645,7 +660,7 @@
       "payroll": {
         "tab": "HR en salarissen",
         "title": "Maak van loonstroken een salarisoverzicht",
-        "summary": "Haal elke regel uit een stapel pdf-loonstroken en tel verdiensten en inhoudingen per medewerker op, klaar voor uw salariscontrole.",
+        "summary": "Haal elke regel uit uw pdf-loonstroken en tel verdiensten en inhoudingen per medewerker op, klaar voor uw salariscontrole.",
         "metaTitle": "Loonstroken in pdf naar een salarisoverzicht in Excel",
         "metaDescription": "Haal verdiensten en inhoudingen uit pdf-loonstroken en maak een salarisoverzicht per medewerker in Excel, zonder code.",
         "lead": "Loonstroken zijn gemaakt om te lezen, niet voor spreadsheets. Altera haalt de regels uit uw pdf-loonstroken en bundelt ze tot één overzichtsrij per medewerker.",
@@ -686,7 +701,7 @@
         "outcomes": [
           "Eén nette overzichtsrij per medewerker",
           "Zie ongebruikelijke betalingen vóór de salarisafsluiting",
-          "Dezelfde workflow verwerkt de stapel van volgende maand"
+          "Dezelfde workflow verwerkt de loonstroken van volgende maand"
         ],
         "canvas": {
           "tables": {

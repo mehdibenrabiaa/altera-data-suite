@@ -299,7 +299,7 @@
         "subtitle": "Solution tout-en-un, facturée mensuellement",
         "features": [
           "Traitement PDF illimité",
-          "Traitement PDF par lot",
+          "Prise en charge des PDF multipages",
           "10+ Nœuds",
           "Support par e-mail",
           "Licence mono-poste",
@@ -311,7 +311,7 @@
         "subtitle": "Économisez 20 % par rapport à la facturation mensuelle",
         "features": [
           "Traitement PDF illimité",
-          "Traitement PDF par lot",
+          "Prise en charge des PDF multipages",
           "10+ Nœuds",
           "Support par e-mail prioritaire",
           "Licence mono-poste",
@@ -323,7 +323,7 @@
         "subtitle": "Payez une fois, gardez-le pour toujours",
         "features": [
           "Traitement PDF illimité",
-          "Traitement PDF par lot",
+          "Prise en charge des PDF multipages",
           "10+ Nœuds",
           "Support prioritaire",
           "Licence mono-poste",
@@ -411,73 +411,88 @@
   "allFaqs": [
     {
       "key": "1",
-      "label": "Quels types de PDFs Altera prend-il en charge ?",
-      "text": "Altera fonctionne avec n'importe quel PDF — bulletins de paie, factures, relevés bancaires, rapports et plus encore. S'il contient des données structurées, Altera peut les extraire."
+      "label": "Quels types de PDF Altera prend-il en charge ?",
+      "text": "Tout PDF dont le texte est sélectionnable — bulletins de paie, factures, relevés bancaires, rapports, etc. Si vous pouvez sélectionner le texte dans votre lecteur PDF, Altera peut l'extraire. Les PDF scannés, composés uniquement d'images, nécessitent d'abord un OCR (voir ci-dessous)."
     },
     {
       "key": "2",
       "label": "Quelle est la précision de l'extraction ?",
-      "text": "Altera extrait les données avec une grande précision. Vous pouvez définir des règles personnalisées pour vous assurer que chaque champ est mappé exactement où vous en avez besoin."
+      "text": "Altera lit le texte déjà présent dans le PDF : les valeurs ressortent exactement telles qu'elles apparaissent, sans rien deviner ni ressaisir. Vous choisissez ce qui est extrait en surlignant les zones utiles, et vous pouvez ajouter des guides de colonnes là où les colonnes sont rapprochées."
     },
     {
       "key": "3",
       "label": "Dois-je installer quelque chose ?",
-      "text": "Altera est conçu pour Orange Data Mining. L'installation dans Orange prend quelques secondes — il suffit d'ajouter le module complémentaire et vous êtes prêt à commencer l'extraction."
+      "text": "Oui, Altera est une application de bureau. Téléchargez l'installateur pour Windows et c'est parti — aucun autre logiciel requis. Les versions macOS et Linux arrivent bientôt."
     },
     {
       "key": "4",
-      "label": "Puis-je traiter plusieurs PDFs à la fois ?",
-      "text": "Oui. Altera prend en charge le traitement par lots, vous pouvez donc déposer des centaines de PDFs et obtenir toutes les données structurées en une seule fois."
+      "label": "Puis-je traiter plusieurs PDF à la fois ?",
+      "text": "Altera traite un PDF à la fois, et ce PDF peut compter des centaines de pages. Enregistrez votre workflow une fois, puis ouvrez le fichier suivant et relancez les mêmes étapes — vos surlignages et réglages sont conservés."
     },
     {
       "key": "5",
       "label": "Mes données sont-elles sécurisées ?",
-      "text": "Vos fichiers sont traités de manière sécurisée et ne sont jamais stockés au-delà de la session active. Nous ne partageons ni ne conservons vos données."
+      "text": "Oui. Altera fonctionne sur votre propre ordinateur : vos PDF sont traités localement et ne sont jamais envoyés sur nos serveurs ni sur ceux de quelqu'un d'autre. L'application ne se connecte à Internet que pour vérifier votre licence."
     },
     {
       "key": "6",
       "label": "Puis-je l'essayer avant de payer ?",
-      "text": "Absolument — vous pouvez commencer gratuitement et explorer les fonctionnalités principales avant de vous engager dans un plan."
+      "text": "Oui — chaque plan inclut un essai gratuit de 7 jours avec toutes les fonctionnalités, sans carte bancaire."
     },
     {
       "key": "7",
-      "label": "Ai-je besoin de connaissances en programmation ?",
-      "text": "Pas du tout. Altera est conçu pour être utilisé visuellement dans Orange Data Mining. Vous glissez, déposez et configurez — aucun code requis."
+      "label": "Dois-je savoir programmer pour utiliser Altera ?",
+      "text": "Pas du tout. Vous surlignez les données sur le PDF, puis construisez votre workflow en reliant des nœuds et en réglant leurs options — sans code ni formules."
     },
     {
       "key": "8",
-      "label": "Altera peut-il traiter des PDFs numérisés ?",
-      "text": "Altera fonctionne mieux avec les PDFs générés numériquement. Les documents numérisés avec du texte lisible par OCR sont également pris en charge, bien que la précision puisse varier selon la qualité de numérisation."
+      "label": "Altera gère-t-il les PDF scannés ou composés d'images ?",
+      "text": "Altera lit la couche de texte d'un PDF et ne fait pas d'OCR lui-même. Un scan qui n'est qu'une image n'a pas de couche de texte : passez-le d'abord dans un logiciel d'OCR, puis Altera pourra l'extraire comme n'importe quel autre PDF."
     },
     {
       "key": "9",
-      "label": "Dans quel format de sortie les données sont-elles fournies ?",
-      "text": "Altera produit des tableaux propres et structurés directement dans Orange Data Mining — prêts à analyser, exporter ou alimenter la prochaine étape de votre workflow."
+      "label": "Sous quel format les données extraites sont-elles fournies ?",
+      "text": "Vos données ressortent sous forme de table propre dans l'application. Vous pouvez ensuite continuer à les transformer avec des nœuds, ou les enregistrer en Excel (.xlsx) ou CSV avec le nœud Export."
     },
     {
       "key": "10",
-      "label": "Puis-je utiliser différents nœuds pour différents types de documents ?",
-      "text": "Oui. Chaque nœud est conçu pour une tâche d'extraction spécifique. Vous pouvez combiner des nœuds dans le même workflow pour traiter différents types de documents en une seule passe."
+      "label": "Que sont les nœuds et comment fonctionnent-ils ensemble ?",
+      "text": "Les nœuds sont les briques d'un workflow. Chacun fait une seule chose sur vos données — nettoyer du texte, filtrer des lignes, fusionner des tables, totaliser une colonne, etc. Reliez-les de gauche à droite pour transformer la table extraite de votre PDF en exactement le résultat voulu."
     },
     {
       "key": "11",
-      "label": "Que se passe-t-il si l'extraction rate un champ ?",
-      "text": "Vous pouvez définir des règles d'extraction personnalisées pour gérer les cas particuliers. Si une structure de document spécifique n'est pas couverte nativement, nous proposons également le développement de nœuds personnalisés."
+      "label": "Que faire si l'extraction manque un champ ou se trompe ?",
+      "text": "Ajustez votre surlignage ou ajoutez un guide de colonne, puis relancez la conversion. Pour corriger les données elles-mêmes, utilisez des nœuds comme Cleaner, Text Parser ou Regular Expressions. Si vos documents demandent quelque chose qu'aucun nœud ne couvre, nous développons aussi des nœuds sur mesure."
     },
     {
       "key": "12",
       "label": "Y a-t-il une limite de taille de fichier ?",
-      "text": "Altera gère les documents commerciaux standard sans problème. Les fichiers très volumineux peuvent affecter le temps de traitement, mais il n'y a pas de limite stricte."
+      "text": "Il n'y a pas de limite fixe. Les documents volumineux ou très longs prennent simplement un peu plus de temps à ouvrir et à convertir — le PDF Converter charge une page à la fois."
     },
     {
       "key": "13",
       "label": "Quelles langues sont prises en charge ?",
-      "text": "Altera prend principalement en charge les documents en anglais et en français. La prise en charge de langues supplémentaires est en cours d'ajout."
+      "text": "Altera lit le texte intégré à votre PDF plutôt que de reconnaître des caractères : il n'est donc pas lié à une langue de document particulière. L'interface de l'application est actuellement en anglais."
     },
     {
       "key": "14",
       "label": "Comment obtenir de l'aide en cas de problème ?",
-      "text": "Vous pouvez nous contacter directement à support@alteradatasuite.com. Nous sommes une petite équipe, vous obtiendrez donc toujours une vraie réponse — pas un bot."
+      "text": "Contactez-nous directement à support@alteradatasuite.com. Nous sommes une petite équipe : vous aurez toujours une vraie réponse, pas un robot."
+    },
+    {
+      "key": "15",
+      "label": "Vers quels formats puis-je exporter ?",
+      "text": "Excel (.xlsx) et CSV, avec le nœud Export. Vous pouvez aussi importer des fichiers Excel et CSV dans un workflow avec le nœud Input Data — par exemple pour rapprocher un relevé de votre comptabilité."
+    },
+    {
+      "key": "16",
+      "label": "Altera fonctionne-t-il hors ligne ?",
+      "text": "Oui. Tout s'exécute sur votre ordinateur, vous pouvez donc travailler sans connexion Internet. L'application doit seulement se connecter au moins une fois tous les 7 jours pour renouveler votre licence."
+    },
+    {
+      "key": "17",
+      "label": "Puis-je réutiliser un workflow chaque mois ?",
+      "text": "Oui. Enregistrez votre workflow et tout est conservé — y compris les zones surlignées sur le PDF. Quand le fichier du mois suivant arrive, remplacez-le et relancez les mêmes étapes."
     }
   ],
   "docs": {
@@ -645,7 +660,7 @@
       "payroll": {
         "tab": "RH et paie",
         "title": "Transformez vos bulletins de paie en synthèse",
-        "summary": "Extrayez chaque ligne d'un lot de bulletins de paie PDF et totalisez gains et retenues par salarié, prêts pour votre contrôle de paie.",
+        "summary": "Extrayez chaque ligne de vos bulletins de paie PDF et totalisez gains et retenues par salarié, prêts pour votre contrôle de paie.",
         "metaTitle": "Bulletins de paie PDF vers une synthèse Excel",
         "metaDescription": "Extrayez gains et retenues de vos bulletins de paie PDF et créez une synthèse de paie par salarié dans Excel, sans code.",
         "lead": "Les bulletins de paie sont faits pour être lus, pas pour les tableurs. Altera extrait leurs lignes et les regroupe en une ligne de synthèse par salarié.",
@@ -686,7 +701,7 @@
         "outcomes": [
           "Une ligne de synthèse propre par salarié",
           "Repérez les paiements inhabituels avant la clôture de la paie",
-          "Le même workflow traite le lot du mois suivant"
+          "Le même workflow traite les bulletins du mois suivant"
         ],
         "canvas": {
           "tables": {

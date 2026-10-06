@@ -299,7 +299,7 @@
         "subtitle": "All-In-One Solution, billed monthly",
         "features": [
           "Unlimited PDF Processing",
-          "Batch PDF Processing",
+          "Multi-page PDF Support",
           "10+ Nodes",
           "Email Support",
           "Single Machine License",
@@ -311,7 +311,7 @@
         "subtitle": "Save 20% vs monthly billing",
         "features": [
           "Unlimited PDF Processing",
-          "Batch PDF Processing",
+          "Multi-page PDF Support",
           "10+ Nodes",
           "Priority Email Support",
           "Single Machine License",
@@ -323,7 +323,7 @@
         "subtitle": "Pay once, own it forever",
         "features": [
           "Unlimited PDF Processing",
-          "Batch PDF Processing",
+          "Multi-page PDF Support",
           "10+ Nodes",
           "Priority Support",
           "Single Machine License",
@@ -412,72 +412,87 @@
     {
       "key": "1",
       "label": "What types of PDFs does Altera support?",
-      "text": "Altera works with any PDF — payslips, invoices, bank statements, reports, and more. If it has structured data, Altera can extract it."
+      "text": "Any PDF with selectable text — payslips, invoices, bank statements, reports, and more. If you can select the text in your PDF viewer, Altera can extract it. Scanned, image-only PDFs need OCR first (see below)."
     },
     {
       "key": "2",
       "label": "How accurate is the extraction?",
-      "text": "Altera extracts data with high accuracy. You can define custom rules to ensure every field maps exactly where you need it."
+      "text": "Altera reads the text that's already inside the PDF, so values come out exactly as they appear — nothing is guessed or retyped. You control what gets extracted by highlighting the areas you need, and you can add column guides where columns sit close together."
     },
     {
       "key": "3",
       "label": "Do I need to install anything?",
-      "text": "Altera is a standalone desktop app. Download the installer for Windows or macOS and you're ready to start extracting in seconds — no other software required."
+      "text": "Yes, Altera is a desktop app. Download the installer for Windows and you're ready to go — no other software required. macOS and Linux versions are coming soon."
     },
     {
       "key": "4",
       "label": "Can I process multiple PDFs at once?",
-      "text": "Yes. Altera supports batch processing so you can drop in hundreds of PDFs and get all the data structured in one go."
+      "text": "Altera works on one PDF at a time, and that PDF can have hundreds of pages. Save your workflow once, then open the next file and run the same steps again — your highlights and settings are kept."
     },
     {
       "key": "5",
       "label": "Is my data secure?",
-      "text": "Your files are processed securely and never stored beyond the active session. We don't share or retain your data."
+      "text": "Yes. Altera runs on your own computer: your PDFs are processed locally and never uploaded to our servers or anyone else's. The app only goes online to check your license."
     },
     {
       "key": "6",
       "label": "Can I try it before paying?",
-      "text": "Absolutely — you can start for free and explore the core features before committing to a plan."
+      "text": "Yes — every plan comes with a 7-day free trial with all features included, and no credit card is required."
     },
     {
       "key": "7",
       "label": "Do I need programming knowledge to use Altera?",
-      "text": "Not at all. Altera is designed to be used entirely visually — you drag, drop, and configure — no code required."
+      "text": "Not at all. You highlight data on the PDF, then build your workflow by connecting nodes and setting their options — no code or formulas required."
     },
     {
       "key": "8",
       "label": "Can Altera handle scanned or image-based PDFs?",
-      "text": "Altera works best with digitally generated PDFs. Scanned documents with OCR-readable text are also supported, though accuracy may vary depending on scan quality."
+      "text": "Altera reads the text layer inside a PDF and doesn't do OCR itself. A scan that's only an image has no text layer, so run it through OCR software first — then Altera can extract it like any other PDF."
     },
     {
       "key": "9",
       "label": "What output format does the extracted data come in?",
-      "text": "Altera outputs clean, structured tables directly in the app — ready to analyse, export, or feed into your next workflow step."
+      "text": "Your data comes out as a clean table inside the app. From there you can keep transforming it with nodes, or save it to Excel (.xlsx) or CSV with the Export node."
     },
     {
       "key": "10",
-      "label": "Can I use different nodes for different document types?",
-      "text": "Yes. Each node is purpose-built for a specific extraction task. You can mix and match nodes in the same workflow to handle different document types in one pass."
+      "label": "What are nodes, and how do they work together?",
+      "text": "Nodes are the building blocks of a workflow. Each one does a single job on your data — clean text, filter rows, merge tables, total a column, and more. Connect them from left to right to turn the table extracted from your PDF into exactly the result you need."
     },
     {
       "key": "11",
       "label": "What if the extraction misses a field or gets it wrong?",
-      "text": "You can define custom extraction rules to handle edge cases. If a specific document structure isn't covered out of the box, we also offer custom node development."
+      "text": "Adjust your highlight or add a column guide, and convert again. To fix the data itself, use nodes like Cleaner, Text Parser, or Regular Expressions. If your documents need something no node covers, we also build custom nodes."
     },
     {
       "key": "12",
       "label": "Is there a file size limit?",
-      "text": "Altera handles standard business documents without issue. Very large files or unusually complex layouts may affect processing time, but there is no hard cap."
+      "text": "There's no fixed limit. Large or very long documents simply take a little longer to open and convert — the PDF Converter loads one page at a time."
     },
     {
       "key": "13",
       "label": "What languages are supported?",
-      "text": "Altera primarily supports English and French documents. Support for additional languages is being added as the suite grows."
+      "text": "Altera reads the text that's embedded in your PDF rather than recognizing characters, so it isn't tied to a particular document language. The app's interface is currently in English."
     },
     {
       "key": "14",
       "label": "How do I get support if something goes wrong?",
       "text": "You can reach us directly at support@alteradatasuite.com. We're a small team so you'll always get a real response — not a bot."
+    },
+    {
+      "key": "15",
+      "label": "What file formats can I export to?",
+      "text": "Excel (.xlsx) and CSV, using the Export node. You can also bring Excel and CSV files into a workflow with the Input Data node — for example, to match a statement against your ledger."
+    },
+    {
+      "key": "16",
+      "label": "Does Altera work offline?",
+      "text": "Yes. Everything runs on your computer, so you can work without an internet connection. The app only needs to go online at least once every 7 days to renew your license."
+    },
+    {
+      "key": "17",
+      "label": "Can I reuse a workflow every month?",
+      "text": "Yes. Save your workflow and everything is kept — including the areas you highlighted on the PDF. When next month's file arrives, swap it in and run the same steps again."
     }
   ],
   "docs": {
@@ -645,7 +660,7 @@
       "payroll": {
         "tab": "HR & Payroll",
         "title": "Turn payslips into a payroll summary",
-        "summary": "Extract every line from a batch of PDF payslips and total earnings and deductions per employee, ready for your payroll check.",
+        "summary": "Extract every line from your PDF payslips and total earnings and deductions per employee, ready for your payroll check.",
         "metaTitle": "Payslip PDF to Excel Payroll Summary",
         "metaDescription": "Extract earnings and deductions from PDF payslips and build a per-employee payroll summary in Excel, without code.",
         "lead": "Payslips are made for people to read, not for spreadsheets. Altera pulls the lines out of your PDF payslips and rolls them up into one summary row per employee.",
@@ -686,7 +701,7 @@
         "outcomes": [
           "One clean summary row per employee",
           "Spot unusual payments before payroll closes",
-          "The same workflow handles next month's batch"
+          "The same workflow handles next month's payslips"
         ],
         "canvas": {
           "tables": {

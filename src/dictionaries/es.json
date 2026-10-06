@@ -299,7 +299,7 @@
         "subtitle": "Solución todo en uno, facturada mensualmente",
         "features": [
           "Procesamiento de PDF ilimitado",
-          "Procesamiento de PDF por lotes",
+          "Compatibilidad con PDF de varias páginas",
           "10+ Nodos",
           "Soporte por correo electrónico",
           "Licencia para una máquina",
@@ -311,7 +311,7 @@
         "subtitle": "Ahorra un 20 % frente a la facturación mensual",
         "features": [
           "Procesamiento de PDF ilimitado",
-          "Procesamiento de PDF por lotes",
+          "Compatibilidad con PDF de varias páginas",
           "10+ Nodos",
           "Soporte prioritario por correo",
           "Licencia para una máquina",
@@ -323,7 +323,7 @@
         "subtitle": "Paga una vez, consérvalo para siempre",
         "features": [
           "Procesamiento de PDF ilimitado",
-          "Procesamiento de PDF por lotes",
+          "Compatibilidad con PDF de varias páginas",
           "10+ Nodos",
           "Soporte prioritario",
           "Licencia para una máquina",
@@ -411,73 +411,88 @@
   "allFaqs": [
     {
       "key": "1",
-      "label": "¿Qué tipos de PDFs admite Altera?",
-      "text": "Altera funciona con cualquier PDF — nóminas, facturas, extractos bancarios, informes y más. Si tiene datos estructurados, Altera puede extraerlos."
+      "label": "¿Qué tipos de PDF admite Altera?",
+      "text": "Cualquier PDF con texto seleccionable: nóminas, facturas, extractos bancarios, informes y más. Si puedes seleccionar el texto en tu visor de PDF, Altera puede extraerlo. Los PDF escaneados que son solo imágenes necesitan OCR primero (ver más abajo)."
     },
     {
       "key": "2",
-      "label": "¿Qué tan precisa es la extracción?",
-      "text": "Altera extrae datos con alta precisión. Puedes definir reglas personalizadas para asegurarte de que cada campo se mapee exactamente donde lo necesitas."
+      "label": "¿Qué precisión tiene la extracción?",
+      "text": "Altera lee el texto que ya está dentro del PDF, así que los valores salen exactamente como aparecen: nada se adivina ni se vuelve a teclear. Tú decides qué se extrae resaltando las zonas que necesitas, y puedes añadir guías de columna donde las columnas estén muy juntas."
     },
     {
       "key": "3",
       "label": "¿Necesito instalar algo?",
-      "text": "Altera está construido para Orange Data Mining. Instalarlo dentro de Orange toma segundos — solo añade el complemento y ya estás listo para empezar a extraer."
+      "text": "Sí, Altera es una aplicación de escritorio. Descarga el instalador para Windows y listo, sin ningún otro software. Las versiones para macOS y Linux llegarán pronto."
     },
     {
       "key": "4",
-      "label": "¿Puedo procesar varios PDFs a la vez?",
-      "text": "Sí. Altera admite el procesamiento por lotes para que puedas subir cientos de PDFs y obtener todos los datos estructurados de una sola vez."
+      "label": "¿Puedo procesar varios PDF a la vez?",
+      "text": "Altera trabaja con un PDF cada vez, y ese PDF puede tener cientos de páginas. Guarda tu flujo una vez, abre el siguiente archivo y vuelve a ejecutar los mismos pasos: tus resaltados y ajustes se conservan."
     },
     {
       "key": "5",
       "label": "¿Están seguros mis datos?",
-      "text": "Tus archivos se procesan de forma segura y nunca se almacenan más allá de la sesión activa. No compartimos ni retenemos tus datos."
+      "text": "Sí. Altera se ejecuta en tu propio ordenador: tus PDF se procesan localmente y nunca se suben a nuestros servidores ni a los de nadie. La aplicación solo se conecta a internet para comprobar tu licencia."
     },
     {
       "key": "6",
       "label": "¿Puedo probarlo antes de pagar?",
-      "text": "Por supuesto — puedes empezar gratis y explorar las funciones principales antes de comprometerte con un plan."
+      "text": "Sí: todos los planes incluyen una prueba gratuita de 7 días con todas las funciones, sin tarjeta de crédito."
     },
     {
       "key": "7",
-      "label": "¿Necesito conocimientos de programación?",
-      "text": "Para nada. Altera está diseñado para usarse visualmente dentro de Orange Data Mining. Arrastra, suelta y configura — sin código requerido."
+      "label": "¿Necesito saber programar para usar Altera?",
+      "text": "En absoluto. Resaltas los datos en el PDF y construyes tu flujo conectando nodos y ajustando sus opciones, sin código ni fórmulas."
     },
     {
       "key": "8",
-      "label": "¿Puede Altera manejar PDFs escaneados?",
-      "text": "Altera funciona mejor con PDFs generados digitalmente. Los documentos escaneados con texto legible por OCR también son compatibles, aunque la precisión puede variar según la calidad del escaneo."
+      "label": "¿Puede Altera procesar PDF escaneados o basados en imágenes?",
+      "text": "Altera lee la capa de texto de un PDF y no hace OCR por sí mismo. Un escaneo que es solo una imagen no tiene capa de texto, así que pásalo primero por un software de OCR; después Altera podrá extraerlo como cualquier otro PDF."
     },
     {
       "key": "9",
-      "label": "¿En qué formato de salida vienen los datos extraídos?",
-      "text": "Altera genera tablas limpias y estructuradas directamente dentro de Orange Data Mining — listas para analizar, exportar o alimentar el siguiente paso de tu flujo de trabajo."
+      "label": "¿En qué formato salen los datos extraídos?",
+      "text": "Tus datos salen como una tabla limpia dentro de la aplicación. Desde ahí puedes seguir transformándolos con nodos o guardarlos en Excel (.xlsx) o CSV con el nodo Export."
     },
     {
       "key": "10",
-      "label": "¿Puedo usar diferentes nodos para diferentes tipos de documentos?",
-      "text": "Sí. Cada nodo está diseñado para una tarea de extracción específica. Puedes combinar nodos en el mismo flujo de trabajo para manejar diferentes tipos de documentos en una sola pasada."
+      "label": "¿Qué son los nodos y cómo funcionan juntos?",
+      "text": "Los nodos son las piezas de un flujo de trabajo. Cada uno hace una sola tarea con tus datos: limpiar texto, filtrar filas, combinar tablas, totalizar una columna y más. Conéctalos de izquierda a derecha para convertir la tabla extraída de tu PDF exactamente en el resultado que necesitas."
     },
     {
       "key": "11",
-      "label": "¿Qué pasa si la extracción omite un campo?",
-      "text": "Puedes definir reglas de extracción personalizadas para manejar casos extremos. Si una estructura de documento específica no está cubierta de base, también ofrecemos desarrollo de nodos personalizados."
+      "label": "¿Qué pasa si la extracción omite un campo o se equivoca?",
+      "text": "Ajusta el resaltado o añade una guía de columna y vuelve a convertir. Para corregir los propios datos, usa nodos como Cleaner, Text Parser o Regular Expressions. Si tus documentos necesitan algo que ningún nodo cubre, también desarrollamos nodos a medida."
     },
     {
       "key": "12",
       "label": "¿Hay un límite de tamaño de archivo?",
-      "text": "Altera maneja documentos comerciales estándar sin problemas. Los archivos muy grandes pueden afectar el tiempo de procesamiento, pero no hay un límite estricto."
+      "text": "No hay un límite fijo. Los documentos grandes o muy largos simplemente tardan un poco más en abrirse y convertirse: el PDF Converter carga una página cada vez."
     },
     {
       "key": "13",
-      "label": "¿Qué idiomas son compatibles?",
-      "text": "Altera admite principalmente documentos en inglés y francés. Se está añadiendo compatibilidad con idiomas adicionales a medida que la suite crece."
+      "label": "¿Qué idiomas se admiten?",
+      "text": "Altera lee el texto incrustado en tu PDF en lugar de reconocer caracteres, así que no depende de un idioma de documento concreto. La interfaz de la aplicación está actualmente en inglés."
     },
     {
       "key": "14",
-      "label": "¿Cómo obtengo soporte si algo falla?",
-      "text": "Puedes contactarnos directamente en support@alteradatasuite.com. Somos un equipo pequeño, por lo que siempre obtendrás una respuesta real — no un bot."
+      "label": "¿Cómo obtengo ayuda si algo falla?",
+      "text": "Escríbenos directamente a support@alteradatasuite.com. Somos un equipo pequeño, así que siempre recibirás una respuesta real, no de un bot."
+    },
+    {
+      "key": "15",
+      "label": "¿A qué formatos puedo exportar?",
+      "text": "Excel (.xlsx) y CSV, con el nodo Export. También puedes llevar archivos Excel y CSV a un flujo con el nodo Input Data, por ejemplo para cotejar un extracto con tu contabilidad."
+    },
+    {
+      "key": "16",
+      "label": "¿Funciona Altera sin conexión?",
+      "text": "Sí. Todo se ejecuta en tu ordenador, así que puedes trabajar sin conexión a internet. La aplicación solo necesita conectarse al menos una vez cada 7 días para renovar tu licencia."
+    },
+    {
+      "key": "17",
+      "label": "¿Puedo reutilizar un flujo cada mes?",
+      "text": "Sí. Guarda tu flujo y se conserva todo, incluidas las zonas que resaltaste en el PDF. Cuando llegue el archivo del mes siguiente, cámbialo y vuelve a ejecutar los mismos pasos."
     }
   ],
   "docs": {
@@ -645,7 +660,7 @@
       "payroll": {
         "tab": "RR. HH. y nóminas",
         "title": "Convierte las nóminas en un resumen",
-        "summary": "Extrae cada línea de un lote de nóminas en PDF y totaliza devengos y deducciones por empleado, listo para tu control de nóminas.",
+        "summary": "Extrae cada línea de tus nóminas en PDF y totaliza devengos y deducciones por empleado, listo para tu control de nóminas.",
         "metaTitle": "Nóminas en PDF a un resumen en Excel",
         "metaDescription": "Extrae devengos y deducciones de nóminas en PDF y crea un resumen por empleado en Excel, sin código.",
         "lead": "Las nóminas están hechas para leerlas, no para hojas de cálculo. Altera extrae sus líneas y las agrupa en una fila de resumen por empleado.",
@@ -686,7 +701,7 @@
         "outcomes": [
           "Una fila de resumen limpia por empleado",
           "Detecta pagos inusuales antes del cierre de nóminas",
-          "El mismo flujo procesa el lote del mes siguiente"
+          "El mismo flujo procesa las nóminas del mes siguiente"
         ],
         "canvas": {
           "tables": {

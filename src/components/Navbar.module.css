@@ -19,6 +19,11 @@
   flex-shrink: 0;
 }
 
+.logoImg {
+  height: 32px;
+  width: auto;
+}
+
 /* ── Nav links ── */
 .desktopNav {
   position: absolute;
@@ -62,8 +67,8 @@
   display: none !important;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   padding: 0;
   border: none;
   background: transparent;
@@ -79,6 +84,10 @@
 @media (max-width: 767px) {
   .desktopNav {
     display: none;
+  }
+
+  .logoImg {
+    height: 40px;
   }
   .desktopCta {
     display: none;
@@ -114,7 +123,7 @@
   padding: 32px 24px;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 0;
   transform: translateX(100%);
   transition: transform 0.3s ease;
   box-shadow: -4px 0 24px rgba(0, 0, 0, 0.12);
@@ -123,10 +132,31 @@
   transform: translateX(0);
 }
 
+/* Full-width 48px rows: comfortable tap targets */
+.drawerLink {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+
+.drawerLink:first-of-type {
+  margin-top: 12px;
+  border-top: 1px solid #eee;
+}
+
+.drawerPanel > a:last-child {
+  margin-top: 24px;
+}
+
 .drawerClose {
   align-self: flex-end;
-  width: 32px;
-  height: 32px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -147,6 +147,15 @@
     padding: 48px 24px 100px;
   }
 
+  /* Bigger tap targets: ~34px rows instead of 17px text lines */
+  .colList {
+    gap: 0;
+  }
+  .colLink {
+    padding: 8px 0;
+    font-size: 15px;
+  }
+
   .inner {
     grid-template-columns: 1fr;
     gap: 32px;

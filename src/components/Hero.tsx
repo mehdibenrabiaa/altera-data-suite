@@ -55,7 +55,7 @@ export default function Hero({ t, lang, featureCards }: Props) {
       <p className={styles.subtitle}>{t.subtitle}</p>
 
       {/* CTAs */}
-      <div style={{ display: "flex", gap: 12, justifyContent: "center" }}>
+      <div className={styles.ctas} style={{ display: "flex", gap: 12, justifyContent: "center" }}>
         <Button
           type="primary"
           size="large"

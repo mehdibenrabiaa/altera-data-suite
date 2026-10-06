@@ -91,6 +91,18 @@
   .statValue {
     font-size: 42px;
   }
+  /* Two stats per row instead of one */
+  .statCol,
+  .statColRight {
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+  }
+  .stat {
+    flex: 1 1 0;
+    min-width: 0;
+  }
   .chartImg {
     width: 260px;
   }

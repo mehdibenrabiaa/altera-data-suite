@@ -82,7 +82,7 @@ function Navbar({ t, lang }: Props) {
             alt="Altera Data Suite"
             width={32}
             height={32}
-            style={{ height: 32, width: "auto" }}
+            className={styles.logoImg}
             priority
             unoptimized
           />
@@ -151,12 +151,7 @@ function Navbar({ t, lang }: Props) {
             key={href}
             href={href}
             onClick={() => setDrawerOpen(false)}
-            style={{
-              color: "#444",
-              fontSize: 16,
-              fontWeight: 500,
-              textDecoration: "none",
-            }}
+            className={styles.drawerLink}
           >
             {label}
           </SamePageLink>

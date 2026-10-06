@@ -100,25 +100,27 @@
 
 .dots {
   display: flex;
-  gap: 8px;
-  margin-top: 24px;
+  margin: 16px 0 0 -9px;
 }
 
+/* The visible dot is 8px; transparent padding makes a ~26px tap target */
 .dot {
+  box-sizing: content-box;
   width: 8px;
   height: 8px;
-  padding: 0;
+  padding: 9px;
   border: none;
   border-radius: 50%;
   background: #c8ccd2;
+  background-clip: content-box;
   cursor: pointer;
-  transition: width 0.2s, background 0.2s;
+  transition: width 0.2s, background-color 0.2s;
 }
 
 .dotActive {
   width: 22px;
-  border-radius: 4px;
-  background: var(--color-primary);
+  border-radius: 13px;
+  background-color: var(--color-primary);
 }
 
 .canvasWrap {

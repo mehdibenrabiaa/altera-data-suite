@@ -83,3 +83,15 @@
   color: var(--color-primary);
   flex-shrink: 0;
 }
+
+/* Phones: comfortable tap targets for the picker and its options */
+@media (max-width: 600px) {
+  .trigger {
+    height: 40px;
+    padding: 0 12px;
+    font-size: 14px;
+  }
+  .option {
+    min-height: 44px;
+  }
+}

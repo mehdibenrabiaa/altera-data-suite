@@ -238,3 +238,10 @@
 .canvas :global(.react-flow__controls-button) {
   border-bottom: 1px solid var(--bg-hover);
 }
+
+@media (max-width: 600px) {
+  .canvas :global(.react-flow__controls-button) {
+    width: 36px;
+    height: 36px;
+  }
+}

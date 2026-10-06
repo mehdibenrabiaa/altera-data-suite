@@ -157,13 +157,39 @@
     padding: 40px 20px 48px;
   }
   .heading {
-    font-size: 38px;
+    /* As big as fits: "The App that turns" stays on one line at any
+       phone width (≈ 8.8 characters' worth of width per font-size px) */
+    font-size: clamp(32px, calc((100vw - 40px) / 8.8), 46px);
     letter-spacing: -1px;
   }
   .subtitle {
-    font-size: 15px;
+    font-size: 16px;
+  }
+  /* Announcement pill: readable on phones */
+  .announcement {
+    padding: 6px 16px 6px 6px;
+    gap: 10px;
+  }
+  .announcementBadge {
+    font-size: 13px;
+    padding: 5px 12px;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
   .announcementText {
-    font-size: 11px;
+    font-size: 14px;
+  }
+  /* Start for free / Watch Demo: slightly bigger touch targets */
+  /* Wrap onto two full-width rows when both don't fit (long translations) */
+  .ctas {
+    flex-wrap: wrap;
+  }
+  .ctas a,
+  .ctas button {
+    flex: 1 1 auto;
+    height: 50px;
+    padding: 0 24px;
+    font-size: 16px;
   }
 }
+

@@ -26,6 +26,7 @@ interface PricingT {
   includesLabel: string;
   checkoutSuccess: string;
   checkoutError: string;
+  trialNote?: string;
   plans: PricingPlan[];
 }
 
@@ -49,9 +50,9 @@ const DEFAULT_T: PricingT = {
   checkoutSuccess: "Check your email for your license key.",
   checkoutError:   "Checkout isn't available right now. Please try again in a moment or contact support@alteradatasuite.com.",
   plans: [
-    { name: "Monthly",   subtitle: "All-In-One Solution, billed monthly",                    features: ["Unlimited PDF Processing","Batch PDF Processing","10+ Nodes","Email Support","Single Machine License","Free Updates & Improvements"] },
-    { name: "Yearly",    subtitle: "Save 20% vs monthly billing",                              features: ["Unlimited PDF Processing","Batch PDF Processing","10+ Nodes","Priority Email Support","Single Machine License","Free Updates & Improvements"] },
-    { name: "Lifetime",  subtitle: "Pay once, own it forever",                                features: ["Unlimited PDF Processing","Batch PDF Processing","10+ Nodes","Priority Support","Single Machine License","Free Updates for 1 Year"] },
+    { name: "Monthly",   subtitle: "All-In-One Solution, billed monthly",                    features: ["Unlimited PDF Processing","Multi-page PDF Support","10+ Nodes","Email Support","Single Machine License","Free Updates & Improvements"] },
+    { name: "Yearly",    subtitle: "Save 20% vs monthly billing",                              features: ["Unlimited PDF Processing","Multi-page PDF Support","10+ Nodes","Priority Email Support","Single Machine License","Free Updates & Improvements"] },
+    { name: "Lifetime",  subtitle: "Pay once, own it forever",                                features: ["Unlimited PDF Processing","Multi-page PDF Support","10+ Nodes","Priority Support","Single Machine License","Free Updates for 1 Year"] },
   ],
 };
 
@@ -88,6 +89,8 @@ export default function PricingSection({ t = DEFAULT_T, lang = "en" }: Props) {
           );
         })}
       </div>
+
+      {t.trialNote && <p className={styles.trialNote}>{t.trialNote}</p>}
     </section>
   );
 }

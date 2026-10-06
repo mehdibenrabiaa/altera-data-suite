@@ -36,9 +36,7 @@ export default function FeatureCardsSection({ t }: Props) {
             <div className={styles.cardBody}>
               <p className={styles.label}>{card.label}</p>
               <p className={styles.title}>
-                {card.line1}
-                <br />
-                {card.line2}
+                {card.line1} {card.line2}
               </p>
             </div>
           </div>

@@ -1,0 +1,194 @@
+.page {
+  padding: 72px 24px 0;
+}
+
+/* ── Hero ── */
+
+.hero {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.heroHeading {
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #111;
+  margin: 0 0 20px;
+}
+
+.lead {
+  font-size: 19px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+}
+
+/* ── Article ── */
+
+.article {
+  max-width: 760px;
+  margin: 64px auto 0;
+}
+
+.prose {
+  font-size: 17px;
+  line-height: 1.75;
+  color: #333;
+  margin: 0 0 20px;
+}
+
+/* ── Example workflow (live canvas, see AppWorkflowCanvas) ── */
+
+/* Wider than the text column so the nodes stay legible */
+.figure {
+  width: min(1040px, calc(100vw - 48px));
+  margin: 0 0 0 calc(50% - min(1040px, calc(100vw - 48px)) / 2);
+}
+
+@media (max-width: 640px) {
+  .figure {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.figure > div {
+  margin-bottom: 0;
+}
+
+.caption {
+  margin: 14px 0 44px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+  text-align: center;
+}
+
+/* ── Reasons ── */
+
+.reason {
+  margin-top: 48px;
+}
+
+.reasonTitle {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #111;
+  margin: 0 0 20px;
+}
+
+.reasonNumber {
+  color: var(--color-primary);
+}
+
+/* ── What makes Altera different ── */
+
+.different {
+  margin-top: 72px;
+}
+
+.differentHeading {
+  font-size: 30px;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 24px;
+}
+
+.differentGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.differentCard {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 22px;
+}
+
+.differentTitle {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.35;
+  color: #111;
+  margin: 0 0 10px;
+}
+
+.differentBody {
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: #555;
+  margin: 0;
+}
+
+/* ── CTA ── */
+
+.cta {
+  max-width: 760px;
+  margin: 88px auto 0;
+  padding: 0 0 104px;
+  text-align: center;
+}
+
+.ctaHeading {
+  font-size: 36px;
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 12px;
+}
+
+.ctaText {
+  font-size: 17px;
+  color: #555;
+  margin: 0 0 28px;
+}
+
+.ctaButtons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* ── Responsive ── */
+
+@media (max-width: 860px) {
+  .differentGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 48px 16px 0;
+  }
+
+  .heroHeading {
+    font-size: 34px;
+  }
+
+  .lead {
+    font-size: 17px;
+  }
+
+  .article {
+    margin-top: 44px;
+  }
+
+  .prose {
+    font-size: 16px;
+  }
+
+  .reasonTitle,
+  .differentHeading {
+    font-size: 24px;
+  }
+
+  .ctaHeading {
+    font-size: 28px;
+  }
+}

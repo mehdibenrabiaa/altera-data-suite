@@ -1,7 +1,18 @@
 "use client";
 
-import type { CSSProperties, MouseEventHandler, ReactNode } from "react";
+import type { CSSProperties, MouseEvent, MouseEventHandler, ReactNode } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { usePageTransition } from "@/components/PageTransition";
 import styles from "./Button.module.css";
+
+// Site pages navigate client-side (no full reload), same as the navbar's
+// text links (SamePageLink). Everything else stays a plain <a>: external
+// URLs, new-tab links, and /api/ routes -- e.g. /api/download/windows
+// redirects to the installer file, which client navigation can't follow.
+function isInternalPage(href: string, target?: string): boolean {
+  return href.startsWith("/") && !href.startsWith("//") && !href.startsWith("/api/") && !target;
+}
 
 interface ButtonProps {
   type?: "primary" | "default" | "text";
@@ -39,6 +50,8 @@ export default function Button({
   style,
   children,
 }: ButtonProps) {
+  const pathname = usePathname();
+  const { replay, startProgress } = usePageTransition();
   const classes = [styles.btn, styles[type], styles[size], className].filter(Boolean).join(" ");
   const isDisabled = disabled || loading;
   const content = (
@@ -51,6 +64,23 @@ export default function Button({
   // Matches antd's own behavior: an href'd Button with disabled/loading
   // renders as a non-interactive element (no navigation), not a disabled
   // <a> (which can't actually be disabled in HTML).
+  if (href && !isDisabled && isInternalPage(href, target)) {
+    const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
+      onClick?.(e);
+      if (pathname === href) {
+        e.preventDefault();
+        replay();
+      } else {
+        startProgress();
+      }
+    };
+    return (
+      <Link href={href} rel={rel} onClick={handleClick} className={classes} style={style}>
+        {content}
+      </Link>
+    );
+  }
+
   if (href && !isDisabled) {
     return (
       <a href={href} target={target} rel={rel} onClick={onClick} className={classes} style={style}>

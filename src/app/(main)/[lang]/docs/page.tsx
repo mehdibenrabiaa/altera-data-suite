@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, hasLocale, LOCALES } from "@/i18n/dictionaries";
-import DocsClient from "@/app/docs/DocsClient";
+import DocsIndex from "@/app/docs/DocsIndex";
+import { withDefaults } from "@/app/docs/docsText";
 
 const BASE_URL = "https://alteradatasuite.com";
 
@@ -42,5 +43,5 @@ export default async function DocsPage({
   if (!hasLocale(lang)) notFound();
   const dict = await getDictionary(lang);
 
-  return <DocsClient t={dict.docs} />;
+  return <DocsIndex lang={lang} t={withDefaults(dict.docs)} />;
 }

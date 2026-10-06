@@ -1,4 +1,10 @@
 .section {
+  /* The hero is a centered flex column, so without an explicit width this
+     section shrink-wraps its content -- longer translations (French,
+     German, ...) made it wider and the cards bigger than in English.
+     Always take the full row so every language gets the same card size. */
+  width: 100%;
+  box-sizing: border-box;
   padding: 80px 60px;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
@@ -30,6 +36,10 @@
      translation long enough to overflow is clipped by overflow:hidden
      above instead of resizing the card. */
   min-height: 0;
+  /* Card text is sized in cqi (1% of the card's width) below, so it
+     scales with the card and its artwork instead of overlapping the
+     artwork when the cards get narrow. */
+  container-type: inline-size;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -67,23 +77,24 @@
 .cardBody {
   position: relative;
   z-index: 1;
-  padding: 28px 30px 32px;
+  padding: 7cqi 6.5cqi 8cqi;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 2.5cqi;
 }
 
 .label {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-size: clamp(14px, 5.25cqi, 21px);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 1.25;
   color: #1a1a1a;
   margin: 0;
   text-transform: uppercase;
 }
 
 .title {
-  font-size: 18px;
+  font-size: clamp(13px, 4.25cqi, 17px);
   font-weight: 400;
   color: #1a1a1a;
   line-height: 1.45;
@@ -91,7 +102,9 @@
 }
 
 /* ── Responsive ── */
-@media (max-width: 900px) {
+/* Below ~1100px three cards side by side get too small for their
+   artwork and text -- stack them instead. */
+@media (max-width: 1100px) {
   .section {
     padding: 60px 24px;
     border-bottom-left-radius: 24px;
@@ -107,16 +120,11 @@
     transform: none;
     box-shadow: 0px 3px 8px #00000029;
   }
-  .label {
-    font-size: 12px;
-  }
-  .title {
-    font-size: 16px;
-  }
 }
 
 @media (max-width: 600px) {
+  /* The hero around this section already has 24px side padding */
   .section {
-    padding: 48px 16px;
+    padding: 48px 0;
   }
 }

@@ -37,7 +37,7 @@ export default function Hero({ t, lang, featureCards }: Props) {
   return (
     <section className={styles.section}>
       {/* Announcement pill */}
-      <Link href={`/${lang}/changelog`} className={styles.announcement}>
+      <Link href={`/${lang}/download`} className={styles.announcement}>
         <span className={styles.announcementBadge}>{t.announcementBadge}</span>
         <span className={styles.announcementText}>{t.announcementText}</span>
         <span className={styles.announcementArrow}>›</span>
@@ -59,7 +59,7 @@ export default function Hero({ t, lang, featureCards }: Props) {
         <Button
           type="primary"
           size="large"
-          href={`/${lang}/pricing`}
+          href={`/${lang}/download`}
           style={{ fontWeight: 600 }}
         >
           {t.startFree}

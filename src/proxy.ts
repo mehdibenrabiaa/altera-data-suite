@@ -48,6 +48,9 @@ export const config = {
     // api/ excluded too -- route handlers (e.g. /api/download/windows)
     // aren't locale pages and have no /<locale>/api/... counterpart, so
     // prefixing them here just breaks them with a redirect to a 404.
-    "/((?!_next/static|_next/image|favicon\\.ico|api/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|woff2?)$).*)",
+    // sitemap.xml/robots.txt excluded for the same reason -- they're
+    // site-root files for crawlers, and the redirect served a 404 page
+    // instead, so search engines couldn't read either.
+    "/((?!_next/static|_next/image|favicon\\.ico|sitemap\\.xml|robots\\.txt|api/|.*\\.(?:svg|png|jpg|jpeg|gif|webp|woff2?)$).*)",
   ],
 };

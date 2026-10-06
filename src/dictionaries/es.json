@@ -1,309 +1,1004 @@
 {
   "meta": {
-    "home":      { "title": "Extracción de PDF para Orange Data Mining | Altera Data Suite","description": "Extrae facturas, nóminas e informes de cualquier PDF — sin código. El complemento sin código de Orange Data Mining para extracción de datos estructurados. Pruébalo gratis." },
-    "about":     { "title": "Acerca de",              "description": "Conoce Altera Data Suite — quién lo creó, por qué y qué lo impulsa." },
-    "pricing":   { "title": "Precios",                "description": "Precios simples y transparentes para Altera Data Suite. Empieza gratis, mejora cuando aporte valor." },
-    "faqs":      { "title": "Preguntas frecuentes",   "description": "¿Tienes preguntas sobre Altera? Encuentra respuestas sobre configuración, precisión, precios, seguridad y más." },
-    "docs":      { "title": "Documentación",          "description": "Aprende a usar cada nodo de Altera — guías paso a paso, referencias de configuración y detalles de salida para cada función." },
-    "changelog": { "title": "Registro de cambios",   "description": "Todas las actualizaciones, mejoras y correcciones de Altera Data Suite — en un solo lugar." },
-    "terms":     { "title": "Términos de uso",                  "description": "Términos de uso de Altera Data Suite, restricciones de licencia y responsabilidad." },
-    "privacy":   { "title": "Política de privacidad",           "description": "Cómo Altera Data Suite recopila, usa y protege sus datos. Cumple con GDPR y CCPA." },
-    "refund":    { "title": "Política de reembolso",            "description": "Garantía de devolución de 30 días, condiciones de elegibilidad y cancelación." },
-    "download":  { "title": "Descargar",           "description": "Descarga Altera Data Suite para Windows, macOS o Linux y empieza a extraer datos estructurados de tus PDFs en minutos." },
-    "contact":   { "title": "Contacto y soporte",  "description": "Ponte en contacto con el equipo de Altera Data Suite — preguntas, facturación o soporte, respondemos directamente, sin bots." },
-    "useCases":  { "title": "Casos de uso",        "description": "Descubre cómo los equipos usan Altera Data Suite para extraer y estructurar datos de sus PDFs." }
+    "home": {
+      "title": "Extracción de PDF para Orange Data Mining | Altera Data Suite",
+      "description": "Extrae facturas, nóminas e informes de cualquier PDF — sin código. El complemento sin código de Orange Data Mining para extracción de datos estructurados. Pruébalo gratis."
+    },
+    "about": {
+      "title": "Acerca de",
+      "description": "Conoce Altera Data Suite — quién lo creó, por qué y qué lo impulsa."
+    },
+    "pricing": {
+      "title": "Precios",
+      "description": "Precios simples y transparentes para Altera Data Suite. Pruébalo gratis durante 7 días y luego elige un plan mensual, anual o de por vida."
+    },
+    "faqs": {
+      "title": "Preguntas frecuentes",
+      "description": "¿Tienes preguntas sobre Altera? Encuentra respuestas sobre configuración, precisión, precios, seguridad y más."
+    },
+    "docs": {
+      "title": "Documentación",
+      "description": "Aprende a usar cada nodo de Altera — guías paso a paso, referencias de configuración y detalles de salida para cada función."
+    },
+    "terms": {
+      "title": "Términos de uso",
+      "description": "Términos de uso de Altera Data Suite, restricciones de licencia y responsabilidad."
+    },
+    "privacy": {
+      "title": "Política de privacidad",
+      "description": "Cómo Altera Data Suite recopila, usa y protege sus datos. Cumple con GDPR y CCPA."
+    },
+    "refund": {
+      "title": "Política de reembolso",
+      "description": "Garantía de devolución de 30 días, condiciones de elegibilidad y cancelación."
+    },
+    "download": {
+      "title": "Descargar",
+      "description": "Descarga Altera Data Suite para Windows, macOS o Linux y empieza a extraer datos estructurados de tus PDFs en minutos."
+    },
+    "contact": {
+      "title": "Contacto y soporte",
+      "description": "Ponte en contacto con el equipo de Altera Data Suite — preguntas, facturación o soporte, respondemos directamente, sin bots."
+    },
+    "useCases": {
+      "title": "Casos de uso",
+      "description": "Flujos de Altera reales para finanzas, nóminas, compras, logística y auditoría: de documentos PDF a datos limpios y listos para analizar."
+    },
+    "whyWorkflows": {
+      "title": "Por qué flujos visuales",
+      "description": "Por qué Altera Data Suite se basa en flujos de trabajo visuales con nodos: ve tus datos en cada paso, comparte procesos que cualquiera puede leer y olvídate del código."
+    }
   },
   "nav": {
-    "docs":      "Documentación",
-    "pricing":   "Precios",
-    "download":  "Descargar",
-    "about":     "Acerca de",
-    "faqs":      "FAQ",
-    "startFree": "Empezar gratis"
+    "docs": "Documentación",
+    "pricing": "Precios",
+    "download": "Descargar",
+    "about": "Acerca de",
+    "faqs": "FAQ"
   },
   "footer": {
-    "tagline":           "Tú defines el objetivo. Altera extrae los datos.",
-    "productHeading":    "Producto",
-    "companyHeading":    "Empresa & Políticas",
-    "connectHeading":    "Redes",
-    "contactHeading":    "Información de contacto",
-    "emailLabel":        "Correo electrónico",
-    "copyright":         "Todos los derechos reservados.",
+    "tagline": "Tú defines el objetivo. Altera extrae los datos.",
+    "productHeading": "Producto",
+    "companyHeading": "Empresa & Políticas",
+    "connectHeading": "Redes",
+    "contactHeading": "Información de contacto",
+    "emailLabel": "Correo electrónico",
+    "copyright": "Todos los derechos reservados.",
     "langSwitcherLabel": "Idioma",
     "links": {
-      "features":      "Características",
-      "changelog":     "Cambios",
-      "pricingPlan":   "Plan de precios",
-      "docs":          "Documentación",
-      "download":      "Descargar",
-      "aboutUs":       "Acerca de nosotros",
-      "contact":       "Contacto",
-      "useCases":      "Casos de uso",
+      "pricingPlan": "Plan de precios",
+      "docs": "Documentación",
+      "download": "Descargar",
+      "aboutUs": "Acerca de nosotros",
+      "contact": "Contacto",
+      "useCases": "Casos de uso",
       "customWidgets": "Nodos personalizados",
-      "terms":         "Términos de uso",
-      "privacy":       "Política de privacidad",
-      "refund":        "Política de reembolso"
+      "terms": "Términos de uso",
+      "privacy": "Política de privacidad",
+      "refund": "Política de reembolso",
+      "whyWorkflows": "Por qué flujos visuales"
     },
     "legalHeading": "Legal"
   },
   "hero": {
-    "announcementBadge": "Nuevo ✦",
-    "announcementText":  "Extracción de PDF sin código",
-    "headingPart1":      "La app que convierte",
-    "headingPart2":      "tus PDFs en ",
-    "headingPart3":      "tablas limpias",
-    "subtitle":          "Sube cualquier PDF — los nodos de Altera extraen, limpian y estructuran cada campo en segundos.",
-    "startFree":         "Empezar gratis",
-    "watchDemo":         "Ver demostración",
-    "testimonialTitle":  "Configuración sencilla, resultados inmediatos",
-    "testimonialQuote":  "\"Construimos Altera para manejar cualquier PDF — nóminas, facturas, informes. Diseñado para velocidad, escala y claridad desde el primer día.\"",
+    "announcementBadge": "Prueba gratis ✦",
+    "announcementText": "Extracción de PDF sin código",
+    "headingPart1": "La app que convierte",
+    "headingPart2": "tus PDFs en ",
+    "headingPart3": "tablas limpias",
+    "subtitle": "Sube cualquier PDF — los nodos de Altera extraen, limpian y estructuran cada campo en segundos.",
+    "startFree": "Empezar gratis",
+    "watchDemo": "Ver demostración",
+    "testimonialTitle": "Configuración sencilla, resultados inmediatos",
+    "testimonialQuote": "\"Construimos Altera para manejar cualquier PDF — nóminas, facturas, informes. Diseñado para velocidad, escala y claridad desde el primer día.\"",
     "testimonialAttrib": "— Mehdi, Cofundador y Desarrollador de Altera Data Suite"
+  },
+  "howItWorks": {
+    "badgeLabel": "Cómo funciona",
+    "badgeText": "Altera en 10 pasos",
+    "heading": "Descubre cómo funciona Altera",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "restart": "Empezar de nuevo",
+    "stepOf": "Paso {n} de {total}",
+    "steps": [
+      {
+        "title": "Abre tu PDF y resalta los datos.",
+        "body": "Abre un extracto, una factura o un informe en el PDF Converter y dibuja con la herramienta Rectángulo sobre los datos que necesitas. Cada resaltado tiene su propio color, útil para distinguir secciones después."
+      },
+      {
+        "title": "Añade guías de columna si las necesitas.",
+        "body": "Coloca guías donde deban separarse las columnas. Si no las pones, Altera detecta las columnas por sí solo, página a página."
+      },
+      {
+        "title": "Haz clic en Convert.",
+        "body": "Tus zonas resaltadas se convierten en una tabla limpia, lista para entrar en un flujo de trabajo."
+      },
+      {
+        "title": "Esto es un nodo.",
+        "body": "Cada nodo hace una sola tarea con tus datos: filtrar filas, limpiar texto, combinar tablas, totalizar una columna y mucho más."
+      },
+      {
+        "title": "Conecta nodos en un flujo de trabajo.",
+        "body": "Los datos fluyen de izquierda a derecha. Entra la tabla extraída de tu PDF y cada nodo pasa su resultado al siguiente."
+      },
+      {
+        "title": "Tú decides cuándo ejecutarlo.",
+        "body": "Ejecuta el flujo y mira cómo cada nodo se pone en verde al terminar. Cambia un ajuste y vuelve a ejecutarlo cuando quieras."
+      },
+      {
+        "title": "Limpia y filtra tus datos…",
+        "body": "Por ejemplo, quedarte solo con las transacciones del mes pasado de un extracto bancario."
+      },
+      {
+        "title": "…totalízalos por grupo…",
+        "body": "Por ejemplo, sumar el gasto por proveedor en un montón de facturas."
+      },
+      {
+        "title": "…o combina dos fuentes.",
+        "body": "Por ejemplo, cotejar un extracto bancario con tu exportación contable para encontrar lo que no cuadra."
+      },
+      {
+        "title": "Y es intuitivo.",
+        "body": "Sin fórmulas ni scripts: elige un nodo, ajusta sus opciones y ve el resultado. La mayoría crea su primer flujo en una tarde."
+      }
+    ],
+    "canvas": {
+      "statement": {
+        "name": "Extracto bancario (extraído)",
+        "rowsLabel": "312 filas (muestra)",
+        "columns": [
+          "Fecha",
+          "Concepto",
+          "Importe"
+        ]
+      },
+      "invoices": {
+        "name": "Facturas (extraídas)",
+        "rowsLabel": "860 filas (muestra)",
+        "columns": [
+          "Proveedor",
+          "Descripción",
+          "Importe"
+        ]
+      },
+      "descriptions": {
+        "single": "Quedarte con las filas útiles",
+        "clean": "Limpiar texto",
+        "filter": "Solo el mes pasado",
+        "export": "Resultado.xlsx",
+        "type": "Importe a número",
+        "group": "Total por proveedor",
+        "sort": "De mayor a menor",
+        "ledger": "Exportación contable.xlsx",
+        "merge": "Cotejar por referencia",
+        "unmatched": "Sin coincidencia"
+      }
+    }
   },
   "resultShowcase": {
     "badgeLabel": "Extracción de nóminas",
-    "badgeText":  "Rápido y preciso",
-    "heading":    "De un PDF estático a datos limpios y estructurados — en segundos.",
-    "subtitle":   "Sube cualquier nómina, factura o informe. Altera lee cada campo, lo mapea en columnas y te entrega una tabla estructurada lista para exportar o analizar.",
-    "tryFree":    "Probar gratis",
-    "seeHow":     "Ver cómo funciona"
+    "badgeText": "Rápido y preciso",
+    "heading": "De un PDF estático a datos limpios y estructurados — en segundos.",
+    "subtitle": "Sube cualquier nómina, factura o informe. Altera lee cada campo, lo mapea en columnas y te entrega una tabla estructurada lista para exportar o analizar.",
+    "tryFree": "Probar gratis",
+    "seeHow": "Ver cómo funciona"
   },
   "stats": {
     "badgeLabel": "En cifras",
-    "badgeText":  "Resultados reales, impacto real",
-    "heading":    "Construido para la velocidad. Diseñado para la precisión.",
-    "subtitle":   "Altera Data Suite convierte horas de entrada manual de datos en segundos de extracción automatizada — a cualquier escala.",
+    "badgeText": "Resultados reales, impacto real",
+    "heading": "Construido para la velocidad. Diseñado para la precisión.",
+    "subtitle": "Altera Data Suite convierte horas de entrada manual de datos en segundos de extracción automatizada — a cualquier escala.",
     "items": [
-      { "value": "98%",  "label": "Precisión de extracción",          "desc": "Analiza nóminas, facturas e informes con una precisión de campo casi perfecta." },
-      { "value": "10×",  "label": "Más rápido que la entrada manual", "desc": "Automatiza flujos de trabajo repetitivos y recupera horas cada semana." },
-      { "value": "500+", "label": "Páginas por lote",                 "desc": "Carga PDFs de múltiples páginas masivos y obtén resultados estructurados en segundos." },
-      { "value": "24/7", "label": "Siempre disponible",               "desc": "Sin servidores, sin colas — funciona completamente en tu máquina, en cualquier momento." }
+      {
+        "value": "98%",
+        "label": "Precisión de extracción",
+        "desc": "Analiza nóminas, facturas e informes con una precisión de campo casi perfecta."
+      },
+      {
+        "value": "10×",
+        "label": "Más rápido que la entrada manual",
+        "desc": "Automatiza flujos de trabajo repetitivos y recupera horas cada semana."
+      },
+      {
+        "value": "500+",
+        "label": "Páginas por lote",
+        "desc": "Carga PDFs de múltiples páginas masivos y obtén resultados estructurados en segundos."
+      },
+      {
+        "value": "24/7",
+        "label": "Siempre disponible",
+        "desc": "Sin servidores, sin colas — funciona completamente en tu máquina, en cualquier momento."
+      }
     ]
   },
   "featureCards": [
-    { "label": "CONVERSIÓN RÁPIDA",    "line1": "Sube cualquier PDF.",                "line2": "Datos limpios en segundos." },
-    { "label": "FLUJOS VISUALES",      "line1": "Encadena nodos",                "line2": "para crear tu pipeline exacto." },
-    { "label": "HERRAMIENTAS POTENTES","line1": "Nodos inteligentes que extraen,",  "line2": "y limpian tus datos." }
+    {
+      "label": "CONVERSIÓN RÁPIDA",
+      "line1": "Sube cualquier PDF.",
+      "line2": "Datos limpios en segundos."
+    },
+    {
+      "label": "NODOS LISTOS PARA USAR",
+      "line1": "Limpia, ordena y transforma tus datos extraídos.",
+      "line2": "Conecta los nodos en un flujo."
+    },
+    {
+      "label": "HERRAMIENTAS POTENTES",
+      "line1": "Nodos inteligentes que extraen,",
+      "line2": "y limpian tus datos."
+    }
   ],
-  "widgets": {
+  "nodeShowcase": {
     "badgeLabel": "Características",
-    "badgeText":  "Nodos diseñados a medida",
-    "heading":    "Tu solución todo en uno para el procesamiento rápido y eficiente de PDF y datos.",
-    "subtitle":   "Nodos diseñados a medida que llevan tus PDFs y hojas de cálculo de datos brutos a datos estructurados, listos para analizar — sin código, sin fricción.",
-    "exploreNow": "Explorar ahora",
+    "badgeText": "Nodos diseñados a medida",
+    "heading": "Un nodo para cada paso de tus datos",
+    "learnMore": "Más información",
     "items": [
-      { "name": "PDF Converter",       "description": "Carga cualquier PDF de varias páginas — nóminas, facturas, informes — y extrae instantáneamente cada campo en una tabla limpia, fila a fila, lista para analizar." },
-      { "name": "Filter Builder",      "description": "Aísla exactamente las filas que necesitas usando condiciones flexibles en cualquier columna. Sin código, sin fórmulas — solo filtrado con clic." },
-      { "name": "Regular Expressions", "description": "Extrae patrones estructurados — fechas, IDs, nombres, importes — de campos de texto sin formato usando potentes reglas de expresiones regulares, configuradas visualmente." },
-      { "name": "Column Manager",      "description": "Renombra, reordena o elimina columnas en segundos. Adapta tu esquema de salida para que las herramientas siguientes reciban exactamente lo que esperan." }
-    ]
+      {
+        "title": "Extrae con PDF Converter",
+        "bullets": [
+          "Resalta las zonas que necesitas directamente en la página, sin plantillas ni código",
+          "Funciona con facturas, nóminas, extractos e informes de varias páginas",
+          "Guarda tus anotaciones una vez y reutilízalas con el archivo del mes siguiente"
+        ]
+      },
+      {
+        "title": "Limpia con Cleaner",
+        "bullets": [
+          "Quita espacios, corrige mayúsculas y elimina símbolos sobrantes en un solo paso",
+          "Encadena varias operaciones que se ejecutan en orden sobre las columnas que elijas",
+          "Corrige el texto extraído antes de que estropee un filtro o una combinación"
+        ]
+      },
+      {
+        "title": "Combina con Merge",
+        "bullets": [
+          "Añade columnas desde una tabla de referencia mediante un ID común",
+          "Conserva todas las filas, solo las coincidencias o todo de ambas tablas",
+          "Empareja filas por uno o varios pares de columnas, o simplemente por posición"
+        ]
+      },
+      {
+        "title": "Resume con Group By",
+        "bullets": [
+          "Suma importes por cliente, categoría o región",
+          "Cuenta filas o encuentra el mínimo, el máximo y la media de cada grupo",
+          "Obtén una fila de resumen por grupo, lista para exportar"
+        ]
+      }
+    ],
+    "whyLink": "Por qué construimos Altera en torno a flujos visuales"
+  },
+  "industries": {
+    "badgeLabel": "Casos de uso",
+    "badgeText": "Para cada equipo",
+    "heading": "Hecho para equipos desbordados de PDF",
+    "subtitle": "Del cierre de mes al control de nóminas, cada equipo tiene documentos que convertir en datos.",
+    "documentsLabel": "Documentos habituales",
+    "learnMore": "Ver el flujo completo",
+    "allUseCases": "Todos los casos de uso"
   },
   "pricing": {
-    "badgeLabel":    "Precios",
-    "badgeText":     "Planes simples, funciones potentes",
-    "heading":       "Elige el plan que se adapta a tu flujo de trabajo.",
-    "subtitle":      "Precios simples y transparentes. Mejora tu plan cuando quieras.",
-    "popularBadge":  "POPULAR",
+    "badgeLabel": "Precios",
+    "badgeText": "Planes simples, funciones potentes",
+    "heading": "Elige el plan que se adapta a tu flujo de trabajo.",
+    "subtitle": "Precios simples y transparentes. Mejora tu plan cuando quieras.",
+    "popularBadge": "POPULAR",
     "bestValueBadge": "MEJOR VALOR",
-    "getBtn":        "Obtener",
-    "period":        "/año",
-    "periodMonthly":  "/mes",
-    "oneTime":        "pago único",
+    "getBtn": "Obtener",
+    "period": "/año",
+    "periodMonthly": "/mes",
+    "oneTime": "pago único",
     "includesLabel": "Incluye",
     "checkoutSuccess": "Revisa tu correo electrónico para obtener tu clave de licencia.",
-    "checkoutError":   "El pago no está disponible en este momento. Inténtalo de nuevo en un momento o contacta con support@alteradatasuite.com.",
+    "checkoutError": "El pago no está disponible en este momento. Inténtalo de nuevo en un momento o contacta con support@alteradatasuite.com.",
     "plans": [
       {
-        "name": "Mensual", "subtitle": "Solución todo en uno, facturada mensualmente",
-        "features": ["Procesamiento de PDF ilimitado","Procesamiento de PDF por lotes","10+ Nodos","Soporte por correo electrónico","Licencia para una máquina","Actualizaciones gratuitas"]
+        "name": "Mensual",
+        "subtitle": "Solución todo en uno, facturada mensualmente",
+        "features": [
+          "Procesamiento de PDF ilimitado",
+          "Compatibilidad con PDF de varias páginas",
+          "10+ Nodos",
+          "Soporte por correo electrónico",
+          "Licencia para una máquina",
+          "Actualizaciones gratuitas"
+        ]
       },
       {
-        "name": "Anual", "subtitle": "Ahorra un 20 % frente a la facturación mensual",
-        "features": ["Procesamiento de PDF ilimitado","Procesamiento de PDF por lotes","10+ Nodos","Soporte prioritario por correo","Licencia para una máquina","Actualizaciones gratuitas"]
+        "name": "Anual",
+        "subtitle": "Ahorra un 20 % frente a la facturación mensual",
+        "features": [
+          "Procesamiento de PDF ilimitado",
+          "Compatibilidad con PDF de varias páginas",
+          "10+ Nodos",
+          "Soporte prioritario por correo",
+          "Licencia para una máquina",
+          "Actualizaciones gratuitas"
+        ]
       },
       {
-        "name": "De por vida", "subtitle": "Paga una vez, consérvalo para siempre",
-        "features": ["Procesamiento de PDF ilimitado","Procesamiento de PDF por lotes","10+ Nodos","Soporte prioritario","Licencia para una máquina","Actualizaciones gratuitas durante 1 año"]
+        "name": "De por vida",
+        "subtitle": "Paga una vez, consérvalo para siempre",
+        "features": [
+          "Procesamiento de PDF ilimitado",
+          "Compatibilidad con PDF de varias páginas",
+          "10+ Nodos",
+          "Soporte prioritario",
+          "Licencia para una máquina",
+          "Actualizaciones gratuitas durante 1 año"
+        ]
       }
     ],
     "faqs": [
-      { "key": "p1", "label": "¿Puedo cambiar de plan más adelante?",                "text": "Sí. Puedes cambiar entre Mensual, Anual y De por vida en cualquier momento. Tus datos y flujos de trabajo permanecen intactos." },
-      { "key": "p3", "label": "¿Cuál es la diferencia entre los planes?",     "text": "Mensual y Anual son suscripciones recurrentes facturadas según su periodicidad. De por vida es un pago único para acceso permanente." },
-      { "key": "p5", "label": "¿Ofrecéis reembolsos?",                               "text": "Sí — consulta nuestra garantía de devolución de 30 días. Si algo falla después de la compra, contáctanos y lo solucionaremos." },
-      { "key": "p6", "label": "¿Puedo usar Altera en varias máquinas?",              "text": "Mensual, Anual y De por vida son licencias para una sola máquina." }
-    ]
+      {
+        "key": "p1",
+        "label": "¿Puedo cambiar de plan más adelante?",
+        "text": "Sí. Puedes cambiar entre Mensual, Anual y De por vida en cualquier momento. Tus datos y flujos de trabajo permanecen intactos."
+      },
+      {
+        "key": "p3",
+        "label": "¿Cuál es la diferencia entre los planes?",
+        "text": "Mensual y Anual son suscripciones recurrentes facturadas según su periodicidad. De por vida es un pago único para acceso permanente."
+      },
+      {
+        "key": "p5",
+        "label": "¿Ofrecéis reembolsos?",
+        "text": "Sí — consulta nuestra garantía de devolución de 30 días. Si algo falla después de la compra, contáctanos y lo solucionaremos."
+      },
+      {
+        "key": "p6",
+        "label": "¿Puedo usar Altera en varias máquinas?",
+        "text": "Mensual, Anual y De por vida son licencias para una sola máquina."
+      }
+    ],
+    "trialNote": "Prueba cualquier plan gratis durante 7 días, sin tarjeta de crédito. Después de comprar, te cubre nuestra garantía de devolución de 30 días."
   },
   "testimonials": {
     "badgeLabel": "Testimonios",
-    "badgeText":  "Lo que dicen nuestros usuarios",
-    "heading":    "De confianza para equipos que avanzan rápido.",
-    "subtitle":   "Descubre cómo Altera Data Suite ayuda a los profesionales a extraer, estructurar y actuar sobre sus datos — más rápido que nunca.",
+    "badgeText": "Lo que dicen nuestros usuarios",
+    "heading": "De confianza para equipos que avanzan rápido.",
+    "subtitle": "Descubre cómo Altera Data Suite ayuda a los profesionales a extraer, estructurar y actuar sobre sus datos — más rápido que nunca.",
     "cards": [
-      { "name": "Karim Raaji",           "role": "Consultor Financiero",                "text": "Pasé años confiando en herramientas como Power Query para extraer y limpiar datos financieros de PDF. Funcionaban — pero nunca de forma limpia, y el mantenimiento era constante. Encontrar Altera fue un punto de inflexión. La extracción es precisa, la configuración llevó minutos, y por el precio es un cambio radical para cualquiera que trabaje con documentos financieros a diario." },
-      { "name": "Jonathan Ashton",        "role": "Controller de Calidad Financiera",   "text": "Me encontré manejando múltiples herramientas solo para extraer datos de un PDF — una aplicación para conversión, otras para limpieza. Pero el mayor problema era la privacidad. Trabajando con datos de clientes bajo NDA, no podía permitirme que los archivos se procesaran en un servidor de terceros. La mayoría de las herramientas que probé hacían exactamente eso. Altera fue la primera solución que realmente entendió el problema central y lo resolvió — todo funciona localmente, en mi máquina, y los resultados son limpios desde el principio." },
-      { "name": "Mohammed Amine Bendidi", "role": "Consultor Financiero",                "text": "Recibir volúmenes de datos — principalmente PDF — con plazos ajustados era una pesadilla constante. Teníamos desarrolladores expertos en nuestro laboratorio de datos, pero la brecha entre lo que construían y lo que realmente necesitábamos nunca se cerraba del todo. Altera era diferente. No vino de un equipo que solo sabía programar — vino de personas que habían vivido el problema de primera mano. Eso se nota en cada funcionalidad. Una solución construida por analistas, para analistas." },
-      { "name": "Thomas Reeves",          "role": "Responsable de Business Intelligence","text": "Lo que distingue a Altera de todo en el ecosistema de Microsoft es que es realmente extensible de manera significativa. Con Excel o Power BI, estás limitado a lo que existe — si una funcionalidad no está, esperas, y la mayoría de las veces nunca llega. Con Altera, si un nodo no cubre tu caso de uso exacto, el equipo lo construirá para ti. Pueden extender nodos existentes o crear unos completamente personalizados desde cero. Ese tipo de capacidad de respuesta es algo que el software empresarial simplemente no ofrece." }
+      {
+        "name": "Karim Raaji",
+        "role": "Consultor Financiero",
+        "text": "Pasé años confiando en herramientas como Power Query para extraer y limpiar datos financieros de PDF. Funcionaban — pero nunca de forma limpia, y el mantenimiento era constante. Encontrar Altera fue un punto de inflexión. La extracción es precisa, la configuración llevó minutos, y por el precio es un cambio radical para cualquiera que trabaje con documentos financieros a diario."
+      },
+      {
+        "name": "Jonathan Ashton",
+        "role": "Controller de Calidad Financiera",
+        "text": "Me encontré manejando múltiples herramientas solo para extraer datos de un PDF — una aplicación para conversión, otras para limpieza. Pero el mayor problema era la privacidad. Trabajando con datos de clientes bajo NDA, no podía permitirme que los archivos se procesaran en un servidor de terceros. La mayoría de las herramientas que probé hacían exactamente eso. Altera fue la primera solución que realmente entendió el problema central y lo resolvió — todo funciona localmente, en mi máquina, y los resultados son limpios desde el principio."
+      },
+      {
+        "name": "Mohammed Amine Bendidi",
+        "role": "Consultor Financiero",
+        "text": "Recibir volúmenes de datos — principalmente PDF — con plazos ajustados era una pesadilla constante. Teníamos desarrolladores expertos en nuestro laboratorio de datos, pero la brecha entre lo que construían y lo que realmente necesitábamos nunca se cerraba del todo. Altera era diferente. No vino de un equipo que solo sabía programar — vino de personas que habían vivido el problema de primera mano. Eso se nota en cada funcionalidad. Una solución construida por analistas, para analistas."
+      },
+      {
+        "name": "Thomas Reeves",
+        "role": "Responsable de Business Intelligence",
+        "text": "Lo que distingue a Altera de todo en el ecosistema de Microsoft es que es realmente extensible de manera significativa. Con Excel o Power BI, estás limitado a lo que existe — si una funcionalidad no está, esperas, y la mayoría de las veces nunca llega. Con Altera, si un nodo no cubre tu caso de uso exacto, el equipo lo construirá para ti. Pueden extender nodos existentes o crear unos completamente personalizados desde cero. Ese tipo de capacidad de respuesta es algo que el software empresarial simplemente no ofrece."
+      }
     ]
   },
   "customWidget": {
-    "badgeLabel":         "Nodos personalizados",
-    "badgeText":          "Construidos según tus necesidades exactas.",
-    "heading":            "¿Necesitas un nodo personalizado que se adapte a tu flujo de trabajo exacto? Lo construimos para ti.",
-    "subtitle":           "Cada equipo trabaja con documentos diferentes — estructuras diferentes, campos diferentes, salidas diferentes. Si ninguno de nuestros nodos existentes se adapta a tus necesidades, diseñaremos y construiremos uno desde cero. Mapeamos el diseño de tu PDF, definimos la lógica de extracción y entregamos una herramienta que se integra directamente en tu flujo de trabajo. Sin soluciones alternativas, sin limpieza manual — solo datos limpios y estructurados exactamente como los necesitas.",
-    "rowWhatLabel":       "Lo que obtienes",
-    "rowWhatValue":       "Un nodo completamente funcional construido para tu PDF",
+    "badgeLabel": "Nodos personalizados",
+    "badgeText": "Construidos según tus necesidades exactas.",
+    "heading": "¿Necesitas un nodo personalizado que se adapte a tu flujo de trabajo exacto? Lo construimos para ti.",
+    "subtitle": "Cada equipo trabaja con documentos diferentes — estructuras diferentes, campos diferentes, salidas diferentes. Si ninguno de nuestros nodos existentes se adapta a tus necesidades, diseñaremos y construiremos uno desde cero. Mapeamos el diseño de tu PDF, definimos la lógica de extracción y entregamos una herramienta que se integra directamente en tu flujo de trabajo. Sin soluciones alternativas, sin limpieza manual — solo datos limpios y estructurados exactamente como los necesitas.",
+    "rowWhatLabel": "Lo que obtienes",
+    "rowWhatValue": "Un nodo completamente funcional construido para tu PDF",
     "rowTurnaroundLabel": "Plazo de entrega",
     "rowTurnaroundValue": "Definido juntos según la complejidad",
-    "rowPricingLabel":    "Precio",
-    "rowPricingValue":    "Justo y transparente — sin cargos ocultos",
-    "rowContactLabel":    "Contacto"
+    "rowPricingLabel": "Precio",
+    "rowPricingValue": "Justo y transparente — sin cargos ocultos",
+    "rowContactLabel": "Contacto"
   },
   "faqSection": {
     "badgeLabel": "FAQ",
-    "badgeText":  "¿Preguntas? Tenemos respuestas.",
-    "heading":    "Todo lo que necesitas saber",
-    "subtitle":   "¿No encuentras lo que buscas? Contáctanos y te responderemos."
+    "badgeText": "¿Preguntas? Tenemos respuestas.",
+    "heading": "Todo lo que necesitas saber",
+    "subtitle": "¿No encuentras lo que buscas? Contáctanos y te responderemos."
+  },
+  "getStarted": {
+    "heading": "¿Listo para convertir tus PDF en datos?",
+    "text": "Descarga Altera, abre un PDF y crea tu primer flujo de trabajo en minutos.",
+    "download": "Descargar",
+    "docs": "Leer la documentación"
   },
   "allFaqs": [
-    { "key": "1",  "label": "¿Qué tipos de PDFs admite Altera?",                       "text": "Altera funciona con cualquier PDF — nóminas, facturas, extractos bancarios, informes y más. Si tiene datos estructurados, Altera puede extraerlos." },
-    { "key": "2",  "label": "¿Qué tan precisa es la extracción?",                      "text": "Altera extrae datos con alta precisión. Puedes definir reglas personalizadas para asegurarte de que cada campo se mapee exactamente donde lo necesitas." },
-    { "key": "3",  "label": "¿Necesito instalar algo?",                                "text": "Altera está construido para Orange Data Mining. Instalarlo dentro de Orange toma segundos — solo añade el complemento y ya estás listo para empezar a extraer." },
-    { "key": "4",  "label": "¿Puedo procesar varios PDFs a la vez?",                   "text": "Sí. Altera admite el procesamiento por lotes para que puedas subir cientos de PDFs y obtener todos los datos estructurados de una sola vez." },
-    { "key": "5",  "label": "¿Están seguros mis datos?",                               "text": "Tus archivos se procesan de forma segura y nunca se almacenan más allá de la sesión activa. No compartimos ni retenemos tus datos." },
-    { "key": "6",  "label": "¿Puedo probarlo antes de pagar?",                         "text": "Por supuesto — puedes empezar gratis y explorar las funciones principales antes de comprometerte con un plan." },
-    { "key": "7",  "label": "¿Necesito conocimientos de programación?",                "text": "Para nada. Altera está diseñado para usarse visualmente dentro de Orange Data Mining. Arrastra, suelta y configura — sin código requerido." },
-    { "key": "8",  "label": "¿Puede Altera manejar PDFs escaneados?",                 "text": "Altera funciona mejor con PDFs generados digitalmente. Los documentos escaneados con texto legible por OCR también son compatibles, aunque la precisión puede variar según la calidad del escaneo." },
-    { "key": "9",  "label": "¿En qué formato de salida vienen los datos extraídos?",   "text": "Altera genera tablas limpias y estructuradas directamente dentro de Orange Data Mining — listas para analizar, exportar o alimentar el siguiente paso de tu flujo de trabajo." },
-    { "key": "10", "label": "¿Puedo usar diferentes nodos para diferentes tipos de documentos?","text": "Sí. Cada nodo está diseñado para una tarea de extracción específica. Puedes combinar nodos en el mismo flujo de trabajo para manejar diferentes tipos de documentos en una sola pasada." },
-    { "key": "11", "label": "¿Qué pasa si la extracción omite un campo?",              "text": "Puedes definir reglas de extracción personalizadas para manejar casos extremos. Si una estructura de documento específica no está cubierta de base, también ofrecemos desarrollo de nodos personalizados." },
-    { "key": "12", "label": "¿Hay un límite de tamaño de archivo?",                    "text": "Altera maneja documentos comerciales estándar sin problemas. Los archivos muy grandes pueden afectar el tiempo de procesamiento, pero no hay un límite estricto." },
-    { "key": "13", "label": "¿Qué idiomas son compatibles?",                           "text": "Altera admite principalmente documentos en inglés y francés. Se está añadiendo compatibilidad con idiomas adicionales a medida que la suite crece." },
-    { "key": "14", "label": "¿Cómo obtengo soporte si algo falla?",                    "text": "Puedes contactarnos directamente en support@alteradatasuite.com. Somos un equipo pequeño, por lo que siempre obtendrás una respuesta real — no un bot." }
+    {
+      "key": "1",
+      "label": "¿Qué tipos de PDF admite Altera?",
+      "text": "Cualquier PDF con texto seleccionable: nóminas, facturas, extractos bancarios, informes y más. Si puedes seleccionar el texto en tu visor de PDF, Altera puede extraerlo. Los PDF escaneados que son solo imágenes necesitan OCR primero (ver más abajo)."
+    },
+    {
+      "key": "2",
+      "label": "¿Qué precisión tiene la extracción?",
+      "text": "Altera lee el texto que ya está dentro del PDF, así que los valores salen exactamente como aparecen: nada se adivina ni se vuelve a teclear. Tú decides qué se extrae resaltando las zonas que necesitas, y puedes añadir guías de columna donde las columnas estén muy juntas."
+    },
+    {
+      "key": "3",
+      "label": "¿Necesito instalar algo?",
+      "text": "Sí, Altera es una aplicación de escritorio. Descarga el instalador para Windows y listo, sin ningún otro software. Las versiones para macOS y Linux llegarán pronto."
+    },
+    {
+      "key": "4",
+      "label": "¿Puedo procesar varios PDF a la vez?",
+      "text": "Altera trabaja con un PDF cada vez, y ese PDF puede tener cientos de páginas. Guarda tu flujo una vez, abre el siguiente archivo y vuelve a ejecutar los mismos pasos: tus resaltados y ajustes se conservan."
+    },
+    {
+      "key": "5",
+      "label": "¿Están seguros mis datos?",
+      "text": "Sí. Altera se ejecuta en tu propio ordenador: tus PDF se procesan localmente y nunca se suben a nuestros servidores ni a los de nadie. La aplicación solo se conecta a internet para comprobar tu licencia."
+    },
+    {
+      "key": "6",
+      "label": "¿Puedo probarlo antes de pagar?",
+      "text": "Sí: todos los planes incluyen una prueba gratuita de 7 días con todas las funciones, sin tarjeta de crédito."
+    },
+    {
+      "key": "7",
+      "label": "¿Necesito saber programar para usar Altera?",
+      "text": "En absoluto. Resaltas los datos en el PDF y construyes tu flujo conectando nodos y ajustando sus opciones, sin código ni fórmulas."
+    },
+    {
+      "key": "8",
+      "label": "¿Puede Altera procesar PDF escaneados o basados en imágenes?",
+      "text": "Altera lee la capa de texto de un PDF y no hace OCR por sí mismo. Un escaneo que es solo una imagen no tiene capa de texto, así que pásalo primero por un software de OCR; después Altera podrá extraerlo como cualquier otro PDF."
+    },
+    {
+      "key": "9",
+      "label": "¿En qué formato salen los datos extraídos?",
+      "text": "Tus datos salen como una tabla limpia dentro de la aplicación. Desde ahí puedes seguir transformándolos con nodos o guardarlos en Excel (.xlsx) o CSV con el nodo Export."
+    },
+    {
+      "key": "10",
+      "label": "¿Qué son los nodos y cómo funcionan juntos?",
+      "text": "Los nodos son las piezas de un flujo de trabajo. Cada uno hace una sola tarea con tus datos: limpiar texto, filtrar filas, combinar tablas, totalizar una columna y más. Conéctalos de izquierda a derecha para convertir la tabla extraída de tu PDF exactamente en el resultado que necesitas."
+    },
+    {
+      "key": "11",
+      "label": "¿Qué pasa si la extracción omite un campo o se equivoca?",
+      "text": "Ajusta el resaltado o añade una guía de columna y vuelve a convertir. Para corregir los propios datos, usa nodos como Cleaner, Text Parser o Regular Expressions. Si tus documentos necesitan algo que ningún nodo cubre, también desarrollamos nodos a medida."
+    },
+    {
+      "key": "12",
+      "label": "¿Hay un límite de tamaño de archivo?",
+      "text": "No hay un límite fijo. Los documentos grandes o muy largos simplemente tardan un poco más en abrirse y convertirse: el PDF Converter carga una página cada vez."
+    },
+    {
+      "key": "13",
+      "label": "¿Qué idiomas se admiten?",
+      "text": "Altera lee el texto incrustado en tu PDF en lugar de reconocer caracteres, así que no depende de un idioma de documento concreto. La interfaz de la aplicación está actualmente en inglés."
+    },
+    {
+      "key": "14",
+      "label": "¿Cómo obtengo ayuda si algo falla?",
+      "text": "Escríbenos directamente a support@alteradatasuite.com. Somos un equipo pequeño, así que siempre recibirás una respuesta real, no de un bot."
+    },
+    {
+      "key": "15",
+      "label": "¿A qué formatos puedo exportar?",
+      "text": "Excel (.xlsx) y CSV, con el nodo Export. También puedes llevar archivos Excel y CSV a un flujo con el nodo Input Data, por ejemplo para cotejar un extracto con tu contabilidad."
+    },
+    {
+      "key": "16",
+      "label": "¿Funciona Altera sin conexión?",
+      "text": "Sí. Todo se ejecuta en tu ordenador, así que puedes trabajar sin conexión a internet. La aplicación solo necesita conectarse al menos una vez cada 7 días para renovar tu licencia."
+    },
+    {
+      "key": "17",
+      "label": "¿Puedo reutilizar un flujo cada mes?",
+      "text": "Sí. Guarda tu flujo y se conserva todo, incluidas las zonas que resaltaste en el PDF. Cuando llegue el archivo del mes siguiente, cámbialo y vuelve a ejecutar los mismos pasos."
+    }
   ],
   "docs": {
-    "overview":          "Resumen",
-    "bestFor":           "Ideal para",
-    "howToUse":          "Cómo usar",
-    "input":             "Entrada",
-    "output":            "Salida",
-    "tipsNotes":         "Consejos y notas",
-    "toolbarRef":        "Referencia de la barra de herramientas",
+    "overview": "Resumen",
+    "bestFor": "Ideal para",
+    "howToUse": "Cómo usar",
+    "input": "Entrada",
+    "output": "Salida",
+    "tipsNotes": "Consejos y notas",
+    "toolbarRef": "Referencia de la barra de herramientas",
     "keyboardShortcuts": "Atajos de teclado",
-    "watchTutorials":    "Ver tutoriales en vídeo",
-    "viewPlaylist":      "Ver lista de reproducción en YouTube",
-    "handTool":          "Herramienta mano",
-    "handToolDesc":      "Cuando está activada — haz clic y arrastra en cualquier lugar del lienzo para desplazarte por el documento.",
-    "selectionTool":     "Herramienta de selección",
+    "watchTutorials": "Ver tutoriales en vídeo",
+    "viewPlaylist": "Ver lista de reproducción en YouTube",
+    "handTool": "Herramienta mano",
+    "handToolDesc": "Cuando está activada — haz clic y arrastra en cualquier lugar del lienzo para desplazarte por el documento.",
+    "selectionTool": "Herramienta de selección",
     "selectionToolDesc": "Haz clic en una anotación existente para seleccionarla, reposicionarla o redimensionarla.",
-    "pageNav":           "Navegación de páginas",
-    "pageNavDesc":       "Navega por las páginas. La entrada muestra tu página actual del total — también puedes escribir un número de página directamente.",
+    "pageNav": "Navegación de páginas",
+    "pageNavDesc": "Navega por las páginas. La entrada muestra tu página actual del total — también puedes escribir un número de página directamente.",
+    "docsHome": "Docs",
+    "catalogTitle": "Documentación de nodos",
+    "catalogIntro": "Cada nodo de Altera tiene su propia página de referencia: qué hace, cómo configurarlo y qué entra y sale.",
+    "searchPlaceholder": "Buscar nodos…",
+    "noResults": "Ningún nodo coincide con tu búsqueda.",
+    "nodeLabel": "Nodo",
+    "description": "Descripción",
+    "inputPorts": "Puertos de entrada",
+    "outputPorts": "Puertos de salida",
+    "portType": "Tipo",
+    "noPorts": "Ninguno",
+    "moreInCategory": "Más nodos de {category}",
+    "nodesCount": "{count} nodos",
     "shortcuts": {
-      "toggleHand":      "Activar herramienta mano",
+      "toggleHand": "Activar herramienta mano",
       "toggleSelection": "Activar herramienta de selección",
-      "toggleGuide":     "Activar herramienta guía (delimitador de columna)",
-      "convert":         "Convertir",
-      "openPdf":         "Abrir PDF",
-      "zoomIn":          "Acercar",
-      "zoomOut":         "Alejar",
-      "fitPage":         "Ajustar página a la ventana",
-      "scrollZoomIn":    "Acercar",
-      "scrollZoomOut":   "Alejar"
+      "toggleGuide": "Activar herramienta guía (delimitador de columna)",
+      "convert": "Convertir",
+      "openPdf": "Abrir PDF",
+      "zoomIn": "Acercar",
+      "zoomOut": "Alejar",
+      "fitPage": "Ajustar página a la ventana",
+      "scrollZoomIn": "Acercar",
+      "scrollZoomOut": "Alejar"
     }
   },
   "download": {
-    "heroBadgeLabel":  "Descargar",
-    "heroBadgeText":   "Obtén la aplicación",
-    "heroHeading":     "Descargar Altera Data Suite",
-    "heroLead":        "Disponible para Windows, macOS y Linux. Instálalo en minutos y empieza a extraer tu primer PDF enseguida.",
-    "trialNote":       "Prueba gratuita de 15 días en todos los planes — no se requiere tarjeta de crédito.",
+    "heroBadgeLabel": "Descargar",
+    "heroBadgeText": "Obtén la aplicación",
+    "heroHeading": "Descargar Altera Data Suite",
+    "heroLead": "Disponible para Windows, macOS y Linux. Instálalo en minutos y empieza a extraer tu primer PDF enseguida.",
+    "trialNote": "Prueba gratuita de 7 días en todos los planes — no se requiere tarjeta de crédito.",
     "unavailableNotice": "La versión para Windows no está disponible temporalmente. Inténtalo de nuevo en unos minutos.",
-    "windowsName":     "Windows",
-    "windowsDetail":   "Windows 10 / 11 (64 bits)",
-    "windowsBtn":      "Descargar para Windows",
-    "macName":         "macOS",
-    "macDetail":       "macOS 12 Monterey o posterior",
-    "macBtn":          "Descargar para macOS",
-    "linuxName":       "Linux",
-    "linuxDetail":     "La mayoría de las distribuciones principales",
-    "linuxBtn":        "Descargar para Linux",
-    "comingSoon":      "Próximamente",
-    "comingSoonNote":  "En desarrollo activo — mantente atento.",
-    "helpPre":         "¿Necesitas ayuda para instalarlo?",
-    "helpLink":        "Consulta la guía de inicio rápido"
+    "windowsName": "Windows",
+    "windowsDetail": "Windows 10 / 11 (64 bits)",
+    "windowsBtn": "Descargar para Windows",
+    "macName": "macOS",
+    "macDetail": "macOS 12 Monterey o posterior",
+    "macBtn": "Descargar para macOS",
+    "linuxName": "Linux",
+    "linuxDetail": "La mayoría de las distribuciones principales",
+    "linuxBtn": "Descargar para Linux",
+    "comingSoon": "Próximamente",
+    "comingSoonNote": "En desarrollo activo — mantente atento.",
+    "helpPre": "¿Necesitas ayuda para instalarlo?",
+    "helpLink": "Consulta la guía de inicio rápido"
   },
   "contact": {
     "badgeLabel": "Soporte",
-    "badgeText":  "Estamos aquí para ayudarte",
-    "heading":    "Contacto y soporte",
-    "lead":       "¿Tienes preguntas sobre Altera, la facturación o un PDF concreto con el que te has atascado? Contáctanos — somos un equipo pequeño, así que siempre recibirás una respuesta real, no un bot.",
-    "docsTitle":  "Documentación",
-    "docsDesc":   "Guías paso a paso y referencias de configuración para cada nodo.",
-    "docsLink":   "Ver la documentación",
-    "faqsTitle":  "Preguntas frecuentes",
-    "faqsDesc":   "Respuestas a preguntas comunes sobre configuración, precisión y precios.",
-    "faqsLink":   "Ver las preguntas frecuentes"
+    "badgeText": "Estamos aquí para ayudarte",
+    "heading": "Contacto y soporte",
+    "lead": "¿Tienes preguntas sobre Altera, la facturación o un PDF concreto con el que te has atascado? Contáctanos — somos un equipo pequeño, así que siempre recibirás una respuesta real, no un bot.",
+    "docsTitle": "Documentación",
+    "docsDesc": "Guías paso a paso y referencias de configuración para cada nodo.",
+    "docsLink": "Ver la documentación",
+    "faqsTitle": "Preguntas frecuentes",
+    "faqsDesc": "Respuestas a preguntas comunes sobre configuración, precisión y precios.",
+    "faqsLink": "Ver las preguntas frecuentes"
   },
   "useCases": {
     "badgeLabel": "Casos de uso",
-    "badgeText":  "Próximamente",
-    "heading":    "Cómo usan Altera los equipos, en la práctica.",
-    "lead":       "Estamos preparando casos de uso detallados para equipos de finanzas, consultoría y operaciones. Vuelve pronto — o contáctanos hoy mismo y te orientaremos.",
-    "ctaLabel":   "Contáctanos"
+    "badgeText": "Altera en acción",
+    "heading": "Lo que los equipos crean con Altera",
+    "lead": "Flujos reales para los PDF que tu equipo gestiona cada mes. Elige un equipo para ver los documentos, el flujo y el resultado.",
+    "learnMore": "Ver el flujo",
+    "labels": {
+      "documents": "Documentos que procesa",
+      "challenge": "El reto",
+      "workflow": "El flujo de trabajo",
+      "workflowHint": "Este lienzo es interactivo: arrastra los nodos o usa los controles de zoom.",
+      "steps": "Paso a paso",
+      "outcomes": "Lo que consigues",
+      "otherUseCases": "Más casos de uso",
+      "allUseCases": "Todos los casos de uso"
+    },
+    "items": {
+      "finance": {
+        "tab": "Finanzas y contabilidad",
+        "title": "Concilia extractos bancarios con tu contabilidad",
+        "summary": "Convierte extractos bancarios en PDF en tablas limpias y cotéjalos con tu exportación contable: solo quedan los apuntes que requieren atención.",
+        "metaTitle": "Conciliación bancaria a partir de PDF",
+        "metaDescription": "Extrae transacciones de extractos bancarios en PDF y concílialas con tu exportación contable con un flujo de Altera sin código.",
+        "lead": "La conciliación de fin de mes suele implicar copiar a mano las transacciones de los extractos en PDF. Con Altera las extraes, las cotejas con tu contabilidad y te quedas solo con lo que no cuadra.",
+        "documents": [
+          "Extractos bancarios y de tarjetas",
+          "Informes de proveedores de pago",
+          "Exportaciones contables (Excel o CSV)",
+          "Extractos de proveedores"
+        ],
+        "challenge": "Los extractos llegan en PDF, con un formato distinto para cada banco. Copiarlos a una hoja de cálculo lleva horas, y un solo importe mal tecleado basta para descuadrar toda la conciliación.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Extrae las transacciones",
+            "body": "Resalta la tabla de transacciones en el PDF Converter y Altera la convierte en filas con fecha, concepto, referencia e importe."
+          },
+          {
+            "node": "Cleaner",
+            "title": "Limpia el texto",
+            "body": "Quita espacios y símbolos de moneda para que importes y referencias coincidan exactamente."
+          },
+          {
+            "node": "Change Type",
+            "title": "Convierte los importes en números",
+            "body": "Convierte la columna de importes en números para poder compararla y totalizarla."
+          },
+          {
+            "node": "Merge",
+            "title": "Coteja con la contabilidad",
+            "body": "Carga tu exportación contable con Input Data y conéctala al puerto Extra Data de Merge. Las filas se emparejan por referencia e importe."
+          },
+          {
+            "node": "Filter · Export",
+            "title": "Quédate con lo que requiere atención",
+            "body": "Filtra los apuntes sin coincidencia y expórtalos a Excel para revisarlos."
+          }
+        ],
+        "outcomes": [
+          "Concilia un mes de transacciones en minutos en lugar de horas",
+          "Sin volver a teclear, así que sin errores en los importes",
+          "Reutiliza el mismo flujo el mes siguiente: cambia el PDF y vuelve a ejecutarlo"
+        ],
+        "canvas": {
+          "tables": {
+            "statement": {
+              "name": "Extracto bancario (extraído)",
+              "rowsLabel": "312 filas (muestra)",
+              "columns": [
+                "Fecha",
+                "Concepto",
+                "Referencia",
+                "Importe"
+              ]
+            }
+          },
+          "descriptions": {
+            "clean": "Limpiar, quitar €",
+            "type": "Importe a número",
+            "ledger": "Exportación contable.xlsx",
+            "merge": "Cotejar por referencia",
+            "filter": "Sin coincidencia",
+            "export": "A revisar.xlsx"
+          }
+        }
+      },
+      "payroll": {
+        "tab": "RR. HH. y nóminas",
+        "title": "Convierte las nóminas en un resumen",
+        "summary": "Extrae cada línea de tus nóminas en PDF y totaliza devengos y deducciones por empleado, listo para tu control de nóminas.",
+        "metaTitle": "Nóminas en PDF a un resumen en Excel",
+        "metaDescription": "Extrae devengos y deducciones de nóminas en PDF y crea un resumen por empleado en Excel, sin código.",
+        "lead": "Las nóminas están hechas para leerlas, no para hojas de cálculo. Altera extrae sus líneas y las agrupa en una fila de resumen por empleado.",
+        "documents": [
+          "Nóminas mensuales (una o varias por PDF)",
+          "Libros y registros de nóminas",
+          "Gastos y dietas",
+          "Certificados anuales de retenciones"
+        ],
+        "challenge": "Cada nómina muestra el nombre del empleado una sola vez, arriba, con los devengos y deducciones debajo. Una vez extraídas, la mayoría de las filas no dicen a quién pertenecen, y totalizarlas a mano es lento y propenso a errores.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Extrae las líneas de la nómina",
+            "body": "Resalta el bloque de devengos y deducciones en el PDF Converter para convertirlo en una tabla."
+          },
+          {
+            "node": "Cascade Fill",
+            "title": "Pon el nombre en cada fila",
+            "body": "Rellena hacia abajo el nombre del empleado para que cada línea sepa de qué nómina viene."
+          },
+          {
+            "node": "Filter",
+            "title": "Quédate con las líneas útiles",
+            "body": "Conserva devengos y deducciones y elimina encabezados, líneas vacías y notas."
+          },
+          {
+            "node": "Group By",
+            "title": "Totaliza por empleado",
+            "body": "Suma los devengos y deducciones de cada empleado en una sola fila."
+          },
+          {
+            "node": "Sort · Export",
+            "title": "Ordena y exporta",
+            "body": "Ordena por empleado y exporta el resumen a Excel."
+          }
+        ],
+        "outcomes": [
+          "Una fila de resumen limpia por empleado",
+          "Detecta pagos inusuales antes del cierre de nóminas",
+          "El mismo flujo procesa las nóminas del mes siguiente"
+        ],
+        "canvas": {
+          "tables": {
+            "payslips": {
+              "name": "Nóminas (extraídas)",
+              "rowsLabel": "1.480 filas (muestra)",
+              "columns": [
+                "Empleado",
+                "Concepto",
+                "Importe"
+              ]
+            }
+          },
+          "descriptions": {
+            "fill": "Nombre en cada fila",
+            "filter": "Devengos y deducciones",
+            "group": "Totales por empleado",
+            "sort": "Por empleado",
+            "export": "Resumen nóminas.xlsx"
+          }
+        }
+      },
+      "procurement": {
+        "tab": "Compras",
+        "title": "Analiza el gasto a partir de facturas de proveedores",
+        "summary": "Extrae las líneas de tus facturas en PDF, calcula los totales y ve el gasto por proveedor sin volver a teclear un solo número.",
+        "metaTitle": "Líneas de facturas en PDF a Excel",
+        "metaDescription": "Extrae las líneas de facturas de proveedores en PDF, calcula totales y analiza el gasto por proveedor con un flujo de Altera sin código.",
+        "lead": "Tus datos reales de gasto están encerrados en facturas en PDF. Altera extrae las líneas, calcula los totales y resume el gasto por proveedor.",
+        "documents": [
+          "Facturas de proveedores",
+          "Pedidos de compra",
+          "Notas de crédito",
+          "Presupuestos y listas de precios"
+        ],
+        "challenge": "Cada proveedor presenta sus facturas de forma distinta, y las líneas suelen ocupar varias páginas. Reunirlas en una sola tabla normalmente exige copiar y pegar a mano.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Extrae las líneas",
+            "body": "Resalta la tabla de líneas y añade guías de columna donde las columnas estén muy juntas."
+          },
+          {
+            "node": "Cleaner",
+            "title": "Ordena el texto",
+            "body": "Quita espacios y caracteres sobrantes de descripciones y precios."
+          },
+          {
+            "node": "Change Type",
+            "title": "Convierte cantidades y precios",
+            "body": "Convierte la cantidad y el precio unitario en números."
+          },
+          {
+            "node": "Formula",
+            "title": "Calcula el total de cada línea",
+            "body": "Añade una columna Total línea: cantidad × precio unitario."
+          },
+          {
+            "node": "Group By · Export",
+            "title": "Gasto por proveedor",
+            "body": "Suma los totales de línea por proveedor y exporta el resultado."
+          }
+        ],
+        "outcomes": [
+          "Ve el gasto por proveedor en minutos",
+          "Detecta diferencias de precio entre facturas",
+          "Alimenta tus informes de gasto con líneas limpias"
+        ],
+        "canvas": {
+          "tables": {
+            "invoices": {
+              "name": "Facturas (extraídas)",
+              "rowsLabel": "860 filas (muestra)",
+              "columns": [
+                "Proveedor",
+                "Descripción",
+                "Cant.",
+                "Precio unitario"
+              ]
+            }
+          },
+          "descriptions": {
+            "clean": "Limpiar descripciones",
+            "type": "Cant. y precio a números",
+            "formula": "Total = Cant. × Precio unitario",
+            "group": "Gasto por proveedor",
+            "export": "Gasto.xlsx"
+          }
+        }
+      },
+      "logistics": {
+        "tab": "Logística",
+        "title": "Crea un registro de entregas a partir de albaranes",
+        "summary": "Extrae referencias, clientes y fechas de albaranes y manifiestos en PDF en un único registro de entregas limpio y ordenado.",
+        "metaTitle": "Albaranes y manifiestos en PDF a Excel",
+        "metaDescription": "Extrae referencias de pedido, clientes y fechas de albaranes y manifiestos de envío en PDF en un registro de entregas limpio.",
+        "lead": "Albaranes y manifiestos se acumulan en PDF, enviados por transportistas y almacenes. Altera los convierte en un único registro de entregas que puedes ordenar, revisar y compartir.",
+        "documents": [
+          "Albaranes de entrega",
+          "Manifiestos de envío",
+          "Listas de embalaje",
+          "Informes de transportistas"
+        ],
+        "challenge": "Las referencias suelen combinar varios códigos en un mismo campo, y una misma entrega puede aparecer en más de un documento. Limpiar eso a mano no escala.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Extrae las entregas",
+            "body": "Resalta la tabla de entregas en el PDF Converter para convertirla en filas."
+          },
+          {
+            "node": "Text Parser",
+            "title": "Separa referencias combinadas",
+            "body": "Divide una referencia como ORD-4821/DEP-07 en columnas separadas de pedido y almacén."
+          },
+          {
+            "node": "Unique",
+            "title": "Elimina duplicados",
+            "body": "Conserva una fila por entrega, aunque aparezca en varios documentos."
+          },
+          {
+            "node": "Sort · Export",
+            "title": "Ordena y exporta",
+            "body": "Ordena por fecha de entrega y exporta el registro a Excel o CSV."
+          }
+        ],
+        "outcomes": [
+          "Un registro de entregas en lugar de una carpeta de PDF",
+          "Sin entregas duplicadas en tus informes",
+          "Actualiza el registro cuando lleguen documentos nuevos"
+        ],
+        "canvas": {
+          "tables": {
+            "deliveries": {
+              "name": "Albaranes (extraídos)",
+              "rowsLabel": "540 filas (muestra)",
+              "columns": [
+                "Referencia",
+                "Cliente",
+                "Artículos",
+                "Fecha"
+              ]
+            }
+          },
+          "descriptions": {
+            "parse": "Separar pedido / almacén",
+            "unique": "Una fila por entrega",
+            "sort": "Por fecha de entrega",
+            "export": "Registro entregas.xlsx"
+          }
+        }
+      },
+      "audit": {
+        "tab": "Auditoría y cumplimiento",
+        "title": "Revisa extractos e informes antes de dar el visto bueno",
+        "summary": "Extrae saldos de extractos e informes en PDF, totalízalos y detecta automáticamente valores ausentes y huecos.",
+        "metaTitle": "Controles de auditoría sobre extractos e informes PDF",
+        "metaDescription": "Extrae saldos de extractos en PDF, totalízalos y detecta valores ausentes y huecos con un flujo de Altera repetible y sin código.",
+        "lead": "Auditar significa comprobar cifras en montones de extractos e informes en PDF. Altera los extrae en tablas, los totaliza y te muestra dónde faltan datos.",
+        "documents": [
+          "Extractos de cuentas y saldos",
+          "Informes financieros y de gestión",
+          "Confirmaciones de terceros",
+          "Declaraciones regulatorias"
+        ],
+        "challenge": "Los controles deben ser exhaustivos y repetibles, pero los documentos de origen son PDF. El muestreo manual lleva tiempo y deja huecos.",
+        "steps": [
+          {
+            "node": "PDF Converter",
+            "title": "Extrae las cifras",
+            "body": "Resalta la tabla de saldos en el PDF Converter para convertirla en una tabla."
+          },
+          {
+            "node": "Regular Expressions",
+            "title": "Aísla los números de cuenta",
+            "body": "Usa un patrón para obtener números de cuenta limpios a partir de un texto más largo."
+          },
+          {
+            "node": "Change Type",
+            "title": "Convierte los saldos en números",
+            "body": "Convierte los saldos en números para poder totalizarlos."
+          },
+          {
+            "node": "Aggregate · Export",
+            "title": "Totaliza los saldos",
+            "body": "Calcula totales, recuentos, mínimos y máximos, y expórtalos para tus papeles de trabajo."
+          },
+          {
+            "node": "Summary",
+            "title": "Detecta valores ausentes y huecos",
+            "body": "Revisa cada columna en busca de celdas vacías y huecos antes de fiarte de las cifras."
+          }
+        ],
+        "outcomes": [
+          "Revisa cada línea, no solo una muestra",
+          "Un registro claro y visible de cada control realizado",
+          "Repite los mismos controles con los documentos del siguiente periodo"
+        ],
+        "canvas": {
+          "tables": {
+            "statements": {
+              "name": "Extractos (extraídos)",
+              "rowsLabel": "2.050 filas (muestra)",
+              "columns": [
+                "Cuenta",
+                "Periodo",
+                "Saldo"
+              ]
+            }
+          },
+          "descriptions": {
+            "regex": "Números de cuenta",
+            "type": "Saldo a número",
+            "aggregate": "Totales y recuentos",
+            "summary": "Valores ausentes y huecos",
+            "export": "Papeles de trabajo.xlsx"
+          }
+        }
+      }
+    }
   },
   "about": {
-    "heroBadgeLabel":  "Acerca de",
-    "heroBadgeText":   "El equipo detrás de Altera",
-    "heroHeading":     "Construido por un pequeño equipo con un objetivo claro.",
-    "heroLead":        "Altera Data Suite fue creado para resolver un problema recurrente — extraer datos estructurados de PDFs no debería requerir horas de trabajo manual ni scripts complejos. Así que construimos una herramienta que lo hace en segundos.",
+    "heroBadgeLabel": "Acerca de",
+    "heroBadgeText": "El equipo detrás de Altera",
+    "heroHeading": "Construido por un pequeño equipo con un objetivo claro.",
+    "heroLead": "Altera Data Suite fue creado para resolver un problema recurrente — extraer datos estructurados de PDFs no debería requerir horas de trabajo manual ni scripts complejos. Así que construimos una herramienta que lo hace en segundos.",
     "storyBadgeLabel": "Nuestra historia",
-    "storyBadgeText":  "Por qué lo construimos",
-    "story1Heading":   "De dónde vino la idea",
-    "story1Text":      "Ambos veníamos de entornos de consultoría — habiendo trabajado con firmas como Deloitte y PwC. Algo quedó claro rápidamente: incluso a ese nivel, nadie había construido una solución todo-en-uno para extraer datos de PDFs. Nóminas, facturas, informes — todo se manejaba manualmente. Esa brecha fue el punto de partida.",
-    "story2Heading":   "El primer nodo",
-    "story2Text":      "Empezamos con un único nodo convertidor de PDF. Funcionó — e inmediatamente vimos qué faltaba a continuación. Orange tenía sólidas capacidades analíticas pero dejaba la limpieza de datos en gran medida sin atender. Así que seguimos construyendo. Cada nodo fue una respuesta directa a un punto de fricción en flujos de trabajo reales.",
-    "story3Heading":   "¿Por qué Orange Data Mining?",
-    "story3Text":      "No queríamos construir algo que viviera en aislamiento. Orange Data Mining ya tiene un ecosistema sólido y establecido — elegirlo significaba que nuestros usuarios no tendrían que cambiar su forma de trabajar. Altera se integra directamente en lo que ya conocen y usan.",
-    "story4Heading":   "Hacia dónde vamos",
-    "story4Text":      "La suite sigue creciendo. Más nodos están en desarrollo, y los existentes se mantienen activamente. No es un producto terminado — es un kit de herramientas en evolución.",
-    "ctaHeading":      "¿Listo para verlo en acción?",
-    "ctaSubtitle":     "Mira la demostración para ver cómo Altera maneja PDFs reales, o explora los precios para encontrar el plan adecuado.",
-    "watchDemo":       "Ver demostración",
-    "seePricing":      "Ver precios",
+    "storyBadgeText": "Por qué lo construimos",
+    "story1Heading": "De dónde vino la idea",
+    "story1Text": "Ambos veníamos de entornos de consultoría — habiendo trabajado con firmas como Deloitte y PwC. Algo quedó claro rápidamente: incluso a ese nivel, nadie había construido una solución todo-en-uno para extraer datos de PDFs. Nóminas, facturas, informes — todo se manejaba manualmente. Esa brecha fue el punto de partida.",
+    "story2Heading": "El primer nodo",
+    "story2Text": "Empezamos con un único nodo convertidor de PDF. Funcionó — e inmediatamente vimos qué faltaba a continuación. Orange tenía sólidas capacidades analíticas pero dejaba la limpieza de datos en gran medida sin atender. Así que seguimos construyendo. Cada nodo fue una respuesta directa a un punto de fricción en flujos de trabajo reales.",
+    "story3Heading": "¿Por qué Orange Data Mining?",
+    "story3Text": "No queríamos construir algo que viviera en aislamiento. Orange Data Mining ya tiene un ecosistema sólido y establecido — elegirlo significaba que nuestros usuarios no tendrían que cambiar su forma de trabajar. Altera se integra directamente en lo que ya conocen y usan.",
+    "story4Heading": "Hacia dónde vamos",
+    "story4Text": "La suite sigue creciendo. Más nodos están en desarrollo, y los existentes se mantienen activamente. No es un producto terminado — es un kit de herramientas en evolución.",
+    "ctaHeading": "¿Listo para verlo en acción?",
+    "ctaSubtitle": "Mira la demostración para ver cómo Altera maneja PDFs reales, o explora los precios para encontrar el plan adecuado.",
+    "watchDemo": "Ver demostración",
+    "seePricing": "Ver precios",
     "team": [
-      { "role": "CEO & Co-Fundador",        "bio": "Mehdi construyó Altera para eliminar la fricción de la extracción de datos en Orange Data Mining. Con amplia experiencia en Python, JavaScript y soluciones orientadas a datos, conecta el conocimiento técnico profundo con los flujos de trabajo reales. Como CEO, define la visión del producto, dirige la hoja de ruta técnica y garantiza que cada funcionalidad responda a las necesidades reales de los profesionales de datos." },
-      { "role": "Co-Fundador, Director Comercial & Marketing", "bio": "Salah dirige la estrategia comercial y de marketing de la empresa. Es responsable del desarrollo de marca, la captación de clientes, la generación de leads y las alianzas estratégicas. Su objetivo es acelerar el crecimiento de la empresa y promover soluciones innovadoras de automatización documental entre los profesionales." },
-      { "role": "Ingeniero de Software", "bio": "Saumya se especializa en Rust, C y TypeScript, con un fuerte enfoque en la optimización del rendimiento del software. Diseña el motor central de Altera, garantizando que cada cómputo sea rápido, eficiente y preparado para escalar." },
-      { "role": "Ingeniero Frontend", "bio": "Raphaël diseña las interfaces con las que los usuarios interactúan cada día. Especializado en ingeniería frontend, transforma diseños en experiencias web rápidas, responsivas y accesibles. Desde la arquitectura de componentes hasta la implementación pixel-perfect, garantiza que la interfaz de Altera sea fluida, fiable y consistente." }
+      {
+        "role": "CEO & Co-Fundador",
+        "bio": "Mehdi construyó Altera para eliminar la fricción de la extracción de datos en Orange Data Mining. Con amplia experiencia en Python, JavaScript y soluciones orientadas a datos, conecta el conocimiento técnico profundo con los flujos de trabajo reales. Como CEO, define la visión del producto, dirige la hoja de ruta técnica y garantiza que cada funcionalidad responda a las necesidades reales de los profesionales de datos."
+      },
+      {
+        "role": "Co-Fundador, Director Comercial & Marketing",
+        "bio": "Salah dirige la estrategia comercial y de marketing de la empresa. Es responsable del desarrollo de marca, la captación de clientes, la generación de leads y las alianzas estratégicas. Su objetivo es acelerar el crecimiento de la empresa y promover soluciones innovadoras de automatización documental entre los profesionales."
+      },
+      {
+        "role": "Ingeniero de Software",
+        "bio": "Saumya se especializa en Rust, C y TypeScript, con un fuerte enfoque en la optimización del rendimiento del software. Diseña el motor central de Altera, garantizando que cada cómputo sea rápido, eficiente y preparado para escalar."
+      },
+      {
+        "role": "Ingeniero Frontend",
+        "bio": "Raphaël diseña las interfaces con las que los usuarios interactúan cada día. Especializado en ingeniería frontend, transforma diseños en experiencias web rápidas, responsivas y accesibles. Desde la arquitectura de componentes hasta la implementación pixel-perfect, garantiza que la interfaz de Altera sea fluida, fiable y consistente."
+      }
     ]
   },
-  "faqs": { "pageTitle": "Preguntas frecuentes — Altera Data Suite" },
-  "changelog": {
-    "badgeLabel":   "Registro de cambios",
-    "badgeText":    "Novedades en Altera",
-    "heroHeading":  "Cada actualización, en un solo lugar.",
-    "heroSubtitle": "Nuevas funciones, mejoras y correcciones — publicadas regularmente y documentadas aquí.",
-    "categories":   { "New": "Nuevo", "Improved": "Mejorado", "Fixed": "Corregido" },
-    "latestLabel":  "Última versión"
+  "faqs": {
+    "pageTitle": "Preguntas frecuentes — Altera Data Suite"
   },
   "chatbot": {
-    "triggerTitle":    "Pregunta a Altera",
+    "triggerTitle": "Pregunta a Altera",
     "triggerSubtitle": "Aquí para ayudar",
-    "panelTitle":      "Asistente Altera",
-    "panelSubtitle":   "Pregúntame lo que quieras",
-    "placeholder":     "Haz una pregunta…",
-    "welcome":         "¡Hola! Soy el asistente de Altera. Pregúntame lo que quieras sobre la app, sus nodos o cómo empezar.",
-    "followUp":        "Aquí tienes algunas cosas en las que puedo ayudarte:",
-    "fallback":        "¡Buena pregunta! Para más detalles, consulta la página de Documentación o contacta directamente con nuestro equipo.",
+    "panelTitle": "Asistente Altera",
+    "panelSubtitle": "Pregúntame lo que quieras",
+    "placeholder": "Haz una pregunta…",
+    "welcome": "¡Hola! Soy el asistente de Altera. Pregúntame lo que quieras sobre la app, sus nodos o cómo empezar.",
+    "followUp": "Aquí tienes algunas cosas en las que puedo ayudarte:",
+    "fallback": "¡Buena pregunta! Para más detalles, consulta la página de Documentación o contacta directamente con nuestro equipo.",
     "quickReplies": [
-      { "question": "¿Cómo funciona el PDF Converter?", "answer": "Abre tu PDF, dibuja rectángulos sobre los datos que quieres extraer, coloca guías de columnas si lo necesitas y haz clic en Convertir. Obtendrás una tabla estructurada lista para el análisis." },
-      { "question": "¿Qué nodos están disponibles?",  "answer": "Altera incluye 9 nodos: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates y Cleaner." },
-      { "question": "¿Hay una prueba gratuita?",        "answer": "¡Sí! Puedes empezar gratis. Ve a la página de Precios para ver qué incluye cada plan." }
+      {
+        "question": "¿Cómo funciona el PDF Converter?",
+        "answer": "Abre tu PDF, dibuja rectángulos sobre los datos que quieres extraer, coloca guías de columnas si lo necesitas y haz clic en Convertir. Obtendrás una tabla estructurada lista para el análisis."
+      },
+      {
+        "question": "¿Qué nodos están disponibles?",
+        "answer": "Altera incluye 9 nodos: PDF Converter, Filter Builder, Column Manager, Rows Slicer, Header Promoter, Multi Shift Columns, Regex Extractor, Remove Duplicates y Cleaner."
+      },
+      {
+        "question": "¿Hay una prueba gratuita?",
+        "answer": "¡Sí! Puedes empezar gratis. Ve a la página de Precios para ver qué incluye cada plan."
+      }
     ]
   },
-  "lang": { "en": "English", "fr": "Français", "es": "Español", "de": "Deutsch", "nl": "Nederlands" },
+  "lang": {
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "de": "Deutsch",
+    "nl": "Nederlands"
+  },
   "legal": {
-    "badge":            "Legal",
+    "badge": "Legal",
     "lastUpdatedLabel": "Última actualización",
-    "lastUpdated":      "Mayo 2026"
+    "lastUpdated": "Mayo 2026"
   },
   "termsContent": {
     "groups": [
@@ -331,7 +1026,7 @@
           },
           {
             "heading": "3. Condiciones de prueba",
-            "body": "La prueba gratuita de 15 días está limitada a una por máquina. Tras el vencimiento de la prueba, se requiere una licencia de pago para continuar usando Altera. Puede cancelar la prueba en cualquier momento sin penalización."
+            "body": "La prueba gratuita de 7 días está limitada a una por máquina. Tras el vencimiento de la prueba, se requiere una licencia de pago para continuar usando Altera. Puede cancelar la prueba en cualquier momento sin penalización."
           },
           {
             "heading": "4. Actualizaciones y mantenimiento",
@@ -455,5 +1150,80 @@
         ]
       }
     ]
+  },
+  "whyWorkflows": {
+    "badgeLabel": "Nuestro enfoque",
+    "badgeText": "Por qué flujos visuales",
+    "heading": "¿Por qué flujos de trabajo visuales?",
+    "lead": "Altera convierte cada paso de tu trabajo con datos en un nodo que puedes ver, comprobar y reutilizar. Te contamos por qué lo construimos así.",
+    "intro": [
+      "La mayor parte del trabajo con datos todavía se hace en hojas de cálculo llenas de fórmulas, o en scripts escritos por la única persona del equipo que programa. Ambos funcionan, hasta que necesitas comprobar una cifra, cambiar un paso o pasarle el trabajo a otra persona.",
+      "El problema es que ambos ocultan el proceso. Un script es una lista de instrucciones; una hoja de cálculo solo muestra el resultado final. Pero cuando conviertes un montón de PDF en un informe, lo que de verdad importa son los propios datos: cómo quedan después de cada paso y si son correctos.",
+      "Por eso Altera se basa en un flujo de datos. Cada nodo hace una sola tarea —extraer, limpiar, filtrar, combinar, resumir— y puedes abrir cualquier nodo para ver su resultado. El flujo de trabajo es el proceso, a la vista de todos."
+    ],
+    "diagramCaption": "Un flujo de nómina real: la tabla extraída del PDF se divide en filas de empleados y fechas de pago, se limpia cada parte, se vuelven a unir y se exportan a Excel.",
+    "reasonsIntro": "Tres razones por las que creemos que los flujos visuales son la mejor forma de trabajar con datos:",
+    "reasons": [
+      {
+        "title": "Te importa el resultado, no el código",
+        "body": [
+          "Cuando resumes facturas por proveedor, las preguntas que importan son qué filas conservar, cómo agruparlas y qué totalizar. Cómo se escribe eso en código no te ayuda a responder ninguna.",
+          "En Altera eliges un nodo, ajustas sus opciones y ves el resultado al instante. Cada ajuste es una decisión visible, no una línea de sintaxis que depurar."
+        ]
+      },
+      {
+        "title": "Un flujo que todos pueden leer",
+        "body": [
+          "Un flujo de trabajo es un lenguaje común. Una responsable de finanzas, un analista y un auditor pueden mirar el mismo lienzo y seguir lo que le pasa a los datos, paso a paso, sin leer ningún script.",
+          "Así es fácil revisar el trabajo de otra persona, traspasar un proceso cuando un compañero no está y mostrar exactamente cómo se obtuvo una cifra de un informe."
+        ]
+      },
+      {
+        "title": "No hace falta saber programar",
+        "body": [
+          "Puedes crear tu primer flujo útil en una tarde: extraer una tabla de un PDF, limpiarla y exportarla a Excel.",
+          "A partir de ahí aprendes nodo a nodo. El mismo lienzo que sirve para una limpieza sencilla sirve también para combinaciones, tablas dinámicas, expresiones regulares e informes de varios pasos, así que nunca se te quedará pequeño."
+        ]
+      }
+    ],
+    "differentHeading": "Qué hace diferente a Altera",
+    "different": [
+      {
+        "title": "La extracción de PDF forma parte del flujo",
+        "body": "La mayoría de herramientas empiezan cuando tus datos ya están en una tabla. En Altera, extraer datos de un PDF es un nodo más, así que sacar los datos y limpiarlos ocurre en el mismo lugar."
+      },
+      {
+        "title": "Créalo una vez y repítelo cada mes",
+        "body": "Guarda un flujo y se conservan todos los ajustes, incluidas las zonas que resaltaste en el PDF. Cuando llegue el archivo del mes siguiente, cámbialo y vuelve a ejecutar los mismos pasos."
+      },
+      {
+        "title": "Tus archivos se quedan en tu ordenador",
+        "body": "Altera es una aplicación de escritorio. Tus documentos se procesan localmente en tu propio equipo, sin subirse al servidor de nadie."
+      }
+    ],
+    "ctaHeading": "Compruébalo tú mismo",
+    "ctaText": "Descarga Altera y crea tu primer flujo de trabajo en minutos.",
+    "ctaDownload": "Descargar",
+    "ctaDocs": "Ver la documentación de nodos",
+    "canvas": {
+      "tableName": "Nómina (extraída)",
+      "rowsLabel": "240 filas (muestra)",
+      "columns": [
+        "Empleado",
+        "Fecha de pago",
+        "Devengos",
+        "Neto"
+      ],
+      "descriptions": {
+        "employees": "Filas de empleados",
+        "first": "Primera fila por empleado",
+        "regex": "Extraer fecha de pago",
+        "dates": "Conservar solo fechas",
+        "stack": "Unir ambas tablas",
+        "columns": "Renombrar y reordenar",
+        "export": "Nómina.xlsx"
+      },
+      "hint": "Este lienzo es interactivo, igual que en la aplicación: arrastra los nodos o usa los controles de zoom."
+    }
   }
 }

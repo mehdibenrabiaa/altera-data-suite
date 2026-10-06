@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { useRouter } from "next/navigation";
 import { CheckCircleFilledIcon, LockIcon } from "@/components/icons";
 import SamePageLink from "./SamePageLink";
 import { openInlineCheckout } from "@/lib/paddle";
 import { PLANS, getPlan } from "@/lib/plans";
 import { COLOR_TEXT_MUTED } from "@/lib/theme";
+import { CHECKOUT_EMAIL_KEY } from "@/app/thank-you/SentToLine";
 import styles from "./CheckoutClient.module.css";
 
 const FRAME_ID = "paddle-checkout-frame";
@@ -24,6 +26,7 @@ export default function CheckoutClient({ lang, planKey }: Props) {
   const plan = getPlan(selectedKey) ?? getPlan("yearly")!;
   const [status, setStatus] = useState<Status>("loading");
   const initedFor = useRef<string | null>(null);
+  const router = useRouter();
 
   useEffect(() => {
     if (initedFor.current === plan.key) return;
@@ -34,9 +37,19 @@ export default function CheckoutClient({ lang, planKey }: Props) {
     openInlineCheckout(plan.priceId, FRAME_ID, (event) => {
       if (cancelled) return;
       // The webhook (altera-license-server /webhooks/paddle) is what
-      // actually issues and emails the license key -- this is just a
-      // lightweight UI acknowledgment that the purchase went through.
-      if (event.name === "checkout.completed") setStatus("completed");
+      // actually issues and emails the license key -- here we just send
+      // the buyer to the thank-you page. Their email goes through
+      // sessionStorage (not the URL) so the page can say where the key went.
+      if (event.name === "checkout.completed") {
+        setStatus("completed");
+        const email = (event.data as { customer?: { email?: string } } | undefined)?.customer?.email;
+        try {
+          if (email) sessionStorage.setItem(CHECKOUT_EMAIL_KEY, email);
+        } catch {
+          // Storage blocked (private mode etc.) -- the page shows a generic line
+        }
+        router.push(`/${lang}/thank-you?plan=${plan.key}`);
+      }
     }).then((opened) => {
       if (!cancelled) setStatus(opened ? "ready" : "unavailable");
     });
@@ -44,7 +57,7 @@ export default function CheckoutClient({ lang, planKey }: Props) {
     return () => {
       cancelled = true;
     };
-  }, [plan.key, plan.priceId]);
+  }, [plan.key, plan.priceId, lang, router]);
 
   return (
     <section className={styles.page}>

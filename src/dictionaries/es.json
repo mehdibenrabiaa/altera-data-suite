@@ -1225,5 +1225,16 @@
       },
       "hint": "Este lienzo es interactivo, igual que en la aplicación: arrastra los nodos o usa los controles de zoom."
     }
+  },
+  "thankYou": {
+    "metaTitle": "Gracias por tu compra",
+    "heading": "¡Gracias por tu compra!",
+    "subtitleGeneric": "Tu licencia está en camino.",
+    "sentTo": "Hemos enviado tu clave de licencia a {email}. Suele llegar en unos minutos.",
+    "sentGeneric": "Hemos enviado tu clave de licencia a la dirección que usaste al pagar. Suele llegar en unos minutos.",
+    "downloadBtn": "Descargar para Windows",
+    "helpTitle": "¿Necesitas ayuda?",
+    "helpBody": "Si tu clave de licencia no ha llegado en 15 minutos, o algo no funciona, escríbenos. Una persona real lee cada mensaje y lo resolveremos rápido.",
+    "emailBtn": "Escribir a soporte"
   }
 }

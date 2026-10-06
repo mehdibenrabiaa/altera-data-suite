@@ -1225,5 +1225,16 @@
       },
       "hint": "This is a live canvas, just like in the app: drag the nodes around, or zoom with the controls."
     }
+  },
+  "thankYou": {
+    "metaTitle": "Thank you for your purchase",
+    "heading": "Thank you for your purchase!",
+    "subtitleGeneric": "Your license is on its way.",
+    "sentTo": "We've emailed your license key to {email}. It usually arrives within a few minutes.",
+    "sentGeneric": "We've emailed your license key to the address you used at checkout. It usually arrives within a few minutes.",
+    "downloadBtn": "Download for Windows",
+    "helpTitle": "Need help?",
+    "helpBody": "If your license key hasn't arrived within 15 minutes, or anything else isn't working, just email us. A real person reads every message and we'll sort it out quickly.",
+    "emailBtn": "Email support"
   }
 }

@@ -1225,5 +1225,16 @@
       },
       "hint": "Dit canvas is live, net als in de app: sleep de nodes of zoom met de knoppen."
     }
+  },
+  "thankYou": {
+    "metaTitle": "Bedankt voor uw aankoop",
+    "heading": "Bedankt voor uw aankoop!",
+    "subtitleGeneric": "Uw licentie is onderweg.",
+    "sentTo": "We hebben uw licentiesleutel naar {email} gestuurd. Die komt meestal binnen een paar minuten aan.",
+    "sentGeneric": "We hebben uw licentiesleutel gestuurd naar het adres dat u bij het afrekenen gebruikte. Die komt meestal binnen een paar minuten aan.",
+    "downloadBtn": "Downloaden voor Windows",
+    "helpTitle": "Hulp nodig?",
+    "helpBody": "Is uw licentiesleutel na 15 minuten nog niet binnen, of werkt er iets anders niet? Mail ons gewoon. Een echt persoon leest elk bericht en we lossen het snel op.",
+    "emailBtn": "Support mailen"
   }
 }

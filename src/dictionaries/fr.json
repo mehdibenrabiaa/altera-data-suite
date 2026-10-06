@@ -1225,5 +1225,16 @@
       },
       "hint": "Ce canevas est interactif, comme dans l'application : déplacez les nœuds ou zoomez avec les commandes."
     }
+  },
+  "thankYou": {
+    "metaTitle": "Merci pour votre achat",
+    "heading": "Merci pour votre achat !",
+    "subtitleGeneric": "Votre licence est en route.",
+    "sentTo": "Nous avons envoyé votre clé de licence à {email}. Elle arrive généralement en quelques minutes.",
+    "sentGeneric": "Nous avons envoyé votre clé de licence à l'adresse utilisée lors du paiement. Elle arrive généralement en quelques minutes.",
+    "downloadBtn": "Télécharger pour Windows",
+    "helpTitle": "Besoin d'aide ?",
+    "helpBody": "Si votre clé de licence n'est pas arrivée sous 15 minutes, ou si quelque chose ne fonctionne pas, écrivez-nous simplement. Une vraie personne lit chaque message et nous réglerons cela rapidement.",
+    "emailBtn": "Contacter le support"
   }
 }

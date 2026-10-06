@@ -1225,5 +1225,16 @@
       },
       "hint": "Diese Arbeitsfläche ist live, genau wie in der App: Ziehen Sie die Nodes oder zoomen Sie mit den Steuerelementen."
     }
+  },
+  "thankYou": {
+    "metaTitle": "Vielen Dank für Ihren Kauf",
+    "heading": "Vielen Dank für Ihren Kauf!",
+    "subtitleGeneric": "Ihre Lizenz ist unterwegs.",
+    "sentTo": "Wir haben Ihren Lizenzschlüssel an {email} gesendet. Er kommt in der Regel innerhalb weniger Minuten an.",
+    "sentGeneric": "Wir haben Ihren Lizenzschlüssel an die Adresse gesendet, die Sie beim Bezahlen angegeben haben. Er kommt in der Regel innerhalb weniger Minuten an.",
+    "downloadBtn": "Für Windows herunterladen",
+    "helpTitle": "Brauchen Sie Hilfe?",
+    "helpBody": "Wenn Ihr Lizenzschlüssel nach 15 Minuten noch nicht da ist oder etwas anderes nicht funktioniert, schreiben Sie uns einfach. Ein echter Mensch liest jede Nachricht, und wir kümmern uns schnell darum.",
+    "emailBtn": "Support kontaktieren"
   }
 }
